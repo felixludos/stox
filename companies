@@ -1,0 +1,640 @@
+Adobe Inc.	ADBE	0.63	41.35
+Exxon Mobil Corp.	XOM	0.64	-38.88
+Bank of America Corp.	BAC	0.65	-31.80
+Cisco Systems Inc.	CSCO	0.68	-2.71
+Merck & Co. Inc.	MRK	0.69	-15.63
+Walt Disney Co.	DIS	0.71	-17.49
+Pfizer Inc.	PFE	0.71	-13.65
+NVIDIA Corp.	NVDA	0.73	78.14
+AT&T Inc.	T	0.76	-22.90
+Verizon Communications Inc.	VZ	0.79	-11.25
+Mastercard Inc.	MA	0.89	-0.97
+Home Depot Inc.	HD	0.91	14.53
+Intel Corp.	INTC	0.92	-0.53
+Procter & Gamble Co.	PG	0.97	-0.81
+UnitedHealth Group Inc.	UNH	0.97	-0.94
+JPMorgan Chase & Co.	JPM	1.02	-30.94
+Visa Inc. Cl A	V	1.12	2.47
+Berkshire Hathaway Inc. Cl B	BRK.B	1.21	-19.25
+Johnson & Johnson	JNJ	1.31	-2.40
+Alphabet Inc. Cl A	GOOGL	1.43	14.90
+Alphabet Inc. Cl C	GOOG	1.44	15.31
+Facebook Inc. Cl A	FB	1.81	19.40
+Amazon.com Inc.	AMZN	3.41	73.18
+Apple Inc.	AAPL	4.45	30.66
+Microsoft Corp.	MSFT	4.68	35.49
+Coupa Software Inc.	COUP	0.31	110.79
+Snap Inc.	SNAP	0.32	56.34
+Tyler Technologies Inc.	TYL	0.32	19.90
+KKR & Co. Inc.	KKR	0.33	19.61
+Alnylam Pharmaceuticals Inc.	ALNY	0.33	40.88
+TransUnion	TRU	0.35	-2.99
+DocuSign Inc.	DOCU	0.38	183.51
+Seattle Genetics Inc.	SGEN	0.39	52.59
+Moderna Inc.	MRNA	0.4	220.09
+BioMarin Pharmaceutical Inc.	BMRN	0.42	49.10
+IAC/Interactivecorp ORD	ICA	0.43	n/a
+RingCentral Inc. Cl A	RNG	0.45	68.67
+Liberty Broadband Corp. Cl C	LBRDK	0.46	2.31
+Marvell Technology Group Ltd.	MRVL	0.47	44.22
+Okta Inc. Cl A	OKTA	0.48	89.59
+Palo Alto Networks Inc.	PANW	0.5	7.66
+Twilio Inc. Cl A	TWLO	0.54	144.79
+CoStar Group Inc.	CSGP	0.56	20.68
+Square Inc. Cl A	SQ	0.6	104.68
+Splunk Inc.	SPLK	0.62	41.10
+Veeva Systems Inc. Cl A	VEEV	0.63	80.69
+Workday Inc. Cl A	WDAY	0.65	19.11
+lululemon athletica inc.	LULU	0.78	35.71
+Blackstone Group Inc.	BX	0.82	-3.95
+Tesla Inc.	TSLA	2.59	269.24
+Horizon Therapeutics PLC	HZNP	0.25	58.09
+Cable One Inc.	CABO	0.25	18.93
+Ingersoll Rand Inc.	IR	0.26	-22.82
+Cognex Corp.	CGNX	0.26	10.92
+RPM International Inc.	RPM	0.26	-1.37
+Advance Auto Parts Inc.	AAP	0.26	-16.05
+Nordson Corp.	NDSN	0.26	14.46
+Etsy Inc.	ETSY	0.26	151.22
+Zendesk Inc.	ZEN	0.26	20.71
+Packaging Corp. of America	PKG	0.26	-11.70
+E*TRADE Financial Corp.	ETFC	0.27	13.38
+J.B. Hunt Transport Services Inc.	JBHT	0.27	9.30
+Abiomed Inc.	ABMD	0.27	55.06
+Bio-Techne Corp.	TECH	0.27	24.09
+Bio-Rad Laboratories Inc. Cl A	BIO	0.28	29.09
+C.H. Robinson Worldwide Inc.	CHRW	0.29	5.13
+Sarepta Therapeutics Inc.	SRPT	0.29	30.82
+Pool Corp.	POOL	0.29	31.13
+Wayfair Inc. Cl A	W	0.3	147.60
+Masimo Corp.	MASI	0.31	46.23
+Molina Healthcare Inc.	MOH	0.31	30.11
+Neurocrine Biosciences Inc.	NBIX	0.31	20.65
+Catalent Inc.	CTLT	0.32	38.56
+Teladoc Health Inc.	TDOC	0.34	173.51
+Moderna Inc.	MRNA	0.49	220.09
+Tesla Inc.	TSLA	0.76	269.24
+Coca-Cola Co.	KO	0.77	-18.43
+Amgen Inc.	AMGN	0.78	3.31
+Accenture PLC Cl A	ACN	0.81	4.60
+Eli Lilly & Co.	LLY	0.82	24.29
+Costco Wholesale Corp.	COST	0.85	10.99
+AbbVie Inc.	ABBV	0.86	9.36
+Salesforce.com Inc.	CRM	0.92	22.28
+PepsiCo Inc.	PEP	0.97	-1.62
+Home Depot Inc.	HD	0.97	14.53
+Netflix Inc.	NFLX	1.11	69.59
+PayPal Holdings Inc.	PYPL	1.15	64.93
+Adobe Inc.	ADBE	1.17	41.35
+Merck & Co. Inc.	MRK	1.23	-15.63
+Cisco Systems Inc.	CSCO	1.29	-2.71
+NVIDIA Corp.	NVDA	1.3	78.14
+Mastercard Inc.	MA	1.68	-0.97
+UnitedHealth Group Inc.	UNH	1.81	-0.94
+Visa Inc. Cl A	V	2.1	2.47
+Alphabet Inc. Cl A	GOOGL	2.7	14.90
+Alphabet Inc. Cl C	GOOG	2.7	15.31
+Facebook Inc. Cl A	FB	3.38	19.40
+Amazon.com Inc.	AMZN	6.42	73.18
+Apple Inc.	AAPL	8.24	30.66
+Microsoft Corp.	MSFT	8.72	35.49
+Netflix Inc.	NFLX	1.18	69.59
+BlackLine Inc.	BL	1.27	69.59
+Alteryx Inc. Cl A	AYX	1.28	77.90
+Veeva Systems Inc. Cl A	VEEV	1.28	80.69
+AppFolio Inc.	APPF	1.28	46.68
+Atlassian Corp. PLC Cl A	TEAM	1.32	59.55
+NVIDIA Corp.	NVDA	1.35	78.14
+SolarEdge Technologies Inc.	SEDG	1.35	67.67
+Coupa Software Inc.	COUP	1.39	110.79
+Slack Technologies Inc.	WORK	1.4	50.53
+Glu Mobile Inc.	GLUU	1.42	71.57
+2U Inc.	TWOU	1.43	67.44
+Okta Inc. Cl A	OKTA	1.44	89.59
+Inphi Corp.	IPHI	1.45	72.47
+CrowdStrike Holdings Inc. Cl A	CRWD	1.52	133.91
+Everbridge Inc.	EVBG	1.55	88.50
+MongoDB Inc.	MDB	1.55	73.50
+Bilibili Inc. ADR	BILI	1.55	155.37
+Wix.com Ltd.	WIX	1.59	140.42
+DocuSign Inc.	DOCU	1.62	183.51
+Shopify Inc. Cl A	SHOP	1.69	159.54
+Twilio Inc. Cl A	TWLO	1.73	144.79
+Zscaler Inc.	ZS	1.83	169.87
+Sea Ltd. ADR	SE	1.85	200.85
+Zoom Video Communications Inc.	ZM	2.42	305.45
+Sina Corp.	SINA	0.7	1.18
+JOYY Inc. ADR	YY	0.77	58.55
+LINE Corp.	LNNFF	0.98	n/a
+Momo Inc. ADR	MOMO	1	-37.55
+Kakaku.com Inc.	KKKUF	1.13	n/a
+Mail.ru Group Ltd. GDR	MLRYY	1.17	14.73
+United Internet AG	UDIRF	1.51	n/a
+Match Group Inc ORD	MTCH	1.75	n/a
+Bilibili Inc. ADR	BILI	2.06	155.37
+Tencent Music Entertainment Group ADR	TME	2.54	45.57
+Pinterest Inc.	PINS	2.95	42.49
+Zynga Inc. Cl A	ZNGA	2.96	69.61
+Kakao Corp ORD	035720.KS	3.35	n/a
+NEXON Co. Ltd.	NEXOF	3.41	91.64
+Baidu Inc. ADR	BIDU	4.14	4.69
+Yandex N.V. Cl A	YNDX	4.18	18.03
+NetEase Inc. ADR	NTES	4.22	57.99
+Alphabet Inc. Cl A	GOOGL	4.55	14.90
+IAC/Interactivecorp ORD	IAC	4.95	n/a
+Spotify Technology SA ORD	SPOT	5.18	n/a
+Snap Inc.	SNAP	6.91	56.34
+NAVER Corp.	NHNCF	7.94	n/a
+Tencent Holdings Ltd ORD	0700.HK	8.48	n/a
+Twitter Inc.	TWTR	8.55	10.45
+Facebook Inc. Cl A	FB	10.74	19.40
+DeNA Co. Ltd.	DNACF	0.82	n/a
+PearlAbyss Corp ORD	263750.KQ	0.89	n/a
+Kingsoft Corp. Ltd.	KSFTF	1.41	113.77
+Netmarble Corp ORD	251270.KS	1.52	n/a
+Embracer Group AB ORD	EMBRACB	1.58	n/a
+Capcom Co. Ltd.	CCOEF	1.95	n/a
+Konami Holdings Corp.	KNAMF	2.08	n/a
+Micro-Star International Co Ltd ORD	2377.TW	2.12	n/a
+Square Enix Holdings Co. Ltd.	SQNXF	2.28	4.18
+Bilibili Inc. ADR	BILI	2.97	155.37
+Ubisoft Entertainment S.A.	UBSFF	3.8	n/a
+BANDAI NAMCO Holdings Inc.	NCBDF	3.82	n/a
+Take-Two Interactive Software Inc.	TTWO	4.14	25.71
+NCSOFT Corp ORD	036570.KS	4.14	n/a
+NetEase Inc. ADR	NTES	4.75	57.99
+NEXON Co. Ltd.	NEXOF	4.87	91.64
+Zynga Inc. Cl A	ZNGA	4.95	69.61
+Electronic Arts Inc.	EA	5.37	30.97
+CD Projekt S.A.	OTGLF	5.39	n/a
+Nintendo Co. Ltd.	NTDOF	5.55	13.61
+Sea Ltd. ADR	SE	6.02	200.85
+Activision Blizzard Inc.	ATVI	6.34	36.77
+Advanced Micro Devices Inc.	AMD	6.63	21.85
+Tencent Holdings Ltd ORD	0700.HK	7.14	n/a
+NVIDIA Corp.	NVDA	9.27	78.14
+Rapid7 Inc.	RPD	1.59	-0.12
+Thales S.A.	THLEF	1.95	-19.42
+Science Applications International Corp.	SAIC	1.96	-18.39
+BAE Systems PLC	BAESF	2.01	-18.61
+Qualys Inc.	QLYS	2.23	31.95
+FireEye Inc.	FEYE	2.4	-22.96
+Trend Micro Inc.	TMICF	2.44	n/a
+CyberArk Software Ltd.	CYBR	2.53	-6.50
+Leidos Holdings Inc.	LDOS	2.62	-10.20
+Check Point Software Technologies Ltd.	CHKP	2.69	7.65
+Proofpoint Inc.	PFPT	2.78	6.77
+Booz Allen Hamilton Holding Corp.	BAH	2.85	5.88
+Juniper Networks Inc.	JNPR	2.92	-8.16
+VeriSign Inc.	VRSN	2.94	8.98
+F5 Networks Inc.	FFIV	3.08	2.06
+Akamai Technologies Inc.	AKAM	3.12	32.28
+VMware Inc.	VMW	3.31	-3.76
+Fortinet Inc.	FTNT	3.48	36.57
+Okta Inc. Cl A	OKTA	3.89	89.59
+Zscaler Inc.	ZS	4.81	169.87
+Broadcom Inc.	AVGO	5.45	1.08
+Cisco Systems Inc.	CSCO	6.11	-2.71
+Splunk Inc.	SPLK	6.43	41.10
+Palo Alto Networks Inc.	PANW	6.5	7.66
+CrowdStrike Holdings Inc. Cl A	CRWD	7.51	133.91
+NetApp Inc.	NTAP	1.64	-31.02
+International Business Machines Corp.	IBM	1.65	-11.71
+Nutanix Inc. Cl A	NTNX	1.73	-25.34
+Salesforce.com Inc.	CRM	1.76	22.28
+HubSpot Inc.	HUBS	1.91	47.40
+Adobe Inc.	ADBE	1.93	41.35
+Pure Storage Inc. Cl A	PSTG	1.98	1.11
+ServiceNow Inc.	NOW	2.04	49.80
+Splunk Inc.	SPLK	2.17	41.10
+Atlassian Corp. PLC Cl A	TEAM	2.2	59.55
+CenturyLink Inc.	CTL	2.33	-24.98
+Five9 Inc.	FIVN	2.45	81.55
+Cisco Systems Inc.	CSCO	2.74	-2.71
+Akamai Technologies Inc.	AKAM	2.8	32.28
+Shopify Inc. Cl A	SHOP	2.81	159.54
+Alibaba Group Holding Ltd. ADR	BABA	2.86	23.06
+Twilio Inc. Cl A	TWLO	3.01	144.79
+Citrix Systems Inc.	CTXS	3.28	37.31
+Arista Networks Inc.	ANET	3.46	6.25
+Alphabet Inc. Cl A	GOOGL	3.68	14.90
+Oracle Corp.	ORCL	3.74	8.32
+Microsoft Corp.	MSFT	3.89	35.49
+MongoDB Inc.	MDB	4.36	73.50
+Amazon.com Inc.	AMZN	4.45	73.18
+VMware Inc.	VMW	4.46	-3.76
+NetApp Inc.	NTAP	1.64	-31.02
+International Business Machines Corp.	IBM	1.65	-11.71
+Nutanix Inc. Cl A	NTNX	1.73	-25.34
+Salesforce.com Inc.	CRM	1.76	22.28
+HubSpot Inc.	HUBS	1.91	47.40
+Adobe Inc.	ADBE	1.93	41.35
+Pure Storage Inc. Cl A	PSTG	1.98	1.11
+ServiceNow Inc.	NOW	2.04	49.80
+Splunk Inc.	SPLK	2.17	41.10
+Atlassian Corp. PLC Cl A	TEAM	2.2	59.55
+CenturyLink Inc.	CTL	2.33	-24.98
+Five9 Inc.	FIVN	2.45	81.55
+Cisco Systems Inc.	CSCO	2.74	-2.71
+Akamai Technologies Inc.	AKAM	2.8	32.28
+Shopify Inc. Cl A	SHOP	2.81	159.54
+Alibaba Group Holding Ltd. ADR	BABA	2.86	23.06
+Twilio Inc. Cl A	TWLO	3.01	144.79
+Citrix Systems Inc.	CTXS	3.28	37.31
+Arista Networks Inc.	ANET	3.46	6.25
+Alphabet Inc. Cl A	GOOGL	3.68	14.90
+Oracle Corp.	ORCL	3.74	8.32
+Microsoft Corp.	MSFT	3.89	35.49
+MongoDB Inc.	MDB	4.36	73.50
+Amazon.com Inc.	AMZN	4.45	73.18
+VMware Inc.	VMW	4.46	-3.76
+AVZ Minerals Ltd.	AZZVF	0.36	n/a
+Ultralife Corp.	ULBI	0.37	-14.21
+Ioneer Ltd.	GSCCF	0.4	n/a
+Akasol AG ORD	ASL.DE	0.47	n/a
+W-SCOPE Corp.	WSPCF	0.59	n/a
+Honbridge Holdings Ltd ORD	8137.HK	0.59	n/a
+Lithium Americas Corp.	LAC	0.69	65.30
+Vitzrocell Co Ltd ORD	082920.KQ	0.85	n/a
+Galaxy Resources Ltd.	GALXF	0.95	-5.20
+L&F Co Ltd ORD	066970.KQ	1.27	n/a
+Pilbara Minerals Ltd.	PILBF	1.28	16.05
+Orocobre Ltd.	OROCF	1.39	-2.74
+Dynapack International Technology Corp ORD	3211.TW	1.67	n/a
+Livent Corp.	LTHM	3.97	-27.25
+EnerSys	ENS	4	-15.96
+GS Yuasa Corp.	GYUAF	4.27	n/a
+Varta AG	VARGF	4.4	n/a
+Panasonic Corp.	PCRFF	4.48	-3.18
+BYD Co. Ltd.	BYDDF	4.68	101.21
+Simplo Technology Co Ltd ORD	6121.TW	4.87	n/a
+LG Chem Ltd.	LGCLF	5.04	n/a
+Samsung SDI Co Ltd ORD	005930.KS	6.41	n/a
+Sociedad Quimica y Minera De Chile S.A. ADR	SQM	11.71	3.63
+Tesla Inc.	TSLA	13.12	269.24
+Albemarle Corp.	ALB	19.6	8.01
+Novocure Ltd.	NVCR	0.73	-28.35
+BeiGene Ltd. ADR	BGNE	0.76	18.26
+Immunomedics Inc.	IMMU	0.78	95.27
+Exelixis Inc.	EXEL	0.82	41.54
+ACADIA Pharmaceuticals Inc.	ACAD	0.84	29.62
+Ionis Pharmaceuticals Inc.	IONS	0.86	2.78
+Guardant Health Inc.	GH	0.92	9.05
+Mylan N.V.	MYL	0.96	-19.90
+Horizon Therapeutics PLC	HZNP	1.05	58.09
+Bio-Techne Corp.	TECH	1.1	24.09
+Sanofi ADR	SNY	1.11	0.16
+Neurocrine Biosciences Inc.	NBIX	1.25	20.65
+Sarepta Therapeutics Inc.	SRPT	1.29	30.82
+Alnylam Pharmaceuticals Inc.	ALNY	1.65	40.88
+BioMarin Pharmaceutical Inc.	BMRN	2.08	49.10
+Incyte Corp.	INCY	2.4	19.97
+Moderna Inc.	MRNA	2.46	220.09
+Alexion Pharmaceuticals Inc.	ALXN	2.88	0.62
+Seattle Genetics Inc.	SGEN	2.94	52.59
+Illumina Inc.	ILMN	4.61	11.61
+Biogen Inc.	BIIB	5.71	-6.02
+Regeneron Pharmaceuticals Inc.	REGN	7.08	65.35
+Gilead Sciences Inc.	GILD	7.56	17.45
+Amgen Inc.	AMGN	7.75	3.31
+Vertex Pharmaceuticals Inc.	VRTX	7.97	34.48
+Boston Scientific Corp.	BSX	1.17	-23.31
+Illumina Inc.	ILMN	1.18	11.61
+Humana Inc.	HUM	1.2	4.11
+Biogen Inc.	BIIB	1.22	-6.02
+Stryker Corp.	SYK	1.46	-15.27
+Zoetis Inc.	ZTS	1.47	3.59
+Intuitive Surgical Inc.	ISRG	1.48	-2.58
+Becton Dickinson & Co.	BDX	1.48	-5.37
+Cigna Corp.	CI	1.63	-14.16
+Vertex Pharmaceuticals Inc.	VRTX	1.64	34.48
+Anthem Inc.	ANTM	1.65	-15.57
+CVS Health Corp.	CVS	1.89	-15.67
+Gilead Sciences Inc.	GILD	2.18	17.45
+Danaher Corp.	DHR	2.3	19.67
+Eli Lilly & Co.	LLY	2.92	24.29
+Medtronic PLC	MDT	2.92	-19.96
+Amgen Inc.	AMGN	3.02	3.31
+Thermo Fisher Scientific Inc.	TMO	3.09	17.76
+Bristol Myers Squibb Co.	BMY	3.09	-10.53
+AbbVie Inc.	ABBV	3.61	9.36
+Abbott Laboratories	ABT	3.71	7.11
+Merck & Co. Inc.	MRK	4.54	-15.63
+Pfizer Inc.	PFE	4.67	-13.65
+UnitedHealth Group Inc.	UNH	6.38	-0.94
+Johnson & Johnson	JNJ	8.65	-2.40
+Mueller Water Products Inc.	MWA	1.11	-24.21
+Franklin Electric Co. Inc.	FELE	1.33	-12.25
+Badger Meter Inc.	BMI	1.49	-4.25
+Watts Water Technologies Inc. Cl A	WTS	1.5	-19.98
+California Water Service Group	CWT	1.64	-6.92
+Evoqua Water Technologies Corp.	AQUA	1.78	-4.75
+Valmont Industries Inc.	VMI	1.8	-23.37
+Companhia de Saneamento Basico do Estado de Sao Paulo ADR	SBS	1.93	-27.44
+Advanced Drainage Systems Inc.	WMS	1.95	23.71
+Itron Inc.	ITRI	2.33	-21.79
+American States Water Co.	AWR	2.76	-10.12
+Tetra Tech Inc.	TTEK	2.93	-10.74
+Rexnord Corp.	RXN	3.19	-13.58
+HD Supply Holdings Inc.	HDS	3.25	-18.27
+Xylem Inc.	XYL	3.34	-15.59
+Pentair PLC	PNR	3.88	-16.18
+Toro Co.	TTC	3.89	-18.85
+Essential Utilities Inc.	WTRG	3.97	-7.80
+IDEX Corp.	IEX	4.21	-8.76
+A.O. Smith Corp.	AOS	4.69	1.32
+Waters Corp.	WAT	8.01	-19.22
+American Water Works Co.	AWK	8.02	8.58
+Roper Technologies Inc.	ROP	8.74	10.64
+Danaher Corp.	DHR	9	19.67
+Ecolab Inc.	ECL	9.2	3.97
+SunPower Corp.	SPWR	1.27	18.33
+TPI Composites Inc.	TPIC	1.44	29.34
+Enviva Partners LP	EVA	1.47	-0.19
+Covanta Holding Corp.	CVA	2.21	-38.07
+Renewable Energy Group Inc.	REGI	2.27	-13.25
+TransAlta Renewables Inc.	TRSWF	2.3	-13.55
+Plug Power Inc.	PLUG	2.56	194.30
+SunRun Inc.	RUN	2.9	109.16
+TerraForm Power Inc. Cl A	TERP	3.37	25.02
+Clearway Energy Inc. Cl C	CWEN	3.61	13.18
+Ballard Power Systems Inc.	BLDP	3.64	185.52
+Innergex Renewable Energy Inc.	INGXF	3.69	9.51
+Hannon Armstrong Sustainable Infrastructure Capital Inc.	HASI	3.93	-7.21
+Boralex Inc. Cl A	BRLXF	3.99	27.93
+Acuity Brands Inc.	AYI	4.37	-35.20
+NextEra Energy Partners LP	NEP	4.56	4.37
+Itron Inc.	ITRI	4.63	-21.79
+Brookfield Renewable Partners L.P.	BEP	4.75	4.76
+Universal Display Corp.	OLED	4.91	-24.01
+Northland Power Inc.	NPIFF	5.08	20.53
+Ormat Technologies Inc.	ORA	5.36	-16.60
+First Solar Inc.	FSLR	5.61	2.73
+Enphase Energy Inc.	ENPH	5.73	112.13
+Tesla Inc.	TSLA	6.2	269.24
+Cree Inc.	CREE	6.27	36.53
+Falck Renewables SpA ORD	FKR.MI	1.69	n/a
+Xinjiang Goldwind Science & Technology Co. Ltd.	XJNGF	1.69	n/a
+Canadian Solar Inc.	CSIQ	2.1	5.88
+Renewable Energy Group Inc.	REGI	2.68	-13.25
+Encavis AG ORD	CAP.DE	2.82	n/a
+Neoen SA ORD	NEOEN.PA	2.84	n/a
+Companhia Paranaense de Energia-COPEL ADR	ELP	2.92	-32.70
+Plug Power Inc.	PLUG	3.01	194.30
+SunRun Inc.	RUN	3.15	109.16
+TerraForm Power Inc. Cl A	TERP	3.54	25.02
+Boralex Inc. Cl A	BRLXF	3.72	27.93
+Atlantica Sustainable Infrastructure PLC	AY	3.74	12.24
+Innergex Renewable Energy Inc.	INGXF	3.77	9.51
+Scatec Solar ASA	STECF	3.79	n/a
+Verbund AG	OEZVF	3.9	n/a
+Siemens Gamesa Renewable Energy S.A.	GCTAF	4.2	12.38
+Meridian Energy Ltd.	MDDNF	4.21	n/a
+Contact Energy Ltd.	COENF	4.24	n/a
+Ormat Technologies Inc.	ORA	4.34	-16.60
+Vestas Wind Systems A/S	VWSYF	4.39	12.19
+Xinyi Solar Holdings Ltd.	XNYIF	4.51	n/a
+Companhia Energetica de Minas Gerais-Cemig ADR	CIG	4.52	-35.78
+First Solar Inc.	FSLR	4.65	2.73
+SolarEdge Technologies Inc.	SEDG	5.95	67.67
+Enphase Energy Inc.	ENPH	6.18	112.13
+Rockwell Automation Corp.	ROK	0.97	4.06
+Paccar Inc.	PCAR	0.99	-4.88
+IHS Markit Ltd.	INFO	1.02	-14.25
+Verisk Analytics Inc.	VRSK	1.04	16.63
+FedEx Corp.	FDX	1.25	4.88
+Eaton Corp. PLC	ETN	1.36	-8.74
+General Dynamics Corp.	GD	1.4	-19.50
+Emerson Electric Co.	EMR	1.44	-21.62
+Roper Technologies Inc.	ROP	1.59	10.64
+L3Harris Technologies Inc.	LHX	1.71	-17.87
+Waste Management Inc.	WM	1.75	-8.90
+Deere & Co.	DE	1.76	-8.18
+Norfolk Southern Corp.	NSC	1.8	-11.99
+CSX Corp.	CSX	2.05	-6.66
+Northrop Grumman Corp.	NOC	2.08	-15.11
+Illinois Tool Works Inc.	ITW	2.15	-3.10
+General Electric Co.	GE	2.22	-40.05
+Caterpillar Inc.	CAT	2.57	-13.32
+United Parcel Service Inc. Cl B	UPS	2.71	-1.70
+Boeing Co.	BA	3.02	-45.22
+3M Co.	MMM	3.48	-13.36
+Raytheon Technologies Corp.	RTX	3.78	8.54
+Lockheed Martin Corp.	LMT	3.82	-10.31
+Honeywell International Inc.	HON	4.03	-19.52
+Union Pacific Corp.	UNP	4.56	-7.97
+Bank of New York Mellon Corp.	BK	0.97	-23.74
+Capital One Financial Corp.	COF	0.99	-40.92
+Allstate Corp.	ALL	0.99	-22.66
+Blackstone Group Inc.	BX	1.17	-3.95
+Charles Schwab Corp.	SCHW	1.3	-26.83
+Moody's Corp.	MCO	1.42	23.38
+Progressive Corp.	PGR	1.42	11.56
+Aon PLC ORD	AON	1.45	n/a
+Truist Financial Corp.	TFC	1.55	-37.50
+PNC Financial Services Group Inc.	PNC	1.57	-36.35
+U.S. Bancorp	USB	1.65	-38.54
+Morgan Stanley	MS	1.68	-2.58
+Marsh & McLennan Cos.	MMC	1.68	-1.75
+Intercontinental Exchange Inc.	ICE	1.7	0.00
+Chubb Ltd.	CB	1.73	-17.49
+Goldman Sachs Group Inc.	GS	1.96	-10.60
+CME Group Inc. Cl A	CME	2.05	-18.00
+American Express Co.	AXP	2.07	-25.11
+S&P Global Inc.	SPGI	2.49	28.84
+BlackRock Inc.	BLK	2.52	10.22
+Citigroup Inc.	C	3.28	-34.10
+Wells Fargo & Co.	WFC	3.33	-52.66
+Bank of America Corp.	BAC	6.46	-31.80
+Berkshire Hathaway Inc. Cl B	BRK.B	7.65	-19.25
+JPMorgan Chase & Co.	JPM	9.57	-30.94
+Ping An Insurance (Group) Co. of China Ltd	601318.SS	5.28
+Kweichow Moutai Co Ltd	600519.SS	5.00
+China Merchants Bank Co Ltd	600036.SS	2.37
+Jiangsu Hengrui Medicine Co Ltd	600276.SS	2.34
+Wuliangye Yibin Co Ltd	000858.SZ	2.27
+Midea Group Co Ltd Class A	000333.SZ	2.00
+Gree Electric Appliances Inc of Zhuhai	000651.SZ	1.86
+Luxshare Precision Industry Co Ltd	002475.SZ	1.47
+CITIC Securities Co Ltd	600030.SS	1.40
+Industrial Bank Co Ltd	601166.SS	1.34
+KWEICHOW MOUTAI LTD A	600519	5.75
+PING AN INSURANCE (GROUP) OF CHINA	601318	2.49
+CHINA MERCHANTS BANK LTD A	600036	2.20
+WULIANGYE YIBIN LTD A	000858	2.12
+BLK ICS USD LIQ AGENCY DIS	ICSUAGD	1.43
+JIANGSU HENGRUI MEDICINE LTD A	600276	1.40
+CONTEMPORARY AMPEREX TECHNOLOGY LT	300750	1.22
+CHINA YANGTZE POWER LTD A	600900	1.12
+LUXSHARE PRECISION INDUSTRY LTD A	002475	1.05
+INDUSTRIAL BANK LTD A	601166	1.03
+Alibaba Pictures Group Ltd ORD	1060.HK	0.85	n/a
+Tongcheng-Elong Holdings Ltd ORD	780.HK	0.85	n/a
+51job Inc. ADR	JOBS	1.04	-13.49
+Weibo Corp. ADR	WB	1.11	-19.33
+Sina Corp.	SINA	1.13	1.18
+China Literature Ltd ORD	772.HK	1.16	n/a
+Kingsoft Corp. Ltd.	KSFTF	1.29	113.77
+GSX Techedu Inc. ADR	GSX	1.56	300.87
+Momo Inc. ADR	MOMO	1.73	-37.55
+JOYY Inc. ADR	YY	2.1	58.55
+Tencent Music Entertainment Group ADR	TME	2.22	45.57
+Autohome Inc. ADR	ATHM	2.28	12.01
+58.com Inc. ADR	WUBA	2.53	-15.33
+iQIYI Inc. ADR	IQ	2.55	8.91
+Trip.com Group Ltd. ADR	TCOM	2.84	-20.10
+Bilibili Inc. ADR	BILI	3.74	155.37
+Vipshop Holdings Ltd. ADR	VIPS	4.32	54.20
+TAL Education Group ADR	TAL	4.42	52.61
+NetEase Inc. ADR	NTES	4.52	57.99
+Baidu Inc. ADR	BIDU	5.65	4.69
+Pinduoduo Inc. ADR	PDD	6.28	130.83
+JD.com Inc. ADR	JD	8.66	86.23
+Alibaba Group Holding Ltd. ADR	BABA	9.11	23.06
+Tencent Holdings Ltd ORD	0700.HK	9.31	n/a
+Meituan Dianping ORD	3690.HK	10.41	n/a
+China Overseas Land & Investment Ltd.	CAOVF	0.54	n/a
+ZTO Express (Cayman) Inc. ADR	ZTO	0.55	58.97
+China Resources Land Ltd.	CRBJF	0.58	-13.81
+Trip.com Group Ltd. ADR	TCOM	0.58	-20.10
+China Life Insurance Co. Ltd.	CILJF	0.63	n/a
+Kweichow Moutai Co Ltd ORD	n/a	0.63	n/a
+WuXi Biologics (Cayman) Inc ORD	n/a	0.65	n/a
+Xiaomi Corp ORD	n/a	0.75	n/a
+Yum China Holdings Inc.	YUMC	0.77	7.04
+Pinduoduo Inc. ADR	PDD	0.79	130.83
+New Oriental Education & Technology Group Inc. ADR	EDU	0.8	22.38
+China Merchants Bank Co. Ltd.	CIHHF	0.85	n/a
+CNOOC Ltd.	CEOHF	0.91	-32.82
+TAL Education Group ADR	TAL	1	52.61
+NetEase Inc. ADR	NTES	1.25	57.99
+Bank of China Ltd.	BACHF	1.32	-12.53
+Baidu Inc. ADR	BIDU	1.34	4.69
+Industrial & Commercial Bank of China Ltd.	IDCBF	1.79	-13.33
+JD.com Inc. ADR	JD	1.87	86.23
+China Mobile Ltd.	CHLKF	1.96	-11.63
+Ping An Insurance (Group) Co. of China Ltd.	PIAIF	2.69	-4.77
+Meituan Dianping ORD	3690.HK	3.01	n/a
+China Construction Bank Corp.	CICHF	3.46	-7.20
+Tencent Holdings Ltd ORD	0700.HK	13.93	n/a
+Alibaba Group Holding Ltd. ADR	BABA	17.88	23.06
+SoftBank Group Corp.	SFTBF	0.56	37.37
+Allianz SE	ALIZF	0.58	-13.57
+Commonwealth Bank of Australia	CBAUF	0.58	n/a
+Keyence Corp.	KYCCF	0.58	17.18
+Unilever N.V.	UNLVF	0.59	-7.77
+BP PLC	BPAQF	0.6	-42.97
+Sony Corp.	SNEJF	0.64	2.30
+Diageo PLC	DGEAF	0.64	-17.49
+Siemens AG	SMAWF	0.65	-5.94
+CSL Ltd.	CMXHF	0.65	n/a
+Total S.A.	TTFNF	0.71	-31.21
+British American Tobacco PLC	BTAFF	0.71	-15.68
+HSBC Holdings PLC	HBCYF	0.73	-37.60
+AIA Group Ltd.	AAIGF	0.77	-7.34
+GlaxoSmithKline PLC	GLAXF	0.8	-14.24
+Sanofi	SNYNF	0.86	n/a
+LVMH Moet Hennessy Louis Vuitton SE	LVMHF	0.9	-2.45
+Novo Nordisk A/S Series B	NONOF	0.9	14.00
+SAP SE	SAPGF	0.97	16.08
+ASML Holding N.V.	ASMLF	1.08	n/a
+AstraZeneca PLC	AZNCF	1.1	5.54
+Toyota Motor Corp.	TOYOF	1.12	-11.61
+Novartis AG	NVSEF	1.45	-7.81
+Roche Holding AG Part. Cert.	RHHVF	1.89	10.02
+Nestle S.A.	NSRGF	2.51	5.68
+Delivery Hero SE ORD	DHER.DE	1.16	n/a
+Symrise AG	SYIEF	1.18	10.95
+Merck KGaA	MKGAF	1.26	n/a
+Henkel AG & Co. KGaA Pfd.	HENOF	1.33	-7.80
+Deutsche Wohnen AG	DWHHF	1.36	n/a
+Deutsche Bank AG	DB	1.46	29.82
+Fresenius Medical Care AG & Co. KGaA	FMCQF	1.51	15.44
+Bayerische Motoren Werke AG	BAMXF	1.61	-19.68
+RWE AG	RWNFF	1.62	n/a
+Fresenius SE	FSNUF	1.67	n/a
+E.ON SE	ENAKF	1.96	8.57
+Volkswagen AG Non-Vtg Pfd.	VLKPF	2.31	-18.55
+Infineon Technologies AG	IFNNF	2.33	12.95
+Daimler AG	DDAIF	2.56	-24.17
+Deutsche Boerse AG	DBOEF	2.58	22.40
+Deutsche Post AG	DPSTF	2.59	2.46
+Vonovia SE	VNNVF	2.67	n/a
+Muenchener Rueckversicherungs-Gesellschaft AG	MURGF	2.8	-10.99
+BASF SE	BFFAF	4.23	-23.12
+adidas AG	ADDDF	4.35	-19.42
+Deutsche Telekom AG	DTEGF	4.35	4.58
+Bayer AG	BAYZF	5.68	-11.60
+Allianz SE	ALIZF	6.43	-13.57
+Siemens AG	SMAWF	7.09	-5.94
+SAP SE	SAPGF	10.44	16.08
+Tokyo Electron Ltd.	TOELF	0.81	n/a
+Hitachi Ltd.	HTHIF	0.81	-27.88
+Central Japan Railway Co.	CJPRF	0.83	n/a
+Mizuho Financial Group Inc.	MZHOF	0.86	n/a
+NTT Docomo Inc.	NTDMF	0.86	n/a
+Murata Manufacturing Co. Ltd.	MRAAF	0.87	n/a
+Chugai Pharmaceutical Co. Ltd.	CHGCF	0.87	n/a
+Astellas Pharma Inc.	ALPMF	0.89	-5.28
+Fanuc Ltd.	FANUF	0.93	1.11
+Hoya Corp.	HOCPF	0.96	n/a
+Sumitomo Mitsui Financial Group Inc.	SMFNF	1.02	n/a
+Kao Corp.	KAOCF	1.03	n/a
+Daikin Industries Ltd.	DKILF	1.06	n/a
+Nintendo Co. Ltd.	NTDOF	1.18	13.61
+Recruit Holdings Co. Ltd.	RCRRF	1.19	-12.01
+Honda Motor Co. Ltd.	HNDAF	1.21	-12.60
+Shin-Etsu Chemical Co. Ltd.	SHECF	1.27	3.91
+KDDI Corp.	KDDIF	1.36	-0.10
+Mitsubishi UFJ Financial Group Inc ORD	8306.T	1.4	n/a
+Takeda Pharmaceutical Co. Ltd.	TKPHF	1.61	-12.59
+Daiichi Sankyo Co. Ltd.	DSKYF	1.62	19.54
+SoftBank Group Corp.	SFTBF	1.98	37.37
+Keyence Corp.	KYCCF	2.03	17.18
+Sony Corp.	SNEJF	2.12	2.30
+Toyota Motor Corp.	TOYOF	4.21	-11.61
+Samsung Electronics Co Ltd	005930.KS	21.76
+SK Hynix Inc	000660.KS	6.09
+NAVER Corp	035420.KS	4.65
+Celltrion Inc	068270.KS	3.78
+LG Chem Ltd	051910.KS	2.99
+Samsung SDI Co Ltd	006400.KS	2.68
+NCsoft Corp	036570.KS	2.15
+Hyundai Motor Co	005380.KS	1.98
+Kakao Corp	035720.KS	1.91
+Samsung BioLogics Co Ltd	207940.KS	1.81
+Shopify Inc. Cl A	SHOP	0.39	159.54
+Sony Corp.	SNEJF	0.41	2.30
+Diageo PLC	DGEAF	0.41	-17.49
+Siemens AG	SMAWF	0.42	-5.94
+CSL Ltd.	CMXHF	0.42	n/a
+British American Tobacco PLC	BTAFF	0.46	-15.68
+Total S.A.	TTFNF	0.46	-31.21
+HSBC Holdings PLC	HBCYF	0.47	-37.60
+Royal Bank of Canada	RY	0.47	-13.54
+AIA Group Ltd.	AAIGF	0.5	-7.34
+GlaxoSmithKline PLC	GLAXF	0.52	-14.24
+Sanofi	SNYNF	0.55	n/a
+LVMH Moet Hennessy Louis Vuitton SE	LVMHF	0.58	-2.45
+Novo Nordisk A/S Series B	NONOF	0.58	14.00
+SAP SE	SAPGF	0.63	16.08
+ASML Holding N.V.	ASMLF	0.7	n/a
+AstraZeneca PLC	AZNCF	0.71	5.54
+Toyota Motor Corp.	TOYOF	0.72	-11.61
+Novartis AG	NVSEF	0.94	-7.81
+Samsung Electronics Co. Ltd.	SSNLF	0.98	n/a
+Taiwan Semiconductor Manufacturing Co Ltd ORD	TSM	1.12	n/a
+Roche Holding AG Part. Cert.	RHHVF	1.22	10.02
+Tencent Holdings Ltd ORD	0700.HK	1.56	n/a
+Nestle S.A.	NSRGF	1.62	5.68
+Alibaba Group Holding Ltd. ADR	BABA	1.8	23.06
+Taiwan Semiconductor Manufacturing Co Ltd	2330.TW	7.29
+Samsung Electronics Co Ltd	005930.KS	5.94
+HDFC Bank Ltd ADR	HDB.BO	3.87
+ICICI Bank Ltd ADR	IBN.BO	3.10
+Infosys Ltd ADR	INFY.BO	3.09
+PJSC Lukoil ADR	LKOD	2.69
+BTS Group Holdings PLC DR	BTS-R	2.21
+Naspers Ltd Class N	NPN.JO	2.21
+PT Bank Central Asia Tbk	BBCA	2.06
+Reliance Industries Ltd ADR	RIGD.BO	1.94
