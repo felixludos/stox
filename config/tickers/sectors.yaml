@@ -1,0 +1,601 @@
+
+
+tickers:
+
+  Information Technology:
+
+    Software: # FTEC
+      - SAP
+      - ORCL
+      - VMW
+      - ZM
+      - CRM
+      - ADSK
+      - MSFT
+      - ADBE
+      - INTU
+      - TEAM
+      - CTXS
+      - WORK
+      - DBX
+
+    Semiconductors & Semiconductor Equipment:
+      - QCOM
+      - AMD
+      - INTC
+      - NVDA
+      - TXN
+      - AEIS
+      - UMCMPWR
+      - AMAT
+
+    IT Services:
+      - V
+      - MA
+      - PYPL
+      - SHOP
+      - IBM
+      - SQ
+      - INFY
+      - WIX
+      - WU
+
+    Communications Equipment:
+      - MSE
+      - CSCO
+      - NOK
+      - NTGR
+
+    Technology Hardware, Storage & Peripherals:
+      - AAPL
+      - DELL
+      - HPQ
+      - CAJ
+      - STX
+      - HPE
+      - WDC
+      - XRX
+
+    Electronic Equipment, Instruments & Components:
+      - FIT
+      - FLEX
+      - TEL
+      - LPL
+
+  Energy:
+
+    Energy Equipment & Services:
+      - HAL
+      - TS
+      - RIG
+      - NOV
+
+    Oil, Gas & Consumable Fuels:
+      - XOM
+      - CVX
+      - BP
+      - PTR
+      - SNP
+      - E
+      - RDS
+      - TOT
+
+  Materials:
+
+    Chemicals:
+      - DD
+      - PPG
+      - SHW
+      - EMN
+
+    Construction Materials:
+      - VMC
+      - EXP
+      - MLM
+
+    Containers & Packaging:
+      - BLL
+      - IP
+      - GEF
+
+    Metals & Mining:
+      - BHP
+      - RIO
+      - VALE
+      - GOLD
+      - SCCO
+      - STLD
+      - TECK
+      - X
+      - AGI
+      - CMC
+      - SCHN
+      - CENX
+
+    Paper & Forest Products:
+      - LPX
+
+  Industrials:
+
+    Aerospace & Defense:
+      - BA
+      - RTX
+      - LMT
+      - NOC
+      - GD
+      - TXT
+      - AJRD
+
+    Building Products:
+      - TT
+      - CARR
+      - AAON
+
+    Construction & Engineering:
+      - J
+      - PWR
+      - ACA
+
+    Electrical Equipment:
+      - ABB
+      - EMR
+      - ENS
+
+    Industrial Conglomerates:
+      - MMM
+      - HON
+      - GE
+      - RAVN
+
+    Machinery:
+      - CAT
+      - DE
+      - XYL
+      - PCAR
+      - PLOW
+      - TNC
+
+    Trading Companies & Distributors:
+      - FAST
+      - SITE
+      - FBM
+      - WCC
+
+    Commercial Services & Supplies:
+      - WM
+      - HCSG
+      - CTAS
+      - ECOL
+
+    Professional Services:
+      - TRI
+      - CSGP
+      - INFO
+      - EFX
+      - TRU
+
+    Air Freight & Logistics:
+      - UPS
+      - FDX
+      - EXPD
+      - FWRD
+
+    Airlines:
+      - DAL
+      - LUV
+      - UAL
+      - AAL
+      - RYAAY
+      - SKYW
+
+    Marine:
+      - KEX
+      - MATX
+
+    Road & Rail:
+      - UNP
+      - UBER
+      - LYFT
+      - CAR
+
+    Transportation Infrastructure:
+      - MIC
+
+  Consumer Discretionary:
+
+    Auto Components:
+      - APTV
+      - GT
+      - MGA
+
+    Automobiles:
+      - TSLA
+      - TM
+      - GM
+      - HMC
+      - F
+      - HOG
+      - FCAU
+
+    Household Durables:
+      - SNE
+      - DHI
+      - LZB
+      - WHR
+
+    Leisure Products:
+      - HAS
+      - PTON
+      - SWBI
+
+    Textiles, Apparel & Luxury Goods:
+      - TPR
+      - NKE
+      - LEVI
+      - RL
+      - SKX
+      - CROX
+
+    Hotels, Restaurants & Leisure:
+      - MCD
+      - SBUX
+      - LVS
+      - MAR
+      - CMG
+      - YUM
+      - HLT
+      - QSR
+      - RCL
+      - MGM
+      - DPZ
+      - H
+      - SIX
+      - PZZA
+      - Jack
+
+    Diversified Consumer Services:
+      - HRB
+      - TAL
+      - SCI
+      - STRA
+
+    Distributors:
+      - GPC
+      - POOL
+      - CORE
+
+    Internet & Direct Marketing Retail:
+      - AMZN
+      - BABA
+      - PDD
+      - JD
+      - BKNG
+      - EBAY
+      - EXPE
+      - GRUB
+      - SSTK
+      - GRPN
+
+    Multiline Retail:
+      - M
+      - JWN
+      - KSS
+      - TGT
+      - DLTR
+
+    Specialty Retail:
+      - HD
+      - LOW
+      - AZO
+      - BBT
+      - TIF
+      - GPS
+      - DKS
+      - FL
+      - AEO
+      - BBBY
+      - GME
+
+  Consumer Staples:
+
+    Food & Staples Retailing:
+      - WMT
+      - COST
+      - SYY
+      - WBA
+      - KR
+      - ACI
+      - USFD
+      - RAD
+
+    Beverages:
+      - KO
+      - PEP
+      - BUD
+      - HEINY
+      - MNST
+      - KDP
+      - DEO
+      - PRMW
+
+    Food Products:
+      - MDLZ
+      - DANOY
+      - KHC
+      - GIS
+      - HSY
+      - TSN
+      - K
+      - BYND
+      - UTZ
+      - FDP
+
+    Tobacco:
+      - PM
+      - BTI
+      - VGR
+
+    Household Products:
+      - PG
+      - CL
+      - CLX
+      - WDFC
+
+    Personal Products:
+      - UL
+      - EL
+      - MED
+      - ELF
+
+  Health Care:
+
+    Health Care Equipment & Supplies:
+      - ABT
+      - DXCM
+      - SNN
+      - NVCR
+      - NEOG
+      - CRY
+
+    Health Care Providers & Services:
+      - UNH
+      - CVS
+      - ANTM
+      - PINC
+      - NFH
+      - NHC
+
+    Health Care Technology:
+      - VEEV
+      - SDRG
+      - SLP
+
+    Biotechnology:
+      - AMGN
+      - GILD
+      - MRNA
+      - BIIB
+      - NVAX
+      - CBPO
+      - GRFS
+      - CRSP
+      - ZLAB
+      - IMAB
+      - SGMO
+      - BLUE
+
+    Pharmaceuticals:
+      - JNJ
+      - NVS
+      - PFE
+      - NVO
+      - AZN
+      - CGC
+      - ZGNX
+      - HCM
+
+    Life Sciences Tools & Services:
+      - TMO
+      - ILMN
+      - A
+      - RGEN
+      - QGEN
+      - NSTG
+
+  Financials:
+
+    Banks:
+      - JPM
+      - BAC
+      - HDP
+      - C
+      - WFC
+      - HSBC
+      - USB
+      - BCS
+      - WF
+      - MFG
+
+    Thrifts & Mortgage Finance:
+      - FNMA
+      - FMCC
+      - TFSL
+
+    Diversified Financial Services:
+      - BRKB
+      - IX
+      - VOYA
+
+    Consumer Finance:
+      - AXP
+      - COF
+      - DFS
+      - ALLY
+
+    Capital Markets:
+      - BLK
+      - MS
+      - GS
+      - SCHW
+      - MSCI
+      - NMR
+      - DB
+      - APO
+      - MORN
+
+    Mortgage Real Estate Investment Trusts (REITs):
+      - AGNC
+      - STWD
+      - CIM
+      - ARI
+
+    Insurance:
+      - CB
+      - LFC
+      - PGR
+      - PUK
+      - AON
+      - ALL
+      - AFL
+      - PRU
+      - L
+      - LMND
+
+  Communication Services:
+
+    Diversified Telecommunications Services:
+      - VZ
+      - T
+      - DTEGY
+      - CHA
+      - TEF
+      - VIV
+      - CHT
+      - LUMN
+      - KT
+
+    Wireless Telecommunications Services:
+      - TMUS
+      - CHL
+      - VOD
+      - MBT
+      - GOGO
+      - AMX
+
+    Media:
+      - CMCSA
+      - FOX
+      - DISH
+      - OMC
+      - NWS
+      - NYT
+      - JWA
+
+    Entertainment:
+      - DIS
+      - NFLX
+      - SE
+      - ATVI
+      - NTES
+      - SPOT
+      - EA
+      - ROKU
+      - TME
+      - ZNGA
+      - IMAX
+
+    Interactive Media & Services:
+      - GOOGL
+      - FB
+      - BIDU
+      - SNAP
+      - TWTR
+      - PINS
+      - Z
+      - YNDX
+      - WB
+      - YY
+      - YELP
+      - MOMO
+      - LN
+      - SY
+      - TRVG
+      - CARS
+
+  Utilities:
+
+    Electric Utilities:
+      - PCGU
+      - NEE
+      - SOLN
+      - EIX
+      - ENIC
+
+    Gas Utilities:
+      - ATO
+      - UGI
+      - OGS
+      - NFG
+      - NWN
+
+    Multi-Utilities:
+      - D
+      - SRE
+      - NGG
+      - DTE
+      - AVA
+
+    Water Utilities:
+      - AWK
+      - WTRG
+      - AWR
+
+    Independent Power and Renewable Electricity Producers:
+      - BEPC
+      - AES
+      - NOVA
+      - BEP
+      - KEN
+      - AZRE
+
+  Real Estate:
+
+    Equity Real Estate Investment Trusts (REITs):
+      - AMT
+      - PLD
+      - EQIX
+      - WY
+      - FR
+
+    Real Estate Management & Development:
+      - RDFN
+      - BEKE
+      - CBRE
+      - JOE
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

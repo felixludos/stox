@@ -1,0 +1,170 @@
+
+tickers:
+
+  Global:
+    - IEMG
+    - EEM
+    - SCHE
+    - VT
+    - CRBN
+    - ACWI
+    - URTH
+    - BNDX
+    - BND
+    - EMXC
+    - XSOE
+
+  Africa:
+    - AFK
+
+  Asia:
+    - AAXJ
+    - AIA
+    - VPL
+    - TOK
+    - EEMA
+    - EPP
+    - IPAC
+
+  Europe:
+    - EZU
+    - VGK
+    - IEUR
+    - GXF # nordic
+
+  Latin America:
+    - ILF
+
+  BRIC:
+    - BKF
+    - EEB
+    - EWBK
+
+  Japan:
+    - EWJ
+    - DXJ
+    - FJP
+    - TOK
+    - KOKU
+
+  China:
+    - GXC
+    - FLCH
+    - FCHI
+    - KWEB
+    - CNYA
+    - ASHR
+    - MCHI
+    - FXI
+
+  Colombia:
+    - GXG
+
+  Denmark:
+    - EDEN
+
+  Egypt:
+    - EGPT
+
+  Brazil:
+    - EWZ
+
+  Taiwan:
+    - EWT
+
+  Russia:
+    - RSX
+    - ERUS
+
+  Germany:
+    - EWG
+
+  France:
+    - EWQ
+
+  Austria:
+    - EWO
+
+  Belgium:
+    - EWK
+
+  Netherlands:
+    - EWN
+
+  Greece:
+    - GREK
+
+  Hong Kong:
+    - EWH
+
+  Thailand:
+    - THD
+
+  Turkey:
+    - TUR
+
+  Vietnam:
+    - VNM
+
+  Italy:
+    - EWI
+
+  Mexico:
+    - EWW
+
+  New Zealand:
+    - ENZL
+
+  Finland:
+    - EFNL
+
+  Peru:
+    - EPU
+
+  Poland:
+    - EPOL
+
+  Canada:
+    - EWC
+    - BBCA
+
+  United Kingdom:
+    - EWU
+
+  India:
+    - INDA
+    - EPI
+    - PIN
+
+  Indonesia:
+    - EIDO
+
+  Ireland:
+    - EIRL
+
+  Israel:
+    - EIS
+
+  South Korea:
+    - EWY
+
+  Sweden:
+    - EWD
+
+  Australia:
+    - EWA
+
+  Malaysia:
+    - EWM
+
+  Singapore:
+    - EWS
+
+  Spain:
+    - EWP
+
+  Switzerland:
+    - EWL
+
+  South Africa:
+    - EZA

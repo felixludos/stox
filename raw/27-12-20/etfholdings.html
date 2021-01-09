@@ -1,0 +1,612 @@
+<?xml version="1.0" encoding="iso-8859-1" ?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><title>FHLC | Portfolio Exposure</title><link rel="stylesheet" type="text/css" href="/fidelity/screeners/resources/style/css.asp?name=Style.Common&files=38|47&version=0" media="all" /></head><body><div id="WSOD"><div class="sliding-nav leftSideBar">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link href="https://www.fidelity.com/webcontent/ap010098-etf-content/20.11.0/css/toc.css" rel="stylesheet" type="text/css" media="screen, print"/>
+
+
+
+
+
+<script>
+var newwindow;
+function openWinTOC(url){
+	var width = 810;
+	var height = 795;
+	var left = 80;
+	var top = 80;
+	var scrollbar = 'scrollbars=yes';
+	if(openWinTOC.arguments.length > 1){
+		width = openWinTOC.arguments[1];
+		height = openWinTOC.arguments[2];
+	}
+	if(openWinTOC.arguments.length > 3){
+		left = openWinTOC.arguments[3];
+		top = openWinTOC.arguments[4];
+		scrollbar = 'scrollbars=no';
+		if (screen.width <= 800){
+			top=19;
+			left=309;
+		}
+	}
+	if(!newwindow || newwindow.closed){
+		newwindow = window.open(url,'newwindow','resizable=yes,' + scrollbar + ',menubar=no,toolbar=no,width=' + width + ',height=' + height + ',left=' + left + ',top=' + top + ',screenX=20,screenY=20');
+	}
+	else{
+		newwindow.location.replace(url);
+	}
+	newwindow.focus();
+}
+
+function changeAction(selectNode){
+	var actionValue = selectNode.options[selectNode.selectedIndex].value;
+	var form = document.forms['search'];
+	form.action = actionValue;
+}
+function openAdvancedChart(url, symbolValue){
+	var targetName = symbolValue.replace(".","").replace("/","").replace("-","");
+	var advChartWin = window.open(url,targetName,"titlebar=no, toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes, resizable=yes, copyhistory=no, width=860, height=780,top=60");
+	advChartWin.focus();
+}
+</script>
+
+
+	
+	
+		
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+    var isAuthorized = false;    
+    var isRetailCustomer = false;
+</script>
+
+
+
+<script type="text/javascript" src="https://www.fidelity.com/webcontent/ap010098-etf-content/20.11.0/js/snapshot.js"></script>
+<script type="text/javascript">
+	function ofPageInit()
+	{				
+		checkPrint();
+	}
+    var personal_server = "https://www.fidelity.com";
+    var ac_domain = "https://www.fidelity.com";        
+    var pl_domain = "https://www.fidelity.com";
+    var scs_domain = "https://www.fidelity.com";
+    var fh_domain = "https://www.fidelity.com";
+    var fq_domain = "https://fastquote.fidelity.com";
+    var wsod_domain = "https://research2.fidelity.com";
+    var contentPath = "/webcontent/ap010098-etf-content/20.11.0";
+    var scsContentPath = "/webcontent/ap010098-etf-content/20.11.0";
+    var er_domain = "";
+    var symbolTextBoxClicked = false;
+    fmrProductid="etf"; 
+
+</script>
+<script type="text/javascript">
+   	var newwindow;
+	function openWin(url){
+		var width = 820;
+		var height = 795;
+		var left = 80;
+		var top = 80;
+		var scrollbar = 'scrollbars=yes';
+		if(openWin.arguments.length > 1){
+			width = openWin.arguments[1];
+			height = openWin.arguments[2];
+		}
+		if(openWin.arguments.length > 3){
+			left = openWin.arguments[3];
+			top = openWin.arguments[4];
+			scrollbar = 'scrollbars=no';
+			if (screen.width <= 800){
+				top=19;
+				left=309;
+			}
+		}
+		if(!newwindow || newwindow.closed){
+			newwindow = window.open(url,'newwindow','resizable=yes,' + scrollbar + ',menubar=no,toolbar=no,width=' + width + ',height=' + height + ',left=' + left + ',top=' + top + ',screenX=20,screenY=20');
+		}
+		else{
+			newwindow.location.replace(url);
+		}
+		newwindow.focus();
+	}
+</script>
+
+
+
+
+
+
+	<script type="text/javascript" src="https://www.fidelity.com/rct/2.0.0/dojo/dojo/dojo.xd.js" djconfig="parseOnLoad: true, isDebug:false"></script>
+	<script type="text/javascript" src="https://www.fidelity.com/rct/2.0.0/rct-ui/rct-ui.js"></script>
+
+
+
+
+
+	
+		<script type="text/javascript" src="https://www.fidelity.com/common/always-cached/embeddedquotes/1.1/js/embeddedquotes.js.shtml"></script>
+	
+	
+
+
+
+<script type="text/javascript" src="https://www.fidelity.com/webcontent/ap010098-etf-content/20.11.0/js/etf.js"></script>
+
+<script type="text/javascript" src="https://www.fidelity.com/webcontent/ap010098-etf-content/20.11.0/silverlight/ClientBin/ChartBridge.js"></script>
+
+<script language="JavaScript" type="text/javascript">
+dojo.addOnLoad(function() {
+	var isRetailCustomer = false;
+	if(typeof window.isRetailCustomer != "undefined"){ 
+		isRetailCustomer = window.isRetailCustomer;
+    }
+	if(!isRetailCustomer) {
+		dojo.query("#snapshotChart .lock-image").style("display","inline");
+	} else {
+		dojo.query("#snapshotChart .lock-image").style("display","none");
+	}
+});
+</script>
+
+	
+
+
+
+<div id="Fidelity">
+
+	<div class="toc-wrapper">
+		<div class="stock-details">
+			<div class="navhead"><h2>ETF / ETP Details</h2></div>
+				<div class="content-stock-details">
+					<h3><label for="symbol">Enter Name or Symbol<span class="off-screen">. Press down arrow for suggestions, or Escape to return to entry field.</span></label></h3>
+					<div class="form-box">
+					<form id="search" action="https://screener.fidelity.com/ftgw/etf/snapshot/snapshot.jhtml" method="GET" onsubmit="return onFormSubmit(this)">
+					
+					<input class="symtxt" autocomplete="OFF" onfocus="symbolTextBoxClicked=true" onkeypress="symbolTextBoxClicked=true" id="symbol" name="symbols" type="text" size="3" maxlength="32"><br/>
+					<div class="acResults" id="resultPane"></div>
+	        		<div class="acError" id="errorPane"></div>
+	        		<div id="debug"></div>
+					<span id="domesticoptions">
+					<span class="off-screen"><label for="rRDDom">View this information for the company or symbol</label></span>
+					<select id="rRDDom" class="dd" title="Snapshot" onchange="javascript:this.title=this.options[this.selectedIndex].title;changeAction(this)">
+						<option title="Snapshot" value="https://screener.fidelity.com/ftgw/etf/snapshot/snapshot.jhtml" selected>Snapshot</option>
+						<option title="Detailed Quote" value="https://screener.fidelity.com/ftgw/etf/snapshot/quote.jhtml">Detailed Quote</option>
+						<option title="Performance & Risk" value="https://screener.fidelity.com/ftgw/etf/snapshot/performance.jhtml">Performance & Risk</option>
+						<option title="Portfolio Composition" value="https://screener.fidelity.com/ftgw/etf/snapshot/portfolioComposition.jhtml">Portfolio Composition</option>			
+						<option title="Advanced Chart & Technical Analysis" value="https://screener.fidelity.com/ftgw/etf/gotoCL/snapshot/advancedChart.jhtml">Adv Chart & Technical..</option>
+						<option title="News, Commentary & Events" value="https://screener.fidelity.com/ftgw/etf/snapshot/newsEvents.jhtml">News, Commentary & Events</option>
+						<option title="Compare" value="https://screener.fidelity.com/ftgw/etf/snapshot/compare.jhtml">Compare</option>
+						<option title="Analyst Opinions" value="https://screener.fidelity.com/ftgw/etf/snapshot/analystOpinions.jhtml">Analyst Opinions</option>
+						<option title="Key Statistics" value="https://screener.fidelity.com/ftgw/etf/snapshot/keyStatistics.jhtml">Key Statistics</option>
+						<option title="Distributions & Expenses" value="https://screener.fidelity.com/ftgw/etf/snapshot/distributions.jhtml">Distributions & Expenses</option>		
+						<option title="Ownership" value="https://screener.fidelity.com/ftgw/etf/snapshot/ownership.jhtml">Ownership</option>
+						<option title="SEC Filings" value="https://screener.fidelity.com/ftgw/etf/snapshot/secFilings.jhtml">SEC Filings</option>
+					</select>
+					</span><input id="rRDG" type="submit" value="Go" class="button" />
+					
+					<div class="link"><a href="javascript:openWinTOC('https://quotes.fidelity.com/webxpress/popup_lookup.phtml', 454, 491, 478, 133)">Find Symbol<span class="off-screen">. Opens in new window.</span></a></div>
+
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="author-layout-spacer-left"></div>
+		<div class="toc">
+		<div class="navhead">
+			<h2>ETF / ETP Research &amp; Ideas</h2>
+		</div>
+		<div class="navcontent">
+
+			<ul class="last">
+			    <li><a href="https://screener.fidelity.com/ftgw/etf/evaluator/goto/landing" target="_top" >ETF /    ETP Research</a></li>
+				<li><a href="https://research2.fidelity.com/fidelity/screeners/etf/index.asp?page=landing.asp" target="_top" >Screener</a></li>	
+				<li><a href="https://research2.fidelity.com/fidelity/screeners/etf/heatmap.asp?page=marketMap" target="_top" >Market Tracker</a></li>
+				<li><a href="https://research2.fidelity.com/fidelity/screeners/etf/index.asp?strategytype=expert&page=strategies.asp" target="_top" >Expert Screening Strategies</a><span class="auto-padlock"></span></li>
+				<li><a href="https://research2.fidelity.com/fidelity/commentary/main.asp?page=commentary" target="_top" >Commentary</a></li>
+				<li><a href="https://research2.fidelity.com/fidelity/research/reports/release2/ExploreETFResearchFirms.asp?page=researchFirms" target="_top" >Explore Research Firms</a></li>							
+			</ul>
+			</div>
+		</div>
+		
+		<div class="stock-links-bricklet">
+	
+			<h3>RELATED RESOURCES</h3>
+			<ul>
+				<li><a target="_top" href="https://www.fidelity.com/learning-center/investment-products/etf/overview">Education</a></li>
+				<li><a target="_top" href="https://eresearch.fidelity.com/eresearch/goto/markets_sectors/landing.jhtml">Markets & Sectors</a></li>
+				<li><a target="_top" href="https://fastquote.fidelity.com/ftgw/GetWatchlistFrame.phtml">Watch List </a><span class="auto-padlock-notRetailCustomer"></span></li>				
+			</ul>
+		</div>
+	</div>
+</div>
+<script>
+	var rRDDomSelect = document.getElementById("rRDDom");
+	rRDDomSelect.title = rRDDomSelect.options[rRDDomSelect.selectedIndex].title;
+</script><a href="javascript:void(0)" id="btn-nav-expander" title="Navigation Expander" class="btn-nav-expander"></a></div><div class='main'><div class='header-bar hasLayout'><h3 class='num-results'>Basket Holdings: 379<span class='timestamp'>AS OF --</span></h3><div class='view-selector'><select id='select-switch-view' name='view' class='hidden'><option value='Explore'>Explore Basket Holdings</option><option value='Holdings'>All Basket Holdings</option><option value='Region' selected='selected'>Region/Country</option></select></div><div class='pager' id='pager-bar'></div></div><table class='results-table sortable' cellspacing='0'><thead><tr><th scope='col' class='Symbol '><a class='sortable' href='?symbol=FHLC&amp;view=Region&amp;sortBy=Symbol&amp;sortDir=asc'>Symbol</a></th><th scope='col' class='Company '><a class='sortable' href='?symbol=FHLC&amp;view=Region&amp;sortBy=SecurityName&amp;sortDir=asc'>Company</a></th><th scope='col' class='Geography '><a class='sortable' href='?symbol=FHLC&amp;view=Region&amp;sortBy=Country&amp;sortDir=asc'>Geography</a></th><th scope='col' class='Weight  sorted sorted-desc'><a class='sortable' href='?symbol=FHLC&amp;view=Region&amp;sortBy=Weighting&amp;sortDir=asc'>Weight</a></th></tr></thead><tbody><tr class='highlight'><td class='col-symbol'>JNJ</td><td class='col-undefined'>Johnson & Johnson</td><td class='col-undefined'>United States</td><td class='col-undefined'>7.58</td></tr><tr><td class='col-symbol'>UNH</td><td class='col-undefined'>UnitedHealth Group Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>6.34</td></tr><tr class='highlight'><td class='col-symbol'>PFE</td><td class='col-undefined'>Pfizer Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>4.23</td></tr><tr><td class='col-symbol'>MRK</td><td class='col-undefined'>Merck & Co Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>4.04</td></tr><tr class='highlight'><td class='col-symbol'>ABT</td><td class='col-undefined'>Abbott Laboratories</td><td class='col-undefined'>United States</td><td class='col-undefined'>3.81</td></tr><tr><td class='col-symbol'>ABBV</td><td class='col-undefined'>AbbVie Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>3.67</td></tr><tr class='highlight'><td class='col-symbol'>TMO</td><td class='col-undefined'>Thermo Fisher Scientific Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>3.65</td></tr><tr><td class='col-symbol'>MDT</td><td class='col-undefined'>Medtronic PLC</td><td class='col-undefined'>United States</td><td class='col-undefined'>3.03</td></tr><tr class='highlight'><td class='col-symbol'>DHR</td><td class='col-undefined'>Danaher Corp</td><td class='col-undefined'>United States</td><td class='col-undefined'>2.85</td></tr><tr><td class='col-symbol'>BMY</td><td class='col-undefined'>Bristol-Myers Squibb Company</td><td class='col-undefined'>United States</td><td class='col-undefined'>2.81</td></tr><tr class='highlight'><td class='col-symbol'>AMGN</td><td class='col-undefined'>Amgen Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>2.60</td></tr><tr><td class='col-symbol'>LLY</td><td class='col-undefined'>Eli Lilly and Co</td><td class='col-undefined'>United States</td><td class='col-undefined'>2.50</td></tr><tr class='highlight'><td class='col-symbol'>CVS</td><td class='col-undefined'>CVS Health Corp</td><td class='col-undefined'>United States</td><td class='col-undefined'>1.76</td></tr><tr><td class='col-symbol'>ISRG</td><td class='col-undefined'>Intuitive Surgical Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>1.68</td></tr><tr class='highlight'><td class='col-symbol'>SYK</td><td class='col-undefined'>Stryker Corp</td><td class='col-undefined'>United States</td><td class='col-undefined'>1.57</td></tr><tr><td class='col-symbol'>ANTM</td><td class='col-undefined'>Anthem Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>1.56</td></tr><tr class='highlight'><td class='col-symbol'>CI</td><td class='col-undefined'>Cigna Corp</td><td class='col-undefined'>United States</td><td class='col-undefined'>1.53</td></tr><tr><td class='col-symbol'>ZTS</td><td class='col-undefined'>Zoetis Inc Class A</td><td class='col-undefined'>United States</td><td class='col-undefined'>1.51</td></tr><tr class='highlight'><td class='col-symbol'>GILD</td><td class='col-undefined'>Gilead Sciences Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>1.51</td></tr><tr><td class='col-symbol'>BDX</td><td class='col-undefined'>Becton, Dickinson and Co</td><td class='col-undefined'>United States</td><td class='col-undefined'>1.35</td></tr><tr class='highlight'><td class='col-symbol'>VRTX</td><td class='col-undefined'>Vertex Pharmaceuticals Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>1.17</td></tr><tr><td class='col-symbol'>HUM</td><td class='col-undefined'>Humana Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>1.05</td></tr><tr class='highlight'><td class='col-symbol'>REGN</td><td class='col-undefined'>Regeneron Pharmaceuticals Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>1.04</td></tr><tr><td class='col-symbol'>EW</td><td class='col-undefined'>Edwards Lifesciences Corp</td><td class='col-undefined'>United States</td><td class='col-undefined'>1.03</td></tr><tr class='highlight'><td class='col-symbol'>BSX</td><td class='col-undefined'>Boston Scientific Corp</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.94</td></tr><tr><td class='col-symbol'>ILMN</td><td class='col-undefined'>Illumina Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.94</td></tr><tr class='highlight'><td class='col-symbol'>MRNA</td><td class='col-undefined'>Moderna Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.83</td></tr><tr><td class='col-symbol'>HCA</td><td class='col-undefined'>HCA Healthcare Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.81</td></tr><tr class='highlight'><td class='col-symbol'>BIIB</td><td class='col-undefined'>Biogen Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.78</td></tr><tr><td class='col-symbol'>IDXX</td><td class='col-undefined'>IDEXX Laboratories Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.78</td></tr><tr class='highlight'><td class='col-symbol'>BAX</td><td class='col-undefined'>Baxter International Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.77</td></tr><tr><td class='col-symbol'>VEEV</td><td class='col-undefined'>Veeva Systems Inc Class A</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.74</td></tr><tr class='highlight'><td class='col-symbol'>A</td><td class='col-undefined'>Agilent Technologies Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.72</td></tr><tr><td class='col-symbol'>ALGN</td><td class='col-undefined'>Align Technology Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.72</td></tr><tr class='highlight'><td class='col-symbol'>CNC</td><td class='col-undefined'>Centene Corp</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.71</td></tr><tr><td class='col-symbol'>IQV</td><td class='col-undefined'>IQVIA Holdings Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.64</td></tr><tr class='highlight'><td class='col-symbol'>ZBH</td><td class='col-undefined'>Zimmer Biomet Holdings Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.61</td></tr><tr><td class='col-symbol'>RMD</td><td class='col-undefined'>ResMed Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.60</td></tr><tr class='highlight'><td class='col-symbol'>DXCM</td><td class='col-undefined'>DexCom Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.59</td></tr><tr><td class='col-symbol'>MCK</td><td class='col-undefined'>McKesson Corp</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.58</td></tr><tr class='highlight'><td class='col-symbol'>MTD</td><td class='col-undefined'>Mettler-Toledo International Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.55</td></tr><tr><td class='col-symbol'>ALXN</td><td class='col-undefined'>Alexion Pharmaceuticals Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.54</td></tr><tr class='highlight'><td class='col-symbol'>CERN</td><td class='col-undefined'>Cerner Corp</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.45</td></tr><tr><td class='col-symbol'>TDOC</td><td class='col-undefined'>Teladoc Health Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.45</td></tr><tr class='highlight'><td class='col-symbol'>VTRS</td><td class='col-undefined'>Viatris Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.41</td></tr><tr><td class='col-symbol'>SGEN</td><td class='col-undefined'>Seagen Inc Ordinary Shares</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.41</td></tr><tr class='highlight'><td class='col-symbol'>WST</td><td class='col-undefined'>West Pharmaceutical Services Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.40</td></tr><tr><td class='col-symbol'>LH</td><td class='col-undefined'>Laboratory Corp of America Holdings</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.39</td></tr><tr class='highlight'><td class='col-symbol'>EXAS</td><td class='col-undefined'>Exact Sciences Corp</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.38</td></tr><tr><td class='col-symbol'>COO</td><td class='col-undefined'>The Cooper Companies Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.36</td></tr><tr class='highlight'><td class='col-symbol'>HOLX</td><td class='col-undefined'>Hologic Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.36</td></tr><tr><td class='col-symbol'>TFX</td><td class='col-undefined'>Teleflex Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.35</td></tr><tr class='highlight'><td class='col-symbol'>PODD</td><td class='col-undefined'>Insulet Corp</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.34</td></tr><tr><td class='col-symbol'>DGX</td><td class='col-undefined'>Quest Diagnostics Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.33</td></tr><tr class='highlight'><td class='col-symbol'>STE</td><td class='col-undefined'>Steris PLC</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.33</td></tr><tr><td class='col-symbol'>CAH</td><td class='col-undefined'>Cardinal Health Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.32</td></tr><tr class='highlight'><td class='col-symbol'>VAR</td><td class='col-undefined'>Varian Medical Systems Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.31</td></tr><tr><td class='col-symbol'>ABC</td><td class='col-undefined'>AmerisourceBergen Corp</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.31</td></tr><tr class='highlight'><td class='col-symbol'>INCY</td><td class='col-undefined'>Incyte Corp</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.31</td></tr><tr><td class='col-symbol'>ALNY</td><td class='col-undefined'>Alnylam Pharmaceuticals Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.30</td></tr><tr class='highlight'><td class='col-symbol'>CTLT</td><td class='col-undefined'>Catalent Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.30</td></tr><tr><td class='col-symbol'>PKI</td><td class='col-undefined'>PerkinElmer Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.29</td></tr><tr class='highlight'><td class='col-symbol'>WAT</td><td class='col-undefined'>Waters Corp</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.29</td></tr><tr><td class='col-symbol'>BMRN</td><td class='col-undefined'>Biomarin Pharmaceutical Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.28</td></tr><tr class='highlight'><td class='col-symbol'>AVTR</td><td class='col-undefined'>Avantor Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.28</td></tr><tr><td class='col-symbol'>MASI</td><td class='col-undefined'>Masimo Corp</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.26</td></tr><tr class='highlight'><td class='col-symbol'>HZNP</td><td class='col-undefined'>Horizon Therapeutics PLC</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.25</td></tr><tr><td class='col-symbol'>ABMD</td><td class='col-undefined'>Abiomed Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.24</td></tr><tr class='highlight'><td class='col-symbol'>ELAN</td><td class='col-undefined'>Elanco Animal Health Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.24</td></tr><tr><td class='col-symbol'>MOH</td><td class='col-undefined'>Molina Healthcare Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.24</td></tr><tr class='highlight'><td class='col-symbol'>BIO</td><td class='col-undefined'>Bio-Rad Laboratories Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.24</td></tr><tr><td class='col-symbol'>CRL</td><td class='col-undefined'>Charles River Laboratories International Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.23</td></tr><tr class='highlight'><td class='col-symbol'>TECH</td><td class='col-undefined'>Bio-Techne Corp</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.23</td></tr><tr><td class='col-symbol'></td><td class='col-undefined'>Xav Health Care Dec20 Xcme 20201218</td><td class='col-undefined'></td><td class='col-undefined'>0.23</td></tr><tr class='highlight'><td class='col-symbol'>XRAY</td><td class='col-undefined'>Dentsply Sirona Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.22</td></tr><tr><td class='col-symbol'>NVCR</td><td class='col-undefined'>NovoCure Ltd</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.21</td></tr><tr class='highlight'><td class='col-symbol'>SRPT</td><td class='col-undefined'>Sarepta Therapeutics Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.21</td></tr><tr><td class='col-symbol'>UHS</td><td class='col-undefined'>Universal Health Services Inc Class B</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.20</td></tr><tr class='highlight'><td class='col-symbol'>RGEN</td><td class='col-undefined'>Repligen Corp</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.19</td></tr><tr><td class='col-symbol'>HSIC</td><td class='col-undefined'>Henry Schein Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.18</td></tr><tr class='highlight'><td class='col-symbol'>DVA</td><td class='col-undefined'>DaVita Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.17</td></tr><tr><td class='col-symbol'>NBIX</td><td class='col-undefined'>Neurocrine Biosciences Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.17</td></tr><tr class='highlight'><td class='col-symbol'>NVAX</td><td class='col-undefined'>Novavax Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.16</td></tr><tr><td class='col-symbol'>EHC</td><td class='col-undefined'>Encompass Health Corp</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.16</td></tr><tr class='highlight'><td class='col-symbol'>AMED</td><td class='col-undefined'>Amedisys Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.16</td></tr><tr><td class='col-symbol'>JAZZ</td><td class='col-undefined'>Jazz Pharmaceuticals PLC</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.15</td></tr><tr class='highlight'><td class='col-symbol'>CHE</td><td class='col-undefined'>Chemed Corp</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.15</td></tr><tr><td class='col-symbol'>PEN</td><td class='col-undefined'>Penumbra Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.15</td></tr><tr class='highlight'><td class='col-symbol'>QDEL</td><td class='col-undefined'>Quidel Corp</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.15</td></tr><tr><td class='col-symbol'>PRAH</td><td class='col-undefined'>PRA Health Sciences Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.14</td></tr><tr class='highlight'><td class='col-symbol'>GH</td><td class='col-undefined'>Guardant Health Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.14</td></tr><tr><td class='col-symbol'>MRTX</td><td class='col-undefined'>Mirati Therapeutics Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.13</td></tr><tr class='highlight'><td class='col-symbol'>RARE</td><td class='col-undefined'>Ultragenyx Pharmaceutical Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.13</td></tr><tr><td class='col-symbol'>IONS</td><td class='col-undefined'>Ionis Pharmaceuticals Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.13</td></tr><tr class='highlight'><td class='col-symbol'>ACAD</td><td class='col-undefined'>ACADIA Pharmaceuticals Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.13</td></tr><tr><td class='col-symbol'>IRTC</td><td class='col-undefined'>iRhythm Technologies Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.13</td></tr><tr class='highlight'><td class='col-symbol'>PRGO</td><td class='col-undefined'>Perrigo Co PLC</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.13</td></tr><tr><td class='col-symbol'>CRSP</td><td class='col-undefined'>CRISPR Therapeutics AG</td><td class='col-undefined'>Switzerland</td><td class='col-undefined'>0.13</td></tr><tr class='highlight'><td class='col-symbol'>HRC</td><td class='col-undefined'>Hill-Rom Holdings Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.13</td></tr><tr><td class='col-symbol'>NVTA</td><td class='col-undefined'>Invitae Corp</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.12</td></tr><tr class='highlight'><td class='col-symbol'>ARWR</td><td class='col-undefined'>Arrowhead Pharmaceuticals Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.12</td></tr><tr><td class='col-symbol'>LHCG</td><td class='col-undefined'>LHC Group Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.12</td></tr><tr class='highlight'><td class='col-symbol'>NTRA</td><td class='col-undefined'>Natera Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.12</td></tr><tr><td class='col-symbol'>EXEL</td><td class='col-undefined'>Exelixis Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.12</td></tr><tr class='highlight'><td class='col-symbol'>UTHR</td><td class='col-undefined'>United Therapeutics Corp</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.12</td></tr><tr><td class='col-symbol'></td><td class='col-undefined'>Ss Inst Treas Plus Mm Fund Tru Ss Inst Treas Plus Mm Fund Tru</td><td class='col-undefined'></td><td class='col-undefined'>0.12</td></tr><tr class='highlight'><td class='col-symbol'>HAE</td><td class='col-undefined'>Haemonetics Corp</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.11</td></tr><tr><td class='col-symbol'>BPMC</td><td class='col-undefined'>Blueprint Medicines Corp</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.11</td></tr><tr class='highlight'><td class='col-symbol'>BRKR</td><td class='col-undefined'>Bruker Corp</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.11</td></tr><tr><td class='col-symbol'>XLRN</td><td class='col-undefined'>Acceleron Pharma Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.11</td></tr><tr class='highlight'><td class='col-symbol'>TNDM</td><td class='col-undefined'>Tandem Diabetes Care Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.11</td></tr><tr><td class='col-symbol'>FOLD</td><td class='col-undefined'>Amicus Therapeutics Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.11</td></tr><tr class='highlight'><td class='col-symbol'>NVRO</td><td class='col-undefined'>Nevro Corp</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.10</td></tr><tr><td class='col-symbol'>HQY</td><td class='col-undefined'>HealthEquity Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.10</td></tr><tr class='highlight'><td class='col-symbol'>HALO</td><td class='col-undefined'>Halozyme Therapeutics Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.10</td></tr><tr><td class='col-symbol'>NEO</td><td class='col-undefined'>NeoGenomics Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.10</td></tr><tr class='highlight'><td class='col-symbol'>DNLI</td><td class='col-undefined'>Denali Therapeutics Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.10</td></tr><tr><td class='col-symbol'>NVST</td><td class='col-undefined'>Envista Holdings Corp Ordinary Shares</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.09</td></tr><tr class='highlight'><td class='col-symbol'>GMED</td><td class='col-undefined'>Globus Medical Inc Class A</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.09</td></tr><tr><td class='col-symbol'>INSP</td><td class='col-undefined'>Inspire Medical Systems Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.09</td></tr><tr class='highlight'><td class='col-symbol'>OMCL</td><td class='col-undefined'>Omnicell Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.09</td></tr><tr><td class='col-symbol'>BHVN</td><td class='col-undefined'>Biohaven Pharmaceutical Holding Co Ltd</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.09</td></tr><tr class='highlight'><td class='col-symbol'>TPTX</td><td class='col-undefined'>Turning Point Therapeutics Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.08</td></tr><tr><td class='col-symbol'>IOVA</td><td class='col-undefined'>Iovance Biotherapeutics Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.08</td></tr><tr class='highlight'><td class='col-symbol'>SYNH</td><td class='col-undefined'>Syneos Health Inc A</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.08</td></tr><tr><td class='col-symbol'>IART</td><td class='col-undefined'>Integra Lifesciences Holdings Corp</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.08</td></tr><tr class='highlight'><td class='col-symbol'>NEOG</td><td class='col-undefined'>Neogen Corp</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.08</td></tr><tr><td class='col-symbol'>INSM</td><td class='col-undefined'>Insmed Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.08</td></tr><tr class='highlight'><td class='col-symbol'>CHNG</td><td class='col-undefined'>Change Healthcare Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.08</td></tr><tr><td class='col-symbol'>SAGE</td><td class='col-undefined'>Sage Therapeutics Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.08</td></tr><tr class='highlight'><td class='col-symbol'>ICUI</td><td class='col-undefined'>ICU Medical Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.07</td></tr><tr><td class='col-symbol'>ENSG</td><td class='col-undefined'>Ensign Group Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.07</td></tr><tr class='highlight'><td class='col-symbol'>RETA</td><td class='col-undefined'>Reata Pharmaceuticals Inc A</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.07</td></tr><tr><td class='col-symbol'>ARNA</td><td class='col-undefined'>Arena Pharmaceuticals Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.07</td></tr><tr class='highlight'><td class='col-symbol'>ADPT</td><td class='col-undefined'>Adaptive Biotechnologies Corp</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.07</td></tr><tr><td class='col-symbol'>EBS</td><td class='col-undefined'>Emergent BioSolutions Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.07</td></tr><tr class='highlight'><td class='col-symbol'>FATE</td><td class='col-undefined'>Fate Therapeutics Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.07</td></tr><tr><td class='col-symbol'>MEDP</td><td class='col-undefined'>Medpace Holdings Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.07</td></tr><tr class='highlight'><td class='col-symbol'>PTCT</td><td class='col-undefined'>PTC Therapeutics Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.07</td></tr><tr><td class='col-symbol'>ACHC</td><td class='col-undefined'>Acadia Healthcare Co Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.07</td></tr><tr class='highlight'><td class='col-symbol'>FGEN</td><td class='col-undefined'>FibroGen Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.07</td></tr><tr><td class='col-symbol'>TWST</td><td class='col-undefined'>Twist Bioscience Corp</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.06</td></tr><tr class='highlight'><td class='col-symbol'>VCYT</td><td class='col-undefined'>Veracyte Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.06</td></tr><tr><td class='col-symbol'>AMN</td><td class='col-undefined'>AMN Healthcare Services Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.06</td></tr><tr class='highlight'><td class='col-symbol'>KOD</td><td class='col-undefined'>Kodiak Sciences Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.06</td></tr><tr><td class='col-symbol'>ALKS</td><td class='col-undefined'>Alkermes PLC</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.06</td></tr><tr class='highlight'><td class='col-symbol'>NKTR</td><td class='col-undefined'>Nektar Therapeutics</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.06</td></tr><tr><td class='col-symbol'>CNMD</td><td class='col-undefined'>Conmed Corp</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.06</td></tr><tr class='highlight'><td class='col-symbol'>AGIO</td><td class='col-undefined'>Agios Pharmaceuticals Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.06</td></tr><tr><td class='col-symbol'>TGTX</td><td class='col-undefined'>TG Therapeutics Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.06</td></tr><tr class='highlight'><td class='col-symbol'>BLUE</td><td class='col-undefined'>bluebird bio Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.06</td></tr><tr><td class='col-symbol'>APLS</td><td class='col-undefined'>Apellis Pharmaceuticals Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.06</td></tr><tr class='highlight'><td class='col-symbol'>THC</td><td class='col-undefined'>Tenet Healthcare Corp</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.06</td></tr><tr><td class='col-symbol'>HMSY</td><td class='col-undefined'>HMS Holdings Corp</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.05</td></tr><tr class='highlight'><td class='col-symbol'>CVET</td><td class='col-undefined'>Covetrus Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.05</td></tr><tr><td class='col-symbol'>MMSI</td><td class='col-undefined'>Merit Medical Systems Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.05</td></tr><tr class='highlight'><td class='col-symbol'>GKOS</td><td class='col-undefined'>Glaukos Corp</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.05</td></tr><tr><td class='col-symbol'>ALLK</td><td class='col-undefined'>Allakos Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.05</td></tr><tr class='highlight'><td class='col-symbol'>PACB</td><td class='col-undefined'>Pacific Biosciences of California Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.05</td></tr><tr><td class='col-symbol'>SEM</td><td class='col-undefined'>Select Medical Holdings Corp</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.05</td></tr><tr class='highlight'><td class='col-symbol'>PINC</td><td class='col-undefined'>Premier Inc Class A</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.05</td></tr><tr><td class='col-symbol'>LIVN</td><td class='col-undefined'>LivaNova PLC</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.05</td></tr><tr class='highlight'><td class='col-symbol'>SWAV</td><td class='col-undefined'>ShockWave Medical Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.05</td></tr><tr><td class='col-symbol'>GBT</td><td class='col-undefined'>Global Blood Therapeutics Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.05</td></tr><tr class='highlight'><td class='col-symbol'>CORT</td><td class='col-undefined'>Corcept Therapeutics Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.05</td></tr><tr><td class='col-symbol'>PCRX</td><td class='col-undefined'>Pacira BioSciences Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.05</td></tr><tr class='highlight'><td class='col-symbol'>STAA</td><td class='col-undefined'>Staar Surgical Co</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.05</td></tr><tr><td class='col-symbol'>PDCO</td><td class='col-undefined'>Patterson Companies Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.05</td></tr><tr class='highlight'><td class='col-symbol'>NUVA</td><td class='col-undefined'>NuVasive Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.05</td></tr><tr><td class='col-symbol'>CCXI</td><td class='col-undefined'>ChemoCentryx Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.05</td></tr><tr class='highlight'><td class='col-symbol'>CDNA</td><td class='col-undefined'>CareDx Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.05</td></tr><tr><td class='col-symbol'>ITGR</td><td class='col-undefined'>Integer Holdings Corp</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.05</td></tr><tr class='highlight'><td class='col-symbol'>DCPH</td><td class='col-undefined'>Deciphera Pharmaceuticals Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.05</td></tr><tr><td class='col-symbol'>CMD</td><td class='col-undefined'>Cantel Medical Corp</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.04</td></tr><tr class='highlight'><td class='col-symbol'>MDRX</td><td class='col-undefined'>Allscripts Healthcare Solutions Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.04</td></tr><tr><td class='col-symbol'>XNCR</td><td class='col-undefined'>Xencor Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.04</td></tr><tr class='highlight'><td class='col-symbol'>NSTG</td><td class='col-undefined'>NanoString Technologies Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.04</td></tr><tr><td class='col-symbol'>AVNS</td><td class='col-undefined'>Avanos Medical Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.04</td></tr><tr class='highlight'><td class='col-symbol'>RCM</td><td class='col-undefined'>R1 RCM Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.04</td></tr><tr><td class='col-symbol'>OPK</td><td class='col-undefined'>OPKO Health Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.04</td></tr><tr class='highlight'><td class='col-symbol'>AXSM</td><td class='col-undefined'>Axsome Therapeutics Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.04</td></tr><tr><td class='col-symbol'>INO</td><td class='col-undefined'>Inovio Pharmaceuticals Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.04</td></tr><tr class='highlight'><td class='col-symbol'>ATRC</td><td class='col-undefined'>AtriCure Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.04</td></tr><tr><td class='col-symbol'>BEAT</td><td class='col-undefined'>BioTelemetry Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.04</td></tr><tr class='highlight'><td class='col-symbol'>EDIT</td><td class='col-undefined'>Editas Medicine Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.04</td></tr><tr><td class='col-symbol'>OMI</td><td class='col-undefined'>Owens & Minor Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.04</td></tr><tr class='highlight'><td class='col-symbol'>CYRX</td><td class='col-undefined'>CryoPort Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.04</td></tr><tr><td class='col-symbol'>ZYME</td><td class='col-undefined'>Zymeworks Inc Registered Shs When Issued</td><td class='col-undefined'>Canada</td><td class='col-undefined'>0.04</td></tr><tr class='highlight'><td class='col-symbol'>KURA</td><td class='col-undefined'>Kura Oncology Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.04</td></tr><tr><td class='col-symbol'>PBH</td><td class='col-undefined'>Prestige Consumer Healthcare Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.04</td></tr><tr class='highlight'><td class='col-symbol'>MGLN</td><td class='col-undefined'>Magellan Health Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.04</td></tr><tr><td class='col-symbol'>NTLA</td><td class='col-undefined'>Intellia Therapeutics Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.04</td></tr><tr class='highlight'><td class='col-symbol'>ARCT</td><td class='col-undefined'>Arcturus Therapeutics Holdings Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.03</td></tr><tr><td class='col-symbol'>ALLO</td><td class='col-undefined'>Allogene Therapeutics Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.03</td></tr><tr class='highlight'><td class='col-symbol'>IRWD</td><td class='col-undefined'>Ironwood Pharmaceuticals Inc Class A</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.03</td></tr><tr><td class='col-symbol'>MD</td><td class='col-undefined'>Mednax Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.03</td></tr><tr class='highlight'><td class='col-symbol'>ITCI</td><td class='col-undefined'>Intra-Cellular Therapies Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.03</td></tr><tr><td class='col-symbol'>PRSC</td><td class='col-undefined'>The Providence Service Corp</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.03</td></tr><tr class='highlight'><td class='col-symbol'>QURE</td><td class='col-undefined'>uniQure NV</td><td class='col-undefined'>Netherlands</td><td class='col-undefined'>0.03</td></tr><tr><td class='col-symbol'>IMVT</td><td class='col-undefined'>Immunovant Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.03</td></tr><tr class='highlight'><td class='col-symbol'>DRNA</td><td class='col-undefined'>Dicerna Pharmaceuticals Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.03</td></tr><tr><td class='col-symbol'>ATRA</td><td class='col-undefined'>Atara Biotherapeutics Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.03</td></tr><tr class='highlight'><td class='col-symbol'>SILK</td><td class='col-undefined'>Silk Road Medical Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.03</td></tr><tr><td class='col-symbol'>HRTX</td><td class='col-undefined'>Heron Therapeutics Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.03</td></tr><tr class='highlight'><td class='col-symbol'>ADUS</td><td class='col-undefined'>Addus HomeCare Corp</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.03</td></tr><tr><td class='col-symbol'>LGND</td><td class='col-undefined'>Ligand Pharmaceuticals Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.03</td></tr><tr class='highlight'><td class='col-symbol'>PNTG</td><td class='col-undefined'>Pennant Group Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.03</td></tr><tr><td class='col-symbol'>INOV</td><td class='col-undefined'>Inovalon Holdings Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.03</td></tr><tr class='highlight'><td class='col-symbol'>USPH</td><td class='col-undefined'>US Physical Therapy Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.03</td></tr><tr><td class='col-symbol'>CSII</td><td class='col-undefined'>Cardiovascular Systems Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.03</td></tr><tr class='highlight'><td class='col-symbol'>MRSN</td><td class='col-undefined'>Mersana Therapeutics Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.03</td></tr><tr><td class='col-symbol'>PHR</td><td class='col-undefined'>Phreesia Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.03</td></tr><tr class='highlight'><td class='col-symbol'>MYGN</td><td class='col-undefined'>Myriad Genetics Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.03</td></tr><tr><td class='col-symbol'>MLAB</td><td class='col-undefined'>Mesa Laboratories Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.03</td></tr><tr class='highlight'><td class='col-symbol'></td><td class='col-undefined'>Us Dollar</td><td class='col-undefined'></td><td class='col-undefined'>0.02</td></tr><tr><td class='col-symbol'>RDNT</td><td class='col-undefined'>RadNet Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.02</td></tr><tr class='highlight'><td class='col-symbol'>CRY</td><td class='col-undefined'>Cryolife Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.02</td></tr><tr><td class='col-symbol'>ESPR</td><td class='col-undefined'>Esperion Therapeutics Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.02</td></tr><tr class='highlight'><td class='col-symbol'>SWTX</td><td class='col-undefined'>SpringWorks Therapeutics Inc Ordinary Shares</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.02</td></tr><tr><td class='col-symbol'>RVNC</td><td class='col-undefined'>Revance Therapeutics Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.02</td></tr><tr class='highlight'><td class='col-symbol'>SGMO</td><td class='col-undefined'>Sangamo Therapeutics Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.02</td></tr><tr><td class='col-symbol'>KRTX</td><td class='col-undefined'>Karuna Therapeutics Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.02</td></tr><tr class='highlight'><td class='col-symbol'>MDGL</td><td class='col-undefined'>Madrigal Pharmaceuticals Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.02</td></tr><tr><td class='col-symbol'>REPL</td><td class='col-undefined'>Replimune Group Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.02</td></tr><tr class='highlight'><td class='col-symbol'>ENDP</td><td class='col-undefined'>Endo International PLC</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.02</td></tr><tr><td class='col-symbol'>CERS</td><td class='col-undefined'>Cerus Corp</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.02</td></tr><tr class='highlight'><td class='col-symbol'>SUPN</td><td class='col-undefined'>Supernus Pharmaceuticals Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.02</td></tr><tr><td class='col-symbol'>HSKA</td><td class='col-undefined'>Heska Corp</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.02</td></tr><tr class='highlight'><td class='col-symbol'>ZGNX</td><td class='col-undefined'>Zogenix Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.02</td></tr><tr><td class='col-symbol'>EVH</td><td class='col-undefined'>Evolent Health Inc A</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.02</td></tr><tr class='highlight'><td class='col-symbol'>VCRA</td><td class='col-undefined'>Vocera Communications Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.02</td></tr><tr><td class='col-symbol'>RGNX</td><td class='col-undefined'>Regenxbio Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.02</td></tr><tr class='highlight'><td class='col-symbol'>MGNX</td><td class='col-undefined'>Macrogenics Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.02</td></tr><tr><td class='col-symbol'>SRNE</td><td class='col-undefined'>Sorrento Therapeutics Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.02</td></tr><tr class='highlight'><td class='col-symbol'>VCEL</td><td class='col-undefined'>Vericel Corp</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.02</td></tr><tr><td class='col-symbol'>SRRK</td><td class='col-undefined'>Scholar Rock Holding Corp</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.02</td></tr><tr class='highlight'><td class='col-symbol'>CHRS</td><td class='col-undefined'>Coherus BioSciences Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.02</td></tr><tr><td class='col-symbol'>CDXS</td><td class='col-undefined'>Codexis Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.02</td></tr><tr class='highlight'><td class='col-symbol'>LMNX</td><td class='col-undefined'>Luminex Corp</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.02</td></tr><tr><td class='col-symbol'>RCUS</td><td class='col-undefined'>Arcus Biosciences Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.02</td></tr><tr class='highlight'><td class='col-symbol'>CYTK</td><td class='col-undefined'>Cytokinetics Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.02</td></tr><tr><td class='col-symbol'>YMAB</td><td class='col-undefined'>Y-mAbs Therapeutics Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.02</td></tr><tr class='highlight'><td class='col-symbol'>EPZM</td><td class='col-undefined'>Epizyme Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.02</td></tr><tr><td class='col-symbol'>TVTX</td><td class='col-undefined'>Travere Therapeutics Inc Ordinary Shares</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.02</td></tr><tr class='highlight'><td class='col-symbol'>AXNX</td><td class='col-undefined'>Axonics Modulation Technologies Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.02</td></tr><tr><td class='col-symbol'>IMGN</td><td class='col-undefined'>Immunogen Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.02</td></tr><tr class='highlight'><td class='col-symbol'>RCKT</td><td class='col-undefined'>Rocket Pharmaceuticals Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.02</td></tr><tr><td class='col-symbol'>NXGN</td><td class='col-undefined'>NextGen Healthcare Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.02</td></tr><tr class='highlight'><td class='col-symbol'>ICPT</td><td class='col-undefined'>Intercept Pharmaceuticals Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.02</td></tr><tr><td class='col-symbol'>TBIO</td><td class='col-undefined'>Translate Bio Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.02</td></tr><tr class='highlight'><td class='col-symbol'>CRVL</td><td class='col-undefined'>CorVel Corp</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.02</td></tr><tr><td class='col-symbol'>ATRI</td><td class='col-undefined'>Atrion Corp</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.02</td></tr><tr class='highlight'><td class='col-symbol'>EIDX</td><td class='col-undefined'>Eidos Therapeutics Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.02</td></tr><tr><td class='col-symbol'>BCRX</td><td class='col-undefined'>BioCryst Pharmaceuticals Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.02</td></tr><tr class='highlight'><td class='col-symbol'>SDGR</td><td class='col-undefined'>Schrodinger Inc Ordinary Shares</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.02</td></tr><tr><td class='col-symbol'>SLP</td><td class='col-undefined'>Simulations Plus Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.02</td></tr><tr class='highlight'><td class='col-symbol'>ADVM</td><td class='col-undefined'>Adverum Biotechnologies Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.02</td></tr><tr><td class='col-symbol'>KPTI</td><td class='col-undefined'>Karyopharm Therapeutics Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.02</td></tr><tr class='highlight'><td class='col-symbol'>MYOV</td><td class='col-undefined'>Myovant Sciences Ltd</td><td class='col-undefined'>United Kingdom</td><td class='col-undefined'>0.02</td></tr><tr><td class='col-symbol'>HNGR</td><td class='col-undefined'>Hanger Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.02</td></tr><tr class='highlight'><td class='col-symbol'>QTRX</td><td class='col-undefined'>Quanterix Corp</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.02</td></tr><tr><td class='col-symbol'>VIVO</td><td class='col-undefined'>Meridian Bioscience Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.02</td></tr><tr class='highlight'><td class='col-symbol'>GNMK</td><td class='col-undefined'>GenMark Diagnostics Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.02</td></tr><tr><td class='col-symbol'>OSUR</td><td class='col-undefined'>OraSure Technologies Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.02</td></tr><tr class='highlight'><td class='col-symbol'>ONEM</td><td class='col-undefined'>1Life Healthcare Inc Ordinary Shares</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.02</td></tr><tr><td class='col-symbol'>TCMD</td><td class='col-undefined'>Tactile Systems Technology Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.02</td></tr><tr class='highlight'><td class='col-symbol'>LNTH</td><td class='col-undefined'>Lantheus Holdings Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.02</td></tr><tr><td class='col-symbol'></td><td class='col-undefined'>E-Mini Russ 2000 Dec20 Xcme 20201218</td><td class='col-undefined'></td><td class='col-undefined'>0.02</td></tr><tr class='highlight'><td class='col-symbol'>SDC</td><td class='col-undefined'>SmileDirectClub Inc Ordinary Shares - Class A</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.01</td></tr><tr><td class='col-symbol'>NHC</td><td class='col-undefined'>National Healthcare Corp</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.01</td></tr><tr class='highlight'><td class='col-symbol'>ATNX</td><td class='col-undefined'>Athenex Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.01</td></tr><tr><td class='col-symbol'>RYTM</td><td class='col-undefined'>Rhythm Pharmaceuticals Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.01</td></tr><tr class='highlight'><td class='col-symbol'>BKD</td><td class='col-undefined'>Brookdale Senior Living Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.01</td></tr><tr><td class='col-symbol'>TRHC</td><td class='col-undefined'>Tabula Rasa HealthCare Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.01</td></tr><tr class='highlight'><td class='col-symbol'>RDUS</td><td class='col-undefined'>Radius Health Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.01</td></tr><tr><td class='col-symbol'>CYH</td><td class='col-undefined'>Community Health Systems Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.01</td></tr><tr class='highlight'><td class='col-symbol'>TBPH</td><td class='col-undefined'>Theravance Biopharma Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.01</td></tr><tr><td class='col-symbol'>CRTX</td><td class='col-undefined'>Cortexyme Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.01</td></tr><tr class='highlight'><td class='col-symbol'>NTUS</td><td class='col-undefined'>Natus Medical Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.01</td></tr><tr><td class='col-symbol'>RVMD</td><td class='col-undefined'>Revolution Medicines Inc Ordinary Shares</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.01</td></tr><tr class='highlight'><td class='col-symbol'>NRC</td><td class='col-undefined'>National Research Corp Class A</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.01</td></tr><tr><td class='col-symbol'>KRYS</td><td class='col-undefined'>Krystal Biotech Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.01</td></tr><tr class='highlight'><td class='col-symbol'>OFIX</td><td class='col-undefined'>Orthofix Medical Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.01</td></tr><tr><td class='col-symbol'>ENTA</td><td class='col-undefined'>Enanta Pharmaceuticals Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.01</td></tr><tr class='highlight'><td class='col-symbol'>LMAT</td><td class='col-undefined'>LeMaitre Vascular Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.01</td></tr><tr><td class='col-symbol'>INVA</td><td class='col-undefined'>Innoviva Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.01</td></tr><tr class='highlight'><td class='col-symbol'>AMPH</td><td class='col-undefined'>Amphastar Pharmaceuticals Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.01</td></tr><tr><td class='col-symbol'>INGN</td><td class='col-undefined'>Inogen Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.01</td></tr><tr class='highlight'><td class='col-symbol'>CNST</td><td class='col-undefined'>Constellation Pharmaceuticals Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.01</td></tr><tr><td class='col-symbol'>VNDA</td><td class='col-undefined'>Vanda Pharmaceuticals Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.01</td></tr><tr class='highlight'><td class='col-symbol'>SPPI</td><td class='col-undefined'>Spectrum Pharmaceuticals Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.01</td></tr><tr><td class='col-symbol'>CARA</td><td class='col-undefined'>Cara Therapeutics Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.01</td></tr><tr class='highlight'><td class='col-symbol'>VREX</td><td class='col-undefined'>Varex Imaging Corp</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.01</td></tr><tr><td class='col-symbol'>BTAI</td><td class='col-undefined'>BioXcel Therapeutics Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.01</td></tr><tr class='highlight'><td class='col-symbol'>OMER</td><td class='col-undefined'>Omeros Corp</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.01</td></tr><tr><td class='col-symbol'>SIBN</td><td class='col-undefined'>SI-BONE Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.01</td></tr><tr class='highlight'><td class='col-symbol'>TVTY</td><td class='col-undefined'>Tivity Health Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.01</td></tr><tr><td class='col-symbol'>ANAB</td><td class='col-undefined'>AnaptysBio Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.01</td></tr><tr class='highlight'><td class='col-symbol'>BEAM</td><td class='col-undefined'>Beam Therapeutics Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.01</td></tr><tr><td class='col-symbol'>PGNY</td><td class='col-undefined'>Progyny Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.01</td></tr><tr class='highlight'><td class='col-symbol'>ZIOP</td><td class='col-undefined'>ZIOPHARM Oncology Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.01</td></tr><tr><td class='col-symbol'>XENT</td><td class='col-undefined'>Intersect ENT Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.01</td></tr><tr class='highlight'><td class='col-symbol'>PETQ</td><td class='col-undefined'>PetIQ Inc Class A</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.01</td></tr><tr><td class='col-symbol'>PGEN</td><td class='col-undefined'>Precigen Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.01</td></tr><tr class='highlight'><td class='col-symbol'>PRVB</td><td class='col-undefined'>Provention Bio Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.01</td></tr><tr><td class='col-symbol'>GERN</td><td class='col-undefined'>Geron Corp</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.01</td></tr><tr class='highlight'><td class='col-symbol'>ALEC</td><td class='col-undefined'>Alector Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.01</td></tr><tr><td class='col-symbol'>ANIK</td><td class='col-undefined'>Anika Therapeutics Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.01</td></tr><tr class='highlight'><td class='col-symbol'>GTS</td><td class='col-undefined'>Triple-S Management Corp B</td><td class='col-undefined'>Puerto Rico</td><td class='col-undefined'>0.01</td></tr><tr><td class='col-symbol'>COLL</td><td class='col-undefined'>Collegium Pharmaceutical Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.01</td></tr><tr class='highlight'><td class='col-symbol'>OPCH</td><td class='col-undefined'>Option Care Health Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.01</td></tr><tr><td class='col-symbol'>KIDS</td><td class='col-undefined'>OrthoPediatrics Corp</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.01</td></tr><tr class='highlight'><td class='col-symbol'>STOK</td><td class='col-undefined'>Stoke Therapeutics Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.01</td></tr><tr><td class='col-symbol'>EGRX</td><td class='col-undefined'>Eagle Pharmaceuticals Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.01</td></tr><tr class='highlight'><td class='col-symbol'>SGRY</td><td class='col-undefined'>Surgery Partners Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.01</td></tr><tr><td class='col-symbol'>CSTL</td><td class='col-undefined'>Castle Biosciences Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.01</td></tr><tr class='highlight'><td class='col-symbol'>QTNT</td><td class='col-undefined'>Quotient Ltd</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.01</td></tr><tr><td class='col-symbol'>HCAT</td><td class='col-undefined'>Health Catalyst Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.01</td></tr><tr class='highlight'><td class='col-symbol'>RIGL</td><td class='col-undefined'>Rigel Pharmaceuticals Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.01</td></tr><tr><td class='col-symbol'>AMEH</td><td class='col-undefined'>Apollo Medical Holdings Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.01</td></tr><tr class='highlight'><td class='col-symbol'>KDMN</td><td class='col-undefined'>Kadmon Holdings Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.01</td></tr><tr><td class='col-symbol'>ANGO</td><td class='col-undefined'>AngioDynamics Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.01</td></tr><tr class='highlight'><td class='col-symbol'>BSTC</td><td class='col-undefined'>BioSpecifics Technologies Corp</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.01</td></tr><tr><td class='col-symbol'>GTHX</td><td class='col-undefined'>G1 Therapeutics Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.01</td></tr><tr class='highlight'><td class='col-symbol'>HSTM</td><td class='col-undefined'>HealthStream Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.01</td></tr><tr><td class='col-symbol'>SRDX</td><td class='col-undefined'>Surmodics Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.01</td></tr><tr class='highlight'><td class='col-symbol'>AXGN</td><td class='col-undefined'>Axogen Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.01</td></tr><tr><td class='col-symbol'>AERI</td><td class='col-undefined'>Aerie Pharmaceuticals Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.01</td></tr><tr class='highlight'><td class='col-symbol'>DVAX</td><td class='col-undefined'>Dynavax Technologies Corp</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.01</td></tr><tr><td class='col-symbol'>IGMS</td><td class='col-undefined'>IGM Biosciences Inc Ordinary Shares</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.01</td></tr><tr class='highlight'><td class='col-symbol'>ATRS</td><td class='col-undefined'>Antares Pharma Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.01</td></tr><tr><td class='col-symbol'>ARVN</td><td class='col-undefined'>Arvinas Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.01</td></tr><tr class='highlight'><td class='col-symbol'>AGEN</td><td class='col-undefined'>Agenus Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.01</td></tr><tr><td class='col-symbol'>GOSS</td><td class='col-undefined'>Gossamer Bio Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.01</td></tr><tr class='highlight'><td class='col-symbol'>FLXN</td><td class='col-undefined'>Flexion Therapeutics Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.01</td></tr><tr><td class='col-symbol'>DTIL</td><td class='col-undefined'>Precision BioSciences Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.01</td></tr><tr class='highlight'><td class='col-symbol'>CVM</td><td class='col-undefined'>CEL-SCI Corp</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.01</td></tr><tr><td class='col-symbol'>AKBA</td><td class='col-undefined'>Akebia Therapeutics Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.01</td></tr><tr class='highlight'><td class='col-symbol'>KNSA</td><td class='col-undefined'>Kiniksa Pharmaceuticals Ltd Class A</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.01</td></tr><tr><td class='col-symbol'>AKRO</td><td class='col-undefined'>Akero Therapeutics Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.01</td></tr><tr class='highlight'><td class='col-symbol'>VKTX</td><td class='col-undefined'>Viking Therapeutics Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.01</td></tr><tr><td class='col-symbol'>RLMD</td><td class='col-undefined'>Relmada Therapeutics Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.01</td></tr><tr class='highlight'><td class='col-symbol'>TLRY</td><td class='col-undefined'>Tilray Inc</td><td class='col-undefined'>Canada</td><td class='col-undefined'>0.01</td></tr><tr><td class='col-symbol'>CLVS</td><td class='col-undefined'>Clovis Oncology Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.01</td></tr><tr class='highlight'><td class='col-symbol'>BCEL</td><td class='col-undefined'>Atreca Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.01</td></tr><tr><td class='col-symbol'>CPSI</td><td class='col-undefined'>Computer Programs and Systems Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.01</td></tr><tr class='highlight'><td class='col-symbol'>VRAY</td><td class='col-undefined'>ViewRay Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.01</td></tr><tr><td class='col-symbol'>CPRX</td><td class='col-undefined'>Catalyst Pharmaceuticals Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.01</td></tr><tr class='highlight'><td class='col-symbol'>PAHC</td><td class='col-undefined'>Phibro Animal Health Corp Class A</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.01</td></tr><tr><td class='col-symbol'>AVRO</td><td class='col-undefined'>Avrobio Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.01</td></tr><tr class='highlight'><td class='col-symbol'>PBYI</td><td class='col-undefined'>Puma Biotechnology Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.01</td></tr><tr><td class='col-symbol'>AMRX</td><td class='col-undefined'>Amneal Pharmaceuticals Inc Ordinary Shares - Class A</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.01</td></tr><tr class='highlight'><td class='col-symbol'>SIGA</td><td class='col-undefined'>SIGA Technologies Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.01</td></tr><tr><td class='col-symbol'>DRRX</td><td class='col-undefined'>Durect Corp</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.01</td></tr><tr class='highlight'><td class='col-symbol'>ARDX</td><td class='col-undefined'>Ardelyx Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.01</td></tr><tr><td class='col-symbol'>ATHX</td><td class='col-undefined'>Athersys Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.01</td></tr><tr class='highlight'><td class='col-symbol'>VAPO</td><td class='col-undefined'>Vapotherm Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.01</td></tr><tr><td class='col-symbol'>NLTX</td><td class='col-undefined'>Neoleukin Therapeutics Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.01</td></tr><tr class='highlight'><td class='col-symbol'>OTRK</td><td class='col-undefined'>Ontrak Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.01</td></tr><tr><td class='col-symbol'>XENE</td><td class='col-undefined'>Xenon Pharmaceuticals Inc</td><td class='col-undefined'>Canada</td><td class='col-undefined'>0.01</td></tr><tr class='highlight'><td class='col-symbol'>TXMD</td><td class='col-undefined'>TherapeuticsMD Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.01</td></tr><tr><td class='col-symbol'>ARQT</td><td class='col-undefined'>Arcutis Biotherapeutics Inc Ordinary Shares</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.01</td></tr><tr class='highlight'><td class='col-symbol'>PHAT</td><td class='col-undefined'>Phathom Pharmaceuticals Inc Ordinary shares</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.01</td></tr><tr><td class='col-symbol'>BDSI</td><td class='col-undefined'>BioDelivery Sciences International Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.01</td></tr><tr class='highlight'><td class='col-symbol'>CTMX</td><td class='col-undefined'>CytomX Therapeutics Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.01</td></tr><tr><td class='col-symbol'>APLT</td><td class='col-undefined'>Applied Therapeutics Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.01</td></tr><tr class='highlight'><td class='col-symbol'>BDTX</td><td class='col-undefined'>Black Diamond Therapeutics Inc Ordinary Shares</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.01</td></tr><tr><td class='col-symbol'>CUE</td><td class='col-undefined'>Cue Biopharma Inc Ordinary Shares</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.01</td></tr><tr class='highlight'><td class='col-symbol'>PRTA</td><td class='col-undefined'>Prothena Corp PLC</td><td class='col-undefined'>Ireland</td><td class='col-undefined'>0.01</td></tr><tr><td class='col-symbol'>CODX</td><td class='col-undefined'>Co-Diagnostics Inc Registered Shs</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.01</td></tr><tr class='highlight'><td class='col-symbol'>PASG</td><td class='col-undefined'>Passage Bio Inc Ordinary Shares</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.01</td></tr><tr><td class='col-symbol'>ODT</td><td class='col-undefined'>Odonate Therapeutics Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.01</td></tr><tr class='highlight'><td class='col-symbol'>CALA</td><td class='col-undefined'>Calithera Biosciences Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.01</td></tr><tr><td class='col-symbol'>ANIP</td><td class='col-undefined'>ANI Pharmaceuticals Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.01</td></tr><tr class='highlight'><td class='col-symbol'>MRUS</td><td class='col-undefined'>Merus NV</td><td class='col-undefined'>Netherlands</td><td class='col-undefined'>0.01</td></tr><tr><td class='col-symbol'>PDLI</td><td class='col-undefined'>PDL BioPharma Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.01</td></tr><tr class='highlight'><td class='col-symbol'>XBIT</td><td class='col-undefined'>XBiotech Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.01</td></tr><tr><td class='col-symbol'>WVE</td><td class='col-undefined'>WAVE Life Sciences Ltd</td><td class='col-undefined'>Singapore</td><td class='col-undefined'>0.01</td></tr><tr class='highlight'><td class='col-symbol'>ZYXI</td><td class='col-undefined'>Zynex Inc</td><td class='col-undefined'>United States</td><td class='col-undefined'>0.01</td></tr></tbody></table></div><div class='disclaimer disclaimer-Region'><p>&dagger;Part or all of this cash position may represent cash-in-lieu of marketable securities and not actual cash.<a href="javascript:openWin('https://www.fidelity.com/webcontent/ap010098-etf-content/19.11.0/help/research/learn_er_glossary_1.shtml#cashinlieumarketablesecurities')">Click here for more information.</a></p><div id='holdings-disclaimer'><p class='strong'>Top <a id="basketGlossaryLink" href="javascript:void(0)">basket</a> holdings are as of the date indicated and may not be representative of the fund's current or future investments.</p></div></div><script language="javascript" type="text/javascript">
+
+var tradeUrl = 'https://oltx.fidelity.com/ftgw/fbc/oftrade/snippet/quickTradeStandAlone';
+
+window.onload = function(){
+
+	$(document).ready(function() {
+		
+		var featureToggle = 'on';
+		
+	    var isBrowserCompatible = false;
+	    
+	    var queryString='login=yes';
+		var loggedIn = "no";
+		if (queryString != null && queryString != undefined) {
+			
+			if (queryString != "") {
+				var querySplit = queryString.split("=");
+				
+				if (querySplit.length > 1) {
+					if (querySplit[0] == 'login') {
+						loggedIn = querySplit[1];
+					}
+				}
+			}
+		}
+		
+		// this is using the comment based html markup on next gen that sets the html class based on which version
+		// of IE the user's current browser is. lt-ie10 stands for less than IE10. So this is a good check for IE9 and older.
+		var ieVersion = getInternetExplorerVersion();
+
+		if (ieVersion == -1 || ieVersion >= 10) {
+			isBrowserCompatible = true;
+		}
+		else
+		{
+		    isBrowserCompatible = false;
+		}
+
+		$('body').prepend
+		(
+			'<div class="docked-top-container" style="display:none;">'
+			+	'<div class="docked-trade-ticket" id="dockedTicketContainer" role="dialog" aria-label="docked-trade-ticket"></div>'
+			+	'<div id="dockedTicketBrowserCompatability" style="display:none;">' + isBrowserCompatible + '</div>'
+			+	'<div id="dockedTicketEnabledEntitlement"  style="display:none;">true</div>'
+			+	'<div id="dockedTicketPreference"  style="display:none;">true</div>'
+			+	'<div id="dockedTicketLoggedInState"  style="display:none;">' + loggedIn + '</div>'
+			+	'<div id="ticketBootstrapped"  style="display:none;">true</div>'
+			+   '<div id="featureToggle"  style="display:none;">' + featureToggle + '</div>'
+			+   '<div class="base-popup base-modal--container base-modal--container-large terms-of-use-modal trade-ticket-modal"></div>'
+			+   '<div class="base-popup base-modal--container base-modal--container-large extended-hours-trading-modal trade-ticket-modal"></div>'
+			+   '<div class="base-popup base-modal--container base-modal--container-large select-a-fund-i-own-modal trade-ticket-modal" role="dialog" aria-labelledby="select-a-fund-i-own--header"></div>'
+			+   '<div class="base-popup base-modal--container base-modal--container-large additional-important-information-modal trade-ticket-modal" role="dialog" aria-labelledby="additional-important-information--header"></div>'
+			+   '<div class="docked-ticket-remove-popup"></div>'
+			+   '<div class="docked-additional-important-information"></div>'
+			+	'<div class="trade-container" id="tradeTicketContainer"></div>'
+			+'</div>'	
+		);
+		//insert a placeholder for the docked TT
+		
+		if (isBrowserCompatible === true && featureToggle == 'on' && loggedIn == 'yes')
+		{
+			// fetch the trade ticket	
+			$("<div id='dockedComponents' style='z-index: 99999997; left: 0; width:100%; position:absolute; bottom: 0;'></div>").appendTo(".docked-top-container");		
+			$.ajax({
+				  type: 'GET',
+				  url: tradeUrl,
+				  contentType: 'text/plain',
+				  xhrFields: {
+				    withCredentials: true
+				  },
+	
+				  headers: {
+				  },
+				  success: function(response) {
+					  $("#dockedComponents").html(response);
+				  },
+				  error: function (xhRequest, ErrorText, thrownError) {
+				      console.log("CORS Error while importing DOCKED TT: " + xhRequest.responseText)
+				  }
+				});
+
+		}
+	});
+	
+}
+
+function getInternetExplorerVersion() {
+  var rv = -1;
+  if (navigator.appName == 'Microsoft Internet Explorer'){
+    var ua = navigator.userAgent;
+    var re  = new RegExp("MSIE ([0-9]{1,}[\.0-9]{0,})");
+    if (re.exec(ua) != null)
+      rv = parseFloat( RegExp.$1 );
+  }
+  else if (navigator.appName == 'Netscape'){
+    var ua = navigator.userAgent;
+    var re  = new RegExp("Trident/.*rv:([0-9]{1,}[\.0-9]{0,})");
+    if (re.exec(ua) != null)
+      rv = parseFloat( RegExp.$1 );
+  }
+  return rv;
+}
+
+function seedATicket(jsonInput) {
+	
+	//fetch the state variables
+	var browserCompatability = false;
+	var dockedEntitled = false;
+	var dockedPreference = true;
+	var loggedInState = false;
+	var featureToggle = 'off';
+	var featureToggleDiv = $('#featureToggle');
+	if (featureToggleDiv != null || featureToggleDiv != undefined) {
+		featureToggle = featureToggleDiv.html();
+	}
+	var browserCompatabilityDiv = $('#dockedTicketBrowserCompatability');
+	if (browserCompatabilityDiv != null || browserCompatabilityDiv != undefined) {
+		browserCompatability = browserCompatabilityDiv.html();
+	}
+	var dockedEntitledDiv = $('#dockedTicketEnabledEntitlement');
+	if (dockedEntitledDiv != null || dockedEntitledDiv != undefined) {
+		dockedEntitled = dockedEntitledDiv.html();
+	}
+	var dockedPreferenceDiv = $('#dockedTicketPreference');
+	if (dockedPreferenceDiv != null || dockedPreferenceDiv != undefined) {
+		dockedPreference = dockedPreferenceDiv.html();
+	}
+	var loggedInStateDiv = $('#dockedTicketLoggedInState');
+	if (loggedInStateDiv != null || loggedInStateDiv != undefined) {
+		loggedInState = loggedInStateDiv.html();
+	}
+	
+	// fetch data to seed from json input
+	var seedingParams = fetchParams(jsonInput);
+
+	var securityType = seedingParams.securityType;
+	
+	if (browserCompatability == 'false' || dockedEntitled == 'false' || dockedPreference == 'false' || featureToggle != 'on'){
+		//if not showing docked, then rebuild link
+		var url = rebuildTradeLink(jsonInput);
+		window.open(url,"_self");
+	} else if (securityType == 'H' || securityType == 'F' || securityType == 'BT' || securityType == 'MLO' || securityType == 'CT' || securityType == 'X') {
+		//if not showing docked, then rebuild link
+		var url = rebuildTradeLink(jsonInput);
+		window.open(url,"_self");
+	} else if(loggedInState == 'no' || loggedInState == 'member'){
+		// [PIATQTR-3635] set flag to open float ticket.
+		setSessionStorage("openFloatTicket", true);
+		var orderInfo = {
+			'SYMBOL' : seedingParams.symbol,
+			'ORDER_TYPE' : seedingParams.securityType,
+			'ORDER_ACTION' : seedingParams.orderAction,
+			'LIMIT_STOP_PRICE' : seedingParams.limitStopPrice
+		};
+		var tradeInfo = {
+			'orderInfo' : orderInfo
+		};
+		setSessionStorage("tradeInfo", JSON.stringify(tradeInfo));
+
+		var redirectUrl = $(location).attr('href');
+		$(location).attr('href','https://login.fidelity.com/ftgw/Fas/Fidelity/RtlCust/Login/Init?AuthRedUrl='+redirectUrl);
+	} else {
+		//test for float on page
+		var quickTradewrapper = $('.quick-trade-popup-wrapper');
+		if (quickTradewrapper == null || quickTradewrapper == undefined || quickTradewrapper.length == 0) {
+			//if float is not present, reopen it
+			openNewFloat(seedingParams);
+			
+		} else {
+			//if floating ticket is present, attempt to seed ticket 
+			populateExistingTicket(seedingParams);			
+		}
+	}	
+}
+
+function fetchParams(jsonInput) {
+	
+	var symbol = "symbol";
+	var securityType = "securityType";
+	var orderAction = "orderAction";
+	var limitStopPrice = "limitStopPrice";
+	var results = {};
+	
+	for(var i=0;i<jsonInput.length;i++){
+        var obj = jsonInput[i];
+        for(var key in obj){
+            var attrName = key;
+            var attrValue = obj[key];          
+            if (attrName == 'SECURITY_ID') {
+    			results.symbol = decodeURIComponent(attrValue);
+    		} else if (attrName == 'SECURITY_TYPE' || attrName == 'ORDER_TYPE') {
+    			results.securityType = attrValue;
+    		} else if (attrName == 'ORDER_ACTION') {
+    			results.orderAction = attrValue;
+    		} else if (attrName == 'LIMIT_STOP_PRICE') {
+    			results.limitStopPrice = decodeURIComponent(attrValue);
+    		}             
+            else {
+    			//do nothing
+    		}	
+        }
+    }
+		
+	return results;
+}
+
+function populateExistingTicket(seedingParams) {
+	
+	var closeButton = $(".close-qt");
+	if (closeButton != null || closeButton != undefined) {
+		closeButton.trigger('click');
+		openNewFloat(seedingParams);
+	}
+	else {
+	
+		var symbolBox = $("#qt-symbol");
+		if (symbolBox != null || symbolBox != undefined) {
+			symbolBox.val(seedingParams.symbol);
+			symbolBox.trigger('blur');
+		}
+	}
+}
+
+function openNewFloat(seedingParams) {
+	var orderInfo = {
+			'SYMBOL' : seedingParams.symbol,
+			'ORDER_TYPE' : seedingParams.securityType,
+			'ORDER_ACTION' : seedingParams.orderAction,
+			'LIMIT_STOP_PRICE' : seedingParams.limitStopPrice
+			}	
+	var tradeInfo = {
+		'orderInfo' : orderInfo
+	}
+
+	this.tradeInfo = tradeInfo;
+	
+	$(document).trigger("QUICK_TRADE", tradeInfo);
+}
+
+function rebuildTradeLink(jsonInput) {
+	
+	var url = "https://oltx.fidelity.com/ftgw/fbc/oftrade/EntrOrder?";
+	var first = true;
+	
+	for(var i=0;i<jsonInput.length;i++){
+        var obj = jsonInput[i];
+        for(var key in obj){
+            var attrName = key;
+            var attrValue = obj[key];          
+            if (first) {
+    			url = url + attrName + "=" + attrValue;
+    			first = false;
+    		} else {
+    			url = url + "&" + attrName + "=" + attrValue;
+    		}	
+        }
+    }
+	return url;
+}
+
+function setSessionStorage(key, val) {
+	if(typeof(Storage) !== "undefined") {
+		sessionStorage.setItem(key, val);
+	}
+}
+</script><!-- CPU: 140 --><div class="wsod-document-footer"><script type="text/javascript" src="/fidelity/screeners/resources/client/js.asp?name=Client.Lib&files=0|1|2|4|5|9|8&version=44084.66664351852"></script><script type="text/javascript" src="/fidelity/screeners/resources/client/js.asp?name=Client.Common&files=18|19|21|16|32&version=44084.66663194444"></script><script type="text/javascript">(new ETFHoldingsPage()).init({startRow : 0,numPerPage : 25,numRows : 379,view : 'Region',FidelityUrls : {"eresearch":"http://eresearch.fidelity.com","agreement":"https://agreements.fidelity.com/ftgw/nUA/Control/QnRDisplayForm?WETransform=QnRNuaentry&Appname=FIDNASD&ReturnURL=","oltx":"https://oltx.fidelity.com","webxpress":"https://webxpress.fidelity.com","watchlists":"https://watchlists.fidelity.com","mlo":"https://researchtools.fidelity.com","portfolioreview":"https://portfolioreview.fidelity.com","personal":"https://www.fidelity.com","fixedIncome":"http://fixedincome.fidelity.com","screener":"http://screener.fidelity.com","WSOD":"http://research2.fidelity.com/fidelity"},FidelityWSAttr : 'escreener'});window._waq = window._waq || []; (function() {var domain = 'oda.markitondemand.com'; _waq.push(['_setup', {reportingid: '588680', domain: domain }]); var wa = document.createElement('script'); wa.type = 'text/javascript'; wa.async = true; wa.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + domain + '/js/wa.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(wa, s);})();</script></div></div></body></html>
