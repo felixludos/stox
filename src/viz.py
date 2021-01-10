@@ -6,16 +6,19 @@ from matplotlib.path import Path
 import matplotlib.patches as patches
 from matplotlib.figure import figaspect
 
-def dicts_to_table(data, typs={}, sort_by=None, reverse=False, default=None):
+def dicts_to_table(data, typs={}, sort_by=None, cols=None, reverse=False, default=None, ignore_key=False, skip_header=False):
 	
 	# def_types = {str:'', float:0., int:0}
 	
-	cols = set()
-	for row in data.values():
-		cols.update(row.keys())
-	cols = list(cols)
+	if cols is None:
+		cols = set()
+		for row in data.values():
+			cols.update(row.keys())
+		cols = list(cols)
 	
-	header = ['Ticker', *cols]
+	header = [] if ignore_key else ['Ticker']
+	header.extend(cols)
+	
 	tbl = []
 	
 	for k, row in data.items():
@@ -40,15 +43,27 @@ def dicts_to_table(data, typs={}, sort_by=None, reverse=False, default=None):
 			if c not in info:
 				info[c] = default
 		
-		tbl.append([k, *[info[c] for c in cols]])
+		row = [] if ignore_key else [k]
+		row.extend(info[c] for c in cols)
+		tbl.append(row)
 	
 	if sort_by is not None:
 		inds = {n :i for i, n in enumerate(header)}
 		idx = inds[sort_by]
 		tbl = sorted(tbl, key=lambda x: (x[idx] is not None, x[idx]), reverse=reverse)
 	
-	return [header, *tbl]
+	table = [] if skip_header else [header]
+	table.extend(tbl)
+	return table
 
+def get_top(data, top=None, factor=100):
+	tb = [(k,v*factor if v is not None else v) for k,v in data.items()]
+	tb = sorted(tb, key=lambda x: (x[1] is not None, x[1]), reverse=True)
+	if top is not None:
+		top = tb[:top]
+		top.append(('Other', sum(q for _,q in tb) - sum(q for _,q in top)))
+		tb = top
+	return tb
 
 def plot_parallel_coords(samples, categories=None, dim_names=None,
 						 cat_styles=None, cat_names=None, include_legend=True,

@@ -1,0 +1,205 @@
+
+
+balanced:
+
+  TSLA: 2
+  AMD: 2
+  NVDA: 2
+  BABA: 1
+  TCEHY: 1
+  AMZN: 1
+  MSFT: 1
+  COST: 1
+  NTDOY: 1
+  PDD: 1
+  QCOM: 1
+  DIS: 0.5
+  GOOGL: 0.5
+  AAPL: 0.5
+  BIDU: 0.5
+  SNE: 0.5
+  FB: 0.5
+  SHOP: 0.5
+  PYPL: 0.5
+  PTON: 0.5
+  NIO: 0.5
+  NFLX: 0.2
+  LI: 0.2
+  XPEV: 0.2
+  UBER: 0.2
+  YNDX: 0.2
+
+  SPY: 5
+  VXF: 4
+  VTI: 4
+  IWV: 1
+
+  VONG: 3
+  XITK: 2
+  KOMP: 2
+  SOCL: 1
+  ESPO: 1
+  CIBR: 1
+  SKYY: 1
+  LIT: 1
+  IBB: 1
+
+  FHLC: 1
+  FIDU: 1
+  FNCL: 1
+
+  ACES: 5
+  ICLN: 4
+  PHO: 1
+
+  ASHR: 7
+  CNYA: 4
+  KWEB: 6
+  MCHI: 3
+
+  SPDW: 3
+  VGK: 1.5
+  FLJP: 2
+  EWG: 0.5
+  EWY: 0.5
+  EWC: 0.5
+
+  IXUS: 3
+  EMXC: 4
+
+  ICVT: 3
+  IAU: 1
+
+  SCHP: 0.25
+  IGOV: 0.25
+
+  LQD: 0.25
+  IAGG: 0.25
+
+conservative:
+
+  NVDA: 1
+  BABA: 1
+  TCEHY: 1
+  AMZN: 1
+  MSFT: 1
+  COST: 1
+  AAPL: 1
+  FB: 1
+  GOOGL: 1
+  BIDU: 1
+  SNE: 0.5
+  TSLA: 0.5
+
+  SPY: 7
+  VTI: 6
+  VXF: 5
+  IWV: 5
+  DIA: 4
+  QQQ: 3
+
+  VONG: 5
+  XITK: 3
+  KOMP: 2
+  ACES: 2
+  ICLN: 2
+  LIT: 1
+  IBB: 1
+
+  FHLC: 1
+  FIDU: 1
+  FNCL: 1
+
+  ASHR: 3
+  KWEB: 3
+  CNYA: 2
+  MCHI: 2
+
+  SPDW: 3
+  VGK: 3
+  FLJP: 2
+  EWY: 1
+  EWC: 1
+
+  IXUS: 6
+  EMXC: 4
+
+  ICVT: 5
+  SCHP: 1
+  IGOV: 1
+  LQD: 1
+  IAGG: 1
+
+  IAU: 1
+
+wreckless:
+  TSLA: 5
+  PDD: 4
+  SHOP: 3
+  LI: 3
+  XPEV: 3
+  NIO: 3
+  QCOM: 2
+  NVDA: 2
+  BABA: 2
+  PTON: 2
+  AMD: 2
+  SQ: 1
+  TCEHY: 1
+  PYPL: 1
+  UBER: 1
+  BIDU: 1
+  NTDOY: 1
+  AAPL: 0.5
+  FB: 0.5
+  AMZN: 0.5
+  MSFT: 0.5
+  GOOGL: 0.5
+  SNE: 0.5
+
+  SPY: 1
+  VXF: 3
+  VTI: 0.5
+  IWV: 0.5
+
+  ARKK: 5
+  LIT: 2
+  XITK: 4
+  KOMP: 2
+
+  ACES: 6
+  ICLN: 6
+
+  ASHR: 7
+  KWEB: 7
+  CNYA: 3
+  MCHI: 3
+
+  SPDW: 1
+  FLJP: 1
+  VGK: 0.5
+  EWY: 0.5
+
+  IXUS: 2
+  EMXC: 5
+
+minimal:
+  SPY: 10
+  VXF: 10
+  VTI: 10
+
+  VONG: 10
+  XITK: 5
+  ARKK: 10
+  ICLN: 5
+
+  ASHR: 10
+  KWEB: 10
+  SPDW: 5
+  EMXC: 5
+
+  ICVT: 5
+  SCHP: 2
+  LQD: 2
+  IAU: 1
+

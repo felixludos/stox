@@ -36,113 +36,24 @@ URLS = {
     
 }
 
+MARKET_CAPS = [['mega', 200e9],
+ ['large', 10e9],
+ ['mid', 2e9],
+ ['small', 300e6],
+ ['micro', 50e6],
+ ['nano', 0.]]
+
+
 TYPES = {
-    'EQUITY': ['TSLA', 'AMD', 'NVDA', 'BABA', 'TCEHY', 'AMZN', 'MSFT', 'COST', 'NTDOY', 'DIS', 'SHOP',
-               'PDD', 'GOOGL', 'AAPL', 'BIDU', 'SNE', 'FB', 'PYPL', 'NFLX', 'NIO', 'WDC'],
-    'ETF': ['SPY', 'VXF', 'VTI', 'IWV', 'VONG', 'XITK', 'KOMP', 'SOCL', 'ESPO', 'CIBR', 'SKYY', 'LIT', 'IBB',
+    'EQUITY': {'TSLA', 'AMD', 'NVDA', 'BABA', 'TCEHY', 'AMZN', 'MSFT', 'COST', 'NTDOY', 'DIS', 'SHOP',
+               'PDD', 'GOOGL', 'AAPL', 'BIDU', 'SNE', 'FB', 'PYPL', 'NFLX', 'NIO', 'WDC', 'SQ', 'LI',
+               'XPEV', 'UBER', 'PTON', 'QCOM', 'YNDX'},
+    'ETF': {'SPY', 'VXF', 'VTI', 'IWV', 'VONG', 'XITK', 'KOMP', 'SOCL', 'ESPO', 'CIBR', 'SKYY', 'LIT', 'IBB',
             'FHLC', 'FIDU', 'FNCL', 'FMAT', 'PHO', 'ACES', 'ICLN', 'PBW', 'ASHR', 'CNYA', 'KWEB', 'MCHI', 'SPDW',
             'VGK', 'EWG', 'FLJP', 'EWY', 'EWC', 'IXUS', 'EMXC', 'ICVT', 'CWB', 'SCHP', 'IGOV', 'GOVT', 'LQD', 'AGG',
-            'IAGG', 'IAU', 'DBC'],
+            'IAGG', 'IAU', 'DBC', 'ARKK', 'DIA', 'QQQ'},
 }
 
-STRATEGY = {
-    'companies': {
-        'TSLA': 2.5,
-        'AMD': 2,
-        'NVDA': 2,
-        'BABA': 2,
-        'TCEHY': 1.5,
-        'AMZN': 1,
-        'MSFT': 1,
-        'COST': 1,
-        'NTDOY': 1,
-        'DIS': 1,
-        'SHOP': 0.5,
-        'PDD': 0.5,
-        'GOOGL': 0.5,
-        'AAPL': 0.5,
-        'BIDU': 0.5,
-        'SNE': 0.5,
-        'FB': 0.5,
-        'PYPL': 0.5,
-        'NFLX': 0.5,
-        'NIO': 0.5,
-        # 'LI': 0.5,
-        # 'XPEV': 0.5,
-        'WDC': 0,
-    },
-    
-    'markets/sectors': {
-        # general
-        'SPY': 6,
-        'VXF': 4,
-        'VTI': 4,
-        'IWV': 1,
-        
-        # tech
-        'VONG': 3,
-        'XITK': 2,
-        'KOMP': 1,
-        'SOCL': 1,
-        'ESPO': 1,
-        'CIBR': 1,
-        'SKYY': 1,
-        'LIT': 1,
-        'IBB': 1,
-        
-        # sectors
-        'FHLC': 2,
-        'FIDU': 1,
-        'FNCL': 1,
-        'FMAT': 1,
-        
-        # energy
-        'PHO': 1,
-        'ACES': 3,
-        'ICLN': 3,
-        'PBW': 1,
-    },
-    
-    'international': {
-        # China
-        'ASHR': 6,
-        'CNYA': 4,
-        'KWEB': 3,
-        'MCHI': 2,
-        
-        # EU/J
-        'SPDW': 3,
-        'VGK': 1.5,
-        'EWG': 0.5,
-        'FLJP': 2,
-        'EWY': 0.5,
-        'EWC': 0.5,
-        
-        # ex-US
-        'IXUS': 3,
-        'EMXC': 4,
-    },
-    
-    'diverse': {
-        # convertible bonds
-        'ICVT': 5,
-        'CWB': 0,
-        
-        # bonds - treasury
-        'SCHP': 1,
-        'IGOV': 1,
-        'GOVT': 0,
-        
-        # bonds - corporate
-        'LQD': 1,
-        'AGG': 0.5,
-        'IAGG': 0.5,
-        
-        # commodity
-        'IAU': 1,
-        'DBC': 0,
-    }
-}
 
 FUNDS = {
     'FZROX',
@@ -180,6 +91,53 @@ REGIONS = {
             'Slovenia': 'Europe', 'Bulgaria': 'Europe', 'Cyprus': 'Europe', 'Lithuania': 'Europe',
             'Croatia': 'Europe', 'Iceland': 'Europe', 'Latvia': 'Europe',
 }
+
+CURRENCIES = {
+ 'USD': {'name': 'United States dollar', 'symbol': 'US$'},
+ 'EUR': {'name': 'Euro', 'symbol': '€'},
+ 'JPY': {'name': 'Japanese yen', 'symbol': '¥'},
+ 'GBP': {'name': 'Pound sterling', 'symbol': '£'},
+ 'AUD': {'name': 'Australian dollar', 'symbol': 'A$'},
+ 'CAD': {'name': 'Canadian dollar', 'symbol': 'C$'},
+ 'CHF': {'name': 'Swiss franc', 'symbol': 'CHF'},
+ 'CNY': {'name': 'Renminbi', 'symbol': '元'},
+ 'HKD': {'name': 'Hong Kong dollar', 'symbol': 'HK$'},
+ 'NZD': {'name': 'New Zealand dollar', 'symbol': 'NZ$'},
+ 'SEK': {'name': 'Swedish krona', 'symbol': 'kr'},
+ 'KRW': {'name': 'South Korean won', 'symbol': '₩'},
+ 'SGD': {'name': 'Singapore dollar', 'symbol': 'S$'},
+ 'NOK': {'name': 'Norwegian krone', 'symbol': 'kr'},
+ 'MXN': {'name': 'Mexican peso', 'symbol': '$'},
+ 'INR': {'name': 'Indian rupee', 'symbol': '₹'},
+ 'RUB': {'name': 'Russian ruble', 'symbol': '₽'},
+ 'ZAR': {'name': 'South African rand', 'symbol': 'R'},
+ 'TRY': {'name': 'Turkish lira', 'symbol': '₺'},
+ 'BRL': {'name': 'Brazilian real', 'symbol': 'R$'},
+ 'TWD': {'name': 'New Taiwan dollar', 'symbol': 'NT$'},
+ 'DKK': {'name': 'Danish krone', 'symbol': 'kr'},
+ 'PLN': {'name': 'Polish złoty', 'symbol': 'zł'},
+ 'THB': {'name': 'Thai baht', 'symbol': '฿'},
+ 'IDR': {'name': 'Indonesian rupiah', 'symbol': 'Rp'},
+ 'HUF': {'name': 'Hungarian forint', 'symbol': 'Ft'},
+ 'CZK': {'name': 'Czech koruna', 'symbol': 'Kč'},
+ 'ILS': {'name': 'Israeli new shekel', 'symbol': '₪'},
+ 'CLP': {'name': 'Chilean peso', 'symbol': 'CLP$'},
+ 'PHP': {'name': 'Philippine peso', 'symbol': '₱'},
+ 'AED': {'name': 'UAE dirham', 'symbol': 'د.إ'},
+ 'COP': {'name': 'Colombian peso', 'symbol': 'COL$'},
+ 'SAR': {'name': 'Saudi riyal', 'symbol': '﷼'},
+ 'MYR': {'name': 'Malaysian ringgit', 'symbol': 'RM'},
+ 'RON': {'name': 'Romanian leu', 'symbol': 'L'},
+    'GLD': {'name':'Gold', 'symbol':'GLD'},
+    'BTC': {'name': 'Bitcoin', 'symbol': 'BTC'},
+    'ETH': {'name': 'Ethereum', 'symbol': 'ETH'},
+    'QAR': {'name': 'Qatari Rial'},
+    'KWD': {'name': 'Kuwaiti Dinar'},
+    'EGP': {'name': 'Egyptian Pound'},
+    'PEN': {'name': 'Nuevo Sol'},
+    
+}
+
 
 
 _yf_tickers = {}
