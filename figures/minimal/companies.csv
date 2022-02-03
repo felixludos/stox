@@ -1,51 +1,51 @@
 Name,Ticker,Country,Amount
-Convertible Bonds,,,4.96%
-Bonds,,,4.04%
-Apple Inc,AAPL,United States,2.27%
-Tesla Inc,TSLA,United States,2.21%
-Microsoft Corp,MSFT,United States,1.89%
-Amazon.com Inc,AMZN,United States,1.58%
-Gold,,,1.00%
-Tencent Holdings Ltd,00700,China,0.96%
-Facebook Inc A,FB,United States,0.82%
-Meituan,03690,China,0.82%
-Square Inc A,SQ,United States,0.80%
-Pinduoduo Inc ADR,PDD,China,0.80%
-Roku Inc Class A,ROKU,United States,0.79%
-Alibaba Group Holding Ltd ADR,BABA,China,0.77%
-iShares MSCI India ETF,INDA,United States,0.71%
-Invitae Corp,NVTA,United States,0.68%
-JD.com Inc ADR,JD,China,0.63%
-CRISPR Therapeutics AG,CRSP,Switzerland,0.61%
-Alphabet Inc A,GOOGL,United States,0.59%
-Slack Technologies Inc Class A,WORK,United States,0.54%
-Alphabet Inc Class C,GOOG,United States,0.53%
-Kweichow Moutai Co Ltd,600519,China,0.50%
-Ping An Insurance (Group) Co. of China Ltd,601318,China,0.47%
-Bilibili Inc ADR,BILI,China,0.45%
-Taiwan Semiconductor Manufacturing Co Ltd,2330,Taiwan,0.45%
-KE Holdings Inc ADR,BEKE,China,0.45%
-Teladoc Health Inc,TDOC,United States,0.45%
-Baidu Inc ADR,BIDU,China,0.45%
-JD Health International Inc,06618,China,0.42%
-Visa Inc Class A,V,United States,0.42%
-NetEase Inc ADR,NTES,China,0.42%
-TAL Education Group ADR,TAL,China,0.41%
-PayPal Holdings Inc,PYPL,United States,0.40%
-Trip.com Group Ltd ADR,TCOM,China,0.38%
-NVIDIA Corp,NVDA,United States,0.37%
-Zillow Group Inc C,Z,United States,0.37%
-Spotify Technology SA,SPOT,United States,0.35%
-Mastercard Inc A,MA,United States,0.35%
-UnitedHealth Group Inc,UNH,United States,0.35%
-Samsung Electronics Co Ltd,005930,South Korea,0.34%
-Unknown,,,0.34%
-Zoom Video Communications Inc,ZM,United States,0.34%
-Plug Power Inc,PLUG,United States,0.33%
-Twilio Inc A,TWLO,United States,0.32%
-Enphase Energy Inc,ENPH,United States,0.31%
-United States dollar,-CASH-,,0.31%
-Pure Storage Inc A,PSTG,United States,0.31%
-Proto Labs Inc,PRLB,United States,0.31%
-Netflix Inc,NFLX,United States,0.30%
-Other,,,61.35%
+Convertible Bonds,,,4.99%
+Bonds,,,4.16%
+Apple Inc,AAPL,United States,3.68%
+Microsoft Corp,MSFT,United States,3.23%
+Tesla Inc,TSLA,United States,1.22%
+Gold,,,0.98%
+Amazon.com Inc,AMZN,United States,0.86%
+NVIDIA Corp,NVDA,United States,0.79%
+Square Inc A,SQ,United States,0.76%
+Zoom Video Communications Inc,ZM,United States,0.69%
+Roku Inc Class A,ROKU,United States,0.66%
+Tencent Holdings Ltd,00700,China,0.64%
+Alibaba Group Holding Ltd ADR,BABA,China,0.63%
+Visa Inc Class A,V,United States,0.62%
+Facebook Inc Class A,FB,United States,0.56%
+Teladoc Health Inc,TDOC,United States,0.55%
+Twilio Inc A,TWLO,United States,0.55%
+Alphabet Inc Class A,GOOGL,United States,0.53%
+PayPal Holdings Inc,PYPL,United States,0.53%
+Mastercard Inc Class A,MA,United States,0.53%
+Shopify Inc A,SHOP,Canada,0.51%
+Taiwan Semiconductor Manufacturing Co Ltd,2330,Taiwan,0.50%
+Kweichow Moutai Co Ltd,600519,China,0.49%
+Adobe Inc,ADBE,United States,0.46%
+JD.com Inc ADR,JD,China,0.44%
+Alphabet Inc Class C,GOOG,United States,0.44%
+DocuSign Inc,DOCU,United States,0.43%
+Meituan,03690,China,0.42%
+Pinduoduo Inc ADR,PDD,China,0.42%
+Coinbase Global Inc Ordinary Shares - Class A,COIN,United States,0.40%
+Unknown,,,0.37%
+Unity Software Inc Ordinary Shares,U,United States,0.37%
+Intel Corp,INTC,United States,0.36%
+Salesforce.com Inc,CRM,United States,0.36%
+Cisco Systems Inc,CSCO,United States,0.36%
+Spotify Technology SA,SPOT,United States,0.33%
+Zillow Group Inc C,Z,United States,0.33%
+Samsung Electronics Co Ltd,005930,South Korea,0.32%
+Broadcom Inc,AVGO,United States,0.31%
+Accenture PLC Class A,ACN,United States,0.31%
+Berkshire Hathaway Inc Class B,BRK.B,United States,0.30%
+Twitter Inc,TWTR,United States,0.30%
+Enphase Energy Inc,ENPH,United States,0.29%
+Exact Sciences Corp,EXAS,United States,0.29%
+Bilibili Inc ADR,BILI,China,0.29%
+Texas Instruments Inc,TXN,United States,0.29%
+NetEase Inc ADR,NTES,China,0.29%
+Renminbi,-CASH-,,0.28%
+Vestas Wind Systems A/S,VWS,Denmark,0.28%
+Other,,,62.33%

@@ -17,7 +17,7 @@ balanced:
   GOOGL: 0.5
   AAPL: 0.5
   BIDU: 0.5
-  SNE: 0.5
+  SONY: 0.5
   FB: 0.5
   SHOP: 0.5
   PYPL: 0.5
@@ -88,7 +88,7 @@ conservative:
   FB: 1
   GOOGL: 1
   BIDU: 1
-  SNE: 0.5
+  SONY: 0.5
   TSLA: 0.5
 
   SPY: 7
@@ -155,7 +155,7 @@ wreckless:
   AMZN: 0.5
   MSFT: 0.5
   GOOGL: 0.5
-  SNE: 0.5
+  SONY: 0.5
 
   SPY: 1
   VXF: 3
@@ -188,7 +188,7 @@ minimal:
   VXF: 10
   VTI: 10
 
-  VONG: 10
+  VGT: 10
   XITK: 5
   ARKK: 10
   ICLN: 5
@@ -202,4 +202,25 @@ minimal:
   SCHP: 2
   LQD: 2
   IAU: 1
+
+
+ira:
+  SPY: 10
+  VXF: 10
+  VTI: 10
+
+  VGT: 10
+  XITK: 5
+  ARKK: 5
+  ICLN: 5
+  ACES: 5
+
+  ASHR: 10
+  KWEB: 10
+  SPDW: 5
+  EMXC: 5
+
+  ICVT: 3
+  SCHP: 1
+  LQD: 1
 

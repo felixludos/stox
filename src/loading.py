@@ -48,15 +48,19 @@ _loaded = {}
 def clear_loaded():
 	_loaded.clear()
 
-def load(cat, group, root=None, force=False, pbar=None):
+def load(cat, group, root=None, date=None, force=False, pbar=None):
 	
 	if (cat, group) in _loaded:
 		return _loaded[cat,group]
 	
 	if root is None:
 		root = Path('raw/dates')
-		dates = list(root.glob('*'))
-		root = sorted(dates)[-1]
+		if date is not None:
+			root = root / date
+		else:
+			dates = list(root.glob('*'))
+			root = sorted(dates)[-1]
+		print(f'Using date: {root.name}')
 	else:
 		root = Path(root)
 	

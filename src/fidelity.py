@@ -3,7 +3,10 @@ import sys, os
 from pathlib import Path
 from bs4 import BeautifulSoup
 
-from yahooquery import Ticker
+try:
+    from yahooquery import Ticker
+except ImportError:
+    print('No yahooquery found')
 import yfinance as yf
 
 URLS = {
@@ -47,11 +50,11 @@ MARKET_CAPS = [['mega', 200e9],
 TYPES = {
     'EQUITY': {'TSLA', 'AMD', 'NVDA', 'BABA', 'TCEHY', 'AMZN', 'MSFT', 'COST', 'NTDOY', 'DIS', 'SHOP',
                'PDD', 'GOOGL', 'AAPL', 'BIDU', 'SNE', 'FB', 'PYPL', 'NFLX', 'NIO', 'WDC', 'SQ', 'LI',
-               'XPEV', 'UBER', 'PTON', 'QCOM', 'YNDX'},
+               'XPEV', 'UBER', 'PTON', 'QCOM', 'YNDX', 'SONY'},
     'ETF': {'SPY', 'VXF', 'VTI', 'IWV', 'VONG', 'XITK', 'KOMP', 'SOCL', 'ESPO', 'CIBR', 'SKYY', 'LIT', 'IBB',
             'FHLC', 'FIDU', 'FNCL', 'FMAT', 'PHO', 'ACES', 'ICLN', 'PBW', 'ASHR', 'CNYA', 'KWEB', 'MCHI', 'SPDW',
             'VGK', 'EWG', 'FLJP', 'EWY', 'EWC', 'IXUS', 'EMXC', 'ICVT', 'CWB', 'SCHP', 'IGOV', 'GOVT', 'LQD', 'AGG',
-            'IAGG', 'IAU', 'DBC', 'ARKK', 'DIA', 'QQQ'},
+            'IAGG', 'IAU', 'DBC', 'ARKK', 'DIA', 'QQQ', 'VGT'},
 }
 
 
@@ -478,14 +481,14 @@ def load_etf_snapshot(path):
     inds = {
         'analyst': 15,
         'info': 1,
-        'ratings': 1,
+        # 'ratings': 1,
         'stats': 17,
         'compare': 18,
     }
     extraction = {
         'analyst': _extract_analyst,
         'info': _extract_info,
-        'ratings': _extract_factset,
+        # 'ratings': _extract_factset,
         'stats': _extract_stats,
         'compare': _extract_compare,
     }
@@ -495,7 +498,7 @@ def load_etf_snapshot(path):
         try:
             out[n] = extraction[n](tbs[i])
         except:
-            print(ticker, n)
+            print(ticker, n, path.name)
             raise
     return ticker, out
     
@@ -698,8 +701,8 @@ def load_stock_snapshot(path):
 
     inds = {
         'basics': 2,
-        'analyst': 13,
-        'company': 13,
+        # 'analyst': 13,
+        # 'company': 13,
         'news': 13,
         'event': 13,
         'compare': -2,

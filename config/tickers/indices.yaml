@@ -1,0 +1,291 @@
+- city: New York
+  clean: S&P500
+  country: United States
+  name: S&P 500
+  ticker: ^GSPC
+- city: New York
+  clean: Dow30
+  country: United States
+  name: Dow 30
+  ticker: ^DJI
+- city: New York
+  clean: Nasdaq
+  country: United States
+  name: Nasdaq
+  ticker: ^IXIC
+- city: New York
+  clean: NYSE
+  country: United States
+  name: NYSE COMPOSITE (DJ)
+  ticker: ^NYA
+- city: New York
+  clean: NYSE AMEX
+  country: United States
+  name: NYSE AMEX COMPOSITE INDEX
+  ticker: ^XAX
+- city: London
+  clean: UK100
+  country: United Kingdom
+  name: Cboe UK 100
+  ticker: ^BUK100P
+- city: Chicago
+  clean: R2000
+  country: United States
+  name: Russell 2000
+  ticker: ^RUT
+- city: Chicago
+  clean: VolatilityIndex
+  country: United States
+  name: CBOE Volatility Index
+  ticker: ^VIX
+- city: London
+  clean: FTSE100
+  country: United Kingdom
+  name: FTSE 100
+  ticker: ^FTSE
+- city: Frankfurt
+  clean: DAX
+  country: Germany
+  name: DAX PERFORMANCE-INDEX
+  ticker: ^GDAXI
+- city: Paris
+  clean: CAC40
+  country: France
+  name: CAC 40
+  ticker: ^FCHI
+- city: Frankfurt
+  clean: EURO50
+  country: Eurozone
+  name: ESTX 50 PR.EUR
+  ticker: ^STOXX50E
+- city: ''
+  clean: EURONEXT100
+  country: Eurozone
+  name: EURONEXT 100
+  ticker: ^N100
+- city: Brussels
+  clean: BEL20
+  country: Belgium
+  name: BEL 20
+  ticker: ^BFX
+- city: Moscow
+  clean: MOEX
+  country: Russia
+  name: MOEX Russia Index
+  ticker: IMOEX.ME
+- city: Tokyo
+  clean: NIK225
+  country: Japan
+  name: Nikkei 225
+  ticker: ^N225
+- city: Hong Kong
+  clean: HS50
+  country: Hong Kong
+  name: HANG SENG INDEX
+  ticker: ^HSI
+- city: Shanghai
+  clean: SSE
+  country: China
+  name: SSE Composite Index
+  ticker: 000001.SS
+- city: Shenzhen
+  clean: SZE
+  country: China
+  name: Shenzhen Component
+  ticker: 399001.SZ
+- city: Singapore
+  clean: STI
+  country: Singapore
+  name: STI Index
+  ticker: ^STI
+- city: Sydney
+  clean: ASX200
+  country: Australia
+  name: S&P/ASX 200
+  ticker: ^AXJO
+- city: Sydney
+  clean: XAO500
+  country: Australia
+  name: ALL ORDINARIES
+  ticker: ^AORD
+- city: Mumbai
+  clean: BSE30
+  country: India
+  name: S&P BSE SENSEX
+  ticker: ^BSESN
+- city: Jakarta
+  clean: IDX
+  country: Indonesia
+  name: Indonesia Composite Index
+  ticker: ^JKSE
+#  ticker: ^IDX
+- city: Kuala Lumpur
+  clean: KLSE
+  country: Malaysia
+  name: FTSE Bursa Malaysia KLCI
+  ticker: ^KLSE
+- city: Wellington
+  clean: NZX50
+  country: New Zealand
+  name: S&P/NZX 50 INDEX GROSS
+  ticker: ^NZ50
+- city: Seoul
+  clean: KRX
+  country: South Korea
+  name: KOSPI Composite Index
+  ticker: ^KS11
+- city: Taipei
+  clean: TAIEX
+  country: Taiwan
+  name: TSEC weighted index
+  ticker: ^TWII
+- city: Toronto
+  clean: TSX
+  country: Canada
+  name: S&P/TSX Composite index
+  ticker: ^GSPTSE
+- city: Sao Paulo
+  clean: IBOV
+  country: Brazil
+  name: IBOVESPA
+  ticker: ^BVSP
+- city: Mexico City
+  clean: MXX
+  country: Mexico
+  name: IPC MEXICO
+  ticker: ^MXX
+- city: Santiago
+  clean: IPSA
+  country: Chile
+  name: S&P/CLX IPSA
+  ticker: ^IPSA
+- city: Buenos Aires
+  clean: BAX
+  country: Argentina
+  name: MERVAL
+  ticker: ^MERV
+- city: Tel Aviv
+  clean: TA125
+  country: Israel
+  name: TA-125
+  ticker: ^TA125.TA
+#- city: Cairo
+#  clean: EGX30
+#  country: Egypt
+#  name: EGX 30 Price Return Index
+#  ticker: ^CASE30
+- city: Johannesburg
+  clean: TRI40
+  country: South Africa
+  name: Top 40 USD Net TRI Index
+  ticker: ^JN0U.JO
+- city: Madrid
+  clean: IBEX35
+  country: Spain
+  name: IBEX Spain Index
+  ticker: ^IBEX
+- city: Mumbai
+  clean: NIFTY50
+  country: India
+  name: India Index
+  ticker: ^NSEI
+- city: Amsterdam
+  clean: AEX
+  country: Netherlands
+  name: Amsterdam Exchange Index
+  ticker: ^AEX
+#- city: Budapest
+#  clean: BUX
+#  country: Hungary
+#  name: Budapest Index
+#  ticker: ^NAVB.BD
+- city: Vienna
+  clean: ATX
+  country: Austria
+  name: Austria Composite Index
+  ticker: ^ATX
+- city: Dublin
+  clean: ISEQ20
+  country: Ireland
+  name: Irish Index
+  ticker: ^ISEQ
+- city: Milan
+  clean: MIB
+  country: Italy
+  name: FTSE MIB Italy Index
+  ticker: FTSEMIB.MI
+#- city: Oslo
+#  clean: OBX
+#  country: Norway
+#  name: Oslo Composite Index
+#  ticker: OBX.OL
+- city: Stockholm
+  clean: OMX30
+  country: Sweden
+  name: Stockholm 30 Index
+  ticker: ^OMX
+- city: Copenhagen
+  clean: OMXC25
+  country: Denmark
+  name: Denmark Composite
+  ticker: ^OMXC25
+- city: Helsinki
+  clean: OMXH25
+  country: Finland
+  name: Helsinki Composite
+  ticker: ^OMXH25
+- city: Lisbon
+  clean: PSI20
+  country: Portugal
+  name: Portugal Index
+  ticker: PSI20.LS
+#- city: Prague
+#  clean: PX
+#  country: Czechia
+#  name: Czech Index
+#  ticker: FPXAA.PR
+#- city: Moscow
+#  clean: RTS
+#  country: Russia
+#  name: Russia Trading System
+#  ticker: RTSI.ME
+- city: Bern
+  clean: SWX
+  country: Switzerland
+  name: SPI Index Price
+  ticker: SNSPIX.SW
+#- city: Warsaw
+#  clean: WIG20
+#  country: Poland
+#  name: Warsaw Index
+#  ticker: WIG20.WA
+- city: Manila
+  clean: PSE
+  country: Philippines
+  name: PSE Index
+  ticker: PSEI.PS
+#- city: Riyadh
+#  clean: TASI
+#  country: Saudi Arabia
+#  name: Tadawul Saudi Arabia
+#  ticker: ^TASI.SR
+#- city: Hanoi
+#  clean: FVTT
+#  country: Vietnam
+#  name: FTSE Vietnam Index
+#  ticker: FVTT.FGI
+#- city: Bangkok
+#  clean: SET
+#  country: Thailand
+#  name: SET Index
+#  ticker: ^SET.BK
+#- city: Reykjavik
+#  clean: OMXI10
+#  country: Iceland
+#  name: IMX Iceland 10
+#  ticker: ^OMXI10
+#- city: ''
+#  clean: SPASIA50
+#  country: Asia
+#  name: S&P Asia 500
+#  ticker: ^SPASIA50
