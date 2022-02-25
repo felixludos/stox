@@ -3,6 +3,8 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+yahoo_data/
+
 # C extensions
 *.so
 

@@ -44,7 +44,8 @@ def collate_group(tbl, groupkey='industry', tkkey='ticker', numkey='ratio'):
 	return tabulate(hiers, headers=[groupkey.capitalize(), 'Total', 'Components'])
 
 
-def profile_item(item, width=100):
+def profile_item(tk, width=100):
+	item = tk.info
 	profile = '''{symbol} - {shortName}
 
 Sector: {sector}
@@ -791,6 +792,1156 @@ UN01	Uniper SE	0.28
 UTDI	United Internet AG	0.26
 O2D	Telefonica Deutschland Holding AG	0.20
 FPE3	Fuchs Petrolub SE Participating Preferred	0.20''', suffix='DE')
+
+vgk_raw = '''NESN	Nestle SA	2.96
+ASML	ASML Holding NV	2.41
+ROG	Roche Holding AG	2.25
+MC	LVMH Moet Hennessy Louis Vuitton SE	1.59
+NOVN	Novartis AG	1.40
+AZN	AstraZeneca PLC	1.39
+NOVO B	Novo Nordisk A/S Class B	1.37
+SAP	SAP SE	1.20
+ULVR	Unilever PLC	1.06
+SIE	Siemens AG	1.00
+DGE	Diageo PLC	0.97
+HSBA	HSBC Holdings PLC	0.95
+TTE	TotalEnergies SE	0.95
+SAN	Sanofi SA	0.84
+GSK	GlaxoSmithKline PLC	0.83
+SU	Schneider Electric SE	0.80
+ALV	Allianz SE	0.75
+SHEL	Royal Dutch Shell PLC Class A	0.69
+BP.	BP PLC	0.67
+BATS	British American Tobacco PLC	0.65
+RYDBF	Royal Dutch Shell PLC B	0.61
+CFR	Compagnie Financiere Richemont SA	0.59
+L'Oreal	0.59
+BNP	BNP Paribas Act. Cat.A	0.58
+ADYEN	Adyen NV	0.58
+PRX	Prosus NV Ordinary Shares - Class N	0.56
+AIR	Airbus SE	0.55
+RIO	Rio Tinto PLC	0.55
+IBE	Iberdrola SA	0.54
+GLEN	Glencore PLC	0.52
+DAI	Daimler AG	0.50
+BAS	Basf SE	0.50
+ZURN	Zurich Insurance Group AG	0.50
+DPW	Deutsche Post AG	0.49
+ABBN	ABB Ltd	0.49
+LONN	Lonza Group Ltd	0.48
+BHPBF	BHP Group PLC	0.48
+ENEL	Enel SpA	0.48
+DTE	Deutsche Telekom AG	0.48
+EL	Essilorluxottica	0.48
+REL	RELX PLC	0.47
+IFX	Infineon Technologies AG	0.46
+UBSG	UBS Group AG	0.45
+SIKA	Sika AG	0.45
+KER	Kering SA	0.45
+SAN	Banco Santander SA	0.44
+CS	AXA SA	0.44
+ADS	adidas AG	0.42
+RMS	Hermes International SA	0.42
+Air Liquide(L')	0.42
+INGA	ING Groep NV	0.42
+RKT	Reckitt Benckiser Group PLC	0.42
+DG	Vinci SA	0.41
+NG.	National Grid PLC	0.40
+BAYN	Bayer AG	0.40
+AAL	Anglo American PLC	0.39
+RI	Pernod Ricard SA	0.39
+ABI	Anheuser-Busch InBev SA/NV	0.39
+PRU	Prudential PLC	0.37
+GIVN	Givaudan SA	0.37
+INVE B	Investor AB Class B	0.37
+EXPN	Experian PLC	0.35
+DSV	DSV AS	0.35
+LLOY	Lloyds Banking Group PLC	0.35
+ATCO A	Atlas Copco AB A	0.34
+NDA SE	Nordea Bank Abp	0.34
+Slcmt1142	0.33
+SAF	Safran SA	0.33
+BARC	Barclays PLC	0.33
+VNA	Vonovia SE	0.33
+ISP	Intesa Sanpaolo	0.33
+CRH	CRH PLC	0.32
+VOD	Vodafone Group PLC	0.32
+MUV2	Munchener Ruckversicherungs-Gesellschaft AG	0.32
+CPG	Compass Group PLC	0.31
+ALC	Alcon Inc	0.31
+CAP	Capgemini SE	0.30
+FERG	Ferguson PLC	0.30
+BBVA	Banco Bilbao Vizcaya Argentaria SA	0.30
+DSY	Dassault Systemes SE	0.30
+PGHN	Partners Group Holding AG	0.29
+BN	Danone SA	0.29
+DSM	Koninklijke DSM NV	0.29
+OR	L'Oreal SA	0.29
+STLA	Stellantis NV	0.29
+NOKIA	Nokia Oyj	0.28
+AHT	Ashtead Group PLC	0.28
+VOW3	Volkswagen AG Participating Preferred	0.28
+ENI	Eni SpA	0.27
+VOLV B	Volvo AB B	0.27
+CLNX	Cellnex Telecom SA	0.27
+ERIC B	Telefonaktiebolaget L M Ericsson Class B	0.26
+MRK	Merck KGaA	0.26
+SGO	Compagnie de Saint-Gobain SA	0.26
+AD	Koninklijke Ahold Delhaize NV	0.26
+PHIA	Koninklijke Philips NV	0.26
+ITX	Industria De Diseno Textil SA	0.26
+LSEG	London Stock Exchange Group PLC	0.26
+BMW	Bayerische Motoren Werke AG	0.25
+UCG	UniCredit SpA	0.25
+DB1	Deutsche Boerse AG	0.24
+VWS	Vestas Wind Systems A/S	0.24
+STM	STMicroelectronics NV	0.24
+RACE	Ferrari NV	0.24
+LR	Legrand SA	0.24
+HEXA B	Hexagon AB Class B	0.23
+SAND	Sandvik AB	0.23
+TSCO	Tesco PLC	0.23
+EOAN	E.ON SE	0.23
+WKL	Wolters Kluwer NV	0.23
+ASSA B	Assa Abloy AB Class B	0.22
+KNEBV	KONE Oyj Class B	0.22
+SREN	Swiss Re AG	0.22
+GEBN	Geberit AG	0.22
+ML	Cie Generale des Etablissements Michelin SA	0.22
+AMS	Amadeus IT Group SA A	0.22
+GLE	Societe Generale SA	0.21
+AI	Air Liquide SA	0.21
+HEIA	Heineken NV	0.21
+HOLN	Holcim Ltd	0.21
+SAMPO	Sampo Oyj Class A	0.20
+EQNR	Equinor ASA	0.20
+DBK	Deutsche Bank AG	0.20
+RWE	RWE AG	0.20
+G	Assicurazioni Generali	0.20
+TEP	Teleperformance SE	0.20
+FLTR	Flutter Entertainment PLC	0.20
+ORSTED	Orsted A/S	0.19
+EVO	Evolution AB	0.18
+CSGN	Credit Suisse Group AG	0.18
+COLO B	Coloplast A/S Class B	0.18
+DNB	DNB Bank ASA	0.18
+KBC	KBC Group SA/NV	0.18
+GMAB	Genmab A/S	0.18
+BA.	BAE Systems PLC	0.18
+SSE	SSE PLC	0.18
+LGEN	Legal & General Group PLC	0.18
+SGRO	Segro PLC	0.18
+Mktliq 12/31/2049	0.17
+ATCO B	Atlas Copco AB B	0.17
+TEF	Telefonica SA	0.17
+VIE	Veolia Environnement SA	0.17
+SWED A	Swedbank AB Class A	0.16
+UPM	UPM-Kymmene Oyj	0.16
+NESTE	Neste Corp	0.16
+ORA	Orange SA	0.16
+IMB	Imperial Brands PLC	0.16
+SHL	Siemens Healthineers AG Registered Shares	0.16
+SOON	Sonova Holding AG	0.16
+DHER	Delivery Hero SE	0.16
+UMG	Universal Music Group NV	0.16
+ASM	ASM International NV	0.16
+AV.	Aviva PLC	0.16
+STMN	Straumann Holding AG	0.16
+MT	ArcelorMittal SA	0.15
+MAERSK B	A. P. Moller Maersk A/S B	0.15
+AKZA	Akzo Nobel NV	0.15
+SEB A	Skandinaviska Enskilda Banken AB Class A	0.15
+CNHI	CNH Industrial NV	0.15
+SLHN	Swiss Life Holding AG	0.15
+SY1	Symrise AG	0.15
+SGSN	SGS AG	0.15
+KRZ	Kerry Group PLC Class A	0.15
+ESSITY B	Essity AB Class B	0.15
+Us Dollar	0.14
+ZAL	Zalando SE	0.14
+ACA	Credit Agricole SA	0.14
+KRX	Kingspan Group PLC	0.14
+NIBE B	NIBE Industrier AB Class B	0.14
+ARGX	argenx SE	0.14
+CRDA	Croda International PLC	0.14
+III	3i Ord	0.14
+NZYM B	Novozymes A/S B	0.13
+FRE	Fresenius SE & Co KGaA	0.13
+HLMA	Halma PLC	0.13
+CARL B	Carlsberg A/S Class B	0.13
+SRT3	Sartorius AG Participating Preferred	0.13
+NN	NN Group NV	0.13
+HM B	Hennes & Mauritz AB Class B	0.13
+BT.A	BT Group PLC	0.13
+WPP	WPP PLC	0.13
+ERF	Eurofins Scientific SE	0.12
+FER	Ferrovial SA	0.12
+LISP	Chocoladefabriken Lindt & Spruengli AG	0.12
+EQT	EQT AB Ordinary Shares	0.12
+SN.	Smith & Nephew PLC	0.12
+STAN	Standard Chartered PLC	0.12
+PUB	Publicis Groupe SA	0.12
+REP	Repsol SA	0.12
+DTG	Daimler Truck Holding AG Ordinary Shares	0.12
+EDP	EDP - Energias de Portugal SA	0.12
+MONC	Moncler SpA	0.12
+NWG	NatWest Group PLC	0.12
+SPX	Spirax-Sarco Engineering PLC	0.12
+EPI A	Epiroc AB Ordinary Shares - Class A	0.12
+KNIN	Kuehne + Nagel International AG	0.12
+SHB A	Svenska Handelsbanken AB Class A	0.12
+Engie	0.12
+MAERSK A	A. P. Moller Maersk A/S Class A	0.11
+UCB	UCB SA	0.11
+RR.	Rolls-Royce Holdings PLC	0.11
+BNR	Brenntag SE	0.11
+NXT	Next PLC	0.11
+BAER	Julius Baer Gruppe AG	0.11
+SK3	Smurfit Kappa Group PLC	0.11
+SCMN	Swisscom AG	0.11
+EBS	Erste Group Bank AG.	0.11
+PAH3	Porsche Automobil Holding SE Participating Preferred	0.11
+HEN3	Henkel AG & Co KGaA Participating Preferred	0.11
+RTO	Rentokil Initial PLC	0.11
+FORTUM	Fortum Oyj	0.10
+ENT	Entain PLC	0.10
+SRG	Snam SpA	0.10
+WLN	Worldline SA	0.10
+LISN	Chocoladefabriken Lindt & Spruengli AG	0.10
+DIM	Sartorius Stedim Biotech SA	0.10
+BNZL	Bunzl PLC	0.10
+FME	Fresenius Medical Care AG & Co. KGaA	0.10
+VACN	VAT Group AG	0.10
+ALFA	Alfa Laval AB	0.10
+IMCD	IMCD NV	0.10
+HFG	HelloFresh SE Bearer Shares	0.10
+LOGN	Logitech International SA	0.10
+ITRK	Intertek Group PLC	0.09
+PSN	Persimmon PLC	0.09
+SWMA	Swedish Match AB	0.09
+QGEN	Qiagen NV	0.09
+PUM	Puma SE	0.09
+STJ	St James's Place PLC	0.09
+CABK	CaixaBank SA	0.09
+PNDORA	Pandora A/S	0.09
+MNDI	Mondi PLC	0.09
+SGE	Sage Group (The) PLC	0.09
+IHG	InterContinental Hotels Group PLC	0.09
+EDEN	Edenred SA	0.09
+TRN	Terna SpA	0.09
+HNR1	Hannover Rueck SE	0.09
+CA	Carrefour	0.09
+DANSKE	Danske Bank A/S	0.09
+CON	Continental AG	0.09
+GBLB	Groupe Bruxelles Lambert SA	0.09
+INVE A	Investor AB A	0.09
+OCDO	Ocado Group PLC	0.09
+1COV	Covestro AG	0.09
+AENA	Aena SME SA	0.09
+TELIA	Telia Company AB	0.08
+SVT	Severn Trent PLC	0.08
+TEL	Telenor ASA	0.08
+PRY	Prysmian SpA	0.08
+BRBY	Burberry Group PLC	0.08
+TKWY	Just Eat Takeaway.com NV	0.08
+ATL	Atlantia SpA	0.08
+HEIO	Heineken Holding NV	0.08
+SCHP	Schindler Holding AG Profit-sharing certificate	0.08
+ENR	Siemens Energy AG Ordinary Shares	0.08
+SCA B	Svenska Cellulosa AB B	0.08
+MTX	MTU Aero Engines AG	0.08
+FBK	FinecoBank SpA	0.08
+STERV	Stora Enso Oyj Class R	0.08
+BOL	Boliden AB	0.08
+NHY	Norsk Hydro ASA	0.08
+INF	Informa PLC	0.08
+ALO	Alstom SA	0.08
+MOWI	Mowi ASA	0.08
+BDEV	Barratt Developments PLC	0.08
+KPN	Koninklijke KPN NV	0.08
+BEI	Beiersdorf AG	0.08
+LEG	LEG Immobilien SE	0.08
+HEI	HeidelbergCement AG	0.08
+UU.	United Utilities Group PLC	0.08
+SMIN	Smiths Group PLC	0.07
+ENX	Euronext NV	0.07
+SEV	Suez SA	0.07
+HO	Thales	0.07
+KGX	KION GROUP AG	0.07
+INDT	Indutrade AB	0.07
+KINV B	Kinnevik AB Class B	0.07
+RO	Roche Holding AG	0.07
+TW.	Taylor Wimpey PLC	0.07
+BARN	Barry Callebaut AG	0.07
+AGN	Aegon NV	0.07
+ELISA	Elisa Oyj Class A	0.07
+UHR	The Swatch Group AG Bearer Shares	0.07
+KESKOB	Kesko Oyj Class B	0.07
+G1A	GEA Group AG	0.07
+SKF B	SKF AB B	0.07
+RMV	Rightmove PLC	0.07
+AKE	Arkema SA	0.07
+VIFN	Vifor Pharma AG	0.07
+AGS	Ageas SA/ NV	0.07
+EXO	EXOR NV	0.07
+SKA B	Skanska AB Class B	0.07
+ABF	Associated British Foods PLC	0.07
+PKO	PKO Bank Polski SA	0.07
+VIV	Vivendi SE	0.07
+BVI	Bureau Veritas SA	0.07
+MRO	Melrose Industries PLC	0.07
+SIGN	SIG Combibloc Group AG Ordinary Shares	0.07
+NEXI	Nexi SpA	0.07
+AUTO	Auto Trader Group PLC	0.07
+REE	Red Electrica Corporacion SA	0.07
+VOW	Volkswagen AG	0.07
+GETI B	Getinge AB Class B	0.07
+KGF	Kingfisher PLC	0.07
+NTGY	Naturgy Energy Group SA	0.07
+ADM	Admiral Group PLC	0.07
+TRYG	Tryg A/S	0.06
+EN	Bouygues	0.06
+EPI B	Epiroc AB Share B	0.06
+TECN	Tecan Group Ltd	0.06
+ORK	Orkla ASA	0.06
+AFX	Carl Zeiss Meditec AG	0.06
+BME	B&M European Value Retail SA	0.06
+ECM	Electrocomponents PLC	0.06
+FGR	Eiffage SA	0.06
+MGGT	Meggitt PLC	0.06
+CBK	Commerzbank AG	0.06
+EMSN	Ems-Chemie Holding AG	0.06
+MB	Mediobanca SpA	0.06
+OMV	OMV AG	0.06
+GN	GN Store Nord A/S	0.06
+SOLB	Solvay SA	0.06
+ADEN	Adecco Group AG	0.06
+DCC	DCC PLC	0.06
+CHR	Chr. Hansen Holding A/S	0.06
+WTB	Whitbread PLC	0.06
+YAR	Yara International ASA	0.06
+ICP	Intermediate Capital Group PLC	0.06
+TEMN	Temenos AG	0.06
+UMI	Umicore SA	0.06
+ENGI	Engie SA	0.06
+TOM	Tomra Systems ASA	0.06
+FR	Valeo SA	0.06
+JD.	JD Sports Fashion PLC	0.06
+BALD B	Fastighets AB Balder Class B	0.06
+ELE	Endesa SA	0.06
+BALN	Baloise Holding AG	0.06
+SPSN	Swiss Prime Site AG	0.06
+CAST	Castellum AB	0.06
+VER	Verbund AG Class A	0.06
+SBB B	Samhallsbyggnadsbolaget i Norden AB Class B	0.06
+HEN	Henkel AG & Co KGaA	0.06
+EVT	Evotec SE	0.06
+SOF	Sofina SA	0.06
+RAND	Randstad NV	0.06
+INDU A	Industrivarden AB Class A	0.06
+DPH	Dechra Pharmaceuticals PLC	0.06
+GET	Getlink SE	0.06
+CPR	Davide Campari-Milano NV Az nom Post Frazionamento	0.06
+GFC	Gecina Nom	0.06
+LAND	Land Securities Group PLC	0.06
+URW	Unibail-Rodamco-Westfield Act. SIIC ET STES FONC.EUROP.	0.06
+FUTR	Future PLC	0.05
+BEAN	Belimo Holding AG	0.05
+IP	Interpump Group SpA	0.05
+AC	Accor SA	0.05
+ACS	ACS Actividades de Construccion y Servicios SA	0.05
+PST	Poste Italiane SpA	0.05
+RCO	Remy Cointreau	0.05
+EDPR	EDP Renovaveis SA	0.05
+WEIR	Weir Group PLC	0.05
+BIM	BioMerieux SA	0.05
+BESI	BE Semiconductor Industries NV	0.05
+ABN	ABN AMRO Bank NV	0.05
+IMI	IMI PLC	0.05
+RXL	Rexel SA	0.05
+MKS	Marks & Spencer Group PLC	0.05
+FI-N	Georg Fischer AG	0.05
+EVK	Evonik Industries AG	0.05
+REC	Recordati SpA Az nom Post raggruppamento	0.05
+PSON	Pearson PLC	0.05
+ASRNL	ASR Nederland NV	0.05
+RMG	Royal Mail PLC	0.05
+TIT	Telecom Italia SpA	0.05
+JMT	Jeronimo Martins SGPS SA	0.05
+ANTO	Antofagasta PLC	0.05
+THULE	Thule Group AB	0.05
+POLY	Polymetal International PLC	0.05
+GRF	Grifols SA	0.05
+TREL B	Trelleborg AB Class B	0.05
+AALB	Aalberts NV	0.05
+RNO	Renault SA	0.05
+MOCORP	Metso Outotec Corp	0.05
+SBRY	Sainsbury (J) PLC	0.05
+KBX	Knorr-Bremse AG Bearer Shares	0.05
+SMDS	Smith (DS) PLC	0.05
+CCH	Coca-Cola HBC AG	0.05
+BKG	Berkeley Group Holdings (The) PLC	0.05
+LUNE	Lundin Energy AB	0.05
+SINCH	Sinch AB	0.05
+LIFCO B	Lifco AB Class B	0.05
+WRT1V	Wartsila Corp	0.05
+HUSQ B	Husqvarna AB Class B	0.05
+NEM	Nemetschek SE	0.05
+AMP	Amplifon SpA Az nom Post Frazionamento	0.05
+AT1	Aroundtown SA	0.05
+HL.	Hargreaves Lansdown PLC	0.05
+HWDN	Howden Joinery Group PLC	0.05
+ABDN	abrdn PLC	0.05
+MNG	M&G PLC Ordinary Shares	0.05
+TEL2 B	Tele2 AB Class B	0.05
+WDP	Warehouses De Pauw	0.05
+BLND	British Land Co PLC	0.05
+BBOX	Tritax Big Box Ord	0.05
+Swedish Krona	0.04
+PZU	Powszechny Zaklad Ubezpieczen SA	0.04
+SCR	SCOR SE	0.04
+ORP	Orpea SA	0.04
+GALP	Galp Energia SGPS SA	0.04
+Edf	0.04
+DLG	Direct Line Insurance Group PLC	0.04
+HIK	Hikma Pharmaceuticals PLC	0.04
+INDU C	Industrivarden AB C	0.04
+SCHN	Schindler Holding AG	0.04
+TYRES	Nokian Tyres PLC	0.04
+ATE	Alten	0.04
+BIRG	Bank of Ireland Group PLC	0.04
+NOD	Nordic Semiconductor ASA	0.04
+JMAT	Johnson Matthey PLC	0.04
+LXS	Lanxess AG	0.04
+BEIJ B	Beijer Ref AB Class B	0.04
+SGRE	Siemens Gamesa Renewable Energy SA	0.04
+G24	Scout24 SE	0.04
+PSPN	PSP Swiss Property AG	0.04
+SDR	Schroders PLC	0.04
+TKA	thyssenkrupp AG	0.04
+DEMANT	Demant A/S	0.04
+RBREW	Royal UNIBREW A/S	0.04
+SOI	Soitec SA	0.04
+AVV	AVEVA Group PLC	0.04
+EO	Faurecia SE	0.04
+BOL	Bollore SA	0.04
+PHNX	Phoenix Group Holdings PLC	0.04
+ELUX B	Electrolux AB B	0.04
+SXS	Spectris PLC	0.04
+DPLM	Diploma PLC	0.04
+ITV	ITV PLC	0.04
+BWY	Bellway PLC	0.04
+VALMT	Valmet Corp	0.04
+PKN	Polski Koncern Naftowy ORLEN SA	0.04
+CNA	Centrica PLC	0.04
+ENG	Enagas SA	0.04
+LATO B	Investment AB Latour Class B	0.04
+SAGA B	AB Sagax Class B	0.04
+BC8	Bechtle AG	0.04
+LIGHT	Signify NV	0.04
+VOLV A	Volvo AB Class A	0.04
+BANB	Bachem Holding AG	0.04
+TEN	Tenaris SA	0.04
+AVST	Avast PLC	0.04
+SFOR	S4 Capital PLC	0.04
+HOLM B	Holmen AB B	0.04
+REY	Reply SpA	0.04
+ALIF B	AddLife AB Class B	0.04
+ELI	Elia Group	0.04
+BMW3	Bayerische Motoren Werke AG Participating Preferred	0.04
+STB	Storebrand ASA	0.04
+WISE	Wise PLC Class A	0.04
+UBI	Ubisoft Entertainment	0.04
+CLN	Clariant AG	0.04
+AMUN	Amundi SA	0.04
+EVR	EVRAZ PLC	0.04
+KOJAMO	Kojamo Oyj	0.04
+PEO	Bank Polska Kasa Opieki SA	0.04
+KGH	KGHM Polska Miedz SA	0.04
+LPP	LPP SA	0.04
+INCH	Inchcape PLC	0.04
+TPK	Travis Perkins PLC	0.04
+UTG	UNITE Group PLC	0.04
+AED	Aedifica SA	0.04
+DLN	Derwent London PLC	0.04
+COFB	Cofinimmo SA/NV	0.04
+EDV	Endeavour Mining PLC	0.03
+LHA	Deutsche Lufthansa AG	0.03
+DOM	Dometic Group AB	0.03
+TATE	Tate & Lyle PLC	0.03
+EMG	Man Group PLC	0.03
+SECU B	Securitas AB Class B	0.03
+VITR	Vitrolife AB	0.03
+DIA	Diasorin SpA	0.03
+INW	Infrastrutture Wireless Italiane SpA	0.03
+UTDI	United Internet AG	0.03
+ACKB	Ackermans & Van Haaren NV	0.03
+EVD	CTS Eventim AG & Co. KGaA	0.03
+ORNBV	Orion Oyj Class B	0.03
+SIM	SimCorp A/S	0.03
+FABG	Fabege AB	0.03
+ANA	Acciona SA	0.03
+PNN	Pennon Group PLC	0.03
+Sodexo	0.03
+GNS	Genus PLC	0.03
+DNP	Dino Polska SA	0.03
+GAW	Games Workshop Group PLC	0.03
+FDR	Fluidra SA	0.03
+WOSG	Watches of Switzerland Group PLC	0.03
+AMS	ams AG	0.03
+DIE	D'Ieteren Group	0.03
+ADDT B	Addtech AB Class B	0.03
+GRG	Greggs PLC	0.03
+BAMI	Banco BPM SpA	0.03
+AZA	Avanza Bank Holding AB	0.03
+EKTA B	Elekta AB Class B	0.03
+AMBU B	Ambu A/S Class B	0.03
+HSX	Hiscox Ltd	0.03
+IGG	IG Group Holdings PLC	0.03
+GJF	Gjensidige Forsikring ASA	0.03
+ATO	Atos SE	0.03
+BG	Bawag Group AG Ordinary Shares	0.03
+HELN	Helvetia Holding AG	0.03
+RHM	Rheinmetall AG	0.03
+HUH1V	HuhtamÃ¤ki Oyj	0.03
+LUND B	L E Lundbergforetagen AB Class B	0.03
+WIE	Wienerberger AG	0.03
+VOE	voestalpine AG	0.03
+CTEC	ConvaTec Group PLC	0.03
+UN01	Uniper SE	0.03
+ROR	Rotork PLC	0.03
+RILBA	Ringkjoebing Landbobank A/S Bearer and/or registered Shs	0.03
+AKRBP	Aker BP ASA	0.03
+FDJ	La Francaise Des Jeux SA Ordinary Shares	0.03
+ELIS	Elis SA	0.03
+BEZ	Beazley PLC	0.03
+RBI	Raiffeisen Bank International AG	0.03
+SWEC B	Sweco AB Class B	0.03
+SAB	Banco de Sabadell SA	0.03
+SALM	SalMar ASA	0.03
+ALE	Allegro.EU SA Ordinary Shares	0.03
+AAK	AAK AB	0.03
+GFTU	Grafton Group PLC Shs	0.03
+CNP	CNP Assurances	0.03
+ADE	Adevinta ASA Class A	0.03
+ADP	Aeroports de Paris SA	0.03
+INVP	Investec PLC	0.03
+GALE	Galenica Ltd.	0.03
+SOBI	Swedish Orphan Biovitrum AB	0.03
+IG	Italgas SpA	0.03
+VTWR	Vantage Towers AG Ordinary Shares	0.03
+TUI1	TUI AG	0.03
+BAKKA	Bakkafrost P/F	0.03
+BVIC	Britvic PLC	0.03
+QLT	Quilter PLC Ordinary Shares	0.03
+HPOL B	Hexpol AB Class B	0.03
+SCHB	Schibsted ASA B	0.03
+BILL	BillerudKorsnas AB	0.03
+FNTN	freenet AG Akt. Namen-Akt.	0.03
+SDF	K+S AG	0.03
+SAVE	Nordnet AB Ordinary Shares	0.03
+MF	Wendel SE	0.03
+DRX	Drax Group PLC	0.03
+HSV	Homeserve PLC	0.03
+HER	Hera SpA	0.03
+NENT B	Nordic Entertainment Group AB Class B	0.03
+SFZN	Siegfried Holding AG	0.03
+ANDR	Andritz AG	0.03
+NDA	Aurubis AG	0.03
+TEG	TAG Immobilien AG	0.03
+VTY	Vistry Group PLC	0.03
+NETC	Netcompany Group A/S	0.03
+BKT	Bankinter SA	0.03
+ISS	ISS A/S	0.03
+SSAB B	SSAB AB Class B	0.03
+ALK B	Alk-Abello A/S Class B	0.03
+ARCAD	Arcadis NV	0.03
+AZM	Azimut Holding SPA	0.03
+FHZN	Flughafen Zuerich AG	0.03
+PIRC	Pirelli & C SpA Ordinary Shares	0.03
+RAA	Rational AG	0.03
+BYG	Big Yellow Group PLC	0.03
+LMP	LondonMetric Property PLC	0.03
+SAFE	Safestore Holdings PLC Ordinary Shares	0.03
+MRL	Merlin Properties SOCIMI SA	0.03
+COV	Covivio SA	0.03
+AOX	alstria office REIT-AG	0.03
+LI	Klepierre	0.03
+Danish Krone	0.02
+QQ.	QinetiQ Group PLC	0.02
+INTRUM	Intrum AB	0.02
+BZU	Buzzi Unicem SpA	0.02
+TE	Technip Energies NV Ordinary Shares	0.02
+LSG	Leroy Seafood Group ASA	0.02
+DOKA	dorma+kaba Holding AG	0.02
+INTER	Intertrust NV	0.02
+NXI	Nexity SA	0.02
+BC	Brunello Cucinelli SpA	0.02
+SPT	Spirent Communications PLC	0.02
+CPS	Cyfrowy Polsat SA	0.02
+EMMN	Emmi AG	0.02
+BRAV	Bravida Holding AB	0.02
+IWG	IWG PLC	0.02
+LDO	Leonardo SpA Az nom Post raggruppamento	0.02
+SECT B	Sectra AB Class B	0.02
+CBG	Close Brothers Group PLC	0.02
+JYSK	Jyske Bank A/S	0.02
+MIPS	MIPS AB	0.02
+QTCOM	Qt Group PLC	0.02
+BAVA	Bavarian Nordic A/S	0.02
+DOCS	Dr. Martens PLC Ordinary Shares	0.02
+KCR	Konecranes Oyj	0.02
+NEX	Nexans	0.02
+CCL	Carnival PLC	0.02
+SCHA	Schibsted ASA Class A	0.02
+TIETO	TietoEVRY Corp	0.02
+A2A	A2A SpA	0.02
+THG	THG PLC Ordinary Share	0.02
+DKSH	DKSH Holding Ltd	0.02
+HELLA GMBH-TEND	0.02
+PETS	Pets at Home Group PLC	0.02
+SESG	SES SA DR	0.02
+AXFO	Axfood AB	0.02
+VMUK	Virgin Money UK PLC	0.02
+WIHL	Wihlborgs Fastigheter AB	0.02
+ULE	Ultra Electronics Holdings PLC	0.02
+CCC	Computacenter PLC	0.02
+GXI	Gerresheimer AG	0.02
+PTEC	Playtech PLC	0.02
+DUFN	Dufry AG	0.02
+BFSA	Befesa SA Bearer Shares	0.02
+SCT	Softcat PLC	0.02
+HAS	Hays PLC	0.02
+WALL B	Wallenstam AB Class B	0.02
+Seb Sa	0.02
+CSP	Countryside Properties PLC	0.02
+CDR	CD Projekt SA	0.02
+GRI	Grainger PLC	0.02
+NYF	Nyfosa AB	0.02
+BOSS	Hugo Boss AG	0.02
+IPN	Ipsen SA	0.02
+JM	J M AB	0.02
+BUCN	Bucher Industries AG	0.02
+ALLN	Allreal Holding Ltd	0.02
+DAE	Daetwyler Holding AG	0.02
+SPIE	SPIE SA	0.02
+FPE3	Fuchs Petrolub SE Participating Preferred	0.02
+VRLA	Verallia	0.02
+PSM	ProSiebenSat 1 Media SE	0.02
+UHRN	The Swatch Group AG	0.02
+SMWH	WH Smith PLC	0.02
+SVS	Savills PLC	0.02
+PEAB B	Peab AB Class B	0.02
+OCI	OCI NV	0.02
+BRG	Borregaard ASA	0.02
+SW	Sodexo	0.02
+DLG	De'Longhi SPA	0.02
+AM	Dassault Aviation SA	0.02
+BFIT	Basic-Fit NV	0.02
+VIS	Viscofan SA	0.02
+SSPG	SSP Group PLC	0.02
+SOP	Sopra Steria Group SA	0.02
+SPL	Santander Bank Polska SA	0.02
+TLX	Talanx AG	0.02
+APAM	Aperam SA	0.02
+JDEP	JDE Peets NV Ordinary Shares	0.02
+UNI	Unipol Gruppo SpA	0.02
+TWEKA	TKH Group NV	0.02
+CWK	Cranswick PLC	0.02
+BURE	Bure Equity AB	0.02
+GLPG	Galapagos NV	0.02
+ROCK B	Rockwool International A/S B	0.02
+PAGE	PageGroup PLC	0.02
+GL9	Glanbia PLC	0.02
+SRBNK	SpareBank 1 SR Bank ASA	0.02
+COTN	Comet Holding AG	0.02
+PGN	Polish Oil and Gas Company (PGNiG) SA	0.02
+ACX	Acerinox SA	0.02
+VCT	Victrex PLC	0.02
+PROX	Proximus SA	0.02
+ARJO B	Arjo AB Class B	0.02
+SILTRONIC-TEND	0.02
+SIX2	Sixt SE	0.02
+AFRY	Afry AB B	0.02
+FTI	TechnipFMC PLC	0.02
+CRBN	Corbion NV	0.02
+IFCN	Inficon Holding AG	0.02
+DOM	Domino's Pizza Group PLC	0.02
+RUI	Rubis SCA Shs from split	0.02
+EZJ	easyJet PLC	0.02
+OSB	OSB Group PLC	0.02
+NEL	NEL ASA	0.02
+SAAB B	Saab AB Class B	0.02
+MCOV B	Medicover AB Class B	0.02
+ASCL	Ascential PLC	0.02
+BOKA	Koninklijke Boskalis Westminster NV	0.02
+BMED	Banca Mediolanum	0.02
+TOP	Topdanmark A/S	0.02
+VONN	Vontobel Holding AG	0.02
+FRA	Fraport AG	0.02
+SBMO	SBM Offshore NV	0.02
+GTT	Gaztransport et technigaz SA	0.02
+CGCBV	Cargotec Oyj Class B	0.02
+IIA	Immofinanz AG	0.02
+MELE	Melexis NV	0.02
+INPST	Inpost SA Ordinary Shares	0.02
+LIAB	Lindab International AB	0.02
+IDIA	Idorsia Ltd	0.02
+INRN	Interroll Holding Ltd	0.02
+JUN3	Jungheinrich AG Participating Preferred	0.02
+KOG	Kongsberg Gruppen ASA	0.02
+CORE B	Corem Property Group AB Ordinary Shares - Class B	0.02
+COK	CANCOM SE	0.02
+BGN	Banca Generali	0.02
+VPK	Koninklijke Vopak NV	0.02
+INSTAL	Instalco AB	0.02
+HBR	Harbour Energy PLC	0.02
+FRES	Fresnillo PLC	0.02
+BBY	Balfour Beatty PLC	0.02
+ETL	Eutelsat Communications	0.02
+DUE	Duerr AG	0.02
+AKER	Aker ASA Class A	0.02
+WCH	Wacker Chemie AG	0.02
+VGP	VGP SA	0.02
+PPGN	PolyPeptide Group AG	0.02
+RSW	Renishaw PLC	0.02
+BCVN	Banque Cantonale Vaudoise	0.02
+SWON	SoftwareONE Holding AG Ordinary Shares	0.02
+IHP	IntegraFin Holdings PLC	0.02
+BOY	Bodycote PLC	0.02
+MING	SpareBank 1 SMN	0.02
+IAG	International Consolidated Airlines Group SA	0.02
+SRP	Serco Group PLC	0.02
+BPE	BPER Banca SpA	0.02
+MOBN	Mobimo Holding AG	0.02
+RDW	Redrow PLC	0.02
+INDV	Indivior PLC	0.02
+JEN	Jenoptik AG	0.02
+AIXA	Aixtron SE	0.02
+Eurazeo Se (Loyalty Line 2023)	0.02
+COLR	Etablissementen Franz Colruyt NV	0.02
+ERG	ERG SPA	0.02
+CMBN	Cembra Money Bank AG	0.02
+FLS	FLSmidth & Co. A/S	0.02
+TMV	TeamViewer AG Bearer Shares	0.02
+FORN	Forbo Holding AG	0.02
+PNL	PostNL NV	0.02
+OUT1V	Outokumpu Oyj	0.02
+NKT	NKT A/S	0.02
+DNLM	Dunelm Group PLC	0.02
+DWNI	Deutsche Wohnen SE	0.02
+BRE	Brembo SpA	0.02
+NOLA B	Nolato AB Class B	0.02
+VIRP	Virbac SA	0.02
+KORI	Korian SA	0.02
+RRTL	RTL Group SA	0.02
+SCATC	Scatec ASA Ordinary Shares	0.02
+MAP	Mapfre SA	0.02
+AG1	AUTO1 Group Bearer Shares	0.02
+WIZZ	Wizz Air Holdings PLC	0.02
+LOOMIS	Loomis AB B	0.02
+SRAIL	Stadler Rail AG Registered Shares	0.02
+BKW	BKW AG	0.02
+SFSN	SFS Group AG	0.02
+GYC	Grand City Properties SA	0.02
+HYQ	Hypoport AG	0.02
+ROSE	Zur Rose Group AG	0.02
+ARL	Aareal Bank AG	0.02
+SOW	Software AG	0.02
+COP	CompuGroup Medical SE & Co KgaA Registered Shares	0.02
+SAX	Stroeer SE & Co KGaA	0.02
+SYNT	Synthomer PLC	0.02
+COL	Inmobiliaria Colonial SOCIMI SA Shs from reverse split	0.02
+ICAD	Icade	0.02
+PHP	Primary Health Properties PLC	0.02
+GPOR	Great Portland Estates PLC	0.02
+AGR	Assura PLC	0.02
+SHB	Shaftesbury PLC	0.02
+British Pound Sterling	0.01
+Polish Zloty	0.01
+Norwegian Krone	0.01
+Euro	0.01
+IDL	ID Logistics	0.01
+MDM	Maisons du Monde France SA	0.01
+FAGR	Fagron SA	0.01
+ATRLJ B	Atrium Ljungberg AB	0.01
+KOMN	Komax Holding AG	0.01
+HFG	Hilton Food Group PLC	0.01
+ZEHN	Zehnder Group AG Grp A - Reg Form	0.01
+ARBN	Arbonia AG	0.01
+TESB	Tessenderlo Group NV	0.01
+NVG	The Navigator Co SA	0.01
+VNV	VNV Global AB Ordinary Shares	0.01
+ZEAL	Zealand Pharma A/S	0.01
+DRLCO	The Drilling Company of 1972 A/S Ordinary Shares	0.01
+IR5B	Irish Continental Group PLC Units Cons.of 1 Sh (CH24411198)and up to 10 Red	0.01
+MTRS	Munters Group AB Class B	0.01
+NOS	Nos Sgps SA	0.01
+TBCG	TBC Bank Group PLC	0.01
+PLAZ B	Platzer Fastigheter Holding AB B	0.01
+YIT	YIT Oyj	0.01
+FUR	Fugro NV	0.01
+SANT	S&T AG	0.01
+VETN	Vetropack Holding AG Bearer Form	0.01
+LEON	Leonteq AG	0.01
+KIN	Kinepolis Group NV	0.01
+BONHR	Bonheur ASA	0.01
+SKIS B	SkiStar AB Class B	0.01
+CEC	Ceconomy AG	0.01
+SBANK	Sbanken ASA	0.01
+CAF	Construcciones y Auxiliar de Ferrocarriles SA	0.01
+TFI	Television Francaise 1 SA	0.01
+VTSC	Vitesco Technologies Group AG	0.01
+XPP	XP Power Ltd	0.01
+FGP	FirstGroup PLC	0.01
+MMB	Lagardere SA	0.01
+SPNO	Spar Nord Bank A/S	0.01
+ELM	Elementis PLC	0.01
+TTALO	Terveystalo PLC Ordinary Shares	0.01
+PAT	Patrizia AG	0.01
+UQA	UNIQA Insurance Group AG	0.01
+NEOEN	Neoen SA	0.01
+TIP	Tamburi Investment Partners SpA	0.01
+SAA1V	Sanoma Oyj	0.01
+COIC	Concentric AB	0.01
+ACCEL	Accell Group NV	0.01
+JUST	Just Group PLC	0.01
+ARYN	Aryzta AG	0.01
+FAE	Faes Farma SA	0.01
+SLR	Solaria Energia y Medio Ambiente SA	0.01
+MBTN	Meyer Burger Technology AG	0.01
+GIMB	GIMV NV	0.01
+SPM	Saipem SpA	0.01
+FXPO	Ferrexpo PLC	0.01
+ALD	ALD SA	0.01
+SZU	Suedzucker AG	0.01
+DARK	Darktrace PLC	0.01
+SRT	Sartorius AG	0.01
+OXB	Oxford BioMedica PLC	0.01
+MTG B	Modern Times Group MTG AB B	0.01
+888	888 Holdings PLC	0.01
+EDF	Electricite de France SA	0.01
+PFD	Premier Foods PLC	0.01
+AUSS	Austevoll Seafood ASA	0.01
+BAB	Babcock International Group PLC	0.01
+DBG	Derichebourg SA	0.01
+TOKMAN	Tokmanni Group Corp	0.01
+IBST	Ibstock PLC	0.01
+BIFF	Biffa PLC	0.01
+VVO	Vivo Energy PLC	0.01
+NWO	New Work SE	0.01
+BOBNN	Bobst Group SA	0.01
+WAC	Wacker Neuson SE	0.01
+DANR	Danieli & C. Officine Meccaniche SpA Saving Share	0.01
+COPN	Cosmo Pharmaceuticals NV	0.01
+AGFB	Agfa-Gevaert NV	0.01
+TOM2	TomTom NV	0.01
+TIMA	ZEAL Network SE	0.01
+AKA	Akka Technologies	0.01
+YPSN	Ypsomed Holding AG	0.01
+MARS	Marston's PLC	0.01
+DNORD	Dampskibsselskabet NORDEN A/S	0.01
+DBAN	Deutsche Beteiligungs AG	0.01
+S30	Solutions 30 SE	0.01
+TLW	Tullow Oil PLC	0.01
+ACE	ACEA SpA	0.01
+NLFSK	Nilfisk Holding A/S Ordinary Shares	0.01
+GBF	Bilfinger SE	0.01
+ELK	Elkem ASA Ordinary Shares	0.01
+BPOST	Bpost SA de Droit Public	0.01
+ALSN	Also Holding AG	0.01
+KCO	Kloeckner & Co SE	0.01
+DIC	DIC Asset AG	0.01
+SOL	SOL SpA	0.01
+PHM	Pharma Mar SA	0.01
+BGEO	Bank of Georgia Group PLC	0.01
+INS	Instone Real Estate Group SE Registered Shares	0.01
+MAB	Mitchells & Butlers PLC	0.01
+MPCC	MPC Container Ships ASA	0.01
+KWS	KWS SAAT SE & Co KGaA	0.01
+TNXT	Tinexta	0.01
+DEQ	Deutsche EuroShop AG	0.01
+SYSR	Systemair AB	0.01
+FRO	Frontline Ltd	0.01
+BHG	BHG Group AB	0.01
+BICO	BICO Group AB Class B	0.01
+WIX	Wickes Group PLC	0.01
+SNR	Senior PLC	0.01
+SLIGR	Sligro Food Group NV	0.01
+CPI	Capita PLC	0.01
+MOL	Gruppo Mutuionline SpA	0.01
+GVS	GVS SpA Ordinary Shares	0.01
+AOF	ATOSS Software AG	0.01
+CFEB	CFE SA	0.01
+MOVE	Medacta Group SA Ordinary Shares	0.01
+FLOW	Flow Traders NV	0.01
+SCYR	Sacyr SA	0.01
+SPI	Spire Healthcare Group PLC	0.01
+BOSN	Bossard Holding AG Bearer Shares	0.01
+DHG	Dalata Hotel Group PLC	0.01
+AMG	Advanced Metallurgical Group NV	0.01
+ALM	Almirall SA	0.01
+KLR	Keller Group PLC	0.01
+RTN	Restaurant Group (The) PLC	0.01
+HFD	Halfords Group PLC	0.01
+NCC	NCC Group PLC	0.01
+GLJ	Grenke AG	0.01
+GNC	Greencore Group PLC	0.01
+SAE	Shop Apotheke Europe NV	0.01
+DEZ	Deutz AG	0.01
+CRN	Cairn Homes PLC	0.01
+FPE	Fuchs Petrolub SE	0.01
+DIOS	Dios Fastigheter AB	0.01
+SON	Sonae SGPS SA	0.01
+JDW	Wetherspoon (J D) PLC	0.01
+FKR	Falck Renewables SpA	0.01
+NTG	NTG Nordic Transport Group A/S	0.01
+VIG	Vienna Insurance Group AG	0.01
+EVN	EVN AG	0.01
+ALFEN	Alfen NV	0.01
+SCHO	Schouw & Co A/S	0.01
+TGS	TGS ASA	0.01
+ENAV	ENAV SpA	0.01
+FNAC	Fnac Darty SA	0.01
+SBS	Stratec SE	0.01
+ADJ	Adler Group SA Ordinary Shares	0.01
+CHG	Chemring Group PLC	0.01
+TIFS	TI Fluid Systems PLC	0.01
+RENE	REN-Redes Energeticas Nacionais Sgps SA	0.01
+RBT	Robertet SA	0.01
+MT	Maire Tecnimont SpA Az nom post raggruppamento	0.01
+GEST	Gestamp Automocion	0.01
+CTT	CTT-Correios de Portugal SA	0.01
+POG	Petropavlovsk PLC	0.01
+BONAV B	Bonava AB B	0.01
+ISN	Intershop Holding AG	0.01
+QDT	Quadient SA	0.01
+DRW3	Draegerwerk AG & Co KGaA Participating Preferred	0.01
+ELIOR	Elior Group SA	0.01
+NOBI	Nobia AB	0.01
+MEKO	Mekonomen AB	0.01
+ERA	Eramet SA	0.01
+BETS B	Betsson AB Class B	0.01
+BSL	Basler AG	0.01
+MARR	Marr SpA	0.01
+PEUG	Peugeot Invest	0.01
+TL5	Mediaset Espana Comunicacion SA	0.01
+MEL	Melia Hotels International SA	0.01
+Sodexo Sa (Loyalty Line 2025)	0.01
+WBD	WeBuild SpA Az nom Post Raggruppamento	0.01
+Albioma	0.01
+YOU	ABOUT YOU Holding SE Ordinary Shares	0.01
+SBB D	Samhallsbyggnadsbolaget i Norden AB Class D	0.01
+INH	Indus Holding AG	0.01
+CCC	CCC SA	0.01
+BAMNB	Koninklijke Bam Groep NV	0.01
+BFF	BFF Bank SpA	0.01
+FDM	FDM Group (Holdings) PLC	0.01
+BCHN	Burckhardt Compression Holding AG	0.01
+PBB	Deutsche Pfandbriefbank AG	0.01
+REDD	Redde Northgate PLC	0.01
+EBRO	Ebro Foods SA	0.01
+LTS	Grupa LOTOS SA	0.01
+EUZ	Eckert & Ziegler Strahlen- und Medizintechnik AG	0.01
+AJB	AJ Bell PLC	0.01
+SYAB	Synlab AG	0.01
+COFA	Coface SA	0.01
+SENS	Sensirion Holding AG Ordinary Shares	0.01
+VIT B	Vitec Software Group AB Class B	0.01
+JUP	Jupiter Fund Management PLC	0.01
+BAR	Barco NV	0.01
+MONY	Moneysupermarket.com Group PLC	0.01
+LUN	H. Lundbeck A/S	0.01
+VK	Vallourec SA	0.01
+MCRO	Micro Focus International PLC	0.01
+US	UnipolSai SPA Az nom post raggruppamento	0.01
+TKA	Telekom Austria AG	0.01
+MEDX	Medmix AG Registered Shares	0.01
+SIX3	Sixt SE Participating Preferred	0.01
+UNI	Unicaja Banco SA	0.01
+N91	Ninety One PLC Ordinary Shares	0.01
+ACP	Asseco Poland SA	0.01
+MTO	MITIE Group PLC	0.01
+SSAB A	SSAB AB Class A	0.01
+GRNG	Granges AB	0.01
+NOEJ	NORMA Group SE	0.01
+PFG	Provident Financial PLC	0.01
+BCP	Banco Comercial Portugues SA	0.01
+RHIM	RHI Magnesita NV Ordinary Shares	0.01
+MIL	Bank Millennium SA	0.01
+CRST	Crest Nicholson Holdings PLC	0.01
+SPI	S IMMO AG	0.01
+ATS	AT&S Austria Technologie & Systemtechnik AG	0.01
+AML	Aston Martin Lagonda Global Holdings PLC Ordinary Shares	0.01
+LDA	Linea Directa Aseguradora SA	0.01
+CCR	C&C Group PLC	0.01
+STG	Scandinavian Tobacco Group A/S	0.01
+AF	Air France-KLM	0.01
+8TRA	Traton SE	0.01
+PCO	Pepco Group BV	0.01
+ALR	Alior Bank SA	0.01
+LOG	Compania de Distribucion Integral Logista Holdings SA	0.01
+1U1	1&1 AG	0.01
+CNE	Capricorn Energy PLC	0.01
+MMT	Metropole Television SA	0.01
+HBH	HORNBACH Holding AG and Co KGaA	0.01
+RATO B	Ratos AB B	0.01
+UPONOR	Uponor Oyj	0.01
+TGYM	Technogym SpA	0.01
+CHEMM	ChemoMetec A/S	0.01
+ROTH	Rothschild & Co SCA	0.01
+MOR	MorphoSys AG	0.01
+CTPNV	CTP NV Ordinary Shares	0.01
+CKN	Clarkson PLC	0.01
+BOOZT	Boozt AB	0.01
+CEY	Centamin PLC	0.01
+VSVS	Vesuvius PLC	0.01
+APPS	Applus Services SA	0.01
+LEHN	LEM Holding SA	0.01
+ERM	Euromoney Institutional Investor PLC	0.01
+AGL	Autogrill SpA	0.01
+IDR	Indra Sistemas SA Class A	0.01
+HTWS	Helios Towers PLC	0.01
+AAF	Airtel Africa PLC Ordinary Shares	0.01
+STM	Stabilus SA	0.01
+ANE	Corporacion Acciona Energias Renovables SA	0.01
+IPS	Ipsos SA	0.01
+ASHM	Ashmore Group PLC	0.01
+TITR	Telecom Italia SpA Rsp	0.01
+DEC	JC Decaux SA	0.01
+VAR1	Varta AG	0.01
+LNZ	Lenzing AG	0.01
+MOON	Moonpig Group PLC Ordinary Shares	0.01
+ITP	Interparfums	0.01
+CRL	Carel Industries SpA	0.01
+KEMIRA	Kemira Oyj	0.01
+ANIM	Anima Holding SpA	0.01
+TEP	Telecom Plus PLC	0.01
+SGKN	St Galler Kantonalbank AG	0.01
+VBK	VERBIO Vereinigte BioEnergie AG	0.01
+COA	Coats Group PLC	0.01
+KRU	Kruk SA	0.01
+FMBK	mBank SA	0.01
+BILI A	Bilia AB Class A	0.01
+B4B	METRO AG	0.01
+BB	Bic	0.01
+DESN	Dottikon ES Holding AG	0.01
+OPL	Orange Polska SA	0.01
+ENOG	Energean PLC	0.01
+SWTQ	Schweiter Technologies AG	0.01
+MGNS	Morgan Sindall Group PLC	0.01
+SZG	Salzgitter AG	0.01
+MGAM	Morgan Advanced Materials PLC	0.01
+CRAYN	Crayon Group Holding ASA Shs	0.01
+DWS	DWS Group GmbH & Co KGaA	0.01
+ESNT	Essentra PLC	0.01
+ENTRA	Entra ASA Shs Unitary 144A/Reg S	0.01
+POM	Plastic Omnium	0.01
+SES	Sesa SpA	0.01
+POST	Oesterreichische Post AG	0.01
+VZN	VZ Holding AG	0.01
+PNDX B	Pandox AB Class B	0.01
+ZOT	Zardoya Otis SA	0.01
+BRW	Brewin Dolphin Holdings PLC	0.01
+KNOS	Kainos Group PLC	0.01
+PGE	Polska Grupa Energetyczna SA	0.01
+REG1V	Revenio Group Oyj	0.01
+TRST	Trustpilot Group PLC	0.01
+CO	Casino Guichard-Perrachon SA	0.01
+IRE	Iren SpA	0.01
+SRE	Sirius Real Estate Ltd	0.01
+SNN	Sanne Group PLC	0.01
+MSLH	Marshalls PLC	0.01
+NETW	Network International Holdings PLC	0.01
+SQN	Swissquote Group Holding SA	0.01
+OXIG	Oxford Instruments PLC	0.01
+FRAS	Frasers Group PLC	0.01
+BIOT	Biotage AB	0.01
+OERL	OC Oerlikon Corp AG, Pfaffikon	0.01
+KARN	Kardex Holding AG Registered Shares	0.01
+PAG	Paragon Banking Group PLC	0.01
+FTK	Flatex AG	0.01
+A5G	AIB Group PLC	0.01
+HILS	Hill & Smith Holdings PLC	0.01
+ECV	Encavis AG	0.01
+ROVI	Laboratorios Farmaceuticos Rovi SA	0.01
+BYS	Bystronic AG Bearer Shares	0.01
+CINT	Cint Group AB Ordinary Shares	0.01
+GEN	Genuit Group PLC	0.01
+SYDB	Sydbank A/S	0.01
+O2D	Telefonica Deutschland Holding AG	0.01
+NEX	National Express Group PLC	0.01
+HOT	Hochtief AG	0.01
+BYIT	Bytes Technology Group PLC Ordinary Shares	0.01
+BEKB	NV Bekaert SA	0.01
+TRI	Trigano SA	0.01
+CAI	CA Immobilien Anlagen AG	0.01
+SO	Somfy SA	0.01
+EPRO B	Electrolux Professional AB Class B	0.01
+ATEA	Atea ASA	0.01
+CURY	Currys PLC	0.01
+KRN	Krones AG	0.01
+MYCR	Mycronic AB	0.01
+HUFV A	Hufvudstaden AB Class A	0.01
+SK	SEB SA	0.01
+VATN	Valiant Holding AG	0.01
+DFDS	DFDS A/S	0.01
+PFV	Pfeiffer Vacuum Technology AG	0.01
+CIE	CIE Automotive SA	0.01
+BPSO	Banca Popolare di Sondrio	0.01
+NDX1	Nordex SE	0.01
+RF	Eurazeo SE	0.01
+NA9	Nagarro SE Ordinary Shares	0.01
+TCAP	TP ICAP GROUP PLC	0.01
+VEI	Veidekke ASA	0.01
+SUSE	SUSE SA	0.01
+RAT	Rathbones Group PLC	0.01
+NK	Imerys	0.01
+FIE	Fielmann AG	0.01
+ROO	Deliveroo PLC	0.01
+TNET	Telenet Group Holding NV	0.01
+SHUR	Shurgard Self Storage SA	0.01
+NELES	Neles Corp	0.01
+ALMB	Alm Brand A/S	0.01
+LAND	Landis+Gyr Group AG	0.01
+ATG	Auction Technology Group PLC When Issue	0.01
+MDC	Mediclinic International PLC	0.01
+METSB	Metsa Board Oyj B	0.01
+SUBC	Subsea 7 SA	0.01
+EURN	Euronav NV	0.01
+IPO	IP Group PLC	0.01
+KBCA	KBC Ancora CVA	0.01
+SUN	Sulzer AG	0.01
+HUBN	Huber& Suhner AG	0.01
+CATE	Catena AB	0.01
+KAHOT	Kahoot ASA Ordinary Shares	0.01
+SFER	Salvatore Ferragamo SpA	0.01
+MMK	Mayr-Melnhof Karton AG	0.01
+TRN	Trainline PLC	0.01
+WG.	Wood Group (John) PLC	0.01
+HMS	HMS Networks AB	0.01
+TROAX	Troax Group AB A	0.01
+LIO	Liontrust Asset Management PLC	0.01
+DMP	Dermapharm Holding SE Bearer Shares	0.01
+LRE	Lancashire Holdings Ltd	0.01
+BPT	Bridgepoint Group PLC When Issue	0.01
+GCO	Grupo Catalana Occidente SA	0.01
+NCC B	NCC AB Class B	0.01
+PLUS	Plus500 Ltd	0.01
+CAPC	Capital & Counties Properties PLC	0.01
+HMSO	Hammerson PLC	0.01
+WKP	Workspace Group PLC	0.01
+MONT	Montea Comm.VA	0.01
+NSI	NSI NV	0.01
+PCTN	Picton Property Income Ltd	0.01
+ALTA	Altarea SCA	0.01
+XIOR	Xior Student Housing NV	0.01
+RET	Retail Estates SA	0.01
+ECMPA	Eurocommercial Properties NV	0.01
+HBRN	Hibernia REIT PLC	0.01
+BEFB	Befimmo SA Act	0.01
+BCPT	BMO Commercial Property Trust	0.01
+UKCM	UK Commercial Property REIT Ord	0.01'''
 
 
 INDEX = {
