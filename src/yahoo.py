@@ -215,6 +215,11 @@ def wrap(s, w):
 
 def profile_item(tk, width=100):
 	item = tk.info
+	
+	target = item.get('targetMeanPrice', 0.)
+	if target is None:
+		target = 0.
+	
 	profile = '''{symbol} - {shortName}
 
 Sector: {sector}
@@ -243,7 +248,7 @@ Quote: {quote}'''.format(symbol=item.get('symbol'), shortName=item.get('shortNam
 			   yieldpercent=0. if item.get('dividendYield') is None else item.get('dividendYield') * 100,
 			   summary = wrap(item.get('longBusinessSummary', ''),width),
 			             recommendationMean=item.get('recommendationMean',-1.) if item.get('recommendationMean',-1.) is not None else -1.,
-			             target=(item.get('targetMeanPrice',0.)/item.get('previousClose',1.))*100
+			             target=(target/item.get('previousClose',1.))*100
 			                    - (100. if 'targetMeanPrice' in item else 0.),
 			             marketCap=np.log10(item.get('marketCap',1.) if item.get('marketCap',1.) is not None else 1.),
                          peg=item.get('pegRatio', float('nan')) if item.get('pegRatio', float('nan')) is not None else float('nan'),

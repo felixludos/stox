@@ -97,7 +97,7 @@ class PortfolioMatching(Criterion):
 		return -self.measure(res, target)
 
 
-class GroupMatching(Criterion):
+class GroupScoring(Criterion):
 	def __init__(self, groups, key, standardize=True, **kwargs):
 		super().__init__(**kwargs)
 		self.groups = groups
@@ -114,9 +114,56 @@ class GroupMatching(Criterion):
 			vals /= vals.abs().sum()
 		
 		self.param = vals
-		
+	
 	def loss(self, q):
 		return q @ self.param
+
+
+class GroupMatching(Criterion):
+	def __init__(self, groups, key, aliases={}, as_logits=True, **kwargs):
+		super().__init__(**kwargs)
+		self.aliases = aliases
+		self.groups_raw = groups
+		
+		gnames, wts = zip(*groups.items())
+		wts = torch.as_tensor(wts).float()
+		as_logits = as_logits or wts.lt(0.).any()
+		wts = F.softmax(wts,dim=0) if as_logits else F.normalize(wts, p=1,dim=0)
+		self.groups = dict(zip(gnames, wts.tolist()))
+		self.indices = {name:idx for idx, name in enumerate(gnames)}
+		self.target = wts
+		
+		self.key = key
+		# self.standardize = standardize
+		self.as_logits = as_logits
+	
+	def apply(self, tickers):
+		return [self.key(tk) for tk in tickers]
+	
+	def prepare(self, tickers):
+		existing = self.apply(tickers)
+		self.param = torch.zeros(len(existing), len(self.indices))
+		for i, v in enumerate(existing):
+			v = self.aliases.get(v,v)
+			if v in self.indices:
+				self.param[i,self.indices[v]] = 1.# self.groups[v]
+				
+	def loss(self, q):
+		vals = q @ self.param
+		return -vals.sub(self.target).pow(2).sum().sqrt()
+
+
+class ManualReqs(Criterion):
+	def __init__(self, reqs, p=2, **kwargs):
+		super().__init__(**kwargs)
+		self.reqs = reqs
+		self.p = p
+	
+	def prepare(self, tickers):
+		self.param = torch.as_tensor([self.reqs.get(tk, 0.) for tk in tickers])
+		
+	def loss(self, q):
+		return -F.relu(self.param - q).pow(self.p).sum()
 
 
 class FeatureVariance(Criterion):
@@ -158,9 +205,39 @@ class ClipWeight(Criterion):
 
 
 
-class FeatureExtractor(Criterion):
-	def __init__(self, features, normalize=True, standardize=True, **kwargs):
+class UnitShares(Criterion):
+	def __init__(self, capital, p=2, **kwargs):
 		super().__init__(**kwargs)
+		self.capital = capital
+		self.p = p
+	
+	def prepare(self, tickers):
+		vals = np.array([(float('nan') if val is None else val)
+		                 for val in map(lambda tk: tk.info.get('currentPrice'), tickers)])
+		good = np.isfinite(vals)
+		assert good.sum() > 1
+		
+		pts = vals[good]
+		
+		# if self.normalize:
+		# 	pts /= np.abs(pts).sum()
+		# pts -= pts.mean()
+		# pts = np.abs(pts)
+		self.param = torch.zeros(len(vals))
+		self.sel = torch.from_numpy(good).bool()
+		self.param[self.sel] = self.capital / torch.from_numpy(pts).float()
+	
+	def loss(self, q):
+		m = self.param @ q
+		m = m - (m > 0.5).float()
+		return -m.pow(2).sum().div(2)
+
+
+
+class FeatureExtractor(Criterion):
+	def __init__(self, features, normalize=True, standardize=True, use_percentile=False, **kwargs):
+		super().__init__(**kwargs)
+		self.use_percentile = use_percentile
 		
 		wts = []
 		funcs = []
@@ -189,11 +266,30 @@ class FeatureExtractor(Criterion):
 				except:
 					print(tk.ticker, i)
 					traceback.print_exc()
+				# if v is None or v-v != 0:
+				# 	v = 0.
 				fs.append(v)
 			dat.append(fs)
 		dat = torch.as_tensor(dat).float()
+		full_costs = dat * self.wts.view(1, -1)
 		
-		self.costs = dat @ self.wts.view(-1, 1)
+		stands = []
+		for row in full_costs.t():
+			good = row[row.isnan().logical_not()]
+			if len(good):
+				mn, mx = good.min(), good.max()
+				stands.append(row.sub(mn).div(mx - mn))
+			else:
+				stands.append(row)
+		stands = torch.stack(stands).t()
+		self.feat_dats = dat
+		self.percentile_dats = stands
+		
+		wts = self.wts.abs().view(-1,1) if self.use_percentile else self.wts.view(-1, 1)
+		costs = stands.clone() if self.use_percentile else dat.clone()
+		costs[costs.isnan()] = 0.
+		
+		self.costs = costs @ wts
 		self.costs = self.costs.squeeze()
 		if self.standardize:
 			self.costs /= self.costs.abs().sum()
