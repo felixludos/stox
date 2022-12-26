@@ -130,8 +130,8 @@ def save_portfolio(name, data, root=None, dirname='portfolios',):
 
 
 def download(ticker, date='last', root=None, dirname='yahoo_data',
-			 history_kwargs=None, ticker_type=None,
-			 keys=None, pbar=None):
+			 history_kwargs=None, ticker_type=None, skip_failures=False,
+			 keys=None, pbar=None, allow_download=True):
 	path = _get_path_info(ticker, root=root, date=date, dirname=dirname)
 	
 	tk = yf.Ticker(ticker)
@@ -145,19 +145,26 @@ def download(ticker, date='last', root=None, dirname='yahoo_data',
 	if pbar is not None:
 		itr = pbar(itr, total=len(keys))
 	
-	for key, store in itr:
-		if pbar is not None:
-			itr.set_description(f'{ticker}: {key}')
-		# print(store.fmt_path(path, key))
-		if not store.fmt_path(path, key).exists():
-			data = None
-			try:
-				data = tk.history(**history_kwargs) if key == 'history' else getattr(tk, key)
-				# if data is not None:
-				store.save(data, path, key)
-			except:
-				print(ticker, key, data)
-				raise
+	try:
+		for key, store in itr:
+			if pbar is not None:
+				itr.set_description(f'{ticker}: {key}')
+			# print(store.fmt_path(path, key))
+			if not store.fmt_path(path, key).exists():
+				if not allow_download:
+					return None
+				data = None
+				try:
+					data = tk.history(**history_kwargs) if key == 'history' else getattr(tk, key)
+					# if data is not None:
+					store.save(data, path, key)
+				except:
+					print(ticker, key, data)
+					raise
+	except KeyError:
+		if skip_failures:
+			return None
+		raise
 
 	if ticker_type is None:
 		ticker_type = OfflineTicker

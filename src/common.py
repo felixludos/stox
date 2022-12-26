@@ -8,6 +8,105 @@ from matplotlib import pyplot as plt
 from matplotlib.lines import Line2D
 from matplotlib import patches as mpatches
 
+EURO_EX = {
+	'DAX': {'LIN.DE': 10.13, 'SAP.DE': 8.9, 'SIE.DE': 8.13, 'ALV.DE': 6.87, 'DTE.DE': 5.58, 'AIR.PA': 5.31, 'BAYN.DE': 4.53, 'MBG.DE': 4.22, 'BAS.DE': 3.62, 'MUV2.DE': 3.49, 'IFX.DE': 3.42, 'DPW.DE': 3.05, 'DB1.DE': 2.69, 'VOW3.DE': 2.41, 'RWE.DE': 2.36, 'BMW.DE': 2.26, 'MRK.DE': 1.88, 'ADS.DE': 1.72, 'DBK.DE': 1.72, 'EOAN.DE': 1.58, 'VNA.DE': 1.4, 'DTG.DE': 1.23, 'SY1.DE': 1.21, 'SHL.DE': 1.17, 'HEN3.DE': 0.96, 'FRE.DE': 0.91, 'HNR1.DE': 0.89, 'MTX.DE': 0.88, 'BEI.DE': 0.84, 'BNR.DE': 0.77, 'PAH3.DE': 0.75, 'SRT3.DE': 0.72, 'HEI.DE': 0.61, 'ENR.DE': 0.61, '1COV.DE': 0.6, 'ZAL.DE': 0.57, 'CON.DE': 0.51, 'FME.DE': 0.49, 'PUM.DE': 0.41},
+	'CAC': {'TTE.PA': 9.27, 'MC.PA': 8.2, 'SAN.PA': 7.24, 'AIR.PA': 5.97, 'OR.PA': 5.03, 'AI.PA': 4.42, 'BN.PA': 4.33, 'DG.PA': 3.8599999999999994, 'BNP.PA': 3.81, 'SU.PA': 3.5699999999999994, 'SAF.PA': 3.56, 'CS.PA': 3.45, 'EL.PA': 3.3300000000000005, 'RI.PA': 2.73, 'KER.PA': 2.69, 'ORA.PA': 2.24, 'ENGI.PA': 2.06, 'VIV.PA': 1.9299999999999997, 'GLE.PA': 1.45, 'CAP.PA': 1.43, 'URW.AS': 1.42, 'DSY.PA': 1.4, 'SGO.PA': 1.39, 'LR.PA': 1.39, 'RMS.PA': 1.35, 'ML.PA': 1.31, 'VIE.PA': 1.02, 'ACA.PA': 0.97, 'HO.PA': 0.9399999999999998, 'STM.PA': 0.9000000000000001, 'RNO.PA': 0.8199999999999998, 'TEP.PA': 0.78, 'CA.PA': 0.76, 'PUB.PA': 0.76, 'MT.AS': 0.69, 'EN.PA': 0.65},
+	'MIB': {'ENEL.MI': 15.32, 'ENI.MI': 10.29, 'ISP.MI': 8.87, 'UCG.MI': 6.76, 'G.MI': 6.4399999999999995, 'RACE.MI': 5.46, 'STM.MI': 3.2400000000000007, 'SRG.MI': 3.2099999999999995, 'CNHI.MI': 2.57, 'TRN.MI': 2.41, 'MONC.MI': 1.95, 'MB.MI': 1.94, 'FBK.MI': 1.66, 'TIT.MI': 1.51, 'PRY.MI': 1.49, 'TEN.MI': 1.43, 'CPR.MI': 1.37, 'PST.MI': 1.34, 'LDO.MI': 1.22, 'REC.MI': 1.15, 'IG.MI': 0.89, 'HER.MI': 0.88, 'NEXI.MI': 0.86, 'AMP.MI': 0.84, 'BAMI.MI': 0.8100000000000002, 'A2A.MI': 0.76, 'DIA.MI': 0.75, 'SPM.MI': 0.72, 'UNI.MI': 0.65, 'PIRC.MI': 0.62, 'AZM.MI': 0.58, 'BZU.MI': 0.4099999999999999, 'BPE.MI': 0.38, 'BGN.MI': 0.37, 'IVG.MI': 0.37, 'SFER.MI': 0.37, 'STLA.MI': 0.17, 'JUVE.MI': 0.17},
+	'AEX': {'ASML.AS': 17.62, 'UNA.AS': 14.76, 'SHELL.AS': 10.15, 'ADYEN.AS': 6.9, 'REN.AS': 5.78, 'INGA.AS': 5.64, 'PHIA.AS': 4.95, 'PRX.AS': 4.35, 'DSM.AS': 3.71, 'AD.AS': 3.4, 'HEIA.AS': 3.06, 'WKL.AS': 2.94, 'AKZA.AS': 2.58, 'MT.AS': 2.41, 'ASM.AS': 1.7, 'NN.AS': 1.45, 'TKWY.AS': 1.35, 'KPN.AS': 1.15, 'URW.AS': 1.12, 'RAND.AS': 1.08, 'IMCD.AS': 0.99, 'LIGHT.AS': 0.89, 'AGN.AS': 0.81, 'BESI.AS': 0.66, 'UMG.AS': 0.57},
+	'ATX': {'EBS.VI': 16.52, 'EVN.VI': 11.83, 'VER.VI': 8.89, 'VOE.VI': 7.94, 'WIE.VI': 7.61, 'BG.VI': 6.56, 'RBI.VI': 6.56, 'ANDR.VI': 5.56, 'CAI.VI': 5.31, 'MMK.VI': 4.34, 'IIA.VI': 3.41, 'POST.VI': 2.78, 'VIG.VI': 2.28, 'UQA.VI': 1.84, 'DOC.VI': 1.83, 'SPI.VI': 1.83, 'LNZ.VI': 1.72, 'ATS.VI': 1.25, 'SBO.VI': 0.72, 'OMV.VI': 0.7},
+	'BEL': {'ABI.BR': 11.89, 'ARGX.BR': 11.76, 'KBC.BR': 11.75, 'UCB.BR': 9.18, 'GBLB.BR': 7.4, 'UMI.BR': 6.75, 'AGS.BR': 6.44, 'SOLB.BR': 6.05, 'ELI.BR': 4.34, 'DIE.BR': 3.45, 'WDP.BR': 3.36, 'ACKB.BR': 2.93, 'SOF.BR': 2.91, 'AED.BR': 2.74, 'COFB.BR': 2.46, 'GLPG.AS': 1.88, 'PROX.BR': 1.46, 'COLR.BR': 1.24, 'APAM.AS': 1.23, 'VGP.BR': 0.8},
+	'IBEX': {'IBE.MC': 15.61, 'ITX.MC': 11.63, 'SAN.PA': 11.19, 'BBVA.MC': 6.96, 'AMS.MC': 5.99, 'TEF.MC': 4.98, 'CLNX.MC': 3.87, 'AENA.MC': 3.78, 'REP.MC': 3.73, 'FER.MC': 3.44, 'CABK.MC': 3.43, 'IAG.MC': 2.68, 'ELE.MC': 2.09, 'GRF.MC': 2.08, 'ACS.MC': 1.88, 'NTGY.MC': 1.79, 'RED.MC': 1.76, 'SGRE.MC': 1.69, 'MTS.MC': 1.14, 'BKT.MC': 1.12, 'ENG.MC': 1.05, 'ANA.MC': 0.99, 'MRL.MC': 0.93, 'MAP.MC': 0.74, 'ACX.MC': 0.63, 'SAB.MC': 0.59, 'COL.MC': 0.56, 'SLR.MC': 0.49, 'PHM.MC': 0.42, 'IDR.MC': 0.3, 'MEL.MC': 0.27},
+	'PSI': {
+	    "BCP.LS": 12.30,
+	    "EDP.LS": 10.58,
+	    "GALP.LS": 10.40,
+	    "JMT.LS": 9.92,
+	    "NOS.LS": 8.89,
+	    "PT.LS": 8.57,
+	    "SEM.LS": 7.91,
+	    "SON.LS": 6.92,
+	    "TRQ.LS": 4.56,
+	    "VGR.LS": 4.49,
+	    "ACC.LS": 4.19,
+	    "ALT.LS": 4.03,
+	    "CTT.LS": 3.91,
+	    "EFACEC.LS": 3.89,
+	    "FID.LS": 3.68,
+	    "IBS.LS": 3.53,
+	    "NAV.LS": 3.47,
+	    "NB.LS": 3.34,
+	    "SONI.LS": 3.09,
+	    "SONC.LS": 2.93,
+	},
+	'OMXH': {
+	    "NOKIA.HE": 17.67,
+	    "FORTUM.HE": 10.85,
+	    "UPM.HE": 9.35,
+	    "NDA.FI": 8.67,
+	    "OUT1V.HE": 7.39,
+	    "KESKO.HE": 5.97,
+	    "STERV.HE": 5.86,
+	    "KNEBV.HE": 5.70,
+	    "TELIA1.HE": 5.19,
+	    "WRT1V.HE": 4.74,
+	    "FIA1S.HE": 4.58,
+	    "METSO.HE": 4.43,
+	    "ELISA.HE": 4.39,
+	    "ORION.HE": 4.33,
+	    "HELS.HE": 3.79,
+	    "FISKARS.HE": 3.66,
+	    "CGCBV.HE": 3.56,
+	    "NRE1V.HE": 3.17,
+	    "RBI.HE": 2.86,
+	    "VALMT.HE": 2.80,
+	    "AM1S.HE": 2.76,
+	    "SRV1V.HE": 2.56,
+	    "KEMIRA.HE": 2.55,
+	    "OTE1V.HE": 2.49
+	},
+	'ATHEX': {
+	    'ETE.AT': 9.95,
+	    'ALPHA.AT': 9.95,
+	    'EUROB.AT': 9.94,
+	    'TPEIR.AT': 9.94,
+	    'OTE.AT': 7.96,
+	    'PPC.AT': 6.97,
+	    'JUMBO.AT': 4.97,
+	    'MYTIL.AT': 4.97,
+	    'FOLLI.AT': 4.97,
+	    'TERNA.AT': 3.98,
+	    'ELLAK.AT': 3.98,
+	    'MOTOR.AT': 3.98,
+	    'TUI.AT': 2.99,
+	    'FRIGO.AT': 2.99,
+	    'LAMDA.AT': 2.99,
+	    'EYATH.AT': 2.99,
+	    'EXAE.AT': 2.99,
+	    'HELPE.AT': 2.99,
+	    'VIOH.AT': 2.99,
+	    'AEGN.AT': 2.99
+	},
+	'ISE': {'RYA.IR': 17.5, 'BIRG.IR': 13.5, },
+	
+}
+
+
+
+def make_fix_ticker(*world):
+	world = {tk: tk for tk in world}
+	world.update({
+		tk.split('.')[0]: tk
+	for tk in world})
+	def find(ident, tks=None):
+		if tks is None:
+			tks = world
+		ident = ident.upper()
+		if ident in tks:
+			return tks[ident]
+		raise KeyError(ident)
+	return find
+
+
 def make_find(world):
 	if isinstance(world, list):
 		world = {tk.ticker: tk for tk in world}
