@@ -9,5 +9,7 @@
     </content>
     <orderEntry type="jdk" jdkName="py11" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="omni-belt" />
+    <orderEntry type="module" module-name="omni-fig" />
   </component>
 </module>
