@@ -30,6 +30,16 @@ def str_similarity(string1: str, string2: str):
 	return similarity
 
 
+def best_matches(options1: str | list[str], options2: str | list[str], similarity = str_similarity):
+	'''Generates the best matches between two lists of options.'''
+	if isinstance(options1, str):
+		options1 = [options1]
+	if isinstance(options2, str):
+		options2 = [options2]
+	results = [(similarity(option1, option2), option1, option2) for option1 in options1 for option2 in options2]
+	yield from sorted(results, key=lambda x: x[0], reverse=True)
+
+
 def extract_tickers_and_shares(file_path):
 	'''Extracts a list of tickers from a text copy of the IBKR portfolio view.'''
 	with open(file_path, 'r') as f:
