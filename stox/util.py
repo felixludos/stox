@@ -1,7 +1,8 @@
+from .imports import *
 
-import re
 
 def extract_tickers_and_shares(file_path):
+	'''Extracts a list of tickers from a text copy of the IBKR portfolio view.'''
 	with open(file_path, 'r') as f:
 		lines = f.readlines()
 
@@ -18,6 +19,13 @@ def extract_tickers_and_shares(file_path):
 			results.append((ticker, shares))
 
 	return results
+
+
+
+
+
+
+
 
 
 

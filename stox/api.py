@@ -1,7 +1,4 @@
-
-from ib_insync import *
-import xmltodict
-
+from .imports import *
 
 
 class IB_Extractor:
@@ -53,6 +50,9 @@ class IB_Extractor:
 	def calendar(self, info):
 		contract = self.as_contract(info)
 		return self.ib.reqFundamentalData(contract, 'CalendarReport')
+
+	def search(self, query: str):
+		return [r.contract for r in self.ib.reqMatchingSymbols(query)]
 
 
 
