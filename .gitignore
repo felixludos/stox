@@ -3,6 +3,8 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+secrets.yml
+stoxdata/
 .idea/
 yahoo_data/
 world-bank/

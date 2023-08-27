@@ -63,7 +63,7 @@ _default_datatypes = {
 	'isin': JsonLoader,
 	'info': JsonLoader,
 	'history': PandasLoader,
-	'calendar': PandasLoader,
+	# 'calendar': PandasLoader,
 	
 	'recommendations': PandasLoader,
 	'sustainability': PandasLoader,

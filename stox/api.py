@@ -1,4 +1,5 @@
 from .imports import *
+from ib_insync import *
 
 
 class IB_Extractor:

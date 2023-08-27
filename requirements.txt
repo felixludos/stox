@@ -1,0 +1,3 @@
+python-Levenshtein
+yfinance
+ib_insync
