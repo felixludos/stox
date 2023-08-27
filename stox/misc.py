@@ -5,7 +5,7 @@ def stox_root():
 	return Path(__file__).parent.parent
 
 def get_secret(key):
-	return load_yaml(stox_root() / 'config' / 'secrets.yml')[key]
+	return load_yaml(stox_root() / 'secrets.yml')[key]
 
 def assets_root():
 	'''Returns the root directory for the assets.'''
