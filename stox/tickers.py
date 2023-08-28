@@ -1,5 +1,7 @@
 from .imports import *
 
+from omniply.novo.test_novo import CraftyKit, tool
+
 
 
 class SymbolFinder(CraftyKit):

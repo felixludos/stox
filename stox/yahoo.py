@@ -44,17 +44,19 @@ class PandasLoader(JsonLoader):
 		try:
 			if not isinstance(data, (pd.DataFrame, pd.Series)):
 				return super().save(data, root, key)
-			return data.to_json(cls.fmt_path(root, key))
+			return data.to_csv(cls.fmt_path(root, key), index=True)
+			return data.to_json(cls.fmt_path(root, key), date_format='iso', date_unit='s')
 		except ValueError:
-			return data.to_json(cls.fmt_path(root, key), orient='split')
+			return data.to_json(cls.fmt_path(root, key), orient='split', date_format='iso', date_unit='s')
 	
 	
 	@classmethod
 	def load(cls, root, key):
 		try:
-			return pd.read_json(cls.fmt_path(root, key))
+			return pd.read_csv(cls.fmt_path(root, key), index_col=0)
+			return pd.read_json(cls.fmt_path(root, key), date_unit='s')
 		except ValueError:
-			return pd.read_json(cls.fmt_path(root, key), orient='split')
+			return pd.read_json(cls.fmt_path(root, key), orient='split', date_unit='s')
 
 
 
@@ -63,10 +65,10 @@ _default_datatypes = {
 	'isin': JsonLoader,
 	'info': JsonLoader,
 	'history': PandasLoader,
-	'calendar': PandasLoader,
+	# 'calendar': PandasLoader, # TODO: update when yfinance is updated
 	
-	'recommendations': PandasLoader,
-	'sustainability': PandasLoader,
+	# 'recommendations': PandasLoader, # TODO: update when yfinance is updated
+	# 'sustainability': PandasLoader, # TODO: update when yfinance is updated
 	
 	'dividends': PandasLoader,
 	'splits': PandasLoader,
@@ -77,12 +79,12 @@ _default_datatypes = {
 	
 	'balancesheet': PandasLoader,
 	'cashflow': PandasLoader,
-	'earnings': PandasLoader,
+	# 'earnings': PandasLoader,
 	'financials': PandasLoader,
 	
 	'quarterly_balancesheet': PandasLoader,
 	'quarterly_cashflow': PandasLoader,
-	'quarterly_earnings': PandasLoader,
+	# 'quarterly_earnings': PandasLoader,
 	'quarterly_financials': PandasLoader,
 	
 	

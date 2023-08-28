@@ -13,7 +13,7 @@ def assets_root():
 
 def data_root():
 	'''Returns the root directory for the data.'''
-	return stox_root() / 'data'
+	return stox_root() / 'stockdata'
 
 def yahoo_root():
 	'''Returns the root directory for the Yahoo data.'''
@@ -30,13 +30,14 @@ def str_similarity(string1: str, string2: str):
 	return similarity
 
 
-def best_matches(options1: str | list[str], options2: str | list[str], similarity = str_similarity):
+def best_matches(options1: str | Iterable[str], options2: str | Iterable[str], *, similarity = str_similarity,
+				 key1=None, key2=None):
 	'''Generates the best matches between two lists of options.'''
-	if isinstance(options1, str):
-		options1 = [options1]
-	if isinstance(options2, str):
-		options2 = [options2]
-	results = [(similarity(option1, option2), option1, option2) for option1 in options1 for option2 in options2]
+	keys1 = options1 if key1 is None else list(map(key1, options1))
+	keys2 = options2 if key2 is None else list(map(key2, options2))
+	results = [(similarity(s1, s2), option1, option2)
+			   for s1, option1 in zip(keys1, options1)
+			   for s2, option2 in zip(keys2, options2)]
 	yield from sorted(results, key=lambda x: x[0], reverse=True)
 
 
