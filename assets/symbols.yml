@@ -35,14 +35,14 @@
 - {ibkr: BAS, yahoo: BAS.DE}
 - {ibkr: ISP, yahoo: ISP.MI}
 - {ibkr: RI, yahoo: RI.PA}
-- {ibkr: CRH, yahoo: CRH.L}
+- {ibkr: CRH, yahoo: CRH.L, currency: GBP}
 - {ibkr: ITX, yahoo: ITX.MC}
 - {ibkr: KER, yahoo: KER.PA}
 - {ibkr: NDA, yahoo: NDA.ST}
 - {ibkr: BMW, yahoo: BMW.DE}
 - {ibkr: BN, yahoo: BN.PA}
 - {ibkr: DB1, yahoo: DB1.DE}
-- {ibkr: FLTR, yahoo: FLTR.L}
+- {ibkr: FLTR, yahoo: FLTR.L, currency: GBP}
 - {ibkr: ENI, yahoo: ENI.MI}
 - {ibkr: ADS, yahoo: ADS.DE}
 - {ibkr: AD, yahoo: AD.AS}
@@ -174,41 +174,98 @@
 - {ibkr: TEF, yahoo: TEF.MC}
 - {ibkr: RED1, yahoo: RED.MC}
 - {ibkr: SAB1, yahoo: SAB.MC}
-- {ibkr: D6D, yahoo: AGB.BR}
-- {ibkr: TNO, yahoo: TNO.BR}
-- {ibkr: UCB, yahoo: UCB.BR}
-- {ibkr: AVH, yahoo: AVH.BR}
-- {ibkr: GBLB, yahoo: GBL.BR}
-- {ibkr: SOLB, yahoo: SOLB.BR}
+- {ibkr: ACKB, yahoo: ACKB.BR}
+- {ibkr: AED, yahoo: AED.BR}
+- {ibkr: AGS, yahoo: AGS.BR}
+- {ibkr: APAM, yahoo: APAM.BR}
+- {ibkr: ARGX, yahoo: ARGX.BR}
+- {ibkr: COFB, yahoo: COFB.BR}
+- {ibkr: COLR, yahoo: COLR.BR}
+- {ibkr: ELI1, yahoo: ELI.BR}
+- {ibkr: GBLB, yahoo: GBLB.BR}
+- {ibkr: GLPG, yahoo: GLPG.BR}
 - {ibkr: KBC, yahoo: KBC.BR}
+- {ibkr: MELE, yahoo: MELE.BR}
+- {ibkr: PROX, yahoo: PROX.BR}
+- {ibkr: SOF, yahoo: SOF.BR}
+- {ibkr: SOLB, yahoo: SOLB.BR}
+- {ibkr: TNET, yahoo: TNET.BR}
+- {ibkr: UCB, yahoo: UCB.BR}
 - {ibkr: UMI, yahoo: UMI.BR}
-#- {ibkr: UM3, yahoo: UMC.BR}
-#- {ibkr: DELG, yahoo: DEL.BR}
-#- {ibkr: DEL2, yahoo: DEL.BR}
-#- {ibkr: DLS, yahoo: DEL.BR}
-#- {ibkr: AD, yahoo: DEL.BR}
-#- {ibkr: DHZ, yahoo: DEL.BR}
-#- {ibkr: DHER, yahoo: DEL.BR}
-#- {ibkr: 98D, yahoo: DEL.BR}
-#- {ibkr: ENGI, yahoo: ENGI.BR}
-#- {ibkr: MTX, yahoo: ENGI.BR}
-#- {ibkr: ONTEX, yahoo: ONTEX.BR}
-#- {ibkr: COFB, yahoo: COFB.BR}
-#- {ibkr: COFB.DRTS, yahoo: COFB.BR}
-#- {ibkr: COFB.RTS3, yahoo: COFB.BR}
-#- {ibkr: COFB.RTS, yahoo: COFB.BR}
-#- {ibkr: COFB.DIV, yahoo: COFB.BR}
-#- {ibkr: BEKB, yahoo: BEK.BR}
-#- {ibkr: TERB.DRTS, yahoo: BEK.BR}
-#- {ibkr: TERB.DIVR, yahoo: BEK.BR}
-#- {ibkr: TERB.RTS, yahoo: BEK.BR}
-#- {ibkr: BPOST, yahoo: BPO.BR}
-#- {ibkr: COL, yahoo: COL.BR}
-#- {ibkr: COLR, yahoo: COL.BR}
-#- {ibkr: CCEP, yahoo: COL.BR}
-#- {ibkr: EEE1, yahoo: COL.BR}
-#- {ibkr: INGA, yahoo: INGA.BR}
-#- {ibkr: INNA, yahoo: INGA.BR}
-#- {ibkr: BLG, yahoo: BLG.BR}
-#- {ibkr: GLS, yahoo: GLS.BR}
-#- {ibkr: ES6, yahoo: ES6.BR}
+- {ibkr: WDP, yahoo: WDP.BR}
+- {ibkr: VALMT, yahoo: VALMT.HE}
+- {ibkr: UPM, yahoo: UPM.HE}
+- {ibkr: TIETO, yahoo: TIETO.HE}
+- {ibkr: STERV, yahoo: STERV.HE}
+- {ibkr: SAMPO, yahoo: SAMPO.HE}
+- {ibkr: OUT, yahoo: OUT1V.HE}
+- {ibkr: NESTE, yahoo: NESTE.HE}
+- {ibkr: NDA2, yahoo: NDA FI.HE}
+- {ibkr: METSO, yahoo: MOCORP.HE}
+- {ibkr: KOJAMO, yahoo: KOJAMO.HE}
+- {ibkr: KNEBV, yahoo: KNEBV.HE}
+- {ibkr: KESKOB, yahoo: KESKOB.HE}
+- {ibkr: KEMIRA, yahoo: KEMIRA.HE}
+- {ibkr: KCR, yahoo: KCR.HE}
+- {ibkr: FORTUM, yahoo: FORTUM.HE}
+- {ibkr: ELISA, yahoo: ELISA.HE}
+- {ibkr: CGCBV, yahoo: CGCBV.HE}
+- {ibkr: TYRES, yahoo: TYRES.HE}
+- {ibkr: TELIA1, yahoo: TELIA1.HE}
+- {ibkr: ORNBV, yahoo: ORNBV.HE}
+- {ibkr: METSB, yahoo: METSB.HE}
+- {ibkr: HUH1V, yahoo: HUH1V.HE}
+- {ibkr: CENER, yahoo: CENER.AT}
+- {ibkr: EEE1, yahoo: EEE.AT}
+- {ibkr: ELPE, yahoo: ELPE.AT}
+- {ibkr: ETE, yahoo: ETE.AT}
+- {ibkr: ELLAKTOR, yahoo: ELLAKTOR.AT}
+- {ibkr: LAMDA, yahoo: LAMDA.AT}
+- {ibkr: QUEST, yahoo: QUEST.AT}
+- {ibkr: TITC, yahoo: TITC.AT}
+- {ibkr: BELA, yahoo: BELA.AT}
+- {ibkr: 32A, yahoo: AEGN.AT}
+- {ibkr: MYTIL, yahoo: MYTIL.AT}
+- {ibkr: 0AH1, yahoo: OTOEL.AT}
+- {ibkr: VIO, yahoo: VIO.AT}
+- {ibkr: BKP, yahoo: TPEIR.AT}
+- {ibkr: TENERGY, yahoo: TENERGY.AT}
+- {ibkr: SAR, yahoo: SAR.AT}
+- {ibkr: EYDAP, yahoo: EYDAP.AT}
+- {ibkr: ALPHA, yahoo: ALPHA.AT}
+- {ibkr: PPC, yahoo: PPC.AT}
+- {ibkr: EUROB, yahoo: EUROB.AT}
+- {ibkr: MOH, yahoo: MOH.AT}
+- {ibkr: OPAP, yahoo: OPAP.AT}
+- {ibkr: HTO, yahoo: HTO.AT}
+- {ibkr: GEKTERNA, yahoo: GEKTERNA.AT}
+- {ibkr: RR., yahoo: RR.L, currency: GBP}
+- {ibkr: ENT, yahoo: ENT.L, currency: GBP}
+- {ibkr: RS1, yahoo: RS1.L, currency: GBP}
+- {ibkr: SPX, yahoo: SPX.L, currency: GBP}
+- {ibkr: AHT, yahoo: AHT.L, currency: GBP}
+- {ibkr: CCH, yahoo: CCH.L, currency: GBP}
+- {ibkr: RTO, yahoo: RTO.L, currency: GBP}
+- {ibkr: BATS, yahoo: BATS.L, currency: GBP}
+- {ibkr: ANTO, yahoo: ANTO.L, currency: GBP}
+- {ibkr: BA., yahoo: BA.L, currency: GBP}
+- {ibkr: SMIN, yahoo: SMIN.L, currency: GBP}
+- {ibkr: SDR, yahoo: SDR.L, currency: GBP}
+- {ibkr: HLN, yahoo: HLN.L, currency: GBP}
+- {ibkr: CNA, yahoo: CNA.L, currency: GBP}
+- {ibkr: PSN, yahoo: PSN.L, currency: GBP}
+- {ibkr: TSCO, yahoo: TSCO.L, currency: GBP}
+- {ibkr: EXPN, yahoo: EXPN.L, currency: GBP}
+- {ibkr: SHEL, yahoo: SHEL.L, currency: GBP}
+- {ibkr: CPG, yahoo: CPG.L, currency: GBP}
+- {ibkr: STJ, yahoo: STJ.L, currency: GBP}
+- {ibkr: AUTO, yahoo: AUTO.L, currency: GBP}
+- {ibkr: SSE, yahoo: SSE.L, currency: GBP}
+- {ibkr: ABDN, yahoo: ABDN.L, currency: GBP}
+- {ibkr: MNG, yahoo: MNG.L, currency: GBP}
+- {ibkr: RMV, yahoo: RMV.L, currency: GBP}
+- {ibkr: FRAS, yahoo: FRAS.L, currency: GBP}
+- {ibkr: AAF, yahoo: AAF.L, currency: GBP}
+- {ibkr: PRU, yahoo: PRU.L, currency: GBP}
+- {ibkr: VOD, yahoo: VOD.L, currency: GBP}
+- {ibkr: SMT, yahoo: SMT.L, currency: GBP}
