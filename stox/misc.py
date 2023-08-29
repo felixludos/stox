@@ -1,5 +1,31 @@
 from .imports import *
 from omnibelt import load_yaml
+from datetime import datetime
+
+
+STD_FMT = "%y%m%d"
+
+def get_date(fmt=None):
+	if fmt is None:
+		fmt = STD_FMT
+	return datetime.now().strftime(fmt)
+
+
+def get_date_path(tickerroot, date=None):
+	tickerroot.mkdir(exist_ok=True)
+	if date == 'last':
+		options = sorted(tickerroot.glob('*'), key=lambda p: p.name)#[-1]
+		if len(options):
+			date = options[-1]
+		else:
+			date = None
+	if date is None:
+		date = get_date()
+	path = tickerroot / date
+	path.mkdir(exist_ok=True)
+	return path
+
+
 
 def stox_root():
 	return Path(__file__).parent.parent

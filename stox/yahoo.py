@@ -2,8 +2,6 @@
 import sys, os
 from pathlib import Path
 import json
-
-from datetime import datetime
 import time
 
 import numpy as np
@@ -11,17 +9,11 @@ import pandas as pd
 
 import yfinance as yf
 
+from . import misc
+
 # from omnibelt import get_now
 
-STD_FMT = "%y%m%d"
-
 _DEFAULT_ROOT = Path(__file__).parents[1]
-
-def get_date(fmt=None):
-	if fmt is None:
-		fmt = STD_FMT
-	return datetime.now().strftime(fmt)
-
 
 class JsonLoader:
 	@staticmethod
@@ -99,19 +91,7 @@ def _get_path_root(dirname='yahoo_data', root=None):
 def _get_path_info(ticker, root=None, dirname='yahoo_data', date='last'):
 	root = _get_path_root(dirname=dirname, root=root)
 	path = root / ticker
-	path.mkdir(exist_ok=True)
-	
-	if date == 'last':
-		options = sorted(path.glob('*'), key=lambda p: p.name)#[-1]
-		if len(options):
-			date = options[-1]
-		else:
-			date = None
-	if date is None:
-		date = get_date()
-	path = path / date
-	path.mkdir(exist_ok=True)
-	return path
+	return misc.get_date_path(path, date=date)
 
 def load_portfolio(name, root=None, dirname='portfolios',
 				   datadir='yahoo_data', date='last', download_self=False):
