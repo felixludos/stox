@@ -1,271 +1,269 @@
-- {ibkr: AAPL, yahoo: AAPL}
-- {ibkr: MC, yahoo: MC.PA}
-- {ibkr: ASML, yahoo: ASML.AS}
-- {ibkr: TTE, yahoo: TTE.PA}
-- {ibkr: SAP, yahoo: SAP.DE}
-- {ibkr: SIE, yahoo: SIE.DE}
-- {ibkr: SAN, yahoo: SAN.PA}
-- {ibkr: OR, yahoo: OR.PA}
-- {ibkr: SU, yahoo: SU.PA}
-- {ibkr: ALV, yahoo: ALV.DE}
-- {ibkr: AI, yahoo: AI.PA}
-- {ibkr: AIR, yahoo: AIR.PA}
-- {ibkr: RMS, yahoo: RMS.PA}
-- {ibkr: BNP, yahoo: BNP.PA}
-- {ibkr: DTE, yahoo: DTE.DE}
-- {ibkr: IBE, yahoo: IBE.MC}
-- {ibkr: DG, yahoo: DG.PA}
-- {ibkr: SAN1, yahoo: SAN.MC}
-- {ibkr: MBG, yahoo: MBG.DE}
-- {ibkr: SAF, yahoo: SAF.PA}
-- {ibkr: EL, yahoo: EL.PA}
-- {ibkr: CS, yahoo: CS.PA}
-- {ibkr: IFX, yahoo: IFX.DE}
-- {ibkr: BAYN, yahoo: BAYN.DE}
-- {ibkr: PRX, yahoo: PRX.AS}
-- {ibkr: ENEL, yahoo: ENEL.MI}
-- {ibkr: ADYEN, yahoo: ADYEN.AS}
-- {ibkr: INGA, yahoo: INGA.AS}
-- {ibkr: ABI, yahoo: ABI.BR}
-- {ibkr: MUV2, yahoo: MUV2.DE}
-- {ibkr: DHL, yahoo: DHL.DE}
-- {ibkr: UCG, yahoo: UCG.MI}
-- {ibkr: STLAP, yahoo: STLA.MI}
-- {ibkr: BBVA, yahoo: BBVA.MC}
-- {ibkr: BAS, yahoo: BAS.DE}
-- {ibkr: ISP, yahoo: ISP.MI}
-- {ibkr: RI, yahoo: RI.PA}
-- {ibkr: CRH, yahoo: CRH.L, currency: GBP}
-- {ibkr: ITX, yahoo: ITX.MC}
-- {ibkr: KER, yahoo: KER.PA}
-- {ibkr: NDA, yahoo: NDA.ST}
-- {ibkr: BMW, yahoo: BMW.DE}
-- {ibkr: BN, yahoo: BN.PA}
-- {ibkr: DB1, yahoo: DB1.DE}
-- {ibkr: FLTR, yahoo: FLTR.L, currency: GBP}
-- {ibkr: ENI, yahoo: ENI.MI}
-- {ibkr: ADS, yahoo: ADS.DE}
-- {ibkr: AD, yahoo: AD.AS}
-- {ibkr: VOW3, yahoo: VOW3.DE}
-- {ibkr: NOKIA, yahoo: NOKIA.HE}
-- {ibkr: VNA, yahoo: VNA.DE}
-- {ibkr: FRE, yahoo: FRE.DE}
-- {ibkr: DBK, yahoo: DBK.DE}
-- {ibkr: ZAL, yahoo: ZAL.DE}
-- {ibkr: MTX, yahoo: MTX.DE}
-- {ibkr: 1COV, yahoo: 1COV.DE}
-- {ibkr: P911, yahoo: P911.DE}
-- {ibkr: AIR, yahoo: AIR.DE}
-- {ibkr: BEI, yahoo: BEI.DE}
-- {ibkr: ENR, yahoo: ENR.DE}
-- {ibkr: DTG, yahoo: DTG.DE}
-- {ibkr: RWE, yahoo: RWE.DE}
-- {ibkr: EOAN, yahoo: EOAN.DE}
-- {ibkr: CON, yahoo: CON.DE}
-- {ibkr: MRK, yahoo: MRK.DE}
-- {ibkr: SY1, yahoo: SY1.DE}
-- {ibkr: HEI, yahoo: HEI.DE}
-- {ibkr: VIV, yahoo: VIV.PA}
-- {ibkr: EN, yahoo: EN.PA}
-- {ibkr: ENGI, yahoo: ENGI.PA}
-- {ibkr: LR, yahoo: LR.PA}
-- {ibkr: AC, yahoo: AC.PA}
-- {ibkr: VIE, yahoo: VIE.PA}
-- {ibkr: ORA, yahoo: ORA.PA}
-- {ibkr: SW, yahoo: SW.PA}
-- {ibkr: CAP, yahoo: CAP.PA}
-- {ibkr: CA, yahoo: CA.PA}
-- {ibkr: HO, yahoo: HO.PA}
-- {ibkr: WLN, yahoo: WLN.PA}
-- {ibkr: SGO, yahoo: SGO.PA}
-- {ibkr: ATO, yahoo: ATO.PA}
-- {ibkr: ACA, yahoo: ACA.PA}
-- {ibkr: ML, yahoo: ML.PA}
-- {ibkr: GLE, yahoo: GLE.PA}
-- {ibkr: STLAP, yahoo: STLAM.MI}
-- {ibkr: AZM, yahoo: AZM.MI}
-- {ibkr: PST, yahoo: PST.MI}
-- {ibkr: PIRC, yahoo: PIRC.MI}
-- {ibkr: TIT, yahoo: TIT.MI}
-- {ibkr: BMED, yahoo: BMED.MI}
-- {ibkr: CNHI, yahoo: CNHI.MI}
-- {ibkr: RACE, yahoo: RACE.MI}
-- {ibkr: IP, yahoo: IP.MI}
-- {ibkr: BPE, yahoo: BPE.MI}
-- {ibkr: G, yahoo: G.MI}
-- {ibkr: LDO, yahoo: LDO.MI}
-- {ibkr: AMP2, yahoo: AMP.MI}
-- {ibkr: PRY, yahoo: PRY.MI}
-- {ibkr: DIA, yahoo: DIA.MI}
-- {ibkr: BAMI, yahoo: BAMI.MI}
-- {ibkr: CPR, yahoo: CPR.MI}
-- {ibkr: SPM, yahoo: SPM.MI}
-- {ibkr: MONC, yahoo: MONC.MI}
-- {ibkr: IG, yahoo: IG.MI}
-- {ibkr: TEN, yahoo: TEN.MI}
-- {ibkr: TRN, yahoo: TRN.MI}
-- {ibkr: SRG, yahoo: SRG.MI}
-- {ibkr: UNI, yahoo: UNI.MI}
-- {ibkr: MB, yahoo: MB.MI}
-- {ibkr: FBK, yahoo: FBK.MI}
-- {ibkr: REC, yahoo: REC.MI}
-- {ibkr: IMCD, yahoo: IMCD.AS}
-- {ibkr: KPN, yahoo: KPN.AS}
-- {ibkr: HEIA, yahoo: HEIA.AS}
-- {ibkr: NN, yahoo: NN.AS}
-- {ibkr: RAND, yahoo: RAND.AS}
-- {ibkr: AKZA, yahoo: AKZA.AS}
-- {ibkr: AGN, yahoo: AGN.AS}
-- {ibkr: REN, yahoo: REN.AS}
-- {ibkr: MT, yahoo: MT.AS}
-- {ibkr: ABN, yahoo: ABN.AS}
-- {ibkr: UNA, yahoo: UNA.AS}
-- {ibkr: GLPG, yahoo: GLPG.AS}
-- {ibkr: ASM, yahoo: ASM.AS}
-- {ibkr: PHIA, yahoo: PHIA.AS}
-- {ibkr: WKL, yahoo: WKL.AS}
-- {ibkr: RDSA, yahoo: RDSA.AS}
-- {ibkr: DSM2, yahoo: DSM.AS}
-- {ibkr: URW, yahoo: URW.AS}
-- {ibkr: TKWY, yahoo: TKWY.AS}
-- {ibkr: ANDR, yahoo: ANDR.VI}
-- {ibkr: IIA, yahoo: IIA.VI}
-- {ibkr: VER, yahoo: VER.VI}
-- {ibkr: MMK, yahoo: MMK.VI}
-- {ibkr: CAI, yahoo: CAI.VI}
-- {ibkr: UQA, yahoo: UQA.VI}
-- {ibkr: LNZ, yahoo: LNZ.VI}
-- {ibkr: EVN, yahoo: EVN.VI}
-- {ibkr: WIE, yahoo: WIE.VI}
-- {ibkr: STR1, yahoo: STR.VI}
-- {ibkr: VIG, yahoo: VIG.VI}
-- {ibkr: VOE, yahoo: VOE.VI}
-- {ibkr: DOC, yahoo: DOC.VI}
-- {ibkr: EBS, yahoo: EBS.VI}
-- {ibkr: BG, yahoo: BG.VI}
-- {ibkr: OMV, yahoo: OMV.VI}
-- {ibkr: RBI, yahoo: RBI.VI}
-- {ibkr: POST, yahoo: POST.VI}
-- {ibkr: ATS, yahoo: ATS.VI}
-- {ibkr: SBO, yahoo: SBO.VI}
-- {ibkr: FDR, yahoo: FDR.MC}
-- {ibkr: ACX, yahoo: ACX.MC}
-- {ibkr: FER, yahoo: FER.MC}
-- {ibkr: MAP, yahoo: MAP.MC}
-- {ibkr: MT, yahoo: MTS.MC}
-- {ibkr: AENA, yahoo: AENA.MC}
-- {ibkr: AMS, yahoo: AMS.MC}
-- {ibkr: CABK, yahoo: CABK.MC}
-- {ibkr: UNI1, yahoo: UNI.MC}
-- {ibkr: NTGY, yahoo: NTGY.MC}
-- {ibkr: MRL, yahoo: MRL.MC}
-- {ibkr: BKT, yahoo: BKT.MC}
-- {ibkr: ELE, yahoo: ELE.MC}
-- {ibkr: GRF, yahoo: GRF.MC}
-- {ibkr: CLNX, yahoo: CLNX.MC}
-- {ibkr: ANA, yahoo: ANA.MC}
-- {ibkr: COL, yahoo: COL.MC}
-- {ibkr: MEL, yahoo: MEL.MC}
-- {ibkr: LOG, yahoo: LOG.MC}
-- {ibkr: ACS, yahoo: ACS.MC}
-- {ibkr: ENG, yahoo: ENG.MC}
-- {ibkr: IAG, yahoo: IAG.MC}
-- {ibkr: ANE, yahoo: ANE.MC}
-- {ibkr: TEF, yahoo: TEF.MC}
-- {ibkr: RED1, yahoo: RED.MC}
-- {ibkr: SAB1, yahoo: SAB.MC}
-- {ibkr: ACKB, yahoo: ACKB.BR}
-- {ibkr: AED, yahoo: AED.BR}
-- {ibkr: AGS, yahoo: AGS.BR}
-- {ibkr: APAM, yahoo: APAM.BR}
-- {ibkr: ARGX, yahoo: ARGX.BR}
-- {ibkr: COFB, yahoo: COFB.BR}
-- {ibkr: COLR, yahoo: COLR.BR}
-- {ibkr: ELI1, yahoo: ELI.BR}
-- {ibkr: GBLB, yahoo: GBLB.BR}
-- {ibkr: GLPG, yahoo: GLPG.BR}
-- {ibkr: KBC, yahoo: KBC.BR}
-- {ibkr: MELE, yahoo: MELE.BR}
-- {ibkr: PROX, yahoo: PROX.BR}
-- {ibkr: SOF, yahoo: SOF.BR}
-- {ibkr: SOLB, yahoo: SOLB.BR}
-- {ibkr: TNET, yahoo: TNET.BR}
-- {ibkr: UCB, yahoo: UCB.BR}
-- {ibkr: UMI, yahoo: UMI.BR}
-- {ibkr: WDP, yahoo: WDP.BR}
-- {ibkr: VALMT, yahoo: VALMT.HE}
-- {ibkr: UPM, yahoo: UPM.HE}
-- {ibkr: TIETO, yahoo: TIETO.HE}
-- {ibkr: STERV, yahoo: STERV.HE}
-- {ibkr: SAMPO, yahoo: SAMPO.HE}
-- {ibkr: OUT, yahoo: OUT1V.HE}
-- {ibkr: NESTE, yahoo: NESTE.HE}
-- {ibkr: NDA2, yahoo: NDA FI.HE}
-- {ibkr: METSO, yahoo: MOCORP.HE}
-- {ibkr: KOJAMO, yahoo: KOJAMO.HE}
-- {ibkr: KNEBV, yahoo: KNEBV.HE}
-- {ibkr: KESKOB, yahoo: KESKOB.HE}
-- {ibkr: KEMIRA, yahoo: KEMIRA.HE}
-- {ibkr: KCR, yahoo: KCR.HE}
-- {ibkr: FORTUM, yahoo: FORTUM.HE}
-- {ibkr: ELISA, yahoo: ELISA.HE}
-- {ibkr: CGCBV, yahoo: CGCBV.HE}
-- {ibkr: TYRES, yahoo: TYRES.HE}
-- {ibkr: TELIA1, yahoo: TELIA1.HE}
-- {ibkr: ORNBV, yahoo: ORNBV.HE}
-- {ibkr: METSB, yahoo: METSB.HE}
-- {ibkr: HUH1V, yahoo: HUH1V.HE}
-- {ibkr: CENER, yahoo: CENER.AT}
-- {ibkr: EEE1, yahoo: EEE.AT}
-- {ibkr: ELPE, yahoo: ELPE.AT}
-- {ibkr: ETE, yahoo: ETE.AT}
-- {ibkr: ELLAKTOR, yahoo: ELLAKTOR.AT}
-- {ibkr: LAMDA, yahoo: LAMDA.AT}
-- {ibkr: QUEST, yahoo: QUEST.AT}
-- {ibkr: TITC, yahoo: TITC.AT}
-- {ibkr: BELA, yahoo: BELA.AT}
-- {ibkr: 32A, yahoo: AEGN.AT}
-- {ibkr: MYTIL, yahoo: MYTIL.AT}
-- {ibkr: 0AH1, yahoo: OTOEL.AT}
-- {ibkr: VIO, yahoo: VIO.AT}
-- {ibkr: BKP, yahoo: TPEIR.AT}
-- {ibkr: TENERGY, yahoo: TENERGY.AT}
-- {ibkr: SAR, yahoo: SAR.AT}
-- {ibkr: EYDAP, yahoo: EYDAP.AT}
-- {ibkr: ALPHA, yahoo: ALPHA.AT}
-- {ibkr: PPC, yahoo: PPC.AT}
-- {ibkr: EUROB, yahoo: EUROB.AT}
-- {ibkr: MOH, yahoo: MOH.AT}
-- {ibkr: OPAP, yahoo: OPAP.AT}
-- {ibkr: HTO, yahoo: HTO.AT}
-- {ibkr: GEKTERNA, yahoo: GEKTERNA.AT}
-- {ibkr: RR., yahoo: RR.L, currency: GBP}
-- {ibkr: ENT, yahoo: ENT.L, currency: GBP}
-- {ibkr: RS1, yahoo: RS1.L, currency: GBP}
-- {ibkr: SPX, yahoo: SPX.L, currency: GBP}
-- {ibkr: AHT, yahoo: AHT.L, currency: GBP}
-- {ibkr: CCH, yahoo: CCH.L, currency: GBP}
-- {ibkr: RTO, yahoo: RTO.L, currency: GBP}
-- {ibkr: BATS, yahoo: BATS.L, currency: GBP}
-- {ibkr: ANTO, yahoo: ANTO.L, currency: GBP}
-- {ibkr: BA., yahoo: BA.L, currency: GBP}
-- {ibkr: SMIN, yahoo: SMIN.L, currency: GBP}
-- {ibkr: SDR, yahoo: SDR.L, currency: GBP}
-- {ibkr: HLN, yahoo: HLN.L, currency: GBP}
-- {ibkr: CNA, yahoo: CNA.L, currency: GBP}
-- {ibkr: PSN, yahoo: PSN.L, currency: GBP}
-- {ibkr: TSCO, yahoo: TSCO.L, currency: GBP}
-- {ibkr: EXPN, yahoo: EXPN.L, currency: GBP}
-- {ibkr: SHEL, yahoo: SHEL.L, currency: GBP}
-- {ibkr: CPG, yahoo: CPG.L, currency: GBP}
-- {ibkr: STJ, yahoo: STJ.L, currency: GBP}
-- {ibkr: AUTO, yahoo: AUTO.L, currency: GBP}
-- {ibkr: SSE, yahoo: SSE.L, currency: GBP}
-- {ibkr: ABDN, yahoo: ABDN.L, currency: GBP}
-- {ibkr: MNG, yahoo: MNG.L, currency: GBP}
-- {ibkr: RMV, yahoo: RMV.L, currency: GBP}
-- {ibkr: FRAS, yahoo: FRAS.L, currency: GBP}
-- {ibkr: AAF, yahoo: AAF.L, currency: GBP}
-- {ibkr: PRU, yahoo: PRU.L, currency: GBP}
-- {ibkr: VOD, yahoo: VOD.L, currency: GBP}
-- {ibkr: SMT, yahoo: SMT.L, currency: GBP}
+- {currency: EUR, ibkr: MC, ibkr-ID: 29612150, ibkr-exchange: SBF, yahoo: MC.PA}
+- {currency: EUR, ibkr: ASML, ibkr-ID: 117589399, ibkr-exchange: AEB, yahoo: ASML.AS}
+- {currency: EUR, ibkr: TTE, ibkr-ID: 29612193, ibkr-exchange: SBF, yahoo: TTE.PA}
+- {currency: EUR, ibkr: SAP, ibkr-ID: 14204, ibkr-exchange: IBIS, yahoo: SAP.DE}
+- {currency: EUR, ibkr: SIE, ibkr-ID: 14217, ibkr-exchange: IBIS, yahoo: SIE.DE}
+- {currency: EUR, ibkr: SAN, ibkr-ID: 29612249, ibkr-exchange: SBF, yahoo: SAN.PA}
+- {currency: EUR, ibkr: OR, ibkr-ID: 29612116, ibkr-exchange: SBF, yahoo: OR.PA}
+- {currency: EUR, ibkr: SU, ibkr-ID: 29612196, ibkr-exchange: SBF, yahoo: SU.PA}
+- {currency: EUR, ibkr: ALV, ibkr-ID: 14079, ibkr-exchange: IBIS, yahoo: ALV.DE}
+- {currency: EUR, ibkr: AI, ibkr-ID: 29612135, ibkr-exchange: SBF, yahoo: AI.PA}
+- {currency: EUR, ibkr: AIR, ibkr-ID: 29612256, ibkr-exchange: SBF, yahoo: AIR.PA}
+- {currency: EUR, ibkr: RMS, ibkr-ID: 1254605, ibkr-exchange: SBF, yahoo: RMS.PA}
+- {currency: EUR, ibkr: BNP, ibkr-ID: 29612163, ibkr-exchange: SBF, yahoo: BNP.PA}
+- {currency: EUR, ibkr: DTE, ibkr-ID: 2254332, ibkr-exchange: IBIS, yahoo: DTE.DE}
+- {currency: EUR, ibkr: IBE, ibkr-ID: 46586284, ibkr-exchange: BM, yahoo: IBE.MC}
+- {currency: EUR, ibkr: DG, ibkr-ID: 29612226, ibkr-exchange: SBF, yahoo: DG.PA}
+- {currency: EUR, ibkr: SAN1, ibkr-ID: 30314144, ibkr-exchange: BM, yahoo: SAN.MC}
+- {currency: EUR, ibkr: MBG, ibkr-ID: 29622935, ibkr-exchange: IBIS, yahoo: MBG.DE}
+- {currency: EUR, ibkr: SAF, ibkr-ID: 1322028, ibkr-exchange: SBF, yahoo: SAF.PA}
+- {currency: EUR, ibkr: EL, ibkr-ID: 1321740, ibkr-exchange: SBF, yahoo: EL.PA}
+- {currency: EUR, ibkr: CS, ibkr-ID: 29612141, ibkr-exchange: SBF, yahoo: CS.PA}
+- {currency: EUR, ibkr: IFX, ibkr-ID: 7747731, ibkr-exchange: IBIS, yahoo: IFX.DE}
+- {currency: EUR, ibkr: BAYN, ibkr-ID: 68598660, ibkr-exchange: IBIS, yahoo: BAYN.DE}
+- {currency: EUR, ibkr: PRX, ibkr-ID: 382625193, ibkr-exchange: AEB, yahoo: PRX.AS}
+- {currency: EUR, ibkr: ENEL, ibkr-ID: 29816333, ibkr-exchange: BVME, yahoo: ENEL.MI}
+- {currency: EUR, ibkr: ADYEN, ibkr-ID: 321202935, ibkr-exchange: AEB, yahoo: ADYEN.AS}
+- {currency: EUR, ibkr: INGA, ibkr-ID: 240601748, ibkr-exchange: AEB, yahoo: INGA.AS}
+- {currency: EUR, ibkr: ABI, ibkr-ID: 251259604, ibkr-exchange: ENEXT.BE, yahoo: ABI.BR}
+- {currency: EUR, ibkr: MUV2, ibkr-ID: 14189, ibkr-exchange: IBIS, yahoo: MUV2.DE}
+- {currency: EUR, ibkr: DHL, ibkr-ID: 10749447, ibkr-exchange: IBIS, yahoo: DHL.DE}
+- {currency: EUR, ibkr: UCG, ibkr-ID: 262695149, ibkr-exchange: BVME, yahoo: UCG.MI}
+- {currency: EUR, ibkr: STLAP, ibkr-ID: 463647471, ibkr-exchange: SBF, yahoo: STLA.MI}
+- {currency: EUR, ibkr: BBVA, ibkr-ID: 30314149, ibkr-exchange: BM, yahoo: BBVA.MC}
+- {currency: EUR, ibkr: BAS, ibkr-ID: 77680640, ibkr-exchange: IBIS, yahoo: BAS.DE}
+- {currency: EUR, ibkr: ISP, ibkr-ID: 29816328, ibkr-exchange: BVME, yahoo: ISP.MI}
+- {currency: EUR, ibkr: RI, ibkr-ID: 917758, ibkr-exchange: SBF, yahoo: RI.PA}
+- {currency: GBP, ibkr: CRH, ibkr-ID: 97341412, ibkr-exchange: LSE, yahoo: CRH.L}
+- {currency: EUR, ibkr: ITX, ibkr-ID: 162084958, ibkr-exchange: BM, yahoo: ITX.MC}
+- {currency: EUR, ibkr: KER, ibkr-ID: 29612178, ibkr-exchange: SBF, yahoo: KER.PA}
+- {currency: EUR, ibkr: NDA, ibkr-ID: 4810989, ibkr-exchange: IBIS, yahoo: NDA.ST}
+- {currency: EUR, ibkr: BMW, ibkr-ID: 14094, ibkr-exchange: IBIS, yahoo: BMW.DE}
+- {currency: EUR, ibkr: BN, ibkr-ID: 29612111, ibkr-exchange: SBF, yahoo: BN.PA}
+- {currency: EUR, ibkr: DB1, ibkr-ID: 11490214, ibkr-exchange: IBIS, yahoo: DB1.DE}
+- {currency: GBP, ibkr: FLTR, ibkr-ID: 221274522, ibkr-exchange: LSE, yahoo: FLTR.L}
+- {currency: EUR, ibkr: ENI, ibkr-ID: 29816844, ibkr-exchange: BVME, yahoo: ENI.MI}
+- {currency: EUR, ibkr: ADS, ibkr-ID: 79780521, ibkr-exchange: IBIS, yahoo: ADS.DE}
+- {currency: EUR, ibkr: AD, ibkr-ID: 240486295, ibkr-exchange: AEB, yahoo: AD.AS}
+- {currency: EUR, ibkr: VOW3, ibkr-ID: 14237, ibkr-exchange: IBIS, yahoo: VOW3.DE}
+- {currency: EUR, ibkr: NOKIA, ibkr-ID: 29816875, ibkr-exchange: HEX, yahoo: NOKIA.HE}
+- {currency: EUR, ibkr: VNA, ibkr-ID: 130946869, ibkr-exchange: IBIS, yahoo: VNA.DE}
+- {currency: EUR, ibkr: FRE, ibkr-ID: 4811328, ibkr-exchange: IBIS, yahoo: FRE.DE}
+- {currency: EUR, ibkr: DBK, ibkr-ID: 14121, ibkr-exchange: IBIS, yahoo: DBK.DE}
+- {currency: EUR, ibkr: ZAL, ibkr-ID: 168731675, ibkr-exchange: IBIS, yahoo: ZAL.DE}
+- {currency: EUR, ibkr: MTX, ibkr-ID: 34759096, ibkr-exchange: IBIS, yahoo: MTX.DE}
+- {currency: EUR, ibkr: 1COV, ibkr-ID: 208908717, ibkr-exchange: IBIS, yahoo: 1COV.DE}
+- {currency: EUR, ibkr: P911, ibkr-ID: 588392767, ibkr-exchange: IBIS, yahoo: P911.DE}
+- {currency: EUR, ibkr: BEI, ibkr-ID: 14362, ibkr-exchange: IBIS, yahoo: BEI.DE}
+- {currency: EUR, ibkr: ENR, ibkr-ID: 447545380, ibkr-exchange: IBIS, yahoo: ENR.DE}
+- {currency: EUR, ibkr: DTG, ibkr-ID: 531961119, ibkr-exchange: IBIS, yahoo: DTG.DE}
+- {currency: EUR, ibkr: RWE, ibkr-ID: 14198, ibkr-exchange: IBIS, yahoo: RWE.DE}
+- {currency: EUR, ibkr: EOAN, ibkr-ID: 53028906, ibkr-exchange: IBIS, yahoo: EOAN.DE}
+- {currency: EUR, ibkr: CON, ibkr-ID: 14106, ibkr-exchange: IBIS, yahoo: CON.DE}
+- {currency: EUR, ibkr: MRK, ibkr-ID: 1015559, ibkr-exchange: IBIS, yahoo: MRK.DE}
+- {currency: EUR, ibkr: SY1, ibkr-ID: 41963116, ibkr-exchange: IBIS, yahoo: SY1.DE}
+- {currency: EUR, ibkr: HEI, ibkr-ID: 14727, ibkr-exchange: IBIS, yahoo: HEI.DE}
+- {currency: EUR, ibkr: VIV, ibkr-ID: 29612113, ibkr-exchange: SBF, yahoo: VIV.PA}
+- {currency: EUR, ibkr: EN, ibkr-ID: 29612166, ibkr-exchange: SBF, yahoo: EN.PA}
+- {currency: EUR, ibkr: ENGI, ibkr-ID: 35052259, ibkr-exchange: SBF, yahoo: ENGI.PA}
+- {currency: EUR, ibkr: LR, ibkr-ID: 38715873, ibkr-exchange: SBF, yahoo: LR.PA}
+- {currency: EUR, ibkr: AC, ibkr-ID: 29612126, ibkr-exchange: SBF, yahoo: AC.PA}
+- {currency: EUR, ibkr: VIE, ibkr-ID: 29612206, ibkr-exchange: SBF, yahoo: VIE.PA}
+- {currency: EUR, ibkr: ORA, ibkr-ID: 29612252, ibkr-exchange: SBF, yahoo: ORA.PA}
+- {currency: EUR, ibkr: SW, ibkr-ID: 29612218, ibkr-exchange: SBF, yahoo: SW.PA}
+- {currency: EUR, ibkr: CAP, ibkr-ID: 29612147, ibkr-exchange: SBF, yahoo: CAP.PA}
+- {currency: EUR, ibkr: CA, ibkr-ID: 29612172, ibkr-exchange: SBF, yahoo: CA.PA}
+- {currency: EUR, ibkr: HO, ibkr-ID: 917799, ibkr-exchange: SBF, yahoo: HO.PA}
+- {currency: EUR, ibkr: WLN, ibkr-ID: 158556311, ibkr-exchange: SBF, yahoo: WLN.PA}
+- {currency: EUR, ibkr: SGO, ibkr-ID: 29612189, ibkr-exchange: SBF, yahoo: SGO.PA}
+- {currency: EUR, ibkr: ATO, ibkr-ID: 1254624, ibkr-exchange: SBF, yahoo: ATO.PA}
+- {currency: EUR, ibkr: ACA, ibkr-ID: 29612223, ibkr-exchange: SBF, yahoo: ACA.PA}
+- {currency: EUR, ibkr: ML, ibkr-ID: 562418770, ibkr-exchange: SBF, yahoo: ML.PA}
+- {currency: EUR, ibkr: GLE, ibkr-ID: 29612232, ibkr-exchange: SBF, yahoo: GLE.PA}
+- {currency: EUR, ibkr: STLAP, ibkr-ID: 463647471, ibkr-exchange: SBF, yahoo: STLAM.MI}
+- {currency: EUR, ibkr: AZM, ibkr-ID: 67957194, ibkr-exchange: BVME, yahoo: AZM.MI}
+- {currency: EUR, ibkr: PST, ibkr-ID: 211008268, ibkr-exchange: BVME, yahoo: PST.MI}
+- {currency: EUR, ibkr: PIRC, ibkr-ID: 291237587, ibkr-exchange: BVME, yahoo: PIRC.MI}
+- {currency: EUR, ibkr: TIT, ibkr-ID: 29816348, ibkr-exchange: BVME, yahoo: TIT.MI}
+- {currency: EUR, ibkr: BMED, ibkr-ID: 217632398, ibkr-exchange: BVME, yahoo: BMED.MI}
+- {currency: EUR, ibkr: CNHI, ibkr-ID: 135577704, ibkr-exchange: BVME, yahoo: CNHI.MI}
+- {currency: EUR, ibkr: RACE, ibkr-ID: 215461594, ibkr-exchange: BVME, yahoo: RACE.MI}
+- {currency: EUR, ibkr: IP, ibkr-ID: 26319253, ibkr-exchange: BVME, yahoo: IP.MI}
+- {currency: EUR, ibkr: BPE, ibkr-ID: 11516717, ibkr-exchange: BVME, yahoo: BPE.MI}
+- {currency: EUR, ibkr: G, ibkr-ID: 29816322, ibkr-exchange: BVME, yahoo: G.MI}
+- {currency: EUR, ibkr: LDO, ibkr-ID: 35162453, ibkr-exchange: BVME, yahoo: LDO.MI}
+- {currency: EUR, ibkr: AMP2, ibkr-ID: 55764652, ibkr-exchange: BVME, yahoo: AMP.MI}
+- {currency: EUR, ibkr: PRY, ibkr-ID: 46114851, ibkr-exchange: BVME, yahoo: PRY.MI}
+- {currency: EUR, ibkr: DIA, ibkr-ID: 75975372, ibkr-exchange: BVME, yahoo: DIA.MI}
+- {currency: EUR, ibkr: BAMI, ibkr-ID: 259854200, ibkr-exchange: BVME, yahoo: BAMI.MI}
+- {currency: EUR, ibkr: CPR, ibkr-ID: 431811326, ibkr-exchange: BVME, yahoo: CPR.MI}
+- {currency: EUR, ibkr: SPM, ibkr-ID: 566597407, ibkr-exchange: BVME, yahoo: SPM.MI}
+- {currency: EUR, ibkr: MONC, ibkr-ID: 140054327, ibkr-exchange: BVME, yahoo: MONC.MI}
+- {currency: EUR, ibkr: IG, ibkr-ID: 254447309, ibkr-exchange: BVME, yahoo: IG.MI}
+- {currency: EUR, ibkr: TEN, ibkr-ID: 26319561, ibkr-exchange: BVME, yahoo: TEN.MI}
+- {currency: EUR, ibkr: TRN, ibkr-ID: 30664870, ibkr-exchange: BVME, yahoo: TRN.MI}
+- {currency: EUR, ibkr: SRG, ibkr-ID: 14075063, ibkr-exchange: BVME, yahoo: SRG.MI}
+- {currency: EUR, ibkr: UNI, ibkr-ID: 105387889, ibkr-exchange: BVME, yahoo: UNI.MI}
+- {currency: EUR, ibkr: MB, ibkr-ID: 917595, ibkr-exchange: BVME, yahoo: MB.MI}
+- {currency: EUR, ibkr: FBK, ibkr-ID: 159352524, ibkr-exchange: BVME, yahoo: FBK.MI}
+- {currency: EUR, ibkr: REC, ibkr-ID: 14905664, ibkr-exchange: BVME, yahoo: REC.MI}
+- {currency: EUR, ibkr: IMCD, ibkr-ID: 158556186, ibkr-exchange: AEB, yahoo: IMCD.AS}
+- {currency: EUR, ibkr: KPN, ibkr-ID: 29622902, ibkr-exchange: AEB, yahoo: KPN.AS}
+- {currency: EUR, ibkr: HEIA, ibkr-ID: 29622888, ibkr-exchange: AEB, yahoo: HEIA.AS}
+- {currency: EUR, ibkr: NN, ibkr-ID: 159310339, ibkr-exchange: AEB, yahoo: NN.AS}
+- {currency: EUR, ibkr: RAND, ibkr-ID: 10428270, ibkr-exchange: AEB, yahoo: RAND.AS}
+- {currency: EUR, ibkr: AKZA, ibkr-ID: 350068526, ibkr-exchange: AEB, yahoo: AKZA.AS}
+- {currency: EUR, ibkr: AGN, ibkr-ID: 39089692, ibkr-exchange: AEB, yahoo: AGN.AS}
+- {currency: EUR, ibkr: REN, ibkr-ID: 332776402, ibkr-exchange: AEB, yahoo: REN.AS}
+- {currency: EUR, ibkr: MT, ibkr-ID: 276039870, ibkr-exchange: AEB, yahoo: MT.AS}
+- {currency: EUR, ibkr: ABN, ibkr-ID: 212289339, ibkr-exchange: AEB, yahoo: ABN.AS}
+- {currency: EUR, ibkr: UNA, ibkr-ID: 404271848, ibkr-exchange: AEB, yahoo: UNA.AS}
+- {currency: EUR, ibkr: GLPG, ibkr-ID: 34510828, ibkr-exchange: AEB, yahoo: GLPG.AS}
+- {currency: EUR, ibkr: ASM, ibkr-ID: 2950440, ibkr-exchange: AEB, yahoo: ASM.AS}
+- {currency: EUR, ibkr: PHIA, ibkr-ID: 29622921, ibkr-exchange: AEB, yahoo: PHIA.AS}
+- {currency: EUR, ibkr: WKL, ibkr-ID: 39498284, ibkr-exchange: AEB, yahoo: WKL.AS}
+- {currency: GBP, ibkr: SHEL, yahoo: SHELL.L}
+- {currency: CHF, ibkr: NESN, ibkr-ID: 52238348, ibkr-exchange: EBS, yahoo: NESN.SW}
+- {currency: EUR, ibkr: DSM2, ibkr-ID: 39105947, ibkr-exchange: SWB, yahoo: DSM.AS}
+- {currency: EUR, ibkr: URW, ibkr-ID: 320358733, ibkr-exchange: SBF, yahoo: URW.AS}
+- {currency: EUR, ibkr: TKWY, ibkr-ID: 249769712, ibkr-exchange: AEB, yahoo: TKWY.AS}
+- {currency: EUR, ibkr: ANDR, ibkr-ID: 14317520, ibkr-exchange: VSE, yahoo: ANDR.VI}
+- {currency: EUR, ibkr: IIA, ibkr-ID: 321520245, ibkr-exchange: VSE, yahoo: IIA.VI}
+- {currency: EUR, ibkr: VER, ibkr-ID: 3306518, ibkr-exchange: VSE, yahoo: VER.VI}
+- {currency: EUR, ibkr: MMK, ibkr-ID: 3306498, ibkr-exchange: VSE, yahoo: MMK.VI}
+- {currency: EUR, ibkr: CAI, ibkr-ID: 27049908, ibkr-exchange: VSE, yahoo: CAI.VI}
+- {currency: EUR, ibkr: UQA, ibkr-ID: 14317525, ibkr-exchange: VSE, yahoo: UQA.VI}
+- {currency: EUR, ibkr: LNZ, ibkr-ID: 3306480, ibkr-exchange: VSE, yahoo: LNZ.VI}
+- {currency: EUR, ibkr: EVN, ibkr-ID: 3306468, ibkr-exchange: VSE, yahoo: EVN.VI}
+- {currency: EUR, ibkr: WIE, ibkr-ID: 3306521, ibkr-exchange: VSE, yahoo: WIE.VI}
+- {currency: EUR, ibkr: STR1, ibkr-ID: 46691927, ibkr-exchange: VSE, yahoo: STR.VI}
+- {currency: EUR, ibkr: VIG, ibkr-ID: 35352636, ibkr-exchange: VSE, yahoo: VIG.VI}
+- {currency: EUR, ibkr: VOE, ibkr-ID: 3306495, ibkr-exchange: VSE, yahoo: VOE.VI}
+- {currency: EUR, ibkr: DOC, ibkr-ID: 36764481, ibkr-exchange: VSE, yahoo: DOC.VI}
+- {currency: EUR, ibkr: EBS, ibkr-ID: 3306538, ibkr-exchange: VSE, yahoo: EBS.VI}
+- {currency: EUR, ibkr: BG, ibkr-ID: 294207034, ibkr-exchange: VSE, yahoo: BG.VI}
+- {currency: EUR, ibkr: OMV, ibkr-ID: 3306504, ibkr-exchange: VSE, yahoo: OMV.VI}
+- {currency: EUR, ibkr: RBI, ibkr-ID: 33908748, ibkr-exchange: VSE, yahoo: RBI.VI}
+- {currency: EUR, ibkr: POST, ibkr-ID: 39165470, ibkr-exchange: VSE, yahoo: POST.VI}
+- {currency: EUR, ibkr: ATS, ibkr-ID: 11652563, ibkr-exchange: VSE, yahoo: ATS.VI}
+- {currency: EUR, ibkr: SBO, ibkr-ID: 33203234, ibkr-exchange: VSE, yahoo: SBO.VI}
+- {currency: EUR, ibkr: FDR, ibkr-ID: 48871204, ibkr-exchange: BM, yahoo: FDR.MC}
+- {currency: EUR, ibkr: ACX, ibkr-ID: 30314161, ibkr-exchange: BM, yahoo: ACX.MC}
+- {currency: EUR, ibkr: FER, ibkr-ID: 636678546, ibkr-exchange: BM, yahoo: FER.MC}
+- {currency: EUR, ibkr: MAP, ibkr-ID: 41267871, ibkr-exchange: BM, yahoo: MAP.MC}
+- {currency: EUR, ibkr: MT, ibkr-ID: 276039870, ibkr-exchange: AEB, yahoo: MTS.MC}
+- {currency: EUR, ibkr: AENA, ibkr-ID: 183530573, ibkr-exchange: BM, yahoo: AENA.MC}
+- {currency: EUR, ibkr: AMS, ibkr-ID: 74792133, ibkr-exchange: BM, yahoo: AMS.MC}
+- {currency: EUR, ibkr: CABK, ibkr-ID: 48832907, ibkr-exchange: BM, yahoo: CABK.MC}
+- {currency: EUR, ibkr: UNI1, ibkr-ID: 281130176, ibkr-exchange: BM, yahoo: UNI.MC}
+- {currency: EUR, ibkr: NTGY, ibkr-ID: 917433, ibkr-exchange: BM, yahoo: NTGY.MC}
+- {currency: EUR, ibkr: MRL, ibkr-ID: 159134192, ibkr-exchange: BM, yahoo: MRL.MC}
+- {currency: EUR, ibkr: BKT, ibkr-ID: 45201369, ibkr-exchange: BM, yahoo: BKT.MC}
+- {currency: EUR, ibkr: ELE, ibkr-ID: 30314174, ibkr-exchange: BM, yahoo: ELE.MC}
+- {currency: EUR, ibkr: GRF, ibkr-ID: 217481604, ibkr-exchange: BM, yahoo: GRF.MC}
+- {currency: EUR, ibkr: CLNX, ibkr-ID: 193517754, ibkr-exchange: BM, yahoo: CLNX.MC}
+- {currency: EUR, ibkr: ANA, ibkr-ID: 917436, ibkr-exchange: BM, yahoo: ANA.MC}
+- {currency: EUR, ibkr: COL, ibkr-ID: 241892013, ibkr-exchange: BM, yahoo: COL.MC}
+- {currency: EUR, ibkr: MEL, ibkr-ID: 2487794, ibkr-exchange: BM, yahoo: MEL.MC}
+- {currency: EUR, ibkr: LOG, ibkr-ID: 160531120, ibkr-exchange: BM, yahoo: LOG.MC}
+- {currency: EUR, ibkr: ACS, ibkr-ID: 30314131, ibkr-exchange: BM, yahoo: ACS.MC}
+- {currency: EUR, ibkr: ENG, ibkr-ID: 15824414, ibkr-exchange: BM, yahoo: ENG.MC}
+- {currency: EUR, ibkr: IAG, ibkr-ID: 82965896, ibkr-exchange: BM, yahoo: IAG.MC}
+- {currency: EUR, ibkr: ANE, ibkr-ID: 500029613, ibkr-exchange: BM, yahoo: ANE.MC}
+- {currency: EUR, ibkr: TEF, ibkr-ID: 30314159, ibkr-exchange: BM, yahoo: TEF.MC}
+- {currency: EUR, ibkr: RED1, ibkr-ID: 239949851, ibkr-exchange: BM, yahoo: RED.MC}
+- {currency: EUR, ibkr: SAB1, ibkr-ID: 44150571, ibkr-exchange: BM, yahoo: SAB.MC}
+- {currency: EUR, ibkr: ACKB, ibkr-ID: 5084603, ibkr-exchange: ENEXT.BE, yahoo: ACKB.BR}
+- {currency: EUR, ibkr: AED, ibkr-ID: 41474620, ibkr-exchange: ENEXT.BE, yahoo: AED.BR}
+- {currency: EUR, ibkr: AGS, yahoo: AGS.BR}
+- {currency: EUR, ibkr: APAM, ibkr-ID: 82850985, ibkr-exchange: AEB, yahoo: APAM.BR}
+- {currency: EUR, ibkr: ARGX, ibkr-ID: 160209909, ibkr-exchange: ENEXT.BE, yahoo: ARGX.BR}
+- {currency: EUR, ibkr: COFB, ibkr-ID: 15778638, ibkr-exchange: ENEXT.BE, yahoo: COFB.BR}
+- {currency: EUR, ibkr: COLR, ibkr-ID: 79914347, ibkr-exchange: ENEXT.BE, yahoo: COLR.BR}
+- {currency: EUR, ibkr: ELI1, ibkr-ID: 36790958, ibkr-exchange: ENEXT.BE, yahoo: ELI.BR}
+- {currency: EUR, ibkr: GBLB, ibkr-ID: 917985, ibkr-exchange: ENEXT.BE, yahoo: GBLB.BR}
+- {currency: EUR, ibkr: GLPG, ibkr-ID: 34510828, ibkr-exchange: AEB, yahoo: GLPG.BR}
+- {currency: EUR, ibkr: KBC, ibkr-ID: 917964, ibkr-exchange: ENEXT.BE, yahoo: KBC.BR}
+- {currency: EUR, ibkr: MELE, ibkr-ID: 36794737, ibkr-exchange: ENEXT.BE, yahoo: MELE.BR}
+- {currency: EUR, ibkr: PROX, ibkr-ID: 28110174, ibkr-exchange: ENEXT.BE, yahoo: PROX.BR}
+- {currency: EUR, ibkr: SOF, ibkr-ID: 36790770, ibkr-exchange: ENEXT.BE, yahoo: SOF.BR}
+- {currency: EUR, ibkr: SOLB, ibkr-ID: 228869, ibkr-exchange: ENEXT.BE, yahoo: SOLB.BR}
+- {currency: EUR, ibkr: TNET, ibkr-ID: 36790975, ibkr-exchange: ENEXT.BE, yahoo: TNET.BR}
+- {currency: EUR, ibkr: UCB, ibkr-ID: 917975, ibkr-exchange: ENEXT.BE, yahoo: UCB.BR}
+- {currency: EUR, ibkr: UMI, ibkr-ID: 291956769, ibkr-exchange: ENEXT.BE, yahoo: UMI.BR}
+- {currency: EUR, ibkr: WDP, ibkr-ID: 396411105, ibkr-exchange: ENEXT.BE, yahoo: WDP.BR}
+- {currency: EUR, ibkr: VALMT, ibkr-ID: 140345629, ibkr-exchange: HEX, yahoo: VALMT.HE}
+- {currency: EUR, ibkr: UPM, ibkr-ID: 29816600, ibkr-exchange: HEX, yahoo: UPM.HE}
+- {currency: EUR, ibkr: TIETO, ibkr-ID: 29816594, ibkr-exchange: HEX, yahoo: TIETO.HE}
+- {currency: EUR, ibkr: STERV, ibkr-ID: 29816588, ibkr-exchange: HEX, yahoo: STERV.HE}
+- {currency: EUR, ibkr: SAMPO, ibkr-ID: 12543068, ibkr-exchange: HEX, yahoo: SAMPO.HE}
+- {currency: EUR, ibkr: OUT, ibkr-ID: 12543012, ibkr-exchange: HEX, yahoo: OUT1V.HE}
+- {currency: EUR, ibkr: NESTE, ibkr-ID: 33815032, ibkr-exchange: HEX, yahoo: NESTE.HE}
+- {currency: EUR, ibkr: NDA2, ibkr-ID: 335134428, ibkr-exchange: HEX, yahoo: NDA FI.HE}
+- {currency: EUR, ibkr: METSO, ibkr-ID: 42481101, ibkr-exchange: HEX, yahoo: MOCORP.HE}
+- {currency: EUR, ibkr: KOJAMO, ibkr-ID: 323609750, ibkr-exchange: HEX, yahoo: KOJAMO.HE}
+- {currency: EUR, ibkr: KNEBV, ibkr-ID: 34781486, ibkr-exchange: HEX, yahoo: KNEBV.HE}
+- {currency: EUR, ibkr: KESKOB, ibkr-ID: 12539499, ibkr-exchange: HEX, yahoo: KESKOB.HE}
+- {currency: EUR, ibkr: KEMIRA, ibkr-ID: 12539492, ibkr-exchange: HEX, yahoo: KEMIRA.HE}
+- {currency: EUR, ibkr: KCR, ibkr-ID: 12539489, ibkr-exchange: HEX, yahoo: KCR.HE}
+- {currency: EUR, ibkr: FORTUM, ibkr-ID: 12539474, ibkr-exchange: HEX, yahoo: FORTUM.HE}
+- {currency: EUR, ibkr: ELISA, ibkr-ID: 29908766, ibkr-exchange: HEX, yahoo: ELISA.HE}
+- {currency: EUR, ibkr: CGCBV, ibkr-ID: 34764029, ibkr-exchange: HEX, yahoo: CGCBV.HE}
+- {currency: EUR, ibkr: TYRES, ibkr-ID: 15681527, ibkr-exchange: HEX, yahoo: TYRES.HE}
+- {currency: EUR, ibkr: TELIA1, ibkr-ID: 16660531, ibkr-exchange: HEX, yahoo: TELIA1.HE}
+- {currency: EUR, ibkr: ORNBV, ibkr-ID: 12543005, ibkr-exchange: HEX, yahoo: ORNBV.HE}
+- {currency: EUR, ibkr: METSB, ibkr-ID: 12542994, ibkr-exchange: HEX, yahoo: METSB.HE}
+- {currency: EUR, ibkr: CENER, ibkr-ID: 259937347, ibkr-exchange: ENEXT.BE, yahoo: CENER.AT}
+- {currency: EUR, ibkr: EEE1, ibkr-ID: 126991169, ibkr-exchange: ATH, yahoo: EEE.AT}
+- {currency: EUR, ibkr: ELPE, ibkr-ID: 12570175, ibkr-exchange: ATH, yahoo: ELPE.AT}
+- {currency: EUR, ibkr: ETE, ibkr-ID: 331627431, ibkr-exchange: ATH, yahoo: ETE.AT}
+- {currency: EUR, ibkr: ELLAKTOR, ibkr-ID: 16490116, ibkr-exchange: ATH, yahoo: ELLAKTOR.AT}
+- {currency: EUR, ibkr: LAMDA, ibkr-ID: 466169066, ibkr-exchange: ATH, yahoo: LAMDA.AT}
+- {currency: EUR, ibkr: QUEST, ibkr-ID: 404782997, ibkr-exchange: ATH, yahoo: QUEST.AT}
+- {currency: EUR, ibkr: TITC, ibkr-ID: 375664597, ibkr-exchange: ENEXT.BE, yahoo: TITC.AT}
+- {currency: EUR, ibkr: BELA, ibkr-ID: 75975450, ibkr-exchange: ATH, yahoo: BELA.AT}
+- {currency: EUR, ibkr: 32A, ibkr-ID: 143974809, ibkr-exchange: FWB2, yahoo: AEGN.AT}
+- {currency: EUR, ibkr: MYTIL, ibkr-ID: 41941651, ibkr-exchange: ATH, yahoo: MYTIL.AT}
+- {currency: EUR, ibkr: 0AH1, ibkr-ID: 603529804, ibkr-exchange: FWB2, yahoo: OTOEL.AT}
+- {currency: EUR, ibkr: VIO, ibkr-ID: 138171445, ibkr-exchange: ENEXT.BE, yahoo: VIO.AT}
+- {currency: EUR, ibkr: BKP, ibkr-ID: 482640874, ibkr-exchange: FWB2, yahoo: TPEIR.AT}
+- {currency: EUR, ibkr: TENERGY, ibkr-ID: 310169244, ibkr-exchange: ATH, yahoo: TENERGY.AT}
+- {currency: EUR, ibkr: SAR, ibkr-ID: 451691008, ibkr-exchange: ATH, yahoo: SAR.AT}
+- {currency: EUR, ibkr: EYDAP, ibkr-ID: 16490113, ibkr-exchange: ATH, yahoo: EYDAP.AT}
+- {currency: EUR, ibkr: ALPHA, ibkr-ID: 213929802, ibkr-exchange: ATH, yahoo: ALPHA.AT}
+- {currency: EUR, ibkr: PPC, ibkr-ID: 16019021, ibkr-exchange: ATH, yahoo: PPC.AT}
+- {currency: EUR, ibkr: EUROB, ibkr-ID: 214126559, ibkr-exchange: ATH, yahoo: EUROB.AT}
+- {currency: EUR, ibkr: MOH, ibkr-ID: 36771903, ibkr-exchange: ATH, yahoo: MOH.AT}
+- {currency: EUR, ibkr: OPAP, ibkr-ID: 16019027, ibkr-exchange: ATH, yahoo: OPAP.AT}
+- {currency: EUR, ibkr: HTO, ibkr-ID: 12567715, ibkr-exchange: ATH, yahoo: HTO.AT}
+- {currency: EUR, ibkr: GEKTERNA, ibkr-ID: 272555163, ibkr-exchange: ATH, yahoo: GEKTERNA.AT}
+- {currency: GBP, ibkr: RR., ibkr-ID: 88383131, ibkr-exchange: LSE, yahoo: RR.L}
+- {currency: GBP, ibkr: ENT, ibkr-ID: 125005888, ibkr-exchange: LSE, yahoo: ENT.L}
+- {currency: GBP, ibkr: RS1, ibkr-ID: 12103838, ibkr-exchange: LSE, yahoo: RS1.L}
+- {currency: GBP, ibkr: SPX, ibkr-ID: 196961203, ibkr-exchange: LSE, yahoo: SPX.L}
+- {currency: GBP, ibkr: AHT, ibkr-ID: 35150670, ibkr-exchange: LSE, yahoo: AHT.L}
+- {currency: GBP, ibkr: CCH, ibkr-ID: 126945329, ibkr-exchange: LSE, yahoo: CCH.L}
+- {currency: GBP, ibkr: RTO, ibkr-ID: 909192, ibkr-exchange: LSE, yahoo: RTO.L}
+- {currency: GBP, ibkr: BATS, ibkr-ID: 908931, ibkr-exchange: LSE, yahoo: BATS.L}
+- {currency: GBP, ibkr: ANTO, ibkr-ID: 17628566, ibkr-exchange: LSE, yahoo: ANTO.L}
+- {currency: GBP, ibkr: BA., ibkr-ID: 908964, ibkr-exchange: LSE, yahoo: BA.L}
+- {currency: GBP, ibkr: SMIN, ibkr-ID: 44668420, ibkr-exchange: LSE, yahoo: SMIN.L}
+- {currency: GBP, ibkr: SDR, ibkr-ID: 586245618, ibkr-exchange: LSE, yahoo: SDR.L}
+- {currency: GBP, ibkr: HLN, ibkr-ID: 573136108, ibkr-exchange: LSE, yahoo: HLN.L}
+- {currency: GBP, ibkr: CNA, ibkr-ID: 31765913, ibkr-exchange: LSE, yahoo: CNA.L}
+- {currency: GBP, ibkr: PSN, ibkr-ID: 12605003, ibkr-exchange: LSE, yahoo: PSN.L}
+- {currency: GBP, ibkr: TSCO, ibkr-ID: 471204140, ibkr-exchange: LSE, yahoo: TSCO.L}
+- {currency: GBP, ibkr: EXPN, ibkr-ID: 41044864, ibkr-exchange: LSE, yahoo: EXPN.L}
+- {currency: GBP, ibkr: SHEL, ibkr-ID: 542125742, ibkr-exchange: LSE, yahoo: SHEL.L}
+- {currency: GBP, ibkr: CPG, ibkr-ID: 280731727, ibkr-exchange: LSE, yahoo: CPG.L}
+- {currency: GBP, ibkr: STJ, ibkr-ID: 12177246, ibkr-exchange: LSE, yahoo: STJ.L}
+- {currency: GBP, ibkr: AUTO, ibkr-ID: 187511156, ibkr-exchange: LSE, yahoo: AUTO.L}
+- {currency: GBP, ibkr: SSE, ibkr-ID: 2570998, ibkr-exchange: LSE, yahoo: SSE.L}
+- {currency: GBP, ibkr: ABDN, ibkr-ID: 337997965, ibkr-exchange: LSE, yahoo: ABDN.L}
+- {currency: GBP, ibkr: MNG, ibkr-ID: 387353678, ibkr-exchange: LSE, yahoo: MNG.L}
+- {currency: GBP, ibkr: RMV, ibkr-ID: 331862780, ibkr-exchange: LSE, yahoo: RMV.L}
+- {currency: GBP, ibkr: FRAS, ibkr-ID: 44650318, ibkr-exchange: LSE, yahoo: FRAS.L}
+- {currency: GBP, ibkr: AAF, ibkr-ID: 373291234, ibkr-exchange: LSE, yahoo: AAF.L}
+- {currency: GBP, ibkr: PRU, ibkr-ID: 909164, ibkr-exchange: LSE, yahoo: PRU.L}
+- {currency: GBP, ibkr: VOD, ibkr-ID: 140148322, ibkr-exchange: LSE, yahoo: VOD.L}
+- {currency: GBP, ibkr: SMT, ibkr-ID: 158725708, ibkr-exchange: LSE, yahoo: SMT.L}
