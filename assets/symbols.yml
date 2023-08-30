@@ -176,7 +176,7 @@
 - {currency: EUR, ibkr: ACKB, conId: 5084603, primaryExchange: ENEXT.BE, yahoo: ACKB.BR}
 - {currency: EUR, ibkr: AED, conId: 41474620, primaryExchange: ENEXT.BE, yahoo: AED.BR}
 - {currency: EUR, ibkr: AGS, conId: 111604420, primaryExchange: ENEXT.BE, yahoo: AGS.BR}
-- {currency: EUR, ibkr: APAM, conId: 82850985, primaryExchange: AEB, yahoo: APAM.BR}
+- {currency: EUR, ibkr: APAM, conId: 82850985, primaryExchange: AEB, yahoo: APAM.AS}
 - {currency: EUR, ibkr: ARGX, conId: 160209909, primaryExchange: ENEXT.BE, yahoo: ARGX.BR}
 - {currency: EUR, ibkr: COFB, conId: 15778638, primaryExchange: ENEXT.BE, yahoo: COFB.BR}
 - {currency: EUR, ibkr: COLR, conId: 79914347, primaryExchange: ENEXT.BE, yahoo: COLR.BR}

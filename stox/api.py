@@ -139,8 +139,9 @@ def add_symbol_row(table, yfsym, contract, force=False):
 	print(f'Added {yfsym!r} {row}')
 
 
+report_keys = ['snapshot', 'ownership', 'finances', 'statements', 'recommendations']
 
-def download_reports(ibe, info, root=None, date=None, pbar=None):
+def download_reports(ibe, info, root=None, date=None, pbar=None, keys=None):
 	if root is None:
 		root = misc.ibkr_root()
 
@@ -156,6 +157,8 @@ def download_reports(ibe, info, root=None, date=None, pbar=None):
 		'recommendations': ibe.recommendations,
 		# 'calendar': ibe.calendar,
 	}
+	if keys is not None:
+		report_fns = {k: v for k, v in report_fns.items() if k in keys}
 
 	itr = report_fns.items()
 	if pbar is not None:
@@ -176,12 +179,260 @@ def download_reports(ibe, info, root=None, date=None, pbar=None):
 	return path
 
 
+def load_stock_data(row, date='last', root=None, keys=None, *, skip_missing=True):
+	if root is None:
+		root = misc.ibkr_root()
+
+	cid = row['conId']
+	path = misc.get_date_path(root / str(cid), date=date)
+
+	if not path.exists():
+		raise ValueError(f'No data for {cid} on {date}')
+
+	if keys is None:
+		keys = report_keys
+
+	data = {}
+
+	missing = []
+
+	for key in keys:
+		filepath = path / f'{key}.xml'
+		if not filepath.exists():
+			missing.append(key)
+			continue
+
+		with open(filepath) as f:
+			data.update(xmltodict.parse(f.read()))
+
+	if len(missing):
+		if skip_missing:
+			print(f'Missing {missing} for {cid} on {date}')
+		else:
+			raise ValueError(f'Missing {missing} for {cid} on {date}')
+
+	return data
 
 
+from . import misc, yahoo
+from collections import namedtuple
+from omniply.novo.test_novo import TestCraftyKitBase, tool
 
 
+Money = namedtuple('Money', 'amount currency')
 
 
+class IBKR_Loader(TestCraftyKitBase):
+	def __init__(self, date='last', root=None):
+		super().__init__()
+		if root is None:
+			root = misc.ibkr_root()
+		self.root = root
+		self.date = date
+
+	@tool('ckpt_date')
+	def get_ckpt_date(self, conId):
+		path = misc.get_date_path(self.root / str(conId), self.date)
+		return path.name
+
+	@tool('ckpt_path')
+	def get_ckpt_path(self, conId, ckpt_date):
+		return misc.get_date_path(self.root / str(conId), ckpt_date)
+
+	def _load_xml(self, path):
+		with open(path, 'r') as f:
+			return xmltodict.parse(f.read())
+
+	@tool('snapshot')
+	def load_snapshot(self, ckpt_path):
+		return self._load_xml(ckpt_path / 'snapshot.xml')
+
+	@tool('ownership')
+	def load_ownership(self, ckpt_path):
+		return self._load_xml(ckpt_path / 'ownership.xml')
+
+	@tool('finances')
+	def load_finances(self, ckpt_path):
+		return self._load_xml(ckpt_path / 'finances.xml')
+
+	@tool('statements')
+	def load_statements(self, ckpt_path):
+		return self._load_xml(ckpt_path / 'statements.xml')
+
+	@tool('recommendations')
+	def load_recommendations(self, ckpt_path):
+		return self._load_xml(ckpt_path / 'recommendations.xml')
+
+
+class IBKR_Stats(TestCraftyKitBase):
+	@tool('company_name')
+	def get_company_name_from_snapshot(self, snapshot):
+		val = snapshot['ColIDs']['CoID'][1]
+		assert val['@type'] == 'CompanyName', f'Expected CompanyName in {val}'
+		return val['#text']
+
+	@tool('company_name')
+	def get_company_name_from_rec(self, recommendations):
+		return recommendations['Company']['CoName']['Name']['#text']
+
+	@tool('exchange')
+	def get_exchange_from_snapshot(self, snapshot):
+		val = snapshot['Issues']['Issue']['Exchange']
+		return val['@Code']
+
+	@tool('exchange')
+	def get_exchange_from_rec(self, recommendations):
+		return recommendations['Company']['SecurityInfo']['Security']['Exchange']['@code']
+
+	@tool('exchange_name')
+	def get_exchange_name(self, snapshot):
+		val = snapshot['Issues']['Issue']['Exchange']
+		return val['#text']
+
+	@tool('country')
+	def get_country_code_from_snapshot(self, snapshot):
+		val = snapshot['Issues']['Issue']['Exchange']
+		return val['@Country']
+
+	@tool('country')
+	def get_country_code_from_rec(self, recommendations):
+		loc = recommendations['Company']['SecurityInfo']['Security']['SecIds']['SecId'][0]
+		assert loc['@type'] == 'ISIN', f'Expected ISIN in {loc}'
+		return loc['#text']
+
+	@tool('isin')
+	def get_isin_from_snapshot(self, snapshot):
+		val = snapshot['Issues']['Issue']['IssueID'][2]
+		assert val['@Type'] == 'ISIN', f'Expected ISIN in {val}'
+		return val['#text']
+
+	@tool('isin')
+	def get_isin_from_rec(self, recommendations):
+		return recommendations['Company']['SecurityInfo']['Security']['ISIN']['#text']
+
+	@tool('clprice')
+	def get_clprice(self, recommendations):
+		return recommendations['Company']['SecurityInfo']['Security']['@clprice']
+
+	@tool('price')
+	def get_price(self, recommendations):
+		entry = recommendations['Company']['SecurityInfo']['MarketData']['MarketDataItem'][0]
+		assert entry['@unit'] == 'U' and entry['@type'] == 'CLPRICE', f'Expected CLPRICE in {entry}'
+		return Money(float(entry['#text']), entry['@currCode'])
+
+	@tool('market_cap')
+	def get_market_cap(self, recommendations):
+		entry = recommendations['Company']['SecurityInfo']['MarketData']['MarketDataItem'][1]
+		assert entry['@unit'] == 'M' and entry['@type'] == 'MARKETCAP', f'Expected MARKETCAP in {entry}'
+		return Money(float(entry['#text']) * 1e6, entry['@currCode'])
+
+	@tool('high_52w')
+	def get_high_52w(self, recommendations):
+		entry = recommendations['Company']['SecurityInfo']['MarketData']['MarketDataItem'][2]
+		assert entry['@unit'] == 'U' and entry['@type'] == '52WKHIGH', f'Expected 52WKHIGH in {entry}'
+		return Money(float(entry['#text']), entry['@currCode'])
+
+	@tool('low_52w')
+	def get_low_52w(self, recommendations):
+		entry = recommendations['Company']['SecurityInfo']['MarketData']['MarketDataItem'][3]
+		assert entry['@unit'] == 'U' and entry['@type'] == '52WKLOW', f'Expected 52WKLOW in {entry}'
+		return Money(float(entry['#text']), entry['@currCode'])
+
+	@tool('sector')
+	def get_sector(self, recommendations):
+		return recommendations['Company']['CompanyInfo']['Sector']['#text']
+
+	@tool('employees')
+	def get_employees(self, snapshot):
+		val = snapshot['CoGeneralInfo']['Employees']
+		return int(val['#text'])
+
+	@tool('employees_date')
+	def get_employees_date(self, snapshot):
+		val = snapshot['CoGeneralInfo']['Employees']
+		return val['@LastUpdated']
+
+	@tool('business_summary')
+	def get_company_summary(self, snapshot):
+		val = snapshot['TextInfo']['Text'][0]
+		assert val['@Type'] == 'Business Summary', f'Expected Business Summary in {val}'
+		return val['#text']
+
+	@tool('brief')
+	def get_brief(self, snapshot):
+		val = snapshot['TextInfo']['Text'][1]
+		assert val['@Type'] == 'Financial Summary', f'Expected Financial Summary in {val}'
+		return val['#text']
+
+	@tool('brief_date')
+	def get_brief_date(self, snapshot):
+		val = snapshot['TextInfo']['Text'][1]
+		assert val['@Type'] == 'Financial Summary', f'Expected Financial Summary in {val}'
+		return val['@LastModified']
+
+	@tool('country_code')
+	def get_country(self, snapshot):
+		val = snapshot['contactInfo']['country']
+		return val['@code']
+
+	@tool('country_name')
+	def get_country_name(self, snapshot):
+		val = snapshot['contactInfo']['country']
+		return val['#text']
+
+	@tool('city')
+	def get_city(self, snapshot):
+		val = snapshot['contactInfo']['city']
+		return val['#text']
+
+	# skipped address and phone and contact person info and email
+	@tool('website')
+	def get_website(self, snapshot):
+		val = snapshot['webLinks']['webSite']
+		return val['#text']
+
+	@tool('industry_trbc')
+	def get_industry_trbc(self, snapshot):
+		full = snapshot['peerInfo']['IndustryInfo']['Industry']
+		vals = [row for row in full if row['@type'] == 'TRBC']
+		assert len(vals) == 1, f'Expected 1 TRBC in {vals}'
+		return vals[0]['#text']
+
+	@tool('industry_trbc_code')
+	def get_industry_trbc_code(self, snapshot):
+		full = snapshot['peerInfo']['IndustryInfo']['Industry']
+		vals = [row for row in full if row['@type'] == 'TRBC']
+		assert len(vals) == 1, f'Expected 1 TRBC in {vals}'
+		return vals[0]['@code']
+
+	@tool('industry')
+	@tool('industry_naics')
+	def get_industry_naics(self, snapshot):
+		full = snapshot['peerInfo']['IndustryInfo']['Industry']
+		vals = [row for row in full if row['@type'] == 'NAICS']
+		assert len(vals), f'Expected NAICS in {vals}'
+		return [v['#text'] for v in vals]
+
+	@tool('industry_naics_code')
+	def get_industry_naics_code(self, snapshot):
+		full = snapshot['peerInfo']['IndustryInfo']['Industry']
+		vals = [row for row in full if row['@type'] == 'NAICS']
+		assert len(vals), f'Expected NAICS in {vals}'
+		return [v['@code'] for v in vals]
+
+	@tool('industry_sic')
+	def get_industry_sic(self, snapshot):
+		full = snapshot['peerInfo']['IndustryInfo']['Industry']
+		vals = [row for row in full if row['@type'] == 'SIC']
+		assert len(vals), f'Expected SIC in {vals}'
+		return [v['#text'] for v in vals]
+
+	@tool('industry_sic_code')
+	def get_industry_sic_code(self, snapshot):
+		full = snapshot['peerInfo']['IndustryInfo']['Industry']
+		vals = [row for row in full if row['@type'] == 'SIC']
+		assert len(vals), f'Expected SIC in {vals}'
+		return [v['@code'] for v in vals]
 
 
 
