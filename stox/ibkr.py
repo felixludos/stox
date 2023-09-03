@@ -214,15 +214,25 @@ def load_stock_data(row, date='last', root=None, keys=None, *, skip_missing=True
 	return data
 
 
+from dataclasses import dataclass
 from . import misc, yahoo
 from collections import namedtuple
-from omniply.novo.test_novo import TestCraftyKitBase, tool
+import omniply as op
+from omniply import tool, ToolKit, Context
+
+@dataclass
+class Money:
+	amount: float
+	currency: str
+
+	def __str__(self):
+		return f'{self.amount:.2f} {self.currency}'
+
+	def __repr__(self):
+		return f'{self.amount:.2f} {self.currency}'
 
 
-Money = namedtuple('Money', 'amount currency')
-
-
-class IBKR_Loader(TestCraftyKitBase):
+class IBKR_Loader(ToolKit):
 	def __init__(self, date='last', root=None):
 		super().__init__()
 		if root is None:
@@ -245,7 +255,7 @@ class IBKR_Loader(TestCraftyKitBase):
 
 	@tool('snapshot')
 	def load_snapshot(self, ckpt_path):
-		return self._load_xml(ckpt_path / 'snapshot.xml')
+		return self._load_xml(ckpt_path / 'snapshot.xml')['ReportSnapshot']
 
 	@tool('ownership')
 	def load_ownership(self, ckpt_path):
@@ -261,10 +271,10 @@ class IBKR_Loader(TestCraftyKitBase):
 
 	@tool('recommendations')
 	def load_recommendations(self, ckpt_path):
-		return self._load_xml(ckpt_path / 'recommendations.xml')
+		return self._load_xml(ckpt_path / 'recommendations.xml')['REarnEstCons']
 
 
-class IBKR_Stats(TestCraftyKitBase):
+class IBKR_Stats(ToolKit):
 	@tool('company_name')
 	def get_company_name_from_snapshot(self, snapshot):
 		val = snapshot['ColIDs']['CoID'][1]
@@ -308,7 +318,11 @@ class IBKR_Stats(TestCraftyKitBase):
 
 	@tool('isin')
 	def get_isin_from_rec(self, recommendations):
-		return recommendations['Company']['SecurityInfo']['Security']['ISIN']['#text']
+		options = recommendations['Company']['SecurityInfo']['Security']['SecIds']['SecId']['#text']
+		for o in options:
+			if o['@type'] == 'ISIN':
+				return o['#text']
+		raise op.GadgetFailed(f'Expected ISIN in {options}')
 
 	@tool('clprice')
 	def get_clprice(self, recommendations):
@@ -316,25 +330,25 @@ class IBKR_Stats(TestCraftyKitBase):
 
 	@tool('price')
 	def get_price(self, recommendations):
-		entry = recommendations['Company']['SecurityInfo']['MarketData']['MarketDataItem'][0]
+		entry = recommendations['Company']['SecurityInfo']['Security']['MarketData']['MarketDataItem'][0]
 		assert entry['@unit'] == 'U' and entry['@type'] == 'CLPRICE', f'Expected CLPRICE in {entry}'
 		return Money(float(entry['#text']), entry['@currCode'])
 
 	@tool('market_cap')
 	def get_market_cap(self, recommendations):
-		entry = recommendations['Company']['SecurityInfo']['MarketData']['MarketDataItem'][1]
+		entry = recommendations['Company']['SecurityInfo']['Security']['MarketData']['MarketDataItem'][1]
 		assert entry['@unit'] == 'M' and entry['@type'] == 'MARKETCAP', f'Expected MARKETCAP in {entry}'
 		return Money(float(entry['#text']) * 1e6, entry['@currCode'])
 
 	@tool('high_52w')
 	def get_high_52w(self, recommendations):
-		entry = recommendations['Company']['SecurityInfo']['MarketData']['MarketDataItem'][2]
+		entry = recommendations['Company']['SecurityInfo']['Security']['MarketData']['MarketDataItem'][2]
 		assert entry['@unit'] == 'U' and entry['@type'] == '52WKHIGH', f'Expected 52WKHIGH in {entry}'
 		return Money(float(entry['#text']), entry['@currCode'])
 
 	@tool('low_52w')
 	def get_low_52w(self, recommendations):
-		entry = recommendations['Company']['SecurityInfo']['MarketData']['MarketDataItem'][3]
+		entry = recommendations['Company']['SecurityInfo']['Security']['MarketData']['MarketDataItem'][3]
 		assert entry['@unit'] == 'U' and entry['@type'] == '52WKLOW', f'Expected 52WKLOW in {entry}'
 		return Money(float(entry['#text']), entry['@currCode'])
 
