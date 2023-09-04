@@ -1,0 +1,5772 @@
+[
+    {
+        "Name": "Energy",
+        "PermID": "4294952782",
+        "TRBC ID": "50"
+    },
+    {
+        "Name": "Energy - Fossil Fuels",
+        "PermID": "4294952999",
+        "TRBC ID": "5010"
+    },
+    {
+        "Name": "Coal",
+        "PermID": "4294952998",
+        "TRBC ID": "501010"
+    },
+    {
+        "Name": "Coal",
+        "PermID": "4294952997",
+        "TRBC ID": "50101010"
+    },
+    {
+        "Name": "Coal (NEC)",
+        "PermID": "4294952001",
+        "TRBC ID": "5010101010"
+    },
+    {
+        "Name": "Coal Mining Support",
+        "PermID": "4294952000",
+        "TRBC ID": "5010101011"
+    },
+    {
+        "Name": "Coal Wholesale",
+        "PermID": "4294951999",
+        "TRBC ID": "5010101012"
+    },
+    {
+        "Name": "Oil & Gas",
+        "PermID": "4294952996",
+        "TRBC ID": "501020"
+    },
+    {
+        "Name": "Integrated Oil & Gas",
+        "PermID": "4294952995",
+        "TRBC ID": "50102010"
+    },
+    {
+        "Name": "Integrated Oil & Gas",
+        "PermID": "4294951998",
+        "TRBC ID": "5010201010"
+    },
+    {
+        "Name": "Oil & Gas Exploration and Production",
+        "PermID": "4294952994",
+        "TRBC ID": "50102020"
+    },
+    {
+        "Name": "Oil & Gas Exploration and Production (NEC)",
+        "PermID": "4294951997",
+        "TRBC ID": "5010202010"
+    },
+    {
+        "Name": "Oil Exploration & Production - Onshore",
+        "PermID": "4294951996",
+        "TRBC ID": "5010202011"
+    },
+    {
+        "Name": "Oil Exploration & Production - Offshore",
+        "PermID": "4294951995",
+        "TRBC ID": "5010202012"
+    },
+    {
+        "Name": "Natural Gas Exploration & Production - Onshore",
+        "PermID": "4294951994",
+        "TRBC ID": "5010202013"
+    },
+    {
+        "Name": "Natural Gas Exploration & Production - Offshore",
+        "PermID": "4294951993",
+        "TRBC ID": "5010202014"
+    },
+    {
+        "Name": "Unconventional Oil & Gas Production",
+        "PermID": "4294951992",
+        "TRBC ID": "5010202015"
+    },
+    {
+        "Name": "Oil & Gas Refining and Marketing",
+        "PermID": "4294952993",
+        "TRBC ID": "50102030"
+    },
+    {
+        "Name": "Oil & Gas Refining and Marketing (NEC)",
+        "PermID": "4294951991",
+        "TRBC ID": "5010203010"
+    },
+    {
+        "Name": "Petroleum Refining",
+        "PermID": "4294951990",
+        "TRBC ID": "5010203011"
+    },
+    {
+        "Name": "Gasoline Stations",
+        "PermID": "4294951989",
+        "TRBC ID": "5010203012"
+    },
+    {
+        "Name": "Petroleum Product Wholesale",
+        "PermID": "4294951988",
+        "TRBC ID": "5010203013"
+    },
+    {
+        "Name": "Oil & Gas Related Equipment and Services",
+        "PermID": "4294952992",
+        "TRBC ID": "501030"
+    },
+    {
+        "Name": "Oil & Gas Drilling",
+        "PermID": "4294952991",
+        "TRBC ID": "50103010"
+    },
+    {
+        "Name": "Oil & Gas Drilling (NEC)",
+        "PermID": "4294951987",
+        "TRBC ID": "5010301010"
+    },
+    {
+        "Name": "Oil Drilling - Onshore",
+        "PermID": "4294951986",
+        "TRBC ID": "5010301011"
+    },
+    {
+        "Name": "Gas Drilling - Onshore",
+        "PermID": "4294951985",
+        "TRBC ID": "5010301012"
+    },
+    {
+        "Name": "Oil Drilling - Offshore",
+        "PermID": "4294951984",
+        "TRBC ID": "5010301013"
+    },
+    {
+        "Name": "Gas Drilling - Offshore",
+        "PermID": "4294951983",
+        "TRBC ID": "5010301014"
+    },
+    {
+        "Name": "Unconventional Oil & Gas Drilling",
+        "PermID": "4294951982",
+        "TRBC ID": "5010301015"
+    },
+    {
+        "Name": "Oil Related Services and Equipment",
+        "PermID": "4294952990",
+        "TRBC ID": "50103020"
+    },
+    {
+        "Name": "Oil Related Services and Equipment (NEC)",
+        "PermID": "4294951981",
+        "TRBC ID": "5010302010"
+    },
+    {
+        "Name": "Oil Related Services",
+        "PermID": "4294951980",
+        "TRBC ID": "5010302011"
+    },
+    {
+        "Name": "Oil Related Equipment",
+        "PermID": "4294951979",
+        "TRBC ID": "5010302012"
+    },
+    {
+        "Name": "Oil Related - Surveying & Mapping Services",
+        "PermID": "4294951978",
+        "TRBC ID": "5010302013"
+    },
+    {
+        "Name": "Oil & Gas Transportation Services",
+        "PermID": "4294952811",
+        "TRBC ID": "50103030"
+    },
+    {
+        "Name": "Oil & Gas Transportation Services (NEC)",
+        "PermID": "4294951977",
+        "TRBC ID": "5010303010"
+    },
+    {
+        "Name": "LNG Transportation & Storage",
+        "PermID": "4294951976",
+        "TRBC ID": "5010303011"
+    },
+    {
+        "Name": "Natural Gas Pipeline Transportation",
+        "PermID": "4294951975",
+        "TRBC ID": "5010303012"
+    },
+    {
+        "Name": "Oil Pipeline Transportation",
+        "PermID": "4294951974",
+        "TRBC ID": "5010303013"
+    },
+    {
+        "Name": "Sea-Borne Tankers",
+        "PermID": "4294951973",
+        "TRBC ID": "5010303014"
+    },
+    {
+        "Name": "Oil & Gas Storage",
+        "PermID": "4294951972",
+        "TRBC ID": "5010303015"
+    },
+    {
+        "Name": "Renewable Energy",
+        "PermID": "4294952781",
+        "TRBC ID": "5020"
+    },
+    {
+        "Name": "Renewable Energy",
+        "PermID": "4294952810",
+        "TRBC ID": "502010"
+    },
+    {
+        "Name": "Renewable Energy Equipment & Services",
+        "PermID": "4294952809",
+        "TRBC ID": "50201010"
+    },
+    {
+        "Name": "Renewable Energy Equipment & Services (NEC)",
+        "PermID": "4294951971",
+        "TRBC ID": "5020101010"
+    },
+    {
+        "Name": "Wind Systems & Equipment",
+        "PermID": "4294951970",
+        "TRBC ID": "5020101011"
+    },
+    {
+        "Name": "Stationary Fuel Cells",
+        "PermID": "4294951969",
+        "TRBC ID": "5020101012"
+    },
+    {
+        "Name": "Photovoltaic Solar Systems & Equipment",
+        "PermID": "4294951968",
+        "TRBC ID": "5020101013"
+    },
+    {
+        "Name": "Thermal Solar Systems & Equipment",
+        "PermID": "4294951967",
+        "TRBC ID": "5020101014"
+    },
+    {
+        "Name": "Biomass Power Energy Equipment",
+        "PermID": "4294951966",
+        "TRBC ID": "5020101015"
+    },
+    {
+        "Name": "Waste to Energy Systems & Equipment",
+        "PermID": "4294951965",
+        "TRBC ID": "5020101016"
+    },
+    {
+        "Name": "Hydropower Equipment",
+        "PermID": "4294951964",
+        "TRBC ID": "5020101017"
+    },
+    {
+        "Name": "Wave Power Energy Equipment",
+        "PermID": "4294951963",
+        "TRBC ID": "5020101018"
+    },
+    {
+        "Name": "Renewable Energy Services",
+        "PermID": "4294951962",
+        "TRBC ID": "5020101019"
+    },
+    {
+        "Name": "Geothermal Equipment",
+        "PermID": "4294951961",
+        "TRBC ID": "5020101020"
+    },
+    {
+        "Name": "Renewable Fuels",
+        "PermID": "4294952808",
+        "TRBC ID": "50201020"
+    },
+    {
+        "Name": "Renewable Fuels (NEC)",
+        "PermID": "4294951960",
+        "TRBC ID": "5020102010"
+    },
+    {
+        "Name": "Biodiesel",
+        "PermID": "4294951959",
+        "TRBC ID": "5020102011"
+    },
+    {
+        "Name": "Ethanol Fuels",
+        "PermID": "4294951958",
+        "TRBC ID": "5020102012"
+    },
+    {
+        "Name": "Pyrolytic & Synthetic Fuels",
+        "PermID": "4294951957",
+        "TRBC ID": "5020102013"
+    },
+    {
+        "Name": "Biomass & Biogas Fuels",
+        "PermID": "4294951956",
+        "TRBC ID": "5020102014"
+    },
+    {
+        "Name": "Hydrogen Fuel",
+        "PermID": "4294951955",
+        "TRBC ID": "5020102015"
+    },
+    {
+        "Name": "Uranium",
+        "PermID": "4294952777",
+        "TRBC ID": "5030"
+    },
+    {
+        "Name": "Uranium",
+        "PermID": "4294952776",
+        "TRBC ID": "503010"
+    },
+    {
+        "Name": "Uranium",
+        "PermID": "4294952775",
+        "TRBC ID": "50301010"
+    },
+    {
+        "Name": "Uranium (NEC)",
+        "PermID": "4294951954",
+        "TRBC ID": "5030101010"
+    },
+    {
+        "Name": "Uranium Mining",
+        "PermID": "4294951953",
+        "TRBC ID": "5030101011"
+    },
+    {
+        "Name": "Uranium Processing",
+        "PermID": "4294951952",
+        "TRBC ID": "5030101012"
+    },
+    {
+        "Name": "Basic Materials",
+        "PermID": "4294952774",
+        "TRBC ID": "51"
+    },
+    {
+        "Name": "Chemicals",
+        "PermID": "4294952988",
+        "TRBC ID": "5110"
+    },
+    {
+        "Name": "Chemicals",
+        "PermID": "4294952987",
+        "TRBC ID": "511010"
+    },
+    {
+        "Name": "Commodity Chemicals",
+        "PermID": "4294952986",
+        "TRBC ID": "51101010"
+    },
+    {
+        "Name": "Commodity Chemicals (NEC)",
+        "PermID": "4294951951",
+        "TRBC ID": "5110101010"
+    },
+    {
+        "Name": "Plastics",
+        "PermID": "4294951950",
+        "TRBC ID": "5110101011"
+    },
+    {
+        "Name": "Paints & Coatings",
+        "PermID": "4294951949",
+        "TRBC ID": "5110101012"
+    },
+    {
+        "Name": "Tanning & Softening Agents",
+        "PermID": "4294951948",
+        "TRBC ID": "5110101013"
+    },
+    {
+        "Name": "Explosives",
+        "PermID": "4294951947",
+        "TRBC ID": "5110101014"
+    },
+    {
+        "Name": "Industrial Gases",
+        "PermID": "4294951946",
+        "TRBC ID": "5110101015"
+    },
+    {
+        "Name": "Commodity Chemicals Wholesale",
+        "PermID": "4294951945",
+        "TRBC ID": "5110101016"
+    },
+    {
+        "Name": "Glass",
+        "PermID": "1004365342",
+        "TRBC ID": "5110101017"
+    },
+    {
+        "Name": "Agricultural Chemicals",
+        "PermID": "4294952985",
+        "TRBC ID": "51101020"
+    },
+    {
+        "Name": "Agricultural Chemicals (NEC)",
+        "PermID": "4294951944",
+        "TRBC ID": "5110102010"
+    },
+    {
+        "Name": "Fertilizers",
+        "PermID": "4294951943",
+        "TRBC ID": "5110102011"
+    },
+    {
+        "Name": "Pesticides",
+        "PermID": "4294951942",
+        "TRBC ID": "5110102012"
+    },
+    {
+        "Name": "Organic Fertilizers",
+        "PermID": "4294951941",
+        "TRBC ID": "5110102013"
+    },
+    {
+        "Name": "Agricultural Chemicals Wholesale",
+        "PermID": "4294951940",
+        "TRBC ID": "5110102014"
+    },
+    {
+        "Name": "Specialty Chemicals",
+        "PermID": "4294952984",
+        "TRBC ID": "51101030"
+    },
+    {
+        "Name": "Specialty Chemicals (NEC)",
+        "PermID": "4294951939",
+        "TRBC ID": "5110103010"
+    },
+    {
+        "Name": "Coloring Agents",
+        "PermID": "4294951938",
+        "TRBC ID": "5110103011"
+    },
+    {
+        "Name": "Synthetic Fibers",
+        "PermID": "4294951937",
+        "TRBC ID": "5110103012"
+    },
+    {
+        "Name": "Advanced Polymers",
+        "PermID": "4294951935",
+        "TRBC ID": "5110103014"
+    },
+    {
+        "Name": "Industrial Biotechnology Chemicals",
+        "PermID": "4294951933",
+        "TRBC ID": "5110103016"
+    },
+    {
+        "Name": "Specialty Chemicals Wholesale",
+        "PermID": "4294951932",
+        "TRBC ID": "5110103017"
+    },
+    {
+        "Name": "Composites",
+        "PermID": "1004365408",
+        "TRBC ID": "5110103018"
+    },
+    {
+        "Name": "Adhesive & Epoxy",
+        "PermID": "1004365375",
+        "TRBC ID": "5110103019"
+    },
+    {
+        "Name": "Diversified Chemicals",
+        "PermID": "4294952983",
+        "TRBC ID": "51101090"
+    },
+    {
+        "Name": "Diversified Chemicals",
+        "PermID": "4294951931",
+        "TRBC ID": "5110109010"
+    },
+    {
+        "Name": "Mineral Resources",
+        "PermID": "4294952773",
+        "TRBC ID": "5120"
+    },
+    {
+        "Name": "Metals & Mining",
+        "PermID": "4294952772",
+        "TRBC ID": "512010"
+    },
+    {
+        "Name": "Non-Gold Precious Metals & Minerals",
+        "PermID": "4294952771",
+        "TRBC ID": "51201010"
+    },
+    {
+        "Name": "Non-Gold Precious Metals & Minerals (NEC)",
+        "PermID": "4294951930",
+        "TRBC ID": "5120101010"
+    },
+    {
+        "Name": "Silver Mining",
+        "PermID": "4294951929",
+        "TRBC ID": "5120101011"
+    },
+    {
+        "Name": "Platinum Mining",
+        "PermID": "4294951928",
+        "TRBC ID": "5120101012"
+    },
+    {
+        "Name": "Diamond Mining",
+        "PermID": "4294951927",
+        "TRBC ID": "5120101013"
+    },
+    {
+        "Name": "Semiprecious Gem Stones",
+        "PermID": "4294951926",
+        "TRBC ID": "5120101014"
+    },
+    {
+        "Name": "Pearl Cultivation",
+        "PermID": "4294951925",
+        "TRBC ID": "5120101015"
+    },
+    {
+        "Name": "Rare Earth Minerals",
+        "PermID": "4294951924",
+        "TRBC ID": "5120101016"
+    },
+    {
+        "Name": "Iron & Steel",
+        "PermID": "4294952979",
+        "TRBC ID": "51201020"
+    },
+    {
+        "Name": "Iron & Steel (NEC)",
+        "PermID": "4294951915",
+        "TRBC ID": "5120102010"
+    },
+    {
+        "Name": "Iron Ore Mining",
+        "PermID": "4294951914",
+        "TRBC ID": "5120102011"
+    },
+    {
+        "Name": "Coke Coal Mining",
+        "PermID": "4294951913",
+        "TRBC ID": "5120102012"
+    },
+    {
+        "Name": "Iron, Steel Mills & Foundries",
+        "PermID": "4294951912",
+        "TRBC ID": "5120102013"
+    },
+    {
+        "Name": "Metal Service Centers",
+        "PermID": "4294951911",
+        "TRBC ID": "5120102014"
+    },
+    {
+        "Name": "Metallic Rolling & Drawing Products",
+        "PermID": "4294951910",
+        "TRBC ID": "5120102015"
+    },
+    {
+        "Name": "Metal Merchant Wholesale",
+        "PermID": "4294951909",
+        "TRBC ID": "5120102016"
+    },
+    {
+        "Name": "Aluminum",
+        "PermID": "4294952978",
+        "TRBC ID": "51201030"
+    },
+    {
+        "Name": "Aluminum (NEC)",
+        "PermID": "4294951908",
+        "TRBC ID": "5120103010"
+    },
+    {
+        "Name": "Primary Aluminum Production",
+        "PermID": "4294951907",
+        "TRBC ID": "5120103011"
+    },
+    {
+        "Name": "Secondary Smelting & Alloying of Aluminum",
+        "PermID": "4294951906",
+        "TRBC ID": "5120103012"
+    },
+    {
+        "Name": "Aluminum Rolling",
+        "PermID": "4294951905",
+        "TRBC ID": "5120103013"
+    },
+    {
+        "Name": "Aluminum Refining",
+        "PermID": "4294951904",
+        "TRBC ID": "5120103014"
+    },
+    {
+        "Name": "Aluminum Wholesale",
+        "PermID": "4294951903",
+        "TRBC ID": "5120103015"
+    },
+    {
+        "Name": "Bauxite Mining",
+        "PermID": "4294951902",
+        "TRBC ID": "5120103016"
+    },
+    {
+        "Name": "Specialty Mining & Metals",
+        "PermID": "4294952977",
+        "TRBC ID": "51201050"
+    },
+    {
+        "Name": "Specialty Mining & Metals (NEC)",
+        "PermID": "4294951901",
+        "TRBC ID": "5120105010"
+    },
+    {
+        "Name": "Lead Ore Mining",
+        "PermID": "4294951900",
+        "TRBC ID": "5120105011"
+    },
+    {
+        "Name": "Copper Ore Mining",
+        "PermID": "4294951899",
+        "TRBC ID": "5120105012"
+    },
+    {
+        "Name": "Nickel Ore Mining",
+        "PermID": "4294951898",
+        "TRBC ID": "5120105013"
+    },
+    {
+        "Name": "Zinc Ore Mining",
+        "PermID": "4294951897",
+        "TRBC ID": "5120105014"
+    },
+    {
+        "Name": "Nonferrous Metal Mining",
+        "PermID": "4294951896",
+        "TRBC ID": "5120105015"
+    },
+    {
+        "Name": "Nonferrous Metal Processing",
+        "PermID": "4294951895",
+        "TRBC ID": "5120105016"
+    },
+    {
+        "Name": "Specialty Mining & Metals Wholesale",
+        "PermID": "4294951894",
+        "TRBC ID": "5120105017"
+    },
+    {
+        "Name": "Gold",
+        "PermID": "4294952770",
+        "TRBC ID": "51201060"
+    },
+    {
+        "Name": "Gold (NEC)",
+        "PermID": "4294951923",
+        "TRBC ID": "5120106010"
+    },
+    {
+        "Name": "Gold Mining",
+        "PermID": "4294951922",
+        "TRBC ID": "5120106011"
+    },
+    {
+        "Name": "Gold Refining",
+        "PermID": "4294951921",
+        "TRBC ID": "5120106012"
+    },
+    {
+        "Name": "Mining Support Services & Equipment",
+        "PermID": "4294952769",
+        "TRBC ID": "51201070"
+    },
+    {
+        "Name": "Mining Support Services & Equipment (NEC)",
+        "PermID": "4294951920",
+        "TRBC ID": "5120107010"
+    },
+    {
+        "Name": "Geophysical Surveying & Mapping Services",
+        "PermID": "4294951919",
+        "TRBC ID": "5120107011"
+    },
+    {
+        "Name": "Mining Support Services",
+        "PermID": "4294951918",
+        "TRBC ID": "5120107012"
+    },
+    {
+        "Name": "Mining Machinery & Equipment Manufacturing",
+        "PermID": "4294951917",
+        "TRBC ID": "5120107013"
+    },
+    {
+        "Name": "Diversified Mining",
+        "PermID": "4294952768",
+        "TRBC ID": "51201080"
+    },
+    {
+        "Name": "Diversified Mining",
+        "PermID": "4294951916",
+        "TRBC ID": "5120108010"
+    },
+    {
+        "Name": "Construction Materials",
+        "PermID": "4294952976",
+        "TRBC ID": "512020"
+    },
+    {
+        "Name": "Construction Materials",
+        "PermID": "4294952975",
+        "TRBC ID": "51202010"
+    },
+    {
+        "Name": "Construction Materials (NEC)",
+        "PermID": "4294951893",
+        "TRBC ID": "5120201010"
+    },
+    {
+        "Name": "Construction Material Processing",
+        "PermID": "4294951892",
+        "TRBC ID": "5120201011"
+    },
+    {
+        "Name": "Cement & Concrete Manufacturing",
+        "PermID": "4294951891",
+        "TRBC ID": "5120201012"
+    },
+    {
+        "Name": "Tile & Paving Material Manufacturing",
+        "PermID": "4294951890",
+        "TRBC ID": "5120201013"
+    },
+    {
+        "Name": "Rock Mining",
+        "PermID": "4294951889",
+        "TRBC ID": "5120201014"
+    },
+    {
+        "Name": "Construction Material Wholesale",
+        "PermID": "4294951888",
+        "TRBC ID": "5120201015"
+    },
+    {
+        "Name": "Applied Resources",
+        "PermID": "4294952974",
+        "TRBC ID": "5130"
+    },
+    {
+        "Name": "Paper & Forest Products",
+        "PermID": "4294952973",
+        "TRBC ID": "513010"
+    },
+    {
+        "Name": "Forest & Wood Products",
+        "PermID": "4294952972",
+        "TRBC ID": "51301010"
+    },
+    {
+        "Name": "Forest & Wood Products (NEC)",
+        "PermID": "4294951887",
+        "TRBC ID": "5130101010"
+    },
+    {
+        "Name": "Timber Tract Operations",
+        "PermID": "4294951886",
+        "TRBC ID": "5130101011"
+    },
+    {
+        "Name": "Forest Nurseries & Gathering of Forest Products",
+        "PermID": "4294951885",
+        "TRBC ID": "5130101012"
+    },
+    {
+        "Name": "Logging & Sawmills",
+        "PermID": "4294951884",
+        "TRBC ID": "5130101013"
+    },
+    {
+        "Name": "Forest Support & Services",
+        "PermID": "4294951883",
+        "TRBC ID": "5130101014"
+    },
+    {
+        "Name": "Wood Products",
+        "PermID": "4294951882",
+        "TRBC ID": "5130101015"
+    },
+    {
+        "Name": "Wood Product Wholesale",
+        "PermID": "4294951881",
+        "TRBC ID": "5130101016"
+    },
+    {
+        "Name": "Paper Products",
+        "PermID": "4294952971",
+        "TRBC ID": "51301020"
+    },
+    {
+        "Name": "Paper Products (NEC)",
+        "PermID": "4294951880",
+        "TRBC ID": "5130102010"
+    },
+    {
+        "Name": "Paper Mills & Products",
+        "PermID": "4294951879",
+        "TRBC ID": "5130102011"
+    },
+    {
+        "Name": "Newsprint Mills",
+        "PermID": "4294951878",
+        "TRBC ID": "5130102012"
+    },
+    {
+        "Name": "Pulp Mills",
+        "PermID": "4294951877",
+        "TRBC ID": "5130102013"
+    },
+    {
+        "Name": "Paper Product Wholesale",
+        "PermID": "4294951876",
+        "TRBC ID": "5130102014"
+    },
+    {
+        "Name": "Containers & Packaging",
+        "PermID": "4294952970",
+        "TRBC ID": "513020"
+    },
+    {
+        "Name": "Non-Paper Containers & Packaging",
+        "PermID": "4294952969",
+        "TRBC ID": "51302010"
+    },
+    {
+        "Name": "Non-Paper Containers & Packaging (NEC)",
+        "PermID": "4294951875",
+        "TRBC ID": "5130201010"
+    },
+    {
+        "Name": "Textile Containers & Packaging",
+        "PermID": "4294951874",
+        "TRBC ID": "5130201011"
+    },
+    {
+        "Name": "Glass Containers & Packaging",
+        "PermID": "4294951873",
+        "TRBC ID": "5130201012"
+    },
+    {
+        "Name": "Metal Containers & Packaging",
+        "PermID": "4294951872",
+        "TRBC ID": "5130201013"
+    },
+    {
+        "Name": "Plastic Containers & Packaging",
+        "PermID": "4294951871",
+        "TRBC ID": "5130201014"
+    },
+    {
+        "Name": "Wood Container & Packaging",
+        "PermID": "4294951870",
+        "TRBC ID": "5130201015"
+    },
+    {
+        "Name": "Container & Packaging Material Wholesale",
+        "PermID": "4294951869",
+        "TRBC ID": "5130201016"
+    },
+    {
+        "Name": "Paper Packaging",
+        "PermID": "4294952968",
+        "TRBC ID": "51302020"
+    },
+    {
+        "Name": "Paper Packaging (NEC)",
+        "PermID": "4294951868",
+        "TRBC ID": "5130202010"
+    },
+    {
+        "Name": "Paper Packaging Wholesale",
+        "PermID": "4294951867",
+        "TRBC ID": "5130202011"
+    },
+    {
+        "Name": "Industrials",
+        "PermID": "4294952767",
+        "TRBC ID": "52"
+    },
+    {
+        "Name": "Industrial Goods",
+        "PermID": "4294952766",
+        "TRBC ID": "5210"
+    },
+    {
+        "Name": "Aerospace & Defense",
+        "PermID": "4294952965",
+        "TRBC ID": "521010"
+    },
+    {
+        "Name": "Aerospace & Defense",
+        "PermID": "4294952964",
+        "TRBC ID": "52101010"
+    },
+    {
+        "Name": "Aerospace & Defense (NEC)",
+        "PermID": "4294951866",
+        "TRBC ID": "5210101010"
+    },
+    {
+        "Name": "Arms & Ammunitions Manufacturing",
+        "PermID": "4294951865",
+        "TRBC ID": "5210101011"
+    },
+    {
+        "Name": "Commercial Aircraft Manufacturing",
+        "PermID": "4294951864",
+        "TRBC ID": "5210101012"
+    },
+    {
+        "Name": "Military Aircraft Manufacturing",
+        "PermID": "4294951863",
+        "TRBC ID": "5210101013"
+    },
+    {
+        "Name": "Aircraft Parts Manufacturing",
+        "PermID": "4294951862",
+        "TRBC ID": "5210101014"
+    },
+    {
+        "Name": "Military Vehicles Manufacturing",
+        "PermID": "4294951861",
+        "TRBC ID": "5210101015"
+    },
+    {
+        "Name": "Satellite Design & Manufacture",
+        "PermID": "4294951860",
+        "TRBC ID": "5210101016"
+    },
+    {
+        "Name": "Spacecraft Manufacturing",
+        "PermID": "4294951859",
+        "TRBC ID": "5210101017"
+    },
+    {
+        "Name": "Military Clothing & Accessories",
+        "PermID": "4294951858",
+        "TRBC ID": "5210101018"
+    },
+    {
+        "Name": "Aircraft Equipment Wholesale",
+        "PermID": "4294951857",
+        "TRBC ID": "5210101019"
+    },
+    {
+        "Name": "Aerospace & Defense Electronics",
+        "PermID": "1004365429",
+        "TRBC ID": "5210101020"
+    },
+    {
+        "Name": "Drone Manufacturing",
+        "PermID": "1004365432",
+        "TRBC ID": "5210101021"
+    },
+    {
+        "Name": "Machinery, Tools, Heavy Vehicles, Trains & Ships",
+        "PermID": "4294952765",
+        "TRBC ID": "521020"
+    },
+    {
+        "Name": "Industrial Machinery & Equipment",
+        "PermID": "4294952962",
+        "TRBC ID": "52102010"
+    },
+    {
+        "Name": "Industrial Machinery & Equipment (NEC)",
+        "PermID": "4294951856",
+        "TRBC ID": "5210201010"
+    },
+    {
+        "Name": "Industrial Components",
+        "PermID": "4294951855",
+        "TRBC ID": "5210201011"
+    },
+    {
+        "Name": "Industrial Machinery",
+        "PermID": "4294951854",
+        "TRBC ID": "5210201012"
+    },
+    {
+        "Name": "Ball & Roller Bearings",
+        "PermID": "4294951853",
+        "TRBC ID": "5210201013"
+    },
+    {
+        "Name": "Testing & Measuring Equipment",
+        "PermID": "4294951852",
+        "TRBC ID": "5210201014"
+    },
+    {
+        "Name": "Pump & Pumping Equipment",
+        "PermID": "4294951851",
+        "TRBC ID": "5210201015"
+    },
+    {
+        "Name": "Air & Gas Compressors",
+        "PermID": "4294951850",
+        "TRBC ID": "5210201016"
+    },
+    {
+        "Name": "Welding & Soldering Equipment",
+        "PermID": "4294951849",
+        "TRBC ID": "5210201017"
+    },
+    {
+        "Name": "Industrial Process Furnace & Ovens",
+        "PermID": "4294951848",
+        "TRBC ID": "5210201018"
+    },
+    {
+        "Name": "Fluid Power Cylinder & Actuators",
+        "PermID": "4294951847",
+        "TRBC ID": "5210201019"
+    },
+    {
+        "Name": "Automatic Vending Machines",
+        "PermID": "4294951846",
+        "TRBC ID": "5210201020"
+    },
+    {
+        "Name": "Industrial Moulds",
+        "PermID": "4294951845",
+        "TRBC ID": "5210201021"
+    },
+    {
+        "Name": "Machine Tools",
+        "PermID": "4294951844",
+        "TRBC ID": "5210201022"
+    },
+    {
+        "Name": "Industrial Valve Manufacturing",
+        "PermID": "4294951843",
+        "TRBC ID": "5210201023"
+    },
+    {
+        "Name": "Industrial Machinery & Equipment Wholesale",
+        "PermID": "4294951842",
+        "TRBC ID": "5210201024"
+    },
+    {
+        "Name": "Commercial Equipment",
+        "PermID": "1004365435",
+        "TRBC ID": "5210201025"
+    },
+    {
+        "Name": "Heavy Machinery & Vehicles",
+        "PermID": "4294952961",
+        "TRBC ID": "52102020"
+    },
+    {
+        "Name": "Heavy Machinery & Vehicles (NEC)",
+        "PermID": "4294951841",
+        "TRBC ID": "5210202010"
+    },
+    {
+        "Name": "Construction Machinery",
+        "PermID": "4294951840",
+        "TRBC ID": "5210202011"
+    },
+    {
+        "Name": "Heavy Trucks",
+        "PermID": "4294951839",
+        "TRBC ID": "5210202012"
+    },
+    {
+        "Name": "Heavy Buses & Coaches",
+        "PermID": "4294951838",
+        "TRBC ID": "5210202013"
+    },
+    {
+        "Name": "Locomotive Engines & Rolling Stock",
+        "PermID": "4294951837",
+        "TRBC ID": "5210202014"
+    },
+    {
+        "Name": "Agricultural Machinery",
+        "PermID": "4294951836",
+        "TRBC ID": "5210202015"
+    },
+    {
+        "Name": "Commercial Landscaping Equipment",
+        "PermID": "4294951835",
+        "TRBC ID": "5210202016"
+    },
+    {
+        "Name": "Heavy Machinery & Vehicles Wholesale",
+        "PermID": "4294951834",
+        "TRBC ID": "5210202017"
+    },
+    {
+        "Name": "Electrical Components & Equipment",
+        "PermID": "4294952764",
+        "TRBC ID": "52102030"
+    },
+    {
+        "Name": "Electrical Components & Equipment (NEC)",
+        "PermID": "4294951833",
+        "TRBC ID": "5210203010"
+    },
+    {
+        "Name": "Batteries & Uninterruptable Power Supplies",
+        "PermID": "4294951832",
+        "TRBC ID": "5210203011"
+    },
+    {
+        "Name": "Wires & Cables",
+        "PermID": "4294951831",
+        "TRBC ID": "5210203012"
+    },
+    {
+        "Name": "Electrical Components",
+        "PermID": "4294951830",
+        "TRBC ID": "5210203013"
+    },
+    {
+        "Name": "Lighting Equipment",
+        "PermID": "4294951829",
+        "TRBC ID": "5210203014"
+    },
+    {
+        "Name": "Heating, Ventilation & Air Conditioning Systems",
+        "PermID": "4294951828",
+        "TRBC ID": "5210203015"
+    },
+    {
+        "Name": "Electrical Insulators",
+        "PermID": "4294951827",
+        "TRBC ID": "5210203016"
+    },
+    {
+        "Name": "Switchgear",
+        "PermID": "4294951826",
+        "TRBC ID": "5210203017"
+    },
+    {
+        "Name": "Portable Motors & Generators",
+        "PermID": "4294951825",
+        "TRBC ID": "5210203018"
+    },
+    {
+        "Name": "Electrical Measuring & Testing Instruments",
+        "PermID": "4294951824",
+        "TRBC ID": "5210203019"
+    },
+    {
+        "Name": "Electric Equipment Wholesale",
+        "PermID": "4294951823",
+        "TRBC ID": "5210203020"
+    },
+    {
+        "Name": "Heavy Electrical Equipment",
+        "PermID": "4294952959",
+        "TRBC ID": "52102040"
+    },
+    {
+        "Name": "Heavy Electrical Equipment (NEC)",
+        "PermID": "4294951822",
+        "TRBC ID": "5210204010"
+    },
+    {
+        "Name": "Electrical Transmission & Grid Equipment",
+        "PermID": "4294951821",
+        "TRBC ID": "5210204011"
+    },
+    {
+        "Name": "Elevator & Conveying Equipment",
+        "PermID": "4294951820",
+        "TRBC ID": "5210204012"
+    },
+    {
+        "Name": "Turbine Manufacturing",
+        "PermID": "4294951819",
+        "TRBC ID": "5210204013"
+    },
+    {
+        "Name": "Heavy Motors & Generators",
+        "PermID": "4294951818",
+        "TRBC ID": "5210204014"
+    },
+    {
+        "Name": "Industrial Electrical Switchgear",
+        "PermID": "4294951817",
+        "TRBC ID": "5210204015"
+    },
+    {
+        "Name": "Nuclear Generators & Components",
+        "PermID": "4294951816",
+        "TRBC ID": "5210204016"
+    },
+    {
+        "Name": "Shipbuilding",
+        "PermID": "4294952763",
+        "TRBC ID": "52102050"
+    },
+    {
+        "Name": "Shipbuilding (NEC)",
+        "PermID": "4294951815",
+        "TRBC ID": "5210205010"
+    },
+    {
+        "Name": "Ship Parts Manufacturers",
+        "PermID": "4294951814",
+        "TRBC ID": "5210205011"
+    },
+    {
+        "Name": "Ship Repairing & Maintenance",
+        "PermID": "4294951813",
+        "TRBC ID": "5210205012"
+    },
+    {
+        "Name": "Industrial & Commercial Services",
+        "PermID": "4294952762",
+        "TRBC ID": "5220"
+    },
+    {
+        "Name": "Construction & Engineering",
+        "PermID": "4294952761",
+        "TRBC ID": "522010"
+    },
+    {
+        "Name": "Construction & Engineering",
+        "PermID": "4294952760",
+        "TRBC ID": "52201020"
+    },
+    {
+        "Name": "Construction & Engineering (NEC)",
+        "PermID": "4294951812",
+        "TRBC ID": "5220102010"
+    },
+    {
+        "Name": "Commercial Buildings",
+        "PermID": "4294951811",
+        "TRBC ID": "5220102011"
+    },
+    {
+        "Name": "Highway & Bridge Construction",
+        "PermID": "4294951810",
+        "TRBC ID": "5220102012"
+    },
+    {
+        "Name": "Railway Construction",
+        "PermID": "4294951809",
+        "TRBC ID": "5220102013"
+    },
+    {
+        "Name": "Power & Communications Network Construction",
+        "PermID": "4294951808",
+        "TRBC ID": "5220102014"
+    },
+    {
+        "Name": "Civil Engineers & Architects",
+        "PermID": "4294951807",
+        "TRBC ID": "5220102015"
+    },
+    {
+        "Name": "Building Contractors",
+        "PermID": "4294951806",
+        "TRBC ID": "5220102016"
+    },
+    {
+        "Name": "Industrial Plant Construction",
+        "PermID": "4294951805",
+        "TRBC ID": "5220102017"
+    },
+    {
+        "Name": "Water & Sewage Construction",
+        "PermID": "4294951804",
+        "TRBC ID": "5220102018"
+    },
+    {
+        "Name": "Land Division & Subdivision",
+        "PermID": "4294951803",
+        "TRBC ID": "5220102019"
+    },
+    {
+        "Name": "Gas Infrastructure Construction",
+        "PermID": "4294951802",
+        "TRBC ID": "5220102020"
+    },
+    {
+        "Name": "Electric Power Plant Construction",
+        "PermID": "4294951801",
+        "TRBC ID": "5220102021"
+    },
+    {
+        "Name": "Nuclear Power Plant Construction",
+        "PermID": "4294951800",
+        "TRBC ID": "5220102022"
+    },
+    {
+        "Name": "Telecommunication Construction",
+        "PermID": "4294951799",
+        "TRBC ID": "5220102023"
+    },
+    {
+        "Name": "Diversified Industrial Goods Wholesale",
+        "PermID": "4294952954",
+        "TRBC ID": "522020"
+    },
+    {
+        "Name": "Diversified Industrial Goods Wholesale",
+        "PermID": "4294952953",
+        "TRBC ID": "52202010"
+    },
+    {
+        "Name": "Diversified Industrial Goods Wholesale",
+        "PermID": "4294951798",
+        "TRBC ID": "5220201010"
+    },
+    {
+        "Name": "Professional & Commercial Services",
+        "PermID": "4294952759",
+        "TRBC ID": "522030"
+    },
+    {
+        "Name": "Environmental Services & Equipment",
+        "PermID": "4294952951",
+        "TRBC ID": "52203010"
+    },
+    {
+        "Name": "Environmental Services & Equipment (NEC)",
+        "PermID": "4294951797",
+        "TRBC ID": "5220301010"
+    },
+    {
+        "Name": "Purification & Treatment Equipment",
+        "PermID": "4294951796",
+        "TRBC ID": "5220301011"
+    },
+    {
+        "Name": "Waste Management, Disposal & Recycling Services",
+        "PermID": "4294951795",
+        "TRBC ID": "5220301012"
+    },
+    {
+        "Name": "Environmental Consultancy Services",
+        "PermID": "4294951794",
+        "TRBC ID": "5220301013"
+    },
+    {
+        "Name": "Environmental R&D Services & Biotechnology",
+        "PermID": "4294951793",
+        "TRBC ID": "5220301014"
+    },
+    {
+        "Name": "Carbon Capture & Storage",
+        "PermID": "4294951792",
+        "TRBC ID": "5220301015"
+    },
+    {
+        "Name": "Commercial Printing Services",
+        "PermID": "4294952950",
+        "TRBC ID": "52203020"
+    },
+    {
+        "Name": "Commercial Printing Services (NEC)",
+        "PermID": "4294951791",
+        "TRBC ID": "5220302010"
+    },
+    {
+        "Name": "Specialized Printing Services",
+        "PermID": "4294951790",
+        "TRBC ID": "5220302011"
+    },
+    {
+        "Name": "Newspaper & Magazine Printing Services",
+        "PermID": "4294951789",
+        "TRBC ID": "5220302012"
+    },
+    {
+        "Name": "Book Printing Services",
+        "PermID": "4294951788",
+        "TRBC ID": "5220302013"
+    },
+    {
+        "Name": "Employment Services",
+        "PermID": "4294952807",
+        "TRBC ID": "52203030"
+    },
+    {
+        "Name": "Employment Services (NEC)",
+        "PermID": "4294951787",
+        "TRBC ID": "5220303010"
+    },
+    {
+        "Name": "Human Resources Consulting Services",
+        "PermID": "4294951786",
+        "TRBC ID": "5220303011"
+    },
+    {
+        "Name": "Outsourcing & Staffing Services",
+        "PermID": "4294951785",
+        "TRBC ID": "5220303012"
+    },
+    {
+        "Name": "Executive Search Services",
+        "PermID": "4294951784",
+        "TRBC ID": "5220303013"
+    },
+    {
+        "Name": "Online Job Portals",
+        "PermID": "4294951783",
+        "TRBC ID": "5220303014"
+    },
+    {
+        "Name": "Business Support Services",
+        "PermID": "4294952806",
+        "TRBC ID": "52203040"
+    },
+    {
+        "Name": "Business Support Services (NEC)",
+        "PermID": "4294951782",
+        "TRBC ID": "5220304010"
+    },
+    {
+        "Name": "Corporate Accounting Services",
+        "PermID": "4294951781",
+        "TRBC ID": "5220304011"
+    },
+    {
+        "Name": "Legal Services",
+        "PermID": "4294951780",
+        "TRBC ID": "5220304012"
+    },
+    {
+        "Name": "Management Consulting Services",
+        "PermID": "4294951779",
+        "TRBC ID": "5220304013"
+    },
+    {
+        "Name": "Security Services",
+        "PermID": "4294951778",
+        "TRBC ID": "5220304014"
+    },
+    {
+        "Name": "Cleaning Services",
+        "PermID": "4294951776",
+        "TRBC ID": "5220304016"
+    },
+    {
+        "Name": "Data Processing Services",
+        "PermID": "4294951775",
+        "TRBC ID": "5220304017"
+    },
+    {
+        "Name": "Industrial Equipment Rental",
+        "PermID": "4294951774",
+        "TRBC ID": "5220304018"
+    },
+    {
+        "Name": "Office Equipment & Supplies Rental",
+        "PermID": "4294951773",
+        "TRBC ID": "5220304019"
+    },
+    {
+        "Name": "Pest Control Services",
+        "PermID": "4294951772",
+        "TRBC ID": "5220304020"
+    },
+    {
+        "Name": "Maintenance & Repair Services",
+        "PermID": "4294951771",
+        "TRBC ID": "5220304021"
+    },
+    {
+        "Name": "Industrial Design Services",
+        "PermID": "4294951770",
+        "TRBC ID": "5220304022"
+    },
+    {
+        "Name": "Translation & Interpretation Services",
+        "PermID": "4294951769",
+        "TRBC ID": "5220304023"
+    },
+    {
+        "Name": "Testing Laboratories",
+        "PermID": "4294951768",
+        "TRBC ID": "5220304024"
+    },
+    {
+        "Name": "Call Center Services",
+        "PermID": "4294951767",
+        "TRBC ID": "5220304025"
+    },
+    {
+        "Name": "Exhibition & Conference Services",
+        "PermID": "4294951766",
+        "TRBC ID": "5220304026"
+    },
+    {
+        "Name": "Transaction & Payment Services",
+        "PermID": "4294951765",
+        "TRBC ID": "5220304027"
+    },
+    {
+        "Name": "Business Support Supplies",
+        "PermID": "4294952805",
+        "TRBC ID": "52203060"
+    },
+    {
+        "Name": "Business Support Supplies (NEC)",
+        "PermID": "4294951764",
+        "TRBC ID": "5220306010"
+    },
+    {
+        "Name": "Office Furniture",
+        "PermID": "4294951763",
+        "TRBC ID": "5220306011"
+    },
+    {
+        "Name": "Office Supplies",
+        "PermID": "4294951762",
+        "TRBC ID": "5220306012"
+    },
+    {
+        "Name": "Health, Safety & Fire Protection Equipment",
+        "PermID": "4294951761",
+        "TRBC ID": "5220306013"
+    },
+    {
+        "Name": "Office Supplies Wholesale",
+        "PermID": "4294951760",
+        "TRBC ID": "5220306014"
+    },
+    {
+        "Name": "Professional Information Services",
+        "PermID": "4294952758",
+        "TRBC ID": "52203070"
+    },
+    {
+        "Name": "Professional Information Services (NEC)",
+        "PermID": "4294951759",
+        "TRBC ID": "5220307010"
+    },
+    {
+        "Name": "Financial Information Providers",
+        "PermID": "4294951758",
+        "TRBC ID": "5220307011"
+    },
+    {
+        "Name": "Compliance & Investor Communication",
+        "PermID": "4294951757",
+        "TRBC ID": "5220307012"
+    },
+    {
+        "Name": "Rating Agencies",
+        "PermID": "4294951756",
+        "TRBC ID": "5220307013"
+    },
+    {
+        "Name": "Trade & Business Publishing",
+        "PermID": "4294951755",
+        "TRBC ID": "5220307014"
+    },
+    {
+        "Name": "Legal & Tax Information Providers",
+        "PermID": "4294951754",
+        "TRBC ID": "5220307015"
+    },
+    {
+        "Name": "Education & Training Information Providers",
+        "PermID": "4294951753",
+        "TRBC ID": "5220307016"
+    },
+    {
+        "Name": "Journals & Scholarly Research",
+        "PermID": "4294951752",
+        "TRBC ID": "5220307017"
+    },
+    {
+        "Name": "News Agencies",
+        "PermID": "4294951751",
+        "TRBC ID": "5220307018"
+    },
+    {
+        "Name": "Libraries & Archives",
+        "PermID": "1004365426",
+        "TRBC ID": "5220307019"
+    },
+    {
+        "Name": "Transportation",
+        "PermID": "4294952945",
+        "TRBC ID": "5240"
+    },
+    {
+        "Name": "Freight & Logistics Services",
+        "PermID": "4294952757",
+        "TRBC ID": "524050"
+    },
+    {
+        "Name": "Courier, Postal, Air Freight & Land-based Logistics",
+        "PermID": "4294952943",
+        "TRBC ID": "52405010"
+    },
+    {
+        "Name": "Courier, Postal, Air Freight & Land-based Logistics (NEC)",
+        "PermID": "4294951749",
+        "TRBC ID": "5240501010"
+    },
+    {
+        "Name": "Freight Logistics",
+        "PermID": "4294951748",
+        "TRBC ID": "5240501011"
+    },
+    {
+        "Name": "Air Freight",
+        "PermID": "4294951747",
+        "TRBC ID": "5240501012"
+    },
+    {
+        "Name": "Courier Services",
+        "PermID": "4294951746",
+        "TRBC ID": "5240501013"
+    },
+    {
+        "Name": "Integrated Logistics Operators",
+        "PermID": "4294951745",
+        "TRBC ID": "5240501014"
+    },
+    {
+        "Name": "Marine Freight & Logistics",
+        "PermID": "4294952938",
+        "TRBC ID": "52405020"
+    },
+    {
+        "Name": "Marine Freight & Logistics (NEC)",
+        "PermID": "4294951744",
+        "TRBC ID": "5240502010"
+    },
+    {
+        "Name": "Marine Logistics",
+        "PermID": "4294951743",
+        "TRBC ID": "5240502011"
+    },
+    {
+        "Name": "Inland Water Freight",
+        "PermID": "4294951742",
+        "TRBC ID": "5240502012"
+    },
+    {
+        "Name": "Deep Sea Freight",
+        "PermID": "4294951741",
+        "TRBC ID": "5240502013"
+    },
+    {
+        "Name": "Ground Freight & Logistics",
+        "PermID": "4294952934",
+        "TRBC ID": "52405030"
+    },
+    {
+        "Name": "Ground Freight & Logistics (NEC)",
+        "PermID": "4294951740",
+        "TRBC ID": "5240503010"
+    },
+    {
+        "Name": "Railway Freight Operators",
+        "PermID": "4294951739",
+        "TRBC ID": "5240503011"
+    },
+    {
+        "Name": "Freight Trucking",
+        "PermID": "4294951738",
+        "TRBC ID": "5240503012"
+    },
+    {
+        "Name": "Warehousing",
+        "PermID": "4294951737",
+        "TRBC ID": "5240503013"
+    },
+    {
+        "Name": "Truck Rental",
+        "PermID": "4294951736",
+        "TRBC ID": "5240503014"
+    },
+    {
+        "Name": "Passenger Transportation Services",
+        "PermID": "4294952753",
+        "TRBC ID": "524060"
+    },
+    {
+        "Name": "Airlines",
+        "PermID": "4294952941",
+        "TRBC ID": "52406010"
+    },
+    {
+        "Name": "Airlines (NEC)",
+        "PermID": "4294951735",
+        "TRBC ID": "5240601010"
+    },
+    {
+        "Name": "Regional Airlines",
+        "PermID": "4294951734",
+        "TRBC ID": "5240601011"
+    },
+    {
+        "Name": "Charter & Private Air Services",
+        "PermID": "4294951733",
+        "TRBC ID": "5240601012"
+    },
+    {
+        "Name": "Specialized Aviation Services",
+        "PermID": "4294951732",
+        "TRBC ID": "5240601013"
+    },
+    {
+        "Name": "Inter-Modal Passenger Transportation",
+        "PermID": "4294951731",
+        "TRBC ID": "5240601014"
+    },
+    {
+        "Name": "Passenger Transportation, Ground & Sea",
+        "PermID": "4294952935",
+        "TRBC ID": "52406020"
+    },
+    {
+        "Name": "Passenger Transportation, Ground & Sea (NEC)",
+        "PermID": "4294951730",
+        "TRBC ID": "5240602010"
+    },
+    {
+        "Name": "Commuting Services",
+        "PermID": "4294951729",
+        "TRBC ID": "5240602011"
+    },
+    {
+        "Name": "Charter Bus Services",
+        "PermID": "4294951728",
+        "TRBC ID": "5240602012"
+    },
+    {
+        "Name": "Rail Services",
+        "PermID": "4294951727",
+        "TRBC ID": "5240602013"
+    },
+    {
+        "Name": "Marine Passenger Transportation",
+        "PermID": "4294951726",
+        "TRBC ID": "5240602014"
+    },
+    {
+        "Name": "Commuter Ferry Operators",
+        "PermID": "4294951725",
+        "TRBC ID": "5240602015"
+    },
+    {
+        "Name": "Taxis & Limousines",
+        "PermID": "4294951724",
+        "TRBC ID": "5240602016"
+    },
+    {
+        "Name": "Passenger Car Rental",
+        "PermID": "4294951723",
+        "TRBC ID": "5240602017"
+    },
+    {
+        "Name": "Transport Infrastructure",
+        "PermID": "4294952750",
+        "TRBC ID": "524070"
+    },
+    {
+        "Name": "Airport Operators & Services",
+        "PermID": "4294952940",
+        "TRBC ID": "52407010"
+    },
+    {
+        "Name": "Airport Operators & Services (NEC)",
+        "PermID": "4294951718",
+        "TRBC ID": "5240701010"
+    },
+    {
+        "Name": "Airport Operators",
+        "PermID": "4294951717",
+        "TRBC ID": "5240701011"
+    },
+    {
+        "Name": "Duty Free Shops",
+        "PermID": "4294951716",
+        "TRBC ID": "5240701012"
+    },
+    {
+        "Name": "Airport Fueling Services",
+        "PermID": "4294951715",
+        "TRBC ID": "5240701013"
+    },
+    {
+        "Name": "Airline Catering Services",
+        "PermID": "4294951714",
+        "TRBC ID": "5240701014"
+    },
+    {
+        "Name": "Marine Port Services",
+        "PermID": "4294952937",
+        "TRBC ID": "52407020"
+    },
+    {
+        "Name": "Marine Port Services (NEC)",
+        "PermID": "4294951713",
+        "TRBC ID": "5240702010"
+    },
+    {
+        "Name": "Port Warehousing Services",
+        "PermID": "4294951712",
+        "TRBC ID": "5240702011"
+    },
+    {
+        "Name": "Port Operators",
+        "PermID": "4294951711",
+        "TRBC ID": "5240702012"
+    },
+    {
+        "Name": "Marine Cargo Handling Services",
+        "PermID": "4294951710",
+        "TRBC ID": "5240702013"
+    },
+    {
+        "Name": "Highways & Rail Tracks",
+        "PermID": "4294952933",
+        "TRBC ID": "52407030"
+    },
+    {
+        "Name": "Highways & Rail Tracks (NEC)",
+        "PermID": "4294951722",
+        "TRBC ID": "5240703010"
+    },
+    {
+        "Name": "Highway Operators",
+        "PermID": "4294951721",
+        "TRBC ID": "5240703011"
+    },
+    {
+        "Name": "Railway Operators",
+        "PermID": "4294951720",
+        "TRBC ID": "5240703012"
+    },
+    {
+        "Name": "Parking Lot Operators",
+        "PermID": "4294951719",
+        "TRBC ID": "5240703013"
+    },
+    {
+        "Name": "Consumer Cyclicals",
+        "PermID": "4294952746",
+        "TRBC ID": "53"
+    },
+    {
+        "Name": "Automobiles & Auto Parts",
+        "PermID": "4294952931",
+        "TRBC ID": "5310"
+    },
+    {
+        "Name": "Automobiles & Auto Parts",
+        "PermID": "4294952930",
+        "TRBC ID": "531010"
+    },
+    {
+        "Name": "Auto & Truck Manufacturers",
+        "PermID": "4294952929",
+        "TRBC ID": "53101010"
+    },
+    {
+        "Name": "Auto & Truck Manufacturers (NEC)",
+        "PermID": "4294951709",
+        "TRBC ID": "5310101010"
+    },
+    {
+        "Name": "Motorcycles & Scooters",
+        "PermID": "4294951708",
+        "TRBC ID": "5310101011"
+    },
+    {
+        "Name": "Automobiles & Multi Utility Vehicles",
+        "PermID": "4294951707",
+        "TRBC ID": "5310101012"
+    },
+    {
+        "Name": "Light Trucks",
+        "PermID": "4294951706",
+        "TRBC ID": "5310101013"
+    },
+    {
+        "Name": "Electric (Alternative) Vehicles",
+        "PermID": "4294951705",
+        "TRBC ID": "5310101014"
+    },
+    {
+        "Name": "Luxury Vehicles",
+        "PermID": "4294951704",
+        "TRBC ID": "5310101015"
+    },
+    {
+        "Name": "Auto & Truck Wholesale",
+        "PermID": "4294951703",
+        "TRBC ID": "5310101016"
+    },
+    {
+        "Name": "Auto, Truck & Motorcycle Parts",
+        "PermID": "4294952928",
+        "TRBC ID": "53101020"
+    },
+    {
+        "Name": "Auto, Truck & Motorcycle Parts (NEC)",
+        "PermID": "4294951702",
+        "TRBC ID": "5310102010"
+    },
+    {
+        "Name": "Automotive Body Parts",
+        "PermID": "4294951701",
+        "TRBC ID": "5310102011"
+    },
+    {
+        "Name": "Engine & Powertrain Systems",
+        "PermID": "4294951700",
+        "TRBC ID": "5310102012"
+    },
+    {
+        "Name": "Automotive Batteries",
+        "PermID": "4294951699",
+        "TRBC ID": "5310102013"
+    },
+    {
+        "Name": "Automotive Systems",
+        "PermID": "4294951698",
+        "TRBC ID": "5310102014"
+    },
+    {
+        "Name": "Automotive Accessories",
+        "PermID": "4294951697",
+        "TRBC ID": "5310102015"
+    },
+    {
+        "Name": "Motorcycle Parts & Accessories",
+        "PermID": "4294951696",
+        "TRBC ID": "5310102016"
+    },
+    {
+        "Name": "Auto & Truck Parts Wholesale",
+        "PermID": "4294951695",
+        "TRBC ID": "5310102017"
+    },
+    {
+        "Name": "Tires & Rubber Products",
+        "PermID": "4294952927",
+        "TRBC ID": "53101030"
+    },
+    {
+        "Name": "Tires & Rubber Products (NEC)",
+        "PermID": "4294951694",
+        "TRBC ID": "5310103010"
+    },
+    {
+        "Name": "Tire & Tube Manufacturers",
+        "PermID": "4294951693",
+        "TRBC ID": "5310103011"
+    },
+    {
+        "Name": "Tire Retreading",
+        "PermID": "4294951692",
+        "TRBC ID": "5310103012"
+    },
+    {
+        "Name": "Industrial Rubber Products",
+        "PermID": "4294951691",
+        "TRBC ID": "5310103013"
+    },
+    {
+        "Name": "Rubber Plantations",
+        "PermID": "4294951690",
+        "TRBC ID": "5310103014"
+    },
+    {
+        "Name": "Tires & Rubber Products Wholesale",
+        "PermID": "4294951689",
+        "TRBC ID": "5310103015"
+    },
+    {
+        "Name": "Cyclical Consumer Products",
+        "PermID": "4294952745",
+        "TRBC ID": "5320"
+    },
+    {
+        "Name": "Textiles & Apparel",
+        "PermID": "4294952919",
+        "TRBC ID": "532020"
+    },
+    {
+        "Name": "Textiles & Leather Goods",
+        "PermID": "4294952918",
+        "TRBC ID": "53202010"
+    },
+    {
+        "Name": "Textiles & Leather Goods (NEC)",
+        "PermID": "4294951688",
+        "TRBC ID": "5320201010"
+    },
+    {
+        "Name": "Synthetic Fabrics",
+        "PermID": "4294951687",
+        "TRBC ID": "5320201011"
+    },
+    {
+        "Name": "Natural Fabrics",
+        "PermID": "4294951686",
+        "TRBC ID": "5320201012"
+    },
+    {
+        "Name": "Organic & Ecologically Produced Fabric",
+        "PermID": "4294951685",
+        "TRBC ID": "5320201013"
+    },
+    {
+        "Name": "Leather Goods",
+        "PermID": "4294951684",
+        "TRBC ID": "5320201014"
+    },
+    {
+        "Name": "Fur Goods",
+        "PermID": "4294951683",
+        "TRBC ID": "5320201015"
+    },
+    {
+        "Name": "Fabric Dyeing & Finishing",
+        "PermID": "4294951682",
+        "TRBC ID": "5320201016"
+    },
+    {
+        "Name": "Yarn Goods",
+        "PermID": "4294951681",
+        "TRBC ID": "5320201017"
+    },
+    {
+        "Name": "Cotton Farming",
+        "PermID": "4294951680",
+        "TRBC ID": "5320201018"
+    },
+    {
+        "Name": "Textiles & Leather Goods Wholesale",
+        "PermID": "4294951679",
+        "TRBC ID": "5320201019"
+    },
+    {
+        "Name": "Apparel & Accessories",
+        "PermID": "4294952917",
+        "TRBC ID": "53202020"
+    },
+    {
+        "Name": "Apparel & Accessories (NEC)",
+        "PermID": "4294951678",
+        "TRBC ID": "5320202010"
+    },
+    {
+        "Name": "Men's Clothing",
+        "PermID": "4294951677",
+        "TRBC ID": "5320202011"
+    },
+    {
+        "Name": "Women's Clothing",
+        "PermID": "4294951676",
+        "TRBC ID": "5320202012"
+    },
+    {
+        "Name": "Children's & Infants' Clothing",
+        "PermID": "4294951675",
+        "TRBC ID": "5320202013"
+    },
+    {
+        "Name": "Sportswear & Outdoors Clothing",
+        "PermID": "4294951674",
+        "TRBC ID": "5320202014"
+    },
+    {
+        "Name": "Jeans",
+        "PermID": "4294951673",
+        "TRBC ID": "5320202015"
+    },
+    {
+        "Name": "Knitwear",
+        "PermID": "4294951672",
+        "TRBC ID": "5320202016"
+    },
+    {
+        "Name": "Lingerie",
+        "PermID": "4294951671",
+        "TRBC ID": "5320202017"
+    },
+    {
+        "Name": "Hosiery & Socks",
+        "PermID": "4294951670",
+        "TRBC ID": "5320202018"
+    },
+    {
+        "Name": "Industrial Clothing & Uniforms",
+        "PermID": "4294951669",
+        "TRBC ID": "5320202019"
+    },
+    {
+        "Name": "Fair Trade & Ethical Clothing",
+        "PermID": "4294951668",
+        "TRBC ID": "5320202020"
+    },
+    {
+        "Name": "Luxury Clothing",
+        "PermID": "4294951667",
+        "TRBC ID": "5320202021"
+    },
+    {
+        "Name": "Theatrical Costumes",
+        "PermID": "4294951666",
+        "TRBC ID": "5320202022"
+    },
+    {
+        "Name": "Animal & Pet Clothing",
+        "PermID": "4294951665",
+        "TRBC ID": "5320202023"
+    },
+    {
+        "Name": "Luxury Accessories",
+        "PermID": "4294951664",
+        "TRBC ID": "5320202024"
+    },
+    {
+        "Name": "Accessories",
+        "PermID": "4294951663",
+        "TRBC ID": "5320202025"
+    },
+    {
+        "Name": "Jewelry",
+        "PermID": "4294951662",
+        "TRBC ID": "5320202026"
+    },
+    {
+        "Name": "Watches",
+        "PermID": "4294951661",
+        "TRBC ID": "5320202027"
+    },
+    {
+        "Name": "Handbags & Luggage",
+        "PermID": "4294951660",
+        "TRBC ID": "5320202028"
+    },
+    {
+        "Name": "Fashion Eyewear",
+        "PermID": "4294951659",
+        "TRBC ID": "5320202029"
+    },
+    {
+        "Name": "Apparel Wholesale",
+        "PermID": "4294951658",
+        "TRBC ID": "5320202030"
+    },
+    {
+        "Name": "Footwear",
+        "PermID": "4294952916",
+        "TRBC ID": "53202030"
+    },
+    {
+        "Name": "Footwear (NEC)",
+        "PermID": "4294951657",
+        "TRBC ID": "5320203010"
+    },
+    {
+        "Name": "Men's Footwear",
+        "PermID": "4294951656",
+        "TRBC ID": "5320203011"
+    },
+    {
+        "Name": "Women's Footwear",
+        "PermID": "4294951655",
+        "TRBC ID": "5320203012"
+    },
+    {
+        "Name": "Children's & Infants' Footwear",
+        "PermID": "4294951654",
+        "TRBC ID": "5320203013"
+    },
+    {
+        "Name": "Sports & Outdoor Footwear",
+        "PermID": "4294951653",
+        "TRBC ID": "5320203014"
+    },
+    {
+        "Name": "Luxury Footwear",
+        "PermID": "4294951652",
+        "TRBC ID": "5320203015"
+    },
+    {
+        "Name": "Functional Footwear",
+        "PermID": "4294951651",
+        "TRBC ID": "5320203016"
+    },
+    {
+        "Name": "Footwear Wholesale",
+        "PermID": "4294951650",
+        "TRBC ID": "5320203017"
+    },
+    {
+        "Name": "Homebuilding & Construction Supplies",
+        "PermID": "4294952804",
+        "TRBC ID": "532030"
+    },
+    {
+        "Name": "Homebuilding",
+        "PermID": "4294952924",
+        "TRBC ID": "53203010"
+    },
+    {
+        "Name": "Homebuilding (NEC)",
+        "PermID": "4294951649",
+        "TRBC ID": "5320301010"
+    },
+    {
+        "Name": "Residential Builders - Single Homes",
+        "PermID": "4294951648",
+        "TRBC ID": "5320301011"
+    },
+    {
+        "Name": "Residential Builders - Multifamily Homes",
+        "PermID": "4294951647",
+        "TRBC ID": "5320301012"
+    },
+    {
+        "Name": "Prefabricated Homes",
+        "PermID": "4294951646",
+        "TRBC ID": "5320301013"
+    },
+    {
+        "Name": "Sustainable & Energy Efficient Home Builders",
+        "PermID": "4294951645",
+        "TRBC ID": "5320301014"
+    },
+    {
+        "Name": "Retirement Home Builders",
+        "PermID": "4294951644",
+        "TRBC ID": "5320301015"
+    },
+    {
+        "Name": "Residential Architectural & Interior Design Services",
+        "PermID": "4294951643",
+        "TRBC ID": "5320301016"
+    },
+    {
+        "Name": "Construction Supplies & Fixtures",
+        "PermID": "4294952956",
+        "TRBC ID": "53203020"
+    },
+    {
+        "Name": "Construction Supplies & Fixtures (NEC)",
+        "PermID": "4294951642",
+        "TRBC ID": "5320302010"
+    },
+    {
+        "Name": "Construction Supplies",
+        "PermID": "4294951641",
+        "TRBC ID": "5320302011"
+    },
+    {
+        "Name": "Luxury Construction Supplies & Fixtures",
+        "PermID": "4294951640",
+        "TRBC ID": "5320302012"
+    },
+    {
+        "Name": "Doors & Window Frames",
+        "PermID": "4294951639",
+        "TRBC ID": "5320302013"
+    },
+    {
+        "Name": "Flooring & Interior Tile Manufacturers",
+        "PermID": "4294951638",
+        "TRBC ID": "5320302014"
+    },
+    {
+        "Name": "Plumbing Fixtures & Fittings",
+        "PermID": "4294951637",
+        "TRBC ID": "5320302015"
+    },
+    {
+        "Name": "Kitchen Cabinets",
+        "PermID": "4294951636",
+        "TRBC ID": "5320302016"
+    },
+    {
+        "Name": "Bathroom Fixtures",
+        "PermID": "4294951635",
+        "TRBC ID": "5320302017"
+    },
+    {
+        "Name": "Roofing Supplies",
+        "PermID": "4294951634",
+        "TRBC ID": "5320302018"
+    },
+    {
+        "Name": "Lighting Fixtures",
+        "PermID": "4294951633",
+        "TRBC ID": "5320302019"
+    },
+    {
+        "Name": "Construction Supplies & Fixtures Wholesale",
+        "PermID": "4294951632",
+        "TRBC ID": "5320302020"
+    },
+    {
+        "Name": "Household Goods",
+        "PermID": "4294952744",
+        "TRBC ID": "532040"
+    },
+    {
+        "Name": "Appliances, Tools & Housewares",
+        "PermID": "4294952922",
+        "TRBC ID": "53204030"
+    },
+    {
+        "Name": "Appliances, Tools & Housewares (NEC)",
+        "PermID": "4294951631",
+        "TRBC ID": "5320403010"
+    },
+    {
+        "Name": "Household Appliances",
+        "PermID": "4294951630",
+        "TRBC ID": "5320403011"
+    },
+    {
+        "Name": "Tools & Housewares",
+        "PermID": "4294951629",
+        "TRBC ID": "5320403012"
+    },
+    {
+        "Name": "Kitchen Appliances",
+        "PermID": "4294951628",
+        "TRBC ID": "5320403013"
+    },
+    {
+        "Name": "Cutlery & Flatware",
+        "PermID": "4294951627",
+        "TRBC ID": "5320403014"
+    },
+    {
+        "Name": "Appliance & Houseware Wholesale",
+        "PermID": "4294951626",
+        "TRBC ID": "5320403015"
+    },
+    {
+        "Name": "Luxury Appliances",
+        "PermID": "4294951625",
+        "TRBC ID": "5320403016"
+    },
+    {
+        "Name": "Home Furnishings",
+        "PermID": "4294952921",
+        "TRBC ID": "53204040"
+    },
+    {
+        "Name": "Home Furnishings (NEC)",
+        "PermID": "4294951624",
+        "TRBC ID": "5320404010"
+    },
+    {
+        "Name": "Carpets & Curtains",
+        "PermID": "4294951623",
+        "TRBC ID": "5320404011"
+    },
+    {
+        "Name": "Wallpaper",
+        "PermID": "4294951622",
+        "TRBC ID": "5320404012"
+    },
+    {
+        "Name": "Luxury Furnishing",
+        "PermID": "4294951620",
+        "TRBC ID": "5320404014"
+    },
+    {
+        "Name": "Antiques",
+        "PermID": "4294951619",
+        "TRBC ID": "5320404015"
+    },
+    {
+        "Name": "Home Furnishings Wholesale",
+        "PermID": "4294951618",
+        "TRBC ID": "5320404016"
+    },
+    {
+        "Name": "Furniture",
+        "PermID": "1004365474",
+        "TRBC ID": "5320404017"
+    },
+    {
+        "Name": "Art & Craftwork",
+        "PermID": "1004365441",
+        "TRBC ID": "5320404018"
+    },
+    {
+        "Name": "Leisure Products",
+        "PermID": "4294952920",
+        "TRBC ID": "532050"
+    },
+    {
+        "Name": "Toys & Children's Products",
+        "PermID": "4294952802",
+        "TRBC ID": "53205010"
+    },
+    {
+        "Name": "Toys & Children's Products (NEC)",
+        "PermID": "4294951617",
+        "TRBC ID": "5320501010"
+    },
+    {
+        "Name": "Dolls & Stuffed Toys",
+        "PermID": "4294951616",
+        "TRBC ID": "5320501011"
+    },
+    {
+        "Name": "Games, Toys & Children's Vehicles",
+        "PermID": "4294951615",
+        "TRBC ID": "5320501012"
+    },
+    {
+        "Name": "Children's Safety Products",
+        "PermID": "4294951614",
+        "TRBC ID": "5320501013"
+    },
+    {
+        "Name": "Children's Furniture",
+        "PermID": "4294951613",
+        "TRBC ID": "5320501014"
+    },
+    {
+        "Name": "Children's Products & Accessories",
+        "PermID": "4294951612",
+        "TRBC ID": "5320501015"
+    },
+    {
+        "Name": "Toys & Children's Products Wholesale",
+        "PermID": "4294951611",
+        "TRBC ID": "5320501016"
+    },
+    {
+        "Name": "Recreational Products",
+        "PermID": "4294952743",
+        "TRBC ID": "53205020"
+    },
+    {
+        "Name": "Recreational Products (NEC)",
+        "PermID": "4294951610",
+        "TRBC ID": "5320502010"
+    },
+    {
+        "Name": "Sailing Yachts & Motorboats",
+        "PermID": "4294951609",
+        "TRBC ID": "5320502011"
+    },
+    {
+        "Name": "Bicycle Manufacturing",
+        "PermID": "4294951608",
+        "TRBC ID": "5320502012"
+    },
+    {
+        "Name": "Sporting & Outdoor Goods",
+        "PermID": "4294951607",
+        "TRBC ID": "5320502013"
+    },
+    {
+        "Name": "Musical Instruments",
+        "PermID": "4294951606",
+        "TRBC ID": "5320502014"
+    },
+    {
+        "Name": "Luxury Recreational Products",
+        "PermID": "4294951605",
+        "TRBC ID": "5320502015"
+    },
+    {
+        "Name": "Leisure Products Wholesale",
+        "PermID": "4294951604",
+        "TRBC ID": "5320502016"
+    },
+    {
+        "Name": "Electric Scooters & Bicycles",
+        "PermID": "1004365507",
+        "TRBC ID": "5320502017"
+    },
+    {
+        "Name": "Cyclical Consumer Services",
+        "PermID": "4294952915",
+        "TRBC ID": "5330"
+    },
+    {
+        "Name": "Hotels & Entertainment Services",
+        "PermID": "4294952914",
+        "TRBC ID": "533010"
+    },
+    {
+        "Name": "Hotels, Motels & Cruise Lines",
+        "PermID": "4294952913",
+        "TRBC ID": "53301010"
+    },
+    {
+        "Name": "Hotels, Motels & Cruise Lines (NEC)",
+        "PermID": "4294951603",
+        "TRBC ID": "5330101010"
+    },
+    {
+        "Name": "Hotels & Motels",
+        "PermID": "4294951602",
+        "TRBC ID": "5330101011"
+    },
+    {
+        "Name": "Cruise Lines",
+        "PermID": "4294951601",
+        "TRBC ID": "5330101012"
+    },
+    {
+        "Name": "Luxury Hotels",
+        "PermID": "4294951600",
+        "TRBC ID": "5330101013"
+    },
+    {
+        "Name": "Resort Operators",
+        "PermID": "4294951599",
+        "TRBC ID": "5330101014"
+    },
+    {
+        "Name": "Bed & Breakfast",
+        "PermID": "4294951598",
+        "TRBC ID": "5330101015"
+    },
+    {
+        "Name": "Self-Catering Accommodation",
+        "PermID": "4294951597",
+        "TRBC ID": "5330101016"
+    },
+    {
+        "Name": "Campsite Operators",
+        "PermID": "4294951596",
+        "TRBC ID": "5330101017"
+    },
+    {
+        "Name": "Restaurants & Bars",
+        "PermID": "4294952912",
+        "TRBC ID": "53301020"
+    },
+    {
+        "Name": "Restaurants & Bars (NEC)",
+        "PermID": "4294951595",
+        "TRBC ID": "5330102010"
+    },
+    {
+        "Name": "Pubs, Bars & Night Clubs",
+        "PermID": "4294951594",
+        "TRBC ID": "5330102011"
+    },
+    {
+        "Name": "Commercial Food Services",
+        "PermID": "4294951593",
+        "TRBC ID": "5330102012"
+    },
+    {
+        "Name": "Quick Service Restaurants",
+        "PermID": "4294951592",
+        "TRBC ID": "5330102013"
+    },
+    {
+        "Name": "Mobile Caterers",
+        "PermID": "4294951591",
+        "TRBC ID": "5330102014"
+    },
+    {
+        "Name": "Banquet Halls & Catering",
+        "PermID": "4294951590",
+        "TRBC ID": "5330102015"
+    },
+    {
+        "Name": "Caf\u00e9s",
+        "PermID": "4294951589",
+        "TRBC ID": "5330102016"
+    },
+    {
+        "Name": "Casinos & Gaming",
+        "PermID": "4294952911",
+        "TRBC ID": "53301030"
+    },
+    {
+        "Name": "Casinos & Gaming (NEC)",
+        "PermID": "4294951588",
+        "TRBC ID": "5330103010"
+    },
+    {
+        "Name": "Gambling & Gaming Machine Manufacturers",
+        "PermID": "4294951587",
+        "TRBC ID": "5330103011"
+    },
+    {
+        "Name": "Gaming Machine Operators",
+        "PermID": "4294951586",
+        "TRBC ID": "5330103012"
+    },
+    {
+        "Name": "Casinos",
+        "PermID": "4294951585",
+        "TRBC ID": "5330103013"
+    },
+    {
+        "Name": "Horse & Dog Race Tracks",
+        "PermID": "4294951584",
+        "TRBC ID": "5330103014"
+    },
+    {
+        "Name": "Lottery Operators",
+        "PermID": "4294951583",
+        "TRBC ID": "5330103015"
+    },
+    {
+        "Name": "Leisure & Recreation",
+        "PermID": "4294952910",
+        "TRBC ID": "53301040"
+    },
+    {
+        "Name": "Leisure & Recreation (NEC)",
+        "PermID": "4294951582",
+        "TRBC ID": "5330104010"
+    },
+    {
+        "Name": "Movie Theaters & Movie Products",
+        "PermID": "4294951581",
+        "TRBC ID": "5330104011"
+    },
+    {
+        "Name": "Theatres & Performing Arts",
+        "PermID": "4294951580",
+        "TRBC ID": "5330104012"
+    },
+    {
+        "Name": "Museums & Historic Places",
+        "PermID": "4294951579",
+        "TRBC ID": "5330104013"
+    },
+    {
+        "Name": "Travel Agents",
+        "PermID": "4294951578",
+        "TRBC ID": "5330104014"
+    },
+    {
+        "Name": "Amusement Parks and Zoos",
+        "PermID": "4294951577",
+        "TRBC ID": "5330104015"
+    },
+    {
+        "Name": "Gyms, Fitness and Spa Centers",
+        "PermID": "4294951576",
+        "TRBC ID": "5330104016"
+    },
+    {
+        "Name": "Adventure Sports Facilities & Ski Resorts",
+        "PermID": "4294951575",
+        "TRBC ID": "5330104017"
+    },
+    {
+        "Name": "Public Sport Facilities",
+        "PermID": "4294951574",
+        "TRBC ID": "5330104018"
+    },
+    {
+        "Name": "Professional Sports Venues",
+        "PermID": "4294951573",
+        "TRBC ID": "5330104019"
+    },
+    {
+        "Name": "Golf Courses",
+        "PermID": "4294951572",
+        "TRBC ID": "5330104020"
+    },
+    {
+        "Name": "Hunting & Fishing",
+        "PermID": "4294951571",
+        "TRBC ID": "5330104021"
+    },
+    {
+        "Name": "Marinas",
+        "PermID": "4294951570",
+        "TRBC ID": "5330104022"
+    },
+    {
+        "Name": "Guided Tour Operators",
+        "PermID": "4294951569",
+        "TRBC ID": "5330104023"
+    },
+    {
+        "Name": "Media & Publishing",
+        "PermID": "4294952742",
+        "TRBC ID": "533020"
+    },
+    {
+        "Name": "Advertising & Marketing",
+        "PermID": "4294952908",
+        "TRBC ID": "53302010"
+    },
+    {
+        "Name": "Advertising & Marketing (NEC)",
+        "PermID": "4294951568",
+        "TRBC ID": "5330201010"
+    },
+    {
+        "Name": "Advertising Agency",
+        "PermID": "4294951567",
+        "TRBC ID": "5330201011"
+    },
+    {
+        "Name": "Media Buying Agency",
+        "PermID": "4294951566",
+        "TRBC ID": "5330201012"
+    },
+    {
+        "Name": "Signs & Advertising Specialty Producers",
+        "PermID": "4294951565",
+        "TRBC ID": "5330201013"
+    },
+    {
+        "Name": "Outdoor Advertising",
+        "PermID": "4294951564",
+        "TRBC ID": "5330201014"
+    },
+    {
+        "Name": "Direct Marketing",
+        "PermID": "4294951563",
+        "TRBC ID": "5330201015"
+    },
+    {
+        "Name": "Sales Promotions & Events Management",
+        "PermID": "4294951562",
+        "TRBC ID": "5330201016"
+    },
+    {
+        "Name": "Guerrilla & Sensory Marketing",
+        "PermID": "4294951561",
+        "TRBC ID": "5330201017"
+    },
+    {
+        "Name": "Public Relations",
+        "PermID": "4294951560",
+        "TRBC ID": "5330201018"
+    },
+    {
+        "Name": "Digital Media Agencies",
+        "PermID": "4294951559",
+        "TRBC ID": "5330201019"
+    },
+    {
+        "Name": "Branding & Naming",
+        "PermID": "4294951558",
+        "TRBC ID": "5330201020"
+    },
+    {
+        "Name": "Market Research",
+        "PermID": "4294951557",
+        "TRBC ID": "5330201021"
+    },
+    {
+        "Name": "Marketing Consulting Services",
+        "PermID": "4294951556",
+        "TRBC ID": "5330201022"
+    },
+    {
+        "Name": "Broadcasting",
+        "PermID": "4294952907",
+        "TRBC ID": "53302020"
+    },
+    {
+        "Name": "Broadcasting (NEC)",
+        "PermID": "4294951555",
+        "TRBC ID": "5330202010"
+    },
+    {
+        "Name": "Television Broadcasting",
+        "PermID": "4294951554",
+        "TRBC ID": "5330202011"
+    },
+    {
+        "Name": "Radio Broadcasting",
+        "PermID": "4294951553",
+        "TRBC ID": "5330202012"
+    },
+    {
+        "Name": "Cable Service Providers",
+        "PermID": "4294951552",
+        "TRBC ID": "5330202013"
+    },
+    {
+        "Name": "Entertainment Production",
+        "PermID": "4294952906",
+        "TRBC ID": "53302030"
+    },
+    {
+        "Name": "Entertainment Production (NEC)",
+        "PermID": "4294951551",
+        "TRBC ID": "5330203010"
+    },
+    {
+        "Name": "Movie, TV Production & Distribution",
+        "PermID": "4294951550",
+        "TRBC ID": "5330203011"
+    },
+    {
+        "Name": "Music, Music Video Production & Distribution",
+        "PermID": "4294951549",
+        "TRBC ID": "5330203012"
+    },
+    {
+        "Name": "Plays & Concert Production",
+        "PermID": "4294951548",
+        "TRBC ID": "5330203013"
+    },
+    {
+        "Name": "Entertainment Production Equipment & Services",
+        "PermID": "4294951547",
+        "TRBC ID": "5330203014"
+    },
+    {
+        "Name": "Copyright Management",
+        "PermID": "4294951546",
+        "TRBC ID": "5330203015"
+    },
+    {
+        "Name": "Adult Entertainment Production & Broadcasting",
+        "PermID": "4294951545",
+        "TRBC ID": "5330203016"
+    },
+    {
+        "Name": "Consumer Publishing",
+        "PermID": "4294952741",
+        "TRBC ID": "53302040"
+    },
+    {
+        "Name": "Consumer Publishing (NEC)",
+        "PermID": "4294951544",
+        "TRBC ID": "5330204010"
+    },
+    {
+        "Name": "Newspaper Publishing",
+        "PermID": "4294951543",
+        "TRBC ID": "5330204011"
+    },
+    {
+        "Name": "Magazine Publishing",
+        "PermID": "4294951542",
+        "TRBC ID": "5330204012"
+    },
+    {
+        "Name": "Book Publishing",
+        "PermID": "4294951541",
+        "TRBC ID": "5330204013"
+    },
+    {
+        "Name": "Directory Publishing",
+        "PermID": "4294951540",
+        "TRBC ID": "5330204014"
+    },
+    {
+        "Name": "Digital Publishing",
+        "PermID": "4294951539",
+        "TRBC ID": "5330204015"
+    },
+    {
+        "Name": "Adult Publishing",
+        "PermID": "4294951538",
+        "TRBC ID": "5330204016"
+    },
+    {
+        "Name": "Books, Newspapers & Magazines Wholesale",
+        "PermID": "1004365540",
+        "TRBC ID": "5330204017"
+    },
+    {
+        "Name": "Retailers",
+        "PermID": "4294952903",
+        "TRBC ID": "5340"
+    },
+    {
+        "Name": "Diversified Retail",
+        "PermID": "4294952800",
+        "TRBC ID": "534020"
+    },
+    {
+        "Name": "Department Stores",
+        "PermID": "4294952901",
+        "TRBC ID": "53402010"
+    },
+    {
+        "Name": "Department Stores (NEC)",
+        "PermID": "4294951537",
+        "TRBC ID": "5340201010"
+    },
+    {
+        "Name": "General Department Stores",
+        "PermID": "4294951536",
+        "TRBC ID": "5340201011"
+    },
+    {
+        "Name": "Luxury Department Stores",
+        "PermID": "4294951535",
+        "TRBC ID": "5340201012"
+    },
+    {
+        "Name": "Internet & Mail Order Department Stores",
+        "PermID": "4294951534",
+        "TRBC ID": "5340201013"
+    },
+    {
+        "Name": "Discount Stores",
+        "PermID": "4294952900",
+        "TRBC ID": "53402020"
+    },
+    {
+        "Name": "Discount Stores (NEC)",
+        "PermID": "4294951533",
+        "TRBC ID": "5340202010"
+    },
+    {
+        "Name": "Internet & Mail Order Discount Stores",
+        "PermID": "4294951532",
+        "TRBC ID": "5340202011"
+    },
+    {
+        "Name": "Discount Stores with Grocery",
+        "PermID": "4294951531",
+        "TRBC ID": "5340202012"
+    },
+    {
+        "Name": "Discount Stores without Grocery",
+        "PermID": "4294951530",
+        "TRBC ID": "5340202013"
+    },
+    {
+        "Name": "Discount Stores with Gasoline",
+        "PermID": "4294951529",
+        "TRBC ID": "5340202014"
+    },
+    {
+        "Name": "Discount Stores without Gasoline",
+        "PermID": "4294951528",
+        "TRBC ID": "5340202015"
+    },
+    {
+        "Name": "Specialty Retailers",
+        "PermID": "4294952799",
+        "TRBC ID": "534030"
+    },
+    {
+        "Name": "Auto Vehicles, Parts & Service Retailers",
+        "PermID": "4294952798",
+        "TRBC ID": "53403010"
+    },
+    {
+        "Name": "Auto Vehicles, Parts & Service Retailers (NEC)",
+        "PermID": "4294951527",
+        "TRBC ID": "5340301010"
+    },
+    {
+        "Name": "New Car Dealers",
+        "PermID": "4294951526",
+        "TRBC ID": "5340301011"
+    },
+    {
+        "Name": "Used Car Dealers",
+        "PermID": "4294951525",
+        "TRBC ID": "5340301012"
+    },
+    {
+        "Name": "Motorcycle Dealers",
+        "PermID": "4294951524",
+        "TRBC ID": "5340301013"
+    },
+    {
+        "Name": "Automotive Parts & Accessories Retailers",
+        "PermID": "4294951523",
+        "TRBC ID": "5340301014"
+    },
+    {
+        "Name": "Tire Dealers",
+        "PermID": "4294951522",
+        "TRBC ID": "5340301015"
+    },
+    {
+        "Name": "Luxury Car Dealers",
+        "PermID": "4294951521",
+        "TRBC ID": "5340301016"
+    },
+    {
+        "Name": "Home Improvement Products & Services Retailers",
+        "PermID": "4294952797",
+        "TRBC ID": "53403020"
+    },
+    {
+        "Name": "Home Improvement Products & Services Retailers (NEC)",
+        "PermID": "4294951520",
+        "TRBC ID": "5340302010"
+    },
+    {
+        "Name": "Paint & Wallpaper Retailers",
+        "PermID": "4294951519",
+        "TRBC ID": "5340302011"
+    },
+    {
+        "Name": "Builder Merchants",
+        "PermID": "4294951518",
+        "TRBC ID": "5340302012"
+    },
+    {
+        "Name": "Nursery & Garden Centers",
+        "PermID": "4294951517",
+        "TRBC ID": "5340302013"
+    },
+    {
+        "Name": "Kitchen & Bathroom Retailers",
+        "PermID": "4294951516",
+        "TRBC ID": "5340302014"
+    },
+    {
+        "Name": "Home D\u00e9cor Retailers",
+        "PermID": "4294951515",
+        "TRBC ID": "5340302015"
+    },
+    {
+        "Name": "Interior Design Services",
+        "PermID": "4294951514",
+        "TRBC ID": "5340302016"
+    },
+    {
+        "Name": "Luxury Home Improvement Product Retailers",
+        "PermID": "4294951513",
+        "TRBC ID": "5340302017"
+    },
+    {
+        "Name": "Home Furnishings Retailers",
+        "PermID": "4294952796",
+        "TRBC ID": "53403030"
+    },
+    {
+        "Name": "Home Furnishings Retailers (NEC)",
+        "PermID": "4294951512",
+        "TRBC ID": "5340303010"
+    },
+    {
+        "Name": "Furniture Retailers",
+        "PermID": "4294951511",
+        "TRBC ID": "5340303011"
+    },
+    {
+        "Name": "Floor Covering Retailers",
+        "PermID": "4294951510",
+        "TRBC ID": "5340303012"
+    },
+    {
+        "Name": "Soft Furnishing Retailers",
+        "PermID": "4294951509",
+        "TRBC ID": "5340303013"
+    },
+    {
+        "Name": "Luxury Furnishing Retailers",
+        "PermID": "4294951508",
+        "TRBC ID": "5340303014"
+    },
+    {
+        "Name": "Antique Dealers",
+        "PermID": "4294951507",
+        "TRBC ID": "5340303015"
+    },
+    {
+        "Name": "Art & Craftwork Retailers",
+        "PermID": "1004365573",
+        "TRBC ID": "5340303016"
+    },
+    {
+        "Name": "Apparel & Accessories Retailers",
+        "PermID": "4294952898",
+        "TRBC ID": "53403040"
+    },
+    {
+        "Name": "Apparel & Accessories Retailers (NEC)",
+        "PermID": "4294951490",
+        "TRBC ID": "5340304010"
+    },
+    {
+        "Name": "Footwear Retailers",
+        "PermID": "4294951489",
+        "TRBC ID": "5340304011"
+    },
+    {
+        "Name": "Jewelry & Watch Retailers",
+        "PermID": "4294951488",
+        "TRBC ID": "5340304012"
+    },
+    {
+        "Name": "Men's Apparel Retailers",
+        "PermID": "4294951487",
+        "TRBC ID": "5340304013"
+    },
+    {
+        "Name": "Women's Apparel Retailers",
+        "PermID": "4294951486",
+        "TRBC ID": "5340304014"
+    },
+    {
+        "Name": "Children's & Infants' Clothing Retailers",
+        "PermID": "4294951485",
+        "TRBC ID": "5340304015"
+    },
+    {
+        "Name": "Teen Fashion Retailers",
+        "PermID": "4294951484",
+        "TRBC ID": "5340304016"
+    },
+    {
+        "Name": "Handbags & Luggage Retailers",
+        "PermID": "4294951483",
+        "TRBC ID": "5340304017"
+    },
+    {
+        "Name": "Luxury Apparel Retailers",
+        "PermID": "4294951482",
+        "TRBC ID": "5340304018"
+    },
+    {
+        "Name": "Sports & Outdoors Retailers",
+        "PermID": "4294951481",
+        "TRBC ID": "5340304019"
+    },
+    {
+        "Name": "Computer & Electronics Retailers",
+        "PermID": "4294952897",
+        "TRBC ID": "53403050"
+    },
+    {
+        "Name": "Computer & Electronics Retailers (NEC)",
+        "PermID": "4294951480",
+        "TRBC ID": "5340305010"
+    },
+    {
+        "Name": "Computer Hardware & Software Retailers",
+        "PermID": "4294951479",
+        "TRBC ID": "5340305011"
+    },
+    {
+        "Name": "Consumer Electronics Retailers",
+        "PermID": "4294951478",
+        "TRBC ID": "5340305012"
+    },
+    {
+        "Name": "Mobile Phone Retailers",
+        "PermID": "4294951477",
+        "TRBC ID": "5340305013"
+    },
+    {
+        "Name": "Miscellaneous Specialty Retailers",
+        "PermID": "4294952795",
+        "TRBC ID": "53403090"
+    },
+    {
+        "Name": "Miscellaneous Specialty Retailers (NEC)",
+        "PermID": "4294951506",
+        "TRBC ID": "5340309010"
+    },
+    {
+        "Name": "Luxury Beauty Supply Retailers",
+        "PermID": "4294951505",
+        "TRBC ID": "5340309011"
+    },
+    {
+        "Name": "Personal Care Products Retailers",
+        "PermID": "4294951504",
+        "TRBC ID": "5340309012"
+    },
+    {
+        "Name": "Optical Goods Stores",
+        "PermID": "4294951503",
+        "TRBC ID": "5340309013"
+    },
+    {
+        "Name": "Health Food Stores",
+        "PermID": "4294951502",
+        "TRBC ID": "5340309014"
+    },
+    {
+        "Name": "Musical Instrument Retailers",
+        "PermID": "4294951501",
+        "TRBC ID": "5340309015"
+    },
+    {
+        "Name": "Hobby & Craft Product Retailers",
+        "PermID": "4294951500",
+        "TRBC ID": "5340309016"
+    },
+    {
+        "Name": "Toys & Games Retailers",
+        "PermID": "4294951499",
+        "TRBC ID": "5340309017"
+    },
+    {
+        "Name": "Book & Magazine Retailers",
+        "PermID": "4294951498",
+        "TRBC ID": "5340309018"
+    },
+    {
+        "Name": "Florists",
+        "PermID": "4294951497",
+        "TRBC ID": "5340309019"
+    },
+    {
+        "Name": "Office Supplies & Stationery Stores",
+        "PermID": "4294951496",
+        "TRBC ID": "5340309020"
+    },
+    {
+        "Name": "Gift, Novelty & Souvenir Stores",
+        "PermID": "4294951495",
+        "TRBC ID": "5340309021"
+    },
+    {
+        "Name": "Used Merchandise Stores",
+        "PermID": "4294951494",
+        "TRBC ID": "5340309022"
+    },
+    {
+        "Name": "Sporting Goods Stores",
+        "PermID": "4294951493",
+        "TRBC ID": "5340309023"
+    },
+    {
+        "Name": "Pet & Pet Supplies Retailers",
+        "PermID": "4294951492",
+        "TRBC ID": "5340309024"
+    },
+    {
+        "Name": "Adult Products Retailers",
+        "PermID": "4294951491",
+        "TRBC ID": "5340309025"
+    },
+    {
+        "Name": "Consumer Non-Cyclicals",
+        "PermID": "4294952895",
+        "TRBC ID": "54"
+    },
+    {
+        "Name": "Food & Beverages",
+        "PermID": "4294952894",
+        "TRBC ID": "5410"
+    },
+    {
+        "Name": "Beverages",
+        "PermID": "4294952893",
+        "TRBC ID": "541010"
+    },
+    {
+        "Name": "Brewers",
+        "PermID": "4294952892",
+        "TRBC ID": "54101010"
+    },
+    {
+        "Name": "Brewers (NEC)",
+        "PermID": "4294951476",
+        "TRBC ID": "5410101010"
+    },
+    {
+        "Name": "Craft & Micro Brewers",
+        "PermID": "4294951475",
+        "TRBC ID": "5410101011"
+    },
+    {
+        "Name": "Distillers & Wineries",
+        "PermID": "4294952891",
+        "TRBC ID": "54101020"
+    },
+    {
+        "Name": "Distillers & Wineries (NEC)",
+        "PermID": "4294951474",
+        "TRBC ID": "5410102010"
+    },
+    {
+        "Name": "Wineries",
+        "PermID": "4294951473",
+        "TRBC ID": "5410102011"
+    },
+    {
+        "Name": "Distilleries",
+        "PermID": "4294951472",
+        "TRBC ID": "5410102012"
+    },
+    {
+        "Name": "Malt Producers",
+        "PermID": "4294951471",
+        "TRBC ID": "5410102013"
+    },
+    {
+        "Name": "Non-Alcoholic Beverages",
+        "PermID": "4294952890",
+        "TRBC ID": "54101030"
+    },
+    {
+        "Name": "Non-Alcoholic Beverages (NEC)",
+        "PermID": "4294951470",
+        "TRBC ID": "5410103010"
+    },
+    {
+        "Name": "Carbonated Soft Drinks",
+        "PermID": "4294951469",
+        "TRBC ID": "5410103011"
+    },
+    {
+        "Name": "Fruit Drinks",
+        "PermID": "4294951468",
+        "TRBC ID": "5410103012"
+    },
+    {
+        "Name": "Energy Drinks",
+        "PermID": "4294951467",
+        "TRBC ID": "5410103013"
+    },
+    {
+        "Name": "Bottled Water & Ice",
+        "PermID": "4294951466",
+        "TRBC ID": "5410103014"
+    },
+    {
+        "Name": "Food & Tobacco",
+        "PermID": "4294952889",
+        "TRBC ID": "541020"
+    },
+    {
+        "Name": "Fishing & Farming",
+        "PermID": "4294952888",
+        "TRBC ID": "54102010"
+    },
+    {
+        "Name": "Fishing & Farming (NEC)",
+        "PermID": "4294951465",
+        "TRBC ID": "5410201010"
+    },
+    {
+        "Name": "Grain (Crop) Production",
+        "PermID": "4294951464",
+        "TRBC ID": "5410201011"
+    },
+    {
+        "Name": "Poultry Farming",
+        "PermID": "4294951463",
+        "TRBC ID": "5410201012"
+    },
+    {
+        "Name": "Sheep & Specialty Livestock Farming",
+        "PermID": "4294951462",
+        "TRBC ID": "5410201013"
+    },
+    {
+        "Name": "Vegetable, Fruit & Nut Farming",
+        "PermID": "4294951461",
+        "TRBC ID": "5410201014"
+    },
+    {
+        "Name": "Coffee, Tea & Cocoa Farming",
+        "PermID": "4294951460",
+        "TRBC ID": "5410201015"
+    },
+    {
+        "Name": "Sugarcane Farming",
+        "PermID": "4294951459",
+        "TRBC ID": "5410201016"
+    },
+    {
+        "Name": "Commercial Nurseries",
+        "PermID": "4294951458",
+        "TRBC ID": "5410201017"
+    },
+    {
+        "Name": "Commercial Fishing",
+        "PermID": "4294951457",
+        "TRBC ID": "5410201018"
+    },
+    {
+        "Name": "Aquaculture",
+        "PermID": "4294951456",
+        "TRBC ID": "5410201019"
+    },
+    {
+        "Name": "Fur Farming",
+        "PermID": "4294951455",
+        "TRBC ID": "5410201020"
+    },
+    {
+        "Name": "Animal Breeding",
+        "PermID": "4294951454",
+        "TRBC ID": "5410201021"
+    },
+    {
+        "Name": "Agriculture Support Services",
+        "PermID": "4294951453",
+        "TRBC ID": "5410201022"
+    },
+    {
+        "Name": "Organic Farming",
+        "PermID": "4294951452",
+        "TRBC ID": "5410201023"
+    },
+    {
+        "Name": "Animal Feed",
+        "PermID": "4294951451",
+        "TRBC ID": "5410201024"
+    },
+    {
+        "Name": "Agricultural Consultancy Services",
+        "PermID": "4294951450",
+        "TRBC ID": "5410201025"
+    },
+    {
+        "Name": "Fishing & Farming Wholesale",
+        "PermID": "4294951449",
+        "TRBC ID": "5410201026"
+    },
+    {
+        "Name": "Agricultural Biotechnology",
+        "PermID": "4294951448",
+        "TRBC ID": "5410201027"
+    },
+    {
+        "Name": "Hog & Pig Farming",
+        "PermID": "4294951447",
+        "TRBC ID": "5410201028"
+    },
+    {
+        "Name": "Cattle Farming",
+        "PermID": "4294951446",
+        "TRBC ID": "5410201029"
+    },
+    {
+        "Name": "Fair Trade & Ethical Fishing & Farming",
+        "PermID": "1004365606",
+        "TRBC ID": "5410201030"
+    },
+    {
+        "Name": "Food Processing",
+        "PermID": "4294952887",
+        "TRBC ID": "54102020"
+    },
+    {
+        "Name": "Food Processing (NEC)",
+        "PermID": "4294951445",
+        "TRBC ID": "5410202010"
+    },
+    {
+        "Name": "Flour Milling",
+        "PermID": "4294951444",
+        "TRBC ID": "5410202011"
+    },
+    {
+        "Name": "Bread & Bakery Product Manufacturing",
+        "PermID": "4294951443",
+        "TRBC ID": "5410202012"
+    },
+    {
+        "Name": "Breakfast Cereal Manufacturing",
+        "PermID": "4294951442",
+        "TRBC ID": "5410202013"
+    },
+    {
+        "Name": "Cookie, Cracker & Pasta Manufacturing",
+        "PermID": "4294951441",
+        "TRBC ID": "5410202014"
+    },
+    {
+        "Name": "Fruit & Vegetable Processing",
+        "PermID": "4294951440",
+        "TRBC ID": "5410202015"
+    },
+    {
+        "Name": "Meat Processing",
+        "PermID": "4294951439",
+        "TRBC ID": "5410202016"
+    },
+    {
+        "Name": "Halal Meat Processing",
+        "PermID": "4294951438",
+        "TRBC ID": "5410202017"
+    },
+    {
+        "Name": "Seafood Product Preparation & Packaging",
+        "PermID": "4294951437",
+        "TRBC ID": "5410202018"
+    },
+    {
+        "Name": "Dairy Products",
+        "PermID": "4294951436",
+        "TRBC ID": "5410202019"
+    },
+    {
+        "Name": "Starch, Vegetable Fat & Oil Manufacturing",
+        "PermID": "4294951435",
+        "TRBC ID": "5410202020"
+    },
+    {
+        "Name": "Coffee & Tea",
+        "PermID": "4294951434",
+        "TRBC ID": "5410202021"
+    },
+    {
+        "Name": "Sugar & Artificial Sweeteners",
+        "PermID": "4294951433",
+        "TRBC ID": "5410202022"
+    },
+    {
+        "Name": "Chocolate & Confectionery",
+        "PermID": "4294951432",
+        "TRBC ID": "5410202023"
+    },
+    {
+        "Name": "Snack Food & Non-Chocolate Confectionary",
+        "PermID": "4294951431",
+        "TRBC ID": "5410202024"
+    },
+    {
+        "Name": "Special Foods & Wellbeing Products",
+        "PermID": "4294951430",
+        "TRBC ID": "5410202025"
+    },
+    {
+        "Name": "Food Ingredients",
+        "PermID": "4294951429",
+        "TRBC ID": "5410202026"
+    },
+    {
+        "Name": "Baby Food",
+        "PermID": "4294951428",
+        "TRBC ID": "5410202027"
+    },
+    {
+        "Name": "Ready-Made Meals",
+        "PermID": "4294951427",
+        "TRBC ID": "5410202028"
+    },
+    {
+        "Name": "Frozen Food Manufacturing",
+        "PermID": "4294951425",
+        "TRBC ID": "5410202030"
+    },
+    {
+        "Name": "Pet Food Manufacturing",
+        "PermID": "4294951424",
+        "TRBC ID": "5410202031"
+    },
+    {
+        "Name": "Vegan & Vegetarian Food Manufacturing",
+        "PermID": "1004365345",
+        "TRBC ID": "5410202032"
+    },
+    {
+        "Name": "Tobacco",
+        "PermID": "4294952886",
+        "TRBC ID": "54102030"
+    },
+    {
+        "Name": "Tobacco (NEC)",
+        "PermID": "4294951423",
+        "TRBC ID": "5410203010"
+    },
+    {
+        "Name": "Tobacco Farming",
+        "PermID": "4294951422",
+        "TRBC ID": "5410203011"
+    },
+    {
+        "Name": "Tobacco Stemming & Redrying",
+        "PermID": "4294951421",
+        "TRBC ID": "5410203012"
+    },
+    {
+        "Name": "Cigars & Cigarette Manufacturing",
+        "PermID": "4294951420",
+        "TRBC ID": "5410203013"
+    },
+    {
+        "Name": "Chewing Tobacco Products",
+        "PermID": "4294951419",
+        "TRBC ID": "5410203014"
+    },
+    {
+        "Name": "Personal & Household Products & Services",
+        "PermID": "4294952885",
+        "TRBC ID": "5420"
+    },
+    {
+        "Name": "Personal & Household Products & Services",
+        "PermID": "4294952884",
+        "TRBC ID": "542010"
+    },
+    {
+        "Name": "Household Products",
+        "PermID": "4294952883",
+        "TRBC ID": "54201010"
+    },
+    {
+        "Name": "Household Products (NEC)",
+        "PermID": "4294951418",
+        "TRBC ID": "5420101010"
+    },
+    {
+        "Name": "Laundry Supplies",
+        "PermID": "4294951417",
+        "TRBC ID": "5420101011"
+    },
+    {
+        "Name": "Cleaning Supplies",
+        "PermID": "4294951416",
+        "TRBC ID": "5420101012"
+    },
+    {
+        "Name": "Air Fresheners",
+        "PermID": "4294951415",
+        "TRBC ID": "5420101013"
+    },
+    {
+        "Name": "Pet & Plant Protection Agents",
+        "PermID": "4294951413",
+        "TRBC ID": "5420101015"
+    },
+    {
+        "Name": "Auto Cleaning Products",
+        "PermID": "4294951412",
+        "TRBC ID": "5420101016"
+    },
+    {
+        "Name": "Personal Products",
+        "PermID": "4294952882",
+        "TRBC ID": "54201020"
+    },
+    {
+        "Name": "Personal Products (NEC)",
+        "PermID": "4294951411",
+        "TRBC ID": "5420102010"
+    },
+    {
+        "Name": "Cosmetics & Perfumes",
+        "PermID": "4294951410",
+        "TRBC ID": "5420102011"
+    },
+    {
+        "Name": "Luxury Cosmetics",
+        "PermID": "4294951409",
+        "TRBC ID": "5420102012"
+    },
+    {
+        "Name": "Sanitary Products",
+        "PermID": "4294951408",
+        "TRBC ID": "5420102013"
+    },
+    {
+        "Name": "Hair Accessories",
+        "PermID": "4294951407",
+        "TRBC ID": "5420102014"
+    },
+    {
+        "Name": "Birth Control Products",
+        "PermID": "4294951406",
+        "TRBC ID": "5420102015"
+    },
+    {
+        "Name": "Halal Personal Products",
+        "PermID": "1004365354",
+        "TRBC ID": "5420102016"
+    },
+    {
+        "Name": "Personal Services",
+        "PermID": "4294952881",
+        "TRBC ID": "54201030"
+    },
+    {
+        "Name": "Personal Services (NEC)",
+        "PermID": "4294951405",
+        "TRBC ID": "5420103010"
+    },
+    {
+        "Name": "Consumer Goods Rental",
+        "PermID": "4294951404",
+        "TRBC ID": "5420103011"
+    },
+    {
+        "Name": "Accounting & Tax Preparation",
+        "PermID": "4294951403",
+        "TRBC ID": "5420103012"
+    },
+    {
+        "Name": "Personal Legal Services",
+        "PermID": "4294951402",
+        "TRBC ID": "5420103013"
+    },
+    {
+        "Name": "Child Care & Family Services",
+        "PermID": "4294951400",
+        "TRBC ID": "5420103015"
+    },
+    {
+        "Name": "Consumer Repair Services",
+        "PermID": "4294951399",
+        "TRBC ID": "5420103016"
+    },
+    {
+        "Name": "Personal Care Services",
+        "PermID": "4294951398",
+        "TRBC ID": "5420103017"
+    },
+    {
+        "Name": "Funeral Services",
+        "PermID": "4294951397",
+        "TRBC ID": "5420103018"
+    },
+    {
+        "Name": "Food & Drug Retailing",
+        "PermID": "4294952880",
+        "TRBC ID": "5430"
+    },
+    {
+        "Name": "Food & Drug Retailing",
+        "PermID": "4294952879",
+        "TRBC ID": "543010"
+    },
+    {
+        "Name": "Drug Retailers",
+        "PermID": "4294952878",
+        "TRBC ID": "54301010"
+    },
+    {
+        "Name": "Drug Retailers (NEC)",
+        "PermID": "4294951396",
+        "TRBC ID": "5430101010"
+    },
+    {
+        "Name": "Retail - Drugs with Grocery",
+        "PermID": "4294951395",
+        "TRBC ID": "5430101011"
+    },
+    {
+        "Name": "Retail - Drugs without Grocery",
+        "PermID": "4294951394",
+        "TRBC ID": "5430101012"
+    },
+    {
+        "Name": "Cannabis Product Retailers",
+        "PermID": "1004365348",
+        "TRBC ID": "5430101013"
+    },
+    {
+        "Name": "Non-Cannabis Recreational Drug Retailers",
+        "PermID": "1004365351",
+        "TRBC ID": "5430101014"
+    },
+    {
+        "Name": "Food Retail & Distribution",
+        "PermID": "4294952877",
+        "TRBC ID": "54301020"
+    },
+    {
+        "Name": "Food Retail & Distribution (NEC)",
+        "PermID": "4294951393",
+        "TRBC ID": "5430102010"
+    },
+    {
+        "Name": "Food Wholesale",
+        "PermID": "4294951392",
+        "TRBC ID": "5430102011"
+    },
+    {
+        "Name": "Supermarkets & Convenience Stores",
+        "PermID": "4294951391",
+        "TRBC ID": "5430102012"
+    },
+    {
+        "Name": "Beer, Wine & Liquor Stores",
+        "PermID": "4294951390",
+        "TRBC ID": "5430102013"
+    },
+    {
+        "Name": "Vending Machine Providers",
+        "PermID": "4294951389",
+        "TRBC ID": "5430102014"
+    },
+    {
+        "Name": "Tobacco Stores",
+        "PermID": "4294951388",
+        "TRBC ID": "5430102015"
+    },
+    {
+        "Name": "Food Markets",
+        "PermID": "4294951387",
+        "TRBC ID": "5430102016"
+    },
+    {
+        "Name": "Consumer Goods Conglomerates",
+        "PermID": "4294952948",
+        "TRBC ID": "5440"
+    },
+    {
+        "Name": "Consumer Goods Conglomerates",
+        "PermID": "4294952947",
+        "TRBC ID": "544010"
+    },
+    {
+        "Name": "Consumer Goods Conglomerates",
+        "PermID": "4294952946",
+        "TRBC ID": "54401010"
+    },
+    {
+        "Name": "Consumer Goods Conglomerates",
+        "PermID": "4294951750",
+        "TRBC ID": "5440101010"
+    },
+    {
+        "Name": "Financials",
+        "PermID": "4294952740",
+        "TRBC ID": "55"
+    },
+    {
+        "Name": "Banking & Investment Services",
+        "PermID": "4294952739",
+        "TRBC ID": "5510"
+    },
+    {
+        "Name": "Banking Services",
+        "PermID": "4294952874",
+        "TRBC ID": "551010"
+    },
+    {
+        "Name": "Banks",
+        "PermID": "4294952873",
+        "TRBC ID": "55101010"
+    },
+    {
+        "Name": "Banks (NEC)",
+        "PermID": "4294951386",
+        "TRBC ID": "5510101010"
+    },
+    {
+        "Name": "Corporate Banks",
+        "PermID": "4294951385",
+        "TRBC ID": "5510101011"
+    },
+    {
+        "Name": "Retail & Mortgage Banks",
+        "PermID": "4294951384",
+        "TRBC ID": "5510101012"
+    },
+    {
+        "Name": "Money Center Banks",
+        "PermID": "4294951383",
+        "TRBC ID": "5510101013"
+    },
+    {
+        "Name": "Private Banks",
+        "PermID": "4294951382",
+        "TRBC ID": "5510101014"
+    },
+    {
+        "Name": "Islamic Banks",
+        "PermID": "4294951381",
+        "TRBC ID": "5510101015"
+    },
+    {
+        "Name": "Consumer Lending",
+        "PermID": "4294952872",
+        "TRBC ID": "55101030"
+    },
+    {
+        "Name": "Consumer Lending (NEC)",
+        "PermID": "4294951380",
+        "TRBC ID": "5510103010"
+    },
+    {
+        "Name": "Personal & Car Loans",
+        "PermID": "4294951379",
+        "TRBC ID": "5510103011"
+    },
+    {
+        "Name": "Consumer Credit Cards Services",
+        "PermID": "4294951378",
+        "TRBC ID": "5510103012"
+    },
+    {
+        "Name": "Consumer Leasing",
+        "PermID": "4294951377",
+        "TRBC ID": "5510103013"
+    },
+    {
+        "Name": "Credit Unions",
+        "PermID": "4294951376",
+        "TRBC ID": "5510103014"
+    },
+    {
+        "Name": "Microfinancing",
+        "PermID": "4294951375",
+        "TRBC ID": "5510103015"
+    },
+    {
+        "Name": "Corporate Financial Services",
+        "PermID": "4294952870",
+        "TRBC ID": "55101050"
+    },
+    {
+        "Name": "Corporate Financial Services (NEC)",
+        "PermID": "4294951374",
+        "TRBC ID": "5510105010"
+    },
+    {
+        "Name": "Commercial Loans",
+        "PermID": "4294951373",
+        "TRBC ID": "5510105011"
+    },
+    {
+        "Name": "Import-Export Banks",
+        "PermID": "4294951372",
+        "TRBC ID": "5510105012"
+    },
+    {
+        "Name": "International Trade Financing",
+        "PermID": "4294951371",
+        "TRBC ID": "5510105013"
+    },
+    {
+        "Name": "Factoring",
+        "PermID": "4294951370",
+        "TRBC ID": "5510105014"
+    },
+    {
+        "Name": "Commercial Leasing",
+        "PermID": "4294951369",
+        "TRBC ID": "5510105015"
+    },
+    {
+        "Name": "Investment Banking & Investment Services",
+        "PermID": "4294952738",
+        "TRBC ID": "551020"
+    },
+    {
+        "Name": "Investment Banking & Brokerage Services",
+        "PermID": "4294952794",
+        "TRBC ID": "55102010"
+    },
+    {
+        "Name": "Investment Banking & Brokerage Services (NEC)",
+        "PermID": "4294951368",
+        "TRBC ID": "5510201010"
+    },
+    {
+        "Name": "Investment Banking",
+        "PermID": "4294951367",
+        "TRBC ID": "5510201011"
+    },
+    {
+        "Name": "Brokerage Services",
+        "PermID": "4294951366",
+        "TRBC ID": "5510201012"
+    },
+    {
+        "Name": "Inter-Dealer Broker",
+        "PermID": "4294951365",
+        "TRBC ID": "5510201013"
+    },
+    {
+        "Name": "Islamic Investment Banking & Brokerage Services",
+        "PermID": "4294951364",
+        "TRBC ID": "5510201014"
+    },
+    {
+        "Name": "Merchant Banks",
+        "PermID": "4294951363",
+        "TRBC ID": "5510201015"
+    },
+    {
+        "Name": "Investment Management & Fund Operators",
+        "PermID": "4294952793",
+        "TRBC ID": "55102020"
+    },
+    {
+        "Name": "Investment Management & Fund Operators (NEC)",
+        "PermID": "4294951362",
+        "TRBC ID": "5510202010"
+    },
+    {
+        "Name": "Investment Management",
+        "PermID": "4294951361",
+        "TRBC ID": "5510202011"
+    },
+    {
+        "Name": "Hedge Funds",
+        "PermID": "4294951360",
+        "TRBC ID": "5510202012"
+    },
+    {
+        "Name": "Collective Investment Fund Operators",
+        "PermID": "4294951359",
+        "TRBC ID": "5510202013"
+    },
+    {
+        "Name": "Wealth Management",
+        "PermID": "4294951358",
+        "TRBC ID": "5510202014"
+    },
+    {
+        "Name": "Venture Capital",
+        "PermID": "4294951357",
+        "TRBC ID": "5510202015"
+    },
+    {
+        "Name": "Private Equity",
+        "PermID": "4294951356",
+        "TRBC ID": "5510202016"
+    },
+    {
+        "Name": "Islamic Investment Management & Fund Operators",
+        "PermID": "4294951355",
+        "TRBC ID": "5510202017"
+    },
+    {
+        "Name": "Diversified Investment Services",
+        "PermID": "4294952792",
+        "TRBC ID": "55102030"
+    },
+    {
+        "Name": "Diversified Investment Services",
+        "PermID": "4294951354",
+        "TRBC ID": "5510203010"
+    },
+    {
+        "Name": "Financial & Commodity Market Operators & Service Providers",
+        "PermID": "4294952790",
+        "TRBC ID": "55102050"
+    },
+    {
+        "Name": "(NEC)",
+        "PermID": "4294951353",
+        "TRBC ID": "5510205010"
+    },
+    {
+        "Name": "Securities & Commodity Exchanges",
+        "PermID": "4294951352",
+        "TRBC ID": "5510205011"
+    },
+    {
+        "Name": "Clearing, Settlement & Custodial Service",
+        "PermID": "4294951351",
+        "TRBC ID": "5510205012"
+    },
+    {
+        "Name": "Insurance",
+        "PermID": "4294952866",
+        "TRBC ID": "5530"
+    },
+    {
+        "Name": "Insurance",
+        "PermID": "4294952865",
+        "TRBC ID": "553010"
+    },
+    {
+        "Name": "Multiline Insurance & Brokers",
+        "PermID": "4294952734",
+        "TRBC ID": "55301010"
+    },
+    {
+        "Name": "Multiline Insurance & Brokers (NEC)",
+        "PermID": "4294951347",
+        "TRBC ID": "5530101010"
+    },
+    {
+        "Name": "Islamic Insurance",
+        "PermID": "4294951346",
+        "TRBC ID": "5530101011"
+    },
+    {
+        "Name": "Insurance Brokers",
+        "PermID": "4294951345",
+        "TRBC ID": "5530101012"
+    },
+    {
+        "Name": "Property & Casualty Insurance",
+        "PermID": "4294952863",
+        "TRBC ID": "55301020"
+    },
+    {
+        "Name": "Property & Casualty Insurance (NEC)",
+        "PermID": "4294951344",
+        "TRBC ID": "5530102010"
+    },
+    {
+        "Name": "Property Insurance",
+        "PermID": "4294951343",
+        "TRBC ID": "5530102011"
+    },
+    {
+        "Name": "Insurance - Automobile",
+        "PermID": "4294951342",
+        "TRBC ID": "5530102012"
+    },
+    {
+        "Name": "Travel Insurance",
+        "PermID": "4294951341",
+        "TRBC ID": "5530102013"
+    },
+    {
+        "Name": "Casualty Insurance",
+        "PermID": "4294951340",
+        "TRBC ID": "5530102014"
+    },
+    {
+        "Name": "Life & Health Insurance",
+        "PermID": "4294952862",
+        "TRBC ID": "55301030"
+    },
+    {
+        "Name": "Life & Health Insurance (NEC)",
+        "PermID": "4294951339",
+        "TRBC ID": "5530103010"
+    },
+    {
+        "Name": "Life Insurance",
+        "PermID": "4294951338",
+        "TRBC ID": "5530103011"
+    },
+    {
+        "Name": "Health Insurance",
+        "PermID": "4294951337",
+        "TRBC ID": "5530103012"
+    },
+    {
+        "Name": "Reinsurance",
+        "PermID": "4294952861",
+        "TRBC ID": "55301050"
+    },
+    {
+        "Name": "Reinsurance (NEC)",
+        "PermID": "4294951336",
+        "TRBC ID": "5530105010"
+    },
+    {
+        "Name": "Life & Health Reinsurance",
+        "PermID": "4294951335",
+        "TRBC ID": "5530105011"
+    },
+    {
+        "Name": "Property & Casualty Reinsurance",
+        "PermID": "4294951334",
+        "TRBC ID": "5530105012"
+    },
+    {
+        "Name": "Collective Investments",
+        "PermID": "4294952732",
+        "TRBC ID": "5550"
+    },
+    {
+        "Name": "Collective Investments",
+        "PermID": "4294952731",
+        "TRBC ID": "555010"
+    },
+    {
+        "Name": "UK Investment Trusts",
+        "PermID": "4294952730",
+        "TRBC ID": "55501010"
+    },
+    {
+        "Name": "UK Investment Trusts",
+        "PermID": "4294951310",
+        "TRBC ID": "5550101010"
+    },
+    {
+        "Name": "Mutual Funds",
+        "PermID": "4294952729",
+        "TRBC ID": "55501020"
+    },
+    {
+        "Name": "Mutual Funds (NEC)",
+        "PermID": "4294951309",
+        "TRBC ID": "5550102010"
+    },
+    {
+        "Name": "Islamic Mutual Funds",
+        "PermID": "4294951308",
+        "TRBC ID": "5550102011"
+    },
+    {
+        "Name": "Closed End Funds",
+        "PermID": "4294952728",
+        "TRBC ID": "55501030"
+    },
+    {
+        "Name": "Closed End Funds",
+        "PermID": "4294951307",
+        "TRBC ID": "5550103010"
+    },
+    {
+        "Name": "Exchange-Traded Funds",
+        "PermID": "4294952727",
+        "TRBC ID": "55501040"
+    },
+    {
+        "Name": "Exchange-Traded Funds (NEC)",
+        "PermID": "4294951306",
+        "TRBC ID": "5550104010"
+    },
+    {
+        "Name": "Islamic ETFs",
+        "PermID": "4294951305",
+        "TRBC ID": "5550104011"
+    },
+    {
+        "Name": "Islamic Commodity ETFs",
+        "PermID": "4294951304",
+        "TRBC ID": "5550104012"
+    },
+    {
+        "Name": "Pension Funds",
+        "PermID": "4294952726",
+        "TRBC ID": "55501050"
+    },
+    {
+        "Name": "Pension Funds",
+        "PermID": "4294951303",
+        "TRBC ID": "5550105010"
+    },
+    {
+        "Name": "Insurance Funds",
+        "PermID": "4294952725",
+        "TRBC ID": "55501060"
+    },
+    {
+        "Name": "Insurance Funds",
+        "PermID": "4294951302",
+        "TRBC ID": "5550106010"
+    },
+    {
+        "Name": "Investment Holding Companies",
+        "PermID": "4294952737",
+        "TRBC ID": "5560"
+    },
+    {
+        "Name": "Investment Holding Companies",
+        "PermID": "4294952736",
+        "TRBC ID": "556010"
+    },
+    {
+        "Name": "Investment Holding Companies",
+        "PermID": "4294952735",
+        "TRBC ID": "55601010"
+    },
+    {
+        "Name": "Investment Holding Companies (NEC)",
+        "PermID": "4294951349",
+        "TRBC ID": "5560101010"
+    },
+    {
+        "Name": "Shell Companies",
+        "PermID": "4294951348",
+        "TRBC ID": "5560101011"
+    },
+    {
+        "Name": "Healthcare",
+        "PermID": "4294952853",
+        "TRBC ID": "56"
+    },
+    {
+        "Name": "Healthcare Services & Equipment",
+        "PermID": "4294952852",
+        "TRBC ID": "5610"
+    },
+    {
+        "Name": "Healthcare Equipment & Supplies",
+        "PermID": "4294952851",
+        "TRBC ID": "561010"
+    },
+    {
+        "Name": "Advanced Medical Equipment & Technology",
+        "PermID": "4294952850",
+        "TRBC ID": "56101010"
+    },
+    {
+        "Name": "Advanced Medical Equipment & Technology (NEC)",
+        "PermID": "4294951301",
+        "TRBC ID": "5610101010"
+    },
+    {
+        "Name": "Medical Diagnostic & Testing Equipment",
+        "PermID": "4294951300",
+        "TRBC ID": "5610101011"
+    },
+    {
+        "Name": "Medical Monitoring Systems",
+        "PermID": "4294951299",
+        "TRBC ID": "5610101012"
+    },
+    {
+        "Name": "Laser Equipment",
+        "PermID": "4294951298",
+        "TRBC ID": "5610101013"
+    },
+    {
+        "Name": "Medical Imaging Systems",
+        "PermID": "4294951297",
+        "TRBC ID": "5610101014"
+    },
+    {
+        "Name": "Medical Software & Technology Services",
+        "PermID": "4294951296",
+        "TRBC ID": "5610101015"
+    },
+    {
+        "Name": "Advanced Medical Equipment Wholesale",
+        "PermID": "4294951295",
+        "TRBC ID": "5610101016"
+    },
+    {
+        "Name": "Medical Equipment, Supplies & Distribution",
+        "PermID": "4294952849",
+        "TRBC ID": "56101020"
+    },
+    {
+        "Name": "Medical Equipment, Supplies & Distribution (NEC)",
+        "PermID": "4294951294",
+        "TRBC ID": "5610102010"
+    },
+    {
+        "Name": "Medical Supplies",
+        "PermID": "4294951293",
+        "TRBC ID": "5610102011"
+    },
+    {
+        "Name": "Medical Prosthetics",
+        "PermID": "4294951292",
+        "TRBC ID": "5610102012"
+    },
+    {
+        "Name": "Medical Equipment",
+        "PermID": "4294951291",
+        "TRBC ID": "5610102013"
+    },
+    {
+        "Name": "Medical Devices & Implants",
+        "PermID": "4294951290",
+        "TRBC ID": "5610102014"
+    },
+    {
+        "Name": "Medical Equipment Wholesale",
+        "PermID": "4294951289",
+        "TRBC ID": "5610102015"
+    },
+    {
+        "Name": "Glasses, Spectacles & Contact Lenses",
+        "PermID": "4294951288",
+        "TRBC ID": "5610102016"
+    },
+    {
+        "Name": "Laboratory Diagnostic & Testing Substances",
+        "PermID": "4294951287",
+        "TRBC ID": "5610102017"
+    },
+    {
+        "Name": "Veterinary Medical Equipment & Supplies",
+        "PermID": "4294951286",
+        "TRBC ID": "5610102018"
+    },
+    {
+        "Name": "Drug Delivery Systems",
+        "PermID": "4294951285",
+        "TRBC ID": "5610102019"
+    },
+    {
+        "Name": "Healthcare Providers & Services",
+        "PermID": "4294952848",
+        "TRBC ID": "561020"
+    },
+    {
+        "Name": "Healthcare Facilities & Services",
+        "PermID": "4294952847",
+        "TRBC ID": "56102010"
+    },
+    {
+        "Name": "Healthcare Facilities & Services (NEC)",
+        "PermID": "4294951284",
+        "TRBC ID": "5610201010"
+    },
+    {
+        "Name": "Hospitals, Clinics & Primary Care Services",
+        "PermID": "4294951283",
+        "TRBC ID": "5610201011"
+    },
+    {
+        "Name": "Residential & Long-Term Care",
+        "PermID": "4294951282",
+        "TRBC ID": "5610201012"
+    },
+    {
+        "Name": "Ambulance & Emergency Services",
+        "PermID": "4294951281",
+        "TRBC ID": "5610201013"
+    },
+    {
+        "Name": "Doctor's Office",
+        "PermID": "4294951280",
+        "TRBC ID": "5610201014"
+    },
+    {
+        "Name": "Medical & Diagnostic Laboratories",
+        "PermID": "4294951279",
+        "TRBC ID": "5610201015"
+    },
+    {
+        "Name": "Veterinary Services",
+        "PermID": "4294951278",
+        "TRBC ID": "5610201016"
+    },
+    {
+        "Name": "Telemedicine Services",
+        "PermID": "4294951277",
+        "TRBC ID": "5610201017"
+    },
+    {
+        "Name": "Home Healthcare Services",
+        "PermID": "4294951276",
+        "TRBC ID": "5610201018"
+    },
+    {
+        "Name": "Alternative Medicine Facilities",
+        "PermID": "4294951275",
+        "TRBC ID": "5610201019"
+    },
+    {
+        "Name": "Medical Farming",
+        "PermID": "1004365417",
+        "TRBC ID": "5610201020"
+    },
+    {
+        "Name": "Managed Healthcare",
+        "PermID": "4294952846",
+        "TRBC ID": "56102020"
+    },
+    {
+        "Name": "Managed Healthcare (NEC)",
+        "PermID": "4294951274",
+        "TRBC ID": "5610202010"
+    },
+    {
+        "Name": "HMO Medical Centers",
+        "PermID": "4294951273",
+        "TRBC ID": "5610202011"
+    },
+    {
+        "Name": "Pharmaceuticals & Medical Research",
+        "PermID": "4294952845",
+        "TRBC ID": "5620"
+    },
+    {
+        "Name": "Pharmaceuticals",
+        "PermID": "4294952844",
+        "TRBC ID": "562010"
+    },
+    {
+        "Name": "Pharmaceuticals",
+        "PermID": "4294952724",
+        "TRBC ID": "56201040"
+    },
+    {
+        "Name": "Pharmaceuticals (NEC)",
+        "PermID": "4294951272",
+        "TRBC ID": "5620104010"
+    },
+    {
+        "Name": "Proprietary & Advanced Pharmaceuticals",
+        "PermID": "4294951271",
+        "TRBC ID": "5620104011"
+    },
+    {
+        "Name": "Biopharmaceuticals",
+        "PermID": "4294951270",
+        "TRBC ID": "5620104012"
+    },
+    {
+        "Name": "In-Vivo Diagnostic & Testing Substances",
+        "PermID": "4294951269",
+        "TRBC ID": "5620104013"
+    },
+    {
+        "Name": "Veterinary Drugs",
+        "PermID": "4294951268",
+        "TRBC ID": "5620104014"
+    },
+    {
+        "Name": "Generic Pharmaceuticals",
+        "PermID": "4294951267",
+        "TRBC ID": "5620104015"
+    },
+    {
+        "Name": "Alternative Medicine",
+        "PermID": "4294951266",
+        "TRBC ID": "5620104016"
+    },
+    {
+        "Name": "Recreational Pharmaceuticals",
+        "PermID": "1004365423",
+        "TRBC ID": "5620104017"
+    },
+    {
+        "Name": "Pharmaceuticals Wholesale",
+        "PermID": "1004365420",
+        "TRBC ID": "5620104018"
+    },
+    {
+        "Name": "Biotechnology & Medical Research",
+        "PermID": "4294952783",
+        "TRBC ID": "562020"
+    },
+    {
+        "Name": "Biotechnology & Medical Research",
+        "PermID": "4294952842",
+        "TRBC ID": "56202010"
+    },
+    {
+        "Name": "Biotechnology & Medical Research (NEC)",
+        "PermID": "4294951265",
+        "TRBC ID": "5620201010"
+    },
+    {
+        "Name": "Bio Therapeutic Drugs",
+        "PermID": "4294951264",
+        "TRBC ID": "5620201011"
+    },
+    {
+        "Name": "Bio Diagnostics & Testing",
+        "PermID": "4294951263",
+        "TRBC ID": "5620201012"
+    },
+    {
+        "Name": "Bio Medical Devices",
+        "PermID": "4294951262",
+        "TRBC ID": "5620201013"
+    },
+    {
+        "Name": "Technology",
+        "PermID": "4294952723",
+        "TRBC ID": "57"
+    },
+    {
+        "Name": "Technology Equipment",
+        "PermID": "4294952722",
+        "TRBC ID": "5710"
+    },
+    {
+        "Name": "Semiconductors & Semiconductor Equipment",
+        "PermID": "4294952838",
+        "TRBC ID": "571010"
+    },
+    {
+        "Name": "Semiconductors",
+        "PermID": "4294952837",
+        "TRBC ID": "57101010"
+    },
+    {
+        "Name": "Semiconductors (NEC)",
+        "PermID": "4294951261",
+        "TRBC ID": "5710101010"
+    },
+    {
+        "Name": "Integrated Circuits",
+        "PermID": "4294951260",
+        "TRBC ID": "5710101011"
+    },
+    {
+        "Name": "Memory Chips (RAM)",
+        "PermID": "4294951259",
+        "TRBC ID": "5710101012"
+    },
+    {
+        "Name": "Processors",
+        "PermID": "4294951258",
+        "TRBC ID": "5710101013"
+    },
+    {
+        "Name": "Semiconductor Wholesale",
+        "PermID": "4294951257",
+        "TRBC ID": "5710101014"
+    },
+    {
+        "Name": "NFC & RFID Systems",
+        "PermID": "4294951256",
+        "TRBC ID": "5710101015"
+    },
+    {
+        "Name": "Semiconductor Equipment & Testing",
+        "PermID": "4294952836",
+        "TRBC ID": "57101020"
+    },
+    {
+        "Name": "Semiconductor Equipment & Testing (NEC)",
+        "PermID": "4294951255",
+        "TRBC ID": "5710102010"
+    },
+    {
+        "Name": "Semiconductor Machinery Manufacturing",
+        "PermID": "4294951254",
+        "TRBC ID": "5710102011"
+    },
+    {
+        "Name": "Semiconductor Testing Equipment & Service",
+        "PermID": "4294951253",
+        "TRBC ID": "5710102012"
+    },
+    {
+        "Name": "Semiconductor Equipment Wholesale",
+        "PermID": "4294951252",
+        "TRBC ID": "5710102013"
+    },
+    {
+        "Name": "Communications & Networking",
+        "PermID": "4294952721",
+        "TRBC ID": "571020"
+    },
+    {
+        "Name": "Communications & Networking",
+        "PermID": "4294952720",
+        "TRBC ID": "57102010"
+    },
+    {
+        "Name": "Communications & Networking (NEC)",
+        "PermID": "4294951251",
+        "TRBC ID": "5710201010"
+    },
+    {
+        "Name": "Network Equipment",
+        "PermID": "4294951250",
+        "TRBC ID": "5710201011"
+    },
+    {
+        "Name": "Security & Surveillance",
+        "PermID": "4294951249",
+        "TRBC ID": "5710201012"
+    },
+    {
+        "Name": "Conferencing Tools & Systems",
+        "PermID": "4294951248",
+        "TRBC ID": "5710201013"
+    },
+    {
+        "Name": "VOIP Equipment & Systems",
+        "PermID": "4294951247",
+        "TRBC ID": "5710201014"
+    },
+    {
+        "Name": "Broadcasting Equipment",
+        "PermID": "4294951246",
+        "TRBC ID": "5710201015"
+    },
+    {
+        "Name": "Satellite Communications Network",
+        "PermID": "4294951245",
+        "TRBC ID": "5710201016"
+    },
+    {
+        "Name": "Fiber Optic Cable Manufacturing",
+        "PermID": "4294951244",
+        "TRBC ID": "5710201017"
+    },
+    {
+        "Name": "Electronic Equipment & Parts",
+        "PermID": "4294952713",
+        "TRBC ID": "571040"
+    },
+    {
+        "Name": "Electronic Equipment & Parts",
+        "PermID": "4294952712",
+        "TRBC ID": "57104010"
+    },
+    {
+        "Name": "Electronic Equipment & Parts (NEC)",
+        "PermID": "4294951216",
+        "TRBC ID": "5710401010"
+    },
+    {
+        "Name": "Biometric Products",
+        "PermID": "4294951215",
+        "TRBC ID": "5710401011"
+    },
+    {
+        "Name": "Advanced Electronic Equipment",
+        "PermID": "4294951214",
+        "TRBC ID": "5710401012"
+    },
+    {
+        "Name": "Display Screens",
+        "PermID": "4294951213",
+        "TRBC ID": "5710401013"
+    },
+    {
+        "Name": "Electronic Components",
+        "PermID": "4294951212",
+        "TRBC ID": "5710401014"
+    },
+    {
+        "Name": "3D Printers",
+        "PermID": "1004365450",
+        "TRBC ID": "5710401015"
+    },
+    {
+        "Name": "Office Equipment",
+        "PermID": "4294952715",
+        "TRBC ID": "571050"
+    },
+    {
+        "Name": "Office Equipment",
+        "PermID": "4294952831",
+        "TRBC ID": "57105010"
+    },
+    {
+        "Name": "Office Equipment (NEC)",
+        "PermID": "4294951222",
+        "TRBC ID": "5710501010"
+    },
+    {
+        "Name": "Commercial Document Management",
+        "PermID": "4294951221",
+        "TRBC ID": "5710501011"
+    },
+    {
+        "Name": "Office Technology Equipment",
+        "PermID": "4294951220",
+        "TRBC ID": "5710501012"
+    },
+    {
+        "Name": "Point of Sale Systems",
+        "PermID": "4294951219",
+        "TRBC ID": "5710501013"
+    },
+    {
+        "Name": "Scientific & Precision Equipment",
+        "PermID": "4294951218",
+        "TRBC ID": "5710501014"
+    },
+    {
+        "Name": "Office Equipment Wholesale",
+        "PermID": "4294951217",
+        "TRBC ID": "5710501015"
+    },
+    {
+        "Name": "Computers, Phones & Household Electronics",
+        "PermID": "4294952719",
+        "TRBC ID": "571060"
+    },
+    {
+        "Name": "Computer Hardware",
+        "PermID": "4294952832",
+        "TRBC ID": "57106010"
+    },
+    {
+        "Name": "Computer Hardware (NEC)",
+        "PermID": "4294951243",
+        "TRBC ID": "5710601010"
+    },
+    {
+        "Name": "Scientific & Super Computers",
+        "PermID": "4294951242",
+        "TRBC ID": "5710601011"
+    },
+    {
+        "Name": "Laptop & Desktop Computers",
+        "PermID": "4294951241",
+        "TRBC ID": "5710601012"
+    },
+    {
+        "Name": "Tablet & Netbook Computers",
+        "PermID": "4294951240",
+        "TRBC ID": "5710601013"
+    },
+    {
+        "Name": "Input Devices",
+        "PermID": "4294951239",
+        "TRBC ID": "5710601014"
+    },
+    {
+        "Name": "Output Devices",
+        "PermID": "4294951238",
+        "TRBC ID": "5710601015"
+    },
+    {
+        "Name": "Servers & Systems",
+        "PermID": "4294951237",
+        "TRBC ID": "5710601016"
+    },
+    {
+        "Name": "Storage Devices",
+        "PermID": "4294951236",
+        "TRBC ID": "5710601017"
+    },
+    {
+        "Name": "Computer Hardware Component Assembly",
+        "PermID": "4294951235",
+        "TRBC ID": "5710601018"
+    },
+    {
+        "Name": "Consumer Document Management",
+        "PermID": "4294951234",
+        "TRBC ID": "5710601019"
+    },
+    {
+        "Name": "Phones & Handheld Devices",
+        "PermID": "4294952717",
+        "TRBC ID": "57106020"
+    },
+    {
+        "Name": "Phones & Handheld Devices (NEC)",
+        "PermID": "4294951233",
+        "TRBC ID": "5710602010"
+    },
+    {
+        "Name": "Phones & Smart Phones",
+        "PermID": "4294951232",
+        "TRBC ID": "5710602011"
+    },
+    {
+        "Name": "Portable Satellite Navigation",
+        "PermID": "4294951231",
+        "TRBC ID": "5710602012"
+    },
+    {
+        "Name": "Personal Music Players",
+        "PermID": "4294951230",
+        "TRBC ID": "5710602013"
+    },
+    {
+        "Name": "Electronic Books",
+        "PermID": "4294951229",
+        "TRBC ID": "5710602014"
+    },
+    {
+        "Name": "Mobile Device Component Assembly",
+        "PermID": "4294951228",
+        "TRBC ID": "5710602015"
+    },
+    {
+        "Name": "Household Electronics",
+        "PermID": "4294952716",
+        "TRBC ID": "57106030"
+    },
+    {
+        "Name": "Household Electronics (NEC)",
+        "PermID": "4294951227",
+        "TRBC ID": "5710603010"
+    },
+    {
+        "Name": "Photographic Equipment",
+        "PermID": "4294951226",
+        "TRBC ID": "5710603011"
+    },
+    {
+        "Name": "TV & Video",
+        "PermID": "4294951225",
+        "TRBC ID": "5710603012"
+    },
+    {
+        "Name": "Home Audio",
+        "PermID": "4294951224",
+        "TRBC ID": "5710603013"
+    },
+    {
+        "Name": "Consumer Electronic Wholesale",
+        "PermID": "4294951223",
+        "TRBC ID": "5710603014"
+    },
+    {
+        "Name": "Integrated Hardware & Software",
+        "PermID": "1004365453",
+        "TRBC ID": "571070"
+    },
+    {
+        "Name": "Integrated Hardware & Software",
+        "PermID": "1004365456",
+        "TRBC ID": "57107010"
+    },
+    {
+        "Name": "Integrated Hardware & Software",
+        "PermID": "1004365459",
+        "TRBC ID": "5710701010"
+    },
+    {
+        "Name": "Software & IT Services",
+        "PermID": "4294952830",
+        "TRBC ID": "5720"
+    },
+    {
+        "Name": "Software & IT Services",
+        "PermID": "4294952829",
+        "TRBC ID": "572010"
+    },
+    {
+        "Name": "IT Services & Consulting",
+        "PermID": "4294952711",
+        "TRBC ID": "57201010"
+    },
+    {
+        "Name": "IT Services & Consulting (NEC)",
+        "PermID": "4294951211",
+        "TRBC ID": "5720101010"
+    },
+    {
+        "Name": "Computer Programming",
+        "PermID": "4294951210",
+        "TRBC ID": "5720101011"
+    },
+    {
+        "Name": "Computer Training",
+        "PermID": "4294951209",
+        "TRBC ID": "5720101012"
+    },
+    {
+        "Name": "Technology Consulting & Outsourcing Services",
+        "PermID": "4294951208",
+        "TRBC ID": "5720101013"
+    },
+    {
+        "Name": "IT Testing Services",
+        "PermID": "4294951207",
+        "TRBC ID": "5720101014"
+    },
+    {
+        "Name": "Cloud Computing Services",
+        "PermID": "4294951206",
+        "TRBC ID": "5720101015"
+    },
+    {
+        "Name": "Machine Learning & Artificial Intelligence (AI) Services",
+        "PermID": "1004365444",
+        "TRBC ID": "5720101016"
+    },
+    {
+        "Name": "Software",
+        "PermID": "4294952827",
+        "TRBC ID": "57201020"
+    },
+    {
+        "Name": "Software (NEC)",
+        "PermID": "4294951205",
+        "TRBC ID": "5720102010"
+    },
+    {
+        "Name": "System Software",
+        "PermID": "4294951204",
+        "TRBC ID": "5720102011"
+    },
+    {
+        "Name": "Application Software",
+        "PermID": "4294951203",
+        "TRBC ID": "5720102012"
+    },
+    {
+        "Name": "Enterprise Software",
+        "PermID": "4294951202",
+        "TRBC ID": "5720102013"
+    },
+    {
+        "Name": "Mobile Application Software",
+        "PermID": "4294951201",
+        "TRBC ID": "5720102014"
+    },
+    {
+        "Name": "Mobile System Software",
+        "PermID": "4294951200",
+        "TRBC ID": "5720102015"
+    },
+    {
+        "Name": "Programming Software & Testing Tools",
+        "PermID": "4294951199",
+        "TRBC ID": "5720102016"
+    },
+    {
+        "Name": "Server & Database Software",
+        "PermID": "4294951198",
+        "TRBC ID": "5720102017"
+    },
+    {
+        "Name": "Security Software",
+        "PermID": "1004365447",
+        "TRBC ID": "5720102018"
+    },
+    {
+        "Name": "Online Services",
+        "PermID": "4294952710",
+        "TRBC ID": "57201030"
+    },
+    {
+        "Name": "Online Services (NEC)",
+        "PermID": "4294951197",
+        "TRBC ID": "5720103010"
+    },
+    {
+        "Name": "Search Engines",
+        "PermID": "4294951196",
+        "TRBC ID": "5720103011"
+    },
+    {
+        "Name": "Social Media & Networking",
+        "PermID": "4294951195",
+        "TRBC ID": "5720103012"
+    },
+    {
+        "Name": "E-commerce & Auction Services",
+        "PermID": "4294951194",
+        "TRBC ID": "5720103013"
+    },
+    {
+        "Name": "Content & Site Management Services",
+        "PermID": "4294951193",
+        "TRBC ID": "5720103014"
+    },
+    {
+        "Name": "Internet Security & Transactions Services",
+        "PermID": "4294951192",
+        "TRBC ID": "5720103015"
+    },
+    {
+        "Name": "Internet Gaming",
+        "PermID": "4294951191",
+        "TRBC ID": "5720103016"
+    },
+    {
+        "Name": "Financial Technology (Fintech) & Infrastructure",
+        "PermID": "1004365357",
+        "TRBC ID": "5730"
+    },
+    {
+        "Name": "Financial Technology (Fintech) & Infrastructure",
+        "PermID": "1004365360",
+        "TRBC ID": "573010"
+    },
+    {
+        "Name": "Financial Technology (Fintech)",
+        "PermID": "1004365363",
+        "TRBC ID": "57301010"
+    },
+    {
+        "Name": "Financial Technology (Fintech) (NEC)",
+        "PermID": "4294951350",
+        "TRBC ID": "5730101010"
+    },
+    {
+        "Name": "Business to Business",
+        "PermID": "1004365366",
+        "TRBC ID": "5730101020"
+    },
+    {
+        "Name": "Business to Consumer",
+        "PermID": "1004365369",
+        "TRBC ID": "5730101030"
+    },
+    {
+        "Name": "Consumer to Consumer",
+        "PermID": "1004365372",
+        "TRBC ID": "5730101040"
+    },
+    {
+        "Name": "Crowd Collaboration",
+        "PermID": "1004365378",
+        "TRBC ID": "57301020"
+    },
+    {
+        "Name": "Crowd Collaboration (NEC)",
+        "PermID": "1004365381",
+        "TRBC ID": "5730102010"
+    },
+    {
+        "Name": "Crowdfinancing & Crowdfunding",
+        "PermID": "1004365384",
+        "TRBC ID": "5730102020"
+    },
+    {
+        "Name": "Crowdsourcing Platforms",
+        "PermID": "1004365387",
+        "TRBC ID": "5730102030"
+    },
+    {
+        "Name": "Blockchain & Cryptocurrency",
+        "PermID": "1004365390",
+        "TRBC ID": "57301030"
+    },
+    {
+        "Name": "Blockchain & Cryptocurrency (NEC)",
+        "PermID": "1004365393",
+        "TRBC ID": "5730103010"
+    },
+    {
+        "Name": "Cryptocurrency Trading Platforms (Exchanges)",
+        "PermID": "1004365396",
+        "TRBC ID": "5730103020"
+    },
+    {
+        "Name": "Blockchain Technology (Software)",
+        "PermID": "1004365399",
+        "TRBC ID": "5730103030"
+    },
+    {
+        "Name": "Cryptocurrency Hardware",
+        "PermID": "1004365402",
+        "TRBC ID": "5730103040"
+    },
+    {
+        "Name": "Cryptocurrency Mining",
+        "PermID": "1004365405",
+        "TRBC ID": "5730103050"
+    },
+    {
+        "Name": "Miscellaneous Fintech Infrastructure",
+        "PermID": "1004365411",
+        "TRBC ID": "57301090"
+    },
+    {
+        "Name": "Miscellaneous Fintech Infrastructure",
+        "PermID": "1004365414",
+        "TRBC ID": "5730109010"
+    },
+    {
+        "Name": "Telecommunications Services",
+        "PermID": "4294952825",
+        "TRBC ID": "5740"
+    },
+    {
+        "Name": "Telecommunications Services",
+        "PermID": "4294952824",
+        "TRBC ID": "574010"
+    },
+    {
+        "Name": "Integrated Telecommunications Services",
+        "PermID": "4294952823",
+        "TRBC ID": "57401010"
+    },
+    {
+        "Name": "Integrated Telecommunications Services (NEC)",
+        "PermID": "4294951190",
+        "TRBC ID": "5740101010"
+    },
+    {
+        "Name": "Wired Telecommunications Carriers",
+        "PermID": "4294951189",
+        "TRBC ID": "5740101020"
+    },
+    {
+        "Name": "Telecommunications Resellers",
+        "PermID": "4294951188",
+        "TRBC ID": "5740101030"
+    },
+    {
+        "Name": "Internet Service Providers",
+        "PermID": "4294951187",
+        "TRBC ID": "5740101040"
+    },
+    {
+        "Name": "Telecommunications Network Infrastructure",
+        "PermID": "4294951186",
+        "TRBC ID": "5740101050"
+    },
+    {
+        "Name": "VOIP Services",
+        "PermID": "4294951185",
+        "TRBC ID": "5740101060"
+    },
+    {
+        "Name": "Wireless Telecommunications Services",
+        "PermID": "4294952822",
+        "TRBC ID": "57401020"
+    },
+    {
+        "Name": "Wireless Telecommunications Services (NEC)",
+        "PermID": "4294951184",
+        "TRBC ID": "5740102010"
+    },
+    {
+        "Name": "Alternative Communications Services",
+        "PermID": "4294951183",
+        "TRBC ID": "5740102020"
+    },
+    {
+        "Name": "Satellite Service Operators",
+        "PermID": "4294951182",
+        "TRBC ID": "5740102030"
+    },
+    {
+        "Name": "Wi-Fi & Wi-Max Providers",
+        "PermID": "4294951181",
+        "TRBC ID": "5740102040"
+    },
+    {
+        "Name": "Wireless Telecoms Service Providers",
+        "PermID": "4294951180",
+        "TRBC ID": "5740102050"
+    },
+    {
+        "Name": "Utilities",
+        "PermID": "4294952821",
+        "TRBC ID": "59"
+    },
+    {
+        "Name": "Utilities",
+        "PermID": "4294952820",
+        "TRBC ID": "5910"
+    },
+    {
+        "Name": "Electric Utilities & IPPs",
+        "PermID": "4294952819",
+        "TRBC ID": "591010"
+    },
+    {
+        "Name": "Electric Utilities",
+        "PermID": "4294952818",
+        "TRBC ID": "59101010"
+    },
+    {
+        "Name": "Electric Utilities (NEC)",
+        "PermID": "4294951179",
+        "TRBC ID": "5910101010"
+    },
+    {
+        "Name": "Fossil Fuel Electric Utilities",
+        "PermID": "4294951177",
+        "TRBC ID": "5910101012"
+    },
+    {
+        "Name": "Nuclear Utilities",
+        "PermID": "4294951176",
+        "TRBC ID": "5910101013"
+    },
+    {
+        "Name": "Power Charging Stations",
+        "PermID": "1004365462",
+        "TRBC ID": "5910101014"
+    },
+    {
+        "Name": "Alternative Electric Utilities",
+        "PermID": "1004365465",
+        "TRBC ID": "5910101020"
+    },
+    {
+        "Name": "Hydroelectric & Tidal Utilities",
+        "PermID": "1004365477",
+        "TRBC ID": "5910101021"
+    },
+    {
+        "Name": "Solar Electric Utilities",
+        "PermID": "1004365480",
+        "TRBC ID": "5910101022"
+    },
+    {
+        "Name": "Wind Electric Utilities",
+        "PermID": "1004365483",
+        "TRBC ID": "5910101023"
+    },
+    {
+        "Name": "Biomass & Waste to Energy Electric Utilities",
+        "PermID": "1004365468",
+        "TRBC ID": "5910101024"
+    },
+    {
+        "Name": "Geothermal Electric Utilities",
+        "PermID": "1004365471",
+        "TRBC ID": "5910101025"
+    },
+    {
+        "Name": "Independent Power Producers",
+        "PermID": "4294952709",
+        "TRBC ID": "59101020"
+    },
+    {
+        "Name": "Independent Power Producers (NEC)",
+        "PermID": "4294951175",
+        "TRBC ID": "5910102010"
+    },
+    {
+        "Name": "Fossil Fuel IPPs",
+        "PermID": "4294951174",
+        "TRBC ID": "5910102011"
+    },
+    {
+        "Name": "Renewable IPPs",
+        "PermID": "4294951173",
+        "TRBC ID": "5910102012"
+    },
+    {
+        "Name": "Nuclear IPPs",
+        "PermID": "4294951172",
+        "TRBC ID": "5910102013"
+    },
+    {
+        "Name": "Natural Gas Utilities",
+        "PermID": "4294952817",
+        "TRBC ID": "591020"
+    },
+    {
+        "Name": "Natural Gas Utilities",
+        "PermID": "4294952816",
+        "TRBC ID": "59102010"
+    },
+    {
+        "Name": "Natural Gas Utilities (NEC)",
+        "PermID": "4294951171",
+        "TRBC ID": "5910201010"
+    },
+    {
+        "Name": "Natural Gas Distribution",
+        "PermID": "4294951170",
+        "TRBC ID": "5910201011"
+    },
+    {
+        "Name": "Water & Related Utilities",
+        "PermID": "4294952815",
+        "TRBC ID": "591030"
+    },
+    {
+        "Name": "Water & Related Utilities",
+        "PermID": "4294952814",
+        "TRBC ID": "59103010"
+    },
+    {
+        "Name": "Water & Related Utilities (NEC)",
+        "PermID": "4294951169",
+        "TRBC ID": "5910301010"
+    },
+    {
+        "Name": "Water Supply & Irrigation Systems",
+        "PermID": "4294951168",
+        "TRBC ID": "5910301011"
+    },
+    {
+        "Name": "Sewage Treatment Facilities",
+        "PermID": "4294951167",
+        "TRBC ID": "5910301012"
+    },
+    {
+        "Name": "Heating & Air-Conditioning Supply",
+        "PermID": "4294951166",
+        "TRBC ID": "5910301013"
+    },
+    {
+        "Name": "Multiline Utilities",
+        "PermID": "4294952813",
+        "TRBC ID": "591040"
+    },
+    {
+        "Name": "Multiline Utilities",
+        "PermID": "4294952812",
+        "TRBC ID": "59104010"
+    },
+    {
+        "Name": "Multiline Utilities",
+        "PermID": "4294951165",
+        "TRBC ID": "5910401010"
+    },
+    {
+        "Name": "Real Estate",
+        "PermID": "1004365438",
+        "TRBC ID": "60"
+    },
+    {
+        "Name": "Real Estate",
+        "PermID": "4294952860",
+        "TRBC ID": "6010"
+    },
+    {
+        "Name": "Real Estate Operations",
+        "PermID": "4294952858",
+        "TRBC ID": "601010"
+    },
+    {
+        "Name": "Real Estate Rental, Development & Operations",
+        "PermID": "4294952788",
+        "TRBC ID": "60101010"
+    },
+    {
+        "Name": "Real Estate Rental, Development & Operations (NEC)",
+        "PermID": "4294951333",
+        "TRBC ID": "6010101010"
+    },
+    {
+        "Name": "Office Real Estate Rental & Development",
+        "PermID": "4294951332",
+        "TRBC ID": "6010101020"
+    },
+    {
+        "Name": "Retail Real Estate Rental & Development",
+        "PermID": "4294951331",
+        "TRBC ID": "6010101030"
+    },
+    {
+        "Name": "Industrial Real Estate Rental & Development",
+        "PermID": "4294951330",
+        "TRBC ID": "6010101040"
+    },
+    {
+        "Name": "Residential Real Estate Rental & Development",
+        "PermID": "4294951329",
+        "TRBC ID": "6010101050"
+    },
+    {
+        "Name": "Real Estate Services",
+        "PermID": "4294952787",
+        "TRBC ID": "60101020"
+    },
+    {
+        "Name": "Real Estate Services (NEC)",
+        "PermID": "4294951328",
+        "TRBC ID": "6010102010"
+    },
+    {
+        "Name": "Office Real Estate Services",
+        "PermID": "4294951327",
+        "TRBC ID": "6010102020"
+    },
+    {
+        "Name": "Retail Real Estate Services",
+        "PermID": "4294951326",
+        "TRBC ID": "6010102030"
+    },
+    {
+        "Name": "Industrial Real Estate Services",
+        "PermID": "4294951325",
+        "TRBC ID": "6010102040"
+    },
+    {
+        "Name": "Residential Real Estate Services",
+        "PermID": "4294951324",
+        "TRBC ID": "6010102050"
+    },
+    {
+        "Name": "Residential & Commercial REITs",
+        "PermID": "4294952857",
+        "TRBC ID": "601020"
+    },
+    {
+        "Name": "Diversified REITs",
+        "PermID": "4294952786",
+        "TRBC ID": "60102010"
+    },
+    {
+        "Name": "Diversified REITs",
+        "PermID": "4294951323",
+        "TRBC ID": "6010201010"
+    },
+    {
+        "Name": "Commercial REITs",
+        "PermID": "4294952785",
+        "TRBC ID": "60102020"
+    },
+    {
+        "Name": "Commercial REITs (NEC)",
+        "PermID": "4294951322",
+        "TRBC ID": "6010202010"
+    },
+    {
+        "Name": "Office REITs",
+        "PermID": "4294951321",
+        "TRBC ID": "6010202020"
+    },
+    {
+        "Name": "Retail REITs",
+        "PermID": "4294951320",
+        "TRBC ID": "6010202030"
+    },
+    {
+        "Name": "Industrial REITs",
+        "PermID": "4294951319",
+        "TRBC ID": "6010202040"
+    },
+    {
+        "Name": "Residential REITs",
+        "PermID": "4294952784",
+        "TRBC ID": "60102030"
+    },
+    {
+        "Name": "Residential REITs",
+        "PermID": "4294951318",
+        "TRBC ID": "6010203010"
+    },
+    {
+        "Name": "Specialized REITs",
+        "PermID": "4294952733",
+        "TRBC ID": "60102040"
+    },
+    {
+        "Name": "Specialized REITs (NEC)",
+        "PermID": "4294951317",
+        "TRBC ID": "6010204010"
+    },
+    {
+        "Name": "Healthcare REITs",
+        "PermID": "4294951316",
+        "TRBC ID": "6010204020"
+    },
+    {
+        "Name": "Hospitality REITs",
+        "PermID": "4294951315",
+        "TRBC ID": "6010204030"
+    },
+    {
+        "Name": "Self-Storage REITs",
+        "PermID": "4294951314",
+        "TRBC ID": "6010204040"
+    },
+    {
+        "Name": "Timber REITs",
+        "PermID": "4294951313",
+        "TRBC ID": "6010204050"
+    },
+    {
+        "Name": "Mortgage REITs",
+        "PermID": "4294951312",
+        "TRBC ID": "6010204060"
+    },
+    {
+        "Name": "Islamic REITs",
+        "PermID": "4294951311",
+        "TRBC ID": "6010204070"
+    },
+    {
+        "Name": "Institutions, Associations & Organizations",
+        "PermID": "1004365486",
+        "TRBC ID": "61"
+    },
+    {
+        "Name": "Institutions, Associations & Organizations",
+        "PermID": "1004365489",
+        "TRBC ID": "6110"
+    },
+    {
+        "Name": "Institutions, Associations & Organizations",
+        "PermID": "1004365492",
+        "TRBC ID": "611010"
+    },
+    {
+        "Name": "Religious Organizations",
+        "PermID": "1004365495",
+        "TRBC ID": "61101010"
+    },
+    {
+        "Name": "Religious Organizations",
+        "PermID": "1004365498",
+        "TRBC ID": "6110101010"
+    },
+    {
+        "Name": "Civic & Social Organizations",
+        "PermID": "1004365501",
+        "TRBC ID": "61101020"
+    },
+    {
+        "Name": "Civic & Social Organizations",
+        "PermID": "1004365504",
+        "TRBC ID": "6110102010"
+    },
+    {
+        "Name": "Environmental Organizations",
+        "PermID": "1004365510",
+        "TRBC ID": "61101030"
+    },
+    {
+        "Name": "Environmental Organizations",
+        "PermID": "1004365513",
+        "TRBC ID": "6110103010"
+    },
+    {
+        "Name": "Charity Organizations",
+        "PermID": "1004365516",
+        "TRBC ID": "61101040"
+    },
+    {
+        "Name": "Charity Organizations",
+        "PermID": "1004365519",
+        "TRBC ID": "6110104010"
+    },
+    {
+        "Name": "Professional Organizations",
+        "PermID": "1004365522",
+        "TRBC ID": "61101050"
+    },
+    {
+        "Name": "Professional Organizations (NEC)",
+        "PermID": "1004365525",
+        "TRBC ID": "6110105010"
+    },
+    {
+        "Name": "Business, Professional & Labor Organizations",
+        "PermID": "1004365528",
+        "TRBC ID": "6110105020"
+    },
+    {
+        "Name": "Political Organizations",
+        "PermID": "1004365531",
+        "TRBC ID": "6110105030"
+    },
+    {
+        "Name": "Non-Governmental Organizations (NGOs)",
+        "PermID": "1004365534",
+        "TRBC ID": "6110105040"
+    },
+    {
+        "Name": "Government Activity",
+        "PermID": "1004365537",
+        "TRBC ID": "62"
+    },
+    {
+        "Name": "Government Activity",
+        "PermID": "1004365543",
+        "TRBC ID": "6210"
+    },
+    {
+        "Name": "Government Activity",
+        "PermID": "1004365546",
+        "TRBC ID": "621010"
+    },
+    {
+        "Name": "Government & Government Finance",
+        "PermID": "1004365549",
+        "TRBC ID": "62101010"
+    },
+    {
+        "Name": "Government & Government Finance (NEC)",
+        "PermID": "1004365552",
+        "TRBC ID": "6210101010"
+    },
+    {
+        "Name": "Public Finance Activities",
+        "PermID": "1004365555",
+        "TRBC ID": "6210101020"
+    },
+    {
+        "Name": "Legal & Safety Public Services",
+        "PermID": "1004365558",
+        "TRBC ID": "62101020"
+    },
+    {
+        "Name": "Legal & Safety Public Services (NEC)",
+        "PermID": "1004365561",
+        "TRBC ID": "6210102010"
+    },
+    {
+        "Name": "Police, Justice & Legal Counsel",
+        "PermID": "1004365564",
+        "TRBC ID": "6210102020"
+    },
+    {
+        "Name": "Fire",
+        "PermID": "1004365567",
+        "TRBC ID": "6210102030"
+    },
+    {
+        "Name": "Government Administration Activities",
+        "PermID": "1004365570",
+        "TRBC ID": "62101030"
+    },
+    {
+        "Name": "Government Administration Activities",
+        "PermID": "1004365576",
+        "TRBC ID": "6210103010"
+    },
+    {
+        "Name": "National Security & International Affairs",
+        "PermID": "1004365579",
+        "TRBC ID": "62101040"
+    },
+    {
+        "Name": "National Security & International Affairs",
+        "PermID": "1004365582",
+        "TRBC ID": "6210104010"
+    },
+    {
+        "Name": "Academic & Educational Services",
+        "PermID": "1004365585",
+        "TRBC ID": "63"
+    },
+    {
+        "Name": "Academic & Educational Services",
+        "PermID": "1004365588",
+        "TRBC ID": "6310"
+    },
+    {
+        "Name": "Miscellaneous Educational Service Providers",
+        "PermID": "1004365591",
+        "TRBC ID": "631010"
+    },
+    {
+        "Name": "Miscellaneous Educational Service Providers",
+        "PermID": "1004365594",
+        "TRBC ID": "63101010"
+    },
+    {
+        "Name": "Miscellaneous Educational Service Providers",
+        "PermID": "4294951401",
+        "TRBC ID": "6310101010"
+    },
+    {
+        "Name": "Schools, Colleges & Universities",
+        "PermID": "1004365597",
+        "TRBC ID": "631020"
+    },
+    {
+        "Name": "Schools, Colleges & Universities",
+        "PermID": "1004365600",
+        "TRBC ID": "63102010"
+    },
+    {
+        "Name": "Schools, Colleges & Universities (NEC)",
+        "PermID": "1004365603",
+        "TRBC ID": "6310201010"
+    },
+    {
+        "Name": "Nursery & Pre-Schools",
+        "PermID": "1004365609",
+        "TRBC ID": "6310201020"
+    },
+    {
+        "Name": "Elementary & Primary Schools",
+        "PermID": "1004365612",
+        "TRBC ID": "6310201030"
+    },
+    {
+        "Name": "Colleges & Secondary Schools",
+        "PermID": "1004365615",
+        "TRBC ID": "6310201040"
+    },
+    {
+        "Name": "Universities",
+        "PermID": "1004365618",
+        "TRBC ID": "6310201050"
+    },
+    {
+        "Name": "School Districts",
+        "PermID": "1004365621",
+        "TRBC ID": "6310201060"
+    },
+    {
+        "Name": "Professional & Business Education",
+        "PermID": "1004365624",
+        "TRBC ID": "631030"
+    },
+    {
+        "Name": "Professional & Business Education",
+        "PermID": "1004365627",
+        "TRBC ID": "63103010"
+    },
+    {
+        "Name": "Professional & Business Education",
+        "PermID": "4294951777",
+        "TRBC ID": "6310301010"
+    }
+]
