@@ -1,0 +1,1402 @@
+THE REFINITIV BUSINESS CLASSIFICATION
+Economic
+Sector
+Business
+Sector
+Industry
+Group Industry Activity PermID
+TRBC
+Hierarchical
+ID
+Energy 4294952782 50
+Energy - Fossil Fuels 4294952999 5010
+Coal 4294952998 501010
+Coal 4294952997 50101010
+Coal (NEC) 4294952001 5010101010
+Coal Mining Support 4294952000 5010101011
+Coal Wholesale 4294951999 5010101012
+Oil & Gas 4294952996 501020
+Integrated Oil & Gas 4294952995 50102010
+Integrated Oil & Gas 4294951998 5010201010
+Oil & Gas Exploration and Production 4294952994 50102020
+Oil & Gas Exploration and Production (NEC) 4294951997 5010202010
+Oil Exploration & Production - Onshore 4294951996 5010202011
+Oil Exploration & Production - Offshore 4294951995 5010202012
+Natural Gas Exploration & Production - Onshore 4294951994 5010202013
+Natural Gas Exploration & Production - Offshore 4294951993 5010202014
+Unconventional Oil & Gas Production 4294951992 5010202015
+Oil & Gas Refining and Marketing 4294952993 50102030
+Oil & Gas Refining and Marketing (NEC) 4294951991 5010203010
+Petroleum Refining 4294951990 5010203011
+Gasoline Stations 4294951989 5010203012
+Petroleum Product Wholesale 4294951988 5010203013
+Oil & Gas Related Equipment and Services 4294952992 501030
+Oil & Gas Drilling 4294952991 50103010
+Oil & Gas Drilling (NEC) 4294951987 5010301010
+Oil Drilling - Onshore 4294951986 5010301011
+Gas Drilling - Onshore 4294951985 5010301012
+Oil Drilling - Offshore 4294951984 5010301013
+Gas Drilling - Offshore 4294951983 5010301014
+Unconventional Oil & Gas Drilling 4294951982 5010301015
+Oil Related Services and Equipment 4294952990 50103020
+Oil Related Services and Equipment (NEC) 4294951981 5010302010
+Oil Related Services 4294951980 5010302011
+Oil Related Equipment 4294951979 5010302012
+Oil Related - Surveying & Mapping Services 4294951978 5010302013
+Oil & Gas Transportation Services 4294952811 50103030
+Oil & Gas Transportation Services (NEC) 4294951977 5010303010
+LNG Transportation & Storage 4294951976 5010303011
+Natural Gas Pipeline Transportation 4294951975 5010303012
+Oil Pipeline Transportation 4294951974 5010303013
+Sea-Borne Tankers 4294951973 5010303014
+Oil & Gas Storage 4294951972 5010303015
+Renewable Energy 4294952781 5020
+Renewable Energy 4294952810 502010
+Economic
+Sector
+Business
+Sector
+Industry
+Group Industry Activity PermID
+TRBC
+Hierarchical
+ID
+Renewable Energy Equipment & Services 4294952809 50201010
+Renewable Energy Equipment & Services (NEC) 4294951971 5020101010
+Wind Systems & Equipment 4294951970 5020101011
+Stationary Fuel Cells 4294951969 5020101012
+Photovoltaic Solar Systems & Equipment 4294951968 5020101013
+Thermal Solar Systems & Equipment 4294951967 5020101014
+Biomass Power Energy Equipment 4294951966 5020101015
+Waste to Energy Systems & Equipment 4294951965 5020101016
+Hydropower Equipment 4294951964 5020101017
+Wave Power Energy Equipment 4294951963 5020101018
+Renewable Energy Services 4294951962 5020101019
+Geothermal Equipment 4294951961 5020101020
+Renewable Fuels 4294952808 50201020
+Renewable Fuels (NEC) 4294951960 5020102010
+Biodiesel 4294951959 5020102011
+Ethanol Fuels 4294951958 5020102012
+Pyrolytic & Synthetic Fuels 4294951957 5020102013
+Biomass & Biogas Fuels 4294951956 5020102014
+Hydrogen Fuel 4294951955 5020102015
+Uranium 4294952777 5030
+Uranium 4294952776 503010
+Uranium 4294952775 50301010
+Uranium (NEC) 4294951954 5030101010
+Uranium Mining 4294951953 5030101011
+Uranium Processing 4294951952 5030101012
+Basic Materials 4294952774 51
+Chemicals 4294952988 5110
+Chemicals 4294952987 511010
+Commodity Chemicals 4294952986 51101010
+Commodity Chemicals (NEC) 4294951951 5110101010
+Plastics 4294951950 5110101011
+Paints & Coatings 4294951949 5110101012
+Tanning & Softening Agents 4294951948 5110101013
+Explosives 4294951947 5110101014
+Industrial Gases 4294951946 5110101015
+Commodity Chemicals Wholesale 4294951945 5110101016
+Glass 1004365342 5110101017
+Agricultural Chemicals 4294952985 51101020
+Agricultural Chemicals (NEC) 4294951944 5110102010
+Fertilizers 4294951943 5110102011
+Pesticides 4294951942 5110102012
+Organic Fertilizers 4294951941 5110102013
+Agricultural Chemicals Wholesale 4294951940 5110102014
+Specialty Chemicals 4294952984 51101030
+Economic
+Sector
+Business
+Sector
+Industry
+Group Industry Activity PermID
+TRBC
+Hierarchical
+ID
+Specialty Chemicals (NEC) 4294951939 5110103010
+Coloring Agents 4294951938 5110103011
+Synthetic Fibers 4294951937 5110103012
+Advanced Polymers 4294951935 5110103014
+Industrial Biotechnology Chemicals 4294951933 5110103016
+Specialty Chemicals Wholesale 4294951932 5110103017
+Composites 1004365408 5110103018
+Adhesive & Epoxy 1004365375 5110103019
+Diversified Chemicals 4294952983 51101090
+Diversified Chemicals 4294951931 5110109010
+Mineral Resources 4294952773 5120
+Metals & Mining 4294952772 512010
+Non-Gold Precious Metals & Minerals 4294952771 51201010
+Non-Gold Precious Metals & Minerals (NEC) 4294951930 5120101010
+Silver Mining 4294951929 5120101011
+Platinum Mining 4294951928 5120101012
+Diamond Mining 4294951927 5120101013
+Semiprecious Gem Stones 4294951926 5120101014
+Pearl Cultivation 4294951925 5120101015
+Rare Earth Minerals 4294951924 5120101016
+Iron & Steel 4294952979 51201020
+Iron & Steel (NEC) 4294951915 5120102010
+Iron Ore Mining 4294951914 5120102011
+Coke Coal Mining 4294951913 5120102012
+Iron, Steel Mills & Foundries 4294951912 5120102013
+Metal Service Centers 4294951911 5120102014
+Metallic Rolling & Drawing Products 4294951910 5120102015
+Metal Merchant Wholesale 4294951909 5120102016
+Aluminum 4294952978 51201030
+Aluminum (NEC) 4294951908 5120103010
+Primary Aluminum Production 4294951907 5120103011
+Secondary Smelting & Alloying of Aluminum 4294951906 5120103012
+Aluminum Rolling 4294951905 5120103013
+Aluminum Refining 4294951904 5120103014
+Aluminum Wholesale 4294951903 5120103015
+Bauxite Mining 4294951902 5120103016
+Specialty Mining & Metals 4294952977 51201050
+Specialty Mining & Metals (NEC) 4294951901 5120105010
+Lead Ore Mining 4294951900 5120105011
+Copper Ore Mining 4294951899 5120105012
+Nickel Ore Mining 4294951898 5120105013
+Zinc Ore Mining 4294951897 5120105014
+Nonferrous Metal Mining 4294951896 5120105015
+Nonferrous Metal Processing 4294951895 5120105016
+Economic
+Sector
+Business
+Sector
+Industry
+Group Industry Activity PermID
+TRBC
+Hierarchical
+ID
+Specialty Mining & Metals Wholesale 4294951894 5120105017
+Gold 4294952770 51201060
+Gold (NEC) 4294951923 5120106010
+Gold Mining 4294951922 5120106011
+Gold Refining 4294951921 5120106012
+Mining Support Services & Equipment 4294952769 51201070
+Mining Support Services & Equipment (NEC) 4294951920 5120107010
+Geophysical Surveying & Mapping Services 4294951919 5120107011
+Mining Support Services 4294951918 5120107012
+Mining Machinery & Equipment Manufacturing 4294951917 5120107013
+Diversified Mining 4294952768 51201080
+Diversified Mining 4294951916 5120108010
+Construction Materials 4294952976 512020
+Construction Materials 4294952975 51202010
+Construction Materials (NEC) 4294951893 5120201010
+Construction Material Processing 4294951892 5120201011
+Cement & Concrete Manufacturing 4294951891 5120201012
+Tile & Paving Material Manufacturing 4294951890 5120201013
+Rock Mining 4294951889 5120201014
+Construction Material Wholesale 4294951888 5120201015
+Applied Resources 4294952974 5130
+Paper & Forest Products 4294952973 513010
+Forest & Wood Products 4294952972 51301010
+Forest & Wood Products (NEC) 4294951887 5130101010
+Timber Tract Operations 4294951886 5130101011
+Forest Nurseries & Gathering of Forest Products 4294951885 5130101012
+Logging & Sawmills 4294951884 5130101013
+Forest Support & Services 4294951883 5130101014
+Wood Products 4294951882 5130101015
+Wood Product Wholesale 4294951881 5130101016
+Paper Products 4294952971 51301020
+Paper Products (NEC) 4294951880 5130102010
+Paper Mills & Products 4294951879 5130102011
+Newsprint Mills 4294951878 5130102012
+Pulp Mills 4294951877 5130102013
+Paper Product Wholesale 4294951876 5130102014
+Containers & Packaging 4294952970 513020
+Non-Paper Containers & Packaging 4294952969 51302010
+Non-Paper Containers & Packaging (NEC) 4294951875 5130201010
+Textile Containers & Packaging 4294951874 5130201011
+Glass Containers & Packaging 4294951873 5130201012
+Metal Containers & Packaging 4294951872 5130201013
+Plastic Containers & Packaging 4294951871 5130201014
+Wood Container & Packaging 4294951870 5130201015
+Economic
+Sector
+Business
+Sector
+Industry
+Group Industry Activity PermID
+TRBC
+Hierarchical
+ID
+Container & Packaging Material Wholesale 4294951869 5130201016
+Paper Packaging 4294952968 51302020
+Paper Packaging (NEC) 4294951868 5130202010
+Paper Packaging Wholesale 4294951867 5130202011
+Industrials 4294952767 52
+Industrial Goods 4294952766 5210
+Aerospace & Defense 4294952965 521010
+Aerospace & Defense 4294952964 52101010
+Aerospace & Defense (NEC) 4294951866 5210101010
+Arms & Ammunitions Manufacturing 4294951865 5210101011
+Commercial Aircraft Manufacturing 4294951864 5210101012
+Military Aircraft Manufacturing 4294951863 5210101013
+Aircraft Parts Manufacturing 4294951862 5210101014
+Military Vehicles Manufacturing 4294951861 5210101015
+Satellite Design & Manufacture 4294951860 5210101016
+Spacecraft Manufacturing 4294951859 5210101017
+Military Clothing & Accessories 4294951858 5210101018
+Aircraft Equipment Wholesale 4294951857 5210101019
+Aerospace & Defense Electronics 1004365429 5210101020
+Drone Manufacturing 1004365432 5210101021
+Machinery, Tools, Heavy Vehicles, Trains & Ships 4294952765 521020
+Industrial Machinery & Equipment 4294952962 52102010
+Industrial Machinery & Equipment (NEC) 4294951856 5210201010
+Industrial Components 4294951855 5210201011
+Industrial Machinery 4294951854 5210201012
+Ball & Roller Bearings 4294951853 5210201013
+Testing & Measuring Equipment 4294951852 5210201014
+Pump & Pumping Equipment 4294951851 5210201015
+Air & Gas Compressors 4294951850 5210201016
+Welding & Soldering Equipment 4294951849 5210201017
+Industrial Process Furnace & Ovens 4294951848 5210201018
+Fluid Power Cylinder & Actuators 4294951847 5210201019
+Automatic Vending Machines 4294951846 5210201020
+Industrial Moulds 4294951845 5210201021
+Machine Tools 4294951844 5210201022
+Industrial Valve Manufacturing 4294951843 5210201023
+Industrial Machinery & Equipment Wholesale 4294951842 5210201024
+Commercial Equipment 1004365435 5210201025
+Heavy Machinery & Vehicles 4294952961 52102020
+Heavy Machinery & Vehicles (NEC) 4294951841 5210202010
+Construction Machinery 4294951840 5210202011
+Heavy Trucks 4294951839 5210202012
+Heavy Buses & Coaches 4294951838 5210202013
+Locomotive Engines & Rolling Stock 4294951837 5210202014
+Economic
+Sector
+Business
+Sector
+Industry
+Group Industry Activity PermID
+TRBC
+Hierarchical
+ID
+Agricultural Machinery 4294951836 5210202015
+Commercial Landscaping Equipment 4294951835 5210202016
+Heavy Machinery & Vehicles Wholesale 4294951834 5210202017
+Electrical Components & Equipment 4294952764 52102030
+Electrical Components & Equipment (NEC) 4294951833 5210203010
+Batteries & Uninterruptable Power Supplies 4294951832 5210203011
+Wires & Cables 4294951831 5210203012
+Electrical Components 4294951830 5210203013
+Lighting Equipment 4294951829 5210203014
+Heating, Ventilation & Air Conditioning Systems 4294951828 5210203015
+Electrical Insulators 4294951827 5210203016
+Switchgear 4294951826 5210203017
+Portable Motors & Generators 4294951825 5210203018
+Electrical Measuring & Testing Instruments 4294951824 5210203019
+Electric Equipment Wholesale 4294951823 5210203020
+Heavy Electrical Equipment 4294952959 52102040
+Heavy Electrical Equipment (NEC) 4294951822 5210204010
+Electrical Transmission & Grid Equipment 4294951821 5210204011
+Elevator & Conveying Equipment 4294951820 5210204012
+Turbine Manufacturing 4294951819 5210204013
+Heavy Motors & Generators 4294951818 5210204014
+Industrial Electrical Switchgear 4294951817 5210204015
+Nuclear Generators & Components 4294951816 5210204016
+Shipbuilding 4294952763 52102050
+Shipbuilding (NEC) 4294951815 5210205010
+Ship Parts Manufacturers 4294951814 5210205011
+Ship Repairing & Maintenance 4294951813 5210205012
+Industrial & Commercial Services 4294952762 5220
+Construction & Engineering 4294952761 522010
+Construction & Engineering 4294952760 52201020
+Construction & Engineering (NEC) 4294951812 5220102010
+Commercial Buildings 4294951811 5220102011
+Highway & Bridge Construction 4294951810 5220102012
+Railway Construction 4294951809 5220102013
+Power & Communications Network Construction 4294951808 5220102014
+Civil Engineers & Architects 4294951807 5220102015
+Building Contractors 4294951806 5220102016
+Industrial Plant Construction 4294951805 5220102017
+Water & Sewage Construction 4294951804 5220102018
+Land Division & Subdivision 4294951803 5220102019
+Gas Infrastructure Construction 4294951802 5220102020
+Electric Power Plant Construction 4294951801 5220102021
+Nuclear Power Plant Construction 4294951800 5220102022
+Telecommunication Construction 4294951799 5220102023
+Economic
+Sector
+Business
+Sector
+Industry
+Group Industry Activity PermID
+TRBC
+Hierarchical
+ID
+Diversified Industrial Goods Wholesale 4294952954 522020
+Diversified Industrial Goods Wholesale 4294952953 52202010
+Diversified Industrial Goods Wholesale 4294951798 5220201010
+Professional & Commercial Services 4294952759 522030
+Environmental Services & Equipment 4294952951 52203010
+Environmental Services & Equipment (NEC) 4294951797 5220301010
+Purification & Treatment Equipment 4294951796 5220301011
+Waste Management, Disposal & Recycling Services 4294951795 5220301012
+Environmental Consultancy Services 4294951794 5220301013
+Environmental R&D Services & Biotechnology 4294951793 5220301014
+Carbon Capture & Storage 4294951792 5220301015
+Commercial Printing Services 4294952950 52203020
+Commercial Printing Services (NEC) 4294951791 5220302010
+Specialized Printing Services 4294951790 5220302011
+Newspaper & Magazine Printing Services 4294951789 5220302012
+Book Printing Services 4294951788 5220302013
+Employment Services 4294952807 52203030
+Employment Services (NEC) 4294951787 5220303010
+Human Resources Consulting Services 4294951786 5220303011
+Outsourcing & Staffing Services 4294951785 5220303012
+Executive Search Services 4294951784 5220303013
+Online Job Portals 4294951783 5220303014
+Business Support Services 4294952806 52203040
+Business Support Services (NEC) 4294951782 5220304010
+Corporate Accounting Services 4294951781 5220304011
+Legal Services 4294951780 5220304012
+Management Consulting Services 4294951779 5220304013
+Security Services 4294951778 5220304014
+Cleaning Services 4294951776 5220304016
+Data Processing Services 4294951775 5220304017
+Industrial Equipment Rental 4294951774 5220304018
+Office Equipment & Supplies Rental 4294951773 5220304019
+Pest Control Services 4294951772 5220304020
+Maintenance & Repair Services 4294951771 5220304021
+Industrial Design Services 4294951770 5220304022
+Translation & Interpretation Services 4294951769 5220304023
+Testing Laboratories 4294951768 5220304024
+Call Center Services 4294951767 5220304025
+Exhibition & Conference Services 4294951766 5220304026
+Transaction & Payment Services 4294951765 5220304027
+Business Support Supplies 4294952805 52203060
+Business Support Supplies (NEC) 4294951764 5220306010
+Office Furniture 4294951763 5220306011
+Office Supplies 4294951762 5220306012
+Economic
+Sector
+Business
+Sector
+Industry
+Group Industry Activity PermID
+TRBC
+Hierarchical
+ID
+Health, Safety & Fire Protection Equipment 4294951761 5220306013
+Office Supplies Wholesale 4294951760 5220306014
+Professional Information Services 4294952758 52203070
+Professional Information Services (NEC) 4294951759 5220307010
+Financial Information Providers 4294951758 5220307011
+Compliance & Investor Communication 4294951757 5220307012
+Rating Agencies 4294951756 5220307013
+Trade & Business Publishing 4294951755 5220307014
+Legal & Tax Information Providers 4294951754 5220307015
+Education & Training Information Providers 4294951753 5220307016
+Journals & Scholarly Research 4294951752 5220307017
+News Agencies 4294951751 5220307018
+Libraries & Archives 1004365426 5220307019
+Transportation 4294952945 5240
+Freight & Logistics Services 4294952757 524050
+Courier, Postal, Air Freight & Land-based Logistics 4294952943 52405010
+Courier, Postal, Air Freight & Land-based Logistics (NEC) 4294951749 5240501010
+Freight Logistics 4294951748 5240501011
+Air Freight 4294951747 5240501012
+Courier Services 4294951746 5240501013
+Integrated Logistics Operators 4294951745 5240501014
+Marine Freight & Logistics 4294952938 52405020
+Marine Freight & Logistics (NEC) 4294951744 5240502010
+Marine Logistics 4294951743 5240502011
+Inland Water Freight 4294951742 5240502012
+Deep Sea Freight 4294951741 5240502013
+Ground Freight & Logistics 4294952934 52405030
+Ground Freight & Logistics (NEC) 4294951740 5240503010
+Railway Freight Operators 4294951739 5240503011
+Freight Trucking 4294951738 5240503012
+Warehousing 4294951737 5240503013
+Truck Rental 4294951736 5240503014
+Passenger Transportation Services 4294952753 524060
+Airlines 4294952941 52406010
+Airlines (NEC) 4294951735 5240601010
+Regional Airlines 4294951734 5240601011
+Charter & Private Air Services 4294951733 5240601012
+Specialized Aviation Services 4294951732 5240601013
+Inter-Modal Passenger Transportation 4294951731 5240601014
+Passenger Transportation, Ground & Sea 4294952935 52406020
+Passenger Transportation, Ground & Sea (NEC) 4294951730 5240602010
+Commuting Services 4294951729 5240602011
+Charter Bus Services 4294951728 5240602012
+Rail Services 4294951727 5240602013
+Economic
+Sector
+Business
+Sector
+Industry
+Group Industry Activity PermID
+TRBC
+Hierarchical
+ID
+Marine Passenger Transportation 4294951726 5240602014
+Commuter Ferry Operators 4294951725 5240602015
+Taxis & Limousines 4294951724 5240602016
+Passenger Car Rental 4294951723 5240602017
+Transport Infrastructure 4294952750 524070
+Airport Operators & Services 4294952940 52407010
+Airport Operators & Services (NEC) 4294951718 5240701010
+Airport Operators 4294951717 5240701011
+Duty Free Shops 4294951716 5240701012
+Airport Fueling Services 4294951715 5240701013
+Airline Catering Services 4294951714 5240701014
+Marine Port Services 4294952937 52407020
+Marine Port Services (NEC) 4294951713 5240702010
+Port Warehousing Services 4294951712 5240702011
+Port Operators 4294951711 5240702012
+Marine Cargo Handling Services 4294951710 5240702013
+Highways & Rail Tracks 4294952933 52407030
+Highways & Rail Tracks (NEC) 4294951722 5240703010
+Highway Operators 4294951721 5240703011
+Railway Operators 4294951720 5240703012
+Parking Lot Operators 4294951719 5240703013
+Consumer Cyclicals 4294952746 53
+Automobiles & Auto Parts 4294952931 5310
+Automobiles & Auto Parts 4294952930 531010
+Auto & Truck Manufacturers 4294952929 53101010
+Auto & Truck Manufacturers (NEC) 4294951709 5310101010
+Motorcycles & Scooters 4294951708 5310101011
+Automobiles & Multi Utility Vehicles 4294951707 5310101012
+Light Trucks 4294951706 5310101013
+Electric (Alternative) Vehicles 4294951705 5310101014
+Luxury Vehicles 4294951704 5310101015
+Auto & Truck Wholesale 4294951703 5310101016
+Auto, Truck & Motorcycle Parts 4294952928 53101020
+Auto, Truck & Motorcycle Parts (NEC) 4294951702 5310102010
+Automotive Body Parts 4294951701 5310102011
+Engine & Powertrain Systems 4294951700 5310102012
+Automotive Batteries 4294951699 5310102013
+Automotive Systems 4294951698 5310102014
+Automotive Accessories 4294951697 5310102015
+Motorcycle Parts & Accessories 4294951696 5310102016
+Auto & Truck Parts Wholesale 4294951695 5310102017
+Tires & Rubber Products 4294952927 53101030
+Tires & Rubber Products (NEC) 4294951694 5310103010
+Tire & Tube Manufacturers 4294951693 5310103011
+Economic
+Sector
+Business
+Sector
+Industry
+Group Industry Activity PermID
+TRBC
+Hierarchical
+ID
+Tire Retreading 4294951692 5310103012
+Industrial Rubber Products 4294951691 5310103013
+Rubber Plantations 4294951690 5310103014
+Tires & Rubber Products Wholesale 4294951689 5310103015
+Cyclical Consumer Products 4294952745 5320
+Textiles & Apparel 4294952919 532020
+Textiles & Leather Goods 4294952918 53202010
+Textiles & Leather Goods (NEC) 4294951688 5320201010
+Synthetic Fabrics 4294951687 5320201011
+Natural Fabrics 4294951686 5320201012
+Organic & Ecologically Produced Fabric 4294951685 5320201013
+Leather Goods 4294951684 5320201014
+Fur Goods 4294951683 5320201015
+Fabric Dyeing & Finishing 4294951682 5320201016
+Yarn Goods 4294951681 5320201017
+Cotton Farming 4294951680 5320201018
+Textiles & Leather Goods Wholesale 4294951679 5320201019
+Apparel & Accessories 4294952917 53202020
+Apparel & Accessories (NEC) 4294951678 5320202010
+Men's Clothing 4294951677 5320202011
+Women's Clothing 4294951676 5320202012
+Children's & Infants' Clothing 4294951675 5320202013
+Sportswear & Outdoors Clothing 4294951674 5320202014
+Jeans 4294951673 5320202015
+Knitwear 4294951672 5320202016
+Lingerie 4294951671 5320202017
+Hosiery & Socks 4294951670 5320202018
+Industrial Clothing & Uniforms 4294951669 5320202019
+Fair Trade & Ethical Clothing 4294951668 5320202020
+Luxury Clothing 4294951667 5320202021
+Theatrical Costumes 4294951666 5320202022
+Animal & Pet Clothing 4294951665 5320202023
+Luxury Accessories 4294951664 5320202024
+Accessories 4294951663 5320202025
+Jewelry 4294951662 5320202026
+Watches 4294951661 5320202027
+Handbags & Luggage 4294951660 5320202028
+Fashion Eyewear 4294951659 5320202029
+Apparel Wholesale 4294951658 5320202030
+Footwear 4294952916 53202030
+Footwear (NEC) 4294951657 5320203010
+Men's Footwear 4294951656 5320203011
+Women's Footwear 4294951655 5320203012
+Children's & Infants' Footwear 4294951654 5320203013
+Economic
+Sector
+Business
+Sector
+Industry
+Group Industry Activity PermID
+TRBC
+Hierarchical
+ID
+Sports & Outdoor Footwear 4294951653 5320203014
+Luxury Footwear 4294951652 5320203015
+Functional Footwear 4294951651 5320203016
+Footwear Wholesale 4294951650 5320203017
+Homebuilding & Construction Supplies 4294952804 532030
+Homebuilding 4294952924 53203010
+Homebuilding (NEC) 4294951649 5320301010
+Residential Builders - Single Homes 4294951648 5320301011
+Residential Builders - Multifamily Homes 4294951647 5320301012
+Prefabricated Homes 4294951646 5320301013
+Sustainable & Energy Efficient Home Builders 4294951645 5320301014
+Retirement Home Builders 4294951644 5320301015
+Residential Architectural & Interior Design Services 4294951643 5320301016
+Construction Supplies & Fixtures 4294952956 53203020
+Construction Supplies & Fixtures (NEC) 4294951642 5320302010
+Construction Supplies 4294951641 5320302011
+Luxury Construction Supplies & Fixtures 4294951640 5320302012
+Doors & Window Frames 4294951639 5320302013
+Flooring & Interior Tile Manufacturers 4294951638 5320302014
+Plumbing Fixtures & Fittings 4294951637 5320302015
+Kitchen Cabinets 4294951636 5320302016
+Bathroom Fixtures 4294951635 5320302017
+Roofing Supplies 4294951634 5320302018
+Lighting Fixtures 4294951633 5320302019
+Construction Supplies & Fixtures Wholesale 4294951632 5320302020
+Household Goods 4294952744 532040
+Appliances, Tools & Housewares 4294952922 53204030
+Appliances, Tools & Housewares (NEC) 4294951631 5320403010
+Household Appliances 4294951630 5320403011
+Tools & Housewares 4294951629 5320403012
+Kitchen Appliances 4294951628 5320403013
+Cutlery & Flatware 4294951627 5320403014
+Appliance & Houseware Wholesale 4294951626 5320403015
+Luxury Appliances 4294951625 5320403016
+Home Furnishings 4294952921 53204040
+Home Furnishings (NEC) 4294951624 5320404010
+Carpets & Curtains 4294951623 5320404011
+Wallpaper 4294951622 5320404012
+Luxury Furnishing 4294951620 5320404014
+Antiques 4294951619 5320404015
+Home Furnishings Wholesale 4294951618 5320404016
+Furniture 1004365474 5320404017
+Art & Craftwork 1004365441 5320404018
+Leisure Products 4294952920 532050
+Economic
+Sector
+Business
+Sector
+Industry
+Group Industry Activity PermID
+TRBC
+Hierarchical
+ID
+Toys & Children's Products 4294952802 53205010
+Toys & Children's Products (NEC) 4294951617 5320501010
+Dolls & Stuffed Toys 4294951616 5320501011
+Games, Toys & Children's Vehicles 4294951615 5320501012
+Children's Safety Products 4294951614 5320501013
+Children's Furniture 4294951613 5320501014
+Children's Products & Accessories 4294951612 5320501015
+Toys & Children's Products Wholesale 4294951611 5320501016
+Recreational Products 4294952743 53205020
+Recreational Products (NEC) 4294951610 5320502010
+Sailing Yachts & Motorboats 4294951609 5320502011
+Bicycle Manufacturing 4294951608 5320502012
+Sporting & Outdoor Goods 4294951607 5320502013
+Musical Instruments 4294951606 5320502014
+Luxury Recreational Products 4294951605 5320502015
+Leisure Products Wholesale 4294951604 5320502016
+Electric Scooters & Bicycles 1004365507 5320502017
+Cyclical Consumer Services 4294952915 5330
+Hotels & Entertainment Services 4294952914 533010
+Hotels, Motels & Cruise Lines 4294952913 53301010
+Hotels, Motels & Cruise Lines (NEC) 4294951603 5330101010
+Hotels & Motels 4294951602 5330101011
+Cruise Lines 4294951601 5330101012
+Luxury Hotels 4294951600 5330101013
+Resort Operators 4294951599 5330101014
+Bed & Breakfast 4294951598 5330101015
+Self-Catering Accommodation 4294951597 5330101016
+Campsite Operators 4294951596 5330101017
+Restaurants & Bars 4294952912 53301020
+Restaurants & Bars (NEC) 4294951595 5330102010
+Pubs, Bars & Night Clubs 4294951594 5330102011
+Commercial Food Services 4294951593 5330102012
+Quick Service Restaurants 4294951592 5330102013
+Mobile Caterers 4294951591 5330102014
+Banquet Halls & Catering 4294951590 5330102015
+Cafés 4294951589 5330102016
+Casinos & Gaming 4294952911 53301030
+Casinos & Gaming (NEC) 4294951588 5330103010
+Gambling & Gaming Machine Manufacturers 4294951587 5330103011
+Gaming Machine Operators 4294951586 5330103012
+Casinos 4294951585 5330103013
+Horse & Dog Race Tracks 4294951584 5330103014
+Lottery Operators 4294951583 5330103015
+Leisure & Recreation 4294952910 53301040
+Economic
+Sector
+Business
+Sector
+Industry
+Group Industry Activity PermID
+TRBC
+Hierarchical
+ID
+Leisure & Recreation (NEC) 4294951582 5330104010
+Movie Theaters & Movie Products 4294951581 5330104011
+Theatres & Performing Arts 4294951580 5330104012
+Museums & Historic Places 4294951579 5330104013
+Travel Agents 4294951578 5330104014
+Amusement Parks and Zoos 4294951577 5330104015
+Gyms, Fitness and Spa Centers 4294951576 5330104016
+Adventure Sports Facilities & Ski Resorts 4294951575 5330104017
+Public Sport Facilities 4294951574 5330104018
+Professional Sports Venues 4294951573 5330104019
+Golf Courses 4294951572 5330104020
+Hunting & Fishing 4294951571 5330104021
+Marinas 4294951570 5330104022
+Guided Tour Operators 4294951569 5330104023
+Media & Publishing 4294952742 533020
+Advertising & Marketing 4294952908 53302010
+Advertising & Marketing (NEC) 4294951568 5330201010
+Advertising Agency 4294951567 5330201011
+Media Buying Agency 4294951566 5330201012
+Signs & Advertising Specialty Producers 4294951565 5330201013
+Outdoor Advertising 4294951564 5330201014
+Direct Marketing 4294951563 5330201015
+Sales Promotions & Events Management 4294951562 5330201016
+Guerrilla & Sensory Marketing 4294951561 5330201017
+Public Relations 4294951560 5330201018
+Digital Media Agencies 4294951559 5330201019
+Branding & Naming 4294951558 5330201020
+Market Research 4294951557 5330201021
+Marketing Consulting Services 4294951556 5330201022
+Broadcasting 4294952907 53302020
+Broadcasting (NEC) 4294951555 5330202010
+Television Broadcasting 4294951554 5330202011
+Radio Broadcasting 4294951553 5330202012
+Cable Service Providers 4294951552 5330202013
+Entertainment Production 4294952906 53302030
+Entertainment Production (NEC) 4294951551 5330203010
+Movie, TV Production & Distribution 4294951550 5330203011
+Music, Music Video Production & Distribution 4294951549 5330203012
+Plays & Concert Production 4294951548 5330203013
+Entertainment Production Equipment & Services 4294951547 5330203014
+Copyright Management 4294951546 5330203015
+Adult Entertainment Production & Broadcasting 4294951545 5330203016
+Consumer Publishing 4294952741 53302040
+Consumer Publishing (NEC) 4294951544 5330204010
+Economic
+Sector
+Business
+Sector
+Industry
+Group Industry Activity PermID
+TRBC
+Hierarchical
+ID
+Newspaper Publishing 4294951543 5330204011
+Magazine Publishing 4294951542 5330204012
+Book Publishing 4294951541 5330204013
+Directory Publishing 4294951540 5330204014
+Digital Publishing 4294951539 5330204015
+Adult Publishing 4294951538 5330204016
+Books, Newspapers & Magazines Wholesale 1004365540 5330204017
+Retailers 4294952903 5340
+Diversified Retail 4294952800 534020
+Department Stores 4294952901 53402010
+Department Stores (NEC) 4294951537 5340201010
+General Department Stores 4294951536 5340201011
+Luxury Department Stores 4294951535 5340201012
+Internet & Mail Order Department Stores 4294951534 5340201013
+Discount Stores 4294952900 53402020
+Discount Stores (NEC) 4294951533 5340202010
+Internet & Mail Order Discount Stores 4294951532 5340202011
+Discount Stores with Grocery 4294951531 5340202012
+Discount Stores without Grocery 4294951530 5340202013
+Discount Stores with Gasoline 4294951529 5340202014
+Discount Stores without Gasoline 4294951528 5340202015
+Specialty Retailers 4294952799 534030
+Auto Vehicles, Parts & Service Retailers 4294952798 53403010
+Auto Vehicles, Parts & Service Retailers (NEC) 4294951527 5340301010
+New Car Dealers 4294951526 5340301011
+Used Car Dealers 4294951525 5340301012
+Motorcycle Dealers 4294951524 5340301013
+Automotive Parts & Accessories Retailers 4294951523 5340301014
+Tire Dealers 4294951522 5340301015
+Luxury Car Dealers 4294951521 5340301016
+Home Improvement Products & Services Retailers 4294952797 53403020
+Home Improvement Products & Services Retailers (NEC) 4294951520 5340302010
+Paint & Wallpaper Retailers 4294951519 5340302011
+Builder Merchants 4294951518 5340302012
+Nursery & Garden Centers 4294951517 5340302013
+Kitchen & Bathroom Retailers 4294951516 5340302014
+Home Décor Retailers 4294951515 5340302015
+Interior Design Services 4294951514 5340302016
+Luxury Home Improvement Product Retailers 4294951513 5340302017
+Home Furnishings Retailers 4294952796 53403030
+Home Furnishings Retailers (NEC) 4294951512 5340303010
+Furniture Retailers 4294951511 5340303011
+Floor Covering Retailers 4294951510 5340303012
+Soft Furnishing Retailers 4294951509 5340303013
+Economic
+Sector
+Business
+Sector
+Industry
+Group Industry Activity PermID
+TRBC
+Hierarchical
+ID
+Luxury Furnishing Retailers 4294951508 5340303014
+Antique Dealers 4294951507 5340303015
+Art & Craftwork Retailers 1004365573 5340303016
+Apparel & Accessories Retailers 4294952898 53403040
+Apparel & Accessories Retailers (NEC) 4294951490 5340304010
+Footwear Retailers 4294951489 5340304011
+Jewelry & Watch Retailers 4294951488 5340304012
+Men's Apparel Retailers 4294951487 5340304013
+Women's Apparel Retailers 4294951486 5340304014
+Children's & Infants' Clothing Retailers 4294951485 5340304015
+Teen Fashion Retailers 4294951484 5340304016
+Handbags & Luggage Retailers 4294951483 5340304017
+Luxury Apparel Retailers 4294951482 5340304018
+Sports & Outdoors Retailers 4294951481 5340304019
+Computer & Electronics Retailers 4294952897 53403050
+Computer & Electronics Retailers (NEC) 4294951480 5340305010
+Computer Hardware & Software Retailers 4294951479 5340305011
+Consumer Electronics Retailers 4294951478 5340305012
+Mobile Phone Retailers 4294951477 5340305013
+Miscellaneous Specialty Retailers 4294952795 53403090
+Miscellaneous Specialty Retailers (NEC) 4294951506 5340309010
+Luxury Beauty Supply Retailers 4294951505 5340309011
+Personal Care Products Retailers 4294951504 5340309012
+Optical Goods Stores 4294951503 5340309013
+Health Food Stores 4294951502 5340309014
+Musical Instrument Retailers 4294951501 5340309015
+Hobby & Craft Product Retailers 4294951500 5340309016
+Toys & Games Retailers 4294951499 5340309017
+Book & Magazine Retailers 4294951498 5340309018
+Florists 4294951497 5340309019
+Office Supplies & Stationery Stores 4294951496 5340309020
+Gift, Novelty & Souvenir Stores 4294951495 5340309021
+Used Merchandise Stores 4294951494 5340309022
+Sporting Goods Stores 4294951493 5340309023
+Pet & Pet Supplies Retailers 4294951492 5340309024
+Adult Products Retailers 4294951491 5340309025
+Consumer Non-Cyclicals 4294952895 54
+Food & Beverages 4294952894 5410
+Beverages 4294952893 541010
+Brewers 4294952892 54101010
+Brewers (NEC) 4294951476 5410101010
+Craft & Micro Brewers 4294951475 5410101011
+Distillers & Wineries 4294952891 54101020
+Distillers & Wineries (NEC) 4294951474 5410102010
+Economic
+Sector
+Business
+Sector
+Industry
+Group Industry Activity PermID
+TRBC
+Hierarchical
+ID
+Wineries 4294951473 5410102011
+Distilleries 4294951472 5410102012
+Malt Producers 4294951471 5410102013
+Non-Alcoholic Beverages 4294952890 54101030
+Non-Alcoholic Beverages (NEC) 4294951470 5410103010
+Carbonated Soft Drinks 4294951469 5410103011
+Fruit Drinks 4294951468 5410103012
+Energy Drinks 4294951467 5410103013
+Bottled Water & Ice 4294951466 5410103014
+Food & Tobacco 4294952889 541020
+Fishing & Farming 4294952888 54102010
+Fishing & Farming (NEC) 4294951465 5410201010
+Grain (Crop) Production 4294951464 5410201011
+Poultry Farming 4294951463 5410201012
+Sheep & Specialty Livestock Farming 4294951462 5410201013
+Vegetable, Fruit & Nut Farming 4294951461 5410201014
+Coffee, Tea & Cocoa Farming 4294951460 5410201015
+Sugarcane Farming 4294951459 5410201016
+Commercial Nurseries 4294951458 5410201017
+Commercial Fishing 4294951457 5410201018
+Aquaculture 4294951456 5410201019
+Fur Farming 4294951455 5410201020
+Animal Breeding 4294951454 5410201021
+Agriculture Support Services 4294951453 5410201022
+Organic Farming 4294951452 5410201023
+Animal Feed 4294951451 5410201024
+Agricultural Consultancy Services 4294951450 5410201025
+Fishing & Farming Wholesale 4294951449 5410201026
+Agricultural Biotechnology 4294951448 5410201027
+Hog & Pig Farming 4294951447 5410201028
+Cattle Farming 4294951446 5410201029
+Fair Trade & Ethical Fishing & Farming 1004365606 5410201030
+Food Processing 4294952887 54102020
+Food Processing (NEC) 4294951445 5410202010
+Flour Milling 4294951444 5410202011
+Bread & Bakery Product Manufacturing 4294951443 5410202012
+Breakfast Cereal Manufacturing 4294951442 5410202013
+Cookie, Cracker & Pasta Manufacturing 4294951441 5410202014
+Fruit & Vegetable Processing 4294951440 5410202015
+Meat Processing 4294951439 5410202016
+Halal Meat Processing 4294951438 5410202017
+Seafood Product Preparation & Packaging 4294951437 5410202018
+Dairy Products 4294951436 5410202019
+Starch, Vegetable Fat & Oil Manufacturing 4294951435 5410202020
+Economic
+Sector
+Business
+Sector
+Industry
+Group Industry Activity PermID
+TRBC
+Hierarchical
+ID
+Coffee & Tea 4294951434 5410202021
+Sugar & Artificial Sweeteners 4294951433 5410202022
+Chocolate & Confectionery 4294951432 5410202023
+Snack Food & Non-Chocolate Confectionary 4294951431 5410202024
+Special Foods & Wellbeing Products 4294951430 5410202025
+Food Ingredients 4294951429 5410202026
+Baby Food 4294951428 5410202027
+Ready-Made Meals 4294951427 5410202028
+Frozen Food Manufacturing 4294951425 5410202030
+Pet Food Manufacturing 4294951424 5410202031
+Vegan & Vegetarian Food Manufacturing 1004365345 5410202032
+Tobacco 4294952886 54102030
+Tobacco (NEC) 4294951423 5410203010
+Tobacco Farming 4294951422 5410203011
+Tobacco Stemming & Redrying 4294951421 5410203012
+Cigars & Cigarette Manufacturing 4294951420 5410203013
+Chewing Tobacco Products 4294951419 5410203014
+Personal & Household Products & Services 4294952885 5420
+Personal & Household Products & Services 4294952884 542010
+Household Products 4294952883 54201010
+Household Products (NEC) 4294951418 5420101010
+Laundry Supplies 4294951417 5420101011
+Cleaning Supplies 4294951416 5420101012
+Air Fresheners 4294951415 5420101013
+Pet & Plant Protection Agents 4294951413 5420101015
+Auto Cleaning Products 4294951412 5420101016
+Personal Products 4294952882 54201020
+Personal Products (NEC) 4294951411 5420102010
+Cosmetics & Perfumes 4294951410 5420102011
+Luxury Cosmetics 4294951409 5420102012
+Sanitary Products 4294951408 5420102013
+Hair Accessories 4294951407 5420102014
+Birth Control Products 4294951406 5420102015
+Halal Personal Products 1004365354 5420102016
+Personal Services 4294952881 54201030
+Personal Services (NEC) 4294951405 5420103010
+Consumer Goods Rental 4294951404 5420103011
+Accounting & Tax Preparation 4294951403 5420103012
+Personal Legal Services 4294951402 5420103013
+Child Care & Family Services 4294951400 5420103015
+Consumer Repair Services 4294951399 5420103016
+Personal Care Services 4294951398 5420103017
+Funeral Services 4294951397 5420103018
+Food & Drug Retailing 4294952880 5430
+Economic
+Sector
+Business
+Sector
+Industry
+Group Industry Activity PermID
+TRBC
+Hierarchical
+ID
+Food & Drug Retailing 4294952879 543010
+Drug Retailers 4294952878 54301010
+Drug Retailers (NEC) 4294951396 5430101010
+Retail - Drugs with Grocery 4294951395 5430101011
+Retail - Drugs without Grocery 4294951394 5430101012
+Cannabis Product Retailers 1004365348 5430101013
+Non-Cannabis Recreational Drug Retailers 1004365351 5430101014
+Food Retail & Distribution 4294952877 54301020
+Food Retail & Distribution (NEC) 4294951393 5430102010
+Food Wholesale 4294951392 5430102011
+Supermarkets & Convenience Stores 4294951391 5430102012
+Beer, Wine & Liquor Stores 4294951390 5430102013
+Vending Machine Providers 4294951389 5430102014
+Tobacco Stores 4294951388 5430102015
+Food Markets 4294951387 5430102016
+Consumer Goods Conglomerates 4294952948 5440
+Consumer Goods Conglomerates 4294952947 544010
+Consumer Goods Conglomerates 4294952946 54401010
+Consumer Goods Conglomerates 4294951750 5440101010
+Financials 4294952740 55
+Banking & Investment Services 4294952739 5510
+Banking Services 4294952874 551010
+Banks 4294952873 55101010
+Banks (NEC) 4294951386 5510101010
+Corporate Banks 4294951385 5510101011
+Retail & Mortgage Banks 4294951384 5510101012
+Money Center Banks 4294951383 5510101013
+Private Banks 4294951382 5510101014
+Islamic Banks 4294951381 5510101015
+Consumer Lending 4294952872 55101030
+Consumer Lending (NEC) 4294951380 5510103010
+Personal & Car Loans 4294951379 5510103011
+Consumer Credit Cards Services 4294951378 5510103012
+Consumer Leasing 4294951377 5510103013
+Credit Unions 4294951376 5510103014
+Microfinancing 4294951375 5510103015
+Corporate Financial Services 4294952870 55101050
+Corporate Financial Services (NEC) 4294951374 5510105010
+Commercial Loans 4294951373 5510105011
+Import-Export Banks 4294951372 5510105012
+International Trade Financing 4294951371 5510105013
+Factoring 4294951370 5510105014
+Commercial Leasing 4294951369 5510105015
+Investment Banking & Investment Services 4294952738 551020
+Economic
+Sector
+Business
+Sector
+Industry
+Group Industry Activity PermID
+TRBC
+Hierarchical
+ID
+Investment Banking & Brokerage Services 4294952794 55102010
+Investment Banking & Brokerage Services (NEC) 4294951368 5510201010
+Investment Banking 4294951367 5510201011
+Brokerage Services 4294951366 5510201012
+Inter-Dealer Broker 4294951365 5510201013
+Islamic Investment Banking & Brokerage Services 4294951364 5510201014
+Merchant Banks 4294951363 5510201015
+Investment Management & Fund Operators 4294952793 55102020
+Investment Management & Fund Operators (NEC) 4294951362 5510202010
+Investment Management 4294951361 5510202011
+Hedge Funds 4294951360 5510202012
+Collective Investment Fund Operators 4294951359 5510202013
+Wealth Management 4294951358 5510202014
+Venture Capital 4294951357 5510202015
+Private Equity 4294951356 5510202016
+Islamic Investment Management & Fund Operators 4294951355 5510202017
+Diversified Investment Services 4294952792 55102030
+Diversified Investment Services 4294951354 5510203010
+Financial & Commodity Market Operators & Service Providers 4294952790 55102050
+Financial & Commodity Market Operators & Service Providers
+(NEC) 4294951353 5510205010
+Securities & Commodity Exchanges 4294951352 5510205011
+Clearing, Settlement & Custodial Service 4294951351 5510205012
+Insurance 4294952866 5530
+Insurance 4294952865 553010
+Multiline Insurance & Brokers 4294952734 55301010
+Multiline Insurance & Brokers (NEC) 4294951347 5530101010
+Islamic Insurance 4294951346 5530101011
+Insurance Brokers 4294951345 5530101012
+Property & Casualty Insurance 4294952863 55301020
+Property & Casualty Insurance (NEC) 4294951344 5530102010
+Property Insurance 4294951343 5530102011
+Insurance - Automobile 4294951342 5530102012
+Travel Insurance 4294951341 5530102013
+Casualty Insurance 4294951340 5530102014
+Life & Health Insurance 4294952862 55301030
+Life & Health Insurance (NEC) 4294951339 5530103010
+Life Insurance 4294951338 5530103011
+Health Insurance 4294951337 5530103012
+Reinsurance 4294952861 55301050
+Reinsurance (NEC) 4294951336 5530105010
+Life & Health Reinsurance 4294951335 5530105011
+Property & Casualty Reinsurance 4294951334 5530105012
+Collective Investments 4294952732 5550
+Economic
+Sector
+Business
+Sector
+Industry
+Group Industry Activity PermID
+TRBC
+Hierarchical
+ID
+Collective Investments 4294952731 555010
+UK Investment Trusts 4294952730 55501010
+UK Investment Trusts 4294951310 5550101010
+Mutual Funds 4294952729 55501020
+Mutual Funds (NEC) 4294951309 5550102010
+Islamic Mutual Funds 4294951308 5550102011
+Closed End Funds 4294952728 55501030
+Closed End Funds 4294951307 5550103010
+Exchange-Traded Funds 4294952727 55501040
+Exchange-Traded Funds (NEC) 4294951306 5550104010
+Islamic ETFs 4294951305 5550104011
+Islamic Commodity ETFs 4294951304 5550104012
+Pension Funds 4294952726 55501050
+Pension Funds 4294951303 5550105010
+Insurance Funds 4294952725 55501060
+Insurance Funds 4294951302 5550106010
+Investment Holding Companies 4294952737 5560
+Investment Holding Companies 4294952736 556010
+Investment Holding Companies 4294952735 55601010
+Investment Holding Companies (NEC) 4294951349 5560101010
+Shell Companies 4294951348 5560101011
+Healthcare 4294952853 56
+Healthcare Services & Equipment 4294952852 5610
+Healthcare Equipment & Supplies 4294952851 561010
+Advanced Medical Equipment & Technology 4294952850 56101010
+Advanced Medical Equipment & Technology (NEC) 4294951301 5610101010
+Medical Diagnostic & Testing Equipment 4294951300 5610101011
+Medical Monitoring Systems 4294951299 5610101012
+Laser Equipment 4294951298 5610101013
+Medical Imaging Systems 4294951297 5610101014
+Medical Software & Technology Services 4294951296 5610101015
+Advanced Medical Equipment Wholesale 4294951295 5610101016
+Medical Equipment, Supplies & Distribution 4294952849 56101020
+Medical Equipment, Supplies & Distribution (NEC) 4294951294 5610102010
+Medical Supplies 4294951293 5610102011
+Medical Prosthetics 4294951292 5610102012
+Medical Equipment 4294951291 5610102013
+Medical Devices & Implants 4294951290 5610102014
+Medical Equipment Wholesale 4294951289 5610102015
+Glasses, Spectacles & Contact Lenses 4294951288 5610102016
+Laboratory Diagnostic & Testing Substances 4294951287 5610102017
+Veterinary Medical Equipment & Supplies 4294951286 5610102018
+Drug Delivery Systems 4294951285 5610102019
+Healthcare Providers & Services 4294952848 561020
+Economic
+Sector
+Business
+Sector
+Industry
+Group Industry Activity PermID
+TRBC
+Hierarchical
+ID
+Healthcare Facilities & Services 4294952847 56102010
+Healthcare Facilities & Services (NEC) 4294951284 5610201010
+Hospitals, Clinics & Primary Care Services 4294951283 5610201011
+Residential & Long-Term Care 4294951282 5610201012
+Ambulance & Emergency Services 4294951281 5610201013
+Doctor's Office 4294951280 5610201014
+Medical & Diagnostic Laboratories 4294951279 5610201015
+Veterinary Services 4294951278 5610201016
+Telemedicine Services 4294951277 5610201017
+Home Healthcare Services 4294951276 5610201018
+Alternative Medicine Facilities 4294951275 5610201019
+Medical Farming 1004365417 5610201020
+Managed Healthcare 4294952846 56102020
+Managed Healthcare (NEC) 4294951274 5610202010
+HMO Medical Centers 4294951273 5610202011
+Pharmaceuticals & Medical Research 4294952845 5620
+Pharmaceuticals 4294952844 562010
+Pharmaceuticals 4294952724 56201040
+Pharmaceuticals (NEC) 4294951272 5620104010
+Proprietary & Advanced Pharmaceuticals 4294951271 5620104011
+Biopharmaceuticals 4294951270 5620104012
+In-Vivo Diagnostic & Testing Substances 4294951269 5620104013
+Veterinary Drugs 4294951268 5620104014
+Generic Pharmaceuticals 4294951267 5620104015
+Alternative Medicine 4294951266 5620104016
+Recreational Pharmaceuticals 1004365423 5620104017
+Pharmaceuticals Wholesale 1004365420 5620104018
+Biotechnology & Medical Research 4294952783 562020
+Biotechnology & Medical Research 4294952842 56202010
+Biotechnology & Medical Research (NEC) 4294951265 5620201010
+Bio Therapeutic Drugs 4294951264 5620201011
+Bio Diagnostics & Testing 4294951263 5620201012
+Bio Medical Devices 4294951262 5620201013
+Technology 4294952723 57
+Technology Equipment 4294952722 5710
+Semiconductors & Semiconductor Equipment 4294952838 571010
+Semiconductors 4294952837 57101010
+Semiconductors (NEC) 4294951261 5710101010
+Integrated Circuits 4294951260 5710101011
+Memory Chips (RAM) 4294951259 5710101012
+Processors 4294951258 5710101013
+Semiconductor Wholesale 4294951257 5710101014
+NFC & RFID Systems 4294951256 5710101015
+Semiconductor Equipment & Testing 4294952836 57101020
+Economic
+Sector
+Business
+Sector
+Industry
+Group Industry Activity PermID
+TRBC
+Hierarchical
+ID
+Semiconductor Equipment & Testing (NEC) 4294951255 5710102010
+Semiconductor Machinery Manufacturing 4294951254 5710102011
+Semiconductor Testing Equipment & Service 4294951253 5710102012
+Semiconductor Equipment Wholesale 4294951252 5710102013
+Communications & Networking 4294952721 571020
+Communications & Networking 4294952720 57102010
+Communications & Networking (NEC) 4294951251 5710201010
+Network Equipment 4294951250 5710201011
+Security & Surveillance 4294951249 5710201012
+Conferencing Tools & Systems 4294951248 5710201013
+VOIP Equipment & Systems 4294951247 5710201014
+Broadcasting Equipment 4294951246 5710201015
+Satellite Communications Network 4294951245 5710201016
+Fiber Optic Cable Manufacturing 4294951244 5710201017
+Electronic Equipment & Parts 4294952713 571040
+Electronic Equipment & Parts 4294952712 57104010
+Electronic Equipment & Parts (NEC) 4294951216 5710401010
+Biometric Products 4294951215 5710401011
+Advanced Electronic Equipment 4294951214 5710401012
+Display Screens 4294951213 5710401013
+Electronic Components 4294951212 5710401014
+3D Printers 1004365450 5710401015
+Office Equipment 4294952715 571050
+Office Equipment 4294952831 57105010
+Office Equipment (NEC) 4294951222 5710501010
+Commercial Document Management 4294951221 5710501011
+Office Technology Equipment 4294951220 5710501012
+Point of Sale Systems 4294951219 5710501013
+Scientific & Precision Equipment 4294951218 5710501014
+Office Equipment Wholesale 4294951217 5710501015
+Computers, Phones & Household Electronics 4294952719 571060
+Computer Hardware 4294952832 57106010
+Computer Hardware (NEC) 4294951243 5710601010
+Scientific & Super Computers 4294951242 5710601011
+Laptop & Desktop Computers 4294951241 5710601012
+Tablet & Netbook Computers 4294951240 5710601013
+Input Devices 4294951239 5710601014
+Output Devices 4294951238 5710601015
+Servers & Systems 4294951237 5710601016
+Storage Devices 4294951236 5710601017
+Computer Hardware Component Assembly 4294951235 5710601018
+Consumer Document Management 4294951234 5710601019
+Phones & Handheld Devices 4294952717 57106020
+Phones & Handheld Devices (NEC) 4294951233 5710602010
+Economic
+Sector
+Business
+Sector
+Industry
+Group Industry Activity PermID
+TRBC
+Hierarchical
+ID
+Phones & Smart Phones 4294951232 5710602011
+Portable Satellite Navigation 4294951231 5710602012
+Personal Music Players 4294951230 5710602013
+Electronic Books 4294951229 5710602014
+Mobile Device Component Assembly 4294951228 5710602015
+Household Electronics 4294952716 57106030
+Household Electronics (NEC) 4294951227 5710603010
+Photographic Equipment 4294951226 5710603011
+TV & Video 4294951225 5710603012
+Home Audio 4294951224 5710603013
+Consumer Electronic Wholesale 4294951223 5710603014
+Integrated Hardware & Software 1004365453 571070
+Integrated Hardware & Software 1004365456 57107010
+Integrated Hardware & Software 1004365459 5710701010
+Software & IT Services 4294952830 5720
+Software & IT Services 4294952829 572010
+IT Services & Consulting 4294952711 57201010
+IT Services & Consulting (NEC) 4294951211 5720101010
+Computer Programming 4294951210 5720101011
+Computer Training 4294951209 5720101012
+Technology Consulting & Outsourcing Services 4294951208 5720101013
+IT Testing Services 4294951207 5720101014
+Cloud Computing Services 4294951206 5720101015
+Machine Learning & Artificial Intelligence (AI) Services 1004365444 5720101016
+Software 4294952827 57201020
+Software (NEC) 4294951205 5720102010
+System Software 4294951204 5720102011
+Application Software 4294951203 5720102012
+Enterprise Software 4294951202 5720102013
+Mobile Application Software 4294951201 5720102014
+Mobile System Software 4294951200 5720102015
+Programming Software & Testing Tools 4294951199 5720102016
+Server & Database Software 4294951198 5720102017
+Security Software 1004365447 5720102018
+Online Services 4294952710 57201030
+Online Services (NEC) 4294951197 5720103010
+Search Engines 4294951196 5720103011
+Social Media & Networking 4294951195 5720103012
+E-commerce & Auction Services 4294951194 5720103013
+Content & Site Management Services 4294951193 5720103014
+Internet Security & Transactions Services 4294951192 5720103015
+Internet Gaming 4294951191 5720103016
+Financial Technology (Fintech) & Infrastructure 1004365357 5730
+Financial Technology (Fintech) & Infrastructure 1004365360 573010
+Economic
+Sector
+Business
+Sector
+Industry
+Group Industry Activity PermID
+TRBC
+Hierarchical
+ID
+Financial Technology (Fintech) 1004365363 57301010
+Financial Technology (Fintech) (NEC) 4294951350 5730101010
+Business to Business 1004365366 5730101020
+Business to Consumer 1004365369 5730101030
+Consumer to Consumer 1004365372 5730101040
+Crowd Collaboration 1004365378 57301020
+Crowd Collaboration (NEC) 1004365381 5730102010
+Crowdfinancing & Crowdfunding 1004365384 5730102020
+Crowdsourcing Platforms 1004365387 5730102030
+Blockchain & Cryptocurrency 1004365390 57301030
+Blockchain & Cryptocurrency (NEC) 1004365393 5730103010
+Cryptocurrency Trading Platforms (Exchanges) 1004365396 5730103020
+Blockchain Technology (Software) 1004365399 5730103030
+Cryptocurrency Hardware 1004365402 5730103040
+Cryptocurrency Mining 1004365405 5730103050
+Miscellaneous Fintech Infrastructure 1004365411 57301090
+Miscellaneous Fintech Infrastructure 1004365414 5730109010
+Telecommunications Services 4294952825 5740
+Telecommunications Services 4294952824 574010
+Integrated Telecommunications Services 4294952823 57401010
+Integrated Telecommunications Services (NEC) 4294951190 5740101010
+Wired Telecommunications Carriers 4294951189 5740101020
+Telecommunications Resellers 4294951188 5740101030
+Internet Service Providers 4294951187 5740101040
+Telecommunications Network Infrastructure 4294951186 5740101050
+VOIP Services 4294951185 5740101060
+Wireless Telecommunications Services 4294952822 57401020
+Wireless Telecommunications Services (NEC) 4294951184 5740102010
+Alternative Communications Services 4294951183 5740102020
+Satellite Service Operators 4294951182 5740102030
+Wi-Fi & Wi-Max Providers 4294951181 5740102040
+Wireless Telecoms Service Providers 4294951180 5740102050
+Utilities 4294952821 59
+Utilities 4294952820 5910
+Electric Utilities & IPPs 4294952819 591010
+Electric Utilities 4294952818 59101010
+Electric Utilities (NEC) 4294951179 5910101010
+Fossil Fuel Electric Utilities 4294951177 5910101012
+Nuclear Utilities 4294951176 5910101013
+Power Charging Stations 1004365462 5910101014
+Alternative Electric Utilities 1004365465 5910101020
+Hydroelectric & Tidal Utilities 1004365477 5910101021
+Solar Electric Utilities 1004365480 5910101022
+Wind Electric Utilities 1004365483 5910101023
+Economic
+Sector
+Business
+Sector
+Industry
+Group Industry Activity PermID
+TRBC
+Hierarchical
+ID
+Biomass & Waste to Energy Electric Utilities 1004365468 5910101024
+Geothermal Electric Utilities 1004365471 5910101025
+Independent Power Producers 4294952709 59101020
+Independent Power Producers (NEC) 4294951175 5910102010
+Fossil Fuel IPPs 4294951174 5910102011
+Renewable IPPs 4294951173 5910102012
+Nuclear IPPs 4294951172 5910102013
+Natural Gas Utilities 4294952817 591020
+Natural Gas Utilities 4294952816 59102010
+Natural Gas Utilities (NEC) 4294951171 5910201010
+Natural Gas Distribution 4294951170 5910201011
+Water & Related Utilities 4294952815 591030
+Water & Related Utilities 4294952814 59103010
+Water & Related Utilities (NEC) 4294951169 5910301010
+Water Supply & Irrigation Systems 4294951168 5910301011
+Sewage Treatment Facilities 4294951167 5910301012
+Heating & Air-Conditioning Supply 4294951166 5910301013
+Multiline Utilities 4294952813 591040
+Multiline Utilities 4294952812 59104010
+Multiline Utilities 4294951165 5910401010
+Real Estate 1004365438 60
+Real Estate 4294952860 6010
+Real Estate Operations 4294952858 601010
+Real Estate Rental, Development & Operations 4294952788 60101010
+Real Estate Rental, Development & Operations (NEC) 4294951333 6010101010
+Office Real Estate Rental & Development 4294951332 6010101020
+Retail Real Estate Rental & Development 4294951331 6010101030
+Industrial Real Estate Rental & Development 4294951330 6010101040
+Residential Real Estate Rental & Development 4294951329 6010101050
+Real Estate Services 4294952787 60101020
+Real Estate Services (NEC) 4294951328 6010102010
+Office Real Estate Services 4294951327 6010102020
+Retail Real Estate Services 4294951326 6010102030
+Industrial Real Estate Services 4294951325 6010102040
+Residential Real Estate Services 4294951324 6010102050
+Residential & Commercial REITs 4294952857 601020
+Diversified REITs 4294952786 60102010
+Diversified REITs 4294951323 6010201010
+Commercial REITs 4294952785 60102020
+Commercial REITs (NEC) 4294951322 6010202010
+Office REITs 4294951321 6010202020
+Retail REITs 4294951320 6010202030
+Industrial REITs 4294951319 6010202040
+Residential REITs 4294952784 60102030
+Economic
+Sector
+Business
+Sector
+Industry
+Group Industry Activity PermID
+TRBC
+Hierarchical
+ID
+Residential REITs 4294951318 6010203010
+Specialized REITs 4294952733 60102040
+Specialized REITs (NEC) 4294951317 6010204010
+Healthcare REITs 4294951316 6010204020
+Hospitality REITs 4294951315 6010204030
+Self-Storage REITs 4294951314 6010204040
+Timber REITs 4294951313 6010204050
+Mortgage REITs 4294951312 6010204060
+Islamic REITs 4294951311 6010204070
+Institutions, Associations & Organizations 1004365486 61
+Institutions, Associations & Organizations 1004365489 6110
+Institutions, Associations & Organizations 1004365492 611010
+Religious Organizations 1004365495 61101010
+Religious Organizations 1004365498 6110101010
+Civic & Social Organizations 1004365501 61101020
+Civic & Social Organizations 1004365504 6110102010
+Environmental Organizations 1004365510 61101030
+Environmental Organizations 1004365513 6110103010
+Charity Organizations 1004365516 61101040
+Charity Organizations 1004365519 6110104010
+Professional Organizations 1004365522 61101050
+Professional Organizations (NEC) 1004365525 6110105010
+Business, Professional & Labor Organizations 1004365528 6110105020
+Political Organizations 1004365531 6110105030
+Non-Governmental Organizations (NGOs) 1004365534 6110105040
+Government Activity 1004365537 62
+Government Activity 1004365543 6210
+Government Activity 1004365546 621010
+Government & Government Finance 1004365549 62101010
+Government & Government Finance (NEC) 1004365552 6210101010
+Public Finance Activities 1004365555 6210101020
+Legal & Safety Public Services 1004365558 62101020
+Legal & Safety Public Services (NEC) 1004365561 6210102010
+Police, Justice & Legal Counsel 1004365564 6210102020
+Fire 1004365567 6210102030
+Government Administration Activities 1004365570 62101030
+Government Administration Activities 1004365576 6210103010
+National Security & International Affairs 1004365579 62101040
+National Security & International Affairs 1004365582 6210104010
+Academic & Educational Services 1004365585 63
+Academic & Educational Services 1004365588 6310
+Miscellaneous Educational Service Providers 1004365591 631010
+Miscellaneous Educational Service Providers 1004365594 63101010
+Miscellaneous Educational Service Providers 4294951401 6310101010
+History available from 1999, on QA Direct.
+Visit refinitiv.com
+@Refinitiv Refinitiv
+Economic
+Sector
+Business
+Sector
+Industry
+Group Industry Activity PermID
+TRBC
+Hierarchical
+ID
+Schools, Colleges & Universities 1004365597 631020
+Schools, Colleges & Universities 1004365600 63102010
+Schools, Colleges & Universities (NEC) 1004365603 6310201010
+Nursery & Pre-Schools 1004365609 6310201020
+Elementary & Primary Schools 1004365612 6310201030
+Colleges & Secondary Schools 1004365615 6310201040
+Universities 1004365618 6310201050
+School Districts 1004365621 6310201060
+Professional & Business Education 1004365624 631030
+Professional & Business Education 1004365627 63103010
+Professional & Business Education 4294951777 6310301010
