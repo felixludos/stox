@@ -2,6 +2,14 @@ from .imports import *
 from ib_insync import *
 from . import misc
 
+from dataclasses import dataclass
+from . import misc, yahoo
+from collections import namedtuple
+import omniply as op
+from omniply import tool, ToolKit, Context
+
+
+
 
 class IB_Extractor:
 	def __init__(self, using_notebook=False, host='127.0.0.1', port=4001, client_id=1):
@@ -57,6 +65,7 @@ class IB_Extractor:
 		return [r.contract for r in self.ib.reqMatchingSymbols(query)]
 
 
+
 def describe_contract(ibe: IB_Extractor, contract: str | Contract, *, snapshot=None,
 					  name=True, info=True, industries=True, summary=True, price=True):
 	if isinstance(contract, str):
@@ -93,6 +102,7 @@ def describe_contract(ibe: IB_Extractor, contract: str | Contract, *, snapshot=N
 		print(summary_text)
 
 	return snapshot
+
 
 
 def load_symbol_table():
@@ -141,6 +151,7 @@ def add_symbol_row(table, yfsym, contract, force=False):
 
 report_keys = ['snapshot', 'ownership', 'finances', 'statements', 'recommendations']
 
+
 def download_reports(ibe, info, root=None, date=None, pbar=None, keys=None):
 	if root is None:
 		root = misc.ibkr_root()
@@ -179,7 +190,7 @@ def download_reports(ibe, info, root=None, date=None, pbar=None, keys=None):
 	return path
 
 
-def load_stock_data(row, date='last', root=None, keys=None, *, skip_missing=True):
+def old_load_stock_data(row, date='last', root=None, keys=None, *, skip_missing=True):
 	if root is None:
 		root = misc.ibkr_root()
 
@@ -214,15 +225,21 @@ def load_stock_data(row, date='last', root=None, keys=None, *, skip_missing=True
 	return data
 
 
-from . import misc, yahoo
-from collections import namedtuple
-from omniply.novo.test_novo import TestCraftyKitBase, tool
+
+@dataclass
+class Money:
+	amount: float
+	currency: str
+
+	def __str__(self):
+		return f'{self.amount:.2f} {self.currency}'
+
+	def __repr__(self):
+		return f'{self.amount:.2f} {self.currency}'
 
 
-Money = namedtuple('Money', 'amount currency')
 
-
-class IBKR_Loader(TestCraftyKitBase):
+class IBKR_Loader(ToolKit):
 	def __init__(self, date='last', root=None):
 		super().__init__()
 		if root is None:
@@ -245,30 +262,46 @@ class IBKR_Loader(TestCraftyKitBase):
 
 	@tool('snapshot')
 	def load_snapshot(self, ckpt_path):
-		return self._load_xml(ckpt_path / 'snapshot.xml')
+		path = ckpt_path / 'snapshot.xml'
+		if not path.exists():
+			raise op.GadgetFailure(f'No snapshot for {ckpt_path}')
+		return self._load_xml(path)['ReportSnapshot']
 
 	@tool('ownership')
 	def load_ownership(self, ckpt_path):
-		return self._load_xml(ckpt_path / 'ownership.xml')
+		path = ckpt_path / 'ownership.xml'
+		if not path.exists():
+			raise op.GadgetFailure(f'No ownership for {ckpt_path}')
+		return self._load_xml(path)
 
 	@tool('finances')
 	def load_finances(self, ckpt_path):
-		return self._load_xml(ckpt_path / 'finances.xml')
+		path = ckpt_path / 'finances.xml'
+		if not path.exists():
+			raise op.GadgetFailure(f'No finances for {ckpt_path}')
+		return self._load_xml(path)
 
 	@tool('statements')
 	def load_statements(self, ckpt_path):
-		return self._load_xml(ckpt_path / 'statements.xml')
+		path = ckpt_path / 'statements.xml'
+		if not path.exists():
+			raise op.GadgetFailure(f'No statements for {ckpt_path}')
+		return self._load_xml(path)
 
 	@tool('recommendations')
 	def load_recommendations(self, ckpt_path):
-		return self._load_xml(ckpt_path / 'recommendations.xml')
+		path = ckpt_path / 'recommendations.xml'
+		if not path.exists():
+			raise op.GadgetFailure(f'No recommendations for {ckpt_path}')
+		return self._load_xml(path)['REarnEstCons']
 
 
-class IBKR_Stats(TestCraftyKitBase):
+
+class IBKR_Stats(ToolKit):
 	@tool('company_name')
 	def get_company_name_from_snapshot(self, snapshot):
-		val = snapshot['ColIDs']['CoID'][1]
-		assert val['@type'] == 'CompanyName', f'Expected CompanyName in {val}'
+		val = snapshot['CoIDs']['CoID'][1]
+		assert val['@Type'] == 'CompanyName', f'Expected CompanyName in {val}'
 		return val['#text']
 
 	@tool('company_name')
@@ -308,7 +341,11 @@ class IBKR_Stats(TestCraftyKitBase):
 
 	@tool('isin')
 	def get_isin_from_rec(self, recommendations):
-		return recommendations['Company']['SecurityInfo']['Security']['ISIN']['#text']
+		options = recommendations['Company']['SecurityInfo']['Security']['SecIds']['SecId']['#text']
+		for o in options:
+			if o['@type'] == 'ISIN':
+				return o['#text']
+		raise op.GadgetError(f'Expected ISIN in {options}')
 
 	@tool('clprice')
 	def get_clprice(self, recommendations):
@@ -316,25 +353,25 @@ class IBKR_Stats(TestCraftyKitBase):
 
 	@tool('price')
 	def get_price(self, recommendations):
-		entry = recommendations['Company']['SecurityInfo']['MarketData']['MarketDataItem'][0]
+		entry = recommendations['Company']['SecurityInfo']['Security']['MarketData']['MarketDataItem'][0]
 		assert entry['@unit'] == 'U' and entry['@type'] == 'CLPRICE', f'Expected CLPRICE in {entry}'
 		return Money(float(entry['#text']), entry['@currCode'])
 
 	@tool('market_cap')
 	def get_market_cap(self, recommendations):
-		entry = recommendations['Company']['SecurityInfo']['MarketData']['MarketDataItem'][1]
+		entry = recommendations['Company']['SecurityInfo']['Security']['MarketData']['MarketDataItem'][1]
 		assert entry['@unit'] == 'M' and entry['@type'] == 'MARKETCAP', f'Expected MARKETCAP in {entry}'
 		return Money(float(entry['#text']) * 1e6, entry['@currCode'])
 
 	@tool('high_52w')
 	def get_high_52w(self, recommendations):
-		entry = recommendations['Company']['SecurityInfo']['MarketData']['MarketDataItem'][2]
+		entry = recommendations['Company']['SecurityInfo']['Security']['MarketData']['MarketDataItem'][2]
 		assert entry['@unit'] == 'U' and entry['@type'] == '52WKHIGH', f'Expected 52WKHIGH in {entry}'
 		return Money(float(entry['#text']), entry['@currCode'])
 
 	@tool('low_52w')
 	def get_low_52w(self, recommendations):
-		entry = recommendations['Company']['SecurityInfo']['MarketData']['MarketDataItem'][3]
+		entry = recommendations['Company']['SecurityInfo']['Security']['MarketData']['MarketDataItem'][3]
 		assert entry['@unit'] == 'U' and entry['@type'] == '52WKLOW', f'Expected 52WKLOW in {entry}'
 		return Money(float(entry['#text']), entry['@currCode'])
 

@@ -39,7 +39,7 @@ def assets_root():
 
 def data_root():
 	'''Returns the root directory for the data.'''
-	return stox_root() / 'stockdata'
+	return stox_root() / 'stoxdata'
 
 def yahoo_root():
 	'''Returns the root directory for the Yahoo data.'''
