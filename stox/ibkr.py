@@ -238,7 +238,6 @@ class Money:
 		return f'{self.amount:.2f} {self.currency}'
 
 
-
 class IBKR_Loader(ToolKit):
 	def __init__(self, date='last', root=None):
 		super().__init__()
@@ -294,7 +293,6 @@ class IBKR_Loader(ToolKit):
 		if not path.exists():
 			raise op.GadgetFailure(f'No recommendations for {ckpt_path}')
 		return self._load_xml(path)['REarnEstCons']
-
 
 
 class IBKR_Stats(ToolKit):
