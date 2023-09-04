@@ -184,6 +184,60 @@ class OfflineTicker:
 			return obj
 
 
+from omniply import ToolKit, tool
+
+# _default_datatypes = {
+# 	# 'ticker': JsonLoader,
+# 	'isin': JsonLoader,
+# 	'info': JsonLoader,
+# 	'history': PandasLoader,
+# 	# 'calendar': PandasLoader, # TODO: update when yfinance is updated
+#
+# 	# 'recommendations': PandasLoader, # TODO: update when yfinance is updated
+# 	# 'sustainability': PandasLoader, # TODO: update when yfinance is updated
+#
+# 	'dividends': PandasLoader,
+# 	'splits': PandasLoader,
+#
+# 	'institutional_holders': PandasLoader,
+# 	'major_holders': PandasLoader,
+# 	'mutualfund_holders': PandasLoader,
+#
+# 	'balancesheet': PandasLoader,
+# 	'cashflow': PandasLoader,
+# 	# 'earnings': PandasLoader,
+# 	'financials': PandasLoader,
+#
+# 	'quarterly_balancesheet': PandasLoader,
+# 	'quarterly_cashflow': PandasLoader,
+# 	# 'quarterly_earnings': PandasLoader,
+# 	'quarterly_financials': PandasLoader,
+#
+# }
+
+
+class Yahoo_Loader(ToolKit):
+	def __init__(self, root=None):
+		super().__init__()
+		if root is None:
+			root = misc.yahoo_root()
+		self.root = root
+
+	@tool('ckpt_path')
+	def get_ckpt_path(self, ticker, date='last'):
+		path = misc.get_date_path(self.root / ticker, date)
+		return path
+
+	@tool('info')
+	def get_info(self, ckpt_path):
+		return JsonLoader.load(ckpt_path, 'info')
+
+	@tool('splits')
+	def get_splits(self, ckpt_path):
+		return PandasLoader.load(ckpt_path, 'splits')
+
+
+
 
 # def load(ticker, root=None, date=None, keys=None, ticker_type=None, **kwargs):
 # 	path = _get_path_info(ticker, root=root, date=date)

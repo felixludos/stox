@@ -2,12 +2,11 @@ from .imports import *
 from ib_insync import *
 from . import misc
 
-from dataclasses import dataclass
 from . import misc, yahoo
+from .general import Money, TRBC_Codes
 from collections import namedtuple
 import omniply as op
 from omniply import tool, ToolKit, Context
-
 
 
 
@@ -226,34 +225,17 @@ def old_load_stock_data(row, date='last', root=None, keys=None, *, skip_missing=
 
 
 
-@dataclass
-class Money:
-	amount: float
-	currency: str
-
-	def __str__(self):
-		return f'{self.amount:.2f} {self.currency}'
-
-	def __repr__(self):
-		return f'{self.amount:.2f} {self.currency}'
-
-
 class IBKR_Loader(ToolKit):
-	def __init__(self, date='last', root=None):
+	def __init__(self, root=None):
 		super().__init__()
 		if root is None:
 			root = misc.ibkr_root()
 		self.root = root
-		self.date = date
-
-	@tool('ckpt_date')
-	def get_ckpt_date(self, conId):
-		path = misc.get_date_path(self.root / str(conId), self.date)
-		return path.name
 
 	@tool('ckpt_path')
-	def get_ckpt_path(self, conId, ckpt_date):
-		return misc.get_date_path(self.root / str(conId), ckpt_date)
+	def get_ckpt_path(self, conId, date='last'):
+		path = misc.get_date_path(self.root / str(conId), date)
+		return path
 
 	def _load_xml(self, path):
 		with open(path, 'r') as f:
@@ -293,6 +275,7 @@ class IBKR_Loader(ToolKit):
 		if not path.exists():
 			raise op.GadgetFailure(f'No recommendations for {ckpt_path}')
 		return self._load_xml(path)['REarnEstCons']
+
 
 
 class IBKR_Stats(ToolKit):
@@ -345,10 +328,6 @@ class IBKR_Stats(ToolKit):
 				return o['#text']
 		raise op.GadgetError(f'Expected ISIN in {options}')
 
-	@tool('clprice')
-	def get_clprice(self, recommendations):
-		return recommendations['Company']['SecurityInfo']['Security']['@clprice']
-
 	@tool('price')
 	def get_price(self, recommendations):
 		entry = recommendations['Company']['SecurityInfo']['Security']['MarketData']['MarketDataItem'][0]
@@ -373,9 +352,9 @@ class IBKR_Stats(ToolKit):
 		assert entry['@unit'] == 'U' and entry['@type'] == '52WKLOW', f'Expected 52WKLOW in {entry}'
 		return Money(float(entry['#text']), entry['@currCode'])
 
-	@tool('sector')
-	def get_sector(self, recommendations):
-		return recommendations['Company']['CompanyInfo']['Sector']['#text']
+	# @tool('industry_trbc')
+	# def get_industry_trbc(self, recommendations):
+	# 	return recommendations['Company']['CompanyInfo']['Sector']['#text']
 
 	@tool('employees')
 	def get_employees(self, snapshot):
@@ -418,7 +397,9 @@ class IBKR_Stats(ToolKit):
 	@tool('city')
 	def get_city(self, snapshot):
 		val = snapshot['contactInfo']['city']
-		return val['#text']
+		if isinstance(val, dict):
+			val = val['#text']
+		return ' '.join(v.capitalize() for v in val.split(' '))
 
 	# skipped address and phone and contact person info and email
 	@tool('website')
@@ -426,6 +407,7 @@ class IBKR_Stats(ToolKit):
 		val = snapshot['webLinks']['webSite']
 		return val['#text']
 
+	@tool('industry')
 	@tool('industry_trbc')
 	def get_industry_trbc(self, snapshot):
 		full = snapshot['peerInfo']['IndustryInfo']['Industry']
@@ -440,7 +422,6 @@ class IBKR_Stats(ToolKit):
 		assert len(vals) == 1, f'Expected 1 TRBC in {vals}'
 		return vals[0]['@code']
 
-	@tool('industry')
 	@tool('industry_naics')
 	def get_industry_naics(self, snapshot):
 		full = snapshot['peerInfo']['IndustryInfo']['Industry']
@@ -470,6 +451,17 @@ class IBKR_Stats(ToolKit):
 		return [v['@code'] for v in vals]
 
 
+class IBKR_Derived(ToolKit):
+	def __init__(self, *, trbc=None, **kwargs):
+		if trbc is None:
+			trbc = TRBC_Codes()
+		super().__init__(**kwargs)
+		self.trbc = trbc
+
+
+	@tool('sector')
+	def get_sector(self, industry_trbc_code):
+		return self.trbc.get_sector(industry_trbc_code)
 
 
 
