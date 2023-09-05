@@ -1,8 +1,8 @@
 import random
 from . import misc
 from .ibkr import IBKR_Loader, IBKR_Stats, IBKR_Derived, load_symbol_table
-from .yahoo import Yahoo_Loader
-from omniply import tool, ToolKit, Context, Scope
+from .yahoo import Yahoo_Loader, Yahoo_Info
+from omniply import tool, ToolKit, Context, Scope, Selection
 
 
 
@@ -17,15 +17,25 @@ def test_ibkr():
 	yfsym, ibrow = random.choice(rows)
 	gg = Context(
 		Scope(IBKR_Derived(), IBKR_Stats(), IBKR_Loader(root=misc.ibkr_root()),
-			  apply={
+			  gap={
 				  'ckpt_path': 'ib_ckpt_path',
 			  }),
-		Scope(Yahoo_Loader(root=misc.yahoo_root()),
-			  apply={
+		Selection(Yahoo_Info(), Yahoo_Loader(root=misc.yahoo_root()),
+			  gap={
 				  'ckpt_path': 'yahoo_ckpt_path',
+				  'ticker': 'yfsym',
+
+				  'info': 'info',
+
+				  'recommendation_mean': 'recommendation_mean',
+				  'recommendation_key': 'recommendation_key',
+				  'number_of_analysts': 'number_of_analysts',
+				  'target_mean_price': 'target_mean_price',
+				  'target_high_price': 'target_high_price',
+				  'target_low_price': 'target_low_price',
+				  'target_median_price': 'target_median_price',
 			  }),
 	)
-
 	gg.update(ibrow)
 	gg['date'] = date
 	gg['ibsym'] = ibrow['symbol']
@@ -39,6 +49,9 @@ def test_ibkr():
 	land = gg['country']
 
 	print(land)
+
+	rec = gg['recommendation_mean']
+	print(rec)
 
 
 

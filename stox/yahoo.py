@@ -9,6 +9,7 @@ import pandas as pd
 
 import yfinance as yf
 
+from .general import Quantity
 from . import misc
 
 # from omnibelt import get_now
@@ -186,34 +187,6 @@ class OfflineTicker:
 
 from omniply import ToolKit, tool
 
-# _default_datatypes = {
-# 	# 'ticker': JsonLoader,
-# 	'isin': JsonLoader,
-# 	'info': JsonLoader,
-# 	'history': PandasLoader,
-# 	# 'calendar': PandasLoader, # TODO: update when yfinance is updated
-#
-# 	# 'recommendations': PandasLoader, # TODO: update when yfinance is updated
-# 	# 'sustainability': PandasLoader, # TODO: update when yfinance is updated
-#
-# 	'dividends': PandasLoader,
-# 	'splits': PandasLoader,
-#
-# 	'institutional_holders': PandasLoader,
-# 	'major_holders': PandasLoader,
-# 	'mutualfund_holders': PandasLoader,
-#
-# 	'balancesheet': PandasLoader,
-# 	'cashflow': PandasLoader,
-# 	# 'earnings': PandasLoader,
-# 	'financials': PandasLoader,
-#
-# 	'quarterly_balancesheet': PandasLoader,
-# 	'quarterly_cashflow': PandasLoader,
-# 	# 'quarterly_earnings': PandasLoader,
-# 	'quarterly_financials': PandasLoader,
-#
-# }
 
 
 class Yahoo_Loader(ToolKit):
@@ -236,6 +209,258 @@ class Yahoo_Loader(ToolKit):
 	def get_splits(self, ckpt_path):
 		return PandasLoader.load(ckpt_path, 'splits')
 
+	@tool('dividends')
+	def get_dividends(self, ckpt_path):
+		return PandasLoader.load(ckpt_path, 'dividends')
+
+	@tool('history')
+	def get_history(self, ckpt_path):
+		return PandasLoader.load(ckpt_path, 'history')
+
+	@tool('isin')
+	def get_isin(self, ckpt_path):
+		return JsonLoader.load(ckpt_path, 'isin')
+
+	@tool('balancesheet')
+	def get_balancesheet(self, ckpt_path):
+		return PandasLoader.load(ckpt_path, 'balancesheet')
+
+	@tool('cashflow')
+	def get_cashflow(self, ckpt_path):
+		return PandasLoader.load(ckpt_path, 'cashflow')
+
+	@tool('financials')
+	def get_financials(self, ckpt_path):
+		return PandasLoader.load(ckpt_path, 'financials')
+
+	@tool('quarterly_balancesheet')
+	def get_quarterly_balancesheet(self, ckpt_path):
+		return PandasLoader.load(ckpt_path, 'quarterly_balancesheet')
+
+	@tool('quarterly_cashflow')
+	def get_quarterly_cashflow(self, ckpt_path):
+		return PandasLoader.load(ckpt_path, 'quarterly_cashflow')
+
+	@tool('quarterly_financials')
+	def get_quarterly_financials(self, ckpt_path):
+		return PandasLoader.load(ckpt_path, 'quarterly_financials')
+
+
+
+class Yahoo_Info(ToolKit):
+	def __init__(self, root=None):
+		super().__init__()
+		if root is None:
+			root = misc.yahoo_root()
+		self.root = root
+
+	@tool('country')
+	def get_country(self, info):
+		return info['country']
+
+	@tool('city')
+	def get_city(self, info):
+		return info['city']
+
+	@tool('website')
+	def get_website(self, info):
+		return info['website']
+
+	@tool('sector')
+	def get_sector(self, info):
+		return info['sector']
+
+	@tool('industry')
+	def get_industry(self, info):
+		return info['industry']
+
+	@tool('business_summary')
+	def get_business_summary(self, info):
+		return info['longBusinessSummary']
+
+	@tool('employees')
+	def get_employees(self, info):
+		return info['fullTimeEmployees']
+
+	@tool('audit_risk')
+	def get_audit_risk(self, info):
+		return info['auditRisk']
+
+	@tool('board_risk')
+	def get_board_risk(self, info):
+		return info['boardRisk']
+
+	@tool('compensation_risk')
+	def get_compensation_risk(self, info):
+		return info['compensationRisk']
+
+	@tool('share_holder_risk')
+	def get_share_holder_risk(self, info):
+		return info['shareHolderRightsRisk']
+
+	@tool('overall_risk')
+	def get_overall_risk(self, info):
+		return info['overallRisk']
+
+	@tool('high_52w')
+	def get_high_52w(self, info):
+		return Quantity(info['fiftyTwoWeekHigh'], info['currency'])
+
+	@tool('low_52w')
+	def get_low_52w(self, info):
+		return Quantity(info['fiftyTwoWeekLow'], info['currency'])
+
+	@tool('cash_per_share')
+	def get_cash_per_share(self, info):
+		return info['totalCashPerShare']
+
+	@tool('debt_to_equity')
+	def get_debt_to_equity(self, info):
+		return info['debtToEquity']
+
+	@tool('earnings_growth')
+	def get_earnings_growth(self, info):
+		return Quantity(info['earningsGrowth']*100, '%')
+
+	@tool('yield')
+	def get_yield(self, info):
+		return Quantity(info['dividendYield'] * 100, '%')
+
+	@tool('revenue')
+	def get_revenue(self, info):
+		return Quantity(info['revenue'], info['currency'])
+
+	@tool('gross_profit')
+	def get_gross_profit(self, info):
+		return Quantity(info['grossProfits'], info['currency'])
+
+	@tool('free_cash_flow')
+	def get_free_cash_flow(self, info):
+		return Quantity(info['freeCashflow'], info['currency'])
+
+	@tool('operating_cash_flow')
+	def get_operating_cash_flow(self, info):
+		return Quantity(info['operatingCashflow'], info['currency'])
+
+	@tool('operating_income')
+	def get_operating_income(self, info):
+		return Quantity(info['operatingIncome'], info['currency'])
+
+	@tool('ebitda')
+	def get_ebitda(self, info):
+		return Quantity(info['ebitda'], info['currency'])
+
+	@tool('debt')
+	def get_debt(self, info):
+		return Quantity(info['totalDebt'], info['currency'])
+
+	@tool('cash')
+	def get_cash(self, info):
+		return Quantity(info['totalCash'], info['currency'])
+
+	@tool('current_ratio')
+	def get_current_ratio(self, info):
+		return info['currentRatio']
+
+	@tool('quick_ratio')
+	def get_quick_ratio(self, info):
+		return info['quickRatio']
+
+	@tool('beta')
+	def get_beta(self, info):
+		return info['beta']
+
+	@tool('trailing_pe')
+	def get_trailing_pe(self, info):
+		return info['trailingPE']
+
+	@tool('forward_pe')
+	def get_forward_pe(self, info):
+		return info['forwardPE']
+
+	@tool('volume')
+	def get_volume(self, info):
+		return info['averageVolume']
+
+	@tool('volume_10d')
+	def get_volume_10d(self, info):
+		return info['averageVolume10days']
+
+	@tool('market_cap')
+	def get_market_cap(self, info):
+		return Quantity(info['marketCap'], info['currency'])
+
+	@tool('price_to_book')
+	def get_price_to_book(self, info):
+		return info['priceToBook']
+
+	@tool('trailing_eps')
+	def get_trailing_eps(self, info):
+		return info['trailingEps']
+
+	@tool('forward_eps')
+	def get_forward_eps(self, info):
+		return info['forwardEps']
+
+	@tool('exchange')
+	def get_exchange(self, info):
+		return info['exchange']
+
+	@tool('company_short_name')
+	def get_short_name(self, info):
+		return info['shortName']
+
+	@tool('company_name')
+	def get_long_name(self, info):
+		return info['longName']
+
+	@tool('price')
+	def get_price(self, info):
+		return Quantity(info['currentPrice'], info['currency'])
+
+	@tool('recommendation_mean')
+	def get_recommendation_mean(self, info):
+		return info['recommendationMean']
+
+	@tool('recommendation_key')
+	def get_recommendation_key(self, info):
+		return info['recommendationKey']
+
+	@tool('number_of_analysts')
+	def get_number_of_analysts(self, info):
+		return info['numberOfAnalystOpinions']
+
+	@tool('target_mean_price')
+	def get_target_mean_price(self, info):
+		return Quantity(info['targetMeanPrice'], info['currency'])
+
+	@tool('target_high_price')
+	def get_target_high_price(self, info):
+		return Quantity(info['targetHighPrice'], info['currency'])
+
+	@tool('target_low_price')
+	def get_target_low_price(self, info):
+		return Quantity(info['targetLowPrice'], info['currency'])
+
+	@tool('target_median_price')
+	def get_target_median_price(self, info):
+		return Quantity(info['targetMedianPrice'], info['currency'])
+
+	@tool('change_52w')
+	def get_change_52w(self, info):
+		return Quantity(info['52WeekChange']*100, '%')
+
+	@tool('held_percent_institutions')
+	def get_held_percent_institutions(self, info):
+		return Quantity(info['heldPercentInstitutions']*100, '%')
+
+	@tool('held_percent_insiders')
+	def get_held_percent_insiders(self, info):
+		return Quantity(info['heldPercentInsiders']*100, '%')
+
+	@tool('profit_margins')
+	def get_profit_margins(self, info):
+		return Quantity(info['profitMargins']*100, '%')
 
 
 

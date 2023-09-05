@@ -3,7 +3,7 @@ from ib_insync import *
 from . import misc
 
 from . import misc, yahoo
-from .general import Money, TRBC_Codes
+from .general import Quantity, TRBC_Codes
 from collections import namedtuple
 import omniply as op
 from omniply import tool, ToolKit, Context
@@ -291,8 +291,9 @@ class IBKR_Stats(ToolKit):
 
 	@tool('exchange')
 	def get_exchange_from_snapshot(self, snapshot):
-		val = snapshot['Issues']['Issue']['Exchange']
-		return val['@Code']
+		vals = snapshot['Issues']['Issue']
+		val = vals[0] if isinstance(vals, list) else vals
+		return val['Exchange']['@Code']
 
 	@tool('exchange')
 	def get_exchange_from_rec(self, recommendations):
@@ -300,13 +301,15 @@ class IBKR_Stats(ToolKit):
 
 	@tool('exchange_name')
 	def get_exchange_name(self, snapshot):
-		val = snapshot['Issues']['Issue']['Exchange']
-		return val['#text']
+		vals = snapshot['Issues']['Issue']
+		val = vals[0] if isinstance(vals, list) else vals
+		return val['Exchange']['#text']
 
 	@tool('country')
 	def get_country_code_from_snapshot(self, snapshot):
-		val = snapshot['Issues']['Issue']['Exchange']
-		return val['@Country']
+		vals = snapshot['Issues']['Issue']
+		val = vals[0] if isinstance(vals, list) else vals
+		return val['Exchange']['@Country']
 
 	@tool('country')
 	def get_country_code_from_rec(self, recommendations):
@@ -316,7 +319,9 @@ class IBKR_Stats(ToolKit):
 
 	@tool('isin')
 	def get_isin_from_snapshot(self, snapshot):
-		val = snapshot['Issues']['Issue']['IssueID'][2]
+		vals = snapshot['Issues']['Issue']
+		val = vals[0] if isinstance(vals, list) else vals
+		val = val['IssueID'][2]
 		assert val['@Type'] == 'ISIN', f'Expected ISIN in {val}'
 		return val['#text']
 
@@ -332,25 +337,25 @@ class IBKR_Stats(ToolKit):
 	def get_price(self, recommendations):
 		entry = recommendations['Company']['SecurityInfo']['Security']['MarketData']['MarketDataItem'][0]
 		assert entry['@unit'] == 'U' and entry['@type'] == 'CLPRICE', f'Expected CLPRICE in {entry}'
-		return Money(float(entry['#text']), entry['@currCode'])
+		return Quantity(float(entry['#text']), entry['@currCode'])
 
 	@tool('market_cap')
 	def get_market_cap(self, recommendations):
 		entry = recommendations['Company']['SecurityInfo']['Security']['MarketData']['MarketDataItem'][1]
 		assert entry['@unit'] == 'M' and entry['@type'] == 'MARKETCAP', f'Expected MARKETCAP in {entry}'
-		return Money(float(entry['#text']) * 1e6, entry['@currCode'])
+		return Quantity(float(entry['#text']) * 1e6, entry['@currCode'])
 
 	@tool('high_52w')
 	def get_high_52w(self, recommendations):
 		entry = recommendations['Company']['SecurityInfo']['Security']['MarketData']['MarketDataItem'][2]
 		assert entry['@unit'] == 'U' and entry['@type'] == '52WKHIGH', f'Expected 52WKHIGH in {entry}'
-		return Money(float(entry['#text']), entry['@currCode'])
+		return Quantity(float(entry['#text']), entry['@currCode'])
 
 	@tool('low_52w')
 	def get_low_52w(self, recommendations):
 		entry = recommendations['Company']['SecurityInfo']['Security']['MarketData']['MarketDataItem'][3]
 		assert entry['@unit'] == 'U' and entry['@type'] == '52WKLOW', f'Expected 52WKLOW in {entry}'
-		return Money(float(entry['#text']), entry['@currCode'])
+		return Quantity(float(entry['#text']), entry['@currCode'])
 
 	# @tool('industry_trbc')
 	# def get_industry_trbc(self, recommendations):

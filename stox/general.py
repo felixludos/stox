@@ -5,43 +5,43 @@ from . import misc
 
 
 @dataclass
-class Money:
+class Quantity:
 	amount: float
-	currency: str
+	unit: str
 
 	def _humanize(self, amount):
 		return human_readable_number(amount, significant_figures=3)
 
 	def __str__(self):
 		amount = self._humanize(self.amount)
-		return f'{amount} {self.currency}'
+		return f'{amount} {self.unit}'
 
 	def __repr__(self):
 		amount = self._humanize(self.amount)
-		return f'{amount} {self.currency}'
+		return f'{amount} {self.unit}'
 
 	def __lt__(self, other):
-		assert isinstance(other, Money) and self.currency == other.currency, f'Cannot compare {self} to {other}'
+		assert isinstance(other, Quantity) and self.unit == other.unit, f'Cannot compare {self} to {other}'
 		return self.amount < other.amount
 
 	def __le__(self, other):
-		assert isinstance(other, Money) and self.currency == other.currency, f'Cannot compare {self} to {other}'
+		assert isinstance(other, Quantity) and self.unit == other.unit, f'Cannot compare {self} to {other}'
 		return self.amount <= other.amount
 
 	def __eq__(self, other):
-		assert isinstance(other, Money) and self.currency == other.currency, f'Cannot compare {self} to {other}'
+		assert isinstance(other, Quantity) and self.unit == other.unit, f'Cannot compare {self} to {other}'
 		return self.amount == other.amount
 
 	def __ne__(self, other):
-		assert isinstance(other, Money) and self.currency == other.currency, f'Cannot compare {self} to {other}'
+		assert isinstance(other, Quantity) and self.unit == other.unit, f'Cannot compare {self} to {other}'
 		return self.amount != other.amount
 
 	def __gt__(self, other):
-		assert isinstance(other, Money) and self.currency == other.currency, f'Cannot compare {self} to {other}'
+		assert isinstance(other, Quantity) and self.unit == other.unit, f'Cannot compare {self} to {other}'
 		return self.amount > other.amount
 
 	def __ge__(self, other):
-		assert isinstance(other, Money) and self.currency == other.currency, f'Cannot compare {self} to {other}'
+		assert isinstance(other, Quantity) and self.unit == other.unit, f'Cannot compare {self} to {other}'
 		return self.amount >= other.amount
 
 
