@@ -256,211 +256,211 @@ class Yahoo_Info(ToolKit):
 
 	@tool('country')
 	def get_country(self, info):
-		return info['country']
+		return info.get('country')
 
 	@tool('city')
 	def get_city(self, info):
-		return info['city']
+		return info.get('city')
 
 	@tool('website')
 	def get_website(self, info):
-		return info['website']
+		return info.get('website')
 
 	@tool('sector')
 	def get_sector(self, info):
-		return info['sector']
+		return info.get('sector')
 
 	@tool('industry')
 	def get_industry(self, info):
-		return info['industry']
+		return info.get('industry')
 
 	@tool('business_summary')
 	def get_business_summary(self, info):
-		return info['longBusinessSummary']
+		return info.get('longBusinessSummary')
 
 	@tool('employees')
 	def get_employees(self, info):
-		return info['fullTimeEmployees']
+		return info.get('fullTimeEmployees')
 
 	@tool('audit_risk')
 	def get_audit_risk(self, info):
-		return info['auditRisk']
+		return info.get('auditRisk')
 
 	@tool('board_risk')
 	def get_board_risk(self, info):
-		return info['boardRisk']
+		return info.get('boardRisk')
 
 	@tool('compensation_risk')
 	def get_compensation_risk(self, info):
-		return info['compensationRisk']
+		return info.get('compensationRisk')
 
 	@tool('share_holder_risk')
 	def get_share_holder_risk(self, info):
-		return info['shareHolderRightsRisk']
+		return info.get('shareHolderRightsRisk')
 
 	@tool('overall_risk')
 	def get_overall_risk(self, info):
-		return info['overallRisk']
+		return info.get('overallRisk')
 
 	@tool('high_52w')
 	def get_high_52w(self, info):
-		return Quantity(info['fiftyTwoWeekHigh'], info['currency'])
+		return Quantity(info.get('fiftyTwoWeekHigh'), info.get('currency'))
 
 	@tool('low_52w')
 	def get_low_52w(self, info):
-		return Quantity(info['fiftyTwoWeekLow'], info['currency'])
+		return Quantity(info.get('fiftyTwoWeekLow'), info.get('currency'))
 
 	@tool('cash_per_share')
 	def get_cash_per_share(self, info):
-		return info['totalCashPerShare']
+		return Quantity(info.get('totalCashPerShare'), info.get('currency'))
 
 	@tool('debt_to_equity')
 	def get_debt_to_equity(self, info):
-		return info['debtToEquity']
+		return info.get('debtToEquity')
 
 	@tool('earnings_growth')
 	def get_earnings_growth(self, info):
-		return Quantity(info['earningsGrowth']*100, '%')
+		return Quantity(info.get('earningsGrowth', float('nan'))*100, info.get('currency'))
 
 	@tool('yield')
 	def get_yield(self, info):
-		return Quantity(info['dividendYield'] * 100, '%')
+		return Quantity(info.get('yield', float('nan')), info.get('currency'))
 
 	@tool('revenue')
 	def get_revenue(self, info):
-		return Quantity(info['revenue'], info['currency'])
+		return Quantity(info.get('totalRevenue'), info.get('currency'))
 
 	@tool('gross_profit')
 	def get_gross_profit(self, info):
-		return Quantity(info['grossProfits'], info['currency'])
+		return Quantity(info.get('grossProfits'), info.get('currency'))
 
 	@tool('free_cash_flow')
 	def get_free_cash_flow(self, info):
-		return Quantity(info['freeCashflow'], info['currency'])
+		return Quantity(info.get('freeCashflow'), info.get('currency'))
 
 	@tool('operating_cash_flow')
 	def get_operating_cash_flow(self, info):
-		return Quantity(info['operatingCashflow'], info['currency'])
+		return Quantity(info.get('operatingCashflow'), info.get('currency'))
 
 	@tool('operating_income')
 	def get_operating_income(self, info):
-		return Quantity(info['operatingIncome'], info['currency'])
+		return Quantity(info.get('operatingIncome'), info.get('currency'))
 
 	@tool('ebitda')
 	def get_ebitda(self, info):
-		return Quantity(info['ebitda'], info['currency'])
+		return Quantity(info.get('ebitda'), info.get('currency'))
 
 	@tool('debt')
 	def get_debt(self, info):
-		return Quantity(info['totalDebt'], info['currency'])
+		return Quantity(info.get('totalDebt'), info.get('currency'))
 
 	@tool('cash')
 	def get_cash(self, info):
-		return Quantity(info['totalCash'], info['currency'])
+		return Quantity(info.get('totalCash'), info.get('currency'))
 
 	@tool('current_ratio')
 	def get_current_ratio(self, info):
-		return info['currentRatio']
+		return info.get('currentRatio')
 
 	@tool('quick_ratio')
 	def get_quick_ratio(self, info):
-		return info['quickRatio']
+		return info.get('quickRatio')
 
 	@tool('beta')
 	def get_beta(self, info):
-		return info['beta']
+		return info.get('beta')
 
 	@tool('trailing_pe')
 	def get_trailing_pe(self, info):
-		return info['trailingPE']
+		return info.get('trailingPE')
 
 	@tool('forward_pe')
 	def get_forward_pe(self, info):
-		return info['forwardPE']
+		return info.get('forwardPE')
 
 	@tool('volume')
 	def get_volume(self, info):
-		return info['averageVolume']
+		return info.get('volume')
 
 	@tool('volume_10d')
 	def get_volume_10d(self, info):
-		return info['averageVolume10days']
+		return info.get('averageVolume10days')
 
 	@tool('market_cap')
 	def get_market_cap(self, info):
-		return Quantity(info['marketCap'], info['currency'])
+		return Quantity(info.get('marketCap'), info.get('currency'))
 
 	@tool('price_to_book')
 	def get_price_to_book(self, info):
-		return info['priceToBook']
+		return info.get('priceToBook')
 
 	@tool('trailing_eps')
 	def get_trailing_eps(self, info):
-		return info['trailingEps']
+		return info.get('trailingEps')
 
 	@tool('forward_eps')
 	def get_forward_eps(self, info):
-		return info['forwardEps']
+		return info.get('forwardEps')
 
 	@tool('exchange')
 	def get_exchange(self, info):
-		return info['exchange']
+		return info.get('exchange')
 
 	@tool('company_short_name')
 	def get_short_name(self, info):
-		return info['shortName']
+		return info.get('shortName')
 
 	@tool('company_name')
 	def get_long_name(self, info):
-		return info['longName']
+		return info.get('longName')
 
 	@tool('price')
 	def get_price(self, info):
-		return Quantity(info['currentPrice'], info['currency'])
+		return Quantity(info.get('currentPrice'), info.get('currency'))
 
 	@tool('recommendation_mean')
 	def get_recommendation_mean(self, info):
-		return info['recommendationMean']
+		return info.get('recommendationMean')
 
 	@tool('recommendation_key')
 	def get_recommendation_key(self, info):
-		return info['recommendationKey']
+		return info.get('recommendationKey')
 
 	@tool('number_of_analysts')
 	def get_number_of_analysts(self, info):
-		return info['numberOfAnalystOpinions']
+		return info.get('numberOfAnalystOpinions')
 
 	@tool('target_mean_price')
 	def get_target_mean_price(self, info):
-		return Quantity(info['targetMeanPrice'], info['currency'])
+		return Quantity(info.get('targetMeanPrice'), info.get('currency'))
 
 	@tool('target_high_price')
 	def get_target_high_price(self, info):
-		return Quantity(info['targetHighPrice'], info['currency'])
+		return Quantity(info.get('targetHighPrice'), info.get('currency'))
 
 	@tool('target_low_price')
 	def get_target_low_price(self, info):
-		return Quantity(info['targetLowPrice'], info['currency'])
+		return Quantity(info.get('targetLowPrice'), info.get('currency'))
 
 	@tool('target_median_price')
 	def get_target_median_price(self, info):
-		return Quantity(info['targetMedianPrice'], info['currency'])
+		return Quantity(info.get('targetMedianPrice'), info.get('currency'))
 
 	@tool('change_52w')
 	def get_change_52w(self, info):
-		return Quantity(info['52WeekChange']*100, '%')
+		return Quantity(info.get('52WeekChange'), '%')
 
 	@tool('held_percent_institutions')
 	def get_held_percent_institutions(self, info):
-		return Quantity(info['heldPercentInstitutions']*100, '%')
+		return Quantity(info.get('heldPercentInstitutions', float('nan'))*100, '%')
 
 	@tool('held_percent_insiders')
 	def get_held_percent_insiders(self, info):
-		return Quantity(info['heldPercentInsiders']*100, '%')
+		return Quantity(info.get('heldPercentInsiders', float('nan'))*100, '%')
 
 	@tool('profit_margins')
 	def get_profit_margins(self, info):
-		return Quantity(info['profitMargins']*100, '%')
+		return Quantity(info.get('profitMargins', float('nan'))*100, '%')
 
 
 

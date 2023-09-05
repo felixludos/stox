@@ -331,11 +331,14 @@ class IBKR_Stats(ToolKit):
 		for o in options:
 			if o['@type'] == 'ISIN':
 				return o['#text']
-		raise op.GadgetError(f'Expected ISIN in {options}')
+		raise op.GadgetFailure(f'Expected ISIN in {options}')
 
 	@tool('price')
 	def get_price(self, recommendations):
-		entry = recommendations['Company']['SecurityInfo']['Security']['MarketData']['MarketDataItem'][0]
+		stats = recommendations['Company']['SecurityInfo']['Security']['MarketData']['MarketDataItem']
+		if stats[0]['@type'] != 'CLPRICE':
+			raise op.GadgetFailure('No price')
+		entry = stats[0]
 		assert entry['@unit'] == 'U' and entry['@type'] == 'CLPRICE', f'Expected CLPRICE in {entry}'
 		return Quantity(float(entry['#text']), entry['@currCode'])
 

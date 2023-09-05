@@ -26,6 +26,7 @@ def test_ibkr():
 				  'ticker': 'yfsym',
 
 				  'info': 'info',
+				  'splits': 'splits',
 
 				  'recommendation_mean': 'recommendation_mean',
 				  'recommendation_key': 'recommendation_key',
