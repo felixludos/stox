@@ -154,6 +154,71 @@ class PopulationStats(AbstractGadget):
 		raise GadgetFailure(gizmo)
 
 
+class PopulationStats(AbstractGadget):
+	def __init__(self, population: list, *gizmos: str, percentile=False, location=True):
+		super().__init__()
+		self._population = population
+		self._gizmos = gizmos
+		self._location = location
+		self._percentile = percentile
+
+	def gizmos(self) -> Iterator[str]:
+		if self._location:
+			yield from (f'loc_{gizmo}' for gizmo in self._gizmos)
+		if self._percentile:
+			yield from (f'pct_{gizmo}' for gizmo in self._gizmos)
+
+
+	def _base_stats(self, pop, key):
+		for item in pop:
+			val = item[key]
+			if val is not None and (not isinstance(val, Quantity) or val.amount is not None):
+				yield val
+
+
+	def compute_pct(self, mark, key: str) -> float:
+		if mark is None or (isinstance(mark, Quantity) and mark.amount is None):
+			return -1
+		count = []
+		vals = list(self._base_stats(self._population, key))
+		for val in vals:
+			if val is not None:
+				if val == mark:
+					count.append(0.5)
+				elif val < mark:
+					count.append(1)
+				else:
+					count.append(0)
+		assert len(count) > 0, f'No values for {key}'
+		return int(100 * sum(count) / len(count))
+
+	def compute_loc(self, mark, key: str) -> str:
+		if mark is None or (isinstance(mark, Quantity) and mark.amount is None):
+			return '-'
+		count = []
+		vals = list(self._base_stats(self._population, key))
+		for val in vals:
+			if val is not None:
+				if val == mark:
+					count.append(0.5)
+				elif val < mark:
+					count.append(1)
+				else:
+					count.append(0)
+		assert len(count) > 0, f'No values for {key}'
+		return f'{int(sum(count))}/{len(count)}'
+
+	def grab_from(self, ctx, gizmo: str):
+		if self._percentile and gizmo.startswith('pct_'):
+			key = gizmo[4:]
+			mark = ctx[key]
+			return self.compute_pct(mark, key)
+		if self._location and gizmo.startswith('loc_'):
+			key = gizmo[4:]
+			mark = ctx[key]
+			return self.compute_loc(mark, key)
+		raise NotImplementedError
+
 
 class TRBC_Codes:
 	def __init__(self, path=None):

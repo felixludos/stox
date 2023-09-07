@@ -3,3 +3,4 @@ yfinance
 ib_insync
 itables
 world_bank_data
+pandasgui
