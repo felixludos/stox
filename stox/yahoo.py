@@ -533,4 +533,3 @@ Quote: {quote}'''.format(symbol=item.get('symbol'), shortName=item.get('shortNam
 # def update(ticker):
 # 	raise NotImplementedError
 
-

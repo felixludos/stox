@@ -331,7 +331,7 @@ class IBKR_Stats(ToolKit):
 		for o in options:
 			if o['@type'] == 'ISIN':
 				return o['#text']
-		raise op.GadgetError(f'Expected ISIN in {options}')
+		raise op.GadgetFailure(f'Expected ISIN in {options}')
 
 	@tool('price')
 	def get_price(self, recommendations):

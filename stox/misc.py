@@ -1,6 +1,9 @@
 from .imports import *
-from omnibelt import load_yaml
+from omnibelt import load_yaml, human_readable_number
 from datetime import datetime
+
+
+humanize = human_readable_number
 
 
 STD_FMT = "%y%m%d"

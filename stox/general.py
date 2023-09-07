@@ -1,5 +1,6 @@
 from dataclasses import dataclass
 from omnibelt import load_json, human_readable_number
+from omniply import AbstractGadget, AbstractGig
 
 from . import misc
 
@@ -43,6 +44,27 @@ class Quantity:
 	def __ge__(self, other):
 		assert isinstance(other, Quantity) and self.unit == other.unit, f'Cannot compare {self} to {other}'
 		return self.amount >= other.amount
+
+
+from typing import Iterator, Optional, Any
+
+class PopulationStats(AbstractGadget):
+	def __init__(self, population: list[AbstractGig], *gizmos: str):
+		super().__init__()
+		self._population = population
+		self._gizmos = gizmos
+
+	def gizmos(self) -> Iterator[str]:
+		yield from (f'pct_{gizmo}' for gizmo in self._gizmos)
+
+	def grab_from(self, ctx: Optional[AbstractGig], gizmo: str) -> Any:
+		key = gizmo[4:]
+
+		mark = ctx[key]
+		count = [(0.5 if item[key] == mark else (1 if item[key] < mark else 0))
+				 for item in self._population if item[key] is not None]
+		assert len(count) > 0, f'No values for {key}'
+		return 100 * sum(count) / len(count)
 
 
 
