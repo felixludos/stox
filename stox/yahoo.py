@@ -9,7 +9,7 @@ import pandas as pd
 
 import yfinance as yf
 
-from .general import Quantity
+from .general import Quantity, PctChange
 from . import misc
 
 # from omnibelt import get_now
@@ -324,7 +324,8 @@ class Yahoo_Info(ToolKit):
 
 	@tool('yield')
 	def get_yield(self, info):
-		return Quantity(info.get('yield', float('nan')), info.get('currency'))
+		return Quantity(info.get('dividendYield', 0.)*100, '%')
+		# return Quantity(info.get('yield', float('nan')), info.get('currency'))
 
 	@tool('revenue')
 	def get_revenue(self, info):
@@ -370,11 +371,11 @@ class Yahoo_Info(ToolKit):
 	def get_beta(self, info):
 		return info.get('beta')
 
-	@tool('trailing_pe')
+	@tool('trailing_pe') # past 12 months price / earnings
 	def get_trailing_pe(self, info):
 		return info.get('trailingPE')
 
-	@tool('forward_pe')
+	@tool('forward_pe') # projected future price / earnings
 	def get_forward_pe(self, info):
 		return info.get('forwardPE')
 
@@ -390,15 +391,19 @@ class Yahoo_Info(ToolKit):
 	def get_market_cap(self, info):
 		return Quantity(info.get('marketCap'), info.get('currency'))
 
+	@tool('peg_ratio')
+	def get_peg_ratio(self, info):
+		return info.get('pegRatio')
+
 	@tool('price_to_book')
 	def get_price_to_book(self, info):
 		return info.get('priceToBook')
 
-	@tool('trailing_eps')
+	@tool('trailing_eps') # past 12 months earnings per share
 	def get_trailing_eps(self, info):
 		return info.get('trailingEps')
 
-	@tool('forward_eps')
+	@tool('forward_eps') # projected future earnings per share
 	def get_forward_eps(self, info):
 		return info.get('forwardEps')
 
@@ -448,7 +453,7 @@ class Yahoo_Info(ToolKit):
 
 	@tool('change_52w')
 	def get_change_52w(self, info):
-		return Quantity(info.get('52WeekChange'), '%')
+		return PctChange(info.get('52WeekChange', float('nan')) * 100)
 
 	@tool('held_percent_institutions')
 	def get_held_percent_institutions(self, info):
@@ -461,6 +466,36 @@ class Yahoo_Info(ToolKit):
 	@tool('profit_margins')
 	def get_profit_margins(self, info):
 		return Quantity(info.get('profitMargins', float('nan'))*100, '%')
+
+
+	@tool('target_mean_change')
+	def target_mean_change(self, price: Quantity, target_mean_price: Quantity):
+		assert price.unit == target_mean_price.unit, f'{price} vs {target_mean_price}'
+		change = target_mean_price.amount / price.amount - 1
+		return PctChange(100 * change)
+
+	@tool('target_high_change')
+	def target_high_change(self, price: Quantity, target_high_price: Quantity):
+		assert price.unit == target_high_price.unit, f'{price} vs {target_high_price}'
+		change = target_high_price.amount / price.amount - 1
+		return PctChange(100 * change)
+
+	@tool('target_low_change')
+	def target_low_change(self, price: Quantity, target_low_price: Quantity):
+		assert price.unit == target_low_price.unit, f'{price} vs {target_low_price}'
+		change = target_low_price.amount / price.amount - 1
+		return PctChange(100 * change)
+
+	@tool('target_median_change')
+	def target_median_change(self, price: Quantity, target_median_price: Quantity):
+		assert price.unit == target_median_price.unit, f'{price} vs {target_median_price}'
+		change = target_median_price.amount / price.amount - 1
+		return PctChange(100 * change)
+
+	@tool('perf52w')
+	def compute_performance_52w(self, price, high_52w, low_52w):
+		assert price.unit == high_52w.unit == low_52w.unit, f'{price} vs {high_52w} vs {low_52w}'
+		return (price.amount - low_52w.amount) / (high_52w.amount - low_52w.amount)
 
 
 

@@ -353,3 +353,5 @@ WKL.AS: {conId: 39498284, currency: EUR, exchange: SMART, primaryExchange: AEB, 
 WLN.PA: {conId: 158556311, currency: EUR, exchange: FWB, primaryExchange: SBF, symbol: WLN}
 ZAL.DE: {conId: 168731675, currency: EUR, exchange: SMART, primaryExchange: IBIS,
   symbol: ZAL}
+EDP.LS: {conId: 12600162, currency: EUR, exchange: SMART, primaryExchange: BVL, symbol: EDP}
+GALP.LS: {conId: 41512469, currency: EUR, exchange: SMART, primaryExchange: BVL, symbol: GALP}

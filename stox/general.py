@@ -1,8 +1,60 @@
 from dataclasses import dataclass
 from omnibelt import load_json, human_readable_number
-from omniply import AbstractGadget, AbstractGig
+from omniply import AbstractGadget, AbstractGig, GadgetFailure
 
 from . import misc
+
+
+country_colors = {
+    'France': 'blue',
+    'Germany': 'grey',
+    'Italy': 'green',
+    'Spain': 'red',
+    'Belgium': 'yellow',
+    'Netherlands': 'orange',
+    'Greece': 'skyblue',
+    'Austria': 'darkred',
+    'Finland': 'cyan',
+    'United Kingdom': 'darkblue',
+    'Switzerland': 'lightcoral',
+    'Luxembourg': 'royalblue',
+    'Portugal': 'darkgreen',
+    'Sweden': 'gold'
+}
+
+
+sector_symbols = {
+    'Industrials': 'circle',
+    'Financial Services': 'diamond',
+    'Consumer Cyclical': 'triangle-up',
+    'Utilities': 'square',
+    'Basic Materials': 'pentagon',
+    'Consumer Defensive': 'triangle-down',
+    'Technology': 'star',
+    'Healthcare': 'cross',
+    'Communication Services': 'star-diamond',
+    'Real Estate': 'hexagon',
+    'Energy': 'octagon'
+}
+
+
+country_colors_hex = {
+    'France': '#0000FF',       # blue
+    'Germany': '#808080',     # grey
+    'Italy': '#008000',       # green
+    'Spain': '#FF0000',       # red
+    'Belgium': '#FFFF00',     # yellow
+    'Netherlands': '#FFA500', # orange
+    'Greece': '#87CEEB',      # skyblue
+    'Austria': '#8B0000',     # darkred
+    'Finland': '#00FFFF',     # cyan
+    'United Kingdom': '#00008B', # darkblue
+    'Switzerland': '#F08080', # lightcoral
+    'Luxembourg': '#4169E1',  # royalblue
+    'Portugal': '#006400',    # darkgreen
+    'Sweden': '#FFD700'       # gold
+}
+
 
 
 @dataclass
@@ -18,8 +70,7 @@ class Quantity:
 		return f'{amount} {self.unit}'
 
 	def __repr__(self):
-		amount = self._humanize(self.amount)
-		return f'{amount} {self.unit}'
+		return str(self)
 
 	def __lt__(self, other):
 		assert isinstance(other, Quantity) and self.unit == other.unit, f'Cannot compare {self} to {other}'
@@ -46,25 +97,61 @@ class Quantity:
 		return self.amount >= other.amount
 
 
+class PctChange(Quantity):
+	def __init__(self, amount: float):
+		super().__init__(amount, '%')
+
+	def __str__(self):
+		prefix = '+' if self.amount > 0 else ''
+		return f'{prefix}{super().__str__()}'
+
+
 from typing import Iterator, Optional, Any
 
 class PopulationStats(AbstractGadget):
-	def __init__(self, population: list[AbstractGig], *gizmos: str):
+	def __init__(self, population: list[AbstractGig], *gizmos: str, percentile=False, location=True):
 		super().__init__()
 		self._population = population
 		self._gizmos = gizmos
+		self._location = location
+		self._percentile = percentile
 
 	def gizmos(self) -> Iterator[str]:
-		yield from (f'pct_{gizmo}' for gizmo in self._gizmos)
+		if self._location:
+			yield from (f'loc_{gizmo}' for gizmo in self._gizmos)
+		if self._percentile:
+			yield from (f'pct_{gizmo}' for gizmo in self._gizmos)
+
+
+	def _base_stats(self, pop, key):
+		for item in pop:
+			val = item[key]
+			if val is not None and (not isinstance(val, Quantity) or val.amount is not None):
+				yield val
+
+
+	def compute_pct(self, mark: Any, key: str) -> float:
+		count = [(0.5 if val == mark else (1 if val < mark else 0))
+				 for val in self._base_stats(self._population, key) if val is not None]
+		assert len(count) > 0, f'No values for {key}'
+		return int(100 * sum(count) / len(count))
+
+	def compute_loc(self, mark: Any, key: str) -> str:
+		count = [(0.5 if val == mark else (1 if val < mark else 0))
+				 for val in self._base_stats(self._population, key) if val is not None]
+		assert len(count) > 0, f'No values for {key}'
+		return f'{int(sum(count))}/{len(count)}'
 
 	def grab_from(self, ctx: Optional[AbstractGig], gizmo: str) -> Any:
-		key = gizmo[4:]
-
-		mark = ctx[key]
-		count = [(0.5 if item[key] == mark else (1 if item[key] < mark else 0))
-				 for item in self._population if item[key] is not None]
-		assert len(count) > 0, f'No values for {key}'
-		return 100 * sum(count) / len(count)
+		if self._percentile and gizmo.startswith('pct_'):
+			key = gizmo[4:]
+			mark = ctx[key]
+			return self.compute_pct(mark, key)
+		if self._location and gizmo.startswith('loc_'):
+			key = gizmo[4:]
+			mark = ctx[key]
+			return self.compute_loc(mark, key)
+		raise GadgetFailure(gizmo)
 
 
 
