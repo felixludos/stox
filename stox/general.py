@@ -215,7 +215,7 @@ class PopulationStats(AbstractGadget):
 
 	def compute_pct(self, mark, key: str) -> float:
 		if mark is None or (isinstance(mark, Quantity) and mark.amount is None):
-			return -1
+			return None
 		count = []
 		vals = list(self._base_stats(self._population, key))
 		for val in vals:
@@ -231,7 +231,7 @@ class PopulationStats(AbstractGadget):
 
 	def compute_loc(self, mark, key: str) -> str:
 		if mark is None or (isinstance(mark, Quantity) and mark.amount is None):
-			return '-'
+			return None
 		count = []
 		vals = list(self._base_stats(self._population, key))
 		for val in vals:
