@@ -5,6 +5,43 @@ from omniply import AbstractGadget, AbstractGig, GadgetFailure
 from . import misc
 
 
+country_flags = {
+	'Switzerland': '🇨🇭',
+	'Austria': '🇦🇹',
+	'Spain': '🇪🇸',
+	'Italy': '🇮🇹',
+	'Belgium': '🇧🇪',
+	'Netherlands': '🇳🇱',
+	'Greece': '🇬🇷',
+	'Germany': '🇩🇪',
+	'Portugal': '🇵🇹',
+	'France': '🇫🇷',
+	'United Kingdom': '🇬🇧',
+	'Finland': '🇫🇮',
+	'Sweden': '🇸🇪',
+	'Luxembourg': '🇱🇺',
+	'Norway': '🇳🇴',
+}
+
+sector_emojis = {
+    'Consumer Staples': '🛒',# '🍎',
+    'Consumer Defensive': '🛒',# '🍎',
+    'Financial Services': '🪙',# '💰', # '💵',
+    'Financials': '🪙',
+    'Utilities': '💧', #'🛁', # '🚿', # '🚰',
+    'Technology': '📱', #'💻',
+    'Energy': '🔥', #'🛢', # '⚡️'
+    'Consumer Cyclical': '🎁', # '🛍'
+    'Consumer Discretionary': '🎁', # '🛍'
+    'Communication Services': '📞', # '📡',
+    'Industrials': '⚙️',# '🔧', #'🏭',
+    'Healthcare': '💊', #'💉',
+    'Basic Materials': '🌲', #'🧱', # '📦',
+    'Materials': '🌲', #'🧱', # '📦',
+    'Real Estate': '🏠',
+#     '?': '❓',
+}
+
 country_colors = {
     'France': 'blue',
     'Germany': 'grey',
