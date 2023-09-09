@@ -2,8 +2,8 @@ from pathlib import Path
 from tqdm import tqdm
 from tabulate import tabulate
 from . import misc
-from .yahoo import download as yfdownload
-from .ibkr import load_symbol_table, IB_Extractor, download_reports
+from .yahoo import Yahoo_Downloader
+from .ibkr import load_symbol_table, IB_Extractor, IBKR_Downloader
 import omnifig as fig
 
 
@@ -16,19 +16,23 @@ def download_symbols(config):
 
 	date = None
 
-	yahoo = config.pull('yahoo', True)
+	outpath = config.pull('outpath', 'download-results.yml')
+
+	downloaders = config.pull('downloaders', {})
+
+	yahoo = config.pull('yahoo', 'yahoo' not in downloaders)
 	if yahoo:
 		yfroot = config.pull('yahoo-root', str(misc.yahoo_root()))
 		yfroot = Path(yfroot)
 		yfroot.mkdir(exist_ok=True, parents=True)
+		downloaders['yahoo'] = Yahoo_Downloader(root=yfroot)
 
-	ibkr = config.pull('ibkr', True)
+	ibkr = config.pull('ibkr', 'ibkr' not in downloaders)
 	if ibkr:
 		ibroot = config.pull('ibkr-root', str(misc.ibkr_root()))
 		ibroot = Path(ibroot)
 		ibroot.mkdir(exist_ok=True, parents=True)
-
-		ibe = IB_Extractor()
+		downloaders['ibkr'] = IBKR_Downloader(root=ibroot)
 
 	tickers = config.pull('tickers', None)
 	if tickers is None:
@@ -42,37 +46,28 @@ def download_symbols(config):
 			else:
 				print(f'WARNING unknown tickers (for IBKR): {bad}')
 
-	bad_yf, bad_ib = {}, {}
+	results = {}
 
 	pbar = config.pull('pbar', True)
 	itr = tickers
 	if pbar:
 		itr = tqdm(itr)
 	for ticker in itr:
-		if pbar:
-			itr.set_description(ticker)
+		for name, downloader in downloaders.items():
+			if pbar:
+				itr.set_description(f'{ticker} :: {name}')
+			reports = downloader.download_reports(ticker, pbar=None, date=date)
+			results.setdefault(ticker, {})[name] = {k: repr(v) for k, v in reports.items() if isinstance(v, Exception)}
 
-		if yahoo:
-			failures = yfdownload(ticker, date=date, root=yfroot, pbar=None)
-			if len(failures):
-				bad_yf[ticker] = list(failures)
+	failures = [(tk, name, '\n'.join(f'{k} : {v}' for k,v in errs))
+				for tk, dls in results.items() for name, errs in dls.items()]
+	if len(failures):
+		print(tabulate(failures, headers=['ticker', 'downloader', 'errors']))
+		print(f'Errors with {len(failures)} tickers+downloaders.')
 
-		if ibkr:
-			failures = download_reports(symbol_table[ticker], date=date, root=ibroot, pbar=None)
-			if len(failures):
-				bad_ib[ticker] = list(failures)
-
-	if len(bad_yf):
-		print(tabulate(bad_yf.items(), headers=['ticker', 'failures']))
-		print(f'Failed to download {len(bad_yf)} yahoo.')
-		print(list(bad_yf.keys()))
-
-	if len(bad_ib):
-		print(tabulate(bad_ib.items(), headers=['ticker', 'failures']))
-		print(f'Failed to download {len(bad_ib)} ibkr.')
-		print(list(bad_ib.keys()))
-
-	return bad_yf, bad_ib
+	if outpath is not None:
+		misc.save_yaml(results, outpath)
+	return results
 
 
 

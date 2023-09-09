@@ -159,8 +159,6 @@ def add_symbol_row(table, yfsym, contract, force=False):
 
 class IBKR_Downloader(Downloader):
 	def __init__(self, ibe=None, *, date='last', root=None, symbols_path=None, **kwargs):
-		if ibe is None:
-			ibe = IB_Extractor()
 		if root is None:
 			root = misc.ibkr_root()
 		if symbols_path is None:
@@ -192,6 +190,10 @@ class IBKR_Downloader(Downloader):
 		with open(path, 'r') as f:
 			return xmltodict.parse(f.read())
 
+	def refresh_api(self):
+		if self.ibe is None or not self.ibe.ib.isConnected():
+			self.ibe = IB_Extractor()
+
 	def download_reports(self, ticker, *, keys=None, ignore_existing=False, pbar=None, date=unspecified_argument):
 		if keys is None:
 			keys = list(self.report_keys())
@@ -209,7 +211,7 @@ class IBKR_Downloader(Downloader):
 			if filepath.exists() and not ignore_existing:
 				continue
 
-			self.ibe.refresh()
+			self.refresh_api()
 
 			try:
 				data = getattr(self.ibe, key)(ct)
