@@ -22,35 +22,34 @@ class JsonLoader:
 		return root / f'{key}.json'
 	
 	@classmethod
-	def save(cls, data, root, key):
-		return json.dump(data, cls.fmt_path(root, key).open('w'))
+	def save(cls, data, path):
+		return json.dump(data, path.open('w'))
 	
 	@classmethod
-	def load(cls, root, key):
-		return json.load(cls.fmt_path(root, key).open('r'))
+	def load(cls, path):
+		return json.load(path.open('r'))
 
 
 
 class PandasLoader(JsonLoader):
 	@classmethod
-	def save(cls, data, root, key):
+	def save(cls, data, path):
 		try:
 			if not isinstance(data, (pd.DataFrame, pd.Series)):
-				return super().save(data, root, key)
-			return data.to_csv(cls.fmt_path(root, key), index=True)
-			return data.to_json(cls.fmt_path(root, key), date_format='iso', date_unit='s')
+				return super().save(data, path)
+			return data.to_csv(path, index=True)
+			return data.to_json(path, date_format='iso', date_unit='s')
 		except ValueError:
-			return data.to_json(cls.fmt_path(root, key), orient='split', date_format='iso', date_unit='s')
+			return data.to_json(path, orient='split', date_format='iso', date_unit='s')
 	
 	
 	@classmethod
-	def load(cls, root, key):
+	def load(cls, path):
 		try:
-			return pd.read_csv(cls.fmt_path(root, key), index_col=0)
-			return pd.read_json(cls.fmt_path(root, key), date_unit='s')
+			return pd.read_csv(path, index_col=0)
+			return pd.read_json(path, date_unit='s')
 		except ValueError:
-			return pd.read_json(cls.fmt_path(root, key), orient='split', date_unit='s')
-
+			return pd.read_json(path, orient='split', date_unit='s')
 
 
 
@@ -96,9 +95,46 @@ class Yahoo_Downloader(Downloader):
 	def report_path(self, ticker, key, date=unspecified_argument):
 		if date is unspecified_argument:
 			date = self.date
-		path = misc.get_date_path(self.root, ticker, date=date)
-		root = _get_path_info(ticker, root=self.root, date=date)
-		path = self._default_datatypes[key].fmt_path(root, key)
+		path = _get_path_info(ticker, root=self.root, date=date)
+		return self._default_datatypes[key].fmt_path(path, key)
+
+	def download_reports(self, ticker, *, keys=None, pbar=None, date=unspecified_argument, history_kwargs=None):
+		if keys is None:
+			keys = list(self._default_datatypes.keys())
+		if history_kwargs is None:
+			history_kwargs = {'period': 'max'}
+
+		itr = keys.items()
+		if pbar is not None:
+			itr = pbar(itr, total=len(keys))
+
+		tk = yf.Ticker(ticker)
+
+		results = {}
+
+		for key, store in itr:
+			if pbar is not None:
+				itr.set_description(f'{ticker}: {key}')
+
+			path = self.report_path(ticker, key, date=date)
+			if path.exists():
+				continue
+			try:
+				data = tk.history(**history_kwargs) if key == 'history' else getattr(tk, key)
+				# if data is not None:
+				store.save(data, path, key)
+			except KeyboardInterrupt:
+				raise
+			except Exception as e:
+				results[key] = e
+			else:
+				results[key] = path
+
+		return results
+
+	def load_report(self, ticker, key, date=unspecified_argument):
+		path = self.report_path(ticker, key, date=date)
+		return self._default_datatypes[key].load(path)
 
 
 
@@ -214,60 +250,17 @@ from omniply import ToolKit, tool
 
 
 class Yahoo_Loader(ToolKit):
-	def __init__(self, root=None):
+	def __init__(self, downloader=None):
+		if downloader is None:
+			downloader = Yahoo_Downloader()
 		super().__init__()
-		if root is None:
-			root = misc.yahoo_root()
-		self.root = root
+		self.downloader = downloader
+		self.extend(tool(report)(lambda ticker, date: self.downloader.load_report(ticker, report, date=date))
+					for report in self.downloader.report_keys())
 
-	@tool('ckpt_path')
-	def get_ckpt_path(self, ticker, date='last'):
-		path = misc.get_date_path(self.root, ticker, date)
-		return path
-
-	@tool('info')
-	def get_info(self, ckpt_path):
-		return JsonLoader.load(ckpt_path, 'info')
-
-	@tool('splits')
-	def get_splits(self, ckpt_path):
-		return PandasLoader.load(ckpt_path, 'splits')
-
-	@tool('dividends')
-	def get_dividends(self, ckpt_path):
-		return PandasLoader.load(ckpt_path, 'dividends')
-
-	@tool('history')
-	def get_history(self, ckpt_path):
-		return PandasLoader.load(ckpt_path, 'history')
-
-	@tool('isin')
-	def get_isin(self, ckpt_path):
-		return JsonLoader.load(ckpt_path, 'isin')
-
-	@tool('balancesheet')
-	def get_balancesheet(self, ckpt_path):
-		return PandasLoader.load(ckpt_path, 'balancesheet')
-
-	@tool('cashflow')
-	def get_cashflow(self, ckpt_path):
-		return PandasLoader.load(ckpt_path, 'cashflow')
-
-	@tool('financials')
-	def get_financials(self, ckpt_path):
-		return PandasLoader.load(ckpt_path, 'financials')
-
-	@tool('quarterly_balancesheet')
-	def get_quarterly_balancesheet(self, ckpt_path):
-		return PandasLoader.load(ckpt_path, 'quarterly_balancesheet')
-
-	@tool('quarterly_cashflow')
-	def get_quarterly_cashflow(self, ckpt_path):
-		return PandasLoader.load(ckpt_path, 'quarterly_cashflow')
-
-	@tool('quarterly_financials')
-	def get_quarterly_financials(self, ckpt_path):
-		return PandasLoader.load(ckpt_path, 'quarterly_financials')
+	# @tool('yfsym')
+	# def get_yfsym(self, ticker):
+	# 	return ticker
 
 
 
