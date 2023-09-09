@@ -14,7 +14,10 @@ def get_date(fmt=None):
 	return datetime.now().strftime(fmt)
 
 
-def get_date_path(tickerroot, date=None):
+def get_date_path(root, ticker: str, date=None):
+	'''ticker should be the yahoo finance ticker'''
+	ticker = ticker.replace('.', '_').replace('-', '_').replace(' ', '_')
+	tickerroot = root / ticker
 	tickerroot.mkdir(exist_ok=True)
 	if date == 'last':
 		options = sorted(tickerroot.glob('*'), key=lambda p: p.name)#[-1]

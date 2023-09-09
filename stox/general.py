@@ -1,6 +1,6 @@
 from dataclasses import dataclass
-from omnibelt import load_json, human_readable_number
-from omniply import AbstractGadget, AbstractGig, GadgetFailure
+from omnibelt import load_json, human_readable_number, unspecified_argument
+from omniply import AbstractGadget, AbstractGig, GadgetError
 
 from . import misc
 
@@ -143,6 +143,29 @@ class PctChange(Quantity):
 		return f'{prefix}{super().__str__()}'
 
 
+
+class Downloader:
+	def __init__(self, root=None, **kwargs):
+		super().__init__(**kwargs)
+		self.root = root
+
+	def valid_ticker(self, ticker):
+		return True
+
+	def report_keys(self):
+		raise NotImplementedError
+
+	def report_path(self, ticker, key, date=unspecified_argument):
+		raise NotImplementedError
+
+	def download_reports(self, ticker, *, keys=None, pbar=None, date=unspecified_argument):
+		raise NotImplementedError
+
+	def load_report(self, ticker, key, date=unspecified_argument):
+		raise NotImplementedError
+
+
+
 from typing import Iterator, Optional, Any
 
 class PopulationStats(AbstractGadget):
@@ -188,7 +211,7 @@ class PopulationStats(AbstractGadget):
 			key = gizmo[4:]
 			mark = ctx[key]
 			return self.compute_loc(mark, key)
-		raise GadgetFailure(gizmo)
+		raise GadgetError(gizmo)
 
 
 class PopulationStats(AbstractGadget):

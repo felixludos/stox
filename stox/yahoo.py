@@ -9,10 +9,10 @@ import pandas as pd
 
 import yfinance as yf
 
-from .general import Quantity, PctChange
+from .general import Quantity, PctChange, Downloader
 from . import misc
 
-# from omnibelt import get_now
+from omnibelt import unspecified_argument
 
 _DEFAULT_ROOT = Path(__file__).parents[1]
 
@@ -53,35 +53,54 @@ class PandasLoader(JsonLoader):
 
 
 
-_default_datatypes = {
-	# 'ticker': JsonLoader,
-	'isin': JsonLoader,
-	'info': JsonLoader,
-	'history': PandasLoader,
-	# 'calendar': PandasLoader, # TODO: update when yfinance is updated
-	
-	# 'recommendations': PandasLoader, # TODO: update when yfinance is updated
-	# 'sustainability': PandasLoader, # TODO: update when yfinance is updated
-	
-	'dividends': PandasLoader,
-	'splits': PandasLoader,
-	
-	'institutional_holders': PandasLoader,
-	'major_holders': PandasLoader,
-	'mutualfund_holders': PandasLoader,
-	
-	'balancesheet': PandasLoader,
-	'cashflow': PandasLoader,
-	# 'earnings': PandasLoader,
-	'financials': PandasLoader,
-	
-	'quarterly_balancesheet': PandasLoader,
-	'quarterly_cashflow': PandasLoader,
-	# 'quarterly_earnings': PandasLoader,
-	'quarterly_financials': PandasLoader,
-	
-	
-}
+
+class Yahoo_Downloader(Downloader):
+	_default_datatypes = {
+		# 'ticker': JsonLoader,
+		'isin': JsonLoader,
+		'info': JsonLoader,
+		'history': PandasLoader,
+		'calendar': PandasLoader, # TODO: update when yfinance is updated
+
+		'recommendations': PandasLoader, # TODO: update when yfinance is updated
+		'sustainability': PandasLoader, # TODO: update when yfinance is updated
+
+		'dividends': PandasLoader,
+		'splits': PandasLoader,
+
+		'institutional_holders': PandasLoader,
+		'major_holders': PandasLoader,
+		'mutualfund_holders': PandasLoader,
+
+		'balancesheet': PandasLoader,
+		'cashflow': PandasLoader,
+		'earnings': PandasLoader,
+		'financials': PandasLoader,
+
+		'quarterly_balancesheet': PandasLoader,
+		'quarterly_cashflow': PandasLoader,
+		'quarterly_earnings': PandasLoader,
+		'quarterly_financials': PandasLoader,
+
+	}
+
+	def __init__(self, root=None, date=None, **kwargs):
+		if root is None:
+			root = misc.yahoo_root()
+		super().__init__(root=root, **kwargs)
+		self.date = date
+
+	def report_keys(self):
+		yield from self._default_datatypes.keys()
+
+	def report_path(self, ticker, key, date=unspecified_argument):
+		if date is unspecified_argument:
+			date = self.date
+		path = misc.get_date_path(self.root, ticker, date=date)
+		root = _get_path_info(ticker, root=self.root, date=date)
+		path = self._default_datatypes[key].fmt_path(root, key)
+
+
 
 def _get_path_root(dirname='yahoo_data', root=None):
 	if root is None:
@@ -91,8 +110,7 @@ def _get_path_root(dirname='yahoo_data', root=None):
 
 def _get_path_info(ticker, root=None, dirname='yahoo_data', date='last'):
 	root = _get_path_root(dirname=dirname, root=root)
-	path = root / ticker
-	return misc.get_date_path(path, date=date)
+	return misc.get_date_path(root, ticker, date=date)
 
 def load_portfolio(name, root=None, dirname='portfolios',
 				   datadir='yahoo_data', date='last', download_self=False):
@@ -114,7 +132,7 @@ def save_portfolio(name, data, root=None, dirname='portfolios',):
 
 def download(ticker, date='last', root=None, dirname='yahoo_data',
 			 history_kwargs=None, ticker_type=None, skip_failures=False,
-			 keys=None, pbar=None, allow_download=True):
+			 keys=None, pbar=None):
 	path = _get_path_info(ticker, root=root, date=date, dirname=dirname)
 	
 	tk = yf.Ticker(ticker)
@@ -127,28 +145,34 @@ def download(ticker, date='last', root=None, dirname='yahoo_data',
 	itr = keys.items()
 	if pbar is not None:
 		itr = pbar(itr, total=len(keys))
-	
-	try:
-		for key, store in itr:
-			if pbar is not None:
-				itr.set_description(f'{ticker}: {key}')
-			# print(store.fmt_path(path, key))
-			if not store.fmt_path(path, key).exists():
-				if not allow_download:
-					return None
-				data = None
-				try:
-					data = tk.history(**history_kwargs) if key == 'history' else getattr(tk, key)
-					# if data is not None:
-					store.save(data, path, key)
-				except:
-					print(ticker, key, data)
-					raise
-	except KeyError:
-		if skip_failures:
-			return None
-		raise
 
+	fails = {}
+
+	# try:
+	for key, store in itr:
+		if pbar is not None:
+			itr.set_description(f'{ticker}: {key}')
+		if store.fmt_path(path, key).exists():
+			continue
+		try:
+			data = tk.history(**history_kwargs) if key == 'history' else getattr(tk, key)
+			# if data is not None:
+			store.save(data, path, key)
+		except KeyboardInterrupt:
+			raise
+		except Exception as e:
+			fails[key] = e
+			# print(ticker, key, data)
+			# raise
+	# except KeyError:
+	# 	if skip_failures:
+	# 		return None
+	# 	raise
+
+	return fails
+
+
+def load(ticker, date='last', root=None, dirname='yahoo_data', ticker_type=None):
 	if ticker_type is None:
 		ticker_type = OfflineTicker
 	return ticker_type(ticker, date=date, root=root)
@@ -198,7 +222,7 @@ class Yahoo_Loader(ToolKit):
 
 	@tool('ckpt_path')
 	def get_ckpt_path(self, ticker, date='last'):
-		path = misc.get_date_path(self.root / ticker, date)
+		path = misc.get_date_path(self.root, ticker, date)
 		return path
 
 	@tool('info')

@@ -3,10 +3,11 @@ from ib_insync import *
 from . import misc
 
 from . import misc, yahoo
-from .general import Quantity, TRBC_Codes
+from .general import Quantity, TRBC_Codes, Downloader
 from collections import namedtuple
+from omnibelt import unspecified_argument, load_yaml, save_yaml
 import omniply as op
-from omniply import tool, ToolKit, Context
+from omniply import tool, ToolKit, Context, AbstractGig
 
 
 
@@ -16,6 +17,9 @@ class IB_Extractor:
 			util.startLoop()
 		self.ib = IB()
 		self.ib.connect(host, port, clientId=client_id)
+		self.host = host
+		self.port = port
+		self.client_id = client_id
 
 	def find_all_contracts(self, symbol, secType='STK', currency='', primaryExchange=''):
 		contract = Contract()
@@ -35,6 +39,10 @@ class IB_Extractor:
 		if isinstance(info, Contract):
 			return info
 		return self.find_contract(info)
+
+	def refresh(self):
+		if not self.ib.isConnected():
+			self.ib.connect(self.host, self.port, clientId=self.client_id)
 
 	def snapshot(self, info):
 		contract = self.as_contract(info)
@@ -148,133 +156,238 @@ def add_symbol_row(table, yfsym, contract, force=False):
 	print(f'Added {yfsym!r} {row}')
 
 
-report_keys = ['snapshot', 'ownership', 'finances', 'statements', 'recommendations']
+
+class IBKR_Downloader(Downloader):
+	def __init__(self, ibe=None, *, date='last', root=None, symbols_path=None, **kwargs):
+		if ibe is None:
+			ibe = IB_Extractor()
+		if root is None:
+			root = misc.ibkr_root()
+		if symbols_path is None:
+			symbols_path = misc.assets_root() / 'yahoo2ibkr.yml'
+		super().__init__(root=root, **kwargs)
+		self.ibe = ibe
+		self.date = date
+		self.symbol_table = load_yaml(symbols_path)
+
+	def report_keys(self):
+		yield from ['snapshot', 'ownership', 'finances', 'statements', 'recommendations']
+
+	def report_path(self, ticker, key, date=unspecified_argument):
+		if date is unspecified_argument:
+			date = self.date
+		ct = self.as_contract(ticker)
+		path = misc.get_date_path(self.root, str(ct.conId), date=date)
+		return path / f'{key}.xml'
+
+	def as_contract(self, info):
+		if isinstance(info, str):
+			info = self.symbol_table[info]
+		if not isinstance(info, Contract):
+			info = Stock(**info)
+		return info
+
+	def load_report(self, ticker, key, date=unspecified_argument):
+		path = self.report_path(ticker, key, date=date)
+		with open(path, 'r') as f:
+			return xmltodict.parse(f.read())
+
+	def download_reports(self, ticker, *, keys=None, ignore_existing=False, pbar=None, date=unspecified_argument):
+		if keys is None:
+			keys = list(self.report_keys())
+
+		results = {}
+
+		ct = self.as_contract(ticker)
+
+		itr = keys if pbar is None else pbar(keys, total=len(keys))
+		for key in itr:
+			if pbar is not None:
+				itr.set_description(f'{ticker} {key}')
+
+			filepath = self.report_path(ct, key, date=date)
+			if filepath.exists() and not ignore_existing:
+				continue
+
+			self.ibe.refresh()
+
+			try:
+				data = getattr(self.ibe, key)(ct)
+				if data is None:
+					data = ''
+				with open(filepath, 'w') as f:
+					f.write(data)
+			except KeyboardInterrupt:
+				raise
+			except Exception as e:
+				results[key] = e
+			else:
+				results[key] = filepath
+		return results
 
 
-def download_reports(ibe, info, root=None, date=None, pbar=None, keys=None):
-	if root is None:
-		root = misc.ibkr_root()
 
-	cid = info['conId']
-	path = misc.get_date_path(root / str(cid), date=date)
-
-	ct = Stock(**info)
-	report_fns = {
-		'snapshot': ibe.snapshot,
-		'ownership': ibe.ownership,
-		'finances': ibe.finances,
-		'statements': ibe.statements,
-		'recommendations': ibe.recommendations,
-		# 'calendar': ibe.calendar,
-	}
-	if keys is not None:
-		report_fns = {k: v for k, v in report_fns.items() if k in keys}
-
-	itr = report_fns.items()
-	if pbar is not None:
-		itr = pbar(itr, total=len(report_fns))
-
-	for name, fn in itr:
-		if pbar is not None:
-			itr.set_description(f'{name}')
-		filepath = path / f'{name}.xml'
-		if filepath.exists():
-			continue
-		data = fn(ct)
-		if data is None:
-			continue
-		with open(filepath, 'w') as f:
-			f.write(data)
-
-	return path
-
-
-def old_load_stock_data(row, date='last', root=None, keys=None, *, skip_missing=True):
-	if root is None:
-		root = misc.ibkr_root()
-
-	cid = row['conId']
-	path = misc.get_date_path(root / str(cid), date=date)
-
-	if not path.exists():
-		raise ValueError(f'No data for {cid} on {date}')
-
-	if keys is None:
-		keys = report_keys
-
-	data = {}
-
-	missing = []
-
-	for key in keys:
-		filepath = path / f'{key}.xml'
-		if not filepath.exists():
-			missing.append(key)
-			continue
-
-		with open(filepath) as f:
-			data.update(xmltodict.parse(f.read()))
-
-	if len(missing):
-		if skip_missing:
-			print(f'Missing {missing} for {cid} on {date}')
-		else:
-			raise ValueError(f'Missing {missing} for {cid} on {date}')
-
-	return data
+# def report_path(ct, root=None, date='last', ):
+# 	path = misc.get_date_path(root, str(cid), date=date)
+#
+#
+# def download_reports(info, root=None, date=None, ibe=None, pbar=None, keys=None):
+# 	if ibe is None:
+# 		ibe = IB_Extractor()
+# 	elif not ibe.ib.isConnected():
+# 		ibe = IB_Extractor()
+#
+# 	if root is None:
+# 		root = misc.ibkr_root()
+#
+# 	if not isinstance(info, Contract):
+# 		info = Stock(**info)
+# 	ct = info
+# 	cid = ct.conId
+#
+# 	report_fns = {
+# 		'snapshot': ibe.snapshot,
+# 		'ownership': ibe.ownership,
+# 		'finances': ibe.finances,
+# 		'statements': ibe.statements,
+# 		'recommendations': ibe.recommendations,
+# 		# 'calendar': ibe.calendar,
+# 	}
+# 	if keys is not None:
+# 		report_fns = {k: v for k, v in report_fns.items() if k in keys}
+#
+# 	itr = report_fns.items()
+# 	if pbar is not None:
+# 		itr = pbar(itr, total=len(report_fns))
+#
+# 	results = {}
+# 	for name, fn in itr:
+# 		if pbar is not None:
+# 			itr.set_description(f'{name}')
+# 		filepath = path / f'{name}.xml'
+# 		if filepath.exists():
+# 			continue
+# 		try:
+# 			data = fn(ct)
+# 			if data is None:
+# 				continue
+# 			with open(filepath, 'w') as f:
+# 				f.write(data)
+# 		except KeyboardInterrupt:
+# 			raise
+# 		except Exception as e:
+# 			results[name] = e
+# 		else:
+# 			results[name] = path
+#
+# 	return path
+#
+#
+# def old_load_stock_data(row, date='last', root=None, keys=None, *, skip_missing=True):
+# 	if root is None:
+# 		root = misc.ibkr_root()
+#
+# 	cid = row['conId']
+# 	path = misc.get_date_path(root, str(cid), date=date)
+#
+# 	if not path.exists():
+# 		raise ValueError(f'No data for {cid} on {date}')
+#
+# 	if keys is None:
+# 		keys = report_keys
+#
+# 	data = {}
+#
+# 	missing = []
+#
+# 	for key in keys:
+# 		filepath = path / f'{key}.xml'
+# 		if not filepath.exists():
+# 			missing.append(key)
+# 			continue
+#
+# 		with open(filepath) as f:
+# 			data.update(xmltodict.parse(f.read()))
+#
+# 	if len(missing):
+# 		if skip_missing:
+# 			print(f'Missing {missing} for {cid} on {date}')
+# 		else:
+# 			raise ValueError(f'Missing {missing} for {cid} on {date}')
+#
+# 	return data
 
 
 
 class IBKR_Loader(ToolKit):
-	def __init__(self, root=None):
-		super().__init__()
-		if root is None:
-			root = misc.ibkr_root()
-		self.root = root
+	def __init__(self, downloader=None, **kwargs):
+		if downloader is None:
+			downloader = IBKR_Downloader()
+		super().__init__(**kwargs)
+		self.downloader = downloader
+		self.extend(tool(report)(lambda contract, date: self.downloader.load_report(contract, report, date=date))
+					 for report in self.downloader.report_keys())
 
-	@tool('ckpt_path')
-	def get_ckpt_path(self, conId, date='last'):
-		path = misc.get_date_path(self.root / str(conId), date)
-		return path
+	@tool('contract')
+	def get_contract(self, ticker):
+		return self.downloader.as_contract(ticker)
 
-	def _load_xml(self, path):
-		with open(path, 'r') as f:
-			return xmltodict.parse(f.read())
+	@tool('conId')
+	def get_conId(self, contract):
+		return contract.conId
 
-	@tool('snapshot')
-	def load_snapshot(self, ckpt_path):
-		path = ckpt_path / 'snapshot.xml'
-		if not path.exists():
-			raise op.GadgetFailure(f'No snapshot for {ckpt_path}')
-		return self._load_xml(path)['ReportSnapshot']
+	@tool('primaryExchange')
+	def get_primaryExchange(self, contract):
+		return contract.primaryExchange
 
-	@tool('ownership')
-	def load_ownership(self, ckpt_path):
-		path = ckpt_path / 'ownership.xml'
-		if not path.exists():
-			raise op.GadgetFailure(f'No ownership for {ckpt_path}')
-		return self._load_xml(path)
+	@tool('ibsym')
+	def get_ibsym(self, contract):
+		return contract.symbol
 
-	@tool('finances')
-	def load_finances(self, ckpt_path):
-		path = ckpt_path / 'finances.xml'
-		if not path.exists():
-			raise op.GadgetFailure(f'No finances for {ckpt_path}')
-		return self._load_xml(path)
 
-	@tool('statements')
-	def load_statements(self, ckpt_path):
-		path = ckpt_path / 'statements.xml'
-		if not path.exists():
-			raise op.GadgetFailure(f'No statements for {ckpt_path}')
-		return self._load_xml(path)
-
-	@tool('recommendations')
-	def load_recommendations(self, ckpt_path):
-		path = ckpt_path / 'recommendations.xml'
-		if not path.exists():
-			raise op.GadgetFailure(f'No recommendations for {ckpt_path}')
-		return self._load_xml(path)['REarnEstCons']
+	# @tool('ckpt_path')
+	# def get_ckpt_path(self, conId, date='last'):
+	# 	path = misc.get_date_path(self.root, str(conId), date)
+	# 	return path
+	#
+	# def _load_xml(self, path):
+	# 	with open(path, 'r') as f:
+	# 		return xmltodict.parse(f.read())
+	#
+	# @tool('snapshot')
+	# def load_snapshot(self, ckpt_path):
+	# 	path = ckpt_path / 'snapshot.xml'
+	# 	if not path.exists():
+	# 		raise op.GadgetFailure(f'No snapshot for {ckpt_path}')
+	# 	return self._load_xml(path)['ReportSnapshot']
+	#
+	# @tool('ownership')
+	# def load_ownership(self, ckpt_path):
+	# 	path = ckpt_path / 'ownership.xml'
+	# 	if not path.exists():
+	# 		raise op.GadgetFailure(f'No ownership for {ckpt_path}')
+	# 	return self._load_xml(path)
+	#
+	# @tool('finances')
+	# def load_finances(self, ckpt_path):
+	# 	path = ckpt_path / 'finances.xml'
+	# 	if not path.exists():
+	# 		raise op.GadgetFailure(f'No finances for {ckpt_path}')
+	# 	return self._load_xml(path)
+	#
+	# @tool('statements')
+	# def load_statements(self, ckpt_path):
+	# 	path = ckpt_path / 'statements.xml'
+	# 	if not path.exists():
+	# 		raise op.GadgetFailure(f'No statements for {ckpt_path}')
+	# 	return self._load_xml(path)
+	#
+	# @tool('recommendations')
+	# def load_recommendations(self, ckpt_path):
+	# 	path = ckpt_path / 'recommendations.xml'
+	# 	if not path.exists():
+	# 		raise op.GadgetFailure(f'No recommendations for {ckpt_path}')
+	# 	return self._load_xml(path)['REarnEstCons']
 
 
 
