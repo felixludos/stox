@@ -38,7 +38,6 @@ ANA.MC: {conId: 917436, currency: EUR, exchange: SMART, primaryExchange: BM, sym
 ANDR.VI: {conId: 14317520, currency: EUR, exchange: FWB, primaryExchange: VSE, symbol: ANDR}
 ANE.MC: {conId: 500029613, currency: EUR, exchange: SMART, primaryExchange: BM, symbol: ANE}
 ANTO.L: {conId: 17628566, currency: GBP, exchange: SMART, primaryExchange: LSE, symbol: ANTO}
-APAM.BR: {conId: 82850985, currency: EUR, exchange: SMART, primaryExchange: AEB, symbol: APAM}
 ARGX.BR: {conId: 160209909, currency: EUR, exchange: SMART, primaryExchange: ENEXT.BE,
   symbol: ARGX}
 ASM.AS: {conId: 2950440, currency: EUR, exchange: SMART, primaryExchange: AEB, symbol: ASM}
@@ -96,11 +95,13 @@ DG.PA: {conId: 29612226, currency: EUR, exchange: SMART, primaryExchange: SBF, s
 DHL.DE: {conId: 10749447, currency: EUR, exchange: SMART, primaryExchange: IBIS, symbol: DHL}
 DIA.MI: {conId: 75975372, currency: EUR, exchange: SMART, primaryExchange: BVME, symbol: DIA}
 DOC.VI: {conId: 36764481, currency: EUR, exchange: SMART, primaryExchange: VSE, symbol: DOC}
-DSM.AS: {conId: 39105947, currency: EUR, exchange: SWB, primaryExchange: SWB, symbol: DSM2}
+DSFIR.AS: {conID: 626092544, currency: EUR, exchange: SMART, primaryExchange: AEB,
+  symbol: DSFIR}
 DTE.DE: {conId: 2254332, currency: EUR, exchange: SMART, primaryExchange: IBIS, symbol: DTE}
 DTG.DE: {conId: 531961119, currency: EUR, exchange: SMART, primaryExchange: IBIS,
   symbol: DTG}
 EBS.VI: {conId: 3306538, currency: EUR, exchange: SMART, primaryExchange: VSE, symbol: EBS}
+EDP.LS: {conId: 12600162, currency: EUR, exchange: SMART, primaryExchange: BVL, symbol: EDP}
 EEE.AT: {conId: 126991169, currency: EUR, exchange: FWB, primaryExchange: ATH, symbol: EEE1}
 EL.PA: {conId: 1321740, currency: EUR, exchange: SMART, primaryExchange: SBF, symbol: EL}
 ELE.MC: {conId: 30314174, currency: EUR, exchange: SMART, primaryExchange: BM, symbol: ELE}
@@ -138,6 +139,7 @@ FORTUM.HE: {conId: 12539474, currency: EUR, exchange: SMART, primaryExchange: HE
 FRAS.L: {conId: 44650318, currency: GBP, exchange: SMART, primaryExchange: LSE, symbol: FRAS}
 FRE.DE: {conId: 4811328, currency: EUR, exchange: SMART, primaryExchange: IBIS, symbol: FRE}
 G.MI: {conId: 29816322, currency: EUR, exchange: SMART, primaryExchange: BVME, symbol: G}
+GALP.LS: {conId: 41512469, currency: EUR, exchange: SMART, primaryExchange: BVL, symbol: GALP}
 GBLB.BR: {conId: 917985, currency: EUR, exchange: SMART, primaryExchange: ENEXT.BE,
   symbol: GBLB}
 GEKTERNA.AT: {conId: 272555163, currency: EUR, exchange: FWB2, primaryExchange: ATH,
@@ -353,5 +355,3 @@ WKL.AS: {conId: 39498284, currency: EUR, exchange: SMART, primaryExchange: AEB, 
 WLN.PA: {conId: 158556311, currency: EUR, exchange: FWB, primaryExchange: SBF, symbol: WLN}
 ZAL.DE: {conId: 168731675, currency: EUR, exchange: SMART, primaryExchange: IBIS,
   symbol: ZAL}
-EDP.LS: {conId: 12600162, currency: EUR, exchange: SMART, primaryExchange: BVL, symbol: EDP}
-GALP.LS: {conId: 41512469, currency: EUR, exchange: SMART, primaryExchange: BVL, symbol: GALP}

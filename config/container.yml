@@ -1,0 +1,18 @@
+
+container:
+  _type: context
+
+  gadgets:
+    - _type: scope
+
+      gadgets:
+        - _type: yahoo-loader
+        - _type: yahoo-info
+        - _type: portfolio-loader
+
+      gap: {test: ticker}
+
+
+
+
+

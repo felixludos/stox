@@ -1,272 +1,355 @@
-0EXG.IL: {conId: 12615675, currency: EUR, primaryExchange: BVL, symbol: JMT}
-1COV.DE: {conId: 208908717, currency: EUR, primaryExchange: IBIS, symbol: 1COV}
-AAF.L: {conId: 373291234, currency: GBP, primaryExchange: LSE, symbol: AAF}
-ABDN.L: {conId: 337997965, currency: GBP, primaryExchange: LSE, symbol: ABDN}
-ABI.BR: {conId: 251259604, currency: EUR, primaryExchange: ENEXT.BE, symbol: ABI}
-ABN.AS: {conId: 212289339, currency: EUR, primaryExchange: AEB, symbol: ABN}
-AC.PA: {conId: 29612126, currency: EUR, primaryExchange: SBF, symbol: AC}
-ACA.PA: {conId: 29612223, currency: EUR, primaryExchange: SBF, symbol: ACA}
-ACKB.BR: {conId: 5084603, currency: EUR, primaryExchange: ENEXT.BE, symbol: ACKB}
-ACS.MC: {conId: 30314131, currency: EUR, primaryExchange: BM, symbol: ACS}
-ACX.MC: {conId: 30314161, currency: EUR, primaryExchange: BM, symbol: ACX}
-AD.AS: {conId: 240486295, currency: EUR, primaryExchange: AEB, symbol: AD}
-ADS.DE: {conId: 79780521, currency: EUR, primaryExchange: IBIS, symbol: ADS}
-ADYEN.AS: {conId: 321202935, currency: EUR, primaryExchange: AEB, symbol: ADYEN}
-AED.BR: {conId: 41474620, currency: EUR, primaryExchange: ENEXT.BE, symbol: AED}
-AEGN.AT: {conId: 143974809, currency: EUR, primaryExchange: FWB2, symbol: 32A}
-AENA.MC: {conId: 183530573, currency: EUR, primaryExchange: BM, symbol: AENA}
-AGN.AS: {conId: 39089692, currency: EUR, primaryExchange: AEB, symbol: AGN}
-AGS.BR: {conId: 111604420, currency: EUR, primaryExchange: ENEXT.BE, symbol: AGS}
-AHT.L: {conId: 35150670, currency: GBP, primaryExchange: LSE, symbol: AHT}
-AI.PA: {conId: 29612135, currency: EUR, primaryExchange: SBF, symbol: AI}
-AIR.PA: {conId: 29612256, currency: EUR, primaryExchange: SBF, symbol: AIR}
-AKZA.AS: {conId: 350068526, currency: EUR, primaryExchange: AEB, symbol: AKZA}
-ALPHA.AT: {conId: 213929802, currency: EUR, primaryExchange: ATH, symbol: ALPHA}
-ALV.DE: {conId: 14079, currency: EUR, primaryExchange: IBIS, symbol: ALV}
-AMP.MI: {conId: 55764652, currency: EUR, primaryExchange: BVME, symbol: AMP2}
-AMS.MC: {conId: 74792133, currency: EUR, primaryExchange: BM, symbol: AMS}
-ANA.MC: {conId: 917436, currency: EUR, primaryExchange: BM, symbol: ANA}
-ANDR.VI: {conId: 14317520, currency: EUR, primaryExchange: VSE, symbol: ANDR}
-ANE.MC: {conId: 500029613, currency: EUR, primaryExchange: BM, symbol: ANE}
-ANTO.L: {conId: 17628566, currency: GBP, primaryExchange: LSE, symbol: ANTO}
-APAM.BR: {conId: 82850985, currency: EUR, primaryExchange: AEB, symbol: APAM}
-ARGX.BR: {conId: 160209909, currency: EUR, primaryExchange: ENEXT.BE, symbol: ARGX}
-ASM.AS: {conId: 2950440, currency: EUR, primaryExchange: AEB, symbol: ASM}
-ASML.AS: {conId: 117589399, currency: EUR, primaryExchange: AEB, symbol: ASML}
-ATO.PA: {conId: 1254624, currency: EUR, primaryExchange: SBF, symbol: ATO}
-ATS.VI: {conId: 11652563, currency: EUR, primaryExchange: VSE, symbol: ATS}
-AUTO.L: {conId: 187511156, currency: GBP, primaryExchange: LSE, symbol: AUTO}
-AZM.MI: {conId: 67957194, currency: EUR, primaryExchange: BVME, symbol: AZM}
-BA.L: {conId: 908964, currency: GBP, primaryExchange: LSE, symbol: BA.}
-BAMI.MI: {conId: 259854200, currency: EUR, primaryExchange: BVME, symbol: BAMI}
-BAS.DE: {conId: 77680640, currency: EUR, primaryExchange: IBIS, symbol: BAS}
-BATS.L: {conId: 908931, currency: GBP, primaryExchange: LSE, symbol: BATS}
-BAYN.DE: {conId: 68598660, currency: EUR, primaryExchange: IBIS, symbol: BAYN}
-BBVA.MC: {conId: 30314149, currency: EUR, primaryExchange: BM, symbol: BBVA}
-BEI.DE: {conId: 14362, currency: EUR, primaryExchange: IBIS, symbol: BEI}
-BELA.AT: {conId: 75975450, currency: EUR, primaryExchange: ATH, symbol: BELA}
-BG.VI: {conId: 294207034, currency: EUR, primaryExchange: VSE, symbol: BG}
-BKT.MC: {conId: 45201369, currency: EUR, primaryExchange: BM, symbol: BKT}
-BMED.MI: {conId: 217632398, currency: EUR, primaryExchange: BVME, symbol: BMED}
-BMW.DE: {conId: 14094, currency: EUR, primaryExchange: IBIS, symbol: BMW}
-BN.PA: {conId: 29612111, currency: EUR, primaryExchange: SBF, symbol: BN}
-BNP.PA: {conId: 29612163, currency: EUR, primaryExchange: SBF, symbol: BNP}
-BPE.MI: {conId: 11516717, currency: EUR, primaryExchange: BVME, symbol: BPE}
-CA.PA: {conId: 29612172, currency: EUR, primaryExchange: SBF, symbol: CA}
-CABK.MC: {conId: 48832907, currency: EUR, primaryExchange: BM, symbol: CABK}
-CAI.VI: {conId: 27049908, currency: EUR, primaryExchange: VSE, symbol: CAI}
-CAP.PA: {conId: 29612147, currency: EUR, primaryExchange: SBF, symbol: CAP}
-CCH.L: {conId: 126945329, currency: GBP, primaryExchange: LSE, symbol: CCH}
-CENER.AT: {conId: 259937347, currency: EUR, primaryExchange: ENEXT.BE, symbol: CENER}
-CGCBV.HE: {conId: 34764029, currency: EUR, primaryExchange: HEX, symbol: CGCBV}
-CLNX.MC: {conId: 193517754, currency: EUR, primaryExchange: BM, symbol: CLNX}
-CNA.L: {conId: 31765913, currency: GBP, primaryExchange: LSE, symbol: CNA}
-CNHI.MI: {conId: 135577704, currency: EUR, primaryExchange: BVME, symbol: CNHI}
-COFB.BR: {conId: 15778638, currency: EUR, primaryExchange: ENEXT.BE, symbol: COFB}
-COL.MC: {conId: 241892013, currency: EUR, primaryExchange: BM, symbol: COL}
-COLR.BR: {conId: 79914347, currency: EUR, primaryExchange: ENEXT.BE, symbol: COLR}
-CON.DE: {conId: 14106, currency: EUR, primaryExchange: IBIS, symbol: CON}
-CPG.L: {conId: 280731727, currency: GBP, primaryExchange: LSE, symbol: CPG}
-CPR.MI: {conId: 431811326, currency: EUR, primaryExchange: BVME, symbol: CPR}
-CRH.L: {conId: 97341412, currency: GBP, primaryExchange: LSE, symbol: CRH}
-CS.PA: {conId: 29612141, currency: EUR, primaryExchange: SBF, symbol: CS}
-DB1.DE: {conId: 11490214, currency: EUR, primaryExchange: IBIS, symbol: DB1}
-DBK.DE: {conId: 14121, currency: EUR, primaryExchange: IBIS, symbol: DBK}
-DG.PA: {conId: 29612226, currency: EUR, primaryExchange: SBF, symbol: DG}
-DHL.DE: {conId: 10749447, currency: EUR, primaryExchange: IBIS, symbol: DHL}
-DIA.MI: {conId: 75975372, currency: EUR, primaryExchange: BVME, symbol: DIA}
-DOC.VI: {conId: 36764481, currency: EUR, primaryExchange: VSE, symbol: DOC}
-DSM.AS: {conId: 39105947, currency: EUR, primaryExchange: SWB, symbol: DSM2}
-DTE.DE: {conId: 2254332, currency: EUR, primaryExchange: IBIS, symbol: DTE}
-DTG.DE: {conId: 531961119, currency: EUR, primaryExchange: IBIS, symbol: DTG}
-EBS.VI: {conId: 3306538, currency: EUR, primaryExchange: VSE, symbol: EBS}
-EEE.AT: {conId: 126991169, currency: EUR, primaryExchange: ATH, symbol: EEE1}
-EL.PA: {conId: 1321740, currency: EUR, primaryExchange: SBF, symbol: EL}
-ELE.MC: {conId: 30314174, currency: EUR, primaryExchange: BM, symbol: ELE}
-ELI.BR: {conId: 36790958, currency: EUR, primaryExchange: ENEXT.BE, symbol: ELI1}
-ELISA.HE: {conId: 29908766, currency: EUR, primaryExchange: HEX, symbol: ELISA}
-ELLAKTOR.AT: {conId: 16490116, currency: EUR, primaryExchange: ATH, symbol: ELLAKTOR}
-ELPE.AT: {conId: 12570175, currency: EUR, primaryExchange: ATH, symbol: ELPE}
-EN.PA: {conId: 29612166, currency: EUR, primaryExchange: SBF, symbol: EN}
-ENEL.MI: {conId: 29816333, currency: EUR, primaryExchange: BVME, symbol: ENEL}
-ENG.MC: {conId: 15824414, currency: EUR, primaryExchange: BM, symbol: ENG}
-ENGI.PA: {conId: 35052259, currency: EUR, primaryExchange: SBF, symbol: ENGI}
-ENI.MI: {conId: 29816844, currency: EUR, primaryExchange: BVME, symbol: ENI}
-ENR.DE: {conId: 447545380, currency: EUR, primaryExchange: IBIS, symbol: ENR}
-ENT.L: {conId: 125005888, currency: GBP, primaryExchange: LSE, symbol: ENT}
-EOAN.DE: {conId: 53028906, currency: EUR, primaryExchange: IBIS, symbol: EOAN}
-ETE.AT: {conId: 331627431, currency: EUR, primaryExchange: ATH, symbol: ETE}
-EUROB.AT: {conId: 214126559, currency: EUR, primaryExchange: ATH, symbol: EUROB}
-EVN.VI: {conId: 3306468, currency: EUR, primaryExchange: VSE, symbol: EVN}
-EXPN.L: {conId: 41044864, currency: GBP, primaryExchange: LSE, symbol: EXPN}
-EYDAP.AT: {conId: 16490113, currency: EUR, primaryExchange: ATH, symbol: EYDAP}
-FBK.MI: {conId: 159352524, currency: EUR, primaryExchange: BVME, symbol: FBK}
-FDR.MC: {conId: 48871204, currency: EUR, primaryExchange: BM, symbol: FDR}
-FER.MC: {conId: 636678546, currency: EUR, primaryExchange: BM, symbol: FER}
-FLTR.L: {conId: 221274522, currency: GBP, primaryExchange: LSE, symbol: FLTR}
-FORTUM.HE: {conId: 12539474, currency: EUR, primaryExchange: HEX, symbol: FORTUM}
-FRAS.L: {conId: 44650318, currency: GBP, primaryExchange: LSE, symbol: FRAS}
-FRE.DE: {conId: 4811328, currency: EUR, primaryExchange: IBIS, symbol: FRE}
-G.MI: {conId: 29816322, currency: EUR, primaryExchange: BVME, symbol: G}
-GBLB.BR: {conId: 917985, currency: EUR, primaryExchange: ENEXT.BE, symbol: GBLB}
-GEKTERNA.AT: {conId: 272555163, currency: EUR, primaryExchange: ATH, symbol: GEKTERNA}
-GLE.PA: {conId: 29612232, currency: EUR, primaryExchange: SBF, symbol: GLE}
-GLPG.AS: {conId: 34510828, currency: EUR, primaryExchange: AEB, symbol: GLPG}
-GRF.MC: {conId: 217481604, currency: EUR, primaryExchange: BM, symbol: GRF}
-HEI.DE: {conId: 14727, currency: EUR, primaryExchange: IBIS, symbol: HEI}
-HEIA.AS: {conId: 29622888, currency: EUR, primaryExchange: AEB, symbol: HEIA}
-HLN.L: {conId: 573136108, currency: GBP, primaryExchange: LSE, symbol: HLN}
-HO.PA: {conId: 917799, currency: EUR, primaryExchange: SBF, symbol: HO}
-HTO.AT: {conId: 12567715, currency: EUR, primaryExchange: ATH, symbol: HTO}
-IAG.MC: {conId: 82965896, currency: EUR, primaryExchange: BM, symbol: IAG}
-IBE.MC: {conId: 46586284, currency: EUR, primaryExchange: BM, symbol: IBE}
-IFX.DE: {conId: 7747731, currency: EUR, primaryExchange: IBIS, symbol: IFX}
-IG.MI: {conId: 254447309, currency: EUR, primaryExchange: BVME, symbol: IG}
-IIA.VI: {conId: 321520245, currency: EUR, primaryExchange: VSE, symbol: IIA}
-IMCD.AS: {conId: 158556186, currency: EUR, primaryExchange: AEB, symbol: IMCD}
-INGA.AS: {conId: 240601748, currency: EUR, primaryExchange: AEB, symbol: INGA}
-IP.MI: {conId: 26319253, currency: EUR, primaryExchange: BVME, symbol: IP}
-ISP.MI: {conId: 29816328, currency: EUR, primaryExchange: BVME, symbol: ISP}
-ITX.MC: {conId: 162084958, currency: EUR, primaryExchange: BM, symbol: ITX}
-KBC.BR: {conId: 917964, currency: EUR, primaryExchange: ENEXT.BE, symbol: KBC}
-KCR.HE: {conId: 12539489, currency: EUR, primaryExchange: HEX, symbol: KCR}
-KEMIRA.HE: {conId: 12539492, currency: EUR, primaryExchange: HEX, symbol: KEMIRA}
-KER.PA: {conId: 29612178, currency: EUR, primaryExchange: SBF, symbol: KER}
-KESKOB.HE: {conId: 12539499, currency: EUR, primaryExchange: HEX, symbol: KESKOB}
-KNEBV.HE: {conId: 34781486, currency: EUR, primaryExchange: HEX, symbol: KNEBV}
-KOJAMO.HE: {conId: 323609750, currency: EUR, primaryExchange: HEX, symbol: KOJAMO}
-KPN.AS: {conId: 29622902, currency: EUR, primaryExchange: AEB, symbol: KPN}
-LAMDA.AT: {conId: 466169066, currency: EUR, primaryExchange: ATH, symbol: LAMDA}
-LDO.MI: {conId: 35162453, currency: EUR, primaryExchange: BVME, symbol: LDO}
-LHA.DE: {conId: 14171, currency: EUR, primaryExchange: IBIS, symbol: LHA}
-LIN.DE: {conId: 617155589, currency: EUR, primaryExchange: IBIS, symbol: LIN}
-LNZ.VI: {conId: 3306480, currency: EUR, primaryExchange: VSE, symbol: LNZ}
-LOG.MC: {conId: 160531120, currency: EUR, primaryExchange: BM, symbol: LOG}
-LR.PA: {conId: 38715873, currency: EUR, primaryExchange: SBF, symbol: LR}
-MAP.MC: {conId: 41267871, currency: EUR, primaryExchange: BM, symbol: MAP}
-MB.MI: {conId: 917595, currency: EUR, primaryExchange: BVME, symbol: MB}
-MBG.DE: {conId: 29622935, currency: EUR, primaryExchange: IBIS, symbol: MBG}
-MC.PA: {conId: 29612150, currency: EUR, primaryExchange: SBF, symbol: MC}
-MEL.MC: {conId: 2487794, currency: EUR, primaryExchange: BM, symbol: MEL}
-MELE.BR: {conId: 36794737, currency: EUR, primaryExchange: ENEXT.BE, symbol: MELE}
-METSB.HE: {conId: 12542994, currency: EUR, primaryExchange: HEX, symbol: METSB}
-ML.PA: {conId: 562418770, currency: EUR, primaryExchange: SBF, symbol: ML}
-MMK.VI: {conId: 3306498, currency: EUR, primaryExchange: VSE, symbol: MMK}
-MNG.L: {conId: 387353678, currency: GBP, primaryExchange: LSE, symbol: MNG}
-MOCORP.HE: {conId: 42481101, currency: EUR, primaryExchange: HEX, symbol: METSO}
-MOH.AT: {conId: 36771903, currency: EUR, primaryExchange: ATH, symbol: MOH}
-MONC.MI: {conId: 140054327, currency: EUR, primaryExchange: BVME, symbol: MONC}
-MRK.DE: {conId: 1015559, currency: EUR, primaryExchange: IBIS, symbol: MRK}
-MRL.MC: {conId: 159134192, currency: EUR, primaryExchange: BM, symbol: MRL}
-MT.AS: {conId: 276039870, currency: EUR, primaryExchange: AEB, symbol: MT}
-MTX.DE: {conId: 34759096, currency: EUR, primaryExchange: IBIS, symbol: MTX}
-MUV2.DE: {conId: 14189, currency: EUR, primaryExchange: IBIS, symbol: MUV2}
-MYTIL.AT: {conId: 41941651, currency: EUR, primaryExchange: ATH, symbol: MYTIL}
-NDA FI.HE: {conId: 335134428, currency: EUR, primaryExchange: HEX, symbol: NDA2}
-NDA.ST: {conId: 4810989, currency: EUR, primaryExchange: IBIS, symbol: NDA}
-NESN.SW: {conId: 52238348, currency: CHF, primaryExchange: EBS, symbol: NESN}
-NESTE.HE: {conId: 33815032, currency: EUR, primaryExchange: HEX, symbol: NESTE}
-NEXI.MI: {conId: 360973398, currency: EUR, primaryExchange: BVME, symbol: NEXI}
-NN.AS: {conId: 159310339, currency: EUR, primaryExchange: AEB, symbol: NN}
-NOKIA.HE: {conId: 29816875, currency: EUR, primaryExchange: HEX, symbol: NOKIA}
-NTGY.MC: {conId: 917433, currency: EUR, primaryExchange: BM, symbol: NTGY}
-OMV.VI: {conId: 3306504, currency: EUR, primaryExchange: VSE, symbol: OMV}
-OPAP.AT: {conId: 16019027, currency: EUR, primaryExchange: ATH, symbol: OPAP}
-OR.PA: {conId: 29612116, currency: EUR, primaryExchange: SBF, symbol: OR}
-ORA.PA: {conId: 29612252, currency: EUR, primaryExchange: SBF, symbol: ORA}
-ORNBV.HE: {conId: 12543005, currency: EUR, primaryExchange: HEX, symbol: ORNBV}
-OTOEL.AT: {conId: 603529804, currency: EUR, primaryExchange: FWB2, symbol: 0AH1}
-OUT1V.HE: {conId: 12543012, currency: EUR, primaryExchange: HEX, symbol: OUT}
-P911.DE: {conId: 588392767, currency: EUR, primaryExchange: IBIS, symbol: P911}
-PHIA.AS: {conId: 29622921, currency: EUR, primaryExchange: AEB, symbol: PHIA}
-PIRC.MI: {conId: 291237587, currency: EUR, primaryExchange: BVME, symbol: PIRC}
-POST.VI: {conId: 39165470, currency: EUR, primaryExchange: VSE, symbol: POST}
-PPC.AT: {conId: 16019021, currency: EUR, primaryExchange: ATH, symbol: PPC}
-PROX.BR: {conId: 28110174, currency: EUR, primaryExchange: ENEXT.BE, symbol: PROX}
-PRU.L: {conId: 909164, currency: GBP, primaryExchange: LSE, symbol: PRU}
-PRX.AS: {conId: 382625193, currency: EUR, primaryExchange: AEB, symbol: PRX}
-PRY.MI: {conId: 46114851, currency: EUR, primaryExchange: BVME, symbol: PRY}
-PSN.L: {conId: 12605003, currency: GBP, primaryExchange: LSE, symbol: PSN}
-PST.MI: {conId: 211008268, currency: EUR, primaryExchange: BVME, symbol: PST}
-QUEST.AT: {conId: 404782997, currency: EUR, primaryExchange: ATH, symbol: QUEST}
-RACE.MI: {conId: 215461594, currency: EUR, primaryExchange: BVME, symbol: RACE}
-RAND.AS: {conId: 10428270, currency: EUR, primaryExchange: AEB, symbol: RAND}
-RBI.VI: {conId: 33908748, currency: EUR, primaryExchange: VSE, symbol: RBI}
-REC.MI: {conId: 14905664, currency: EUR, primaryExchange: BVME, symbol: REC}
-RED.MC: {conId: 239949851, currency: EUR, primaryExchange: BM, symbol: RED1}
-REN.AS: {conId: 332776402, currency: EUR, primaryExchange: AEB, symbol: REN}
-RI.PA: {conId: 917758, currency: EUR, primaryExchange: SBF, symbol: RI}
-RMS.PA: {conId: 1254605, currency: EUR, primaryExchange: SBF, symbol: RMS}
-RMV.L: {conId: 331862780, currency: GBP, primaryExchange: LSE, symbol: RMV}
-RR.L: {conId: 88383131, currency: GBP, primaryExchange: LSE, symbol: RR.}
-RS1.L: {conId: 12103838, currency: GBP, primaryExchange: LSE, symbol: RS1}
-RTO.L: {conId: 909192, currency: GBP, primaryExchange: LSE, symbol: RTO}
-RWE.DE: {conId: 14198, currency: EUR, primaryExchange: IBIS, symbol: RWE}
-SAB.MC: {conId: 44150571, currency: EUR, primaryExchange: BM, symbol: SAB1}
-SAF.PA: {conId: 1322028, currency: EUR, primaryExchange: SBF, symbol: SAF}
-SAMPO.HE: {conId: 12543068, currency: EUR, primaryExchange: HEX, symbol: SAMPO}
-SAN.MC: {conId: 30314144, currency: EUR, primaryExchange: BM, symbol: SAN1}
-SAN.PA: {conId: 29612249, currency: EUR, primaryExchange: SBF, symbol: SAN}
-SAP.DE: {conId: 14204, currency: EUR, primaryExchange: IBIS, symbol: SAP}
-SAR.AT: {conId: 451691008, currency: EUR, primaryExchange: ATH, symbol: SAR}
-SBO.VI: {conId: 33203234, currency: EUR, primaryExchange: VSE, symbol: SBO}
-SDR.L: {conId: 586245618, currency: GBP, primaryExchange: LSE, symbol: SDR}
-SGO.PA: {conId: 29612189, currency: EUR, primaryExchange: SBF, symbol: SGO}
-SHEL.L: {conId: 542125742, currency: GBP, primaryExchange: LSE, symbol: SHEL}
-SHELL.AS: {conId: 541411967, currency: EUR, primaryExchange: AEB, symbol: SHELL}
-SIE.DE: {conId: 14217, currency: EUR, primaryExchange: IBIS, symbol: SIE}
-SMIN.L: {conId: 44668420, currency: GBP, primaryExchange: LSE, symbol: SMIN}
-SMT.L: {conId: 158725708, currency: GBP, primaryExchange: LSE, symbol: SMT}
-SOF.BR: {conId: 36790770, currency: EUR, primaryExchange: ENEXT.BE, symbol: SOF}
-SOLB.BR: {conId: 228869, currency: EUR, primaryExchange: ENEXT.BE, symbol: SOLB}
-SPM.MI: {conId: 566597407, currency: EUR, primaryExchange: BVME, symbol: SPM}
-SPX.L: {conId: 196961203, currency: GBP, primaryExchange: LSE, symbol: SPX}
-SRG.MI: {conId: 14075063, currency: EUR, primaryExchange: BVME, symbol: SRG}
-SSE.L: {conId: 2570998, currency: GBP, primaryExchange: LSE, symbol: SSE}
-STERV.HE: {conId: 29816588, currency: EUR, primaryExchange: HEX, symbol: STERV}
-STJ.L: {conId: 12177246, currency: GBP, primaryExchange: LSE, symbol: STJ}
-STLAM.MI: {conId: 463647471, currency: EUR, primaryExchange: SBF, symbol: STLAP}
-STMPA.PA: {conId: 29612246, currency: EUR, primaryExchange: SBF, symbol: STMPA}
-STR.VI: {conId: 46691927, currency: EUR, primaryExchange: VSE, symbol: STR1}
-SU.PA: {conId: 29612196, currency: EUR, primaryExchange: SBF, symbol: SU}
-SW.PA: {conId: 29612218, currency: EUR, primaryExchange: SBF, symbol: SW}
-SY1.DE: {conId: 41963116, currency: EUR, primaryExchange: IBIS, symbol: SY1}
-TEF.MC: {conId: 30314159, currency: EUR, primaryExchange: BM, symbol: TEF}
-TELIA1.HE: {conId: 16660531, currency: EUR, primaryExchange: HEX, symbol: TELIA1}
-TEN.MI: {conId: 26319561, currency: EUR, primaryExchange: BVME, symbol: TEN}
-TENERGY.AT: {conId: 310169244, currency: EUR, primaryExchange: ATH, symbol: TENERGY}
-TIETO.HE: {conId: 29816594, currency: EUR, primaryExchange: HEX, symbol: TIETO}
-TIT.MI: {conId: 29816348, currency: EUR, primaryExchange: BVME, symbol: TIT}
-TITC.AT: {conId: 375664597, currency: EUR, primaryExchange: ENEXT.BE, symbol: TITC}
-TKWY.AS: {conId: 249769712, currency: EUR, primaryExchange: AEB, symbol: TKWY}
-TNET.BR: {conId: 36790975, currency: EUR, primaryExchange: ENEXT.BE, symbol: TNET}
-TPEIR.AT: {conId: 482640874, currency: EUR, primaryExchange: FWB2, symbol: BKP}
-TRN.MI: {conId: 30664870, currency: EUR, primaryExchange: BVME, symbol: TRN}
-TSCO.L: {conId: 471204140, currency: GBP, primaryExchange: LSE, symbol: TSCO}
-TTE.PA: {conId: 29612193, currency: EUR, primaryExchange: SBF, symbol: TTE}
-TYRES.HE: {conId: 15681527, currency: EUR, primaryExchange: HEX, symbol: TYRES}
-UBI.PA: {conId: 2953285, currency: EUR, primaryExchange: SBF, symbol: UBI}
-UCB.BR: {conId: 917975, currency: EUR, primaryExchange: ENEXT.BE, symbol: UCB}
-UCG.MI: {conId: 262695149, currency: EUR, primaryExchange: BVME, symbol: UCG}
-UMI.BR: {conId: 291956769, currency: EUR, primaryExchange: ENEXT.BE, symbol: UMI}
-UNA.AS: {conId: 404271848, currency: EUR, primaryExchange: AEB, symbol: UNA}
-UNI.MC: {conId: 281130176, currency: EUR, primaryExchange: BM, symbol: UNI1}
-UNI.MI: {conId: 105387889, currency: EUR, primaryExchange: BVME, symbol: UNI}
-UPM.HE: {conId: 29816600, currency: EUR, primaryExchange: HEX, symbol: UPM}
-UQA.VI: {conId: 14317525, currency: EUR, primaryExchange: VSE, symbol: UQA}
-URW.AS: {conId: 320358733, currency: EUR, primaryExchange: SBF, symbol: URW}
-VALMT.HE: {conId: 140345629, currency: EUR, primaryExchange: HEX, symbol: VALMT}
-VER.VI: {conId: 3306518, currency: EUR, primaryExchange: VSE, symbol: VER}
-VIE.PA: {conId: 29612206, currency: EUR, primaryExchange: SBF, symbol: VIE}
-VIG.VI: {conId: 35352636, currency: EUR, primaryExchange: VSE, symbol: VIG}
-VIO.AT: {conId: 138171445, currency: EUR, primaryExchange: ENEXT.BE, symbol: VIO}
-VIV.PA: {conId: 29612113, currency: EUR, primaryExchange: SBF, symbol: VIV}
-VNA.DE: {conId: 130946869, currency: EUR, primaryExchange: IBIS, symbol: VNA}
-VOD.L: {conId: 140148322, currency: GBP, primaryExchange: LSE, symbol: VOD}
-VOE.VI: {conId: 3306495, currency: EUR, primaryExchange: VSE, symbol: VOE}
-VOW3.DE: {conId: 14237, currency: EUR, primaryExchange: IBIS, symbol: VOW3}
-WDP.BR: {conId: 396411105, currency: EUR, primaryExchange: ENEXT.BE, symbol: WDP}
-WIE.VI: {conId: 3306521, currency: EUR, primaryExchange: VSE, symbol: WIE}
-WKL.AS: {conId: 39498284, currency: EUR, primaryExchange: AEB, symbol: WKL}
-WLN.PA: {conId: 158556311, currency: EUR, primaryExchange: AEB, symbol: WLN}
-ZAL.DE: {conId: 168731675, currency: EUR, primaryExchange: IBIS, symbol: ZAL}
+0EXG.IL: {conId: 12615675, currency: EUR, exchange: SMART, primaryExchange: BVL, symbol: JMT}
+1COV.DE: {conId: 208908717, currency: EUR, exchange: IBIS, primaryExchange: IBIS,
+  symbol: 1COV}
+AAF.L: {conId: 373291234, currency: GBP, exchange: SMART, primaryExchange: LSE, symbol: AAF}
+ABDN.L: {conId: 337997965, currency: GBP, exchange: SMART, primaryExchange: LSE, symbol: ABDN}
+ABI.BR: {conId: 251259604, currency: EUR, exchange: SMART, primaryExchange: ENEXT.BE,
+  symbol: ABI}
+ABN.AS: {conId: 212289339, currency: EUR, exchange: FWB, primaryExchange: AEB, symbol: ABN}
+AC.PA: {conId: 29612126, currency: EUR, exchange: SMART, primaryExchange: SBF, symbol: AC}
+ACA.PA: {conId: 29612223, currency: EUR, exchange: SMART, primaryExchange: SBF, symbol: ACA}
+ACKB.BR: {conId: 5084603, currency: EUR, exchange: SMART, primaryExchange: ENEXT.BE,
+  symbol: ACKB}
+ACS.MC: {conId: 30314131, currency: EUR, exchange: SMART, primaryExchange: BM, symbol: ACS}
+ACX.MC: {conId: 30314161, currency: EUR, exchange: SMART, primaryExchange: BM, symbol: ACX}
+AD.AS: {conId: 240486295, currency: EUR, exchange: SMART, primaryExchange: AEB, symbol: AD}
+ADS.DE: {conId: 79780521, currency: EUR, exchange: SMART, primaryExchange: IBIS, symbol: ADS}
+ADYEN.AS: {conId: 321202935, currency: EUR, exchange: SMART, primaryExchange: AEB,
+  symbol: ADYEN}
+AED.BR: {conId: 41474620, currency: EUR, exchange: SMART, primaryExchange: ENEXT.BE,
+  symbol: AED}
+AEGN.AT: {conId: 143974809, currency: EUR, exchange: EUIBSI, primaryExchange: FWB2,
+  symbol: 32A}
+AENA.MC: {conId: 183530573, currency: EUR, exchange: SMART, primaryExchange: BM, symbol: AENA}
+AGN.AS: {conId: 39089692, currency: EUR, exchange: SMART, primaryExchange: AEB, symbol: AGN}
+AGS.BR: {conId: 111604420, currency: EUR, exchange: SMART, primaryExchange: ENEXT.BE,
+  symbol: AGS}
+AHT.L: {conId: 35150670, currency: GBP, exchange: SMART, primaryExchange: LSE, symbol: AHT}
+AI.PA: {conId: 29612135, currency: EUR, exchange: SMART, primaryExchange: SBF, symbol: AI}
+AIR.PA: {conId: 29612256, currency: EUR, exchange: SMART, primaryExchange: SBF, symbol: AIR}
+AKZA.AS: {conId: 350068526, currency: EUR, exchange: SMART, primaryExchange: AEB,
+  symbol: AKZA}
+ALPHA.AT: {conId: 213929802, currency: EUR, exchange: FWB2, primaryExchange: ATH,
+  symbol: ALPHA}
+ALV.DE: {conId: 14079, currency: EUR, exchange: SMART, primaryExchange: IBIS, symbol: ALV}
+AMP.MI: {conId: 55764652, currency: EUR, exchange: SMART, primaryExchange: BVME, symbol: AMP2}
+AMS.MC: {conId: 74792133, currency: EUR, exchange: SMART, primaryExchange: BM, symbol: AMS}
+ANA.MC: {conId: 917436, currency: EUR, exchange: SMART, primaryExchange: BM, symbol: ANA}
+ANDR.VI: {conId: 14317520, currency: EUR, exchange: FWB, primaryExchange: VSE, symbol: ANDR}
+ANE.MC: {conId: 500029613, currency: EUR, exchange: SMART, primaryExchange: BM, symbol: ANE}
+ANTO.L: {conId: 17628566, currency: GBP, exchange: SMART, primaryExchange: LSE, symbol: ANTO}
+ARGX.BR: {conId: 160209909, currency: EUR, exchange: SMART, primaryExchange: ENEXT.BE,
+  symbol: ARGX}
+ASM.AS: {conId: 2950440, currency: EUR, exchange: SMART, primaryExchange: AEB, symbol: ASM}
+ASML.AS: {conId: 117589399, currency: EUR, exchange: SMART, primaryExchange: AEB,
+  symbol: ASML}
+ATO.PA: {conId: 1254624, currency: EUR, exchange: SMART, primaryExchange: SBF, symbol: ATO}
+ATS.VI: {conId: 11652563, currency: EUR, exchange: SMART, primaryExchange: VSE, symbol: ATS}
+AUTO.L: {conId: 187511156, currency: GBP, exchange: SMART, primaryExchange: LSE, symbol: AUTO}
+AZM.MI: {conId: 67957194, currency: EUR, exchange: SMART, primaryExchange: BVME, symbol: AZM}
+BA.L: {conId: 908964, currency: GBP, exchange: SMART, primaryExchange: LSE, symbol: BA.}
+BAMI.MI: {conId: 259854200, currency: EUR, exchange: SMART, primaryExchange: BVME,
+  symbol: BAMI}
+BAS.DE: {conId: 77680640, currency: EUR, exchange: SMART, primaryExchange: IBIS, symbol: BAS}
+BATS.L: {conId: 908931, currency: GBP, exchange: SMART, primaryExchange: LSE, symbol: BATS}
+BAYN.DE: {conId: 68598660, currency: EUR, exchange: SMART, primaryExchange: IBIS,
+  symbol: BAYN}
+BBVA.MC: {conId: 30314149, currency: EUR, exchange: SMART, primaryExchange: BM, symbol: BBVA}
+BEI.DE: {conId: 14362, currency: EUR, exchange: SMART, primaryExchange: IBIS, symbol: BEI}
+BELA.AT: {conId: 75975450, currency: EUR, exchange: FWB2, primaryExchange: ATH, symbol: BELA}
+BG.VI: {conId: 294207034, currency: EUR, exchange: SMART, primaryExchange: VSE, symbol: BG}
+BKT.MC: {conId: 45201369, currency: EUR, exchange: SMART, primaryExchange: BM, symbol: BKT}
+BMED.MI: {conId: 217632398, currency: EUR, exchange: SMART, primaryExchange: BVME,
+  symbol: BMED}
+BMW.DE: {conId: 14094, currency: EUR, exchange: SMART, primaryExchange: IBIS, symbol: BMW}
+BN.PA: {conId: 29612111, currency: EUR, exchange: SMART, primaryExchange: SBF, symbol: BN}
+BNP.PA: {conId: 29612163, currency: EUR, exchange: SMART, primaryExchange: SBF, symbol: BNP}
+BPE.MI: {conId: 11516717, currency: EUR, exchange: SMART, primaryExchange: BVME, symbol: BPE}
+CA.PA: {conId: 29612172, currency: EUR, exchange: SMART, primaryExchange: SBF, symbol: CA}
+CABK.MC: {conId: 48832907, currency: EUR, exchange: SMART, primaryExchange: BM, symbol: CABK}
+CAI.VI: {conId: 27049908, currency: EUR, exchange: SMART, primaryExchange: VSE, symbol: CAI}
+CAP.PA: {conId: 29612147, currency: EUR, exchange: SMART, primaryExchange: SBF, symbol: CAP}
+CCH.L: {conId: 126945329, currency: GBP, exchange: SMART, primaryExchange: LSE, symbol: CCH}
+CENER.AT: {conId: 259937347, currency: EUR, exchange: SMART, primaryExchange: ENEXT.BE,
+  symbol: CENER}
+CGCBV.HE: {conId: 34764029, currency: EUR, exchange: SMART, primaryExchange: HEX,
+  symbol: CGCBV}
+CLNX.MC: {conId: 193517754, currency: EUR, exchange: SMART, primaryExchange: BM, symbol: CLNX}
+CNA.L: {conId: 31765913, currency: GBP, exchange: SMART, primaryExchange: LSE, symbol: CNA}
+CNHI.MI: {conId: 135577704, currency: EUR, exchange: SMART, primaryExchange: BVME,
+  symbol: CNHI}
+COFB.BR: {conId: 15778638, currency: EUR, exchange: SMART, primaryExchange: ENEXT.BE,
+  symbol: COFB}
+COL.MC: {conId: 241892013, currency: EUR, exchange: SMART, primaryExchange: BM, symbol: COL}
+COLR.BR: {conId: 79914347, currency: EUR, exchange: SMART, primaryExchange: ENEXT.BE,
+  symbol: COLR}
+CON.DE: {conId: 14106, currency: EUR, exchange: SMART, primaryExchange: IBIS, symbol: CON}
+CPG.L: {conId: 280731727, currency: GBP, exchange: SMART, primaryExchange: LSE, symbol: CPG}
+CPR.MI: {conId: 431811326, currency: EUR, exchange: SMART, primaryExchange: BVME,
+  symbol: CPR}
+CRH.L: {conId: 97341412, currency: GBP, exchange: LSE, primaryExchange: LSE, symbol: CRH}
+CS.PA: {conId: 29612141, currency: EUR, exchange: SMART, primaryExchange: SBF, symbol: CS}
+DB1.DE: {conId: 11490214, currency: EUR, exchange: SMART, primaryExchange: IBIS, symbol: DB1}
+DBK.DE: {conId: 14121, currency: EUR, exchange: SMART, primaryExchange: IBIS, symbol: DBK}
+DG.PA: {conId: 29612226, currency: EUR, exchange: SMART, primaryExchange: SBF, symbol: DG}
+DHL.DE: {conId: 10749447, currency: EUR, exchange: SMART, primaryExchange: IBIS, symbol: DHL}
+DIA.MI: {conId: 75975372, currency: EUR, exchange: SMART, primaryExchange: BVME, symbol: DIA}
+DOC.VI: {conId: 36764481, currency: EUR, exchange: SMART, primaryExchange: VSE, symbol: DOC}
+DTE.DE: {conId: 2254332, currency: EUR, exchange: SMART, primaryExchange: IBIS, symbol: DTE}
+DTG.DE: {conId: 531961119, currency: EUR, exchange: SMART, primaryExchange: IBIS,
+  symbol: DTG}
+EBS.VI: {conId: 3306538, currency: EUR, exchange: SMART, primaryExchange: VSE, symbol: EBS}
+EDP.LS: {conId: 12600162, currency: EUR, exchange: SMART, primaryExchange: BVL, symbol: EDP}
+EEE.AT: {conId: 126991169, currency: EUR, exchange: FWB, primaryExchange: ATH, symbol: EEE1}
+EL.PA: {conId: 1321740, currency: EUR, exchange: SMART, primaryExchange: SBF, symbol: EL}
+ELE.MC: {conId: 30314174, currency: EUR, exchange: SMART, primaryExchange: BM, symbol: ELE}
+ELI.BR: {conId: 36790958, currency: EUR, exchange: SMART, primaryExchange: ENEXT.BE,
+  symbol: ELI1}
+ELISA.HE: {conId: 29908766, currency: EUR, exchange: SMART, primaryExchange: HEX,
+  symbol: ELISA}
+ELLAKTOR.AT: {conId: 16490116, currency: EUR, exchange: SMART, primaryExchange: ATH,
+  symbol: ELLAKTOR}
+ELPE.AT: {conId: 12570175, currency: EUR, exchange: SMART, primaryExchange: ATH, symbol: ELPE}
+EN.PA: {conId: 29612166, currency: EUR, exchange: SMART, primaryExchange: SBF, symbol: EN}
+ENEL.MI: {conId: 29816333, currency: EUR, exchange: SMART, primaryExchange: BVME,
+  symbol: ENEL}
+ENG.MC: {conId: 15824414, currency: EUR, exchange: SMART, primaryExchange: BM, symbol: ENG}
+ENGI.PA: {conId: 35052259, currency: EUR, exchange: SMART, primaryExchange: SBF, symbol: ENGI}
+ENI.MI: {conId: 29816844, currency: EUR, exchange: SMART, primaryExchange: BVME, symbol: ENI}
+ENR.DE: {conId: 447545380, currency: EUR, exchange: SMART, primaryExchange: IBIS,
+  symbol: ENR}
+ENT.L: {conId: 125005888, currency: GBP, exchange: SMART, primaryExchange: LSE, symbol: ENT}
+EOAN.DE: {conId: 53028906, currency: EUR, exchange: SMART, primaryExchange: IBIS,
+  symbol: EOAN}
+ETE.AT: {conId: 331627431, currency: EUR, exchange: SMART, primaryExchange: ATH, symbol: ETE}
+EUROB.AT: {conId: 214126559, currency: EUR, exchange: SMART, primaryExchange: ATH,
+  symbol: EUROB}
+EVN.VI: {conId: 3306468, currency: EUR, exchange: SMART, primaryExchange: VSE, symbol: EVN}
+EXPN.L: {conId: 41044864, currency: GBP, exchange: SMART, primaryExchange: LSE, symbol: EXPN}
+EYDAP.AT: {conId: 16490113, currency: EUR, exchange: FWB2, primaryExchange: ATH, symbol: EYDAP}
+FBK.MI: {conId: 159352524, currency: EUR, exchange: SMART, primaryExchange: BVME,
+  symbol: FBK}
+FDR.MC: {conId: 48871204, currency: EUR, exchange: SMART, primaryExchange: BM, symbol: FDR}
+FER.MC: {conId: 636678546, currency: EUR, exchange: SMART, primaryExchange: BM, symbol: FER}
+FLTR.L: {conId: 221274522, currency: GBP, exchange: SMART, primaryExchange: LSE, symbol: FLTR}
+FORTUM.HE: {conId: 12539474, currency: EUR, exchange: SMART, primaryExchange: HEX,
+  symbol: FORTUM}
+FRAS.L: {conId: 44650318, currency: GBP, exchange: SMART, primaryExchange: LSE, symbol: FRAS}
+FRE.DE: {conId: 4811328, currency: EUR, exchange: SMART, primaryExchange: IBIS, symbol: FRE}
+G.MI: {conId: 29816322, currency: EUR, exchange: SMART, primaryExchange: BVME, symbol: G}
+GALP.LS: {conId: 41512469, currency: EUR, exchange: SMART, primaryExchange: BVL, symbol: GALP}
+GBLB.BR: {conId: 917985, currency: EUR, exchange: SMART, primaryExchange: ENEXT.BE,
+  symbol: GBLB}
+GEKTERNA.AT: {conId: 272555163, currency: EUR, exchange: FWB2, primaryExchange: ATH,
+  symbol: GEKTERNA}
+GLE.PA: {conId: 29612232, currency: EUR, exchange: SMART, primaryExchange: SBF, symbol: GLE}
+GLPG.AS: {conId: 34510828, currency: EUR, exchange: SMART, primaryExchange: AEB, symbol: GLPG}
+GRF.MC: {conId: 217481604, currency: EUR, exchange: SMART, primaryExchange: BM, symbol: GRF}
+HEI.DE: {conId: 14727, currency: EUR, exchange: SMART, primaryExchange: IBIS, symbol: HEI}
+HEIA.AS: {conId: 29622888, currency: EUR, exchange: SMART, primaryExchange: AEB, symbol: HEIA}
+HLN.L: {conId: 573136108, currency: GBP, exchange: SMART, primaryExchange: LSE, symbol: HLN}
+HO.PA: {conId: 917799, currency: EUR, exchange: SMART, primaryExchange: SBF, symbol: HO}
+HTO.AT: {conId: 12567715, currency: EUR, exchange: FWB2, primaryExchange: ATH, symbol: HTO}
+IAG.MC: {conId: 82965896, currency: EUR, exchange: SMART, primaryExchange: BM, symbol: IAG}
+IBE.MC: {conId: 46586284, currency: EUR, exchange: SMART, primaryExchange: BM, symbol: IBE}
+IFX.DE: {conId: 7747731, currency: EUR, exchange: SMART, primaryExchange: IBIS, symbol: IFX}
+IG.MI: {conId: 254447309, currency: EUR, exchange: SMART, primaryExchange: BVME, symbol: IG}
+IIA.VI: {conId: 321520245, currency: EUR, exchange: SMART, primaryExchange: VSE, symbol: IIA}
+IMCD.AS: {conId: 158556186, currency: EUR, exchange: SMART, primaryExchange: AEB,
+  symbol: IMCD}
+INGA.AS: {conId: 240601748, currency: EUR, exchange: SMART, primaryExchange: AEB,
+  symbol: INGA}
+IP.MI: {conId: 26319253, currency: EUR, exchange: SMART, primaryExchange: BVME, symbol: IP}
+ISP.MI: {conId: 29816328, currency: EUR, exchange: SMART, primaryExchange: BVME, symbol: ISP}
+ITX.MC: {conId: 162084958, currency: EUR, exchange: SMART, primaryExchange: BM, symbol: ITX}
+KBC.BR: {conId: 917964, currency: EUR, exchange: SMART, primaryExchange: ENEXT.BE,
+  symbol: KBC}
+KCR.HE: {conId: 12539489, currency: EUR, exchange: SMART, primaryExchange: HEX, symbol: KCR}
+KEMIRA.HE: {conId: 12539492, currency: EUR, exchange: SMART, primaryExchange: HEX,
+  symbol: KEMIRA}
+KER.PA: {conId: 29612178, currency: EUR, exchange: SMART, primaryExchange: SBF, symbol: KER}
+KESKOB.HE: {conId: 12539499, currency: EUR, exchange: SMART, primaryExchange: HEX,
+  symbol: KESKOB}
+KNEBV.HE: {conId: 34781486, currency: EUR, exchange: FWB, primaryExchange: HEX, symbol: KNEBV}
+KOJAMO.HE: {conId: 323609750, currency: EUR, exchange: HEX, primaryExchange: HEX,
+  symbol: KOJAMO}
+KPN.AS: {conId: 29622902, currency: EUR, exchange: SMART, primaryExchange: AEB, symbol: KPN}
+LAMDA.AT: {conId: 466169066, currency: EUR, exchange: FWB2, primaryExchange: ATH,
+  symbol: LAMDA}
+LDO.MI: {conId: 35162453, currency: EUR, exchange: SMART, primaryExchange: BVME, symbol: LDO}
+LHA.DE: {conId: 14171, currency: EUR, exchange: SMART, primaryExchange: IBIS, symbol: LHA}
+LIN.DE: {conId: 617155589, currency: EUR, exchange: SMART, primaryExchange: IBIS,
+  symbol: LIN}
+LNZ.VI: {conId: 3306480, currency: EUR, exchange: SMART, primaryExchange: VSE, symbol: LNZ}
+LOG.MC: {conId: 160531120, currency: EUR, exchange: SMART, primaryExchange: BM, symbol: LOG}
+LR.PA: {conId: 38715873, currency: EUR, exchange: SMART, primaryExchange: SBF, symbol: LR}
+MAP.MC: {conId: 41267871, currency: EUR, exchange: SMART, primaryExchange: BM, symbol: MAP}
+MB.MI: {conId: 917595, currency: EUR, exchange: SMART, primaryExchange: BVME, symbol: MB}
+MBG.DE: {conId: 29622935, currency: EUR, exchange: SMART, primaryExchange: IBIS, symbol: MBG}
+MC.PA: {conId: 29612150, currency: EUR, exchange: SMART, primaryExchange: SBF, symbol: MC}
+MEL.MC: {conId: 2487794, currency: EUR, exchange: SMART, primaryExchange: BM, symbol: MEL}
+MELE.BR: {conId: 36794737, currency: EUR, exchange: SMART, primaryExchange: ENEXT.BE,
+  symbol: MELE}
+METSB.HE: {conId: 12542994, currency: EUR, exchange: SMART, primaryExchange: HEX,
+  symbol: METSB}
+ML.PA: {conId: 562418770, currency: EUR, exchange: SMART, primaryExchange: SBF, symbol: ML}
+MMK.VI: {conId: 3306498, currency: EUR, exchange: SMART, primaryExchange: VSE, symbol: MMK}
+MNG.L: {conId: 387353678, currency: GBP, exchange: SMART, primaryExchange: LSE, symbol: MNG}
+MOCORP.HE: {conId: 42481101, currency: EUR, exchange: SMART, primaryExchange: HEX,
+  symbol: METSO}
+MOH.AT: {conId: 36771903, currency: EUR, exchange: SMART, primaryExchange: ATH, symbol: MOH}
+MONC.MI: {conId: 140054327, currency: EUR, exchange: SMART, primaryExchange: BVME,
+  symbol: MONC}
+MRK.DE: {conId: 1015559, currency: EUR, exchange: SMART, primaryExchange: IBIS, symbol: MRK}
+MRL.MC: {conId: 159134192, currency: EUR, exchange: SMART, primaryExchange: BM, symbol: MRL}
+MT.AS: {conId: 276039870, currency: EUR, exchange: SMART, primaryExchange: AEB, symbol: MT}
+MTX.DE: {conId: 34759096, currency: EUR, exchange: SMART, primaryExchange: IBIS, symbol: MTX}
+MUV2.DE: {conId: 14189, currency: EUR, exchange: SMART, primaryExchange: IBIS, symbol: MUV2}
+MYTIL.AT: {conId: 41941651, currency: EUR, exchange: SMART, primaryExchange: ATH,
+  symbol: MYTIL}
+NDA FI.HE: {conId: 335134428, currency: EUR, exchange: SMART, primaryExchange: HEX,
+  symbol: NDA2}
+NDA.ST: {conId: 4810989, currency: EUR, exchange: SMART, primaryExchange: IBIS, symbol: NDA}
+NESN.SW: {conId: 52238348, currency: CHF, exchange: EBS, primaryExchange: EBS, symbol: NESN}
+NESTE.HE: {conId: 33815032, currency: EUR, exchange: SMART, primaryExchange: HEX,
+  symbol: NESTE}
+NEXI.MI: {conId: 360973398, currency: EUR, exchange: SMART, primaryExchange: BVME,
+  symbol: NEXI}
+NN.AS: {conId: 159310339, currency: EUR, exchange: SMART, primaryExchange: AEB, symbol: NN}
+NOKIA.HE: {conId: 29816875, currency: EUR, exchange: SMART, primaryExchange: HEX,
+  symbol: NOKIA}
+NTGY.MC: {conId: 917433, currency: EUR, exchange: SMART, primaryExchange: BM, symbol: NTGY}
+OMV.VI: {conId: 3306504, currency: EUR, exchange: SMART, primaryExchange: VSE, symbol: OMV}
+OPAP.AT: {conId: 16019027, currency: EUR, exchange: SMART, primaryExchange: ATH, symbol: OPAP}
+OR.PA: {conId: 29612116, currency: EUR, exchange: SMART, primaryExchange: SBF, symbol: OR}
+ORA.PA: {conId: 29612252, currency: EUR, exchange: SMART, primaryExchange: SBF, symbol: ORA}
+ORNBV.HE: {conId: 12543005, currency: EUR, exchange: SMART, primaryExchange: HEX,
+  symbol: ORNBV}
+OTOEL.AT: {conId: 603529804, currency: EUR, exchange: FWB2, primaryExchange: FWB2,
+  symbol: 0AH1}
+OUT1V.HE: {conId: 12543012, currency: EUR, exchange: SMART, primaryExchange: HEX,
+  symbol: OUT}
+P911.DE: {conId: 588392767, currency: EUR, exchange: SMART, primaryExchange: IBIS,
+  symbol: P911}
+PHIA.AS: {conId: 29622921, currency: EUR, exchange: SMART, primaryExchange: AEB, symbol: PHIA}
+PIRC.MI: {conId: 291237587, currency: EUR, exchange: SMART, primaryExchange: BVME,
+  symbol: PIRC}
+POST.VI: {conId: 39165470, currency: EUR, exchange: SMART, primaryExchange: VSE, symbol: POST}
+PPC.AT: {conId: 16019021, currency: EUR, exchange: SMART, primaryExchange: ATH, symbol: PPC}
+PROX.BR: {conId: 28110174, currency: EUR, exchange: SMART, primaryExchange: ENEXT.BE,
+  symbol: PROX}
+PRU.L: {conId: 909164, currency: GBP, exchange: SMART, primaryExchange: LSE, symbol: PRU}
+PRX.AS: {conId: 382625193, currency: EUR, exchange: SMART, primaryExchange: AEB, symbol: PRX}
+PRY.MI: {conId: 46114851, currency: EUR, exchange: SMART, primaryExchange: BVME, symbol: PRY}
+PSN.L: {conId: 12605003, currency: GBP, exchange: SMART, primaryExchange: LSE, symbol: PSN}
+PST.MI: {conId: 211008268, currency: EUR, exchange: SMART, primaryExchange: BVME,
+  symbol: PST}
+QUEST.AT: {conId: 404782997, currency: EUR, exchange: FWB2, primaryExchange: ATH,
+  symbol: QUEST}
+RACE.MI: {conId: 215461594, currency: EUR, exchange: SMART, primaryExchange: BVME,
+  symbol: RACE}
+RAND.AS: {conId: 10428270, currency: EUR, exchange: SMART, primaryExchange: AEB, symbol: RAND}
+RBI.VI: {conId: 33908748, currency: EUR, exchange: SMART, primaryExchange: VSE, symbol: RBI}
+REC.MI: {conId: 14905664, currency: EUR, exchange: SMART, primaryExchange: BVME, symbol: REC}
+RED.MC: {conId: 239949851, currency: EUR, exchange: SMART, primaryExchange: BM, symbol: RED1}
+REN.AS: {conId: 332776402, currency: EUR, exchange: AEB, primaryExchange: AEB, symbol: REN}
+RI.PA: {conId: 917758, currency: EUR, exchange: SMART, primaryExchange: SBF, symbol: RI}
+RMS.PA: {conId: 1254605, currency: EUR, exchange: SMART, primaryExchange: SBF, symbol: RMS}
+RMV.L: {conId: 331862780, currency: GBP, exchange: SMART, primaryExchange: LSE, symbol: RMV}
+RR.L: {conId: 88383131, currency: GBP, exchange: SMART, primaryExchange: LSE, symbol: RR.}
+RS1.L: {conId: 12103838, currency: GBP, exchange: SMART, primaryExchange: LSE, symbol: RS1}
+RTO.L: {conId: 909192, currency: GBP, exchange: SMART, primaryExchange: LSE, symbol: RTO}
+RWE.DE: {conId: 14198, currency: EUR, exchange: SMART, primaryExchange: IBIS, symbol: RWE}
+SAB.MC: {conId: 44150571, currency: EUR, exchange: SMART, primaryExchange: BM, symbol: SAB1}
+SAF.PA: {conId: 1322028, currency: EUR, exchange: SMART, primaryExchange: SBF, symbol: SAF}
+SAMPO.HE: {conId: 12543068, currency: EUR, exchange: SMART, primaryExchange: HEX,
+  symbol: SAMPO}
+SAN.MC: {conId: 30314144, currency: EUR, exchange: SMART, primaryExchange: BM, symbol: SAN1}
+SAN.PA: {conId: 29612249, currency: EUR, exchange: SMART, primaryExchange: SBF, symbol: SAN}
+SAP.DE: {conId: 14204, currency: EUR, exchange: SMART, primaryExchange: IBIS, symbol: SAP}
+SAR.AT: {conId: 451691008, currency: EUR, exchange: FWB2, primaryExchange: ATH, symbol: SAR}
+SBO.VI: {conId: 33203234, currency: EUR, exchange: SMART, primaryExchange: VSE, symbol: SBO}
+SDR.L: {conId: 586245618, currency: GBP, exchange: SMART, primaryExchange: LSE, symbol: SDR}
+SGO.PA: {conId: 29612189, currency: EUR, exchange: SMART, primaryExchange: SBF, symbol: SGO}
+SHEL.L: {conId: 542125742, currency: GBP, exchange: SMART, primaryExchange: LSE, symbol: SHEL}
+SHELL.AS: {conId: 541411967, currency: EUR, exchange: SMART, primaryExchange: AEB,
+  symbol: SHELL}
+SIE.DE: {conId: 14217, currency: EUR, exchange: SMART, primaryExchange: IBIS, symbol: SIE}
+SMIN.L: {conId: 44668420, currency: GBP, exchange: SMART, primaryExchange: LSE, symbol: SMIN}
+SMT.L: {conId: 158725708, currency: GBP, exchange: SMART, primaryExchange: LSE, symbol: SMT}
+SOF.BR: {conId: 36790770, currency: EUR, exchange: SMART, primaryExchange: ENEXT.BE,
+  symbol: SOF}
+SOLB.BR: {conId: 228869, currency: EUR, exchange: SMART, primaryExchange: ENEXT.BE,
+  symbol: SOLB}
+SPM.MI: {conId: 566597407, currency: EUR, exchange: SMART, primaryExchange: BVME,
+  symbol: SPM}
+SPX.L: {conId: 196961203, currency: GBP, exchange: SMART, primaryExchange: LSE, symbol: SPX}
+SRG.MI: {conId: 14075063, currency: EUR, exchange: SMART, primaryExchange: BVME, symbol: SRG}
+SSE.L: {conId: 2570998, currency: GBP, exchange: SMART, primaryExchange: LSE, symbol: SSE}
+STERV.HE: {conId: 29816588, currency: EUR, exchange: SMART, primaryExchange: HEX,
+  symbol: STERV}
+STJ.L: {conId: 12177246, currency: GBP, exchange: SMART, primaryExchange: LSE, symbol: STJ}
+STLAM.MI: {conId: 463647471, currency: EUR, exchange: SMART, primaryExchange: SBF,
+  symbol: STLAP}
+STMPA.PA: {conId: 29612246, currency: EUR, exchange: SMART, primaryExchange: SBF,
+  symbol: STMPA}
+STR.VI: {conId: 46691927, currency: EUR, exchange: SMART, primaryExchange: VSE, symbol: STR1}
+SU.PA: {conId: 29612196, currency: EUR, exchange: SMART, primaryExchange: SBF, symbol: SU}
+SW.PA: {conId: 29612218, currency: EUR, exchange: SMART, primaryExchange: SBF, symbol: SW}
+SY1.DE: {conId: 41963116, currency: EUR, exchange: SMART, primaryExchange: IBIS, symbol: SY1}
+TEF.MC: {conId: 30314159, currency: EUR, exchange: SMART, primaryExchange: BM, symbol: TEF}
+TELIA1.HE: {conId: 16660531, currency: EUR, exchange: SMART, primaryExchange: HEX,
+  symbol: TELIA1}
+TEN.MI: {conId: 26319561, currency: EUR, exchange: SMART, primaryExchange: BVME, symbol: TEN}
+TENERGY.AT: {conId: 310169244, currency: EUR, exchange: SMART, primaryExchange: ATH,
+  symbol: TENERGY}
+TIETO.HE: {conId: 29816594, currency: EUR, exchange: SMART, primaryExchange: HEX,
+  symbol: TIETO}
+TIT.MI: {conId: 29816348, currency: EUR, exchange: SMART, primaryExchange: BVME, symbol: TIT}
+TITC.AT: {conId: 375664597, currency: EUR, exchange: SMART, primaryExchange: ENEXT.BE,
+  symbol: TITC}
+TKWY.AS: {conId: 249769712, currency: EUR, exchange: SMART, primaryExchange: AEB,
+  symbol: TKWY}
+TNET.BR: {conId: 36790975, currency: EUR, exchange: SMART, primaryExchange: ENEXT.BE,
+  symbol: TNET}
+TPEIR.AT: {conId: 482640874, currency: EUR, exchange: SMART, primaryExchange: FWB2,
+  symbol: BKP}
+TRN.MI: {conId: 30664870, currency: EUR, exchange: SMART, primaryExchange: BVME, symbol: TRN}
+TSCO.L: {conId: 471204140, currency: GBP, exchange: SMART, primaryExchange: LSE, symbol: TSCO}
+TTE.PA: {conId: 29612193, currency: EUR, exchange: SMART, primaryExchange: SBF, symbol: TTE}
+TYRES.HE: {conId: 15681527, currency: EUR, exchange: SMART, primaryExchange: HEX,
+  symbol: TYRES}
+UBI.PA: {conId: 2953285, currency: EUR, exchange: SMART, primaryExchange: SBF, symbol: UBI}
+UCB.BR: {conId: 917975, currency: EUR, exchange: SMART, primaryExchange: ENEXT.BE,
+  symbol: UCB}
+UCG.MI: {conId: 262695149, currency: EUR, exchange: SMART, primaryExchange: BVME,
+  symbol: UCG}
+UMI.BR: {conId: 291956769, currency: EUR, exchange: SMART, primaryExchange: ENEXT.BE,
+  symbol: UMI}
+UNA.AS: {conId: 404271848, currency: EUR, exchange: AEB, primaryExchange: AEB, symbol: UNA}
+UNI.MC: {conId: 281130176, currency: EUR, exchange: SMART, primaryExchange: BM, symbol: UNI1}
+UNI.MI: {conId: 105387889, currency: EUR, exchange: SMART, primaryExchange: BVME,
+  symbol: UNI}
+UPM.HE: {conId: 29816600, currency: EUR, exchange: SMART, primaryExchange: HEX, symbol: UPM}
+UQA.VI: {conId: 14317525, currency: EUR, exchange: SMART, primaryExchange: VSE, symbol: UQA}
+URW.AS: {conId: 320358733, currency: EUR, exchange: SMART, primaryExchange: SBF, symbol: URW}
+VALMT.HE: {conId: 140345629, currency: EUR, exchange: SMART, primaryExchange: HEX,
+  symbol: VALMT}
+VER.VI: {conId: 3306518, currency: EUR, exchange: SMART, primaryExchange: VSE, symbol: VER}
+VIE.PA: {conId: 29612206, currency: EUR, exchange: SMART, primaryExchange: SBF, symbol: VIE}
+VIG.VI: {conId: 35352636, currency: EUR, exchange: SMART, primaryExchange: VSE, symbol: VIG}
+VIO.AT: {conId: 138171445, currency: EUR, exchange: SMART, primaryExchange: ENEXT.BE,
+  symbol: VIO}
+VIV.PA: {conId: 29612113, currency: EUR, exchange: SMART, primaryExchange: SBF, symbol: VIV}
+VNA.DE: {conId: 130946869, currency: EUR, exchange: SMART, primaryExchange: IBIS,
+  symbol: VNA}
+VOD.L: {conId: 140148322, currency: GBP, exchange: SMART, primaryExchange: LSE, symbol: VOD}
+VOE.VI: {conId: 3306495, currency: EUR, exchange: SMART, primaryExchange: VSE, symbol: VOE}
+VOW3.DE: {conId: 14237, currency: EUR, exchange: SMART, primaryExchange: IBIS, symbol: VOW3}
+WDP.BR: {conId: 396411105, currency: EUR, exchange: SMART, primaryExchange: ENEXT.BE,
+  symbol: WDP}
+WIE.VI: {conId: 3306521, currency: EUR, exchange: SMART, primaryExchange: VSE, symbol: WIE}
+WKL.AS: {conId: 39498284, currency: EUR, exchange: SMART, primaryExchange: AEB, symbol: WKL}
+WLN.PA: {conId: 158556311, currency: EUR, exchange: FWB, primaryExchange: SBF, symbol: WLN}
+ZAL.DE: {conId: 168731675, currency: EUR, exchange: SMART, primaryExchange: IBIS,
+  symbol: ZAL}

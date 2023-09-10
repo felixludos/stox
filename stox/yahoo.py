@@ -13,6 +13,7 @@ from .general import Quantity, PctChange, Downloader
 from . import misc
 
 from omnibelt import unspecified_argument
+import omnifig as fig
 
 _DEFAULT_ROOT = Path(__file__).parents[1]
 
@@ -52,11 +53,11 @@ class PandasLoader(JsonLoader):
 			return pd.read_json(path, orient='split', date_unit='s')
 
 
-
-class Yahoo_Downloader(Downloader):
+@fig.component('yahoo')
+class Yahoo_Downloader(Downloader, fig.Configurable):
 	_default_datatypes = {
 		# 'ticker': JsonLoader,
-		'isin': JsonLoader,
+		# 'isin': JsonLoader,
 		'info': JsonLoader,
 		'history': PandasLoader,
 		'calendar': PandasLoader, # TODO: update when yfinance is updated
@@ -83,11 +84,14 @@ class Yahoo_Downloader(Downloader):
 
 	}
 
-	def __init__(self, root=None, date=None, **kwargs):
+	def __init__(self, root=None, date=None, keys=None, **kwargs):
 		if root is None:
 			root = misc.yahoo_root()
+		if keys is None:
+			keys = list(self._default_datatypes.keys())
 		super().__init__(root=root, **kwargs)
 		self.date = date
+		self.default_keys = keys
 
 	def report_keys(self):
 		yield from self._default_datatypes.keys()
@@ -100,11 +104,11 @@ class Yahoo_Downloader(Downloader):
 
 	def download_reports(self, ticker, *, keys=None, pbar=None, date=unspecified_argument, history_kwargs=None):
 		if keys is None:
-			keys = list(self._default_datatypes.keys())
+			keys = self.default_keys
 		if history_kwargs is None:
 			history_kwargs = {'period': 'max'}
 
-		itr = keys.items()
+		itr = {k: self._default_datatypes[k] for k in keys}.items()
 		if pbar is not None:
 			itr = pbar(itr, total=len(keys))
 
@@ -121,8 +125,7 @@ class Yahoo_Downloader(Downloader):
 				continue
 			try:
 				data = tk.history(**history_kwargs) if key == 'history' else getattr(tk, key)
-				# if data is not None:
-				store.save(data, path, key)
+				store.save(data, path)
 			except KeyboardInterrupt:
 				raise
 			except Exception as e:
@@ -245,18 +248,31 @@ class OfflineTicker:
 			return obj
 
 
-from omniply import ToolKit, tool
+from omniply import ToolKit, tool, AbstractGadget
+
+
+class ReportLoader(AbstractGadget):
+	def __init__(self, downloader: Downloader, report_key: str):
+		super().__init__()
+		self.downloader = downloader
+		self.report_key = report_key
+
+	def gizmos(self):
+		yield self.report_key
+
+	def grab_from(self, ctx, gizmo: str):
+		return self.downloader.load_report(ctx['ticker'], self.report_key, date=ctx['date'])
 
 
 
-class Yahoo_Loader(ToolKit):
+@fig.component('yahoo-loader')
+class Yahoo_Loader(ToolKit, fig.Configurable):
 	def __init__(self, downloader=None):
 		if downloader is None:
 			downloader = Yahoo_Downloader()
 		super().__init__()
 		self.downloader = downloader
-		self.extend(tool(report)(lambda ticker, date: self.downloader.load_report(ticker, report, date=date))
-					for report in self.downloader.report_keys())
+		self.extend(ReportLoader(downloader, report) for report in self.downloader.report_keys())
 
 	# @tool('yfsym')
 	# def get_yfsym(self, ticker):
@@ -264,11 +280,12 @@ class Yahoo_Loader(ToolKit):
 
 
 
-class Yahoo_Info(ToolKit):
+@fig.component('yahoo-info')
+class Yahoo_Info(ToolKit, fig.Configurable):
 	def __init__(self, root=None):
-		super().__init__()
 		if root is None:
 			root = misc.yahoo_root()
+		super().__init__()
 		self.root = root
 
 	@tool('country')

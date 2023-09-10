@@ -1,6 +1,63 @@
 
-#_meta.script_name: graph-test
-_meta.script_name: download
+_base: [container]
+
+_meta.script_name: stats
+
+
+################
+
+
+#_meta.script_name: add-ibsym
+#
+#yf: MC.PA
+#currency: EUR
+#
+#auto: yes
+
+
+################
+
+
+#_meta.script_name: download
+#
+##tickers: [CON.DE]
+#
+#downloaders:
+#  yahoo:
+#    _type: yahoo
+#
+#    keys:
+#      - info
+#      - history
+#    #  - calendar
+#    #  - recommendations
+#    #  - sustainability
+#      - dividends
+#      - splits
+#      - institutional_holders
+#      - major_holders
+#      - mutualfund_holders
+#      - balancesheet
+#      - cashflow
+#    #  - earnings
+#      - financials
+#      - quarterly_balancesheet
+#      - quarterly_cashflow
+#    #  - quarterly_earnings
+#      - quarterly_financials
+#
+#  ibkr:
+#    _type: ibkr
+#
+#    connect: yes
+#
+#    keys:
+#      - snapshot
+#      - ownership
+#      - finances
+#      - statements
+#      - recommendations
+
 
 
 

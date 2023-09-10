@@ -1,8 +1,40 @@
+from typing import Iterator, Optional, Any
 from dataclasses import dataclass
 from omnibelt import load_json, human_readable_number, unspecified_argument
-from omniply import AbstractGadget, AbstractGig, GadgetError
-
+import omnifig as fig
+from omniply import (AbstractGadget, AbstractGig, GadgetFailure, ToolKit, tool,
+					 Scope as _Scope, Context as _Context, Selection as _Selection)
 from . import misc
+
+
+
+@fig.component('scope')
+class Scope(_Scope, fig.Configurable):
+	def __init__(self, gadgets = None, **kwargs):
+		if gadgets is None:
+			gadgets = []
+		super().__init__(*gadgets, **kwargs)
+
+
+
+@fig.component('selection')
+class Selection(_Selection, fig.Configurable):
+	def __init__(self, gadgets = None, **kwargs):
+		if gadgets is None:
+			gadgets = []
+		super().__init__(*gadgets, **kwargs)
+
+
+
+@fig.component('context')
+class Context(_Context, fig.Configurable):
+	def __init__(self, gadgets = None, cache = None, **kwargs):
+		if gadgets is None:
+			gadgets = []
+		super().__init__(*gadgets, **kwargs)
+		if cache is not None:
+			self.update(cache)
+
 
 
 country_flags = {
@@ -166,7 +198,25 @@ class Downloader:
 
 
 
-from typing import Iterator, Optional, Any
+@fig.component('portfolio-loader')
+class PortfolioLoader(ToolKit, fig.Configurable):
+	def __init__(self, *, name=None, root=None, path=None, **kwargs):
+		if path is None:
+			if root is None:
+				root = misc.assets_root() / 'ibkr'
+			if name is not None:
+				path = root / name
+		super().__init__(**kwargs)
+		self.portfolio = misc.extract_tickers_and_shares(path) if path is not None and path.exists() else None
+
+
+	@tool('shares')
+	def number_of_shares(self, ticker):
+		if self.portfolio is None:
+			return None
+		return self.portfolio.get(ticker, 0)
+
+
 
 class PopulationStats(AbstractGadget):
 	def __init__(self, population: list[AbstractGig], *gizmos: str, percentile=False, location=True):
@@ -211,7 +261,7 @@ class PopulationStats(AbstractGadget):
 			key = gizmo[4:]
 			mark = ctx[key]
 			return self.compute_loc(mark, key)
-		raise GadgetError(gizmo)
+		raise GadgetFailure(gizmo)
 
 
 class PopulationStats(AbstractGadget):

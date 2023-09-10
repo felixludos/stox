@@ -6,12 +6,14 @@ from . import misc, yahoo
 from .general import Quantity, TRBC_Codes, Downloader
 from collections import namedtuple
 from omnibelt import unspecified_argument, load_yaml, save_yaml
+import omnifig as fig
 import omniply as op
 from omniply import tool, ToolKit, Context, AbstractGig
 
 
 
-class IB_Extractor:
+@fig.component('ib-extractor')
+class IB_Extractor(fig.Configurable):
 	def __init__(self, using_notebook=False, host='127.0.0.1', port=4001, client_id=1):
 		if using_notebook:
 			util.startLoop()
@@ -74,35 +76,50 @@ class IB_Extractor:
 
 
 def describe_contract(ibe: IB_Extractor, contract: str | Contract, *, snapshot=None,
-					  name=True, info=True, industries=True, summary=True, price=True):
+					  name=True, info=True, industries=True, summary=True, price=True, market_cap=True):
 	if isinstance(contract, str):
 		contract = ibe.find_contract(contract)
 	if snapshot is None and (name or industries or summary or price):
-		snapshot = xmltodict.parse(ibe.snapshot(contract))
+		raw = ibe.snapshot(contract)
+		try:
+			snapshot = xmltodict.parse(raw)
+		except Exception as e:
+			snapshot = None
 
-	if name:
+	if name and snapshot is not None:
 		company_name = snapshot['ReportSnapshot']['CoIDs']['CoID'][1]['#text']
 		print(company_name)
 
-	contract_info = [contract.symbol, contract.currency, contract.primaryExchange, contract.conId]
+	contract_info = [contract.symbol, contract.currency, contract.primaryExchange, contract.exchange, contract.conId]
 	if info:
 		if len(contract.description):
 			contract_info.append(contract.description)
 		print(' | '.join(map(str,contract_info)))
 		print()
 
-	if price:
+	if price and snapshot is not None:
 		price = snapshot['ReportSnapshot']['Ratios']['Group'][0]['Ratio'][0]['#text']
 		price = float(price)
 		currency = snapshot['ReportSnapshot']['Ratios']['@PriceCurrency']
 		print(f'Price: {price:.2f} {currency}')
 
-	if industries:
-		industry_list = [e['#text'] for e in snapshot['ReportSnapshot']['peerInfo']['IndustryInfo']['Industry']]
-		print('\n'.join(industry_list))
-		print()
+	if market_cap and snapshot is not None:
+		market_cap = snapshot['ReportSnapshot']['Ratios']['Group'][1]['Ratio'][0]['#text']
+		market_cap = float(market_cap) * 1e6
+		currency = snapshot['ReportSnapshot']['Ratios']['@PriceCurrency']
+		print(f'Market Cap: {Quantity(market_cap, currency)}')
 
-	if summary:
+	if industries and snapshot is not None:
+		inds = [ind for ind in snapshot['ReportSnapshot']['peerInfo']['IndustryInfo']['Industry']
+				if ind['@type'] == 'TRBC']
+		if len(inds) > 0:
+			industry = inds[0]['#text']
+			trbc = TRBC_Codes()
+			sector = trbc.get_sector(inds[0]['@code'])
+			print(f'{sector}  ::  {industry}')
+			print()
+
+	if summary and snapshot is not None:
 		summary_text = snapshot['ReportSnapshot']['TextInfo']['Text'][0]['#text']
 		if len(summary_text) > 300:
 			summary_text = summary_text[:300] + '...'
@@ -156,20 +173,26 @@ def add_symbol_row(table, yfsym, contract, force=False):
 	print(f'Added {yfsym!r} {row}')
 
 
-
-class IBKR_Downloader(Downloader):
-	def __init__(self, ibe=None, *, date='last', root=None, symbols_path=None, **kwargs):
+@fig.component('ibkr')
+class IBKR_Downloader(Downloader, fig.Configurable):
+	def __init__(self, ibe=None, *, keys=None, date=None, root=None, symbols_path=None, connect=False, **kwargs):
 		if root is None:
 			root = misc.ibkr_root()
 		if symbols_path is None:
 			symbols_path = misc.assets_root() / 'yahoo2ibkr.yml'
 		super().__init__(root=root, **kwargs)
+		if keys is None:
+			keys = self._report_keys
 		self.ibe = ibe
+		if connect:
+			self.refresh_api()
+		self.default_keys = keys
 		self.date = date
 		self.symbol_table = load_yaml(symbols_path)
 
+	_report_keys = ['snapshot', 'ownership', 'finances', 'statements', 'recommendations']
 	def report_keys(self):
-		yield from ['snapshot', 'ownership', 'finances', 'statements', 'recommendations']
+		yield from self._report_keys
 
 	def report_path(self, ticker, key, date=unspecified_argument):
 		if date is unspecified_argument:
@@ -196,7 +219,7 @@ class IBKR_Downloader(Downloader):
 
 	def download_reports(self, ticker, *, keys=None, ignore_existing=False, pbar=None, date=unspecified_argument):
 		if keys is None:
-			keys = list(self.report_keys())
+			keys = self.default_keys
 
 		results = {}
 
