@@ -1,0 +1,26 @@
+
+
+downloaders.yahoo:
+  _type: downloader/yahoo
+
+  keys:
+    - info
+    - history
+  #  - calendar
+  #  - recommendations
+  #  - sustainability
+    - dividends
+    - splits
+    - institutional_holders
+    - major_holders
+    - mutualfund_holders
+    - balancesheet
+    - cashflow
+  #  - earnings
+    - financials
+    - quarterly_balancesheet
+    - quarterly_cashflow
+  #  - quarterly_earnings
+    - quarterly_financials
+
+

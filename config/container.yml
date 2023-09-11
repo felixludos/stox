@@ -1,16 +1,20 @@
 
+portfolio:
+  _type: portfolio-loader
+  name: <>portfolio-name
+
 container:
   _type: context
 
   gadgets:
-    - _type: scope
+    common._type: common-stats
+    yahoo:
+      _type: scope
 
       gadgets:
-        - _type: yahoo-loader
-        - _type: yahoo-info
-        - _type: portfolio-loader
-
-      gap: {test: ticker}
+        loader._type: yahoo-loader
+        info._type: yahoo-info
+        portfolio-loader: <>portfolio
 
 
 

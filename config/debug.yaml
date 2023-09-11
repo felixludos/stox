@@ -1,62 +1,39 @@
 
-_base: [container]
+#_base: [container, euro]
+#
+#_meta.script_name: euro-stats
+#
+#portfolio.name: fe-aug23.txt
+#
+#date: 230909
+#
+#overwrite: yes
+##ignore-errors: yes
 
-_meta.script_name: stats
 
 
 ################
 
 
-#_meta.script_name: add-ibsym
-#
+_meta.script_name: ib-search
+
 #yf: MC.PA
 #currency: EUR
-#
-#auto: yes
+
+q: STLA
+currency: USD
+
+auto: yes
 
 
 ################
 
 
+#_base: [dl/yf, dl/ib]
+#
 #_meta.script_name: download
 #
 ##tickers: [CON.DE]
-#
-#downloaders:
-#  yahoo:
-#    _type: yahoo
-#
-#    keys:
-#      - info
-#      - history
-#    #  - calendar
-#    #  - recommendations
-#    #  - sustainability
-#      - dividends
-#      - splits
-#      - institutional_holders
-#      - major_holders
-#      - mutualfund_holders
-#      - balancesheet
-#      - cashflow
-#    #  - earnings
-#      - financials
-#      - quarterly_balancesheet
-#      - quarterly_cashflow
-#    #  - quarterly_earnings
-#      - quarterly_financials
-#
-#  ibkr:
-#    _type: ibkr
-#
-#    connect: yes
-#
-#    keys:
-#      - snapshot
-#      - ownership
-#      - finances
-#      - statements
-#      - recommendations
 
 
 

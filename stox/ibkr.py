@@ -3,7 +3,7 @@ from ib_insync import *
 from . import misc
 
 from . import misc, yahoo
-from .general import Quantity, TRBC_Codes, Downloader
+from .general import Quantity, TRBC_Codes, Downloader, load_symbol_table
 from collections import namedtuple
 from omnibelt import unspecified_argument, load_yaml, save_yaml
 import omnifig as fig
@@ -129,19 +129,12 @@ def describe_contract(ibe: IB_Extractor, contract: str | Contract, *, snapshot=N
 
 
 
-def load_symbol_table():
-	root = misc.assets_root()
-	path = root / 'yahoo2ibkr.yml'
-	data = load_yaml(path)
-	return data
-
-
 
 def save_symbol_table(table):
 	root = misc.assets_root()
-	path = root / 'yahoo2ibkr.yml'
+	path = root / 'symbol-table.yml'
 	if path.exists():
-		save_yaml(load_symbol_table(), root / 'yahoo2ibkr_backup.yml')
+		save_yaml(load_symbol_table(), root / 'symbol-table_backup.yml')
 	save_yaml(table, path)
 	return path
 
@@ -150,12 +143,12 @@ def save_symbol_table(table):
 def add_symbol_row(table, yfsym, contract, force=False):
 	if yfsym in table:
 		if force:
-			print(f'Overwriting {yfsym!r} {table[yfsym]}')
+			print(f'Overwriting {yfsym!r} {table["ibkr-contract"][yfsym]}')
 		else:
-			raise ValueError(f'{yfsym} already in table: {table[yfsym]}')
+			raise ValueError(f'{yfsym} already in table: {table["ibkr-contract"][yfsym]}')
 
 	ibsym = contract.symbol
-	ibrows = {v['symbol']: v for k, v in table.items()}
+	ibrows = {v['ibkr-contract']['symbol']: v for k, v in table.items()}
 	if ibsym in ibrows:
 		if force:
 			print(f'Overwriting {ibsym!r} {ibrows[ibsym]}')
@@ -166,14 +159,14 @@ def add_symbol_row(table, yfsym, contract, force=False):
 		'symbol': contract.symbol,
 		'currency': contract.currency,
 		'primaryExchange': contract.primaryExchange,
-		'conID': contract.conId,
+		'conId': contract.conId,
 		'exchange': contract.exchange,
 	}
-	table[yfsym] = row
+	table.setdefault(yfsym, {}).update({"ibkr-contract": row})
 	print(f'Added {yfsym!r} {row}')
 
 
-@fig.component('ibkr')
+@fig.component('downloader/ibkr')
 class IBKR_Downloader(Downloader, fig.Configurable):
 	def __init__(self, ibe=None, *, keys=None, date=None, root=None, symbols_path=None, connect=False, **kwargs):
 		if root is None:
@@ -343,8 +336,8 @@ class IBKR_Downloader(Downloader, fig.Configurable):
 # 	return data
 
 
-
-class IBKR_Loader(ToolKit):
+@fig.component('ibkr-loader')
+class IBKR_Loader(ToolKit, fig.Configurable):
 	def __init__(self, downloader=None, **kwargs):
 		if downloader is None:
 			downloader = IBKR_Downloader()
@@ -416,7 +409,8 @@ class IBKR_Loader(ToolKit):
 
 
 
-class IBKR_Stats(ToolKit):
+@fig.component('ibkr-stats')
+class IBKR_Stats(ToolKit, fig.Configurable):
 	@tool('company_name')
 	def get_company_name_from_snapshot(self, snapshot):
 		val = snapshot['CoIDs']['CoID'][1]
@@ -597,7 +591,9 @@ class IBKR_Stats(ToolKit):
 		return [v['@code'] for v in vals]
 
 
-class IBKR_Derived(ToolKit):
+
+@fig.component('ibkr-derived')
+class IBKR_Derived(ToolKit, fig.Configurable):
 	def __init__(self, *, trbc=None, **kwargs):
 		if trbc is None:
 			trbc = TRBC_Codes()

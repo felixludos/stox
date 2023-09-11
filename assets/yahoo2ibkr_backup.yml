@@ -95,6 +95,8 @@ DG.PA: {conId: 29612226, currency: EUR, exchange: SMART, primaryExchange: SBF, s
 DHL.DE: {conId: 10749447, currency: EUR, exchange: SMART, primaryExchange: IBIS, symbol: DHL}
 DIA.MI: {conId: 75975372, currency: EUR, exchange: SMART, primaryExchange: BVME, symbol: DIA}
 DOC.VI: {conId: 36764481, currency: EUR, exchange: SMART, primaryExchange: VSE, symbol: DOC}
+DSFIR.AS: {conId: 626092544, currency: EUR, exchange: SMART, primaryExchange: AEB,
+  symbol: DSFIR}
 DTE.DE: {conId: 2254332, currency: EUR, exchange: SMART, primaryExchange: IBIS, symbol: DTE}
 DTG.DE: {conId: 531961119, currency: EUR, exchange: SMART, primaryExchange: IBIS,
   symbol: DTG}

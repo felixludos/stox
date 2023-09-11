@@ -10,7 +10,7 @@ def test_ibkr():
 	symbol_table = load_symbol_table()
 	# print(len(symbol_table))
 
-	rows = [(k, v) for k, v in symbol_table.items() if v['currency'] == 'EUR']
+	rows = [(k, v['ibkr-contract']) for k, v in symbol_table.items() if v['ibkr-contract']['currency'] == 'EUR']
 
 	date = '230829'
 

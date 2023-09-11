@@ -1,0 +1,15 @@
+
+
+downloaders.ibkr:
+  _type: downloader/ibkr
+
+  connect: yes
+
+  keys:
+    - snapshot
+    - ownership
+    - finances
+    - statements
+    - recommendations
+
+

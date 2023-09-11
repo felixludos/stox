@@ -53,7 +53,7 @@ class PandasLoader(JsonLoader):
 			return pd.read_json(path, orient='split', date_unit='s')
 
 
-@fig.component('yahoo')
+@fig.component('downloader/yahoo')
 class Yahoo_Downloader(Downloader, fig.Configurable):
 	_default_datatypes = {
 		# 'ticker': JsonLoader,
@@ -491,11 +491,11 @@ class Yahoo_Info(ToolKit, fig.Configurable):
 
 	@tool('held_percent_institutions')
 	def get_held_percent_institutions(self, info):
-		return Quantity(info.get('heldPercentInstitutions', float('nan'))*100, '%')
+		return info['heldPercentInstitutions']*100 if info.get('heldPercentInstitutions') is not None else None
 
 	@tool('held_percent_insiders')
 	def get_held_percent_insiders(self, info):
-		return Quantity(info.get('heldPercentInsiders', float('nan'))*100, '%')
+		return info['heldPercentInsiders']*100 if info.get('heldPercentInsiders') is not None else None
 
 	@tool('profit_margins')
 	def get_profit_margins(self, info):
@@ -528,8 +528,10 @@ class Yahoo_Info(ToolKit, fig.Configurable):
 
 	@tool('perf52w')
 	def compute_performance_52w(self, price, high_52w, low_52w):
-		assert price.unit == high_52w.unit == low_52w.unit, f'{price} vs {high_52w} vs {low_52w}'
-		return (price.amount - low_52w.amount) / (high_52w.amount - low_52w.amount)
+		if (price is not None and high_52w is not None and low_52w is not None
+				and price.amount is not None and high_52w.amount is not None and low_52w.amount is not None):
+			assert price.unit == high_52w.unit == low_52w.unit, f'{price} vs {high_52w} vs {low_52w}'
+			return (price.amount - low_52w.amount) / (high_52w.amount - low_52w.amount)
 
 
 

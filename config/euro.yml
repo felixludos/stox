@@ -1,0 +1,35 @@
+
+features:
+  ticker: Ticker
+  #	ibsym: IBKR Symbol
+  company_name: Company Name
+  country: Country
+  #	display_country: Country
+  sector: Sector
+  #	display_sector: Sector
+  industry: Industry
+
+  price: Price
+  shares: Current Shares
+
+  yield: Dividend Yield
+
+  recommendation_key: Recommendation Key
+  recommendation_mean: Recommendation Mean (1=Strong Buy, 5=Strong Sell)
+
+  peg_ratio: PEG Ratio
+
+  change_52w: 52 Week Change
+
+  perf52w: 52 Week Relative Price (1=52 week high, 0=52 week low)
+
+  log_market_cap: Log Market Cap
+
+  overall_risk: Overall Risk (1-10)
+
+  held_percent_institutions: Percent of Shares Held by Institutions
+  held_percent_insiders: Percent of Shares Held by Insiders
+
+
+
+

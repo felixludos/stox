@@ -1,6 +1,7 @@
+import math
 from typing import Iterator, Optional, Any
 from dataclasses import dataclass
-from omnibelt import load_json, human_readable_number, unspecified_argument
+from omnibelt import load_json, human_readable_number, unspecified_argument, load_yaml
 import omnifig as fig
 from omniply import (AbstractGadget, AbstractGig, GadgetFailure, ToolKit, tool,
 					 Scope as _Scope, Context as _Context, Selection as _Selection)
@@ -8,12 +9,24 @@ from . import misc
 
 
 
+def load_symbol_table():
+	root = misc.assets_root()
+	path = root / 'symbol-table.yml'
+	data = load_yaml(path)
+	return data
+
+
+
+
+
 @fig.component('scope')
 class Scope(_Scope, fig.Configurable):
-	def __init__(self, gadgets = None, **kwargs):
+	def __init__(self, gadgets = None, gap = None, **kwargs):
 		if gadgets is None:
 			gadgets = []
-		super().__init__(*gadgets, **kwargs)
+		if isinstance(gadgets, dict):
+			gadgets = list(gadgets.values())
+		super().__init__(*gadgets, gap=gap, **kwargs)
 
 
 
@@ -22,6 +35,8 @@ class Selection(_Selection, fig.Configurable):
 	def __init__(self, gadgets = None, **kwargs):
 		if gadgets is None:
 			gadgets = []
+		if isinstance(gadgets, dict):
+			gadgets = list(gadgets.values())
 		super().__init__(*gadgets, **kwargs)
 
 
@@ -31,6 +46,8 @@ class Context(_Context, fig.Configurable):
 	def __init__(self, gadgets = None, cache = None, **kwargs):
 		if gadgets is None:
 			gadgets = []
+		if isinstance(gadgets, dict):
+			gadgets = list(gadgets.values())
 		super().__init__(*gadgets, **kwargs)
 		if cache is not None:
 			self.update(cache)
@@ -207,7 +224,14 @@ class PortfolioLoader(ToolKit, fig.Configurable):
 			if name is not None:
 				path = root / name
 		super().__init__(**kwargs)
-		self.portfolio = misc.extract_tickers_and_shares(path) if path is not None and path.exists() else None
+		self.portfolio = None
+		if path is not None and path.exists():
+			symbols_table = load_symbol_table()
+			ib2yf = {v['ib-contract']['symbol']: k for k, v in symbols_table.items()}
+			portfolio_list = misc.extract_tickers_and_shares(path)
+			portfolio = dict(portfolio_list)
+			assert len(portfolio) == len(portfolio_list), f'Duplicate tickers in {path}'
+			self.portfolio = {ib2yf[k]: v for k, v in portfolio.items()}
 
 
 	@tool('shares')
@@ -215,6 +239,22 @@ class PortfolioLoader(ToolKit, fig.Configurable):
 		if self.portfolio is None:
 			return None
 		return self.portfolio.get(ticker, 0)
+
+
+
+@fig.component('common-stats')
+class Common_Stats(ToolKit, fig.Configurable):
+	@tool('log_market_cap')
+	def get_log_market_cap(self, market_cap: Quantity):
+		if market_cap is None or market_cap.amount is None:
+			return None
+		return math.log10(market_cap.amount)
+
+	@tool('raw_market_cap')
+	def get_raw_market_cap(self, market_cap: Quantity):
+		if market_cap is None or market_cap.amount is None:
+			return None
+		return market_cap.amount
 
 
 

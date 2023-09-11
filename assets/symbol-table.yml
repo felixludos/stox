@@ -1,0 +1,810 @@
+0EXG.IL:
+  ibkr-contract: {conId: 12615675, currency: EUR, exchange: SMART, primaryExchange: BVL,
+    symbol: JMT}
+1COV.DE:
+  ibkr-contract: {conId: 208908717, currency: EUR, exchange: IBIS, primaryExchange: IBIS,
+    symbol: 1COV}
+AAF.L:
+  ibkr-contract: {conId: 373291234, currency: GBP, exchange: SMART, primaryExchange: LSE,
+    symbol: AAF}
+ABDN.L:
+  ibkr-contract: {conId: 337997965, currency: GBP, exchange: SMART, primaryExchange: LSE,
+    symbol: ABDN}
+ABI.BR:
+  ibkr-contract: {conId: 251259604, currency: EUR, exchange: SMART, primaryExchange: ENEXT.BE,
+    symbol: ABI}
+ABN.AS:
+  ibkr-contract: {conId: 212289339, currency: EUR, exchange: FWB, primaryExchange: AEB,
+    symbol: ABN}
+AC.PA:
+  ibkr-contract: {conId: 29612126, currency: EUR, exchange: SMART, primaryExchange: SBF,
+    symbol: AC}
+ACA.PA:
+  ibkr-contract: {conId: 29612223, currency: EUR, exchange: SMART, primaryExchange: SBF,
+    symbol: ACA}
+ACKB.BR:
+  ibkr-contract: {conId: 5084603, currency: EUR, exchange: SMART, primaryExchange: ENEXT.BE,
+    symbol: ACKB}
+ACS.MC:
+  ibkr-contract: {conId: 30314131, currency: EUR, exchange: SMART, primaryExchange: BM,
+    symbol: ACS}
+ACX.MC:
+  ibkr-contract: {conId: 30314161, currency: EUR, exchange: SMART, primaryExchange: BM,
+    symbol: ACX}
+AD.AS:
+  ibkr-contract: {conId: 240486295, currency: EUR, exchange: SMART, primaryExchange: AEB,
+    symbol: AD}
+ADS.DE:
+  ibkr-contract: {conId: 79780521, currency: EUR, exchange: SMART, primaryExchange: IBIS,
+    symbol: ADS}
+ADYEN.AS:
+  ibkr-contract: {conId: 321202935, currency: EUR, exchange: SMART, primaryExchange: AEB,
+    symbol: ADYEN}
+AED.BR:
+  ibkr-contract: {conId: 41474620, currency: EUR, exchange: SMART, primaryExchange: ENEXT.BE,
+    symbol: AED}
+AEGN.AT:
+  ibkr-contract: {conId: 143974809, currency: EUR, exchange: EUIBSI, primaryExchange: FWB2,
+    symbol: 32A}
+AENA.MC:
+  ibkr-contract: {conId: 183530573, currency: EUR, exchange: SMART, primaryExchange: BM,
+    symbol: AENA}
+AGN.AS:
+  ibkr-contract: {conId: 39089692, currency: EUR, exchange: SMART, primaryExchange: AEB,
+    symbol: AGN}
+AGS.BR:
+  ibkr-contract: {conId: 111604420, currency: EUR, exchange: SMART, primaryExchange: ENEXT.BE,
+    symbol: AGS}
+AHT.L:
+  ibkr-contract: {conId: 35150670, currency: GBP, exchange: SMART, primaryExchange: LSE,
+    symbol: AHT}
+AI.PA:
+  ibkr-contract: {conId: 29612135, currency: EUR, exchange: SMART, primaryExchange: SBF,
+    symbol: AI}
+AIR.PA:
+  ibkr-contract: {conId: 29612256, currency: EUR, exchange: SMART, primaryExchange: SBF,
+    symbol: AIR}
+AKZA.AS:
+  ibkr-contract: {conId: 350068526, currency: EUR, exchange: SMART, primaryExchange: AEB,
+    symbol: AKZA}
+ALPHA.AT:
+  ibkr-contract: {conId: 213929802, currency: EUR, exchange: FWB2, primaryExchange: ATH,
+    symbol: ALPHA}
+ALV.DE:
+  ibkr-contract: {conId: 14079, currency: EUR, exchange: SMART, primaryExchange: IBIS,
+    symbol: ALV}
+AMP.MI:
+  ibkr-contract: {conId: 55764652, currency: EUR, exchange: SMART, primaryExchange: BVME,
+    symbol: AMP2}
+AMS.MC:
+  ibkr-contract: {conId: 74792133, currency: EUR, exchange: SMART, primaryExchange: BM,
+    symbol: AMS}
+ANA.MC:
+  ibkr-contract: {conId: 917436, currency: EUR, exchange: SMART, primaryExchange: BM,
+    symbol: ANA}
+ANDR.VI:
+  ibkr-contract: {conId: 14317520, currency: EUR, exchange: FWB, primaryExchange: VSE,
+    symbol: ANDR}
+ANE.MC:
+  ibkr-contract: {conId: 500029613, currency: EUR, exchange: SMART, primaryExchange: BM,
+    symbol: ANE}
+ANTO.L:
+  ibkr-contract: {conId: 17628566, currency: GBP, exchange: SMART, primaryExchange: LSE,
+    symbol: ANTO}
+ARGX.BR:
+  ibkr-contract: {conId: 160209909, currency: EUR, exchange: SMART, primaryExchange: ENEXT.BE,
+    symbol: ARGX}
+ASM.AS:
+  ibkr-contract: {conId: 2950440, currency: EUR, exchange: SMART, primaryExchange: AEB,
+    symbol: ASM}
+ASML.AS:
+  ibkr-contract: {conId: 117589399, currency: EUR, exchange: SMART, primaryExchange: AEB,
+    symbol: ASML}
+ATO.PA:
+  ibkr-contract: {conId: 1254624, currency: EUR, exchange: SMART, primaryExchange: SBF,
+    symbol: ATO}
+ATS.VI:
+  ibkr-contract: {conId: 11652563, currency: EUR, exchange: SMART, primaryExchange: VSE,
+    symbol: ATS}
+AUTO.L:
+  ibkr-contract: {conId: 187511156, currency: GBP, exchange: SMART, primaryExchange: LSE,
+    symbol: AUTO}
+AZM.MI:
+  ibkr-contract: {conId: 67957194, currency: EUR, exchange: SMART, primaryExchange: BVME,
+    symbol: AZM}
+BA.L:
+  ibkr-contract: {conId: 908964, currency: GBP, exchange: SMART, primaryExchange: LSE,
+    symbol: BA.}
+BAMI.MI:
+  ibkr-contract: {conId: 259854200, currency: EUR, exchange: SMART, primaryExchange: BVME,
+    symbol: BAMI}
+BAS.DE:
+  ibkr-contract: {conId: 77680640, currency: EUR, exchange: SMART, primaryExchange: IBIS,
+    symbol: BAS}
+BATS.L:
+  ibkr-contract: {conId: 908931, currency: GBP, exchange: SMART, primaryExchange: LSE,
+    symbol: BATS}
+BAYN.DE:
+  ibkr-contract: {conId: 68598660, currency: EUR, exchange: SMART, primaryExchange: IBIS,
+    symbol: BAYN}
+BBVA.MC:
+  ibkr-contract: {conId: 30314149, currency: EUR, exchange: SMART, primaryExchange: BM,
+    symbol: BBVA}
+BEI.DE:
+  ibkr-contract: {conId: 14362, currency: EUR, exchange: SMART, primaryExchange: IBIS,
+    symbol: BEI}
+BELA.AT:
+  ibkr-contract: {conId: 75975450, currency: EUR, exchange: FWB2, primaryExchange: ATH,
+    symbol: BELA}
+BG.VI:
+  ibkr-contract: {conId: 294207034, currency: EUR, exchange: SMART, primaryExchange: VSE,
+    symbol: BG}
+BKT.MC:
+  ibkr-contract: {conId: 45201369, currency: EUR, exchange: SMART, primaryExchange: BM,
+    symbol: BKT}
+BMED.MI:
+  ibkr-contract: {conId: 217632398, currency: EUR, exchange: SMART, primaryExchange: BVME,
+    symbol: BMED}
+BMW.DE:
+  ibkr-contract: {conId: 14094, currency: EUR, exchange: SMART, primaryExchange: IBIS,
+    symbol: BMW}
+BN.PA:
+  ibkr-contract: {conId: 29612111, currency: EUR, exchange: SMART, primaryExchange: SBF,
+    symbol: BN}
+BNP.PA:
+  ibkr-contract: {conId: 29612163, currency: EUR, exchange: SMART, primaryExchange: SBF,
+    symbol: BNP}
+BPE.MI:
+  ibkr-contract: {conId: 11516717, currency: EUR, exchange: SMART, primaryExchange: BVME,
+    symbol: BPE}
+CA.PA:
+  ibkr-contract: {conId: 29612172, currency: EUR, exchange: SMART, primaryExchange: SBF,
+    symbol: CA}
+CABK.MC:
+  ibkr-contract: {conId: 48832907, currency: EUR, exchange: SMART, primaryExchange: BM,
+    symbol: CABK}
+CAI.VI:
+  ibkr-contract: {conId: 27049908, currency: EUR, exchange: SMART, primaryExchange: VSE,
+    symbol: CAI}
+CAP.PA:
+  ibkr-contract: {conId: 29612147, currency: EUR, exchange: SMART, primaryExchange: SBF,
+    symbol: CAP}
+CCH.L:
+  ibkr-contract: {conId: 126945329, currency: GBP, exchange: SMART, primaryExchange: LSE,
+    symbol: CCH}
+CENER.AT:
+  ibkr-contract: {conId: 259937347, currency: EUR, exchange: SMART, primaryExchange: ENEXT.BE,
+    symbol: CENER}
+CGCBV.HE:
+  ibkr-contract: {conId: 34764029, currency: EUR, exchange: SMART, primaryExchange: HEX,
+    symbol: CGCBV}
+CLNX.MC:
+  ibkr-contract: {conId: 193517754, currency: EUR, exchange: SMART, primaryExchange: BM,
+    symbol: CLNX}
+CNA.L:
+  ibkr-contract: {conId: 31765913, currency: GBP, exchange: SMART, primaryExchange: LSE,
+    symbol: CNA}
+CNHI.MI:
+  ibkr-contract: {conId: 135577704, currency: EUR, exchange: SMART, primaryExchange: BVME,
+    symbol: CNHI}
+COFB.BR:
+  ibkr-contract: {conId: 15778638, currency: EUR, exchange: SMART, primaryExchange: ENEXT.BE,
+    symbol: COFB}
+COL.MC:
+  ibkr-contract: {conId: 241892013, currency: EUR, exchange: SMART, primaryExchange: BM,
+    symbol: COL}
+COLR.BR:
+  ibkr-contract: {conId: 79914347, currency: EUR, exchange: SMART, primaryExchange: ENEXT.BE,
+    symbol: COLR}
+CON.DE:
+  ibkr-contract: {conId: 14106, currency: EUR, exchange: SMART, primaryExchange: IBIS,
+    symbol: CON}
+CPG.L:
+  ibkr-contract: {conId: 280731727, currency: GBP, exchange: SMART, primaryExchange: LSE,
+    symbol: CPG}
+CPR.MI:
+  ibkr-contract: {conId: 431811326, currency: EUR, exchange: SMART, primaryExchange: BVME,
+    symbol: CPR}
+CRH.L:
+  ibkr-contract: {conId: 97341412, currency: GBP, exchange: LSE, primaryExchange: LSE,
+    symbol: CRH}
+CS.PA:
+  ibkr-contract: {conId: 29612141, currency: EUR, exchange: SMART, primaryExchange: SBF,
+    symbol: CS}
+DB1.DE:
+  ibkr-contract: {conId: 11490214, currency: EUR, exchange: SMART, primaryExchange: IBIS,
+    symbol: DB1}
+DBK.DE:
+  ibkr-contract: {conId: 14121, currency: EUR, exchange: SMART, primaryExchange: IBIS,
+    symbol: DBK}
+DG.PA:
+  ibkr-contract: {conId: 29612226, currency: EUR, exchange: SMART, primaryExchange: SBF,
+    symbol: DG}
+DHL.DE:
+  ibkr-contract: {conId: 10749447, currency: EUR, exchange: SMART, primaryExchange: IBIS,
+    symbol: DHL}
+DIA.MI:
+  ibkr-contract: {conId: 75975372, currency: EUR, exchange: SMART, primaryExchange: BVME,
+    symbol: DIA}
+DOC.VI:
+  ibkr-contract: {conId: 36764481, currency: EUR, exchange: SMART, primaryExchange: VSE,
+    symbol: DOC}
+DSFIR.AS:
+  ibkr-contract: {conId: 626092544, currency: EUR, exchange: SMART, primaryExchange: AEB,
+    symbol: DSFIR}
+DTE.DE:
+  ibkr-contract: {conId: 2254332, currency: EUR, exchange: SMART, primaryExchange: IBIS,
+    symbol: DTE}
+DTG.DE:
+  ibkr-contract: {conId: 531961119, currency: EUR, exchange: SMART, primaryExchange: IBIS,
+    symbol: DTG}
+EBS.VI:
+  ibkr-contract: {conId: 3306538, currency: EUR, exchange: SMART, primaryExchange: VSE,
+    symbol: EBS}
+EDP.LS:
+  ibkr-contract: {conId: 12600162, currency: EUR, exchange: SMART, primaryExchange: BVL,
+    symbol: EDP}
+EEE.AT:
+  ibkr-contract: {conId: 126991169, currency: EUR, exchange: FWB, primaryExchange: ATH,
+    symbol: EEE1}
+EL.PA:
+  ibkr-contract: {conId: 1321740, currency: EUR, exchange: SMART, primaryExchange: SBF,
+    symbol: EL}
+ELE.MC:
+  ibkr-contract: {conId: 30314174, currency: EUR, exchange: SMART, primaryExchange: BM,
+    symbol: ELE}
+ELI.BR:
+  ibkr-contract: {conId: 36790958, currency: EUR, exchange: SMART, primaryExchange: ENEXT.BE,
+    symbol: ELI1}
+ELISA.HE:
+  ibkr-contract: {conId: 29908766, currency: EUR, exchange: SMART, primaryExchange: HEX,
+    symbol: ELISA}
+ELLAKTOR.AT:
+  ibkr-contract: {conId: 16490116, currency: EUR, exchange: SMART, primaryExchange: ATH,
+    symbol: ELLAKTOR}
+ELPE.AT:
+  ibkr-contract: {conId: 12570175, currency: EUR, exchange: SMART, primaryExchange: ATH,
+    symbol: ELPE}
+EN.PA:
+  ibkr-contract: {conId: 29612166, currency: EUR, exchange: SMART, primaryExchange: SBF,
+    symbol: EN}
+ENEL.MI:
+  ibkr-contract: {conId: 29816333, currency: EUR, exchange: SMART, primaryExchange: BVME,
+    symbol: ENEL}
+ENG.MC:
+  ibkr-contract: {conId: 15824414, currency: EUR, exchange: SMART, primaryExchange: BM,
+    symbol: ENG}
+ENGI.PA:
+  ibkr-contract: {conId: 35052259, currency: EUR, exchange: SMART, primaryExchange: SBF,
+    symbol: ENGI}
+ENI.MI:
+  ibkr-contract: {conId: 29816844, currency: EUR, exchange: SMART, primaryExchange: BVME,
+    symbol: ENI}
+ENR.DE:
+  ibkr-contract: {conId: 447545380, currency: EUR, exchange: SMART, primaryExchange: IBIS,
+    symbol: ENR}
+ENT.L:
+  ibkr-contract: {conId: 125005888, currency: GBP, exchange: SMART, primaryExchange: LSE,
+    symbol: ENT}
+EOAN.DE:
+  ibkr-contract: {conId: 53028906, currency: EUR, exchange: SMART, primaryExchange: IBIS,
+    symbol: EOAN}
+ETE.AT:
+  ibkr-contract: {conId: 331627431, currency: EUR, exchange: SMART, primaryExchange: ATH,
+    symbol: ETE}
+EUROB.AT:
+  ibkr-contract: {conId: 214126559, currency: EUR, exchange: SMART, primaryExchange: ATH,
+    symbol: EUROB}
+EVN.VI:
+  ibkr-contract: {conId: 3306468, currency: EUR, exchange: SMART, primaryExchange: VSE,
+    symbol: EVN}
+EXPN.L:
+  ibkr-contract: {conId: 41044864, currency: GBP, exchange: SMART, primaryExchange: LSE,
+    symbol: EXPN}
+EYDAP.AT:
+  ibkr-contract: {conId: 16490113, currency: EUR, exchange: FWB2, primaryExchange: ATH,
+    symbol: EYDAP}
+FBK.MI:
+  ibkr-contract: {conId: 159352524, currency: EUR, exchange: SMART, primaryExchange: BVME,
+    symbol: FBK}
+FDR.MC:
+  ibkr-contract: {conId: 48871204, currency: EUR, exchange: SMART, primaryExchange: BM,
+    symbol: FDR}
+FER.MC:
+  ibkr-contract: {conId: 636678546, currency: EUR, exchange: SMART, primaryExchange: BM,
+    symbol: FER}
+FLTR.L:
+  ibkr-contract: {conId: 221274522, currency: GBP, exchange: SMART, primaryExchange: LSE,
+    symbol: FLTR}
+FORTUM.HE:
+  ibkr-contract: {conId: 12539474, currency: EUR, exchange: SMART, primaryExchange: HEX,
+    symbol: FORTUM}
+FRAS.L:
+  ibkr-contract: {conId: 44650318, currency: GBP, exchange: SMART, primaryExchange: LSE,
+    symbol: FRAS}
+FRE.DE:
+  ibkr-contract: {conId: 4811328, currency: EUR, exchange: SMART, primaryExchange: IBIS,
+    symbol: FRE}
+G.MI:
+  ibkr-contract: {conId: 29816322, currency: EUR, exchange: SMART, primaryExchange: BVME,
+    symbol: G}
+GALP.LS:
+  ibkr-contract: {conId: 41512469, currency: EUR, exchange: SMART, primaryExchange: BVL,
+    symbol: GALP}
+GBLB.BR:
+  ibkr-contract: {conId: 917985, currency: EUR, exchange: SMART, primaryExchange: ENEXT.BE,
+    symbol: GBLB}
+GEKTERNA.AT:
+  ibkr-contract: {conId: 272555163, currency: EUR, exchange: FWB2, primaryExchange: ATH,
+    symbol: GEKTERNA}
+GLE.PA:
+  ibkr-contract: {conId: 29612232, currency: EUR, exchange: SMART, primaryExchange: SBF,
+    symbol: GLE}
+GLPG.AS:
+  ibkr-contract: {conId: 34510828, currency: EUR, exchange: SMART, primaryExchange: AEB,
+    symbol: GLPG}
+GRF.MC:
+  ibkr-contract: {conId: 217481604, currency: EUR, exchange: SMART, primaryExchange: BM,
+    symbol: GRF}
+HEI.DE:
+  ibkr-contract: {conId: 14727, currency: EUR, exchange: SMART, primaryExchange: IBIS,
+    symbol: HEI}
+HEIA.AS:
+  ibkr-contract: {conId: 29622888, currency: EUR, exchange: SMART, primaryExchange: AEB,
+    symbol: HEIA}
+HLN.L:
+  ibkr-contract: {conId: 573136108, currency: GBP, exchange: SMART, primaryExchange: LSE,
+    symbol: HLN}
+HO.PA:
+  ibkr-contract: {conId: 917799, currency: EUR, exchange: SMART, primaryExchange: SBF,
+    symbol: HO}
+HTO.AT:
+  ibkr-contract: {conId: 12567715, currency: EUR, exchange: FWB2, primaryExchange: ATH,
+    symbol: HTO}
+IAG.MC:
+  ibkr-contract: {conId: 82965896, currency: EUR, exchange: SMART, primaryExchange: BM,
+    symbol: IAG}
+IBE.MC:
+  ibkr-contract: {conId: 46586284, currency: EUR, exchange: SMART, primaryExchange: BM,
+    symbol: IBE}
+IFX.DE:
+  ibkr-contract: {conId: 7747731, currency: EUR, exchange: SMART, primaryExchange: IBIS,
+    symbol: IFX}
+IG.MI:
+  ibkr-contract: {conId: 254447309, currency: EUR, exchange: SMART, primaryExchange: BVME,
+    symbol: IG}
+IIA.VI:
+  ibkr-contract: {conId: 321520245, currency: EUR, exchange: SMART, primaryExchange: VSE,
+    symbol: IIA}
+IMCD.AS:
+  ibkr-contract: {conId: 158556186, currency: EUR, exchange: SMART, primaryExchange: AEB,
+    symbol: IMCD}
+INGA.AS:
+  ibkr-contract: {conId: 240601748, currency: EUR, exchange: SMART, primaryExchange: AEB,
+    symbol: INGA}
+IP.MI:
+  ibkr-contract: {conId: 26319253, currency: EUR, exchange: SMART, primaryExchange: BVME,
+    symbol: IP}
+ISP.MI:
+  ibkr-contract: {conId: 29816328, currency: EUR, exchange: SMART, primaryExchange: BVME,
+    symbol: ISP}
+ITX.MC:
+  ibkr-contract: {conId: 162084958, currency: EUR, exchange: SMART, primaryExchange: BM,
+    symbol: ITX}
+KBC.BR:
+  ibkr-contract: {conId: 917964, currency: EUR, exchange: SMART, primaryExchange: ENEXT.BE,
+    symbol: KBC}
+KCR.HE:
+  ibkr-contract: {conId: 12539489, currency: EUR, exchange: SMART, primaryExchange: HEX,
+    symbol: KCR}
+KEMIRA.HE:
+  ibkr-contract: {conId: 12539492, currency: EUR, exchange: SMART, primaryExchange: HEX,
+    symbol: KEMIRA}
+KER.PA:
+  ibkr-contract: {conId: 29612178, currency: EUR, exchange: SMART, primaryExchange: SBF,
+    symbol: KER}
+KESKOB.HE:
+  ibkr-contract: {conId: 12539499, currency: EUR, exchange: SMART, primaryExchange: HEX,
+    symbol: KESKOB}
+KNEBV.HE:
+  ibkr-contract: {conId: 34781486, currency: EUR, exchange: FWB, primaryExchange: HEX,
+    symbol: KNEBV}
+KOJAMO.HE:
+  ibkr-contract: {conId: 323609750, currency: EUR, exchange: HEX, primaryExchange: HEX,
+    symbol: KOJAMO}
+KPN.AS:
+  ibkr-contract: {conId: 29622902, currency: EUR, exchange: SMART, primaryExchange: AEB,
+    symbol: KPN}
+LAMDA.AT:
+  ibkr-contract: {conId: 466169066, currency: EUR, exchange: FWB2, primaryExchange: ATH,
+    symbol: LAMDA}
+LDO.MI:
+  ibkr-contract: {conId: 35162453, currency: EUR, exchange: SMART, primaryExchange: BVME,
+    symbol: LDO}
+LHA.DE:
+  ibkr-contract: {conId: 14171, currency: EUR, exchange: SMART, primaryExchange: IBIS,
+    symbol: LHA}
+LIN.DE:
+  ibkr-contract: {conId: 617155589, currency: EUR, exchange: SMART, primaryExchange: IBIS,
+    symbol: LIN}
+LNZ.VI:
+  ibkr-contract: {conId: 3306480, currency: EUR, exchange: SMART, primaryExchange: VSE,
+    symbol: LNZ}
+LOG.MC:
+  ibkr-contract: {conId: 160531120, currency: EUR, exchange: SMART, primaryExchange: BM,
+    symbol: LOG}
+LR.PA:
+  ibkr-contract: {conId: 38715873, currency: EUR, exchange: SMART, primaryExchange: SBF,
+    symbol: LR}
+MAP.MC:
+  ibkr-contract: {conId: 41267871, currency: EUR, exchange: SMART, primaryExchange: BM,
+    symbol: MAP}
+MB.MI:
+  ibkr-contract: {conId: 917595, currency: EUR, exchange: SMART, primaryExchange: BVME,
+    symbol: MB}
+MBG.DE:
+  ibkr-contract: {conId: 29622935, currency: EUR, exchange: SMART, primaryExchange: IBIS,
+    symbol: MBG}
+MC.PA:
+  ibkr-contract: {conId: 29612150, currency: EUR, exchange: SMART, primaryExchange: SBF,
+    symbol: MC}
+MEL.MC:
+  ibkr-contract: {conId: 2487794, currency: EUR, exchange: SMART, primaryExchange: BM,
+    symbol: MEL}
+MELE.BR:
+  ibkr-contract: {conId: 36794737, currency: EUR, exchange: SMART, primaryExchange: ENEXT.BE,
+    symbol: MELE}
+METSB.HE:
+  ibkr-contract: {conId: 12542994, currency: EUR, exchange: SMART, primaryExchange: HEX,
+    symbol: METSB}
+ML.PA:
+  ibkr-contract: {conId: 562418770, currency: EUR, exchange: SMART, primaryExchange: SBF,
+    symbol: ML}
+MMK.VI:
+  ibkr-contract: {conId: 3306498, currency: EUR, exchange: SMART, primaryExchange: VSE,
+    symbol: MMK}
+MNG.L:
+  ibkr-contract: {conId: 387353678, currency: GBP, exchange: SMART, primaryExchange: LSE,
+    symbol: MNG}
+MOH.AT:
+  ibkr-contract: {conId: 36771903, currency: EUR, exchange: SMART, primaryExchange: ATH,
+    symbol: MOH}
+MONC.MI:
+  ibkr-contract: {conId: 140054327, currency: EUR, exchange: SMART, primaryExchange: BVME,
+    symbol: MONC}
+MRK.DE:
+  ibkr-contract: {conId: 1015559, currency: EUR, exchange: SMART, primaryExchange: IBIS,
+    symbol: MRK}
+MRL.MC:
+  ibkr-contract: {conId: 159134192, currency: EUR, exchange: SMART, primaryExchange: BM,
+    symbol: MRL}
+MT.AS:
+  ibkr-contract: {conId: 276039870, currency: EUR, exchange: SMART, primaryExchange: AEB,
+    symbol: MT}
+MTX.DE:
+  ibkr-contract: {conId: 34759096, currency: EUR, exchange: SMART, primaryExchange: IBIS,
+    symbol: MTX}
+MUV2.DE:
+  ibkr-contract: {conId: 14189, currency: EUR, exchange: SMART, primaryExchange: IBIS,
+    symbol: MUV2}
+MYTIL.AT:
+  ibkr-contract: {conId: 41941651, currency: EUR, exchange: SMART, primaryExchange: ATH,
+    symbol: MYTIL}
+NESN.SW:
+  ibkr-contract: {conId: 52238348, currency: CHF, exchange: EBS, primaryExchange: EBS,
+    symbol: NESN}
+NESTE.HE:
+  ibkr-contract: {conId: 33815032, currency: EUR, exchange: SMART, primaryExchange: HEX,
+    symbol: NESTE}
+NEXI.MI:
+  ibkr-contract: {conId: 360973398, currency: EUR, exchange: SMART, primaryExchange: BVME,
+    symbol: NEXI}
+NN.AS:
+  ibkr-contract: {conId: 159310339, currency: EUR, exchange: SMART, primaryExchange: AEB,
+    symbol: NN}
+NOKIA.HE:
+  ibkr-contract: {conId: 29816875, currency: EUR, exchange: SMART, primaryExchange: HEX,
+    symbol: NOKIA}
+NTGY.MC:
+  ibkr-contract: {conId: 917433, currency: EUR, exchange: SMART, primaryExchange: BM,
+    symbol: NTGY}
+OMV.VI:
+  ibkr-contract: {conId: 3306504, currency: EUR, exchange: SMART, primaryExchange: VSE,
+    symbol: OMV}
+OPAP.AT:
+  ibkr-contract: {conId: 16019027, currency: EUR, exchange: SMART, primaryExchange: ATH,
+    symbol: OPAP}
+OR.PA:
+  ibkr-contract: {conId: 29612116, currency: EUR, exchange: SMART, primaryExchange: SBF,
+    symbol: OR}
+ORA.PA:
+  ibkr-contract: {conId: 29612252, currency: EUR, exchange: SMART, primaryExchange: SBF,
+    symbol: ORA}
+ORNBV.HE:
+  ibkr-contract: {conId: 12543005, currency: EUR, exchange: SMART, primaryExchange: HEX,
+    symbol: ORNBV}
+OTOEL.AT:
+  ibkr-contract: {conId: 603529804, currency: EUR, exchange: FWB2, primaryExchange: FWB2,
+    symbol: 0AH1}
+OUT1V.HE:
+  ibkr-contract: {conId: 12543012, currency: EUR, exchange: SMART, primaryExchange: HEX,
+    symbol: OUT}
+P911.DE:
+  ibkr-contract: {conId: 588392767, currency: EUR, exchange: SMART, primaryExchange: IBIS,
+    symbol: P911}
+PHIA.AS:
+  ibkr-contract: {conId: 29622921, currency: EUR, exchange: SMART, primaryExchange: AEB,
+    symbol: PHIA}
+PIRC.MI:
+  ibkr-contract: {conId: 291237587, currency: EUR, exchange: SMART, primaryExchange: BVME,
+    symbol: PIRC}
+POST.VI:
+  ibkr-contract: {conId: 39165470, currency: EUR, exchange: SMART, primaryExchange: VSE,
+    symbol: POST}
+PPC.AT:
+  ibkr-contract: {conId: 16019021, currency: EUR, exchange: SMART, primaryExchange: ATH,
+    symbol: PPC}
+PROX.BR:
+  ibkr-contract: {conId: 28110174, currency: EUR, exchange: SMART, primaryExchange: ENEXT.BE,
+    symbol: PROX}
+PRU.L:
+  ibkr-contract: {conId: 909164, currency: GBP, exchange: SMART, primaryExchange: LSE,
+    symbol: PRU}
+PRX.AS:
+  ibkr-contract: {conId: 382625193, currency: EUR, exchange: SMART, primaryExchange: AEB,
+    symbol: PRX}
+PRY.MI:
+  ibkr-contract: {conId: 46114851, currency: EUR, exchange: SMART, primaryExchange: BVME,
+    symbol: PRY}
+PSN.L:
+  ibkr-contract: {conId: 12605003, currency: GBP, exchange: SMART, primaryExchange: LSE,
+    symbol: PSN}
+PST.MI:
+  ibkr-contract: {conId: 211008268, currency: EUR, exchange: SMART, primaryExchange: BVME,
+    symbol: PST}
+QUEST.AT:
+  ibkr-contract: {conId: 404782997, currency: EUR, exchange: FWB2, primaryExchange: ATH,
+    symbol: QUEST}
+RACE.MI:
+  ibkr-contract: {conId: 215461594, currency: EUR, exchange: SMART, primaryExchange: BVME,
+    symbol: RACE}
+RAND.AS:
+  ibkr-contract: {conId: 10428270, currency: EUR, exchange: SMART, primaryExchange: AEB,
+    symbol: RAND}
+RBI.VI:
+  ibkr-contract: {conId: 33908748, currency: EUR, exchange: SMART, primaryExchange: VSE,
+    symbol: RBI}
+REC.MI:
+  ibkr-contract: {conId: 14905664, currency: EUR, exchange: SMART, primaryExchange: BVME,
+    symbol: REC}
+RED.MC:
+  ibkr-contract: {conId: 239949851, currency: EUR, exchange: SMART, primaryExchange: BM,
+    symbol: RED1}
+REN.AS:
+  ibkr-contract: {conId: 332776402, currency: EUR, exchange: AEB, primaryExchange: AEB,
+    symbol: REN}
+RI.PA:
+  ibkr-contract: {conId: 917758, currency: EUR, exchange: SMART, primaryExchange: SBF,
+    symbol: RI}
+RMS.PA:
+  ibkr-contract: {conId: 1254605, currency: EUR, exchange: SMART, primaryExchange: SBF,
+    symbol: RMS}
+RMV.L:
+  ibkr-contract: {conId: 331862780, currency: GBP, exchange: SMART, primaryExchange: LSE,
+    symbol: RMV}
+RR.L:
+  ibkr-contract: {conId: 88383131, currency: GBP, exchange: SMART, primaryExchange: LSE,
+    symbol: RR.}
+RS1.L:
+  ibkr-contract: {conId: 12103838, currency: GBP, exchange: SMART, primaryExchange: LSE,
+    symbol: RS1}
+RTO.L:
+  ibkr-contract: {conId: 909192, currency: GBP, exchange: SMART, primaryExchange: LSE,
+    symbol: RTO}
+RWE.DE:
+  ibkr-contract: {conId: 14198, currency: EUR, exchange: SMART, primaryExchange: IBIS,
+    symbol: RWE}
+SAB.MC:
+  ibkr-contract: {conId: 44150571, currency: EUR, exchange: SMART, primaryExchange: BM,
+    symbol: SAB1}
+SAF.PA:
+  ibkr-contract: {conId: 1322028, currency: EUR, exchange: SMART, primaryExchange: SBF,
+    symbol: SAF}
+SAMPO.HE:
+  ibkr-contract: {conId: 12543068, currency: EUR, exchange: SMART, primaryExchange: HEX,
+    symbol: SAMPO}
+SAN.MC:
+  ibkr-contract: {conId: 30314144, currency: EUR, exchange: SMART, primaryExchange: BM,
+    symbol: SAN1}
+SAN.PA:
+  ibkr-contract: {conId: 29612249, currency: EUR, exchange: SMART, primaryExchange: SBF,
+    symbol: SAN}
+SAP.DE:
+  ibkr-contract: {conId: 14204, currency: EUR, exchange: SMART, primaryExchange: IBIS,
+    symbol: SAP}
+SAR.AT:
+  ibkr-contract: {conId: 451691008, currency: EUR, exchange: FWB2, primaryExchange: ATH,
+    symbol: SAR}
+SBO.VI:
+  ibkr-contract: {conId: 33203234, currency: EUR, exchange: SMART, primaryExchange: VSE,
+    symbol: SBO}
+SDR.L:
+  ibkr-contract: {conId: 586245618, currency: GBP, exchange: SMART, primaryExchange: LSE,
+    symbol: SDR}
+SGO.PA:
+  ibkr-contract: {conId: 29612189, currency: EUR, exchange: SMART, primaryExchange: SBF,
+    symbol: SGO}
+SHEL.L:
+  ibkr-contract: {conId: 542125742, currency: GBP, exchange: SMART, primaryExchange: LSE,
+    symbol: SHEL}
+SHELL.AS:
+  ibkr-contract: {conId: 541411967, currency: EUR, exchange: SMART, primaryExchange: AEB,
+    symbol: SHELL}
+SIE.DE:
+  ibkr-contract: {conId: 14217, currency: EUR, exchange: SMART, primaryExchange: IBIS,
+    symbol: SIE}
+SMIN.L:
+  ibkr-contract: {conId: 44668420, currency: GBP, exchange: SMART, primaryExchange: LSE,
+    symbol: SMIN}
+SMT.L:
+  ibkr-contract: {conId: 158725708, currency: GBP, exchange: SMART, primaryExchange: LSE,
+    symbol: SMT}
+SOF.BR:
+  ibkr-contract: {conId: 36790770, currency: EUR, exchange: SMART, primaryExchange: ENEXT.BE,
+    symbol: SOF}
+SOLB.BR:
+  ibkr-contract: {conId: 228869, currency: EUR, exchange: SMART, primaryExchange: ENEXT.BE,
+    symbol: SOLB}
+SPM.MI:
+  ibkr-contract: {conId: 566597407, currency: EUR, exchange: SMART, primaryExchange: BVME,
+    symbol: SPM}
+SPX.L:
+  ibkr-contract: {conId: 196961203, currency: GBP, exchange: SMART, primaryExchange: LSE,
+    symbol: SPX}
+SRG.MI:
+  ibkr-contract: {conId: 14075063, currency: EUR, exchange: SMART, primaryExchange: BVME,
+    symbol: SRG}
+SSE.L:
+  ibkr-contract: {conId: 2570998, currency: GBP, exchange: SMART, primaryExchange: LSE,
+    symbol: SSE}
+STERV.HE:
+  ibkr-contract: {conId: 29816588, currency: EUR, exchange: SMART, primaryExchange: HEX,
+    symbol: STERV}
+STJ.L:
+  ibkr-contract: {conId: 12177246, currency: GBP, exchange: SMART, primaryExchange: LSE,
+    symbol: STJ}
+STLAM.MI:
+  ibkr-contract: {conId: 463647471, currency: EUR, exchange: SMART, primaryExchange: SBF,
+    symbol: STLAP}
+STMPA.PA:
+  ibkr-contract: {conId: 29612246, currency: EUR, exchange: SMART, primaryExchange: SBF,
+    symbol: STMPA}
+STR.VI:
+  ibkr-contract: {conId: 46691927, currency: EUR, exchange: SMART, primaryExchange: VSE,
+    symbol: STR1}
+SU.PA:
+  ibkr-contract: {conId: 29612196, currency: EUR, exchange: SMART, primaryExchange: SBF,
+    symbol: SU}
+SW.PA:
+  ibkr-contract: {conId: 29612218, currency: EUR, exchange: SMART, primaryExchange: SBF,
+    symbol: SW}
+SY1.DE:
+  ibkr-contract: {conId: 41963116, currency: EUR, exchange: SMART, primaryExchange: IBIS,
+    symbol: SY1}
+TEF.MC:
+  ibkr-contract: {conId: 30314159, currency: EUR, exchange: SMART, primaryExchange: BM,
+    symbol: TEF}
+TELIA1.HE:
+  ibkr-contract: {conId: 16660531, currency: EUR, exchange: SMART, primaryExchange: HEX,
+    symbol: TELIA1}
+TEN.MI:
+  ibkr-contract: {conId: 26319561, currency: EUR, exchange: SMART, primaryExchange: BVME,
+    symbol: TEN}
+TENERGY.AT:
+  ibkr-contract: {conId: 310169244, currency: EUR, exchange: SMART, primaryExchange: ATH,
+    symbol: TENERGY}
+TIETO.HE:
+  ibkr-contract: {conId: 29816594, currency: EUR, exchange: SMART, primaryExchange: HEX,
+    symbol: TIETO}
+TIT.MI:
+  ibkr-contract: {conId: 29816348, currency: EUR, exchange: SMART, primaryExchange: BVME,
+    symbol: TIT}
+TITC.AT:
+  ibkr-contract: {conId: 375664597, currency: EUR, exchange: SMART, primaryExchange: ENEXT.BE,
+    symbol: TITC}
+TKWY.AS:
+  ibkr-contract: {conId: 249769712, currency: EUR, exchange: SMART, primaryExchange: AEB,
+    symbol: TKWY}
+TNET.BR:
+  ibkr-contract: {conId: 36790975, currency: EUR, exchange: SMART, primaryExchange: ENEXT.BE,
+    symbol: TNET}
+TPEIR.AT:
+  ibkr-contract: {conId: 482640874, currency: EUR, exchange: SMART, primaryExchange: FWB2,
+    symbol: BKP}
+TRN.MI:
+  ibkr-contract: {conId: 30664870, currency: EUR, exchange: SMART, primaryExchange: BVME,
+    symbol: TRN}
+TSCO.L:
+  ibkr-contract: {conId: 471204140, currency: GBP, exchange: SMART, primaryExchange: LSE,
+    symbol: TSCO}
+TTE.PA:
+  ibkr-contract: {conId: 29612193, currency: EUR, exchange: SMART, primaryExchange: SBF,
+    symbol: TTE}
+TYRES.HE:
+  ibkr-contract: {conId: 15681527, currency: EUR, exchange: SMART, primaryExchange: HEX,
+    symbol: TYRES}
+UBI.PA:
+  ibkr-contract: {conId: 2953285, currency: EUR, exchange: SMART, primaryExchange: SBF,
+    symbol: UBI}
+UCB.BR:
+  ibkr-contract: {conId: 917975, currency: EUR, exchange: SMART, primaryExchange: ENEXT.BE,
+    symbol: UCB}
+UCG.MI:
+  ibkr-contract: {conId: 262695149, currency: EUR, exchange: SMART, primaryExchange: BVME,
+    symbol: UCG}
+UMI.BR:
+  ibkr-contract: {conId: 291956769, currency: EUR, exchange: SMART, primaryExchange: ENEXT.BE,
+    symbol: UMI}
+UNA.AS:
+  ibkr-contract: {conId: 404271848, currency: EUR, exchange: AEB, primaryExchange: AEB,
+    symbol: UNA}
+UNI.MC:
+  ibkr-contract: {conId: 281130176, currency: EUR, exchange: SMART, primaryExchange: BM,
+    symbol: UNI1}
+UNI.MI:
+  ibkr-contract: {conId: 105387889, currency: EUR, exchange: SMART, primaryExchange: BVME,
+    symbol: UNI}
+UPM.HE:
+  ibkr-contract: {conId: 29816600, currency: EUR, exchange: SMART, primaryExchange: HEX,
+    symbol: UPM}
+UQA.VI:
+  ibkr-contract: {conId: 14317525, currency: EUR, exchange: SMART, primaryExchange: VSE,
+    symbol: UQA}
+URW.AS:
+  ibkr-contract: {conId: 320358733, currency: EUR, exchange: SMART, primaryExchange: SBF,
+    symbol: URW}
+VALMT.HE:
+  ibkr-contract: {conId: 140345629, currency: EUR, exchange: SMART, primaryExchange: HEX,
+    symbol: VALMT}
+VER.VI:
+  ibkr-contract: {conId: 3306518, currency: EUR, exchange: SMART, primaryExchange: VSE,
+    symbol: VER}
+VIE.PA:
+  ibkr-contract: {conId: 29612206, currency: EUR, exchange: SMART, primaryExchange: SBF,
+    symbol: VIE}
+VIG.VI:
+  ibkr-contract: {conId: 35352636, currency: EUR, exchange: SMART, primaryExchange: VSE,
+    symbol: VIG}
+VIO.AT:
+  ibkr-contract: {conId: 138171445, currency: EUR, exchange: SMART, primaryExchange: ENEXT.BE,
+    symbol: VIO}
+VIV.PA:
+  ibkr-contract: {conId: 29612113, currency: EUR, exchange: SMART, primaryExchange: SBF,
+    symbol: VIV}
+VNA.DE:
+  ibkr-contract: {conId: 130946869, currency: EUR, exchange: SMART, primaryExchange: IBIS,
+    symbol: VNA}
+VOD.L:
+  ibkr-contract: {conId: 140148322, currency: GBP, exchange: SMART, primaryExchange: LSE,
+    symbol: VOD}
+VOE.VI:
+  ibkr-contract: {conId: 3306495, currency: EUR, exchange: SMART, primaryExchange: VSE,
+    symbol: VOE}
+VOW3.DE:
+  ibkr-contract: {conId: 14237, currency: EUR, exchange: SMART, primaryExchange: IBIS,
+    symbol: VOW3}
+WDP.BR:
+  ibkr-contract: {conId: 396411105, currency: EUR, exchange: SMART, primaryExchange: ENEXT.BE,
+    symbol: WDP}
+WIE.VI:
+  ibkr-contract: {conId: 3306521, currency: EUR, exchange: SMART, primaryExchange: VSE,
+    symbol: WIE}
+WKL.AS:
+  ibkr-contract: {conId: 39498284, currency: EUR, exchange: SMART, primaryExchange: AEB,
+    symbol: WKL}
+WLN.PA:
+  ibkr-contract: {conId: 158556311, currency: EUR, exchange: FWB, primaryExchange: SBF,
+    symbol: WLN}
+ZAL.DE:
+  ibkr-contract: {conId: 168731675, currency: EUR, exchange: SMART, primaryExchange: IBIS,
+    symbol: ZAL}
