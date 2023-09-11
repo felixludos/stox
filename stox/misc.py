@@ -1,6 +1,26 @@
 from .imports import *
 from omnibelt import load_yaml, human_readable_number
 from datetime import datetime
+from unidecode import unidecode
+
+
+safe_noise_words = {"PLC", "AG", "CORP", "NV", "SA", "INC", "SE", "ADR", "OYJ", "SPA", "SME", "GROEP", "SOCIETE", "GROUP",
+    "EO", "NA", "ON", "O", "N", "S", "A", "CR", "CO", "EO", "group", "plc", "inc", "corp", "sa", "ag", "eo", "gmbh", "ltd", "llc", "n.v", "nv",}
+noise_words = { *safe_noise_words,
+     "-", ",", ".", "&", "AND", "HOLDINGS", "INTERNATIONAL",
+	"kgaa", "se", "oao", "ab", "asa", "s.p.a", "spa", "co", "sl", "p.l.c.", "bv", "lp", "srl", "oyj", "l.p.", "rl", "p.c.", 'n.v', 'n.v.', 's.a.', 's.a', 'ny', 'n.y.', 'n.y', 's.p.a.', '(cr)', '(publ)', 'Sgps', 'St',
+		'Inh.', 'O.n.', 's.e.', 'Dr.', 'Ing.', 'H.c.', 'F.', 'Aktiengesellschaft', 'company', 'corporation', 'R', 'gr', 'inh', 'ord', 'c', 'v', 'p', 'e', 'h'}
+noise_words = {w.lower() for w in noise_words}
+noise_words.update({w.replace('.', '') for w in noise_words})
+safe_noise_words = {w.lower() for w in safe_noise_words}
+safe_noise_words.update({w.replace('.', '') for w in safe_noise_words})
+def clean_company_name(name):
+	name = unidecode(name)
+	name = name.replace('/', ' ').replace('-', ' ').replace('+', ' ').replace(',', ' ').replace('.', '')
+	fixed = ' '.join(w.capitalize().replace('.', ' ').strip() for w in name.split() if w.lower() not in noise_words).strip()
+	if not len(fixed):
+		return ' '.join(w.capitalize().replace('.', ' ').strip() for w in name.split() if w.lower() not in safe_noise_words).strip()
+	return fixed
 
 
 humanize = human_readable_number

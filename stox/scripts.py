@@ -1,5 +1,6 @@
 from pathlib import Path
 from tqdm import tqdm
+from unidecode import unidecode
 from tabulate import tabulate
 import pandas as pd
 from . import misc
@@ -26,7 +27,7 @@ def download_symbols(config: fig.Node):
 
 	tickers = config.pull('tickers', None)
 	if tickers is None:
-		config.print('Downloading all tickers')
+		config.print(f'Downloading {len(tickers)} tickers')
 		tickers = list(symbol_table.keys())
 	else:
 		bad = [tk for tk in tickers if tk not in symbol_table]
@@ -96,7 +97,7 @@ def find_symbol(config: fig.Node):
 
 	srcs = []
 
-	ibsym = config.pulls('ibsym', 'sym', default=None)
+	ibsym = config.pulls('ibsym', 'ib', 'sym', default=None)
 	if ibsym is not None:
 		contract_info = {}
 		if secType is not None:
@@ -112,6 +113,8 @@ def find_symbol(config: fig.Node):
 	if yfsym is not None and ibsym is None and query is None:
 		query = yfsym.split('.')[0]
 	if query is not None:
+		if config.pull('sanitize-query', True):
+			query = unidecode(query)
 		search_results = [c for c in ibe.search(query) if c.secType == secType]
 		srcs.append(search_results)
 
@@ -172,8 +175,9 @@ def find_symbol(config: fig.Node):
 
 	if add_symbol:
 		if overwrite:
-			config.print(f'Adding symbol {yfsym} {ct}')
-			add_symbol_row(symbol_table, yfsym, ct, force=True)
+			# config.print(f'Adding symbol {yfsym} {ct}')
+			add_symbol_row(symbol_table, yfsym, ct, force=True,
+						   extra=config.pull('extra', {}, silent=True))
 			save_symbol_table(symbol_table)
 		else:
 			config.print(f'{yfsym} already exists: {symbol_table["ibkr-contract"][yfsym]}')

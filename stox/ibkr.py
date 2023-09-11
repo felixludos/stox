@@ -140,7 +140,7 @@ def save_symbol_table(table):
 
 
 
-def add_symbol_row(table, yfsym, contract, force=False):
+def add_symbol_row(table, yfsym, contract, force=False, extra=None):
 	if yfsym in table:
 		if force:
 			print(f'Overwriting {yfsym!r} {table["ibkr-contract"][yfsym]}')
@@ -162,17 +162,19 @@ def add_symbol_row(table, yfsym, contract, force=False):
 		'conId': contract.conId,
 		'exchange': contract.exchange,
 	}
-	table.setdefault(yfsym, {}).update({"ibkr-contract": row})
+	if contract.description is not None:
+		row['description'] = contract.description
+	if extra is None:
+		extra = {}
+	table.setdefault(yfsym, {}).update({"ibkr-contract": row, **extra})
 	print(f'Added {yfsym!r} {row}')
 
 
 @fig.component('downloader/ibkr')
 class IBKR_Downloader(Downloader, fig.Configurable):
-	def __init__(self, ibe=None, *, keys=None, date=None, root=None, symbols_path=None, connect=False, **kwargs):
+	def __init__(self, ibe=None, *, keys=None, date=None, root=None, connect=False, **kwargs):
 		if root is None:
 			root = misc.ibkr_root()
-		if symbols_path is None:
-			symbols_path = misc.assets_root() / 'yahoo2ibkr.yml'
 		super().__init__(root=root, **kwargs)
 		if keys is None:
 			keys = self._report_keys
@@ -181,7 +183,7 @@ class IBKR_Downloader(Downloader, fig.Configurable):
 			self.refresh_api()
 		self.default_keys = keys
 		self.date = date
-		self.symbol_table = load_yaml(symbols_path)
+		self.symbol_table = load_symbol_table()
 
 	_report_keys = ['snapshot', 'ownership', 'finances', 'statements', 'recommendations']
 	def report_keys(self):
@@ -194,9 +196,11 @@ class IBKR_Downloader(Downloader, fig.Configurable):
 		path = misc.get_date_path(self.root, str(ct.conId), date=date)
 		return path / f'{key}.xml'
 
-	def as_contract(self, info):
+	def as_contract(self, ct):
+		info = ct
 		if isinstance(info, str):
-			info = self.symbol_table[info]
+			info = self.symbol_table[info].get('ibkr-contract')
+		assert info is not None, f'No contract for {ct}'
 		if not isinstance(info, Contract):
 			info = Stock(**info)
 		return info

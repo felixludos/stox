@@ -5,3 +5,4 @@ itables
 world_bank_data
 pandasgui
 dtale
+unidecode

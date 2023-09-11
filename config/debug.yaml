@@ -15,25 +15,27 @@
 ################
 
 
-_meta.script_name: ib-search
-
-#yf: MC.PA
-#currency: EUR
-
-q: STLA
-currency: USD
-
-auto: yes
+#_meta.script_name: ib-search
+#
+##yf: MC.PA
+##currency: EUR
+#
+#q: STLA
+#currency: USD
+#
+#auto: yes
 
 
 ################
 
 
-#_base: [dl/yf, dl/ib]
-#
-#_meta.script_name: download
-#
-##tickers: [CON.DE]
+_base: [dl/yf, dl/ib]
+
+_meta.script_name: download
+
+date: 230909
+
+#tickers: [CON.DE]
 
 
 
