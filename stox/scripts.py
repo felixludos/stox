@@ -27,7 +27,6 @@ def download_symbols(config: fig.Node):
 
 	tickers = config.pull('tickers', None)
 	if tickers is None:
-		config.print(f'Downloading {len(tickers)} tickers')
 		tickers = list(symbol_table.keys())
 	else:
 		bad = [tk for tk in tickers if tk not in symbol_table]
@@ -36,6 +35,7 @@ def download_symbols(config: fig.Node):
 				raise ValueError(f'Unknown tickers (for IBKR): {bad}')
 			else:
 				config.print(f'WARNING unknown tickers (for IBKR): {bad}')
+	config.print(f'Downloading {len(tickers)} tickers')
 
 	results = {}
 	num_errors = 0

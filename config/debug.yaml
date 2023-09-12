@@ -29,7 +29,7 @@
 ################
 
 
-_base: [dl/yf, dl/ib]
+_base: [dl/yf, dl/ib, dl/av]
 
 _meta.script_name: download
 

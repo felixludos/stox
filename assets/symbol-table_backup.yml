@@ -1,84 +1,84 @@
 0EXG.IL:
+  adr: JRONY
   ibkr-contract: {conId: 12615675, currency: EUR, exchange: SMART, primaryExchange: BVL,
     symbol: JMT}
-  partners: [JRONY]
 1COV.DE:
+  adr: COVTY
   ibkr-contract: {conId: 208908717, currency: EUR, exchange: IBIS, primaryExchange: IBIS,
     symbol: 1COV}
-  partners: [COVTY]
 AAF.L:
   ibkr-contract: {conId: 373291234, currency: GBP, exchange: SMART, primaryExchange: LSE,
     symbol: AAF}
 AAVMY:
+  adr-src: ABN.AS
   ibkr-contract: {conId: 377515728, currency: USD, description: ABN AMRO BANK NV-UNSP
-      ADR, exchange: '', primaryExchange: PINK, symbol: AAVMY}
-  partners: [ABN.AS]
+      ADR, exchange: SMART, primaryExchange: PINK, symbol: AAVMY}
 ABDN.L:
   ibkr-contract: {conId: 337997965, currency: GBP, exchange: SMART, primaryExchange: LSE,
     symbol: ABDN}
 ABI.BR:
+  adr: BUD
   ibkr-contract: {conId: 251259604, currency: EUR, exchange: SMART, primaryExchange: ENEXT.BE,
     symbol: ABI}
-  partners: [BUD]
 ABN.AS:
+  adr: AAVMY
   ibkr-contract: {conId: 212289339, currency: EUR, exchange: FWB, primaryExchange: AEB,
     symbol: ABN}
-  partners: [AAVMY]
 AC.PA:
+  adr: ACM
   ibkr-contract: {conId: 29612126, currency: EUR, exchange: SMART, primaryExchange: SBF,
     symbol: AC}
-  partners: [ACM]
 ACA.PA:
+  adr: CRARY
   ibkr-contract: {conId: 29612223, currency: EUR, exchange: SMART, primaryExchange: SBF,
     symbol: ACA}
-  partners: [CRARY]
 ACKB.BR:
   ibkr-contract: {conId: 5084603, currency: EUR, exchange: SMART, primaryExchange: ENEXT.BE,
     symbol: ACKB}
 ACM:
-  ibkr-contract: {conId: 43980401, currency: USD, description: AECOM, exchange: '',
+  adr-src: AC.PA
+  ibkr-contract: {conId: 43980401, currency: USD, description: AECOM, exchange: SMART,
     primaryExchange: NYSE, symbol: ACM}
-  partners: [AC.PA]
 ACS.MC:
+  adr: ACSAY
   ibkr-contract: {conId: 30314131, currency: EUR, exchange: SMART, primaryExchange: BM,
     symbol: ACS}
-  partners: [ACSAY]
 ACSAY:
+  adr-src: ACS.MC
   ibkr-contract: {conId: 55558085, currency: USD, description: ACS ACTIVIDADES CONS-UNS
-      ADR, exchange: '', primaryExchange: PINK, symbol: ACSAY}
-  partners: [ACS.MC]
+      ADR, exchange: SMART, primaryExchange: PINK, symbol: ACSAY}
 ACX.MC:
+  adr: ANIOY
   ibkr-contract: {conId: 30314161, currency: EUR, exchange: SMART, primaryExchange: BM,
     symbol: ACX}
-  partners: [ANIOY]
 AD.AS:
+  adr: ADRNY
   ibkr-contract: {conId: 240486295, currency: EUR, exchange: SMART, primaryExchange: AEB,
     symbol: AD}
-  partners: [ADRNY]
 ADDYY:
+  adr-src: ADS.DE
   ibkr-contract: {conId: 49517831, currency: USD, description: ADIDAS AG-SPONSORED
-      ADR, exchange: '', primaryExchange: PINK, symbol: ADDYY}
-  partners: [ADS.DE]
+      ADR, exchange: SMART, primaryExchange: PINK, symbol: ADDYY}
 ADRNY:
+  adr-src: AD.AS
   ibkr-contract: {conId: 240485261, currency: USD, description: KONINKLIJKE AHOLD-SP
-      ADR, exchange: '', primaryExchange: PINK, symbol: ADRNY}
-  partners: [AD.AS]
+      ADR, exchange: SMART, primaryExchange: PINK, symbol: ADRNY}
 ADRZY:
+  adr-src: ANDR.VI
   ibkr-contract: {conId: 54939752, currency: USD, description: ANDRITZ AG-UNSPON ADR,
-    exchange: '', primaryExchange: PINK, symbol: ADRZY}
-  partners: [ANDR.VI]
+    exchange: SMART, primaryExchange: PINK, symbol: ADRZY}
 ADS.DE:
+  adr: ADDYY
   ibkr-contract: {conId: 79780521, currency: EUR, exchange: SMART, primaryExchange: IBIS,
     symbol: ADS}
-  partners: [ADDYY]
 ADYEN.AS:
+  adr: ADYEY
   ibkr-contract: {conId: 321202935, currency: EUR, exchange: SMART, primaryExchange: AEB,
     symbol: ADYEN}
-  partners: [ADYEY]
 ADYEY:
+  adr-src: ADYEN.AS
   ibkr-contract: {conId: 384163549, currency: USD, description: ADYEN NV-UNSPON ADR,
-    exchange: '', primaryExchange: PINK, symbol: ADYEY}
-  partners: [ADYEN.AS]
+    exchange: SMART, primaryExchange: PINK, symbol: ADYEY}
 AED.BR:
   ibkr-contract: {conId: 41474620, currency: EUR, exchange: SMART, primaryExchange: ENEXT.BE,
     symbol: AED}
@@ -86,133 +86,128 @@ AEGN.AT:
   ibkr-contract: {conId: 143974809, currency: EUR, exchange: EUIBSI, primaryExchange: FWB2,
     symbol: 32A}
 AENA.MC:
+  adr: ANYYY
   ibkr-contract: {conId: 183530573, currency: EUR, exchange: SMART, primaryExchange: BM,
     symbol: AENA}
-  partners: [ANYYY]
 AGESY:
-  ibkr-contract: {conId: 111792321, currency: USD, description: AGEAS -SPON ADR, exchange: '',
+  adr-src: AGS.BR
+  ibkr-contract: {conId: 111792321, currency: USD, description: AGEAS -SPON ADR, exchange: SMART,
     primaryExchange: PINK, symbol: AGESY}
-  partners: [AGS.BR]
 AGN:
-  ibkr-contract: {conId: 196610642, currency: USD, description: ALLERGAN PLC, exchange: '',
+  adr-src: AGN.AS
+  ibkr-contract: {conId: 196610642, currency: USD, description: ALLERGAN PLC, exchange: SMART,
     primaryExchange: VALUE, symbol: AGN}
-  partners: [AGN.AS]
 AGN.AS:
+  adr: AGN
   ibkr-contract: {conId: 39089692, currency: EUR, exchange: SMART, primaryExchange: AEB,
     symbol: AGN}
-  partners: [AGN]
 AGS.BR:
+  adr: AGESY
   ibkr-contract: {conId: 111604420, currency: EUR, exchange: SMART, primaryExchange: ENEXT.BE,
     symbol: AGS}
-  partners: [AGESY]
 AHT.L:
   ibkr-contract: {conId: 35150670, currency: GBP, exchange: SMART, primaryExchange: LSE,
     symbol: AHT}
 AI.PA:
+  adr: AIQUY
   ibkr-contract: {conId: 29612135, currency: EUR, exchange: SMART, primaryExchange: SBF,
     symbol: AI}
-  partners: [AIQUY]
 AIQUY:
+  adr-src: AI.PA
   ibkr-contract: {conId: 59704439, currency: USD, description: AIR LIQUIDE-UNSPONSORED
-      ADR, exchange: '', primaryExchange: PINK, symbol: AIQUY}
-  partners: [AI.PA]
+      ADR, exchange: SMART, primaryExchange: PINK, symbol: AIQUY}
 AIR.PA:
+  adr: EADSY
   ibkr-contract: {conId: 29612256, currency: EUR, exchange: SMART, primaryExchange: SBF,
     symbol: AIR}
-  partners: [EADSY]
 AKZA.AS:
+  adr: AKZOY
   ibkr-contract: {conId: 350068526, currency: EUR, exchange: SMART, primaryExchange: AEB,
     symbol: AKZA}
-  partners: [AKZOY]
 AKZOY:
+  adr-src: AKZA.AS
   ibkr-contract: {conId: 351151113, currency: USD, description: AKZO NOBEL NV-SPON
-      ADR, exchange: '', primaryExchange: PINK, symbol: AKZOY}
-  partners: [AKZA.AS]
+      ADR, exchange: SMART, primaryExchange: PINK, symbol: AKZOY}
 ALBKY:
+  adr-src: ALPHA.AT
   ibkr-contract: {conId: 214541669, currency: USD, description: ALPHA SERVICES & HDS-SP
-      ADR, exchange: '', primaryExchange: PINK, symbol: ALBKY}
-  partners: [ALPHA.AT]
+      ADR, exchange: SMART, primaryExchange: PINK, symbol: ALBKY}
 ALIZY:
+  adr-src: ALV.DE
   ibkr-contract: {conId: 398145036, currency: USD, description: ALLIANZ SE - UNSP
-      ADR, exchange: '', primaryExchange: PINK, symbol: ALIZY}
-  partners: [ALV.DE]
+      ADR, exchange: SMART, primaryExchange: PINK, symbol: ALIZY}
 ALPHA.AT:
+  adr: ALBKY
   ibkr-contract: {conId: 213929802, currency: EUR, exchange: FWB2, primaryExchange: ATH,
     symbol: ALPHA}
-  partners: [ALBKY]
 ALV.DE:
+  adr: ALIZY
   ibkr-contract: {conId: 14079, currency: EUR, exchange: SMART, primaryExchange: IBIS,
     symbol: ALV}
-  partners: [ALIZY]
 AMADY:
+  adr-src: AMS.MC
   ibkr-contract: {conId: 89325591, currency: USD, description: AMADEUS IT GROUP-UNSP
-      ADR, exchange: '', primaryExchange: PINK, symbol: AMADY}
-  partners: [AMS.MC]
+      ADR, exchange: SMART, primaryExchange: PINK, symbol: AMADY}
 AMP.MI:
   ibkr-contract: {conId: 55764652, currency: EUR, exchange: SMART, primaryExchange: BVME,
     symbol: AMP2}
 AMS.MC:
+  adr: AMADY
   ibkr-contract: {conId: 74792133, currency: EUR, exchange: SMART, primaryExchange: BM,
     symbol: AMS}
-  partners: [AMADY]
 ANA.MC:
+  adr: CRPAY
   ibkr-contract: {conId: 917436, currency: EUR, exchange: SMART, primaryExchange: BM,
     symbol: ANA}
-  partners: [CRPAY]
 ANDR.VI:
+  adr: ADRZY
   ibkr-contract: {conId: 14317520, currency: EUR, exchange: FWB, primaryExchange: VSE,
     symbol: ANDR}
-  partners: [ADRZY]
 ANE.MC:
   ibkr-contract: {conId: 500029613, currency: EUR, exchange: SMART, primaryExchange: BM,
     symbol: ANE}
 ANGCF:
+  adr-src: EOAN.DE
   ibkr-contract: {conId: 603558678, currency: USD, description: EON LITHIUM CORP,
-    exchange: '', primaryExchange: PINK, symbol: ANGCF}
-  partners: [EOAN.DE]
+    exchange: SMART, primaryExchange: PINK, symbol: ANGCF}
 ANIOY:
+  adr-src: ACX.MC
   ibkr-contract: {conId: 55338156, currency: USD, description: ACERINOX SA-UNSPON
-      ADR, exchange: '', primaryExchange: PINK, symbol: ANIOY}
-  partners: [ACX.MC]
+      ADR, exchange: SMART, primaryExchange: PINK, symbol: ANIOY}
 ANTO.L:
   ibkr-contract: {conId: 17628566, currency: GBP, exchange: SMART, primaryExchange: LSE,
     symbol: ANTO}
 ANYYY:
-  ibkr-contract: {conId: 269386381, currency: USD, description: AENA SME SA-ADR, exchange: '',
+  adr-src: AENA.MC
+  ibkr-contract: {conId: 269386381, currency: USD, description: AENA SME SA-ADR, exchange: SMART,
     primaryExchange: PINK, symbol: ANYYY}
-  partners: [AENA.MC]
 ARGX:
-  ibkr-contract: {conId: 276343981, currency: USD, description: ARGENX SE - ADR, exchange: '',
+  adr-src: ARGX.BR
+  ibkr-contract: {conId: 276343981, currency: USD, description: ARGENX SE - ADR, exchange: SMART,
     primaryExchange: NASDAQ, symbol: ARGX}
-  partners: [ARGX.BR]
 ARGX.BR:
+  adr: ARGX
   ibkr-contract: {conId: 160209909, currency: EUR, exchange: SMART, primaryExchange: ENEXT.BE,
     symbol: ARGX}
-  partners: [ARGX]
 ASM.AS:
+  adr: ASMB
   ibkr-contract: {conId: 2950440, currency: EUR, exchange: SMART, primaryExchange: AEB,
     symbol: ASM}
-  partners: [ASMB]
 ASMB:
+  adr-src: ASM.AS
   ibkr-contract: {conId: 160531135, currency: USD, description: ASSEMBLY BIOSCIENCES
-      INC, exchange: '', primaryExchange: NASDAQ, symbol: ASMB}
-  partners: [ASM.AS]
+      INC, exchange: SMART, primaryExchange: NASDAQ, symbol: ASMB}
 ASML:
+  adr-src: ASML.AS
   ibkr-contract: {conId: 117902840, currency: USD, description: ASML HOLDING NV-NY
-      REG SHS, exchange: '', primaryExchange: NASDAQ, symbol: ASML}
-  partners: [ASML.AS]
+      REG SHS, exchange: SMART, primaryExchange: NASDAQ, symbol: ASML}
 ASML.AS:
+  adr: ASML
   ibkr-contract: {conId: 117589399, currency: EUR, exchange: SMART, primaryExchange: AEB,
     symbol: ASML}
-  partners: [ASML]
 ATO.PA:
   ibkr-contract: {conId: 1254624, currency: EUR, exchange: SMART, primaryExchange: SBF,
     symbol: ATO}
-  partners: [ATOS.PFDB]
-ATOS.PFDB:
-  ibkr-contract: {conId: 320103509, currency: USD, description: ATOSSA GENETICS INC
-      - CLASS B, exchange: '', primaryExchange: CORPACT, symbol: ATOS.PFDB}
-  partners: [ATO.PA]
 ATS.VI:
   ibkr-contract: {conId: 11652563, currency: EUR, exchange: SMART, primaryExchange: VSE,
     symbol: ATS}
@@ -220,17 +215,12 @@ AUTO.L:
   ibkr-contract: {conId: 187511156, currency: GBP, exchange: SMART, primaryExchange: LSE,
     symbol: AUTO}
 AXAHY:
-  ibkr-contract: {conId: 2006424, currency: USD, description: AXA -SPONS ADR, exchange: '',
+  adr-src: CS.PA
+  ibkr-contract: {conId: 2006424, currency: USD, description: AXA -SPONS ADR, exchange: SMART,
     primaryExchange: PINK, symbol: AXAHY}
-  partners: [CS.PA]
-AZIHY.OLD:
-  ibkr-contract: {conId: 97077829, currency: USD, description: AZIMUT HOLDING SPA-UNSP
-      ADR, exchange: '', primaryExchange: VALUE, symbol: AZIHY.OLD}
-  partners: [AZM.MI]
 AZM.MI:
   ibkr-contract: {conId: 67957194, currency: EUR, exchange: SMART, primaryExchange: BVME,
     symbol: AZM}
-  partners: [AZIHY.OLD]
 BA.L:
   ibkr-contract: {conId: 908964, currency: GBP, exchange: SMART, primaryExchange: LSE,
     symbol: BA.}
@@ -238,146 +228,146 @@ BAMI.MI:
   ibkr-contract: {conId: 259854200, currency: EUR, exchange: SMART, primaryExchange: BVME,
     symbol: BAMI}
 BAS.DE:
+  adr: BASFY
   ibkr-contract: {conId: 77680640, currency: EUR, exchange: SMART, primaryExchange: IBIS,
     symbol: BAS}
-  partners: [BASFY]
 BASFY:
-  ibkr-contract: {conId: 9071056, currency: USD, description: BASF SE-SPON ADR, exchange: '',
+  adr-src: BAS.DE
+  ibkr-contract: {conId: 9071056, currency: USD, description: BASF SE-SPON ADR, exchange: SMART,
     primaryExchange: PINK, symbol: BASFY}
-  partners: [BAS.DE]
 BATS.L:
   ibkr-contract: {conId: 908931, currency: GBP, exchange: SMART, primaryExchange: LSE,
     symbol: BATS}
 BAWAY:
+  adr-src: BG.VI
   ibkr-contract: {conId: 621500399, currency: USD, description: BAWAG GROUP AG-ADR,
-    exchange: '', primaryExchange: PINK, symbol: BAWAY}
-  partners: [BG.VI]
+    exchange: SMART, primaryExchange: PINK, symbol: BAWAY}
 BAYN:
+  adr-src: BAYN.DE
   ibkr-contract: {conId: 40726689, currency: USD, description: BAY NATIONAL CORP,
-    exchange: '', primaryExchange: VALUE, symbol: BAYN}
-  partners: [BAYN.DE]
+    exchange: SMART, primaryExchange: VALUE, symbol: BAYN}
 BAYN.DE:
+  adr: BAYN
   ibkr-contract: {conId: 68598660, currency: EUR, exchange: SMART, primaryExchange: IBIS,
     symbol: BAYN}
-  partners: [BAYN]
 BBVA:
+  adr-src: BBVA.MC
   ibkr-contract: {conId: 4815, currency: USD, description: BANCO BILBAO VIZCAYA-SP
-      ADR, exchange: '', primaryExchange: NYSE, symbol: BBVA}
-  partners: [BBVA.MC]
+      ADR, exchange: SMART, primaryExchange: NYSE, symbol: BBVA}
 BBVA.MC:
+  adr: BBVA
   ibkr-contract: {conId: 30314149, currency: EUR, exchange: SMART, primaryExchange: BM,
     symbol: BBVA}
-  partners: [BBVA]
 BDRFY:
+  adr-src: BEI.DE
   ibkr-contract: {conId: 56238416, currency: USD, description: BEIERSDORF AG-UNSPON
-      ADR, exchange: '', primaryExchange: PINK, symbol: BDRFY}
-  partners: [BEI.DE]
+      ADR, exchange: SMART, primaryExchange: PINK, symbol: BDRFY}
 BEI.DE:
+  adr: BDRFY
   ibkr-contract: {conId: 14362, currency: EUR, exchange: SMART, primaryExchange: IBIS,
     symbol: BEI}
-  partners: [BDRFY]
 BELA.AT:
+  adr: JUMSY
   ibkr-contract: {conId: 75975450, currency: EUR, exchange: FWB2, primaryExchange: ATH,
     symbol: BELA}
-  partners: [JUMSY]
 BG.VI:
+  adr: BAWAY
   ibkr-contract: {conId: 294207034, currency: EUR, exchange: SMART, primaryExchange: VSE,
     symbol: BG}
-  partners: [BAWAY]
 BGAOY:
+  adr-src: PROX.BR
   ibkr-contract: {conId: 199471393, currency: USD, description: PROXIMUS-UNSPON ADR,
-    exchange: '', primaryExchange: PINK, symbol: BGAOY}
-  partners: [PROX.BR]
+    exchange: SMART, primaryExchange: PINK, symbol: BGAOY}
 BKNIY:
+  adr-src: BKT.MC
   ibkr-contract: {conId: 75220748, currency: USD, description: BANKINTER SA-SPONS
-      ADR, exchange: '', primaryExchange: PINK, symbol: BKNIY}
-  partners: [BKT.MC]
+      ADR, exchange: SMART, primaryExchange: PINK, symbol: BKNIY}
 BKT.MC:
+  adr: BKNIY
   ibkr-contract: {conId: 45201369, currency: EUR, exchange: SMART, primaryExchange: BM,
     symbol: BKT}
-  partners: [BKNIY]
 BMED.MI:
+  adr: BNCDY
   ibkr-contract: {conId: 217632398, currency: EUR, exchange: SMART, primaryExchange: BVME,
     symbol: BMED}
-  partners: [BNCDY]
 BMW.DE:
+  adr: BMWYY
   ibkr-contract: {conId: 14094, currency: EUR, exchange: SMART, primaryExchange: IBIS,
     symbol: BMW}
-  partners: [BMWYY]
 BMWYY:
+  adr-src: BMW.DE
   ibkr-contract: {conId: 239106647, currency: USD, description: BAYERISCHE MOTOREN-SPON
-      ADR, exchange: '', primaryExchange: PINK, symbol: BMWYY}
-  partners: [BMW.DE]
+      ADR, exchange: SMART, primaryExchange: PINK, symbol: BMWYY}
 BN.PA:
+  adr: DANOY
   ibkr-contract: {conId: 29612111, currency: EUR, exchange: SMART, primaryExchange: SBF,
     symbol: BN}
-  partners: [DANOY]
 BNCDY:
+  adr-src: BMED.MI
   ibkr-contract: {conId: 222852707, currency: USD, description: BANCA MEDIOLANUM SPA-ADR,
-    exchange: '', primaryExchange: PINK, symbol: BNCDY}
-  partners: [BMED.MI]
+    exchange: SMART, primaryExchange: PINK, symbol: BNCDY}
 BNDSY:
+  adr-src: SAB.MC
   ibkr-contract: {conId: 56321946, currency: USD, description: BANCO DE SABADELL-UNSPON
-      ADR, exchange: '', primaryExchange: PINK, symbol: BNDSY}
-  partners: [SAB.MC]
+      ADR, exchange: SMART, primaryExchange: PINK, symbol: BNDSY}
 BNP.PA:
+  adr: BNPQY
   ibkr-contract: {conId: 29612163, currency: EUR, exchange: SMART, primaryExchange: SBF,
     symbol: BNP}
-  partners: [BNPQY]
 BNPQY:
-  ibkr-contract: {conId: 51831744, currency: USD, description: BNP PARIBAS-ADR, exchange: '',
+  adr-src: BNP.PA
+  ibkr-contract: {conId: 51831744, currency: USD, description: BNP PARIBAS-ADR, exchange: SMART,
     primaryExchange: PINK, symbol: BNPQY}
-  partners: [BNP.PA]
 BOUYY:
+  adr-src: EN.PA
   ibkr-contract: {conId: 328223388, currency: USD, description: BOUYGUES-UNSPONSORED
-      ADR, exchange: '', primaryExchange: PINK, symbol: BOUYY}
-  partners: [EN.PA]
+      ADR, exchange: SMART, primaryExchange: PINK, symbol: BOUYY}
 BPE.MI:
+  adr: BPXXY
   ibkr-contract: {conId: 11516717, currency: EUR, exchange: SMART, primaryExchange: BVME,
     symbol: BPE}
-  partners: [BPXXY]
 BPIRY:
+  adr-src: TPEIR.AT
   ibkr-contract: {conId: 484591515, currency: USD, description: PIRAEUS FINANCIAL-UNSP
-      ADR, exchange: '', primaryExchange: PINK, symbol: BPIRY}
-  partners: [TPEIR.AT]
+      ADR, exchange: SMART, primaryExchange: PINK, symbol: BPIRY}
 BPXXY:
+  adr-src: BPE.MI
   ibkr-contract: {conId: 257940481, currency: USD, description: BPER BANCA SPA-UNSP
-      ADR, exchange: '', primaryExchange: PINK, symbol: BPXXY}
-  partners: [BPE.MI]
+      ADR, exchange: SMART, primaryExchange: PINK, symbol: BPXXY}
 BSBR:
+  adr-src: SAN.MC
   ibkr-contract: {conId: 69293560, currency: USD, description: BANCO SANTANDER BRASIL-ADS,
-    exchange: '', primaryExchange: NYSE, symbol: BSBR}
-  partners: [SAN.MC]
+    exchange: SMART, primaryExchange: NYSE, symbol: BSBR}
 BUD:
+  adr-src: ABI.BR
   ibkr-contract: {conId: 61481454, currency: USD, description: ANHEUSER-BUSCH INBEV
-      SPN ADR, exchange: '', primaryExchange: NYSE, symbol: BUD}
-  partners: [ABI.BR]
+      SPN ADR, exchange: SMART, primaryExchange: NYSE, symbol: BUD}
 CA.PA:
+  adr: CRRFY
   ibkr-contract: {conId: 29612172, currency: EUR, exchange: SMART, primaryExchange: SBF,
     symbol: CA}
-  partners: [CRRFY]
 CABK.MC:
+  adr: CAIXY
   ibkr-contract: {conId: 48832907, currency: EUR, exchange: SMART, primaryExchange: BM,
     symbol: CABK}
-  partners: [CAIXY]
 CAI.VI:
   ibkr-contract: {conId: 27049908, currency: EUR, exchange: SMART, primaryExchange: VSE,
     symbol: CAI}
 CAIXY:
+  adr-src: CABK.MC
   ibkr-contract: {conId: 98542033, currency: USD, description: CAIXABANK- UNSPON ADR,
-    exchange: '', primaryExchange: PINK, symbol: CAIXY}
-  partners: [CABK.MC]
+    exchange: SMART, primaryExchange: PINK, symbol: CAIXY}
 CAP.PA:
+  adr: CGEMY
   ibkr-contract: {conId: 29612147, currency: EUR, exchange: SMART, primaryExchange: SBF,
     symbol: CAP}
-  partners: [CGEMY]
 CCH.L:
   ibkr-contract: {conId: 126945329, currency: GBP, exchange: SMART, primaryExchange: LSE,
     symbol: CCH}
 CCHGY:
+  adr-src: EEE.AT
   ibkr-contract: {conId: 162855304, currency: USD, description: COCA-COLA HBC AG-UNSP
-      ADR, exchange: '', primaryExchange: PINK, symbol: CCHGY}
-  partners: [EEE.AT]
+      ADR, exchange: SMART, primaryExchange: PINK, symbol: CCHGY}
 CENER.AT:
   ibkr-contract: {conId: 259937347, currency: EUR, exchange: SMART, primaryExchange: ENEXT.BE,
     symbol: CENER}
@@ -385,28 +375,32 @@ CGCBV.HE:
   ibkr-contract: {conId: 34764029, currency: EUR, exchange: SMART, primaryExchange: HEX,
     symbol: CGCBV}
 CGEMY:
+  adr-src: CAP.PA
   ibkr-contract: {conId: 279260127, currency: USD, description: CAPGEMINI SE - UNSPONSOR
-      ADR, exchange: '', primaryExchange: PINK, symbol: CGEMY}
-  partners: [CAP.PA]
+      ADR, exchange: SMART, primaryExchange: PINK, symbol: CGEMY}
 CLLNY:
+  adr-src: CLNX.MC
   ibkr-contract: {conId: 281398644, currency: USD, description: CELLNEX TELECOM SAU-UNSP
-      ADR, exchange: '', primaryExchange: PINK, symbol: CLLNY}
-  partners: [CLNX.MC]
+      ADR, exchange: SMART, primaryExchange: PINK, symbol: CLLNY}
 CLNX.MC:
+  adr: CLLNY
   ibkr-contract: {conId: 193517754, currency: EUR, exchange: SMART, primaryExchange: BM,
     symbol: CLNX}
-  partners: [CLLNY]
 CNA.L:
   ibkr-contract: {conId: 31765913, currency: GBP, exchange: SMART, primaryExchange: LSE,
     symbol: CNA}
 CNHI:
+  adr-src: CNHI.MI
   ibkr-contract: {conId: 135330258, currency: USD, description: CNH INDUSTRIAL NV,
-    exchange: '', primaryExchange: NYSE, symbol: CNHI}
-  partners: [CNHI.MI]
+    exchange: SMART, primaryExchange: NYSE, symbol: CNHI}
 CNHI.MI:
+  adr: CNHI
   ibkr-contract: {conId: 135577704, currency: EUR, exchange: SMART, primaryExchange: BVME,
     symbol: CNHI}
-  partners: [CNHI]
+CODYY:
+  adr-src: SGO.PA
+  ibkr-contract: {conId: 56347293, currency: USD, description: '', exchange: SMART,
+    primaryExchange: PINK, symbol: CODYY}
 COFB.BR:
   ibkr-contract: {conId: 15778638, currency: EUR, exchange: SMART, primaryExchange: ENEXT.BE,
     symbol: COFB}
@@ -414,230 +408,224 @@ COL.MC:
   ibkr-contract: {conId: 241892013, currency: EUR, exchange: SMART, primaryExchange: BM,
     symbol: COL}
 COLR.BR:
+  adr: CUYTY
   ibkr-contract: {conId: 79914347, currency: EUR, exchange: SMART, primaryExchange: ENEXT.BE,
     symbol: COLR}
-  partners: [CUYTY]
 CON.DE:
+  adr: CUO
   ibkr-contract: {conId: 14106, currency: EUR, exchange: SMART, primaryExchange: IBIS,
     symbol: CON}
-  partners: [CUO]
 COVTY:
+  adr-src: 1COV.DE
   ibkr-contract: {conId: 257469660, currency: USD, description: COVESTRO AG-SPONSORED
-      ADR, exchange: '', primaryExchange: PINK, symbol: COVTY}
-  partners: [1COV.DE]
+      ADR, exchange: SMART, primaryExchange: PINK, symbol: COVTY}
 CPG.L:
   ibkr-contract: {conId: 280731727, currency: GBP, exchange: SMART, primaryExchange: LSE,
     symbol: CPG}
 CPR.MI:
+  adr: DVDCY
   ibkr-contract: {conId: 431811326, currency: EUR, exchange: SMART, primaryExchange: BVME,
     symbol: CPR}
-  partners: [DVDCY]
 CRARY:
+  adr-src: ACA.PA
   ibkr-contract: {conId: 54476053, currency: USD, description: CREDIT AGRICOLE SA-UNSP
-      ADR, exchange: '', primaryExchange: PINK, symbol: CRARY}
-  partners: [ACA.PA]
+      ADR, exchange: SMART, primaryExchange: PINK, symbol: CRARY}
 CRH.L:
   ibkr-contract: {conId: 97341412, currency: GBP, exchange: LSE, primaryExchange: LSE,
     symbol: CRH}
 CRPAY:
+  adr-src: ANA.MC
   ibkr-contract: {conId: 551795920, currency: USD, description: CORP ACCIONA ENERGI-UNSP
-      ADR, exchange: '', primaryExchange: PINK, symbol: CRPAY}
-  partners: [ANA.MC]
+      ADR, exchange: SMART, primaryExchange: PINK, symbol: CRPAY}
 CRRFY:
+  adr-src: CA.PA
   ibkr-contract: {conId: 89014179, currency: USD, description: CARREFOUR SA-SP ADR,
-    exchange: '', primaryExchange: PINK, symbol: CRRFY}
-  partners: [CA.PA]
+    exchange: SMART, primaryExchange: PINK, symbol: CRRFY}
 CS.PA:
+  adr: AXAHY
   ibkr-contract: {conId: 29612141, currency: EUR, exchange: SMART, primaryExchange: SBF,
     symbol: CS}
-  partners: [AXAHY]
 CUO:
+  adr-src: CON.DE
   ibkr-contract: {conId: 754260, currency: USD, description: CONTINENTAL MATERIALS
-      CORP, exchange: '', primaryExchange: VALUE, symbol: CUO}
-  partners: [CON.DE]
+      CORP, exchange: SMART, primaryExchange: VALUE, symbol: CUO}
 CUYTY:
+  adr-src: COLR.BR
   ibkr-contract: {conId: 114644438, currency: USD, description: COLRUYT SA-UNSPONSORED
-      ADR, exchange: '', primaryExchange: PINK, symbol: CUYTY}
-  partners: [COLR.BR]
+      ADR, exchange: SMART, primaryExchange: PINK, symbol: CUYTY}
 DANOY:
-  ibkr-contract: {conId: 59863083, currency: USD, description: DANONE-SPONS ADR, exchange: '',
+  adr-src: BN.PA
+  ibkr-contract: {conId: 59863083, currency: USD, description: DANONE-SPONS ADR, exchange: SMART,
     primaryExchange: PINK, symbol: DANOY}
-  partners: [BN.PA]
 DB:
+  adr-src: DBK.DE
   ibkr-contract: {conId: 13435352, currency: USD, description: DEUTSCHE BANK AG-REGISTERED,
-    exchange: '', primaryExchange: NYSE, symbol: DB}
-  partners: [DBK.DE]
+    exchange: SMART, primaryExchange: NYSE, symbol: DB}
 DB1.DE:
+  adr: DBOEY
   ibkr-contract: {conId: 11490214, currency: EUR, exchange: SMART, primaryExchange: IBIS,
     symbol: DB1}
-  partners: [DBOEY]
 DBK.DE:
+  adr: DB
   ibkr-contract: {conId: 14121, currency: EUR, exchange: SMART, primaryExchange: IBIS,
     symbol: DBK}
-  partners: [DB]
 DBOEY:
+  adr-src: DB1.DE
   ibkr-contract: {conId: 54939805, currency: USD, description: DEUTSCHE BOERSE AG-UNSPN
-      ADR, exchange: '', primaryExchange: PINK, symbol: DBOEY}
-  partners: [DB1.DE]
+      ADR, exchange: SMART, primaryExchange: PINK, symbol: DBOEY}
 DG.PA:
+  adr: VINP
   ibkr-contract: {conId: 29612226, currency: EUR, exchange: SMART, primaryExchange: SBF,
     symbol: DG}
-  partners: [VINP]
 DHL.DE:
+  adr: DHLGY
   ibkr-contract: {conId: 10749447, currency: EUR, exchange: SMART, primaryExchange: IBIS,
     symbol: DHL}
-  partners: [DHLGY]
 DHLGY:
-  ibkr-contract: {conId: 70810522, currency: USD, description: DHL GROUP - ADR, exchange: '',
+  adr-src: DHL.DE
+  ibkr-contract: {conId: 70810522, currency: USD, description: DHL GROUP - ADR, exchange: SMART,
     primaryExchange: PINK, symbol: DHLGY}
-  partners: [DHL.DE]
 DIA.MI:
   ibkr-contract: {conId: 75975372, currency: EUR, exchange: SMART, primaryExchange: BVME,
     symbol: DIA}
 DLAKY:
+  adr-src: LHA.DE
   ibkr-contract: {conId: 59226792, currency: USD, description: '', exchange: SMART,
     primaryExchange: PINK, symbol: DLAKY}
-  partners: [LHA.DE]
 DOC.VI:
   ibkr-contract: {conId: 36764481, currency: EUR, exchange: SMART, primaryExchange: VSE,
     symbol: DOC}
 DRPRY:
+  adr-src: P911.DE
   ibkr-contract: {conId: 596969789, currency: USD, description: DR ING HC F PORSCHE
-      AG, exchange: '', primaryExchange: PINK, symbol: DRPRY}
-  partners: [P911.DE]
+      AG, exchange: SMART, primaryExchange: PINK, symbol: DRPRY}
 DSFIR.AS:
   ibkr-contract: {conId: 626092544, currency: EUR, exchange: SMART, primaryExchange: AEB,
     symbol: DSFIR}
 DTE.DE:
+  adr: DTEGY
   ibkr-contract: {conId: 2254332, currency: EUR, exchange: SMART, primaryExchange: IBIS,
     symbol: DTE}
-  partners: [DTEGY]
 DTEGY:
+  adr-src: DTE.DE
   ibkr-contract: {conId: 2254329, currency: USD, description: DEUTSCHE TELEKOM AG-SPON
-      ADR, exchange: '', primaryExchange: PINK, symbol: DTEGY}
-  partners: [DTE.DE]
+      ADR, exchange: SMART, primaryExchange: PINK, symbol: DTEGY}
 DTG.DE:
   ibkr-contract: {conId: 531961119, currency: EUR, exchange: SMART, primaryExchange: IBIS,
     symbol: DTG}
 DVDCY:
+  adr-src: CPR.MI
   ibkr-contract: {conId: 75221341, currency: USD, description: DAVIDE CAMPARI-MI-UNSPON
-      ADR, exchange: '', primaryExchange: VALUE, symbol: DVDCY}
-  partners: [CPR.MI]
+      ADR, exchange: SMART, primaryExchange: VALUE, symbol: DVDCY}
 EADSY:
+  adr-src: AIR.PA
   ibkr-contract: {conId: 140989244, currency: USD, description: AIRBUS SE - UNSP ADR,
-    exchange: '', primaryExchange: PINK, symbol: EADSY}
-  partners: [AIR.PA]
+    exchange: SMART, primaryExchange: PINK, symbol: EADSY}
 EBS.VI:
   ibkr-contract: {conId: 3306538, currency: EUR, exchange: SMART, primaryExchange: VSE,
     symbol: EBS}
 EDP.LS:
+  adr: EDPFY
   ibkr-contract: {conId: 12600162, currency: EUR, exchange: SMART, primaryExchange: BVL,
     symbol: EDP}
-  partners: [EDPFY]
 EDPFY:
+  adr-src: EDP.LS
   ibkr-contract: {conId: 6607876, currency: USD, description: ENERGIAS DE PORTUGAL-SP
-      ADR, exchange: '', primaryExchange: PINK, symbol: EDPFY}
-  partners: [EDP.LS]
+      ADR, exchange: SMART, primaryExchange: PINK, symbol: EDPFY}
 EEE.AT:
+  adr: CCHGY
   ibkr-contract: {conId: 126991169, currency: EUR, exchange: FWB, primaryExchange: ATH,
     symbol: EEE1}
-  partners: [CCHGY]
 EGFEY:
+  adr-src: EUROB.AT
   ibkr-contract: {conId: 416774618, currency: USD, description: EUROBANK ERGASIAS
-      SV-UNS ADR, exchange: '', primaryExchange: PINK, symbol: EGFEY}
-  partners: [EUROB.AT]
+      SV-UNS ADR, exchange: SMART, primaryExchange: PINK, symbol: EGFEY}
 EL.PA:
   ibkr-contract: {conId: 1321740, currency: EUR, exchange: SMART, primaryExchange: SBF,
     symbol: EL}
 ELE.MC:
+  adr: ELEZY
   ibkr-contract: {conId: 30314174, currency: EUR, exchange: SMART, primaryExchange: BM,
     symbol: ELE}
-  partners: [ELEZY]
 ELEZY:
+  adr-src: ELE.MC
   ibkr-contract: {conId: 97077839, currency: USD, description: ENDESA SA-UNSP ADR,
-    exchange: '', primaryExchange: PINK, symbol: ELEZY}
-  partners: [ELE.MC]
+    exchange: SMART, primaryExchange: PINK, symbol: ELEZY}
 ELI.BR:
   ibkr-contract: {conId: 36790958, currency: EUR, exchange: SMART, primaryExchange: ENEXT.BE,
     symbol: ELI1}
 ELISA.HE:
+  adr: ELMUY
   ibkr-contract: {conId: 29908766, currency: EUR, exchange: SMART, primaryExchange: HEX,
     symbol: ELISA}
-  partners: [ELMUY]
 ELLAKTOR.AT:
+  adr: ELLKY
   ibkr-contract: {conId: 16490116, currency: EUR, exchange: SMART, primaryExchange: ATH,
     symbol: ELLAKTOR}
-  partners: [ELLKY]
 ELLKY:
+  adr-src: ELLAKTOR.AT
   ibkr-contract: {conId: 158718842, currency: USD, description: ELLAKTOR SA-UNSPONSORED
-      ADR, exchange: '', primaryExchange: PINK, symbol: ELLKY}
-  partners: [ELLAKTOR.AT]
+      ADR, exchange: SMART, primaryExchange: PINK, symbol: ELLKY}
 ELMUY:
+  adr-src: ELISA.HE
   ibkr-contract: {conId: 265572850, currency: USD, description: ELISA OYJ-UNSPONSORED
-      ADR, exchange: '', primaryExchange: VALUE, symbol: ELMUY}
-  partners: [ELISA.HE]
+      ADR, exchange: SMART, primaryExchange: VALUE, symbol: ELMUY}
 ELPE.AT:
   ibkr-contract: {conId: 12570175, currency: EUR, exchange: SMART, primaryExchange: ATH,
     symbol: ELPE}
 EN.PA:
+  adr: BOUYY
   ibkr-contract: {conId: 29612166, currency: EUR, exchange: SMART, primaryExchange: SBF,
     symbol: EN}
-  partners: [BOUYY]
 ENEL.MI:
+  adr: ENLAY
   ibkr-contract: {conId: 29816333, currency: EUR, exchange: SMART, primaryExchange: BVME,
     symbol: ENEL}
-  partners: [ENLAY]
 ENG.MC:
   ibkr-contract: {conId: 15824414, currency: EUR, exchange: SMART, primaryExchange: BM,
     symbol: ENG}
-  partners: [ENGIY]
 ENGI.PA:
+  adr: ENGIY
   ibkr-contract: {conId: 35052259, currency: EUR, exchange: SMART, primaryExchange: SBF,
     symbol: ENGI}
-  partners: [ENGIY]
 ENGIY:
-  ibkr-contract: {conId: 201676210, currency: USD, description: ENGIE-SPON ADR, exchange: '',
+  adr-src: ENGI.PA
+  ibkr-contract: {conId: 201676210, currency: USD, description: ENGIE-SPON ADR, exchange: SMART,
     primaryExchange: PINK, symbol: ENGIY}
-  partners: [ENG.MC, ENGI.PA]
 ENI.MI:
+  adr: ENIC
   ibkr-contract: {conId: 29816844, currency: EUR, exchange: SMART, primaryExchange: BVME,
     symbol: ENI}
-  partners: [ENIC]
 ENIC:
+  adr-src: ENI.MI
   ibkr-contract: {conId: 229115037, currency: USD, description: ENEL CHILE SA-ADR,
-    exchange: '', primaryExchange: NYSE, symbol: ENIC}
-  partners: [ENI.MI]
+    exchange: SMART, primaryExchange: NYSE, symbol: ENIC}
 ENLAY:
+  adr-src: ENEL.MI
   ibkr-contract: {conId: 50488867, currency: USD, description: ENEL SPA - UNSPON ADR,
-    exchange: '', primaryExchange: PINK, symbol: ENLAY}
-  partners: [ENEL.MI]
+    exchange: SMART, primaryExchange: PINK, symbol: ENLAY}
 ENR.DE:
+  adr: SMNEY
   ibkr-contract: {conId: 447545380, currency: EUR, exchange: SMART, primaryExchange: IBIS,
     symbol: ENR}
-  partners: [SMNEY]
 ENT.L:
   ibkr-contract: {conId: 125005888, currency: GBP, exchange: SMART, primaryExchange: LSE,
     symbol: ENT}
 EOAN.DE:
+  adr: ANGCF
   ibkr-contract: {conId: 53028906, currency: EUR, exchange: SMART, primaryExchange: IBIS,
     symbol: EOAN}
-  partners: [ANGCF]
 ETE.AT:
+  adr: NBGRY
   ibkr-contract: {conId: 331627431, currency: EUR, exchange: SMART, primaryExchange: ATH,
     symbol: ETE}
-  partners: [NBGRY]
 EUROB.AT:
+  adr: EGFEY
   ibkr-contract: {conId: 214126559, currency: EUR, exchange: SMART, primaryExchange: ATH,
     symbol: EUROB}
-  partners: [EGFEY]
 EVN.VI:
   ibkr-contract: {conId: 3306468, currency: EUR, exchange: SMART, primaryExchange: VSE,
     symbol: EVN}
-  partners: [EVNVY.OLD]
-EVNVY.OLD:
-  ibkr-contract: {conId: 75221330, currency: USD, description: EVN AG-SP ADR, exchange: '',
-    primaryExchange: VALUE, symbol: EVNVY.OLD}
-  partners: [EVN.VI]
 EXPN.L:
   ibkr-contract: {conId: 41044864, currency: GBP, exchange: SMART, primaryExchange: LSE,
     symbol: EXPN}
@@ -645,361 +633,359 @@ EYDAP.AT:
   ibkr-contract: {conId: 16490113, currency: EUR, exchange: FWB2, primaryExchange: ATH,
     symbol: EYDAP}
 FBK.MI:
+  adr: FNBKY
   ibkr-contract: {conId: 159352524, currency: EUR, exchange: SMART, primaryExchange: BVME,
     symbol: FBK}
-  partners: [FNBKY]
 FDR.MC:
+  adr: FLDAY
   ibkr-contract: {conId: 48871204, currency: EUR, exchange: SMART, primaryExchange: BM,
     symbol: FDR}
-  partners: [FLDAY]
 FER.MC:
+  adr: FERN
   ibkr-contract: {conId: 636678546, currency: EUR, exchange: SMART, primaryExchange: BM,
     symbol: FER}
-  partners: [FERN]
 FERN:
-  ibkr-contract: {conId: 100763268, currency: USD, description: FERNHILL CORP, exchange: '',
+  adr-src: FER.MC
+  ibkr-contract: {conId: 100763268, currency: USD, description: FERNHILL CORP, exchange: SMART,
     primaryExchange: PINK, symbol: FERN}
-  partners: [FER.MC]
 FINMY:
+  adr-src: LDO.MI
   ibkr-contract: {conId: 234653957, currency: USD, description: LEONARDO SPA-ADR,
-    exchange: '', primaryExchange: PINK, symbol: FINMY}
-  partners: [LDO.MI]
+    exchange: SMART, primaryExchange: PINK, symbol: FINMY}
 FLDAY:
+  adr-src: FDR.MC
   ibkr-contract: {conId: 479081147, currency: USD, description: FLUIDRA SA-UNSPONSORED
-      ADR, exchange: '', primaryExchange: PINK, symbol: FLDAY}
-  partners: [FDR.MC]
+      ADR, exchange: SMART, primaryExchange: PINK, symbol: FLDAY}
 FLTR.L:
   ibkr-contract: {conId: 221274522, currency: GBP, exchange: SMART, primaryExchange: LSE,
     symbol: FLTR}
 FNBKY:
+  adr-src: FBK.MI
   ibkr-contract: {conId: 227734337, currency: USD, description: FINECOBANK SPA-UNSP
-      ADR, exchange: '', primaryExchange: PINK, symbol: FNBKY}
-  partners: [FBK.MI]
+      ADR, exchange: SMART, primaryExchange: PINK, symbol: FNBKY}
 FOJCY:
+  adr-src: FORTUM.HE
   ibkr-contract: {conId: 55053630, currency: USD, description: FORTUM OYJ-UNSPONSORED
-      ADR, exchange: '', primaryExchange: PINK, symbol: FOJCY}
-  partners: [FORTUM.HE]
+      ADR, exchange: SMART, primaryExchange: PINK, symbol: FOJCY}
 FORTUM.HE:
+  adr: FOJCY
   ibkr-contract: {conId: 12539474, currency: EUR, exchange: SMART, primaryExchange: HEX,
     symbol: FORTUM}
-  partners: [FOJCY]
 FRAS.L:
   ibkr-contract: {conId: 44650318, currency: GBP, exchange: SMART, primaryExchange: LSE,
     symbol: FRAS}
 FRE.DE:
+  adr: FSNUY
   ibkr-contract: {conId: 4811328, currency: EUR, exchange: SMART, primaryExchange: IBIS,
     symbol: FRE}
-  partners: [FSNUY]
 FSNUY:
+  adr-src: FRE.DE
   ibkr-contract: {conId: 96674423, currency: USD, description: FRESENIUS SE & CO-SPN
-      ADR, exchange: '', primaryExchange: PINK, symbol: FSNUY}
-  partners: [FRE.DE]
+      ADR, exchange: SMART, primaryExchange: PINK, symbol: FSNUY}
 G.MI:
   ibkr-contract: {conId: 29816322, currency: EUR, exchange: SMART, primaryExchange: BVME,
     symbol: G}
 GALP.LS:
+  adr: GLPEY
   ibkr-contract: {conId: 41512469, currency: EUR, exchange: SMART, primaryExchange: BVL,
     symbol: GALP}
-  partners: [GLPEY]
 GASNY:
+  adr-src: NTGY.MC
   ibkr-contract: {conId: 329664449, currency: USD, description: NATURGY ENERGY GROUP
-      SA-ADR, exchange: '', primaryExchange: PINK, symbol: GASNY}
-  partners: [NTGY.MC]
+      SA-ADR, exchange: SMART, primaryExchange: PINK, symbol: GASNY}
 GBLB.BR:
+  adr: GBLBY
   ibkr-contract: {conId: 917985, currency: EUR, exchange: SMART, primaryExchange: ENEXT.BE,
     symbol: GBLB}
-  partners: [GBLBY]
 GBLBY:
+  adr-src: GBLB.BR
   ibkr-contract: {conId: 54939847, currency: USD, description: GROUPE BRUXELLES-UNSPON
-      ADR, exchange: '', primaryExchange: PINK, symbol: GBLBY}
-  partners: [GBLB.BR]
+      ADR, exchange: SMART, primaryExchange: PINK, symbol: GBLBY}
 GEKTERNA.AT:
   ibkr-contract: {conId: 272555163, currency: EUR, exchange: FWB2, primaryExchange: ATH,
     symbol: GEKTERNA}
 GIKLY:
+  adr-src: GRF.MC
   ibkr-contract: {conId: 61454815, currency: USD, description: GRIFOLS SA-SPON ADR,
-    exchange: '', primaryExchange: PINK, symbol: GIKLY}
-  partners: [GRF.MC]
+    exchange: SMART, primaryExchange: PINK, symbol: GIKLY}
 GLE.PA:
+  adr: SCGLY
   ibkr-contract: {conId: 29612232, currency: EUR, exchange: SMART, primaryExchange: SBF,
     symbol: GLE}
-  partners: [SCGLY]
 GLPEY:
+  adr-src: GALP.LS
   ibkr-contract: {conId: 55366225, currency: USD, description: GALP ENERGIA SGPS-UNSPON
-      ADR, exchange: '', primaryExchange: PINK, symbol: GLPEY}
-  partners: [GALP.LS]
+      ADR, exchange: SMART, primaryExchange: PINK, symbol: GLPEY}
 GLPG:
+  adr-src: GLPG.AS
   ibkr-contract: {conId: 80374116, currency: USD, description: GALAPAGOS NV-SPON ADR,
-    exchange: '', primaryExchange: NASDAQ, symbol: GLPG}
-  partners: [GLPG.AS]
+    exchange: SMART, primaryExchange: NASDAQ, symbol: GLPG}
 GLPG.AS:
+  adr: GLPG
   ibkr-contract: {conId: 34510828, currency: EUR, exchange: SMART, primaryExchange: AEB,
     symbol: GLPG}
-  partners: [GLPG]
-GOFPY.CNV:
-  ibkr-contract: {conId: 452737282, currency: USD, description: OPAP SA-UNSPON ADR
-      - TENDER, exchange: '', primaryExchange: CORPACT, symbol: GOFPY.CNV}
-  partners: [OPAP.AT]
 GRF.MC:
+  adr: GIKLY
   ibkr-contract: {conId: 217481604, currency: EUR, exchange: SMART, primaryExchange: BM,
     symbol: GRF}
-  partners: [GIKLY]
 HDELY:
+  adr-src: HEI.DE
   ibkr-contract: {conId: 81057264, currency: USD, description: HEIDELBERG MATERIAL-UNSP
-      ADR, exchange: '', primaryExchange: PINK, symbol: HDELY}
-  partners: [HEI.DE]
+      ADR, exchange: SMART, primaryExchange: PINK, symbol: HDELY}
 HEI.DE:
+  adr: HDELY
   ibkr-contract: {conId: 14727, currency: EUR, exchange: SMART, primaryExchange: IBIS,
     symbol: HEI}
-  partners: [HDELY]
 HEIA.AS:
+  adr: HEINY
   ibkr-contract: {conId: 29622888, currency: EUR, exchange: SMART, primaryExchange: AEB,
     symbol: HEIA}
-  partners: [HEINY]
 HEINY:
+  adr-src: HEIA.AS
   ibkr-contract: {conId: 118753470, currency: USD, description: HEINEKEN NV-SPN ADR,
-    exchange: '', primaryExchange: PINK, symbol: HEINY}
-  partners: [HEIA.AS]
+    exchange: SMART, primaryExchange: PINK, symbol: HEINY}
 HESAY:
+  adr-src: RMS.PA
   ibkr-contract: {conId: 80374113, currency: USD, description: HERMES INTL-UNSPONSORED
-      ADR, exchange: '', primaryExchange: PINK, symbol: HESAY}
-  partners: [RMS.PA]
+      ADR, exchange: SMART, primaryExchange: PINK, symbol: HESAY}
 HLN.L:
   ibkr-contract: {conId: 573136108, currency: GBP, exchange: SMART, primaryExchange: LSE,
     symbol: HLN}
 HLTOY:
+  adr-src: HTO.AT
   ibkr-contract: {conId: 6608029, currency: USD, description: HELLENIC TELECOM ORG-SP
-      ADR, exchange: '', primaryExchange: PINK, symbol: HLTOY}
-  partners: [HTO.AT]
+      ADR, exchange: SMART, primaryExchange: PINK, symbol: HLTOY}
 HO.PA:
+  adr: THLLY
   ibkr-contract: {conId: 917799, currency: EUR, exchange: SMART, primaryExchange: SBF,
     symbol: HO}
-  partners: [THLLY]
 HTO.AT:
+  adr: HLTOY
   ibkr-contract: {conId: 12567715, currency: EUR, exchange: FWB2, primaryExchange: ATH,
     symbol: HTO}
-  partners: [HLTOY]
 IAG.MC:
+  adr: ICAGY
   ibkr-contract: {conId: 82965896, currency: EUR, exchange: SMART, primaryExchange: BM,
     symbol: IAG}
 IBDRY:
+  adr-src: IBE.MC
   ibkr-contract: {conId: 44026944, currency: USD, description: IBERDROLA SA-SPONSORED
-      ADR, exchange: '', primaryExchange: PINK, symbol: IBDRY}
-  partners: [IBE.MC]
+      ADR, exchange: SMART, primaryExchange: PINK, symbol: IBDRY}
 IBE.MC:
+  adr: IBDRY
   ibkr-contract: {conId: 46586284, currency: EUR, exchange: SMART, primaryExchange: BM,
     symbol: IBE}
-  partners: [IBDRY]
 ICAGY:
+  adr-src: IAG.MC
   ibkr-contract: {conId: 83032269, currency: USD, description: '', exchange: SMART,
     primaryExchange: PINK, symbol: ICAGY}
-  partners: [IAG.MC]
 IFNNY:
+  adr-src: IFX.DE
   ibkr-contract: {conId: 7718213, currency: USD, description: INFINEON TECHNOLOGIES-ADR,
-    exchange: '', primaryExchange: PINK, symbol: IFNNY}
-  partners: [IFX.DE]
+    exchange: SMART, primaryExchange: PINK, symbol: IFNNY}
 IFX.DE:
+  adr: IFNNY
   ibkr-contract: {conId: 7747731, currency: EUR, exchange: SMART, primaryExchange: IBIS,
     symbol: IFX}
-  partners: [IFNNY]
 IG.MI:
   ibkr-contract: {conId: 254447309, currency: EUR, exchange: SMART, primaryExchange: BVME,
     symbol: IG}
 IIA.VI:
+  adr: IMNZY
   ibkr-contract: {conId: 321520245, currency: EUR, exchange: SMART, primaryExchange: VSE,
     symbol: IIA}
-  partners: [IMNZY]
 IMCD.AS:
+  adr: IMCDY
   ibkr-contract: {conId: 158556186, currency: EUR, exchange: SMART, primaryExchange: AEB,
     symbol: IMCD}
-  partners: [IMCDY]
 IMCDY:
+  adr-src: IMCD.AS
   ibkr-contract: {conId: 647097314, currency: USD, description: IMCD GROUP NV - UNSP
-      ADR, exchange: '', primaryExchange: PINK, symbol: IMCDY}
-  partners: [IMCD.AS]
+      ADR, exchange: SMART, primaryExchange: PINK, symbol: IMCDY}
 IMNZY:
+  adr-src: IIA.VI
   ibkr-contract: {conId: 106983781, currency: USD, description: IMMOFINANZ AG-SPON
-      ADR, exchange: '', primaryExchange: VALUE, symbol: IMNZY}
-  partners: [IIA.VI]
+      ADR, exchange: SMART, primaryExchange: VALUE, symbol: IMNZY}
 INGA.AS:
+  adr: INGN
   ibkr-contract: {conId: 240601748, currency: EUR, exchange: SMART, primaryExchange: AEB,
     symbol: INGA}
-  partners: [INGN]
 INGN:
-  ibkr-contract: {conId: 144177256, currency: USD, description: INOGEN INC, exchange: '',
+  adr-src: INGA.AS
+  ibkr-contract: {conId: 144177256, currency: USD, description: INOGEN INC, exchange: SMART,
     primaryExchange: NASDAQ, symbol: INGN}
-  partners: [INGA.AS]
 IP.MI:
   ibkr-contract: {conId: 26319253, currency: EUR, exchange: SMART, primaryExchange: BVME,
     symbol: IP}
 ISNPY:
+  adr-src: ISP.MI
   ibkr-contract: {conId: 42393326, currency: USD, description: INTESA SANPAOLO SPON
-      ADR, exchange: '', primaryExchange: PINK, symbol: ISNPY}
-  partners: [ISP.MI]
+      ADR, exchange: SMART, primaryExchange: PINK, symbol: ISNPY}
 ISP.MI:
+  adr: ISNPY
   ibkr-contract: {conId: 29816328, currency: EUR, exchange: SMART, primaryExchange: BVME,
     symbol: ISP}
-  partners: [ISNPY]
 ITX.MC:
   ibkr-contract: {conId: 162084958, currency: EUR, exchange: SMART, primaryExchange: BM,
     symbol: ITX}
 JRONY:
+  adr-src: 0EXG.IL
   ibkr-contract: {conId: 55366242, currency: USD, description: JERONIMO MARTINS-UNSPON
-      ADR, exchange: '', primaryExchange: PINK, symbol: JRONY}
-  partners: [0EXG.IL]
+      ADR, exchange: SMART, primaryExchange: PINK, symbol: JRONY}
 JUMSY:
-  ibkr-contract: {conId: 124905994, currency: USD, description: JUMBO SA-ADR, exchange: '',
+  adr-src: BELA.AT
+  ibkr-contract: {conId: 124905994, currency: USD, description: JUMBO SA-ADR, exchange: SMART,
     primaryExchange: PINK, symbol: JUMSY}
-  partners: [BELA.AT]
 KBC.BR:
+  adr: KBCSY
   ibkr-contract: {conId: 917964, currency: EUR, exchange: SMART, primaryExchange: ENEXT.BE,
     symbol: KBC}
-  partners: [KBCSY]
 KBCSY:
+  adr-src: KBC.BR
   ibkr-contract: {conId: 55633068, currency: USD, description: KBC GROEP NV-UNSP ADR,
-    exchange: '', primaryExchange: PINK, symbol: KBCSY}
-  partners: [KBC.BR]
+    exchange: SMART, primaryExchange: PINK, symbol: KBCSY}
 KCR.HE:
+  adr: KNCRY
   ibkr-contract: {conId: 12539489, currency: EUR, exchange: SMART, primaryExchange: HEX,
     symbol: KCR}
-  partners: [KNCRY]
 KEMIRA.HE:
   ibkr-contract: {conId: 12539492, currency: EUR, exchange: SMART, primaryExchange: HEX,
     symbol: KEMIRA}
 KER.PA:
+  adr: KRYAY
   ibkr-contract: {conId: 29612178, currency: EUR, exchange: SMART, primaryExchange: SBF,
     symbol: KER}
-  partners: [KRYAY]
 KESKOB.HE:
+  adr: KKOYY
   ibkr-contract: {conId: 12539499, currency: EUR, exchange: SMART, primaryExchange: HEX,
     symbol: KESKOB}
-  partners: [KKOYY]
 KKOYY:
+  adr-src: KESKOB.HE
   ibkr-contract: {conId: 55053615, currency: USD, description: KESKO OYJ-B SHS-UNSPON
-      ADR, exchange: '', primaryExchange: PINK, symbol: KKOYY}
-  partners: [KESKOB.HE]
+      ADR, exchange: SMART, primaryExchange: PINK, symbol: KKOYY}
 KKPNY:
+  adr-src: KPN.AS
   ibkr-contract: {conId: 1035441, currency: USD, description: KONINKLIJKE KPN NV -
-      SP ADR, exchange: '', primaryExchange: PINK, symbol: KKPNY}
-  partners: [KPN.AS]
+      SP ADR, exchange: SMART, primaryExchange: PINK, symbol: KKPNY}
 KNCRY:
+  adr-src: KCR.HE
   ibkr-contract: {conId: 523641291, currency: USD, description: KONECRANES OYJ-UNSPON
-      ADR, exchange: '', primaryExchange: PINK, symbol: KNCRY}
-  partners: [KCR.HE]
+      ADR, exchange: SMART, primaryExchange: PINK, symbol: KNCRY}
 KNEBV.HE:
+  adr: KNYJY
   ibkr-contract: {conId: 34781486, currency: EUR, exchange: FWB, primaryExchange: HEX,
     symbol: KNEBV}
-  partners: [KNYJY]
 KNYJY:
+  adr-src: KNEBV.HE
   ibkr-contract: {conId: 55053641, currency: USD, description: KONE OYJ-B-UNSPONSORED
-      ADR, exchange: '', primaryExchange: PINK, symbol: KNYJY}
-  partners: [KNEBV.HE]
+      ADR, exchange: SMART, primaryExchange: PINK, symbol: KNYJY}
 KOJAMO.HE:
   ibkr-contract: {conId: 323609750, currency: EUR, exchange: HEX, primaryExchange: HEX,
     symbol: KOJAMO}
 KPN.AS:
+  adr: KKPNY
   ibkr-contract: {conId: 29622902, currency: EUR, exchange: SMART, primaryExchange: AEB,
     symbol: KPN}
-  partners: [KKPNY]
 KRYAY:
+  adr-src: KER.PA
   ibkr-contract: {conId: 75270041, currency: USD, description: KERRY GROUP PLC-SPONS
-      ADR, exchange: '', primaryExchange: PINK, symbol: KRYAY}
-  partners: [KER.PA]
+      ADR, exchange: SMART, primaryExchange: PINK, symbol: KRYAY}
 LAMDA.AT:
   ibkr-contract: {conId: 466169066, currency: EUR, exchange: FWB2, primaryExchange: ATH,
     symbol: LAMDA}
 LDO.MI:
+  adr: FINMY
   ibkr-contract: {conId: 35162453, currency: EUR, exchange: SMART, primaryExchange: BVME,
     symbol: LDO}
-  partners: [FINMY]
 LGRDY:
+  adr-src: LR.PA
   ibkr-contract: {conId: 163540840, currency: USD, description: LEGRAND SA-UNSP ADR,
-    exchange: '', primaryExchange: PINK, symbol: LGRDY}
-  partners: [LR.PA]
+    exchange: SMART, primaryExchange: PINK, symbol: LGRDY}
 LHA.DE:
+  adr: DLAKY
   ibkr-contract: {conId: 14171, currency: EUR, exchange: SMART, primaryExchange: IBIS,
     symbol: LHA}
 LIN:
-  ibkr-contract: {conId: 617155599, currency: USD, description: LINDE PLC, exchange: '',
+  adr-src: LIN.DE
+  ibkr-contract: {conId: 617155599, currency: USD, description: LINDE PLC, exchange: SMART,
     primaryExchange: NYSE, symbol: LIN}
-  partners: [LIN.DE]
 LIN.DE:
+  adr: LIN
   ibkr-contract: {conId: 617155589, currency: EUR, exchange: SMART, primaryExchange: IBIS,
     symbol: LIN}
-  partners: [LIN]
 LNZ.VI:
+  adr: LNZNY
   ibkr-contract: {conId: 3306480, currency: EUR, exchange: SMART, primaryExchange: VSE,
     symbol: LNZ}
-  partners: [LNZNY]
 LNZNY:
+  adr-src: LNZ.VI
   ibkr-contract: {conId: 581722686, currency: USD, description: LENZING AG-UNSP ADR,
-    exchange: '', primaryExchange: PINK, symbol: LNZNY}
-  partners: [LNZ.VI]
+    exchange: SMART, primaryExchange: PINK, symbol: LNZNY}
 LOG.MC:
   ibkr-contract: {conId: 160531120, currency: EUR, exchange: SMART, primaryExchange: BM,
     symbol: LOG}
 LR.PA:
+  adr: LGRDY
   ibkr-contract: {conId: 38715873, currency: EUR, exchange: SMART, primaryExchange: SBF,
     symbol: LR}
-  partners: [LGRDY]
 LRLCY:
+  adr-src: OR.PA
   ibkr-contract: {conId: 52193988, currency: USD, description: '', exchange: SMART,
     primaryExchange: PINK, symbol: LRLCY}
-  partners: [OR.PA]
 LVMUY:
+  adr-src: MC.PA
   ibkr-contract: {conId: 41601085, currency: USD, description: LVMH MOET HENNESSY-UNSP
-      ADR, exchange: '', primaryExchange: PINK, symbol: LVMUY}
-  partners: [MC.PA]
+      ADR, exchange: SMART, primaryExchange: PINK, symbol: LVMUY}
 MAP.MC:
+  adr: MPFRY
   ibkr-contract: {conId: 41267871, currency: EUR, exchange: SMART, primaryExchange: BM,
     symbol: MAP}
-  partners: [MPFRY]
 MB.MI:
+  adr: MBI
   ibkr-contract: {conId: 917595, currency: EUR, exchange: SMART, primaryExchange: BVME,
     symbol: MB}
-  partners: [MBI]
 MBG.DE:
+  adr: MBGAF
   ibkr-contract: {conId: 29622935, currency: EUR, exchange: SMART, primaryExchange: IBIS,
     symbol: MBG}
-  partners: [MBGAF]
 MBGAF:
+  adr-src: MBG.DE
   ibkr-contract: {conId: 6328, currency: USD, description: MERCEDES-BENZ GROUP AG,
-    exchange: '', primaryExchange: PINK, symbol: MBGAF}
-  partners: [MBG.DE]
+    exchange: SMART, primaryExchange: PINK, symbol: MBGAF}
 MBI:
-  ibkr-contract: {conId: 9388, currency: USD, description: MBIA INC, exchange: '',
+  adr-src: MB.MI
+  ibkr-contract: {conId: 9388, currency: USD, description: MBIA INC, exchange: SMART,
     primaryExchange: NYSE, symbol: MBI}
-  partners: [MB.MI]
 MC.PA:
+  adr: LVMUY
   ibkr-contract: {conId: 29612150, currency: EUR, exchange: SMART, primaryExchange: SBF,
     symbol: MC}
-  partners: [LVMUY]
 MEL.MC:
   ibkr-contract: {conId: 2487794, currency: EUR, exchange: SMART, primaryExchange: BM,
     symbol: MEL}
 MELE.BR:
+  adr: MLXSY
   ibkr-contract: {conId: 36794737, currency: EUR, exchange: SMART, primaryExchange: ENEXT.BE,
     symbol: MELE}
-  partners: [MLXSY]
 METSB.HE:
   ibkr-contract: {conId: 12542994, currency: EUR, exchange: SMART, primaryExchange: HEX,
     symbol: METSB}
 METSO.HE:
+  adr: MXCYY
   ibkr-contract: {conId: 42481101, currency: EUR, exchange: SMART, primaryExchange: HEX,
     symbol: METSO}
-  partners: [MXCYY]
 ML.PA:
+  adr: MLNK
   ibkr-contract: {conId: 562418770, currency: EUR, exchange: SMART, primaryExchange: SBF,
     symbol: ML}
-  partners: [MLNK]
 MLNK:
+  adr-src: ML.PA
   ibkr-contract: {conId: 505002195, currency: USD, description: MERIDIANLINK INC,
-    exchange: '', primaryExchange: NYSE, symbol: MLNK}
-  partners: [ML.PA]
+    exchange: SMART, primaryExchange: NYSE, symbol: MLNK}
 MLXSY:
+  adr-src: MELE.BR
   ibkr-contract: {conId: 507456466, currency: USD, description: MELEXIS NV - UNSP
-      ADR, exchange: '', primaryExchange: PINK, symbol: MLXSY}
-  partners: [MELE.BR]
+      ADR, exchange: SMART, primaryExchange: PINK, symbol: MLXSY}
 MMK.VI:
   ibkr-contract: {conId: 3306498, currency: EUR, exchange: SMART, primaryExchange: VSE,
     symbol: MMK}
@@ -1007,71 +993,71 @@ MNG.L:
   ibkr-contract: {conId: 387353678, currency: GBP, exchange: SMART, primaryExchange: LSE,
     symbol: MNG}
 MOH.AT:
+  adr: MOHCY
   ibkr-contract: {conId: 36771903, currency: EUR, exchange: SMART, primaryExchange: ATH,
     symbol: MOH}
-  partners: [MOHCY]
 MOHCY:
+  adr-src: MOH.AT
   ibkr-contract: {conId: 55305021, currency: USD, description: MOTOR OIL(HELLAS) SA-UNS
-      ADR, exchange: '', primaryExchange: PINK, symbol: MOHCY}
-  partners: [MOH.AT]
+      ADR, exchange: SMART, primaryExchange: PINK, symbol: MOHCY}
 MONC.MI:
+  adr: MONRY
   ibkr-contract: {conId: 140054327, currency: EUR, exchange: SMART, primaryExchange: BVME,
     symbol: MONC}
-  partners: [MONRY]
 MONRY:
+  adr-src: MONC.MI
   ibkr-contract: {conId: 639935056, currency: USD, description: MONCLER SPA-UNSPONSORED
-      ADR, exchange: '', primaryExchange: PINK, symbol: MONRY}
-  partners: [MONC.MI]
+      ADR, exchange: SMART, primaryExchange: PINK, symbol: MONRY}
 MPFRY:
+  adr-src: MAP.MC
   ibkr-contract: {conId: 55633045, currency: USD, description: MAPFRE SA-UNSP ADR,
-    exchange: '', primaryExchange: PINK, symbol: MPFRY}
-  partners: [MAP.MC]
+    exchange: SMART, primaryExchange: PINK, symbol: MPFRY}
 MRK:
-  ibkr-contract: {conId: 70101545, currency: USD, description: MERCK & CO INC, exchange: '',
+  adr-src: MRK.DE
+  ibkr-contract: {conId: 70101545, currency: USD, description: MERCK & CO INC, exchange: SMART,
     primaryExchange: NYSE, symbol: MRK}
-  partners: [MRK.DE]
 MRK.DE:
+  adr: MRK
   ibkr-contract: {conId: 1015559, currency: EUR, exchange: SMART, primaryExchange: IBIS,
     symbol: MRK}
-  partners: [MRK]
 MRL.MC:
   ibkr-contract: {conId: 159134192, currency: EUR, exchange: SMART, primaryExchange: BM,
     symbol: MRL}
 MT:
+  adr-src: MT.AS
   ibkr-contract: {conId: 276046464, currency: USD, description: ARCELORMITTAL-NY REGISTERED,
-    exchange: '', primaryExchange: NYSE, symbol: MT}
-  partners: [MT.AS]
+    exchange: SMART, primaryExchange: NYSE, symbol: MT}
 MT.AS:
+  adr: MT
   ibkr-contract: {conId: 276039870, currency: EUR, exchange: SMART, primaryExchange: AEB,
     symbol: MT}
-  partners: [MT]
 MTUAY:
+  adr-src: MTX.DE
   ibkr-contract: {conId: 54740994, currency: USD, description: MTU AERO ENGINES-UNSPON
-      ADR, exchange: '', primaryExchange: PINK, symbol: MTUAY}
-  partners: [MTX.DE]
+      ADR, exchange: SMART, primaryExchange: PINK, symbol: MTUAY}
 MTX.DE:
+  adr: MTUAY
   ibkr-contract: {conId: 34759096, currency: EUR, exchange: SMART, primaryExchange: IBIS,
     symbol: MTX}
-  partners: [MTUAY]
 MUV2.DE:
   ibkr-contract: {conId: 14189, currency: EUR, exchange: SMART, primaryExchange: IBIS,
     symbol: MUV2}
 MXCYY:
+  adr-src: METSO.HE
   ibkr-contract: {conId: 6608193, currency: USD, description: METSO CORP -SPON ADR,
-    exchange: '', primaryExchange: VALUE, symbol: MXCYY}
-  partners: [METSO.HE]
+    exchange: SMART, primaryExchange: VALUE, symbol: MXCYY}
 MYTHY:
+  adr-src: MYTIL.AT
   ibkr-contract: {conId: 55304986, currency: USD, description: MYTILINEOS SA-UNSP
-      ADR, exchange: '', primaryExchange: PINK, symbol: MYTHY}
-  partners: [MYTIL.AT]
+      ADR, exchange: SMART, primaryExchange: PINK, symbol: MYTHY}
 MYTIL.AT:
+  adr: MYTHY
   ibkr-contract: {conId: 41941651, currency: EUR, exchange: SMART, primaryExchange: ATH,
     symbol: MYTIL}
-  partners: [MYTHY]
 NBGRY:
+  adr-src: ETE.AT
   ibkr-contract: {conId: 505998385, currency: USD, description: NATIONAL BANK OF GREECE
-      SA, exchange: '', primaryExchange: PINK, symbol: NBGRY}
-  partners: [ETE.AT]
+      SA, exchange: SMART, primaryExchange: PINK, symbol: NBGRY}
 NDA-FI.HE:
   ibkr-contract: {conId: 335134428, currency: EUR, exchange: SMART, primaryExchange: HEX,
     symbol: NDA2}
@@ -1079,144 +1065,139 @@ NESN.SW:
   ibkr-contract: {conId: 52238348, currency: CHF, exchange: EBS, primaryExchange: EBS,
     symbol: NESN}
 NESTE.HE:
+  adr: NTOIY
   ibkr-contract: {conId: 33815032, currency: EUR, exchange: SMART, primaryExchange: HEX,
     symbol: NESTE}
-  partners: [NTOIY]
 NEXI.MI:
+  adr: NXCO
   ibkr-contract: {conId: 360973398, currency: EUR, exchange: SMART, primaryExchange: BVME,
     symbol: NEXI}
-  partners: [NXCO]
 NKRKY:
+  adr-src: TYRES.HE
   ibkr-contract: {conId: 95108577, currency: USD, description: NOKIAN TYRES OYJ-UNSPON
-      ADR, exchange: '', primaryExchange: PINK, symbol: NKRKY}
-  partners: [TYRES.HE]
+      ADR, exchange: SMART, primaryExchange: PINK, symbol: NKRKY}
 NN.AS:
+  adr: NNGRY
   ibkr-contract: {conId: 159310339, currency: EUR, exchange: SMART, primaryExchange: AEB,
     symbol: NN}
-  partners: [NNGRY]
 NNGRY:
+  adr-src: NN.AS
   ibkr-contract: {conId: 257762864, currency: USD, description: NN GROUP NV - UNSPON
-      ADR, exchange: '', primaryExchange: PINK, symbol: NNGRY}
-  partners: [NN.AS]
+      ADR, exchange: SMART, primaryExchange: PINK, symbol: NNGRY}
 NOK:
+  adr-src: NOKIA.HE
   ibkr-contract: {conId: 661513, currency: USD, description: NOKIA CORP-SPON ADR,
-    exchange: '', primaryExchange: NYSE, symbol: NOK}
-  partners: [NOKIA.HE]
+    exchange: SMART, primaryExchange: NYSE, symbol: NOK}
 NOKIA.HE:
+  adr: NOK
   ibkr-contract: {conId: 29816875, currency: EUR, exchange: SMART, primaryExchange: HEX,
     symbol: NOKIA}
-  partners: [NOK]
 NTGY.MC:
+  adr: GASNY
   ibkr-contract: {conId: 917433, currency: EUR, exchange: SMART, primaryExchange: BM,
     symbol: NTGY}
-  partners: [GASNY]
 NTOIY:
+  adr-src: NESTE.HE
   ibkr-contract: {conId: 55053478, currency: USD, description: NESTE OYJ - UNSP ADR,
-    exchange: '', primaryExchange: PINK, symbol: NTOIY}
-  partners: [NESTE.HE]
+    exchange: SMART, primaryExchange: PINK, symbol: NTOIY}
 NXCO:
-  ibkr-contract: {conId: 50888314, currency: USD, description: NEXICON INC, exchange: '',
+  adr-src: NEXI.MI
+  ibkr-contract: {conId: 50888314, currency: USD, description: NEXICON INC, exchange: SMART,
     primaryExchange: PINK, symbol: NXCO}
-  partners: [NEXI.MI]
 OEZVY:
+  adr-src: VER.VI
   ibkr-contract: {conId: 76971593, currency: USD, description: VERBUND AG-SPONS ADR,
-    exchange: '', primaryExchange: PINK, symbol: OEZVY}
-  partners: [VER.VI]
+    exchange: SMART, primaryExchange: PINK, symbol: OEZVY}
 OMV.VI:
+  adr: OMVKY
   ibkr-contract: {conId: 3306504, currency: EUR, exchange: SMART, primaryExchange: VSE,
     symbol: OMV}
-  partners: [PETB]
+OMVKY:
+  adr-src: OMV.VI
+  ibkr-contract: {conId: 75015658, currency: USD, description: '', exchange: SMART,
+    primaryExchange: PINK, symbol: OMVKY}
 OPAP.AT:
   ibkr-contract: {conId: 16019027, currency: EUR, exchange: SMART, primaryExchange: ATH,
     symbol: OPAP}
-  partners: [GOFPY.CNV]
 OR.PA:
+  adr: LRLCY
   ibkr-contract: {conId: 29612116, currency: EUR, exchange: SMART, primaryExchange: SBF,
     symbol: OR}
 ORA.PA:
+  adr: ORNC
   ibkr-contract: {conId: 29612252, currency: EUR, exchange: SMART, primaryExchange: SBF,
     symbol: ORA}
-  partners: [ORNC]
-ORIAU.OLD:
-  ibkr-contract: {conId: 489579973, currency: USD, description: ORION BIOTECH OPPORTUNITIES,
-    exchange: '', primaryExchange: VALUE, symbol: ORIAU.OLD}
-  partners: [ORNBV.HE]
 ORNBV.HE:
   ibkr-contract: {conId: 12543005, currency: EUR, exchange: SMART, primaryExchange: HEX,
     symbol: ORNBV}
-  partners: [ORIAU.OLD]
 ORNC:
-  ibkr-contract: {conId: 377044447, currency: USD, description: ORANCO INC, exchange: '',
+  adr-src: ORA.PA
+  ibkr-contract: {conId: 377044447, currency: USD, description: ORANCO INC, exchange: SMART,
     primaryExchange: VALUE, symbol: ORNC}
-  partners: [ORA.PA]
 OSTIY:
+  adr-src: POST.VI
   ibkr-contract: {conId: 124098950, currency: USD, description: OSTERREICHISCHE POST-SP
-      ADR, exchange: '', primaryExchange: PINK, symbol: OSTIY}
-  partners: [POST.VI]
+      ADR, exchange: SMART, primaryExchange: PINK, symbol: OSTIY}
 OTOEL.AT:
   ibkr-contract: {conId: 603529804, currency: EUR, exchange: FWB2, primaryExchange: FWB2,
     symbol: 0AH1}
 OUT1V.HE:
+  adr: OUTKY
   ibkr-contract: {conId: 12543012, currency: EUR, exchange: SMART, primaryExchange: HEX,
     symbol: OUT}
-  partners: [OUTKY]
 OUTKY:
+  adr-src: OUT1V.HE
   ibkr-contract: {conId: 157170002, currency: USD, description: OUTOKUMPU OYJ-UNSPN
-      ADR, exchange: '', primaryExchange: PINK, symbol: OUTKY}
-  partners: [OUT1V.HE]
+      ADR, exchange: SMART, primaryExchange: PINK, symbol: OUTKY}
 P911.DE:
+  adr: DRPRY
   ibkr-contract: {conId: 588392767, currency: EUR, exchange: SMART, primaryExchange: IBIS,
     symbol: P911}
-  partners: [DRPRY]
-PETB:
-  ibkr-contract: {conId: 253193141, currency: USD, description: OMV PETROM SA-REG
-      S, exchange: '', primaryExchange: LSEIOB1, symbol: PETB}
-  partners: [OMV.VI]
 PHG:
+  adr-src: PHIA.AS
   ibkr-contract: {conId: 11097, currency: USD, description: KONINKLIJKE PHILIPS NVR-
-      NY, exchange: '', primaryExchange: NYSE, symbol: PHG}
-  partners: [PHIA.AS]
+      NY, exchange: SMART, primaryExchange: NYSE, symbol: PHG}
 PHIA.AS:
+  adr: PHG
   ibkr-contract: {conId: 29622921, currency: EUR, exchange: SMART, primaryExchange: AEB,
     symbol: PHIA}
-  partners: [PHG]
 PIRC.MI:
   ibkr-contract: {conId: 291237587, currency: EUR, exchange: SMART, primaryExchange: BVME,
     symbol: PIRC}
 POST.VI:
+  adr: OSTIY
   ibkr-contract: {conId: 39165470, currency: EUR, exchange: SMART, primaryExchange: VSE,
     symbol: POST}
-  partners: [OSTIY]
 PPC.AT:
   ibkr-contract: {conId: 16019021, currency: EUR, exchange: SMART, primaryExchange: ATH,
     symbol: PPC}
 PRNDY:
+  adr-src: RI.PA
   ibkr-contract: {conId: 524980941, currency: USD, description: PERNOD RICARD SA -
-      SPON ADR, exchange: '', primaryExchange: PINK, symbol: PRNDY}
-  partners: [RI.PA]
+      SPON ADR, exchange: SMART, primaryExchange: PINK, symbol: PRNDY}
 PROSY:
+  adr-src: PRX.AS
   ibkr-contract: {conId: 381762240, currency: USD, description: PROSUS NV -SPON ADR,
-    exchange: '', primaryExchange: PINK, symbol: PROSY}
-  partners: [PRX.AS]
+    exchange: SMART, primaryExchange: PINK, symbol: PROSY}
 PROX.BR:
+  adr: BGAOY
   ibkr-contract: {conId: 28110174, currency: EUR, exchange: SMART, primaryExchange: ENEXT.BE,
     symbol: PROX}
-  partners: [BGAOY]
 PRU.L:
   ibkr-contract: {conId: 909164, currency: GBP, exchange: SMART, primaryExchange: LSE,
     symbol: PRU}
 PRX.AS:
+  adr: PROSY
   ibkr-contract: {conId: 382625193, currency: EUR, exchange: SMART, primaryExchange: AEB,
     symbol: PRX}
-  partners: [PROSY]
 PRY.MI:
+  adr: PRYMY
   ibkr-contract: {conId: 46114851, currency: EUR, exchange: SMART, primaryExchange: BVME,
     symbol: PRY}
-  partners: [PRYMY]
 PRYMY:
+  adr-src: PRY.MI
   ibkr-contract: {conId: 55424629, currency: USD, description: PRYSMIAN SPA-UNSPONSOREE
-      ADR, exchange: '', primaryExchange: PINK, symbol: PRYMY}
-  partners: [PRY.MI]
+      ADR, exchange: SMART, primaryExchange: PINK, symbol: PRYMY}
 PSN.L:
   ibkr-contract: {conId: 12605003, currency: GBP, exchange: SMART, primaryExchange: LSE,
     symbol: PSN}
@@ -1227,56 +1208,56 @@ QUEST.AT:
   ibkr-contract: {conId: 404782997, currency: EUR, exchange: FWB2, primaryExchange: ATH,
     symbol: QUEST}
 RACE:
-  ibkr-contract: {conId: 217234340, currency: USD, description: FERRARI NV, exchange: '',
+  adr-src: RACE.MI
+  ibkr-contract: {conId: 217234340, currency: USD, description: FERRARI NV, exchange: SMART,
     primaryExchange: NYSE, symbol: RACE}
-  partners: [RACE.MI]
 RACE.MI:
+  adr: RACE
   ibkr-contract: {conId: 215461594, currency: EUR, exchange: SMART, primaryExchange: BVME,
     symbol: RACE}
-  partners: [RACE]
 RAIFY:
+  adr-src: RBI.VI
   ibkr-contract: {conId: 70104808, currency: USD, description: RAIFFEISEN BANK INT-UNSP
-      ADR, exchange: '', primaryExchange: PINK, symbol: RAIFY}
-  partners: [RBI.VI]
+      ADR, exchange: SMART, primaryExchange: PINK, symbol: RAIFY}
 RAND.AS:
+  adr: RANJY
   ibkr-contract: {conId: 10428270, currency: EUR, exchange: SMART, primaryExchange: AEB,
     symbol: RAND}
-  partners: [RANJY]
 RANJY:
+  adr-src: RAND.AS
   ibkr-contract: {conId: 55250333, currency: USD, description: RANDSTAD NV-UNSP ADR,
-    exchange: '', primaryExchange: PINK, symbol: RANJY}
-  partners: [RAND.AS]
+    exchange: SMART, primaryExchange: PINK, symbol: RANJY}
 RBI.VI:
+  adr: RAIFY
   ibkr-contract: {conId: 33908748, currency: EUR, exchange: SMART, primaryExchange: VSE,
     symbol: RBI}
-  partners: [RAIFY]
 REC.MI:
+  adr: RICFY
   ibkr-contract: {conId: 14905664, currency: EUR, exchange: SMART, primaryExchange: BVME,
     symbol: REC}
-  partners: [RICFY]
 RED.MC:
   ibkr-contract: {conId: 239949851, currency: EUR, exchange: SMART, primaryExchange: BM,
     symbol: RED1}
 RELX:
+  adr-src: REN.AS
   ibkr-contract: {conId: 198167234, currency: USD, description: RELX PLC - SPON ADR,
-    exchange: '', primaryExchange: NYSE, symbol: RELX}
-  partners: [REN.AS]
+    exchange: SMART, primaryExchange: NYSE, symbol: RELX}
 REN.AS:
+  adr: RELX
   ibkr-contract: {conId: 332776402, currency: EUR, exchange: AEB, primaryExchange: AEB,
     symbol: REN}
-  partners: [RELX]
 RI.PA:
+  adr: PRNDY
   ibkr-contract: {conId: 917758, currency: EUR, exchange: SMART, primaryExchange: SBF,
     symbol: RI}
-  partners: [PRNDY]
 RICFY:
+  adr-src: REC.MI
   ibkr-contract: {conId: 557964370, currency: USD, description: RECORDATI INDUSTRIA-UNSP
-      ADR, exchange: '', primaryExchange: PINK, symbol: RICFY}
-  partners: [REC.MI]
+      ADR, exchange: SMART, primaryExchange: PINK, symbol: RICFY}
 RMS.PA:
+  adr: HESAY
   ibkr-contract: {conId: 1254605, currency: EUR, exchange: SMART, primaryExchange: SBF,
     symbol: RMS}
-  partners: [HESAY]
 RMV.L:
   ibkr-contract: {conId: 331862780, currency: GBP, exchange: SMART, primaryExchange: LSE,
     symbol: RMV}
@@ -1290,235 +1271,236 @@ RTO.L:
   ibkr-contract: {conId: 909192, currency: GBP, exchange: SMART, primaryExchange: LSE,
     symbol: RTO}
 RWE.DE:
+  adr: RWEOY
   ibkr-contract: {conId: 14198, currency: EUR, exchange: SMART, primaryExchange: IBIS,
     symbol: RWE}
-  partners: [RWEOY]
 RWEOY:
+  adr-src: RWE.DE
   ibkr-contract: {conId: 58593713, currency: USD, description: RWE AKTIENGESELLSCHAF-SP
-      ADR, exchange: '', primaryExchange: PINK, symbol: RWEOY}
-  partners: [RWE.DE]
+      ADR, exchange: SMART, primaryExchange: PINK, symbol: RWEOY}
 SAB.MC:
+  adr: BNDSY
   ibkr-contract: {conId: 44150571, currency: EUR, exchange: SMART, primaryExchange: BM,
     symbol: SAB1}
-  partners: [BNDSY]
 SAF.PA:
+  adr: SAFS
   ibkr-contract: {conId: 1322028, currency: EUR, exchange: SMART, primaryExchange: SBF,
     symbol: SAF}
-  partners: [SAFS]
 SAFS:
-  ibkr-contract: {conId: 207812818, currency: USD, description: SAFER SHOT INC, exchange: '',
+  adr-src: SAF.PA
+  ibkr-contract: {conId: 207812818, currency: USD, description: SAFER SHOT INC, exchange: SMART,
     primaryExchange: PINK, symbol: SAFS}
-  partners: [SAF.PA]
 SAMPO.HE:
+  adr: SAXPY
   ibkr-contract: {conId: 12543068, currency: EUR, exchange: SMART, primaryExchange: HEX,
     symbol: SAMPO}
-  partners: [SAXPY]
 SAN.MC:
+  adr: BSBR
   ibkr-contract: {conId: 30314144, currency: EUR, exchange: SMART, primaryExchange: BM,
     symbol: SAN1}
-  partners: [BSBR]
 SAN.PA:
+  adr: SNY
   ibkr-contract: {conId: 29612249, currency: EUR, exchange: SMART, primaryExchange: SBF,
     symbol: SAN}
-  partners: [SNY]
 SAP:
+  adr-src: SAP.DE
   ibkr-contract: {conId: 3804335, currency: USD, description: SAP SE-SPONSORED ADR,
-    exchange: '', primaryExchange: NYSE, symbol: SAP}
-  partners: [SAP.DE]
+    exchange: SMART, primaryExchange: NYSE, symbol: SAP}
 SAP.DE:
+  adr: SAP
   ibkr-contract: {conId: 14204, currency: EUR, exchange: SMART, primaryExchange: IBIS,
     symbol: SAP}
-  partners: [SAP]
 SAPMY:
+  adr-src: SPM.MI
   ibkr-contract: {conId: 564931605, currency: USD, description: SAIPEM SPA-UNSPON
-      ADR, exchange: '', primaryExchange: PINK, symbol: SAPMY}
-  partners: [SPM.MI]
+      ADR, exchange: SMART, primaryExchange: PINK, symbol: SAPMY}
 SAR.AT:
   ibkr-contract: {conId: 451691008, currency: EUR, exchange: FWB2, primaryExchange: ATH,
     symbol: SAR}
 SAXPY:
+  adr-src: SAMPO.HE
   ibkr-contract: {conId: 55053570, currency: USD, description: SAMPO OYJ-A SHS-UNSP
-      ADR, exchange: '', primaryExchange: PINK, symbol: SAXPY}
-  partners: [SAMPO.HE]
+      ADR, exchange: SMART, primaryExchange: PINK, symbol: SAXPY}
 SBAGY:
+  adr-src: STR.VI
   ibkr-contract: {conId: 427856440, currency: USD, description: STRABAG SE-BR-UNSPON
-      ADR, exchange: '', primaryExchange: PINK, symbol: SBAGY}
-  partners: [STR.VI]
+      ADR, exchange: SMART, primaryExchange: PINK, symbol: SBAGY}
 SBO.VI:
+  adr: SBOEY
   ibkr-contract: {conId: 33203234, currency: EUR, exchange: SMART, primaryExchange: VSE,
     symbol: SBO}
-  partners: [SBOEY]
 SBOEY:
+  adr-src: SBO.VI
   ibkr-contract: {conId: 129470185, currency: USD, description: SCHOELLER-BLECKMANN-UNSP
-      ADR, exchange: '', primaryExchange: PINK, symbol: SBOEY}
-  partners: [SBO.VI]
+      ADR, exchange: SMART, primaryExchange: PINK, symbol: SBOEY}
 SCGLY:
+  adr-src: GLE.PA
   ibkr-contract: {conId: 48732724, currency: USD, description: SOCIETE GENERALE-SPONS
-      ADR, exchange: '', primaryExchange: PINK, symbol: SCGLY}
-  partners: [GLE.PA]
+      ADR, exchange: SMART, primaryExchange: PINK, symbol: SCGLY}
 SDR.L:
   ibkr-contract: {conId: 586245618, currency: GBP, exchange: SMART, primaryExchange: LSE,
     symbol: SDR}
 SDXAY:
+  adr-src: SW.PA
   ibkr-contract: {conId: 15543701, currency: USD, description: SODEXO-SPONSORED ADR,
-    exchange: '', primaryExchange: PINK, symbol: SDXAY}
-  partners: [SW.PA]
+    exchange: SMART, primaryExchange: PINK, symbol: SDXAY}
 SEOAY:
+  adr-src: STERV.HE
   ibkr-contract: {conId: 10249090, currency: USD, description: STORA ENSO OYJ-SPONS
-      ADR, exchange: '', primaryExchange: PINK, symbol: SEOAY}
-  partners: [STERV.HE]
+      ADR, exchange: SMART, primaryExchange: PINK, symbol: SEOAY}
 SGO.PA:
+  adr: CODYY
   ibkr-contract: {conId: 29612189, currency: EUR, exchange: SMART, primaryExchange: SBF,
     symbol: SGO}
 SHEL:
-  ibkr-contract: {conId: 540900810, currency: USD, description: SHELL PLC-ADR, exchange: '',
+  adr-src: SHELL.AS
+  ibkr-contract: {conId: 540900810, currency: USD, description: SHELL PLC-ADR, exchange: SMART,
     primaryExchange: NYSE, symbol: SHEL}
-  partners: [SHELL.AS]
 SHEL.L:
   ibkr-contract: {conId: 542125742, currency: GBP, exchange: SMART, primaryExchange: LSE,
     symbol: SHEL}
 SHELL.AS:
+  adr: SHEL
   ibkr-contract: {conId: 541411967, currency: EUR, exchange: SMART, primaryExchange: AEB,
     symbol: SHELL}
-  partners: [SHEL]
 SIE.DE:
+  adr: SIEGY
   ibkr-contract: {conId: 14217, currency: EUR, exchange: SMART, primaryExchange: IBIS,
     symbol: SIE}
-  partners: [SIEGY]
 SIEGY:
+  adr-src: SIE.DE
   ibkr-contract: {conId: 12129, currency: USD, description: SIEMENS AG-SPONS ADR,
-    exchange: '', primaryExchange: PINK, symbol: SIEGY}
-  partners: [SIE.DE]
+    exchange: SMART, primaryExchange: PINK, symbol: SIEGY}
 SLVYY:
+  adr-src: SOLB.BR
   ibkr-contract: {conId: 513132729, currency: USD, description: SOLVAY SA - UNSP ADR,
-    exchange: '', primaryExchange: PINK, symbol: SLVYY}
-  partners: [SOLB.BR]
+    exchange: SMART, primaryExchange: PINK, symbol: SLVYY}
 SMIN.L:
   ibkr-contract: {conId: 44668420, currency: GBP, exchange: SMART, primaryExchange: LSE,
     symbol: SMIN}
 SMNEY:
+  adr-src: ENR.DE
   ibkr-contract: {conId: 455575415, currency: USD, description: SIEMENS ENERGY AG-UNSP
-      ADR, exchange: '', primaryExchange: PINK, symbol: SMNEY}
-  partners: [ENR.DE]
+      ADR, exchange: SMART, primaryExchange: PINK, symbol: SMNEY}
 SMT.L:
   ibkr-contract: {conId: 158725708, currency: GBP, exchange: SMART, primaryExchange: LSE,
     symbol: SMT}
 SNY:
-  ibkr-contract: {conId: 15435308, currency: USD, description: SANOFI-ADR, exchange: '',
+  adr-src: SAN.PA
+  ibkr-contract: {conId: 15435308, currency: USD, description: SANOFI-ADR, exchange: SMART,
     primaryExchange: NASDAQ, symbol: SNY}
-  partners: [SAN.PA]
 SOF.BR:
+  adr: SOFT
   ibkr-contract: {conId: 36790770, currency: EUR, exchange: SMART, primaryExchange: ENEXT.BE,
     symbol: SOF}
-  partners: [SOFT]
 SOFT:
-  ibkr-contract: {conId: 89339724, currency: USD, description: SOFTECH INC, exchange: '',
+  adr-src: SOF.BR
+  ibkr-contract: {conId: 89339724, currency: USD, description: SOFTECH INC, exchange: SMART,
     primaryExchange: PINK, symbol: SOFT}
-  partners: [SOF.BR]
 SOLB.BR:
+  adr: SLVYY
   ibkr-contract: {conId: 228869, currency: EUR, exchange: SMART, primaryExchange: ENEXT.BE,
     symbol: SOLB}
-  partners: [SLVYY]
 SPM.MI:
+  adr: SAPMY
   ibkr-contract: {conId: 566597407, currency: EUR, exchange: SMART, primaryExchange: BVME,
     symbol: SPM}
-  partners: [SAPMY]
 SPX.L:
   ibkr-contract: {conId: 196961203, currency: GBP, exchange: SMART, primaryExchange: LSE,
     symbol: SPX}
 SRG.MI:
+  adr: SRGZ
   ibkr-contract: {conId: 14075063, currency: EUR, exchange: SMART, primaryExchange: BVME,
     symbol: SRG}
-  partners: [SRGZ]
 SRGZ:
-  ibkr-contract: {conId: 101776186, currency: USD, description: STAR GOLD CORP, exchange: '',
+  adr-src: SRG.MI
+  ibkr-contract: {conId: 101776186, currency: USD, description: STAR GOLD CORP, exchange: SMART,
     primaryExchange: PINK, symbol: SRGZ}
-  partners: [SRG.MI]
 SSE.L:
   ibkr-contract: {conId: 2570998, currency: GBP, exchange: SMART, primaryExchange: LSE,
     symbol: SSE}
 STERV.HE:
+  adr: SEOAY
   ibkr-contract: {conId: 29816588, currency: EUR, exchange: SMART, primaryExchange: HEX,
     symbol: STERV}
-  partners: [SEOAY]
 STJ.L:
   ibkr-contract: {conId: 12177246, currency: GBP, exchange: SMART, primaryExchange: LSE,
     symbol: STJ}
 STLA:
-  ibkr-contract: {conId: 463647466, currency: USD, description: STELLANTIS NV, exchange: '',
+  adr-src: STLAM.MI
+  ibkr-contract: {conId: 463647466, currency: USD, description: STELLANTIS NV, exchange: SMART,
     primaryExchange: NYSE, symbol: STLA}
-  partners: [STLAM.MI]
 STLAM.MI:
+  adr: STLA
   ibkr-contract: {conId: 463647471, currency: EUR, exchange: SMART, primaryExchange: SBF,
     symbol: STLAP}
-  partners: [STLA]
 STM:
+  adr-src: STMPA.PA
   ibkr-contract: {conId: 12460, currency: USD, description: STMICROELECTRONICS NV-NY
-      SHS, exchange: '', primaryExchange: NYSE, symbol: STM}
-  partners: [STMPA.PA]
+      SHS, exchange: SMART, primaryExchange: NYSE, symbol: STM}
 STMPA.PA:
+  adr: STM
   ibkr-contract: {conId: 29612246, currency: EUR, exchange: SMART, primaryExchange: SBF,
     symbol: STMPA}
-  partners: [STM]
 STR.VI:
+  adr: SBAGY
   ibkr-contract: {conId: 46691927, currency: EUR, exchange: SMART, primaryExchange: VSE,
     symbol: STR1}
-  partners: [SBAGY]
 SU.PA:
   ibkr-contract: {conId: 29612196, currency: EUR, exchange: SMART, primaryExchange: SBF,
     symbol: SU}
 SW.PA:
+  adr: SDXAY
   ibkr-contract: {conId: 29612218, currency: EUR, exchange: SMART, primaryExchange: SBF,
     symbol: SW}
-  partners: [SDXAY]
 SY1.DE:
+  adr: SYIEY
   ibkr-contract: {conId: 41963116, currency: EUR, exchange: SMART, primaryExchange: IBIS,
     symbol: SY1}
-  partners: [SYIEY]
 SYIEY:
+  adr-src: SY1.DE
   ibkr-contract: {conId: 54740795, currency: USD, description: SYMRISE AG-UNSPON ADR,
-    exchange: '', primaryExchange: PINK, symbol: SYIEY}
-  partners: [SY1.DE]
+    exchange: SMART, primaryExchange: PINK, symbol: SYIEY}
 TCYBY:
+  adr-src: TIETO.HE
   ibkr-contract: {conId: 56899964, currency: USD, description: TIETOEVRY OYJ-UNSP
-      ADR, exchange: '', primaryExchange: PINK, symbol: TCYBY}
-  partners: [TIETO.HE]
+      ADR, exchange: SMART, primaryExchange: PINK, symbol: TCYBY}
 TEF:
+  adr-src: TEF.MC
   ibkr-contract: {conId: 12702, currency: USD, description: TELEFONICA SA-SPON ADR,
-    exchange: '', primaryExchange: NYSE, symbol: TEF}
-  partners: [TEF.MC]
+    exchange: SMART, primaryExchange: NYSE, symbol: TEF}
 TEF.MC:
+  adr: TEF
   ibkr-contract: {conId: 30314159, currency: EUR, exchange: SMART, primaryExchange: BM,
     symbol: TEF}
-  partners: [TEF]
 TELIA1.HE:
+  adr: TLSNY
   ibkr-contract: {conId: 16660531, currency: EUR, exchange: SMART, primaryExchange: HEX,
     symbol: TELIA1}
-  partners: [TLSNY]
 TEN.MI:
+  adr: TS
   ibkr-contract: {conId: 26319561, currency: EUR, exchange: SMART, primaryExchange: BVME,
     symbol: TEN}
-  partners: [TS]
 TENERGY.AT:
+  adr: TREAY
   ibkr-contract: {conId: 310169244, currency: EUR, exchange: SMART, primaryExchange: ATH,
     symbol: TENERGY}
-  partners: [TREAY]
 THLLY:
+  adr-src: HO.PA
   ibkr-contract: {conId: 297693993, currency: USD, description: THALES SA - UNSP ADR,
-    exchange: '', primaryExchange: PINK, symbol: THLLY}
-  partners: [HO.PA]
+    exchange: SMART, primaryExchange: PINK, symbol: THLLY}
 TIAIY:
+  adr-src: TIT.MI
   ibkr-contract: {conId: 20754459, currency: USD, description: TELECOM ITALIA SPA-SPON
-      ADR, exchange: '', primaryExchange: PINK, symbol: TIAIY}
-  partners: [TIT.MI]
+      ADR, exchange: SMART, primaryExchange: PINK, symbol: TIAIY}
 TIETO.HE:
+  adr: TCYBY
   ibkr-contract: {conId: 29816594, currency: EUR, exchange: SMART, primaryExchange: HEX,
     symbol: TIETO}
-  partners: [TCYBY]
 TIT.MI:
+  adr: TIAIY
   ibkr-contract: {conId: 29816348, currency: EUR, exchange: SMART, primaryExchange: BVME,
     symbol: TIT}
-  partners: [TIAIY]
 TITC.AT:
   ibkr-contract: {conId: 375664597, currency: EUR, exchange: SMART, primaryExchange: ENEXT.BE,
     symbol: TITC}
@@ -1526,119 +1508,119 @@ TKWY.AS:
   ibkr-contract: {conId: 249769712, currency: EUR, exchange: SMART, primaryExchange: AEB,
     symbol: TKWY}
 TLGHY:
+  adr-src: TNET.BR
   ibkr-contract: {conId: 73133304, currency: USD, description: TELENET GROUP HOLD-UNSP
-      ADR, exchange: '', primaryExchange: PINK, symbol: TLGHY}
-  partners: [TNET.BR]
+      ADR, exchange: SMART, primaryExchange: PINK, symbol: TLGHY}
 TLSNY:
+  adr-src: TELIA1.HE
   ibkr-contract: {conId: 55279386, currency: USD, description: TELIA CO - UNSPON ADR,
-    exchange: '', primaryExchange: PINK, symbol: TLSNY}
-  partners: [TELIA1.HE]
+    exchange: SMART, primaryExchange: PINK, symbol: TLSNY}
 TNET.BR:
+  adr: TLGHY
   ibkr-contract: {conId: 36790975, currency: EUR, exchange: SMART, primaryExchange: ENEXT.BE,
     symbol: TNET}
-  partners: [TLGHY]
 TPEIR.AT:
+  adr: BPIRY
   ibkr-contract: {conId: 482640874, currency: EUR, exchange: SMART, primaryExchange: FWB2,
     symbol: BKP}
-  partners: [BPIRY]
 TREAY:
+  adr-src: TENERGY.AT
   ibkr-contract: {conId: 143869644, currency: USD, description: TERNA ENERGY SA-UNSP
-      ADR, exchange: '', primaryExchange: PINK, symbol: TREAY}
-  partners: [TENERGY.AT]
+      ADR, exchange: SMART, primaryExchange: PINK, symbol: TREAY}
 TRN.MI:
+  adr: TRNO
   ibkr-contract: {conId: 30664870, currency: EUR, exchange: SMART, primaryExchange: BVME,
     symbol: TRN}
-  partners: [TRNO]
 TRNO:
+  adr-src: TRN.MI
   ibkr-contract: {conId: 72086382, currency: USD, description: TERRENO REALTY CORP,
-    exchange: '', primaryExchange: NYSE, symbol: TRNO}
-  partners: [TRN.MI]
+    exchange: SMART, primaryExchange: NYSE, symbol: TRNO}
 TS:
-  ibkr-contract: {conId: 16675601, currency: USD, description: TENARIS SA-ADR, exchange: '',
+  adr-src: TEN.MI
+  ibkr-contract: {conId: 16675601, currency: USD, description: TENARIS SA-ADR, exchange: SMART,
     primaryExchange: NYSE, symbol: TS}
-  partners: [TEN.MI]
 TSCO.L:
   ibkr-contract: {conId: 471204140, currency: GBP, exchange: SMART, primaryExchange: LSE,
     symbol: TSCO}
 TTE:
+  adr-src: TTE.PA
   ibkr-contract: {conId: 12924, currency: USD, description: TOTALENERGIES SE -SPON
-      ADR, exchange: '', primaryExchange: NYSE, symbol: TTE}
-  partners: [TTE.PA]
+      ADR, exchange: SMART, primaryExchange: NYSE, symbol: TTE}
 TTE.PA:
+  adr: TTE
   ibkr-contract: {conId: 29612193, currency: EUR, exchange: SMART, primaryExchange: SBF,
     symbol: TTE}
-  partners: [TTE]
 TYRES.HE:
+  adr: NKRKY
   ibkr-contract: {conId: 15681527, currency: EUR, exchange: SMART, primaryExchange: HEX,
     symbol: TYRES}
-  partners: [NKRKY]
 UBI.PA:
+  adr: UBSFY
   ibkr-contract: {conId: 2953285, currency: EUR, exchange: SMART, primaryExchange: SBF,
     symbol: UBI}
-  partners: [UBSFY]
 UBSFY:
+  adr-src: UBI.PA
   ibkr-contract: {conId: 54740732, currency: USD, description: UBISOFT ENTERTAIN-UNSPON
-      ADR, exchange: '', primaryExchange: PINK, symbol: UBSFY}
-  partners: [UBI.PA]
+      ADR, exchange: SMART, primaryExchange: PINK, symbol: UBSFY}
 UCB.BR:
+  adr: UCBJY
   ibkr-contract: {conId: 917975, currency: EUR, exchange: SMART, primaryExchange: ENEXT.BE,
     symbol: UCB}
-  partners: [UCBJY]
 UCBJY:
+  adr-src: UCB.BR
   ibkr-contract: {conId: 76317100, currency: USD, description: UCB SA - UNSPONSORED
-      ADR, exchange: '', primaryExchange: PINK, symbol: UCBJY}
-  partners: [UCB.BR]
+      ADR, exchange: SMART, primaryExchange: PINK, symbol: UCBJY}
 UCG.MI:
+  adr: UNCRY
   ibkr-contract: {conId: 262695149, currency: EUR, exchange: SMART, primaryExchange: BVME,
     symbol: UCG}
-  partners: [UNCRY]
 UFGSY:
+  adr-src: UNI.MI
   ibkr-contract: {conId: 105804878, currency: USD, description: UNIPOL GRUPPO-UNSPON
-      ADR, exchange: '', primaryExchange: PINK, symbol: UFGSY}
-  partners: [UNI.MI]
+      ADR, exchange: SMART, primaryExchange: PINK, symbol: UFGSY}
 UMI.BR:
+  adr: UMICY
   ibkr-contract: {conId: 291956769, currency: EUR, exchange: SMART, primaryExchange: ENEXT.BE,
     symbol: UMI}
-  partners: [UMICY]
 UMICY:
+  adr-src: UMI.BR
   ibkr-contract: {conId: 73355839, currency: USD, description: UMICORE - UNSPON ADR,
-    exchange: '', primaryExchange: PINK, symbol: UMICY}
-  partners: [UMI.BR]
+    exchange: SMART, primaryExchange: PINK, symbol: UMICY}
 UN:
+  adr-src: UNA.AS
   ibkr-contract: {conId: 4641133, currency: USD, description: UNILEVER N V -NY SHARES,
-    exchange: '', primaryExchange: VALUE, symbol: UN}
-  partners: [UNA.AS]
+    exchange: SMART, primaryExchange: VALUE, symbol: UN}
 UNA.AS:
+  adr: UN
   ibkr-contract: {conId: 404271848, currency: EUR, exchange: AEB, primaryExchange: AEB,
     symbol: UNA}
-  partners: [UN]
 UNCRY:
+  adr-src: UCG.MI
   ibkr-contract: {conId: 288862703, currency: USD, description: UNICREDIT SPA-ADR,
-    exchange: '', primaryExchange: PINK, symbol: UNCRY}
-  partners: [UCG.MI]
+    exchange: SMART, primaryExchange: PINK, symbol: UNCRY}
 UNI.MC:
   ibkr-contract: {conId: 281130176, currency: EUR, exchange: SMART, primaryExchange: BM,
     symbol: UNI1}
 UNI.MI:
+  adr: UFGSY
   ibkr-contract: {conId: 105387889, currency: EUR, exchange: SMART, primaryExchange: BVME,
     symbol: UNI}
-  partners: [UFGSY]
 UNIXY:
+  adr-src: UQA.VI
   ibkr-contract: {conId: 404635245, currency: USD, description: UNIQA INSURANCE -
-      UNSP ADR, exchange: '', primaryExchange: PINK, symbol: UNIXY}
-  partners: [UQA.VI]
+      UNSP ADR, exchange: SMART, primaryExchange: PINK, symbol: UNIXY}
 UPM.HE:
+  adr: UPMMY
   ibkr-contract: {conId: 29816600, currency: EUR, exchange: SMART, primaryExchange: HEX,
     symbol: UPM}
-  partners: [UPMMY]
 UPMMY:
+  adr-src: UPM.HE
   ibkr-contract: {conId: 376491753, currency: USD, description: UPM-KYMMENE OYJ-UNSPON
-      ADR, exchange: '', primaryExchange: PINK, symbol: UPMMY}
-  partners: [UPM.HE]
+      ADR, exchange: SMART, primaryExchange: PINK, symbol: UPMMY}
 UQA.VI:
+  adr: UNIXY
   ibkr-contract: {conId: 14317525, currency: EUR, exchange: SMART, primaryExchange: VSE,
     symbol: UQA}
-  partners: [UNIXY]
 URW.PA:
   ibkr-contract: {conId: 320358733, currency: EUR, exchange: SMART, primaryExchange: SBF,
     symbol: URW}
@@ -1646,99 +1628,99 @@ VALMT.HE:
   ibkr-contract: {conId: 140345629, currency: EUR, exchange: SMART, primaryExchange: HEX,
     symbol: VALMT}
 VEOEY:
+  adr-src: VIE.PA
   ibkr-contract: {conId: 14089137, currency: USD, description: VEOLIA ENVIRONNEMENT-ADR,
-    exchange: '', primaryExchange: PINK, symbol: VEOEY}
-  partners: [VIE.PA]
+    exchange: SMART, primaryExchange: PINK, symbol: VEOEY}
 VER.VI:
+  adr: OEZVY
   ibkr-contract: {conId: 3306518, currency: EUR, exchange: SMART, primaryExchange: VSE,
     symbol: VER}
-  partners: [OEZVY]
 VIE.PA:
+  adr: VEOEY
   ibkr-contract: {conId: 29612206, currency: EUR, exchange: SMART, primaryExchange: SBF,
     symbol: VIE}
-  partners: [VEOEY]
 VIG.VI:
+  adr: VNRFY
   ibkr-contract: {conId: 35352636, currency: EUR, exchange: SMART, primaryExchange: VSE,
     symbol: VIG}
-  partners: [VNRFY]
 VINP:
+  adr-src: DG.PA
   ibkr-contract: {conId: 468054780, currency: USD, description: VINCI PARTNERS INVESTMENTS-A,
-    exchange: '', primaryExchange: NASDAQ, symbol: VINP}
-  partners: [DG.PA]
+    exchange: SMART, primaryExchange: NASDAQ, symbol: VINP}
 VIO.AT:
   ibkr-contract: {conId: 138171445, currency: EUR, exchange: SMART, primaryExchange: ENEXT.BE,
     symbol: VIO}
 VIV.PA:
+  adr: VIVHY
   ibkr-contract: {conId: 29612113, currency: EUR, exchange: SMART, primaryExchange: SBF,
     symbol: VIV}
-  partners: [VIVHY]
 VIVHY:
+  adr-src: VIV.PA
   ibkr-contract: {conId: 82785123, currency: USD, description: VIVENDI SE-UNSPON ADR,
-    exchange: '', primaryExchange: PINK, symbol: VIVHY}
-  partners: [VIV.PA]
+    exchange: SMART, primaryExchange: PINK, symbol: VIVHY}
 VLPNY:
+  adr-src: VOE.VI
   ibkr-contract: {conId: 54551403, currency: USD, description: VOESTALPINE AG-UNSPON
-      ADR, exchange: '', primaryExchange: PINK, symbol: VLPNY}
-  partners: [VOE.VI]
+      ADR, exchange: SMART, primaryExchange: PINK, symbol: VLPNY}
 VNA.DE:
+  adr: VONOY
   ibkr-contract: {conId: 130946869, currency: EUR, exchange: SMART, primaryExchange: IBIS,
     symbol: VNA}
-  partners: [VONOY]
 VNRFY:
+  adr-src: VIG.VI
   ibkr-contract: {conId: 87503162, currency: USD, description: VIENNA INSURANCE GRP-SP
-      ADR, exchange: '', primaryExchange: PINK, symbol: VNRFY}
-  partners: [VIG.VI]
+      ADR, exchange: SMART, primaryExchange: PINK, symbol: VNRFY}
 VOD.L:
   ibkr-contract: {conId: 140148322, currency: GBP, exchange: SMART, primaryExchange: LSE,
     symbol: VOD}
 VOE.VI:
+  adr: VLPNY
   ibkr-contract: {conId: 3306495, currency: EUR, exchange: SMART, primaryExchange: VSE,
     symbol: VOE}
-  partners: [VLPNY]
 VONOY:
+  adr-src: VNA.DE
   ibkr-contract: {conId: 282600737, currency: USD, description: VONOVIA SE-UNSP ADR,
-    exchange: '', primaryExchange: PINK, symbol: VONOY}
-  partners: [VNA.DE]
+    exchange: SMART, primaryExchange: PINK, symbol: VONOY}
 VOW3.DE:
+  adr: VWAGY
   ibkr-contract: {conId: 14237, currency: EUR, exchange: SMART, primaryExchange: IBIS,
     symbol: VOW3}
-  partners: [VWAGY]
 VWAGY:
+  adr-src: VOW3.DE
   ibkr-contract: {conId: 329173918, currency: USD, description: VOLKSWAGEN A G-UNSPON
-      ADR, exchange: '', primaryExchange: PINK, symbol: VWAGY}
-  partners: [VOW3.DE]
+      ADR, exchange: SMART, primaryExchange: PINK, symbol: VWAGY}
 WBRBY:
+  adr-src: WIE.VI
   ibkr-contract: {conId: 75220623, currency: USD, description: WIENERBERGER AG-SPON
-      ADR, exchange: '', primaryExchange: PINK, symbol: WBRBY}
-  partners: [WIE.VI]
+      ADR, exchange: SMART, primaryExchange: PINK, symbol: WBRBY}
 WDP.BR:
   ibkr-contract: {conId: 396411105, currency: EUR, exchange: SMART, primaryExchange: ENEXT.BE,
     symbol: WDP}
 WIE.VI:
+  adr: WBRBY
   ibkr-contract: {conId: 3306521, currency: EUR, exchange: SMART, primaryExchange: VSE,
     symbol: WIE}
-  partners: [WBRBY]
 WKL.AS:
+  adr: WTKWY
   ibkr-contract: {conId: 39498284, currency: EUR, exchange: SMART, primaryExchange: AEB,
     symbol: WKL}
-  partners: [WTKWY]
 WLN.PA:
+  adr: WRDLY
   ibkr-contract: {conId: 158556311, currency: EUR, exchange: FWB, primaryExchange: SBF,
     symbol: WLN}
-  partners: [WRDLY]
 WRDLY:
+  adr-src: WLN.PA
   ibkr-contract: {conId: 222852713, currency: USD, description: WORLDLINE SA - UNSP
-      ADR, exchange: '', primaryExchange: PINK, symbol: WRDLY}
-  partners: [WLN.PA]
+      ADR, exchange: SMART, primaryExchange: PINK, symbol: WRDLY}
 WTKWY:
+  adr-src: WKL.AS
   ibkr-contract: {conId: 69114935, currency: USD, description: WOLTERS KLUWER NV-SPONS
-      ADR, exchange: '', primaryExchange: PINK, symbol: WTKWY}
-  partners: [WKL.AS]
+      ADR, exchange: SMART, primaryExchange: PINK, symbol: WTKWY}
 ZAL.DE:
+  adr: ZLNDY
   ibkr-contract: {conId: 168731675, currency: EUR, exchange: SMART, primaryExchange: IBIS,
     symbol: ZAL}
-  partners: [ZLNDY]
 ZLNDY:
+  adr-src: ZAL.DE
   ibkr-contract: {conId: 193468277, currency: USD, description: ZALANDO SE - UNSPONSORED
-      ADR, exchange: '', primaryExchange: PINK, symbol: ZLNDY}
-  partners: [ZAL.DE]
+      ADR, exchange: SMART, primaryExchange: PINK, symbol: ZLNDY}

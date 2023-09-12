@@ -1,5 +1,9 @@
 from . import misc
 import requests
+from omnibelt import unspecified_argument, save_json, load_json
+import omnifig as fig
+
+from .general import Downloader
 
 
 class _AlphaVantageBase:
@@ -51,5 +55,65 @@ class AlphaVantageStocks(_AlphaVantageBase):
 
 # add economic indicators, forex, etc.
 
+
+
+@fig.component('downloader/alpha-vantage')
+class Alpha_Vantage_Downloader(Downloader, fig.Configurable):
+	def __init__(self, av_api=None, *, root=None, keys=None, date=None, **kwargs):
+		if av_api is None:
+			av_api = AlphaVantageStocks()
+		if root is None:
+			root = misc.alpha_vantage_root()
+		super().__init__(root=root, **kwargs)
+		if keys is None:
+			keys = list(self.report_keys())
+		self.av = av_api
+		self.default_keys = keys
+		self.date = date
+
+	_report_keys = ['overview', 'income_statement', 'balance_sheet', 'cash_flow', 'earnings',
+					'earnings_calendar', 'ipo_calendar', 'listing_status']
+	def report_keys(self):
+		yield from self._report_keys
+
+	def report_path(self, ticker, key, date=unspecified_argument):
+		if date is unspecified_argument:
+			date = self.date
+		path = misc.get_date_path(self.root, ticker, date=date)
+		return path / f'{key}.json'
+
+	def load_report(self, ticker, key, date=unspecified_argument):
+		path = self.report_path(ticker, key, date=date)
+		return load_json(path)
+		# with path.open('r') as f:
+		# 	return xmltodict.parse(f.read())
+
+	def download_reports(self, ticker, *, keys=None, ignore_existing=False, pbar=None, date=unspecified_argument):
+		if keys is None:
+			keys = self.default_keys
+
+		results = {}
+
+		itr = keys if pbar is None else pbar(keys, total=len(keys))
+		for key in itr:
+			if pbar is not None:
+				itr.set_description(f'{ticker} {key}')
+
+			filepath = self.report_path(ticker, key, date=date)
+			if filepath.exists() and not ignore_existing:
+				continue
+
+			try:
+				data = getattr(self.av, key)(ticker)
+				if data is None:
+					data = ''
+				save_json(data, filepath)
+			except KeyboardInterrupt:
+				raise
+			except Exception as e:
+				results[key] = e
+			else:
+				results[key] = filepath
+		return results
 
 

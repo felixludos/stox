@@ -1,0 +1,5 @@
+
+downloaders.av:
+  _type: downloader/alpha-vantage
+
+

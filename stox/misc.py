@@ -75,6 +75,10 @@ def ibkr_root():
 	'''Returns the root directory for the IBKR data.'''
 	return data_root() / 'ibkr_data'
 
+def alpha_vantage_root():
+	'''Returns the root directory for the Alpha Vantage data.'''
+	return data_root() / 'alpha_vantage_data'
+
 
 def str_similarity(string1: str, string2: str):
 	distance = Levenshtein.distance(string1, string2)
