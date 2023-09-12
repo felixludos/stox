@@ -2,6 +2,7 @@ from . import misc
 import requests
 from omnibelt import unspecified_argument, save_json, load_json
 import omnifig as fig
+from omniply import tool, ToolKit, Context, AbstractGig
 
 from .general import Downloader
 
@@ -54,8 +55,6 @@ class AlphaVantageStocks(_AlphaVantageBase):
 
 
 # add economic indicators, forex, etc.
-
-
 
 @fig.component('downloader/alpha-vantage')
 class Alpha_Vantage_Downloader(Downloader, fig.Configurable):
@@ -115,5 +114,18 @@ class Alpha_Vantage_Downloader(Downloader, fig.Configurable):
 			else:
 				results[key] = filepath
 		return results
+
+
+@fig.component('loader/alpha-vantage')
+class Alpha_Vantage_Loader(ToolKit, fig.Configurable):
+	def __init__(self, downloader=None, **kwargs):
+		if downloader is None:
+			downloader = Alpha_Vantage_Downloader()
+		super().__init__(**kwargs)
+		self.downloader = downloader
+		self.extend(tool(report)(lambda ticker, date: self.downloader.load_report(ticker, report, date=date))
+					for report in self.downloader.report_keys())
+
+
 
 
