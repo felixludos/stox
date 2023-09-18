@@ -4,7 +4,7 @@ from omnibelt import unspecified_argument, save_json, load_json
 import omnifig as fig
 from omniply import tool, ToolKit, Context, AbstractGig
 
-from .general import Downloader
+from .general import Downloader, Quantity
 
 
 class _AlphaVantageBase:
@@ -106,6 +106,8 @@ class Alpha_Vantage_Downloader(Downloader, fig.Configurable):
 				data = getattr(self.av, key)(ticker)
 				if data is None:
 					data = ''
+				if isinstance(data, dict) and 'Note' in data:
+					raise ValueError(f'API call failed: {data["Note"]}')
 				save_json(data, filepath)
 			except KeyboardInterrupt:
 				raise
@@ -116,6 +118,19 @@ class Alpha_Vantage_Downloader(Downloader, fig.Configurable):
 		return results
 
 
+
+class ReportLoader:
+	def __init__(self, downloader, report):
+		if downloader is None:
+			downloader = Alpha_Vantage_Downloader()
+		self.downloader = downloader
+		self.report = report
+
+	def __call__(self, ticker, date=unspecified_argument):
+		return self.downloader.load_report(ticker, self.report, date=date)
+
+
+
 @fig.component('loader/alpha-vantage')
 class Alpha_Vantage_Loader(ToolKit, fig.Configurable):
 	def __init__(self, downloader=None, **kwargs):
@@ -123,9 +138,86 @@ class Alpha_Vantage_Loader(ToolKit, fig.Configurable):
 			downloader = Alpha_Vantage_Downloader()
 		super().__init__(**kwargs)
 		self.downloader = downloader
-		self.extend(tool(report)(lambda ticker, date: self.downloader.load_report(ticker, report, date=date))
-					for report in self.downloader.report_keys())
+		self.extend(tool(report)(ReportLoader(downloader, report)) for report in self.downloader.report_keys())
 
+
+@fig.component('stats/alpha-vantage')
+class Alpha_Vantage_Stats(ToolKit, fig.Configurable):
+	@tool('sector')
+	def get_sector(self, overview):
+		return overview.get('Sector', '').capitalize()
+
+	@tool('industry')
+	def get_industry(self, overview):
+		return overview.get('Industry', '').capitalize()
+
+	@tool('market_cap')
+	def get_market_cap(self, overview):
+		return Quantity(float(overview.get('MarketCapitalization')), overview.get('Currency'))
+
+	@tool('peg_ratio')
+	def get_peg_ratio(self, overview):
+		return float(overview.get('PEGRatio', float('nan')))
+
+	@tool('pe_ratio')
+	def get_pe_ratio(self, overview):
+		return float(overview.get('PERatio', float('nan')))
+
+	@tool('dividend_yield')
+	def get_dividend_yield(self, overview):
+		return Quantity(float(overview.get('DividendYield', float('nan')))*100, '%')
+
+	@tool('eps')
+	def get_eps(self, overview):
+		return Quantity(float(overview.get('EPS', float('nan'))), overview.get('Currency'))
+
+	@tool('beta')
+	def get_beta(self, overview):
+		return float(overview.get('Beta', float('nan')))
+
+	@tool('profit_margin')
+	def get_profit_margin(self, overview):
+		return Quantity(float(overview.get('ProfitMargin', float('nan')))*100, '%')
+
+	@tool('target_price')
+	def get_target_price(self, overview):
+		return Quantity(float(overview.get('AnalystTargetPrice', float('nan'))), overview.get('Currency'))
+
+	@tool('trailing_pe')
+	def get_trailing_pe(self, overview):
+		return float(overview.get('TrailingPE', float('nan')))
+
+	@tool('forward_pe')
+	def get_forward_pe(self, overview):
+		return float(overview.get('ForwardPE', float('nan')))
+
+	@tool('high_52w')
+	def get_high_52w(self, overview):
+		return Quantity(float(overview.get('52WeekHigh', float('nan'))), overview.get('Currency'))
+
+	@tool('low_52w')
+	def get_low_52w(self, overview):
+		return Quantity(float(overview.get('52WeekLow', float('nan'))), overview.get('Currency'))
+
+	@tool('av_50d')
+	def get_av_50d(self, overview):
+		return Quantity(float(overview.get('50DayMovingAverage', float('nan'))), overview.get('Currency'))
+
+	@tool('av_200d')
+	def get_av_200d(self, overview):
+		return Quantity(float(overview.get('200DayMovingAverage', float('nan'))), overview.get('Currency'))
+
+	@tool('ebitda')
+	def get_ebitda(self, overview):
+		return Quantity(float(overview.get('EBITDA', float('nan'))), overview.get('Currency'))
+
+	@tool('description')
+	def get_description(self, overview):
+		return overview.get('Description', '')
+
+	@tool('company_name')
+	def get_name(self, overview):
+		return overview.get('Name', '')
 
 
 

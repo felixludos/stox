@@ -12,7 +12,7 @@ import omnifig as fig
 
 
 @fig.script('download')
-def download_symbols(config: fig.Node):
+def download_symbols(config: fig.Configuration):
 	config.silent = config.pull('silent', config.silent, silent=True)
 	symbol_table = load_symbol_table()
 	len(symbol_table)
@@ -69,7 +69,7 @@ def download_symbols(config: fig.Node):
 
 
 @fig.script('ib-search')
-def find_symbol(config: fig.Node):
+def find_symbol(config: fig.Configuration):
 	config.silent = config.pull('silent', config.silent, silent=True)
 	config.push('api._type', 'ib-extractor', silent=True, overwrite=False)
 	ibe = config.pull('api')
@@ -191,9 +191,12 @@ def find_symbol(config: fig.Node):
 
 
 @fig.script('euro-stats')
-def save_stats(config: fig.Node):
+def save_stats(config: fig.Configuration):
 	config.silent = config.pull('silent', config.silent, silent=True)
 	container_source = config.peek('container')
+	ctx = container_source.create()
+	ctx['ticker'] = 'BBVA.MC'
+	ctx['date'] = 'last'
 	def create_container(yfsym, date):
 		with container_source.silence():
 			ctx = container_source.create()

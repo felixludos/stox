@@ -272,7 +272,7 @@ class Yahoo_Loader(ToolKit, fig.Configurable):
 			downloader = Yahoo_Downloader()
 		super().__init__()
 		self.downloader = downloader
-		self.extend(ReportLoader(downloader, report) for report in self.downloader.report_keys())
+		self.extend(tool(report)(ReportLoader(downloader, report)) for report in self.downloader.report_keys())
 
 	# @tool('yfsym')
 	# def get_yfsym(self, ticker):
@@ -282,12 +282,6 @@ class Yahoo_Loader(ToolKit, fig.Configurable):
 
 @fig.component('yahoo-info')
 class Yahoo_Info(ToolKit, fig.Configurable):
-	def __init__(self, root=None):
-		if root is None:
-			root = misc.yahoo_root()
-		super().__init__()
-		self.root = root
-
 	@tool('country')
 	def get_country(self, info):
 		return info.get('country')

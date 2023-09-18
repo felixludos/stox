@@ -2,4 +2,41 @@
 downloaders.av:
   _type: downloader/alpha-vantage
 
+  keys: [overview]
+
+
+tickers:
+  - ACM
+  - ARGX
+  - ASMB
+  - ASML
+  - BBVA
+  - BSBR
+  - BUD
+  - CNHI
+  - DB
+  - ENIC
+  - GLPG
+  - INGN
+  - LIN
+  - MBI
+  - MLNK
+  - MRK
+  - MT
+  - NOK
+  - PHG
+  - RACE
+  - RELX
+  - SAP
+  - SHEL
+  - SNY
+  - STLA
+  - STM
+  - TEF
+  - TRNO
+  - TS
+  - TTE
+  - VINP
+
+
 

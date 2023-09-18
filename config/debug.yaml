@@ -1,14 +1,14 @@
 
-#_base: [container, euro]
-#
-#_meta.script_name: euro-stats
-#
-#portfolio.name: fe-aug23.txt
-#
-#date: 230909
-#
-#overwrite: yes
-##ignore-errors: yes
+_base: [container, euro]
+
+_meta.script_name: euro-stats
+
+portfolio-name: fe-aug23.txt
+
+date: 230909
+
+overwrite: yes
+#ignore-errors: yes
 
 
 
@@ -29,13 +29,14 @@
 ################
 
 
-_base: [dl/yf, dl/ib, dl/av]
-
-_meta.script_name: download
-
-date: 230909
-
-#tickers: [CON.DE]
+##_base: [dl/yf, dl/ib, dl/av]
+#_base: [dl/av]
+#
+#_meta.script_name: download
+#
+#date: 230909
+#
+##tickers: [CON.DE]
 
 
 

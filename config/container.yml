@@ -1,22 +1,22 @@
 
-portfolio:
-  _type: portfolio-loader
-  name: <>portfolio-name
+
 
 container:
   _type: context
 
   gadgets:
     common._type: common-stats
-    yahoo:
-      _type: scope
+#    yahoo:
+#      _type: scope
+#
+#      gadgets:
+    loader._type: yahoo-loader
+    info._type: yahoo-info
 
-      gadgets:
-        loader._type: yahoo-loader
-        info._type: yahoo-info
-        portfolio-loader: <>portfolio
-
-
+#    portfolio-loader: <>portfolio
+    portfolio:
+      _type: portfolio-loader
+      name: <>portfolio-name
 
 
 

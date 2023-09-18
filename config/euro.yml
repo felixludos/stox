@@ -9,6 +9,8 @@ features:
   #	display_sector: Sector
   industry: Industry
 
+  volume_10d: 10 Day Average Volume
+
   price: Price
   shares: Current Shares
 
@@ -17,7 +19,18 @@ features:
   recommendation_key: Recommendation Key
   recommendation_mean: Recommendation Mean (1=Strong Buy, 5=Strong Sell)
 
+  target_mean_price: Target Mean Price
+  target_high_price: Target High Price
+  target_low_price: Target Low Price
+  target_median_price: Target Median Price
+
   peg_ratio: PEG Ratio
+
+  trailing_pe: Trailing P/E
+  forward_pe: Forward P/E
+
+  trailing_eps: Trailing EPS
+  forward_eps: Forward EPS
 
   change_52w: 52 Week Change
 
@@ -29,6 +42,10 @@ features:
 
   held_percent_institutions: Percent of Shares Held by Institutions
   held_percent_insiders: Percent of Shares Held by Insiders
+
+  business_summary: Company Description
+
+
 
 
 
