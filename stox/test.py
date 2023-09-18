@@ -54,5 +54,17 @@ def test_ibkr():
 	rec = gg['recommendation_mean']
 	print(rec)
 
+import omnifig as fig
+
+def test_container():
+	fig.initialize()
+
+	cfg = fig.create_config('container', 'euro', portfolio_name='fe-aug23.txt').peek('container')
+	# cfg = fig.create_config('container', 'euro')
+	print(cfg)
+
+	ctx = cfg.create()
+	print(ctx)
+
 
 

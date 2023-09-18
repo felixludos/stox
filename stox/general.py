@@ -227,7 +227,7 @@ class PortfolioLoader(ToolKit, fig.Configurable):
 		self.portfolio = None
 		if path is not None and path.exists():
 			symbols_table = load_symbol_table()
-			ib2yf = {v['ib-contract']['symbol']: k for k, v in symbols_table.items()}
+			ib2yf = {v['ibkr-contract']['symbol']: k for k, v in symbols_table.items()}
 			portfolio_list = misc.extract_tickers_and_shares(path)
 			portfolio = dict(portfolio_list)
 			assert len(portfolio) == len(portfolio_list), f'Duplicate tickers in {path}'
