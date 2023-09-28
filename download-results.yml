@@ -1,1 +1,97 @@
-{}
+ADYEN.AS:
+  yahoo: {institutional_holders: 'ValueError(''time data "Jun 30, 2023" doesn\''t
+      match format "%B %d, %Y", at position 1. You might want to try:\n    - passing
+      `format` if your strings have a consistent format;\n    - passing `format=\''ISO8601\''`
+      if your strings are all ISO8601 but not necessarily in exactly the same format;\n    -
+      passing `format=\''mixed\''`, and the format will be inferred for each element
+      individually. You might want to use `dayfirst` alongside this.'')'}
+ARGX.BR:
+  yahoo: {institutional_holders: 'ValueError(''time data "Apr 30, 2023" doesn\''t
+      match format "%B %d, %Y", at position 1. You might want to try:\n    - passing
+      `format` if your strings have a consistent format;\n    - passing `format=\''ISO8601\''`
+      if your strings are all ISO8601 but not necessarily in exactly the same format;\n    -
+      passing `format=\''mixed\''`, and the format will be inferred for each element
+      individually. You might want to use `dayfirst` alongside this.'')', mutualfund_holders: 'ValueError(''time
+      data "Apr 30, 2023" doesn\''t match format "%B %d, %Y", at position 1. You might
+      want to try:\n    - passing `format` if your strings have a consistent format;\n    -
+      passing `format=\''ISO8601\''` if your strings are all ISO8601 but not necessarily
+      in exactly the same format;\n    - passing `format=\''mixed\''`, and the format
+      will be inferred for each element individually. You might want to use `dayfirst`
+      alongside this.'')'}
+CABK.MC:
+  yahoo: {institutional_holders: 'ValueError(''time data "Jun 30, 2023" doesn\''t
+      match format "%B %d, %Y", at position 1. You might want to try:\n    - passing
+      `format` if your strings have a consistent format;\n    - passing `format=\''ISO8601\''`
+      if your strings are all ISO8601 but not necessarily in exactly the same format;\n    -
+      passing `format=\''mixed\''`, and the format will be inferred for each element
+      individually. You might want to use `dayfirst` alongside this.'')'}
+EBS.VI:
+  yahoo: {institutional_holders: 'ValueError(''time data "Apr 30, 2023" doesn\''t
+      match format "%B %d, %Y", at position 1. You might want to try:\n    - passing
+      `format` if your strings have a consistent format;\n    - passing `format=\''ISO8601\''`
+      if your strings are all ISO8601 but not necessarily in exactly the same format;\n    -
+      passing `format=\''mixed\''`, and the format will be inferred for each element
+      individually. You might want to use `dayfirst` alongside this.'')'}
+GALP.LS:
+  yahoo: {institutional_holders: 'ValueError(''time data "Apr 30, 2023" doesn\''t
+      match format "%B %d, %Y", at position 2. You might want to try:\n    - passing
+      `format` if your strings have a consistent format;\n    - passing `format=\''ISO8601\''`
+      if your strings are all ISO8601 but not necessarily in exactly the same format;\n    -
+      passing `format=\''mixed\''`, and the format will be inferred for each element
+      individually. You might want to use `dayfirst` alongside this.'')'}
+HTO.AT:
+  yahoo: {institutional_holders: 'ValueError(''time data "Apr 30, 2023" doesn\''t
+      match format "%B %d, %Y", at position 2. You might want to try:\n    - passing
+      `format` if your strings have a consistent format;\n    - passing `format=\''ISO8601\''`
+      if your strings are all ISO8601 but not necessarily in exactly the same format;\n    -
+      passing `format=\''mixed\''`, and the format will be inferred for each element
+      individually. You might want to use `dayfirst` alongside this.'')'}
+KER.PA:
+  yahoo: {institutional_holders: 'ValueError(''time data "Apr 30, 2023" doesn\''t
+      match format "%B %d, %Y", at position 1. You might want to try:\n    - passing
+      `format` if your strings have a consistent format;\n    - passing `format=\''ISO8601\''`
+      if your strings are all ISO8601 but not necessarily in exactly the same format;\n    -
+      passing `format=\''mixed\''`, and the format will be inferred for each element
+      individually. You might want to use `dayfirst` alongside this.'')'}
+LR.PA:
+  yahoo: {institutional_holders: 'ValueError(''time data "Apr 30, 2023" doesn\''t
+      match format "%B %d, %Y", at position 1. You might want to try:\n    - passing
+      `format` if your strings have a consistent format;\n    - passing `format=\''ISO8601\''`
+      if your strings are all ISO8601 but not necessarily in exactly the same format;\n    -
+      passing `format=\''mixed\''`, and the format will be inferred for each element
+      individually. You might want to use `dayfirst` alongside this.'')'}
+OR.PA:
+  yahoo: {institutional_holders: 'ValueError(''time data "Aug 31, 2023" doesn\''t
+      match format "%B %d, %Y", at position 1. You might want to try:\n    - passing
+      `format` if your strings have a consistent format;\n    - passing `format=\''ISO8601\''`
+      if your strings are all ISO8601 but not necessarily in exactly the same format;\n    -
+      passing `format=\''mixed\''`, and the format will be inferred for each element
+      individually. You might want to use `dayfirst` alongside this.'')'}
+PRY.MI:
+  yahoo: {institutional_holders: 'ValueError(''time data "Apr 30, 2023" doesn\''t
+      match format "%B %d, %Y", at position 1. You might want to try:\n    - passing
+      `format` if your strings have a consistent format;\n    - passing `format=\''ISO8601\''`
+      if your strings are all ISO8601 but not necessarily in exactly the same format;\n    -
+      passing `format=\''mixed\''`, and the format will be inferred for each element
+      individually. You might want to use `dayfirst` alongside this.'')'}
+RACE.MI:
+  yahoo: {institutional_holders: 'ValueError(''time data "Jun 30, 2023" doesn\''t
+      match format "%B %d, %Y", at position 1. You might want to try:\n    - passing
+      `format` if your strings have a consistent format;\n    - passing `format=\''ISO8601\''`
+      if your strings are all ISO8601 but not necessarily in exactly the same format;\n    -
+      passing `format=\''mixed\''`, and the format will be inferred for each element
+      individually. You might want to use `dayfirst` alongside this.'')'}
+UMI.BR:
+  yahoo: {institutional_holders: 'ValueError(''time data "Apr 30, 2023" doesn\''t
+      match format "%B %d, %Y", at position 1. You might want to try:\n    - passing
+      `format` if your strings have a consistent format;\n    - passing `format=\''ISO8601\''`
+      if your strings are all ISO8601 but not necessarily in exactly the same format;\n    -
+      passing `format=\''mixed\''`, and the format will be inferred for each element
+      individually. You might want to use `dayfirst` alongside this.'')'}
+ZAL.DE:
+  yahoo: {institutional_holders: 'ValueError(''time data "Jun 30, 2023" doesn\''t
+      match format "%B %d, %Y", at position 1. You might want to try:\n    - passing
+      `format` if your strings have a consistent format;\n    - passing `format=\''ISO8601\''`
+      if your strings are all ISO8601 but not necessarily in exactly the same format;\n    -
+      passing `format=\''mixed\''`, and the format will be inferred for each element
+      individually. You might want to use `dayfirst` alongside this.'')'}

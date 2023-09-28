@@ -272,7 +272,7 @@ class Yahoo_Loader(ToolKit, fig.Configurable):
 			downloader = Yahoo_Downloader()
 		super().__init__()
 		self.downloader = downloader
-		self.extend(tool(report)(ReportLoader(downloader, report)) for report in self.downloader.report_keys())
+		self.extend(ReportLoader(downloader, report) for report in self.downloader.report_keys())
 
 	# @tool('yfsym')
 	# def get_yfsym(self, ticker):

@@ -25,6 +25,7 @@ features:
   target_median_price: Target Median Price
 
   peg_ratio: PEG Ratio
+  beta: Beta
 
   trailing_pe: Trailing P/E
   forward_pe: Forward P/E

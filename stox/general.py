@@ -224,8 +224,10 @@ class PortfolioLoader(ToolKit, fig.Configurable):
 			if name is not None:
 				path = root / name
 		super().__init__(**kwargs)
-		self.portfolio = None
+		self.portfolio = {'ITX.MC': 34, 'RACE.MI': 5, 'ARGX.BR': 2, 'SAP.DE': 10, 'PRX.AS': 16, 'ASML.AS': 3, 'MC.PA': 2, 'ETE.AT': 95, 'AIR.PA': 9, 'PHIA.AS': 41, 'LIN.DE': 3, 'SU.PA': 5, 'SIE.DE': 8, 'BBVA.MC': 45, 'IIA.VI': 20, 'ENEL.MI': 139, 'STMPA.PA': 12, 'ISP.MI': 130, 'IAG.MC': 280, 'ALV.DE': 5, 'SAN.PA': 13, 'BNP.PA': 9, '0EXG.IL': 22, 'REN.AS': 23, 'EBS.VI': 23, 'AI.PA': 5, 'KER.PA': 2, 'TTE.PA': 3, 'IFX.DE': 9, 'HO.PA': 2, 'UCB.BR': 3, 'DTE.DE': 7, 'AMS.MC': 11, 'AD.AS': 8, 'CS.PA': 15, 'ENI.MI': 28, 'SHELL.AS': 8, 'LHA.DE': 24, 'KBC.BR': 9, 'ABI.BR': 3, 'RBI.VI': 45, 'BAS.DE': 6, 'UBI.PA': 18, 'ATS.VI': 20, 'IBE.MC': 102, 'MRL.MC': 40, 'TEN.MI': 21, 'OMV.VI': 5, 'MRK.DE': 5, 'ZAL.DE': 12, 'BAYN.DE': 8, 'CNHI.MI': 28, 'VER.VI': 14, 'NEXI.MI': 40, 'WDP.BR': 25, 'NOKIA.HE': 198, 'VNA.DE': 19, 'UNA.AS': 6, 'BMW.DE': 2, 'FORTUM.HE': 15, 'DTG.DE': 5}
 		if path is not None and path.exists():
+			if self.portfolio is not None:
+				raise ValueError('Cannot specify both path and portfolio')
 			symbols_table = load_symbol_table()
 			ib2yf = {v['ibkr-contract']['symbol']: k for k, v in symbols_table.items()}
 			portfolio_list = misc.extract_tickers_and_shares(path)

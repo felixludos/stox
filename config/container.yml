@@ -1,5 +1,5 @@
 
-
+#_base: [portfolios/sep23]
 
 container:
   _type: context
@@ -16,7 +16,8 @@ container:
 #    portfolio-loader: <>portfolio
     portfolio:
       _type: portfolio-loader
-      name: <>portfolio-name
+#      name: <>portfolio-name
+#      portfolio: <>full-portfolio
 
 
 
