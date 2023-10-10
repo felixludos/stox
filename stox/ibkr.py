@@ -1,5 +1,5 @@
 from .imports import *
-from ib_insync import *
+# from ib_insync import *
 from . import misc
 
 from . import misc, yahoo
@@ -75,7 +75,7 @@ class IB_Extractor(fig.Configurable):
 
 
 
-def describe_contract(ibe: IB_Extractor, contract: str | Contract, *, snapshot=None,
+def describe_contract(ibe: IB_Extractor, contract, *, snapshot=None,
 					  name=True, info=True, industries=True, summary=True, price=True, market_cap=True):
 	if isinstance(contract, str):
 		contract = ibe.find_contract(contract)

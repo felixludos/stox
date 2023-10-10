@@ -3,15 +3,16 @@ _base: [container, euro]
 
 _meta.script_name: euro-stats
 
-outpath: assets/euro-stats-sep9.csv
+#outpath: assets/euro-stats-sep9.csv
 #outpath: assets/euro-stats-sep28.csv
+outpath: assets/euro-stats-stoxx50.csv
 
 #portfolio-name: fe-aug23.txt
 
-date: 230909
-#date: 230928
+#date: 230909
+date: 230928
 
-overwrite: yes
+#overwrite: yes
 #ignore-errors: yes
 
 
