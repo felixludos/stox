@@ -54,6 +54,23 @@ class Context(_Context, fig.Configurable):
 
 
 
+sector_colors = {
+    "Technology": "#6495ED",  # Cornflower Blue
+    "Health Care": "#2E8B57",  # Sea Green
+    "Financials": "#FFD700",  # Gold
+    "Consumer Discretionary": "#DC143C",  # Crimson
+    "Consumer Staples": "#FFA500",  # Orange
+    "Energy": "#FFD300",  # Bright Yellow
+    "Utilities": "#20B2AA",  # Light Sea Green
+    "Industrials": "#800080",  # Purple
+    "Materials": "#8B4513",  # Saddle Brown
+    "Real Estate": "#FF69B4",  # Hot Pink
+    "Communication Services": "#98FB98",  # Pale Green
+	'None': '#999999',
+}
+
+
+
 country_flags = {
 	'Switzerland': '🇨🇭',
 	'Austria': '🇦🇹',

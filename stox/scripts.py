@@ -194,9 +194,9 @@ def find_symbol(config: fig.Configuration):
 def save_stats(config: fig.Configuration):
 	config.silent = config.pull('silent', config.silent, silent=True)
 	container_source = config.peek('container')
-	ctx = container_source.create()
-	ctx['ticker'] = 'BBVA.MC'
-	ctx['date'] = 'last'
+	# ctx = container_source.create()
+	# ctx['ticker'] = 'BBVA.MC'
+	# ctx['date'] = 'last'
 	def create_container(yfsym, date):
 		with container_source.silence():
 			ctx = container_source.create()

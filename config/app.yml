@@ -1,6 +1,21 @@
 
+#_base: [eur-tickers, euro, container]
+
+#_base: [demo, container]
+_base: [eur-tickers, container]
+
+
+features: [
+  price,
+  yield,
+#  shares,
+  peg_ratio,
+  beta,
+  log_market_cap,
+  recommendation_mean,
+  overall_risk,
+]
 
 
 
-hello: [1,2]
 

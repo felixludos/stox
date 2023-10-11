@@ -15,7 +15,10 @@ from streamlit_elements import elements, dashboard, mui, editor, media, lazy, sy
 
 import omnifig as fig
 
-st.set_page_config(layout="wide")
+
+if 'sidebar_state' not in st.session_state:
+	st.session_state.sidebar_state = 'expanded'
+st.set_page_config(layout="wide", initial_sidebar_state=st.session_state.sidebar_state)
 
 @st.cache_resource
 def load_config():
@@ -26,7 +29,26 @@ cfg = load_config()
 # st.title(f'Simple Streamlit Demo')
 @st.cache_resource
 def load_cards():
-	p = Portfolio([Card(f'Stock{i+1}') for i in range(6)])
+	container_source = cfg.peek('container')
+	def create_container(yfsym, date):
+		with container_source.silence():
+			ctx = container_source.create()
+		ctx['ticker'] = yfsym
+		ctx['date'] = date
+		return ctx
+
+	date = cfg.pull('date', 'last')
+	date = str(date)
+
+	tickers = cfg.pull('tickers', None)
+
+	features = cfg.pull('features')
+	if isinstance(features, dict):
+		features = list(features.keys())
+
+	infos = [create_container(yfsym, date) for yfsym in tickers[:40]] # testing
+	p = Portfolio()
+	p.populate([Card(info, features) for info in infos])
 	return p
 p = load_cards()
 
@@ -39,7 +61,18 @@ p = load_cards()
 
 p.display()
 
-st.write(f'Card values: {sum(card.weight for card in p.cards):.2f}')
+# Initialize a session state variable that tracks the sidebar state (either 'expanded' or 'collapsed').
+
+# # Show title and description of the app.
+# st.title('Example: Controlling sidebar programmatically')
+# st.sidebar.markdown('This is an example Streamlit app to show how to expand and collapse the sidebar programmatically.')
+#
+# # Toggle sidebar state between 'expanded' and 'collapsed'.
+# if st.button('Click to toggle sidebar state'):
+# 	st.session_state.sidebar_state = 'collapsed' if st.session_state.sidebar_state == 'expanded' else 'expanded'
+# 	# Force an app rerun after switching the sidebar state.
+# 	st.rerun()
+
 
 
 ########################################################################################################################
