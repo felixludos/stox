@@ -26,13 +26,12 @@ cfg = load_config()
 # st.title(f'Simple Streamlit Demo')
 @st.cache_resource
 def load_cards():
-	p = Portfolio([Card(f'Stock{i+1}') for i in range(50)])
+	p = Portfolio([Card(f'Stock{i+1}') for i in range(6)])
 	return p
 p = load_cards()
 
 
-with st.sidebar:
-	st.title("Cards")
+# with st.sidebar:
 	# st.header("Day 27 - Streamlit Elements")
 	# st.write("Build a draggable and resizable dashboard with Streamlit Elements.")
 
@@ -40,8 +39,7 @@ with st.sidebar:
 
 p.display()
 
-st.write(f'Card values: {sum(card.weight for card in p.cards):.2f} {[card.weight for card in p.cards]}')
-st.write(f'Card locked: {[card.locked for card in p.cards]}')
+st.write(f'Card values: {sum(card.weight for card in p.cards):.2f}')
 
 
 ########################################################################################################################
