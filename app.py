@@ -74,6 +74,10 @@ p.display()
 # 	st.rerun()
 
 
+# if st.button('click me'):
+# 	do_somthing()
+#
+# st.button('click me', on_click=do_somthing)
 
 ########################################################################################################################
 
