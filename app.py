@@ -11,7 +11,7 @@ from stox.streamlit import Card, Portfolio
 # As for Streamlit Elements, we will need all these objects.
 # All available objects and there usage are listed there: https://github.com/okld/streamlit-elements#getting-started
 
-from streamlit_elements import elements, dashboard, mui, editor, media, lazy, sync, nivo
+# from streamlit_elements import elements, dashboard, mui, editor, media, lazy, sync, nivo
 
 import omnifig as fig
 
