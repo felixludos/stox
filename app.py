@@ -26,7 +26,6 @@ def load_config():
 	return fig.create_config('app')
 cfg = load_config()
 
-# st.title(f'Simple Streamlit Demo')
 @st.cache_resource
 def load_cards():
 	container_source = cfg.peek('container')
@@ -47,19 +46,17 @@ def load_cards():
 		features = list(features.keys())
 
 	infos = [create_container(yfsym, date) for yfsym in tickers[:40]] # testing
-	p = Portfolio()
-	p.populate([Card(info, features) for info in infos])
-	return p
-p = load_cards()
+	# p = Portfolio()
+	# p.populate([Card(info, features) for info in infos])
+	# return p
+# p = load_cards()
+
+def load_data():
+	return load_cards()
 
 
-# with st.sidebar:
-	# st.header("Day 27 - Streamlit Elements")
-	# st.write("Build a draggable and resizable dashboard with Streamlit Elements.")
 
-	# Define URL for media player.
-
-p.display()
+# p.display()
 
 # Initialize a session state variable that tracks the sidebar state (either 'expanded' or 'collapsed').
 
