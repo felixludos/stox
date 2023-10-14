@@ -340,6 +340,17 @@ class IBKR_Downloader(Downloader, fig.Configurable):
 # 	return data
 
 
+@fig.component('ibkr-simple')
+class IBKR_Symbol(ToolKit, fig.Configurable):
+	def __init__(self, *args, **kwargs):
+		super().__init__(*args, **kwargs)
+		self.symbol_table = load_symbol_table()
+
+	@tool('ibsym')
+	def get_ibsym(self, ticker):
+		return self.symbol_table[ticker]['ibkr-contract']['symbol']
+
+
 @fig.component('ibkr-loader')
 class IBKR_Loader(ToolKit, fig.Configurable):
 	def __init__(self, downloader=None, **kwargs):

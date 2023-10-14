@@ -13,6 +13,8 @@ container:
     loader._type: yahoo-loader
     info._type: yahoo-info
 
+    ib._type: ibkr-simple
+
 #    portfolio-loader: <>portfolio
     portfolio:
       _type: portfolio-loader

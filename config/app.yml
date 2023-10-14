@@ -1,9 +1,10 @@
 
 #_base: [eur-tickers, euro, container]
 
-#_base: [demo, container]
 _base: [eur-tickers, container]
+#_base: [eur-tickers, container]
 
+portfolio: stoxx50-oct9
 
 features: [
   price,
@@ -14,6 +15,7 @@ features: [
   log_market_cap,
   recommendation_mean,
   overall_risk,
+  ibsym,
 ]
 
 

@@ -352,7 +352,9 @@ class Yahoo_Info(ToolKit, fig.Configurable):
 
 	@tool('yield')
 	def get_yield(self, info):
-		return Quantity(info.get('dividendYield', 0.)*100, '%')
+		div = info.get('dividendYield', 0.)
+		if div is not None:
+			return Quantity(div*100, '%')
 		# return Quantity(info.get('yield', float('nan')), info.get('currency'))
 
 	@tool('revenue')

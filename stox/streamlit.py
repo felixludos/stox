@@ -2,7 +2,42 @@ from collections import Counter
 import streamlit as st
 from streamlit_elements import elements, dashboard, mui, editor, media, lazy, sync, nivo
 
-from .general import country_flags, sector_emojis, sector_colors
+from .general import Quantity, PctChange, country_flags, sector_emojis, sector_colors
+
+
+class Formatter:
+	def set_world(self, world):
+		pass
+
+	def column_config(self, key):
+		pass
+
+	def format_key(self, key):
+		return key
+
+	def format_value(self, key, value):
+		return value
+
+
+class DefaultFormatter(Formatter):
+	def __init__(self, key: str = None):
+		self.key = key
+
+	def format_key(self, key):
+		return self.key or key
+
+	def format_value(self, key, value):
+		if isinstance(value, (Quantity, PctChange)):
+			return value.amount
+		return value
+
+
+
+class WeightFormatter(Formatter):
+	# def column_config(self, key):
+	# 	return
+	pass
+
 
 
 class Portfolio:

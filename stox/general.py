@@ -260,6 +260,28 @@ class PortfolioLoader(ToolKit, fig.Configurable):
 		return self.portfolio.get(ticker, 0)
 
 
+@fig.component('distribution-loader')
+class DistributionLoader(ToolKit, fig.Configurable):
+	def __init__(self, *, name: str, root=None, path=None, normalize=True, **kwargs):
+		if not name.endswith('.json'):
+			name = f'{name}.json'
+		if path is None:
+			if root is None:
+				root = misc.assets_root() / 'dis'
+			path = root / name
+		super().__init__(**kwargs)
+		if not path.exists():
+			raise FileNotFoundError(f'No distribution file at {path}')
+		self.distributions = load_json(path) # dict[ticker -> weight]
+		if normalize:
+			total = sum(self.distributions.values())
+			self.distributions = {k: v / total for k, v in self.distributions.items()}
+
+	@tool('weight')
+	def get_weight(self, ticker):
+		return self.distributions.get(ticker, None)
+
+
 
 @fig.component('common-stats')
 class Common_Stats(ToolKit, fig.Configurable):
