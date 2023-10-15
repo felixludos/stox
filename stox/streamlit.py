@@ -20,23 +20,10 @@ class Formatter:
 
 
 class DefaultFormatter(Formatter):
-	def __init__(self, key: str = None):
-		self.key = key
-
-	def format_key(self, key):
-		return self.key or key
-
-	def format_value(self, key, value):
+	def __call__(self, key, value, info=None):
 		if isinstance(value, (Quantity, PctChange)):
 			return value.amount
 		return value
-
-
-
-class WeightFormatter(Formatter):
-	# def column_config(self, key):
-	# 	return
-	pass
 
 
 

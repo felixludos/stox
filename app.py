@@ -10,9 +10,9 @@ from stox import streamlit as lit
 import omnifig as fig
 
 
-if 'sidebar_state' not in st.session_state:
-	st.session_state.sidebar_state = 'expanded'
-st.set_page_config(layout="wide", initial_sidebar_state=st.session_state.sidebar_state)
+# if 'sidebar_state' not in st.session_state:
+# 	st.session_state.sidebar_state = 'expanded'
+# st.set_page_config(layout="wide", initial_sidebar_state=st.session_state.sidebar_state)
 
 @st.cache_resource
 def load_config():
@@ -69,63 +69,47 @@ def prepare_active_portfolio():
 	return pf
 pf = prepare_active_portfolio()
 
-@st.cache_resource
-def load_features():
-	features = cfg.pull('features', [])
-	formatters = {}
-	if isinstance(features, dict):
-		formatters = features
-		features = list(features.keys())
-	formatters = cfg.pull('formatters', formatters)
-	# if 'weight' not in formatters:
-	# 	formatters['weight'] = lit.WeightFormatter()
-	return features, formatters
-features, formatters = load_features()
+features = [
+	'price',
+	'yield',
+	'peg_ratio',
+	'shares',
+	'beta',
+	'log_market_cap',
+	'recommendation_mean',
+	'overall_risk',
+	'ibsym',
+]
 
 @st.cache_resource
 def init_data_table():
 	cols = ['sel', 'weight', 'ticker', *features]
 	rows = []
 	for info in world:
-		row = {}
-		for k in features:
-			if k == 'sel':
-				val = False
-			elif k == 'weight':
-				val = pf.get(info['ticker'], 0)
-			else:
-				try:
-					val = info[k]
-				except:
-					print(f'Failed to get {k} for {info["ticker"]}')
-					val = None
-	# 		row[k] = val
-	# 	rows.append(row)
-	# df = pd.DataFrame(rows, columns=cols)
-	# return df
-	pass
+		for col in cols:
+			val = info[col]
+	return []
 initial_table = init_data_table()
 
 def viz_world():
 	default_formatter = lit.DefaultFormatter()
 	cols = ['sel', 'weight', 'ticker', *features]
-	rows = [{k: formatters.get(k, default_formatter).format_value(k, info[k]) for k in cols} for info in world]
+	rows = [{k: default_formatter(k, info[k], info=info) for k in cols} for info in world]
 	df = pd.DataFrame(rows, columns=cols)
 	return df
-
 df = viz_world()
-col_config = {col: formatter.column_config(col) for col, formatter in formatters.items()}
 
-if 'weight' not in col_config:
-	col_config['weight'] = st.column_config.ProgressColumn(
-			"Weight",
-			help="The weight of the stock in the portfolio",
-			format="%.2g%%",
-			min_value=0,
-			max_value=max_weight,
-		)
-
-edited_df = st.data_editor(df, column_config={k:v for k,v in col_config.items() if v is not None})
+col_config = {
+	'weight': st.column_config.ProgressColumn(
+		"Weight",
+		help="The weight of the stock in the portfolio",
+		format="%.2g%%",
+		min_value=0,
+		max_value=max_weight,
+		),
+}
+edited_df = st.data_editor(df, column_config={key: cc for key, cc in col_config.items()
+											  if key in df.columns})
 
 if st.button('Update'):
 	for tk, sel, wt in zip(edited_df['ticker'], edited_df['sel'], edited_df['weight']):
@@ -133,6 +117,9 @@ if st.button('Update'):
 	st.rerun()
 
 st.write(f'Selected: {", ".join([info["ticker"] for info in world if info["sel"]])}')
+
+
+
 
 # p.display()
 
