@@ -5,14 +5,14 @@ from omnibelt import load_yaml, save_yaml, load_json, save_json
 import streamlit as st
 from stox import misc
 from stox import load_symbol_table
-from stox.general import DistributionLoader
+from stox.general import DistributionLoader, Quantity, PctChange
 from stox import streamlit as lit
 import omnifig as fig
 
 
-# if 'sidebar_state' not in st.session_state:
-# 	st.session_state.sidebar_state = 'expanded'
-# st.set_page_config(layout="wide", initial_sidebar_state=st.session_state.sidebar_state)
+if 'sidebar_state' not in st.session_state:
+	st.session_state.sidebar_state = 'expanded'
+st.set_page_config(layout="wide", initial_sidebar_state=st.session_state.sidebar_state)
 
 @st.cache_resource
 def load_config():
@@ -35,10 +35,10 @@ def load_world():
 	tickers = cfg.pull('tickers', [], silent=True)
 	cfg.print(f'Found {len(tickers)} tickers.')
 	infos = [load_ticker(yfsym) for yfsym in tickers]
+	infos = infos[:5]
 	return infos
 world = load_world()
 syms = {info['ticker']: info for info in world}
-max_weight = max(10., min(float(int(420 / len(world))//10*10), 100.))
 
 _dis_root = misc.assets_root() / 'dis'
 def load_data_file(path: Path):
@@ -81,13 +81,23 @@ features = [
 	'ibsym',
 ]
 
+# @st.cache_resource
+# def get_display_state():
+dat = lit.DisplayData()
+dat.populate(world, features)
+
 @st.cache_resource
 def init_data_table():
 	cols = ['sel', 'weight', 'ticker', *features]
-	rows = []
 	for info in world:
 		for col in cols:
 			val = info[col]
+
+			if isinstance(val, (Quantity, PctChange)):
+				info[col] = val.amount
+
+		info['locked'] = False
+
 	return []
 initial_table = init_data_table()
 
@@ -105,7 +115,7 @@ col_config = {
 		help="The weight of the stock in the portfolio",
 		format="%.2g%%",
 		min_value=0,
-		max_value=max_weight,
+		max_value=dat.max_weight,
 		),
 }
 edited_df = st.data_editor(df, column_config={key: cc for key, cc in col_config.items()
@@ -119,7 +129,7 @@ if st.button('Update'):
 st.write(f'Selected: {", ".join([info["ticker"] for info in world if info["sel"]])}')
 
 
-
+dat.display()
 
 # p.display()
 

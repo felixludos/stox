@@ -1,6 +1,7 @@
 from collections import Counter
+from dataclasses import dataclass
 import streamlit as st
-from streamlit_elements import elements, dashboard, mui, editor, media, lazy, sync, nivo
+# from streamlit_elements import elements, dashboard, mui, editor, media, lazy, sync, nivo
 
 from .general import Quantity, PctChange, country_flags, sector_emojis, sector_colors
 
@@ -27,7 +28,7 @@ class DefaultFormatter(Formatter):
 
 
 
-class Portfolio:
+class DisplayData:
 	def __init__(self):
 		self.max_weight = 100.
 		self.cards = None
@@ -37,7 +38,8 @@ class Portfolio:
 		self.countries = None
 		self.stats = None
 
-	def populate(self, cards):
+	def populate(self, world, features):
+		cards = [Card(info, features) for info in world]
 		self.max_weight = max(10., min(float(int(420 / len(cards))//10*10), 100.))
 		self.delta = self.max_weight / 50
 		for c in cards:
@@ -47,9 +49,10 @@ class Portfolio:
 		self.cards = cards
 		self.sectors = [k for k, v  in Counter(c.sector for c in cards).most_common()]
 		self.countries = [k for k, v  in Counter(c.country for c in cards).most_common()]
-		self.stats = list(cards[0].features)
+		self.stats = list(features)
 
 	def update_weights(self, deltas: dict['Card', float]):
+		print(f'Updating weights by {deltas}')
 		locked = [c for c in deltas if c.locked]
 		assert len(locked) == 0, f'Cannot update weight of {len(locked)} locked cards: {locked}'
 
@@ -224,9 +227,10 @@ class Portfolio:
 
 
 	def display(self):
-		control_col, viz_col = st.columns([1, 2 if st.session_state.sidebar_state == 'expanded' else 5])
+		# control_col, viz_col = st.columns([1, 2 if st.session_state.sidebar_state == 'expanded' else 5])
 
-		with control_col:
+		# with control_col:
+		with st.sidebar:
 
 			ctab, ftab = st.tabs(['Controls', 'Checkpointing'])
 
@@ -254,7 +258,7 @@ class Portfolio:
 				with col3:
 					st.button('🔄 all', help='Invert selection', on_click=self._invert_selection)
 				with col4:
-					st.button('Show all', help='Show all hidden', on_click=self._show_all) # 👁
+					st.button('👀 all', help='Show all hidden', on_click=self._show_all) # 👁
 
 				col1, col2, col3, col4 = st.columns(4)
 				with col1:
@@ -283,55 +287,57 @@ class Portfolio:
 				with col4:
 					if st.button('🔶', help='Sort by selected'):
 						self.cards.sort(key=lambda c: c.selected, reverse=not self.ascending)
-				with st.form('sort_form', clear_on_submit=True):
-					# col1, col2 = st.columns([1,2])
-					sort_cards = st.form_submit_button('Apply')
+				with st.expander('Advanced Sort'):
+					with st.form('sort_form', clear_on_submit=True):
+						# col1, col2 = st.columns([1,2])
+						sort_cards = st.form_submit_button('Apply')
 
-					group_sector = st.multiselect('Group sector', self.sectors, key='group_sector')
-					group_country = st.multiselect('Group country', self.countries, key='group_country')
-					group_stat = st.selectbox('by Stat', ['', *self.stats], key='group_stat')
-
-					# print(f'{group_sector}, {st.session_state.get("group_sector", None)}')
+						group_sector = st.multiselect('Group sector', self.sectors, key='group_sector')
+						group_country = st.multiselect('Group country', self.countries, key='group_country')
+						group_stat = st.selectbox('by Stat', ['', *self.stats], key='group_stat')
 
 				if sort_cards:
 					self._apply_sort(group_sector, group_country, group_stat, self.ascending)
 
-				st.subheader(f'Selection')
-				with st.form('select_form', clear_on_submit=True):
-					select_cards = st.form_submit_button('Apply')
+				# st.subheader(f'Selection')
+				with st.expander('Selection'):
+					with st.form('select_form', clear_on_submit=True):
+						select_cards = st.form_submit_button('Apply')
 
-					select_sectors = st.multiselect('Select sectors', self.sectors)
-					select_country = st.multiselect('Select country', self.countries)
+						select_sectors = st.multiselect('Select sectors', self.sectors)
+						select_country = st.multiselect('Select country', self.countries)
 
-					d_col, q_col = st.columns([2, 1])
-					with d_col:
-						select_stat = st.selectbox('Feature', ['Weight', *self.stats])
-					# st.button('↘️' if self.upper_limit else '↗️', help='Select higher/lower than limit',)
-					with q_col:
-						side = st.radio('Limit', ['Max', 'Min'], index=0, )#label_visibility='collapsed')
-					threshold = st.number_input('Weight', 0., self.max_weight, None, label_visibility='collapsed')
-
+						d_col, q_col = st.columns([2, 1])
+						with d_col:
+							select_stat = st.selectbox('Feature', ['Weight', *self.stats])
+						# st.button('↘️' if self.upper_limit else '↗️', help='Select higher/lower than limit',)
+						with q_col:
+							side = st.radio('Limit', ['Max', 'Min'], index=0, )#label_visibility='collapsed')
+						threshold = st.number_input('Weight', 0., self.max_weight, None, label_visibility='collapsed')
 
 				if select_cards:
 					self._apply_selection(select_sectors, select_country, select_stat, side, threshold)
 
 			with ftab:
 				st.header('Checkpointing')
-
 				st.write(f'[Coming soon]')
 
-		with st.sidebar:
-			st.header('Cards')
-
-			# st.divider()
 
 			for card in self.cards:
-				if not card.hidden:
-					card.display()
+				card.display()
+
+		# with st.sidebar:
+		# 	st.header('Cards')
+		#
+		# 	# st.divider()
+		#
+		# 	for card in self.cards:
+		# 		if not card.hidden:
+		# 			card.display()
 
 
-		with viz_col:
-			st.write(f'Total weight: {sum(card.weight for card in self.cards):.2f}')
+		# with viz_col:
+		# 	st.write(f'Total weight: {sum(card.weight for card in self.cards):.2f}')
 
 
 
@@ -358,11 +364,11 @@ class Portfolio:
 
 
 class Card:
-	def __init__(self, info, features, max_weight=100.):
+	def __init__(self, info, features):
 		self.info = info
 		self.features = features
 		self.p = None
-		self.weight = 1.
+		# self.weight = 1.
 		self.max_weight = 100.
 		self.locked = False
 		self.selected = False
@@ -380,6 +386,13 @@ class Card:
 	@property
 	def country(self):
 		return str(self.info['country'])
+
+	@property
+	def weight(self):
+		return self.info['weight']
+	@weight.setter
+	def weight(self, value):
+		self.info['weight'] = value
 
 	def set_portfolio(self, portfolio):
 		self.p = portfolio
@@ -406,21 +419,26 @@ class Card:
 			terms.append(self.name)
 			title = ' '.join(terms)
 
-			with st.expander(title):
-				st.write(f'Details for {self.info["company_name"]}')
+			# with st.expander(title):
+			# 	st.write(f'Details for {self.info["company_name"]}')
+			st.subheader(title)
 
 			s_col, w_col, l_col = st.columns([1, 3, 1])
 
 			with s_col:
-				st.button('🔶' if self.selected else '⬛', key=f'select_{self.name}', on_click=self.toggle_select)
+				self.selected = st.checkbox('🔶', key=f'select_{self.name}', label_visibility='collapsed')
 			with w_col:
+				print(f'{self.name}: {self.weight}')
 				st.slider('Weight', 0., self.max_weight,
 										self.weight,
 										key=f'weight_{self.name}',
 										disabled=self.locked, on_change=self.update_weight, label_visibility='collapsed')
+				# self.weight = st.session_state[f'weight_{self.name}']
+
 				# st.markdown(f'<p style="color:#333;">{self.name}</p>', unsafe_allow_html=True)
 			with l_col:
-				st.button('🔓' if self.locked else '🔒', key=f'lock_{self.name}', on_click=self.toggle_lock)
+				self.locked = st.checkbox('🔒', key=f'lock_{self.name}', label_visibility='collapsed')
+				# st.button('🔓' if self.locked else '🔒', key=f'lock_{self.name}', on_click=self.toggle_lock)
 
 			# st.divider()
 
