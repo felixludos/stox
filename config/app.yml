@@ -4,19 +4,19 @@
 _base: [eur-tickers, container]
 #_base: [eur-tickers, container]
 
-portfolio: stoxx50-oct9
+#portfolio: stoxx50-oct9
 
-features: [
-  price,
-  yield,
-#  shares,
-  peg_ratio,
-  beta,
-  log_market_cap,
-  recommendation_mean,
-  overall_risk,
-  ibsym,
-]
+#features: [
+#  price,
+#  yield,
+##  shares,
+#  peg_ratio,
+#  beta,
+#  log_market_cap,
+#  recommendation_mean,
+#  overall_risk,
+#  ibsym,
+#]
 
 
 

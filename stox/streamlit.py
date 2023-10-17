@@ -2,8 +2,116 @@ from collections import Counter
 from dataclasses import dataclass
 import streamlit as st
 # from streamlit_elements import elements, dashboard, mui, editor, media, lazy, sync, nivo
-
+from omnibelt import load_yaml, save_yaml
+from . import misc
 from .general import Quantity, PctChange, country_flags, sector_emojis, sector_colors
+
+
+_dis_root = misc.assets_root() / 'dis'
+
+
+class World:
+	cfg = None
+	def __init__(self, infos, features):
+		self.infos = infos
+		self.features = features
+
+	def __iter__(self):
+		return iter(self.infos)
+
+	default_features = [
+		'price',
+		'yield',
+		'peg_ratio',
+		'shares',
+		'beta',
+		'log_market_cap',
+		'recommendation_mean',
+		'overall_risk',
+		'ibsym',
+		'sector',
+		'country',
+		'industry',
+	]
+
+	@classmethod
+	def load_ticker(cls, yfsym: str):
+		container_source = cls.cfg.peek('container')
+		with container_source.silence():
+			date = cls.cfg.pull('date', 'last')
+			date = str(date)
+			ctx = container_source.create()
+		ctx['ticker'] = yfsym
+		ctx['date'] = date
+		return ctx
+
+	@classmethod
+	def create(cls, path=None, name=None):
+		if path is None:
+			if name is None:
+				name = cls.cfg.pull('portfolio', None)
+			if name is not None:
+				path = _dis_root / f'{name}.yaml'
+
+		features = cls.cfg.pull('features', cls.default_features)
+
+		if path is None:
+			tickers = cls.cfg.pull('tickers', [], silent=True)
+			cls.cfg.print(f'Found {len(tickers)} tickers.')
+			if isinstance(tickers, list):
+				tickers = {tk: {} for tk in tickers}
+		else:
+			if not path.exists():
+				raise FileNotFoundError(f'Portfolio {name} not found.')
+			raw = load_yaml(path) if path.exists() else {}
+			tickers = raw.get('tickers', {})
+			print(f'Loaded portfolio {name} with {len(tickers)} symbols.')
+			tickers = {item['ticker']: item for item in tickers}
+			print(f'Found {len(tickers)} symbols in the current universe.')
+			if 'features' in raw:
+				features = raw['features']
+
+		total = sum(e.get('weight', 0.) for e in tickers.values())
+		for k, v in tickers.items():
+			v['weight'] = 100. * (v.get('weight', 0.) / total if total > 0 else 1 / len(tickers))
+
+		infos = [cls.load_ticker(yfsym) for yfsym in tickers]
+
+		for i, info in enumerate(infos):
+			loaded = tickers.get(info['ticker'], {})
+			info['order'] = loaded.get('order', i)
+			info['sel'] = loaded.get('sel', False)
+			info['weight'] = loaded.get('weight', 0.)
+			info['hidden'] = loaded.get('hidden', False)
+		# infos = infos[:5]
+		cols = ['sel', 'weight', 'ticker', *features]
+		for info in infos:
+			for col in cols:
+				val = info[col]
+				if isinstance(val, (Quantity, PctChange)):
+					info[col] = val.amount
+
+			info['locked'] = False
+
+		return cls(infos, features=features)
+
+	def export(self, path, include_hidden=False, include_sector=True, include_country=True):
+
+		tickers = [{k: v for k, v in info.items() if k in ['ticker', 'weight', 'sel', 'hidden', 'order']}
+				   for info in self.infos]
+		tickers.sort(key=lambda info: info['weight'], reverse=True)
+
+		raw = {
+			'tickers': tickers,
+		}
+		# if include_sector:
+		# 	sectors = []
+		#
+		#
+		# 	raw['sectors'] =
+
+		save_yaml(raw, path)
+
 
 
 class Formatter:
@@ -20,30 +128,22 @@ class Formatter:
 		return value
 
 
-class DefaultFormatter(Formatter):
-	def __call__(self, key, value, info=None):
-		if isinstance(value, (Quantity, PctChange)):
-			return value.amount
-		return value
-
-
-
 class DisplayData:
-	def __init__(self):
+	def __init__(self, world,):
 		self.max_weight = 100.
 		self.cards = None
-		self.ascending = False
-		self.upper_limit = False
 		self.sectors = None
 		self.countries = None
 		self.stats = None
+		self.world = world
+		self.populate(world.infos, world.features)
 
-	def populate(self, world, features):
-		cards = [Card(info, features) for info in world]
+	def populate(self, infos, features):
+		cards = [Card(info, features) for info in infos]
 		self.max_weight = max(10., min(float(int(420 / len(cards))//10*10), 100.))
 		self.delta = self.max_weight / 50
 		for c in cards:
-			c.weight = 100/len(cards)
+			# c.weight = 100/len(cards)
 			c.max_weight = self.max_weight
 			c.set_portfolio(self)
 		self.cards = cards
@@ -52,7 +152,7 @@ class DisplayData:
 		self.stats = list(features)
 
 	def update_weights(self, deltas: dict['Card', float]):
-		print(f'Updating weights by {deltas}')
+		# print(f'Updating weights by {deltas}')
 		locked = [c for c in deltas if c.locked]
 		assert len(locked) == 0, f'Cannot update weight of {len(locked)} locked cards: {locked}'
 
@@ -69,16 +169,18 @@ class DisplayData:
 
 		if total > 0:
 			if total > avail:
-				st.error(f'Cannot update weights, {total} > {avail}')
-				return
-			fixed.update({card: -total * card.weight / avail for card in other})
+				fixed.update({card: prev * avail / total for card, prev in fixed.items() if prev > 0})
+				fixed.update({card: -card.weight for card in other})
+			else:
+				fixed.update({card: -total * card.weight / avail for card in other})
 
 		elif total < 0:
 			cap = sum(self.max_weight - c.weight for c in other)
 			if -total > cap:
-				st.error(f'Cannot update weights, {-total} > {cap}')
-				return
-			fixed.update({card: -total * (self.max_weight - card.weight) / cap for card in other})
+				fixed.update({card: prev * cap / -total for card, prev in fixed.items() if prev < 0})
+				fixed.update({card: self.max_weight - card.weight for card in other})
+			else:
+				fixed.update({card: -total * (self.max_weight - card.weight) / cap for card in other})
 
 		assert abs(sum(fixed.values())) < 0.001, f'{fixed}'
 
@@ -164,12 +266,6 @@ class DisplayData:
 				c.locked = False
 		st.toast(f'Unlocked {num_locked} stocks ({num_new} new)')
 
-	def _toggle_sort_order(self):
-		self.ascending = not self.ascending
-
-	def _toggle_bound(self):
-		self.upper_limit = not self.upper_limit
-
 	def _apply_selection(self, select_sectors, select_country, select_stat, side, threshold):
 
 		sectors = [s for s in select_sectors if s in self.sectors]
@@ -186,8 +282,7 @@ class DisplayData:
 				if ((len(sectors) and sector in sectors)
 						or (len(countries) and country in countries)
 						or (val is not None and threshold is not None
-							and ((side == 'Max' and val <= threshold)
-								 or (side == 'Min' and val >= threshold)))):
+							and (val <= threshold if side else val >= threshold))):
 					if not c.selected:
 						num_new += 1
 					c.selected = True
@@ -207,9 +302,9 @@ class DisplayData:
 			sector, country = card.sector, card.country
 			terms = []
 			if stat is not None:
-				val = card.features[stat]
+				val = card.info[stat]
 				if val is None:
-					val = (-1)**(ascending) * float('inf')
+					val = (-1)**(not ascending) * float('inf')
 				terms.append(val)
 			if len(sectors):
 				terms.append(tuple(sector == s for s in sectors))
@@ -217,6 +312,8 @@ class DisplayData:
 				terms.append(tuple(country == c for c in countries))
 			return tuple(terms)
 		self.cards.sort(key=key, reverse=not ascending)
+		for i, card in enumerate(self.cards):
+			card.info['order'] = i
 
 
 	# def _change_delta(self):
@@ -228,6 +325,8 @@ class DisplayData:
 
 	def display(self):
 		# control_col, viz_col = st.columns([1, 2 if st.session_state.sidebar_state == 'expanded' else 5])
+
+		new_world_path = None
 
 		# with control_col:
 		with st.sidebar:
@@ -279,14 +378,17 @@ class DisplayData:
 				with col1:
 					st.subheader(f'Sort')
 				with col2:
-					st.button('🔼' if self.ascending else '🔽',
-							  help='Sort ascending/descending', on_click=self._toggle_sort_order)
+					ascending = st.checkbox('⬆️')#, help='Sort ascending/descending')
 				with col3:
 					if st.button('💰', help='Sort by weight'):
-						self.cards.sort(key=lambda c: c.weight, reverse=not self.ascending)
+						self.cards.sort(key=lambda c: c.weight, reverse=not ascending)
+						for i, card in enumerate(self.cards):
+							card.info['order'] = i
 				with col4:
 					if st.button('🔶', help='Sort by selected'):
-						self.cards.sort(key=lambda c: c.selected, reverse=not self.ascending)
+						self.cards.sort(key=lambda c: c.selected, reverse=not ascending)
+						for i, card in enumerate(self.cards):
+							card.info['order'] = i
 				with st.expander('Advanced Sort'):
 					with st.form('sort_form', clear_on_submit=True):
 						# col1, col2 = st.columns([1,2])
@@ -297,7 +399,7 @@ class DisplayData:
 						group_stat = st.selectbox('by Stat', ['', *self.stats], key='group_stat')
 
 				if sort_cards:
-					self._apply_sort(group_sector, group_country, group_stat, self.ascending)
+					self._apply_sort(group_sector, group_country, group_stat, ascending)
 
 				# st.subheader(f'Selection')
 				with st.expander('Selection'):
@@ -310,57 +412,50 @@ class DisplayData:
 						d_col, q_col = st.columns([2, 1])
 						with d_col:
 							select_stat = st.selectbox('Feature', ['Weight', *self.stats])
-						# st.button('↘️' if self.upper_limit else '↗️', help='Select higher/lower than limit',)
 						with q_col:
-							side = st.radio('Limit', ['Max', 'Min'], index=0, )#label_visibility='collapsed')
+							ceiling = st.checkbox('↗️', )#label_visibility='collapsed')
 						threshold = st.number_input('Weight', 0., self.max_weight, None, label_visibility='collapsed')
 
 				if select_cards:
-					self._apply_selection(select_sectors, select_country, select_stat, side, threshold)
+					self._apply_selection(select_sectors, select_country, select_stat, not ceiling, threshold)
+
+				for card in sorted(self.cards, key=lambda c: c.info['order']):
+					if not card.hidden:
+						card.display()
 
 			with ftab:
 				st.header('Checkpointing')
-				st.write(f'[Coming soon]')
 
+				with st.form('save', clear_on_submit=True):
+					st.subheader('Save')
+					include_hidden = st.checkbox('Include hidden')
+					include_sector = st.checkbox('Include sectors', value=True)
+					include_country = st.checkbox('Include countries', value=True)
+					overwrite = st.checkbox('Overwrite')
 
-			for card in self.cards:
-				card.display()
+					filename = st.text_input('Filename', value='default')
 
-		# with st.sidebar:
-		# 	st.header('Cards')
-		#
-		# 	# st.divider()
-		#
-		# 	for card in self.cards:
-		# 		if not card.hidden:
-		# 			card.display()
+					if st.form_submit_button('Save'):
+						path = _dis_root / f'{filename}.yaml'
+						if path.exists() and not overwrite:
+							st.error(f'File {path} already exists (set "overwrite" to overwrite)')
+						else:
+							self.world.export(path, include_hidden=include_hidden, include_sector=include_sector,
+										 include_country=include_country)
 
+				with st.form('load', clear_on_submit=True):
+					st.subheader('Load')
 
-		# with viz_col:
-		# 	st.write(f'Total weight: {sum(card.weight for card in self.cards):.2f}')
+					filename = st.text_input('Filename', value='default')
 
+					if st.form_submit_button('Load'):
+						path = _dis_root / f'{filename}.yaml'
+						if not path.exists():
+							st.error(f'File {path} does not exist')
+						else:
+							new_world_path = path
 
-
-
-		# layout = [
-		#     dashboard.Item("cards", 0, 0, 6, 4),
-		# ]
-		# with elements("demo"):
-		# 	with dashboard.Grid(layout, draggableHandle=".draggable"):
-		# 		with mui.Card(key="cards", sx={"display": "flex", "flexDirection": "column"}):
-		# 			mui.CardHeader(title="Cards", className="draggable")
-		# 			with mui.CardContent(sx={"flex": 1, "minHeight": 4, 'minWidth': 3}):
-		#
-		# 				mui.Typography("Hello world")
-		#
-		# 			with mui.CardActions:
-		# 				mui.Button("Apply changes")
-
-			# st.title('Stocks')
-			# for card in self.cards:
-			# 	if not card.hidden:
-			# 		card.display()
-
+		return new_world_path
 
 
 class Card:
@@ -370,9 +465,6 @@ class Card:
 		self.p = None
 		# self.weight = 1.
 		self.max_weight = 100.
-		self.locked = False
-		self.selected = False
-		self.hidden = False
 
 	@property
 	def name(self):
@@ -394,15 +486,29 @@ class Card:
 	def weight(self, value):
 		self.info['weight'] = value
 
+	@property
+	def locked(self):
+		return self.info['locked']
+	@locked.setter
+	def locked(self, value):
+		self.info['locked'] = value
+
+	@property
+	def selected(self):
+		return self.info['sel']
+	@selected.setter
+	def selected(self, value):
+		self.info['sel'] = value
+
+	@property
+	def hidden(self):
+		return self.info['hidden']
+	@hidden.setter
+	def hidden(self, value):
+		self.info['hidden'] = value
+
 	def set_portfolio(self, portfolio):
 		self.p = portfolio
-
-	def toggle_lock(self):
-		self.locked = not self.locked
-
-	def toggle_select(self):
-		self.selected = not self.selected
-		# st.write(f'{self.name} is selected: {self.selected}')
 
 	def update_weight(self):
 		self.p.update_weights({self: float(st.session_state[f'weight_{self.name}']) - self.weight})
@@ -426,9 +532,21 @@ class Card:
 			s_col, w_col, l_col = st.columns([1, 3, 1])
 
 			with s_col:
-				self.selected = st.checkbox('🔶', key=f'select_{self.name}', label_visibility='collapsed')
+				selected = st.checkbox('🔶', value=self.selected, key=f'select_{self.name}', label_visibility='collapsed')
+				self.selected = st.session_state[f'select_{self.name}']
+				# print(f'{self.name} {selected} {self.selected} {st.session_state[f"select_{self.name}"]}')
+				# if selected != st.session_state[f'select_{self.name}']:
+				# 	self.selected = selected
+				# 	st.rerun()
+
+			with l_col:
+				locked = st.checkbox('🔒', value=self.locked, key=f'lock_{self.name}', label_visibility='collapsed')
+				self.locked = st.session_state[f'lock_{self.name}']
+			# if locked != st.session_state[f'lock_{self.name}']:
+				# 	self.locked = st.session_state[f'lock_{self.name}']
+				# 	st.rerun()
+
 			with w_col:
-				print(f'{self.name}: {self.weight}')
 				st.slider('Weight', 0., self.max_weight,
 										self.weight,
 										key=f'weight_{self.name}',
@@ -436,8 +554,7 @@ class Card:
 				# self.weight = st.session_state[f'weight_{self.name}']
 
 				# st.markdown(f'<p style="color:#333;">{self.name}</p>', unsafe_allow_html=True)
-			with l_col:
-				self.locked = st.checkbox('🔒', key=f'lock_{self.name}', label_visibility='collapsed')
+
 				# st.button('🔓' if self.locked else '🔒', key=f'lock_{self.name}', on_click=self.toggle_lock)
 
 			# st.divider()
