@@ -12,6 +12,7 @@ yahoo_data/
 world-bank/
 olddata/
 ibkr/
+extra/
 
 # C extensions
 *.so
