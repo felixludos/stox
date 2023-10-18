@@ -53,17 +53,38 @@ class Context(_Context, fig.Configurable):
 			self.update(cache)
 
 
+# 'Consumer Staples': '🛒',  # '🍎',
+# 'Consumer Defensive': '🛒',  # '🍎',
+# 'Financial Services': '🪙',  # '💰', # '💵',
+# 'Financials': '🪙',
+# 'Utilities': '💧',  # '🛁', # '🚿', # '🚰',
+# 'Technology': '📱',  # '💻',
+# 'Energy': '🔥',  # '🛢', # '⚡️'
+# 'Consumer Cyclical': '🎁',  # '🛍'
+# 'Consumer Discretionary': '🎁',  # '🛍'
+# 'Communication Services': '📞',  # '📡',
+# 'Industrials': '⚙️',  # '🔧', #'🏭',
+# 'Healthcare': '💊',  # '💉',
+# 'Basic Materials': '🌲',  # '🧱', # '📦',
+# 'Materials': '🌲',  # '🧱', # '📦',
+# 'Real Estate': '🏠',
 
 sector_colors = {
     "Technology": "#6495ED",  # Cornflower Blue
     "Health Care": "#2E8B57",  # Sea Green
+    "Healthcare": "#2E8B57",  # Sea Green
     "Financials": "#FFD700",  # Gold
+	"Financial Services": "#FFD700",  # Gold
     "Consumer Discretionary": "#DC143C",  # Crimson
+	"Consumer Cyclical": "#DC143C",  # Crimson
     "Consumer Staples": "#FFA500",  # Orange
-    "Energy": "#FFD300",  # Bright Yellow
+	"Basic Materials": "#FFA500",  # Orange
+	"Materials": "#FFA500",  # Orange
+    # "Energy": "#FFD300",  # Bright Yellow
+    "Energy": "#800080",  # Bright Yellow
     "Utilities": "#20B2AA",  # Light Sea Green
-    "Industrials": "#800080",  # Purple
-    "Materials": "#8B4513",  # Saddle Brown
+    # "Industrials": "#800080",  # Purple
+    "Industrials": "#808080",  # Grey
     "Real Estate": "#FF69B4",  # Hot Pink
     "Communication Services": "#98FB98",  # Pale Green
 	'None': '#999999',
@@ -109,21 +130,38 @@ sector_emojis = {
 }
 
 country_colors = {
-    'France': 'blue',
-    'Germany': 'grey',
-    'Italy': 'green',
-    'Spain': 'red',
-    'Belgium': 'yellow',
-    'Netherlands': 'orange',
-    'Greece': 'skyblue',
-    'Austria': 'darkred',
-    'Finland': 'cyan',
-    'United Kingdom': 'darkblue',
-    'Switzerland': 'lightcoral',
-    'Luxembourg': 'royalblue',
-    'Portugal': 'darkgreen',
-    'Sweden': 'gold'
+    'France': '#6699CC',        # Light Blue
+    'Germany': '#ABABAB',       # Light Grey
+    'Italy': '#99C2A2',         # Mint Green
+    'Spain': '#FF6666',         # Light Red
+    'Belgium': '#FFD700',       # Bright Yellow
+    'Netherlands': '#FFA07A',   # Light Orange
+    'Greece': '#87CEFA',        # Sky Blue
+    'Austria': '#B22222',       # Firebrick Red
+    'Finland': '#20B2AA',       # Light Sea Green
+    'United Kingdom': '#4169E1',# Royal Blue
+    'Switzerland': '#FFA07A',   # Light Salmon
+    'Luxembourg': '#4682B4',    # Steel Blue
+    'Portugal': '#3CB371',      # Medium Sea Green
+    'Sweden': '#FFD700'         # Gold
 }
+
+# 	{
+#     'France': 'blue',
+#     'Germany': 'grey',
+#     'Italy': 'green',
+#     'Spain': 'red',
+#     'Belgium': 'yellow',
+#     'Netherlands': 'orange',
+#     'Greece': 'skyblue',
+#     'Austria': 'darkred',
+#     'Finland': 'cyan',
+#     'United Kingdom': 'darkblue',
+#     'Switzerland': 'lightcoral',
+#     'Luxembourg': 'royalblue',
+#     'Portugal': 'darkgreen',
+#     'Sweden': 'gold'
+# }
 
 
 sector_symbols = {
@@ -141,22 +179,22 @@ sector_symbols = {
 }
 
 
-country_colors_hex = {
-    'France': '#0000FF',       # blue
-    'Germany': '#808080',     # grey
-    'Italy': '#008000',       # green
-    'Spain': '#FF0000',       # red
-    'Belgium': '#FFFF00',     # yellow
-    'Netherlands': '#FFA500', # orange
-    'Greece': '#87CEEB',      # skyblue
-    'Austria': '#8B0000',     # darkred
-    'Finland': '#00FFFF',     # cyan
-    'United Kingdom': '#00008B', # darkblue
-    'Switzerland': '#F08080', # lightcoral
-    'Luxembourg': '#4169E1',  # royalblue
-    'Portugal': '#006400',    # darkgreen
-    'Sweden': '#FFD700'       # gold
-}
+# country_colors_hex = {
+#     'France': '#0000FF',       # blue
+#     'Germany': '#808080',     # grey
+#     'Italy': '#008000',       # green
+#     'Spain': '#FF0000',       # red
+#     'Belgium': '#FFFF00',     # yellow
+#     'Netherlands': '#FFA500', # orange
+#     'Greece': '#87CEEB',      # skyblue
+#     'Austria': '#8B0000',     # darkred
+#     'Finland': '#00FFFF',     # cyan
+#     'United Kingdom': '#00008B', # darkblue
+#     'Switzerland': '#F08080', # lightcoral
+#     'Luxembourg': '#4169E1',  # royalblue
+#     'Portugal': '#006400',    # darkgreen
+#     'Sweden': '#FFD700'       # gold
+# }
 
 
 

@@ -6,7 +6,7 @@ import streamlit as st
 import plotly.express as px
 from stox import misc
 from stox import load_symbol_table
-from stox.general import DistributionLoader, Quantity, PctChange
+from stox.general import DistributionLoader, Quantity, PctChange, country_colors, sector_colors
 from stox import streamlit as lit
 import omnifig as fig
 
@@ -43,7 +43,7 @@ syms = {info['ticker']: info for info in world}
 dat = lit.DisplayData(world)
 
 def viz_world():
-	cols = ['sel', 'weight', 'ticker', *world.features]
+	cols = ['sel', 'weight', 'init', 'ticker', *world.features]
 	rows = [{k: info[k] for k in cols}
 			for info in sorted(world, key=lambda info: info['order']) if not info['hidden']]
 	df = pd.DataFrame(rows, columns=cols)
@@ -59,6 +59,10 @@ col_config = {
 		max_value=dat.max_weight,
 		),
 	'recommendation_mean': st.column_config.NumberColumn('Rec'),
+	'init': st.column_config.NumberColumn('init', format='%.2g%%'),
+	'log_market_cap': st.column_config.NumberColumn('log(mcap)', format='%.3g'),
+	'held_percent_institutions': st.column_config.NumberColumn('Institute', format='%.2g%%'),
+	'held_percent_insiders': st.column_config.NumberColumn('Insider', format='%.2g%%'),
 
 }
 
@@ -80,9 +84,7 @@ with col2:
 
 st.write(f'Total: {sum(info["weight"] for info in world):.2f}')
 
-
 new_path = dat.display()
-
 
 col1, col2 = st.columns(2)
 
@@ -101,16 +103,22 @@ pie_settings = dict(
 )
 
 with col1:
-	fig = px.pie(df, values='weight', names='sector', title='Sector',
+	agg_df = df.groupby('sector')['weight'].sum().reset_index()
+	# agg_df['color'] = agg_df['sector'].map(sector_colors)
+	fig = px.pie(agg_df, values='weight', names='sector', title='Sector',
 				 # hover_data=['weight'],
-				 labels={'weight':'Portfolio Weight'})
-
+				 color='sector', color_discrete_map=sector_colors,
+				 labels={'weight':'Portfolio Weight'},
+				 )
 	fig.update_layout(**pie_settings)
 	st.plotly_chart(fig)
 
 with col2:
-	fig = px.pie(df, values='weight', names='country', title='Country',
+	agg_df = df.groupby('country')['weight'].sum().reset_index()
+	# agg_df['color'] = agg_df['country'].map(country_colors)
+	fig = px.pie(agg_df, values='weight', names='country', title='Country',
 				 # hover_data=['weight'],
+				 color='country', color_discrete_map=country_colors,
 				 labels={'weight': 'Portfolio Weight'})
 	fig.update_layout(**pie_settings)
 	st.plotly_chart(fig)

@@ -3,11 +3,29 @@ from dataclasses import dataclass
 import streamlit as st
 # from streamlit_elements import elements, dashboard, mui, editor, media, lazy, sync, nivo
 from omnibelt import load_yaml, save_yaml
+from omniply import tool, ToolKit, Context
 from . import misc
 from .general import Quantity, PctChange, country_flags, sector_emojis, sector_colors
 
 
 _dis_root = misc.assets_root() / 'dis'
+
+class BaseRefs(ToolKit):
+	def __init__(self, **kwargs):
+		super().__init__(**kwargs)
+		self.ibkr_weights = {v['ticker']: v.get('weight', 0.)
+							 for v in load_yaml(_dis_root / 'ibkr-full-jan23.yaml')['tickers']}
+		self.stoxx_weights = {v['ticker']: v.get('weight', 0.)
+							  for v in load_yaml(_dis_root / 'stoxx50-oct23.yaml')['tickers']}
+
+	@tool('ibkr')
+	def get_ibkr_weight(self, ticker):
+		return self.ibkr_weights.get(ticker, 0.)
+
+	@tool('stoxx')
+	def get_stoxx_weight(self, ticker):
+		return self.stoxx_weights.get(ticker, 0.)
+
 
 
 class World:
@@ -20,18 +38,29 @@ class World:
 		return iter(self.infos)
 
 	default_features = [
-		'price',
 		'yield',
+		'change_52w',
+		'perf52w',
+		# 'shares',
 		'peg_ratio',
-		'shares',
 		'beta',
+		'company_name',
+		'stoxx',
 		'log_market_cap',
 		'recommendation_mean',
 		'overall_risk',
+		'trailing_pe',
+		'forward_pe',
+		'trailing_eps',
+		'forward_eps',
+		'price',
+		'held_percent_institutions',
+		'held_percent_insiders',
 		'ibsym',
 		'sector',
 		'country',
 		'industry',
+		'ibkr',
 	]
 
 	@classmethod
@@ -40,7 +69,7 @@ class World:
 		with container_source.silence():
 			date = cls.cfg.pull('date', 'last')
 			date = str(date)
-			ctx = container_source.create()
+			ctx: Context = container_source.create()
 		ctx['ticker'] = yfsym
 		ctx['date'] = date
 		return ctx
@@ -77,14 +106,19 @@ class World:
 
 		infos = [cls.load_ticker(yfsym) for yfsym in tickers]
 
+		base_weights = BaseRefs()
+		for info in infos:
+			info.include(base_weights)
+
 		for i, info in enumerate(infos):
 			loaded = tickers.get(info['ticker'], {})
 			info['order'] = loaded.get('order', i)
 			info['sel'] = loaded.get('sel', False)
 			info['weight'] = loaded.get('weight', 0.)
+			info['init'] = info['weight']
 			info['hidden'] = loaded.get('hidden', False)
 		# infos = infos[:5]
-		cols = ['sel', 'weight', 'ticker', *features]
+		cols = ['sel', 'weight', 'ticker', 'init', *features]
 		for info in infos:
 			for col in cols:
 				val = info[col]
@@ -303,8 +337,17 @@ class DisplayData:
 			terms = []
 			if stat is not None:
 				val = card.info[stat]
+				try:
+					val = val.amount
+				except:
+					pass
+				# if isinstance(val, (Quantity, PctChange)):
+				# 	val = val.amount
 				if val is None:
 					val = (-1)**(not ascending) * float('inf')
+					if stat in {'sector', 'country'}:
+						val = ''
+				# print(type(val), Quantity, isinstance(val, (Quantity, PctChange)), isinstance(val, Quantity))
 				terms.append(val)
 			if len(sectors):
 				terms.append(tuple(sector == s for s in sectors))
@@ -446,7 +489,9 @@ class DisplayData:
 				with st.form('load', clear_on_submit=True):
 					st.subheader('Load')
 
-					filename = st.text_input('Filename', value='default')
+					options = [f.stem for f in _dis_root.glob('*.yaml')]
+					filename = st.selectbox('Filename', options, index=0)
+					# filename = st.text_input('Filename', value='default')
 
 					if st.form_submit_button('Load'):
 						path = _dis_root / f'{filename}.yaml'

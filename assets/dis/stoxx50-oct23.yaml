@@ -1,0 +1,242 @@
+tickers:
+- {sel: true, ticker: ASML.AS, weight: 7.48}
+- {sel: true, ticker: MC.PA, weight: 6.15}
+- {sel: true, ticker: TTE.PA, weight: 5.36}
+- {sel: true, ticker: SAP.DE, weight: 4.19}
+- {sel: true, ticker: SAN.PA, weight: 1.99}
+- {sel: true, ticker: SIE.DE, weight: 3.42}
+- {sel: true, ticker: OR.PA, weight: 3.19}
+- {sel: true, ticker: ALV.DE, weight: 3.11}
+- {sel: true, ticker: SU.PA, weight: 3.02}
+- {sel: true, ticker: AI.PA, weight: 2.82}
+- {sel: true, ticker: AIR.PA, weight: 2.51}
+- {sel: true, ticker: BNP.PA, weight: 2.39}
+- {sel: true, ticker: DTE.DE, weight: 2.32}
+- {sel: true, ticker: DG.PA, weight: 2.12}
+- {sel: true, ticker: IBE.MC, weight: 2.07}
+- {sel: true, ticker: RMS.PA, weight: 2.04}
+- {sel: true, ticker: SAF.PA, weight: 1.92}
+- {sel: true, ticker: CS.PA, weight: 1.81}
+- {sel: true, ticker: MBG.DE, weight: 1.78}
+- {sel: true, ticker: MUV2.DE, weight: 1.72}
+- {sel: true, ticker: EL.PA, weight: 1.7}
+- {sel: true, ticker: BBVA.MC, weight: 1.55}
+- {sel: true, ticker: INGA.AS, weight: 1.53}
+- {sel: true, ticker: ABI.BR, weight: 1.53}
+- {sel: true, ticker: ENEL.MI, weight: 1.52}
+- {sel: true, ticker: BAYN.DE, weight: 1.5}
+- {sel: true, ticker: PRX.AS, weight: 1.45}
+- {sel: true, ticker: STLAM.MI, weight: 1.4}
+- {sel: true, ticker: IFX.DE, weight: 1.38}
+- {sel: true, ticker: UCG.MI, weight: 1.36}
+- {sel: true, ticker: ISP.MI, weight: 1.33}
+- {sel: true, ticker: ITX.MC, weight: 1.33}
+- {sel: true, ticker: BAS.DE, weight: 1.28}
+- {sel: true, ticker: DHL.DE, weight: 1.27}
+- {sel: true, ticker: NDA-FI.HE, weight: 1.25}
+- {sel: true, ticker: ENI.MI, weight: 1.19}
+- {sel: true, ticker: BN.PA, weight: 1.11}
+- {sel: true, ticker: RACE.MI, weight: 1.1}
+- {sel: true, ticker: RI.PA, weight: 1.07}
+- {sel: true, ticker: DB1.DE, weight: 1.05}
+- {sel: true, ticker: KER.PA, weight: 1.04}
+- {sel: true, ticker: SGO.PA, weight: 0.98}
+- {sel: true, ticker: BMW.DE, weight: 0.98}
+- {sel: true, ticker: AD.AS, weight: 0.93}
+- {sel: true, ticker: FLTR.L, weight: 0.93}
+- {sel: true, ticker: ADS.DE, weight: 0.88}
+- {sel: true, ticker: VOW3.DE, weight: 0.76}
+- {sel: true, ticker: ADYEN.AS, weight: 0.65}
+- {sel: true, ticker: NOKIA.HE, weight: 0.63}
+- {ticker: 0EXG.IL}
+- {ticker: 1COV.DE}
+- {ticker: ABN.AS}
+- {ticker: AC.PA}
+- {ticker: ACA.PA}
+- {ticker: ACKB.BR}
+- {ticker: ACS.MC}
+- {ticker: ACX.MC}
+- {ticker: AED.BR}
+- {ticker: AEGN.AT}
+- {ticker: AENA.MC}
+- {ticker: AGN.AS}
+- {ticker: AGS.BR}
+- {ticker: AKZA.AS}
+- {ticker: ALPHA.AT}
+- {ticker: AMP.MI}
+- {ticker: AMS.MC}
+- {ticker: ANA.MC}
+- {ticker: ANDR.VI}
+- {ticker: ANE.MC}
+- {ticker: ARGX.BR}
+- {ticker: ASM.AS}
+- {ticker: ATO.PA}
+- {ticker: ATS.VI}
+- {ticker: AZM.MI}
+- {ticker: BAMI.MI}
+- {ticker: BEI.DE}
+- {ticker: BELA.AT}
+- {ticker: BG.VI}
+- {ticker: BKT.MC}
+- {ticker: BMED.MI}
+- {ticker: BPE.MI}
+- {ticker: CA.PA}
+- {ticker: CABK.MC}
+- {ticker: CAI.VI}
+- {ticker: CAP.PA}
+- {ticker: CENER.AT}
+- {ticker: CGCBV.HE}
+- {ticker: CLNX.MC}
+- {ticker: CNHI.MI}
+- {ticker: COFB.BR}
+- {ticker: COL.MC}
+- {ticker: COLR.BR}
+- {ticker: CON.DE}
+- {ticker: CPR.MI}
+- {ticker: DBK.DE}
+- {ticker: DIA.MI}
+- {ticker: DOC.VI}
+- {ticker: DSFIR.AS}
+- {ticker: DTG.DE}
+- {ticker: EBS.VI}
+- {ticker: EDP.LS}
+- {ticker: EEE.AT}
+- {ticker: ELE.MC}
+- {ticker: ELI.BR}
+- {ticker: ELISA.HE}
+- {ticker: ELLAKTOR.AT}
+- {ticker: ELPE.AT}
+- {ticker: EN.PA}
+- {ticker: ENG.MC}
+- {ticker: ENGI.PA}
+- {ticker: ENR.DE}
+- {ticker: EOAN.DE}
+- {ticker: ETE.AT}
+- {ticker: EUROB.AT}
+- {ticker: EVN.VI}
+- {ticker: EYDAP.AT}
+- {ticker: FBK.MI}
+- {ticker: FDR.MC}
+- {ticker: FER.MC}
+- {ticker: FORTUM.HE}
+- {ticker: FRE.DE}
+- {ticker: G.MI}
+- {ticker: GALP.LS}
+- {ticker: GBLB.BR}
+- {ticker: GEKTERNA.AT}
+- {ticker: GLE.PA}
+- {ticker: GLPG.AS}
+- {ticker: GRF.MC}
+- {ticker: HEI.DE}
+- {ticker: HEIA.AS}
+- {ticker: HO.PA}
+- {ticker: HTO.AT}
+- {ticker: IAG.MC}
+- {ticker: IG.MI}
+- {ticker: IIA.VI}
+- {ticker: IMCD.AS}
+- {ticker: IP.MI}
+- {ticker: KBC.BR}
+- {ticker: KCR.HE}
+- {ticker: KEMIRA.HE}
+- {ticker: KESKOB.HE}
+- {ticker: KNEBV.HE}
+- {ticker: KOJAMO.HE}
+- {ticker: KPN.AS}
+- {ticker: LAMDA.AT}
+- {ticker: LDO.MI}
+- {ticker: LHA.DE}
+- {ticker: LIN.DE}
+- {ticker: LNZ.VI}
+- {ticker: LOG.MC}
+- {ticker: LR.PA}
+- {ticker: MAP.MC}
+- {ticker: MB.MI}
+- {ticker: MEL.MC}
+- {ticker: MELE.BR}
+- {ticker: METSB.HE}
+- {ticker: METSO.HE}
+- {ticker: ML.PA}
+- {ticker: MMK.VI}
+- {ticker: MOH.AT}
+- {ticker: MONC.MI}
+- {ticker: MRK.DE}
+- {ticker: MRL.MC}
+- {ticker: MT.AS}
+- {ticker: MTX.DE}
+- {ticker: MYTIL.AT}
+- {ticker: NESTE.HE}
+- {ticker: NEXI.MI}
+- {ticker: NN.AS}
+- {ticker: NTGY.MC}
+- {ticker: OMV.VI}
+- {ticker: OPAP.AT}
+- {ticker: ORA.PA}
+- {ticker: ORNBV.HE}
+- {ticker: OTOEL.AT}
+- {ticker: OUT1V.HE}
+- {ticker: P911.DE}
+- {ticker: PHIA.AS}
+- {ticker: PIRC.MI}
+- {ticker: POST.VI}
+- {ticker: PPC.AT}
+- {ticker: PROX.BR}
+- {ticker: PRY.MI}
+- {ticker: PST.MI}
+- {ticker: QUEST.AT}
+- {ticker: RAND.AS}
+- {ticker: RBI.VI}
+- {ticker: REC.MI}
+- {ticker: RED.MC}
+- {ticker: REN.AS}
+- {ticker: RWE.DE}
+- {ticker: SAB.MC}
+- {ticker: SAMPO.HE}
+- {ticker: SAN.MC}
+- {ticker: SAR.AT}
+- {ticker: SBO.VI}
+- {ticker: SHELL.AS}
+- {ticker: SOF.BR}
+- {ticker: SOLB.BR}
+- {ticker: SPM.MI}
+- {ticker: SRG.MI}
+- {ticker: STERV.HE}
+#- {ticker: STLAM.MI}
+- {ticker: STMPA.PA}
+- {ticker: STR.VI}
+- {ticker: SW.PA}
+- {ticker: SY1.DE}
+- {ticker: TEF.MC}
+- {ticker: TELIA1.HE}
+- {ticker: TEN.MI}
+- {ticker: TENERGY.AT}
+- {ticker: TIETO.HE}
+- {ticker: TIT.MI}
+- {ticker: TITC.AT}
+- {ticker: TKWY.AS}
+- {ticker: TNET.BR}
+- {ticker: TPEIR.AT}
+- {ticker: TRN.MI}
+- {ticker: TYRES.HE}
+- {ticker: UBI.PA}
+- {ticker: UCB.BR}
+- {ticker: UMI.BR}
+- {ticker: UNA.AS}
+- {ticker: UNI.MC}
+- {ticker: UNI.MI}
+- {ticker: UPM.HE}
+- {ticker: UQA.VI}
+- {ticker: URW.PA}
+- {ticker: VALMT.HE}
+- {ticker: VER.VI}
+- {ticker: VIE.PA}
+- {ticker: VIG.VI}
+- {ticker: VIO.AT}
+- {ticker: VIV.PA}
+- {ticker: VNA.DE}
+- {ticker: VOE.VI}
+- {ticker: WDP.BR}
+- {ticker: WIE.VI}
+- {ticker: WKL.AS}
+- {ticker: WLN.PA}
+- {ticker: ZAL.DE}
