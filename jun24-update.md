@@ -1,10 +1,10 @@
 
 # Recent Trades
 
-LIN 3
-MUV2d 3
-OR 2
-UNVB 25
+LIN 3 - 2024-05-29 16:01:26
+MUV2d 3 - 2024-05-29 16:02:09
+OR 2 - 2024-05-29 16:02:46
+UNVB 25 - 2024-05-29 16:04:50
 
 
 ## Gu Holdings
@@ -218,9 +218,9 @@ NOKIA	Nokia Oyj	0.52
 
 ## Gu Components
 
-| Symbol | Name                                           | Current Holdings | STOXX50 Component | Price  | Gu Holdings |
-|--------|------------------------------------------------|------------------|-------------------|--------|-------------|
-| SAP    | SAP SE                                         | 0                | 5.31              | 119.27 | 27          |
+| Symbol | Name                                           | Current Holdings | STOXX50 Component | Price  | Gu Holdings | Date |
+|--------|------------------------------------------------|------------------|-------------------|--------|-------------|--|
+| SAP    | SAP SE                                         | 0                | 5.31              | 119.27 | 27          | 2024-05-29 16:12:49
 | SU     | Schneider Electric SE                          | 0                | 3.55              | 145.11 | 17          |
 | SIE    | Siemens AG                                     | 0                | 3.80              | 130.02 | 23          |
 | ITX    | Industria De Diseno Textil SA Share From Split | 0                | 1.37              | 34.06  | 95          |
@@ -243,21 +243,21 @@ NOKIA	Nokia Oyj	0.52
 
 ## Missing STOXX50 Components
 
-| Symbol | Name         | STOXX50 Component |
-|--------|------|-------------------|
-| RMS | Hermes International SA | 0 | 2.28 | 
-| OR | L'Oreal SA | 3.06 |
-| SAF | Safran SA | 2.23 |
-| UCG | UniCredit SpA | 1.71 |
-| MBG | Mercedes-Benz Group AG | 1.64 |
+| Symbol | Name         | STOXX50 Component | Date |
+|--------|------|-------------------|----|
+| RMS | Hermes International SA | 2.28 | 1 2024-05-29 16:09:03 |
+| OR | L'Oreal SA | 3.06 | 
+| SAF | Safran SA | 2.23 | 10 2024-05-29 16:09:59 |
+| UCG | UniCredit SpA | 1.71 | 30 2024-05-29 16:17:00 |
+| MBG | Mercedes-Benz Group AG | 1.64 | 20 2024-05-29 16:15:55
 | ING | Ing Groep Nv Common Stock Eur.01 | 1.42 |
 | STLAM | Stellantis NV | 1.38 |
-| NDA SE | Nordea Bank Abp | 1.12 |
-| BN | Danone SA | 1.09 |
+| NDA SE | Nordea Bank Abp | 1.12 | 20 2024-05-29 16:21:08
+| BN | Danone SA | 1.09 | 15 2024-05-29 16:17:47
 | SGO | Compagnie de Saint-Gobain SA | 1.09 |
-| DHL | DHL Group | 1.09 |
-| ADS | adidas AG | 1.08 |
-| WKL | Wolters Kluwer NV | 1.01 |
+| DHL | DHL Group | 1.09 | 20 2024-05-29 16:25:27
+| ADS | adidas AG | 1.08 | 5 2024-05-29 16:14:19 |
+| WKL | Wolters Kluwer NV | 1.01 | 5 2024-05-29 16:26:25
 | DB1 | Deutsche Boerse AG | 0.99 |
 | ADYEN | Adyen NV | 0.93 |
 | BMW | Bayerische Motoren Werke AG | 0.88 |
@@ -265,3 +265,121 @@ NOKIA	Nokia Oyj	0.52
 | BAYN | Bayer AG | 0.77 |
 | KER | Kering SA | 0.68 |
 | VOW3 | Volkswagen AG Participating Preferred | 0.68 |
+
+
+## Activity
+
+TRADES 	ACCOUNT	ACTION	 QUANTITY	STATUS 	 PRICE	 AMOUNT		
+WKL
+Bot 5 @ 148.55 on SMART
+U6650772	Bought	5	
+Filled
+4:26 PM
+148.55	
+742.75
+Fees: 3.0		
+DHL
+Bot 20 @ 38.48 on IBIS
+U6650772	Bought	20	
+Filled
+4:25 PM
+38.48	
+769.6
+Fees: 3.0		
+NDA FI
+Bot 90 @ 11.140 on TGATE
+U6650772	Bought	90	
+Filled
+4:20 PM
+11.140	
+1002.6
+Fees: 3.0		
+BN
+Bot 15 @ 58.46 on SMART
+U6650772	Bought	15	
+Filled
+4:17 PM
+58.46	
+876.9
+Fees: 3.0		
+UCG
+Bot 30 @ 36.025 on SMART
+U6650772	Bought	30	
+Filled
+4:16 PM
+36.025	
+1080.75
+Fees: 3.0		
+MBG
+Bot 20 @ 65.52 on SMART
+U6650772	Bought	20	
+Filled
+4:15 PM
+65.52	
+1310.4
+Fees: 3.0		
+ADS
+Bot 5 @ 226.8 on SMART
+U6650772	Bought	5	
+Filled
+4:14 PM
+226.8	
+1134
+Fees: 3.0		
+SAP
+Bot 27 @ 176.14 on SMART
+U6650772	Bought	27	
+Filled
+4:12 PM
+176.14	
+4755.78
+Fees: 3.0		
+SAF
+Bot 10 @ 212.5 on SMART
+U6650772	Bought	10	
+Filled
+4:09 PM
+212.5	
+2125
+Fees: 3.0		
+RMS
+Bot 1 @ 2154 on GETTEX
+U6650772	Bought	1	
+Filled
+4:06 PM
+2154	
+2154
+Fees: 3.0		
+UNA
+Bot 25 @ 49.73 on EUDARK
+U6650772	Bought	25	
+Filled
+4:04 PM
+49.73	
+1243.25
+Fees: 3.0		
+OR
+Bot 2 @ 441.40 on SMART
+U6650772	Bought	2	
+Filled
+4:02 PM
+441.40	
+882.8
+Fees: 3.0		
+MUV2
+Bot 3 @ 458.5 on SMART
+U6650772	Bought	3	
+Filled
+4:01 PM
+458.5	
+1375.5
+Fees: 3.0		
+LIN
+Bot 3 @ 394.4 on SMART
+U6650772	Bought	3	
+Filled
+4:01 PM
+394.4	
+1183.2
+Fees: 3.0		
+
